@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+DTSTART:20200308T030000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZNAME:EDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20201101T010000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZNAME:EST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20201021T151018Z
+UID:d06925b2-12ae-482e-9885-63d6081420f9
+DTSTART;TZID=America/New_York:20201026T103000
+DTEND;TZID=America/New_York:20201026T110000
+DESCRIPTION:Hi Victor\,\n\nYour phone interview for our Senior UI Engineer 
+ role is confirmed! Please see below for details:\n\nOct 26\, 2020 10:30am-
+ 11:00am EDT: Daniel Andrews -- Director\, UI Engineering\n\nDaniel will ca
+ ll you at 678-613-3400.\n\nDaniel will be welcoming your questions about t
+ he role\, team\, and nature of the work so that you can make a well-inform
+ ed career decision.\n\nI look forward to your feedback after the call!\n\n
+ Best\,\nEddie
+SUMMARY:Interview with SalesLoft
+END:VEVENT
+END:VCALENDAR

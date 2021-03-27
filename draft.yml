@@ -1,0 +1,127 @@
+models:
+  Post:
+    title: string:400
+    content: longtext
+    published_at: nullable timestamp
+    author_id: id:user
+    relationships:
+      hasMany: Comment
+      belongsToMany: Media, Site
+
+  Comment:
+    post_id: id
+    content: longtext
+    user_id: id
+
+  Screencast:
+    title: string
+    synopsis: longtext nullable
+    duration: decimal:8,2
+
+  Note:
+    user_id: id
+    content: longtext
+    approved: boolean
+    published_at: nullable timestamp
+
+  Watch:
+    user_id: id
+    screencast_id: id
+    completed_at: datetime
+    timestamps: false
+
+  Company:
+    name: string
+
+  Person:
+    uuid
+    name: string
+    company_id: uuid
+    timestamps
+
+  Team:
+    name: string
+    owner_id: id:user
+
+  Term:
+    uuid: string unique
+    name: json
+    description: json nullable
+    meta: json nullable
+    user_id: id nullable foreign onDelete:null onUpdate:cascade
+    team_id: id foreign onDelete:cascade onUpdate:cascade
+    published: boolean default:1
+    type: string nullable default:booking
+    softDeletes
+    relationships:
+      belongsToMany: Organizer, Event
+
+  Lesson:
+    title: string:400
+    content: longtext
+    published_at: nullable timestamp
+
+controllers:
+  Api/Company:
+    resource: api
+
+  Post:
+    index:
+      query: all
+      render: post.index with:posts
+
+    store:
+      validate: title, content
+      save: post
+      send: ReviewNotification to:post.author with:post
+      dispatch: SyncMedia with:post
+      fire: NewPost with:post
+      flash: post.title
+      redirect: post.index
+
+  User:
+    index:
+      query: all:users
+      render: user.index with:users
+
+    store:
+      validate: name
+      save: user
+      flash: user.name
+      redirect: post.index
+
+  Term:
+    resource
+
+  Lesson:
+    index:
+      query: all
+      render: lessons.index with:lessons
+
+    create:
+      render: lessons.create with:lesson
+
+    store:
+      validate: title, content
+      save: lesson
+      redirect: lessons.index
+
+    show:
+      find: lesson.id
+      render: lessons.show with:lesson
+
+    edit:
+      find: lesson.id
+      render: lessons.edit with:lesson
+
+    update:
+      validate: title, content
+      find: lesson.id
+      save: lesson
+      redirect: lessons.index
+
+    destroy:
+      find: lesson.id
+      delete: lesson
+
+seeders: Post, Comment

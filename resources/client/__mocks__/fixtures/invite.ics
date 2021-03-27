@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+PRODID:-//Splash Event Planning System
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20201023T131531Z
+UID:8ea4ab4002305849f995efc7c067777efbd977a6@futureoffronten
+ d.splashthat.com
+URL:https://futureoffrontend.splashthat.com
+DTSTART:20201110T173000Z
+DTEND:20201111T003000Z
+ORGANIZER;CN="Sentry.io Events":mailto:futureoffrontend@spla
+ sh.events
+SUMMARY:The Future of Frontend
+DESCRIPTION:For more information - https://futureoffrontend.
+ splashthat.com
+LOCATION:Unique Link Sent Upon RSVP
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+{
+    "button": {
+        "about": "About",
+        "back": "Back",
+        "go": "GO",
+        "home": "Home",
+        "toggle_dark": "Toggle dark mode",
+        "toggle_langs": "Change languages"
+    },
+    "hello": "hello",
+    "intro": {
+        "desc": "Opinionated Vite Starter Template",
+        "dynamic-route": "Dynamic Route",
+        "hi": "Hi, {name}!",
+        "whats-your-name": "What's your name?"
+    },
+   "not-found": "Not found"
+}

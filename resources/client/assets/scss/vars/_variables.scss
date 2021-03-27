@@ -1,0 +1,43 @@
+$base-border-radius: 4px;
+$base-font-size: 1rem;
+$base-rounded-border-radius: 9999px;
+$base-line-height: 1.5;
+$base-disabled-opacity: 0.5;
+$speed: 300ms;
+$speed-slow: 150ms;
+$speed-slower: 250ms;
+$easing: ease-out;
+$control-border-width: 1px;
+$control-height: 2.25em;
+$white: #ffffff;
+$black: #000000;
+$grey: #7a7a7a;
+$grey-light: #b5b5b5;
+$grey-lighter: #dbdbdb;
+$primary: #445e00;
+$primary-invert: $white;
+$danger: #b60000;
+$danger-invert: $white;
+$warning: #f4c300;
+$warning-invert: $black;
+$success: #006724;
+$success-invert: $white;
+$info: #005C98;
+$info-invert: $white;
+$whitelist: ();
+$sass-vars: true;
+$css-vars: true;
+$variable-prefix: '--oruga-';
+$sizes: (
+  "small": .75rem,
+  "medium": 1.25rem,
+  "large": 1.5rem
+);
+
+$colors: (
+  "primary": ($primary, $primary-invert),
+  "danger": ($danger, $danger-invert),
+  "warning": ($warning, $warning-invert),
+  "success": ($success, $success-invert),
+  "info": ($info, $info-invert)
+);
