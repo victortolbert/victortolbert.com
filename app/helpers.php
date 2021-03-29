@@ -20,7 +20,7 @@ function vite_assets(): HtmlString
     if ($devServerIsRunning) {
         return new HtmlString(<<<HTML
             <script type="module" src="http://localhost:3000/@vite/client"></script>
-            <script type="module" src="http://localhost:3000/resources/client/main.js"></script>
+            <script type="module" src="http://localhost:3000/resources/client/main.ts"></script>
         HTML);
     }
 
@@ -28,8 +28,8 @@ function vite_assets(): HtmlString
         public_path('build/manifest.json')
     ), true);
 
-    $script = $manifest['resources/client/main.js']['file'];
-    $style = $manifest['resources/client/main.js']['css'][0];
+    $script = $manifest['resources/client/main.ts']['file'];
+    $style = $manifest['resources/client/main.ts']['css'][0];
 
     return new HtmlString(<<<HTML
         <script type="module" src="/build/$script"></script>

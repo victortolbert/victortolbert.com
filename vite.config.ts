@@ -1,12 +1,16 @@
 import { resolve } from 'path'
 import fs from 'fs-extra'
 
+import { defineConfig } from 'vite'
+
+
 import Vue from '@vitejs/plugin-vue'
 import Banner from 'vite-plugin-banner'
 import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import ViteComponents from 'vite-plugin-components'
+import { VitePWA } from 'vite-plugin-pwa'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -30,14 +34,14 @@ import 'prismjs/components/prism-yaml'
 import { slugify } from './scripts/slugify'
 import pkg from './package.json'
 
-export default ({ command }) => ({
+export default ({ command }) => defineConfig({
     base: command === 'serve' ? '' : '/build/',
     publicDir: 'fake_dir_so_nothing_gets_copied',
     build: {
         manifest: true,
         outDir: 'public/build',
         rollupOptions: {
-            input: 'resources/client/main.js',
+            input: 'resources/client/main.ts',
         },
     },
     define: {
@@ -130,6 +134,32 @@ export default ({ command }) => ({
         ViteIcons(),
         VueI18n({
             include: [resolve(__dirname, 'locales/**')],
+        }),
+        VitePWA({
+          registerType: 'autoUpdate',
+          manifest: {
+            name: 'Victor Tolbert',
+            short_name: 'Vitesse',
+            theme_color: '#ffffff',
+            icons: [
+              {
+                src: '/pwa-192x192.png',
+                sizes: '192x192',
+                type: 'image/png',
+              },
+              {
+                src: '/pwa-512x512.png',
+                sizes: '512x512',
+                type: 'image/png',
+              },
+              {
+                src: '/pwa-512x512.png',
+                sizes: '512x512',
+                type: 'image/png',
+                purpose: 'any maskable',
+              },
+            ],
+          },
         }),
         SvgLoader(),
         {
