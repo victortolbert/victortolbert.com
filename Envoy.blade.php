@@ -1,9 +1,8 @@
 @setup
-// $repo = 'https://github.com/tolbertdesign/_server';
-$repo = 'git@github.com:victortolbert/example-app.git';
+$repo = 'git@github.com:victortolbert/victortolbert.com.git';
 $branch = $branch ?? 'main';
 $remote = $remote ?? 'gentle-breeze';
-$site = 'tolbert.design';
+$site = 'victortolbert.com';
 $release_dir = '/home/forge/releases/' . $site;
 $app_dir = '/home/forge/' . $site;
 $release = 'release_' . date('Y-md-Hi-s');
