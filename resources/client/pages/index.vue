@@ -18,7 +18,7 @@ const { t } = useI18n()
       <SectionWrapper>
         <HelloWorld msg="Hello Vue 3, Vite, Tailwind CSS, and Laravel" />
         <OButton>Testing</OButton>
-        <OField label="Text">
+        <OField label="Auto sizing textarea">
             <TextareaAutosize v-model="text"></TextareaAutosize>
         </OField>
         <OField label="Name">
@@ -29,7 +29,7 @@ const { t } = useI18n()
                 :aria-label="t('intro.whats-your-name')"
                 type="text"
                 autocomplete="false"
-                class="px-4 py-2 text-sm text-center bg-transparent border border-gray-200 rounded outline-none active:outline-none dark:border-gray-700"
+                class="px-4 py-2 text-sm bg-transparent border border-gray-200 rounded outline-none active:outline-none dark:border-gray-700"
                 style="width: 250px"
                 @keydown.enter="go"
             />
