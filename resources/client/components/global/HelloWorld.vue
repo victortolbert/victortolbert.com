@@ -1,10 +1,12 @@
 
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
-import { useStore, Mutation } from '~/store/index'
+import { useStore, Mutation } from '~/vuex/index'
+
 const store = useStore()
 const appVersion = store.state.version // not reactive!
 const count = computed(() => store.state.count)
+
 const props = defineProps<{
   msg: string
 }>()

@@ -1,0 +1,3 @@
+<div>
+  {!! $parseMarkdown($slot) !!}
+</div>

@@ -61,7 +61,7 @@ export default defineComponent({
     }
   },
   mounted() {
-      this.$ray().clearAll()
+      // this.$ray().clearAll()
   },
   methods: {
     addItem() {
@@ -76,7 +76,7 @@ export default defineComponent({
       this.selectedBeverage = null
     },
     removeAssignment(slot, id) {
-      this.$ray(id)
+      // this.$ray(id)
       const index = this.slottedIngredientCartridges.indexOf(id)
       this.slottedIngredientCartridges.splice(index, 1)
       this.slots[slot].item = null

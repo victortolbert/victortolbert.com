@@ -23,6 +23,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('post', App\Http\Controllers\PostController::class)->only('index', 'store');
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+
 Route::get('/{any?}', function () {
     return view('index');
 })->where('any', '^(?!api).*$');

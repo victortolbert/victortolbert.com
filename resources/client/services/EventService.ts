@@ -1,12 +1,13 @@
 import axios from 'axios'
 // import {Toast} from 'buefy/dist/components/toast'
+let isLoading = false
 
 function hideDefaultLoading() {
-  document.querySelector('#overlays').classList.add('hidden')
+  isLoading = false
 }
 
 const instance = axios.create({
-  baseURL: process.env.API_URL || 'https://api.victortolbert.com',
+  baseURL: 'https://api.victortolbert.com',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -16,9 +17,9 @@ const instance = axios.create({
 
 instance.interceptors.request.use(function (request) {
   if (request.loading && typeof request.loading === 'function') {
-    request.loading()
+    isLoading = true
   } else {
-    document.querySelector('#overlays').classList.remove('hidden')
+    isLoading = false
   }
 
   return request
