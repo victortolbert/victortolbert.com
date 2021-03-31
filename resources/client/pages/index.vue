@@ -1,10 +1,21 @@
+<!-- @vue-ignore -->
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
 import { ternary } from 'vue-chemistry'
-import { useIntersectionObserver } from '@vueuse/core'
+import { useIntersectionObserver,  useBreakpoints, breakpointsTailwind } from '@vueuse/core'
+import { INITIAL_EVENTS, createEventId } from '~/helpers/event-utils'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import interactionPlugin from '@fullcalendar/interaction'
+
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const smAndLarger = breakpoints.greater('sm')
+const mdAndLarger = breakpoints.greater('md')
+const lgAndLarger = breakpoints.greater('lg')
 
 // const msg = ref('I will change')
 
@@ -24,9 +35,65 @@ const name = ref('')
 const quote = ref('')
 const quoteType = ref('')
 
+const currentEvents = ref([])
+
 const router = useRouter()
 const go = () => {
   if (name.value) router.push(`/hi/${encodeURIComponent(name.value)}`)
+}
+
+const handleDateSelect = (selectInfo) => {
+  let title = prompt('Please enter a new title for your event')
+  let calendarApi = selectInfo.view.calendar
+
+  calendarApi.unselect() // clear date selection
+  if (title) {
+    calendarApi.addEvent({
+      id: createEventId(),
+      title,
+      start: selectInfo.startStr,
+      end: selectInfo.endStr,
+      allDay: selectInfo.allDay
+    })
+  }
+}
+
+const handleEventClick = (clickInfo) => {
+  if (confirm(`Are you sure you want to delete the event '${clickInfo.event.title}'`)) {
+    clickInfo.event.remove()
+  }
+}
+
+const handleEvents = (events) => {
+  currentEvents.value = events
+}
+
+const calendarOptions = ref({
+  plugins: [
+    dayGridPlugin,
+    timeGridPlugin,
+    interactionPlugin // needed for dateClick
+  ],
+  headerToolbar: false,
+  initialView: 'dayGridMonth',
+  initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
+  editable: true,
+  selectable: true,
+  selectMirror: true,
+  dayMaxEvents: true,
+  weekends: true,
+  select: handleDateSelect,
+  eventClick: handleEventClick,
+  eventsSet: handleEvents
+  /* you can update a remote database when these fire:
+  eventAdd:
+  eventChange:
+  eventRemove:
+  */
+})
+
+const handleWeekendsToggle = () => {
+  calendarOptions.value.weekends = !calendarOptions.value.weekends // update a property
 }
 
 // const handleEnter = () => console.log('enter')
@@ -44,15 +111,16 @@ const getQuote = async () => {
   // finish up
   console.log('done')
 }
-
-
 const { t } = useI18n()
+
 </script>
 
 <template>
   <PageWrapper>
       <PageHeading>Home Page</PageHeading>
-
+        > sm: {{ smAndLarger }}<br>
+        > md: {{ mdAndLarger }}<br>
+        > lg: {{ lgAndLarger }}<br>
       <SectionWrapper>
         <HelloWorld msg="Hello Vue 3, Vite, Tailwind CSS, and Laravel" />
         <RandomProgrammingQuote />
@@ -65,6 +133,19 @@ const { t } = useI18n()
             Learn more about sharing
           </span>
         </a>
+        <div class="grid grid-cols-12 gap-8">
+          <div class="col-span-6">
+            <vti-Calendar
+              class='demo-app-calendar'
+              :options='calendarOptions'
+            >
+              <template v-slot:eventContent='arg'>
+                <b>{{ arg.timeText }}</b>
+                <i>{{ arg.event.title }}</i>
+              </template>
+            </vti-Calendar>
+          </div>
+        </div>
 
         <!-- <FileMetadata /> -->
         <!-- <vti-DefinitionList /> -->
@@ -92,9 +173,6 @@ const { t } = useI18n()
         </OField>
 
         <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
-        {{ quote}}
-        <button @click="getQuote">Get Quote</button>
 
         <div>
           <OButton

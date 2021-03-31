@@ -1,30 +1,23 @@
 
-<script setup lang='ts'>
-import { ref } from 'vue'
-import { useMouse, useMediaControls, useCounter, usePreferredDark, useLocalStorage } from '@vueuse/core'
-import { useAxios } from '@vueuse/integrations'
-import ComponentA from '../../../README.md'
+<script lang='ts'>
+import { defineComponent } from 'vue'
+import { useMouse, useCounter } from '@vueuse/core'
+import { useSound } from '@vueuse/sound'
+import buttonSfx from '../assets/sound/glug.mp3'
 
-const { x, y } = useMouse()
-const video = ref()
-const loop = ref(false)
-const { count, inc, dec } = useCounter()
-const isDark = usePreferredDark()
-const { playing, currentTime, duration } = useMediaControls(video, {
-  src: 'overview.mp4',
-  loop,
+export default defineComponent({
+  setup() {
+    const { play } = useSound(buttonSfx)
+    const { x, y } = useMouse()
+    const { count, inc, dec } = useCounter()
+
+    return {
+      play, x, y, count, inc, dec
+    }
+  }
 })
-
-const store = useLocalStorage(
-  'my-storage',
-  {
-    name: 'Apple',
-    color: 'red',
-  },
-)
-const { data, loading, finished } = useAxios('http://localhost:3006/posts/1')
-const text = JSON.stringify(data)
 </script>
+
 
 <template>
   <h3>Mouse: {{ x }} x {{ y }}</h3>
@@ -33,37 +26,17 @@ const text = JSON.stringify(data)
     <a style="margin-right:10px" @click="inc()">+</a>
     <a @click="dec()">-</a>
   </h3>
-  <pre>{{ store }}</pre>
 
-  <p>{{ isDark }}</p>
-  <ComponentA style="padding: 20px 40px" />
+  <button @click="play">Play a sound</button>
+<!--
+  src/pages/users/[id].vue -> /users/:id (/users/one)
+  src/[user]/settings.vue -> /:user/settings (/one/settings)
 
-  <video ref="video" />
+  Any dynamic parameters will be passed to the page as props.
 
-  <button @click="playing = !playing">
-    Play / Pause
-  </button>
-  <span>{{ currentTime }} / {{ duration }}</span>
-  <button @click="loop = !loop">
-    Toggle Loop
-  </button>
+  For example, given the file `src/pages/users/[id].vue`,
+  the route `/users/abc` will be passed the following props:
 
-  <!--
-      src/pages/users/[id].vue -> /users/:id (/users/one)
-    src/[user]/settings.vue -> /:user/settings (/one/settings)
-Any dynamic parameters will be passed to the page as props. For example, given the file src/pages/users/[id].vue, the route /users/abc will be passed the following props:
-
-{ "id": "abc" }
+  { "id": "abc" }
 -->
-  <note>Loading: {{ loading.toString() }}</note>
-  <note>Finished: {{ finished.toString() }}</note>
-  <!-- <pre lang="yaml">{{ text }}</pre> -->
-  {{ data }}
-  <RouterView />
 </template>
-
-<route lang="yaml">
-name: name-override
-meta:
-  requiresAuth: true
-</route>

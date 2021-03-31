@@ -1,4 +1,7 @@
 import 'vite/dynamic-import-polyfill'
+// import 'prism-theme-vars/base.css'
+// import 'prism-theme-vars/themes/vitesse-dark.css'
+
 import { createApp } from 'vue'
 import { createHead  } from '@vueuse/head'
 import { createI18n } from 'vue-i18n'
@@ -11,8 +14,12 @@ import VueClickAway from "vue3-click-away"
 
 // import router from './router'
 import routes from 'virtual:generated-pages'
+import http from '~/http'
 import GStore from '~/store/global'
 import store from '~/store'
+import upload from '~/plugins/upload'
+
+// import router      from './router'
 
 import '@oruga-ui/oruga-next/dist/oruga-full-vars.css'
 import 'nprogress/nprogress.css'
@@ -57,6 +64,8 @@ const i18n = createI18n({
 app.use(router)
 app.use(head)
 app.use(i18n)
+app.use(http)
+app.use(upload)
 app.provide('GStore', GStore)
 app.use(store)
 app.use(Oruga)

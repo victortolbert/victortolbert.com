@@ -5,7 +5,7 @@ export default [
     city: 'Hebron',
     state: 'KY',
       destinations: {
-      passenger: [ 'Toronto', 'Seattle/Tacoma', 'Austin', 'Charleston', 'Denver', 'Fort Lauderdale', 'Jacksonville', 'Las Vegas', 'Los Angeles', 'Baltimore', 'Chicago', 'Detroit', 'Dallas', 'Tampa' ],
+        passenger: [ 'Toronto', 'Seattle/Tacoma', 'Austin', 'Charleston', 'Denver', 'Fort Lauderdale', 'Jacksonville', 'Las Vegas', 'Los Angeles', 'Baltimore', 'Chicago', 'Detroit', 'Dallas', 'Tampa' ],
         cargo: [ 'Anchorage', 'Baltimore', ' Chicago' , 'Indianapolis', 'Phoenix', 'San Francisco', 'Seattle', 'Louisville', 'Memphis' ]
       }
   },
@@ -15,7 +15,7 @@ export default [
     city: 'Seattle',
     state: 'WA',
       destinations: {
-      passenger: [ 'Dublin', 'Mexico City', 'Vancouver', 'Albuquerque', 'Atlanta', 'Frankfurt', 'Amsterdam', 'Salt Lake City', 'Tokyo', 'Honolulu' ],
+        passenger: [ 'Dublin', 'Mexico City', 'Vancouver', 'Albuquerque', 'Atlanta', 'Frankfurt', 'Amsterdam', 'Salt Lake City', 'Tokyo', 'Honolulu' ],
         cargo: [ 'Spokane', 'Chicago', 'Dallas', ' Shanghai', 'Cincinnati', 'Luxenbourg', 'Anchorage', 'Juneau', 'Calgary', 'Ontario' ]
       }
   },
@@ -25,7 +25,7 @@ export default [
     city: 'Bloomington',
     state: 'MN',
       destinations: {
-      passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
+        passenger: [ 'Dublin', 'Paris', 'Punta Cana', 'Winnipeg', 'Tokyo', 'Denver', 'Tulsa', 'Washington DC', 'Orlando', 'Mexico City' ],
         cargo: [ 'Cincinnati', 'Omaha', 'Winnipeg', 'Chicago', 'St. Louis', 'Portland', 'Philadelphia', 'Milwaukee', 'Ontario' ]
       }
   }

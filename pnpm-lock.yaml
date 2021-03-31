@@ -16,6 +16,10 @@ devDependencies:
   '@ckeditor/ckeditor5-vue': 2.0.1
   '@dbml/core': 2.3.0
   '@emotion/css': 11.1.3
+  '@fullcalendar/core': 5.6.0
+  '@fullcalendar/daygrid': 5.6.0
+  '@fullcalendar/interaction': 5.6.0
+  '@fullcalendar/timegrid': 5.6.0
   '@headlessui/vue': 0.3.0_vue@3.0.9
   '@iconify/json': 1.1.322
   '@intlify/vite-plugin-vue-i18n': 2.0.4_vite@2.1.3+vue-i18n@9.0.0
@@ -41,7 +45,7 @@ devDependencies:
   '@storybook/vue3': 6.2.0-alpha.20_a21db9f86235d5a354572e2947fa2ff4
   '@tailwindcss/aspect-ratio': 0.2.0
   '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
-  '@tailwindcss/jit': 0.1.17_postcss@8.2.8+tailwindcss@2.0.4
+  '@tailwindcss/jit': 0.1.17_postcss@8.2.9+tailwindcss@2.0.4
   '@tailwindcss/line-clamp': 0.2.0
   '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.4
   '@testing-library/jest-dom': 5.11.10
@@ -78,8 +82,9 @@ devDependencies:
   '@vueuse/router': 4.6.2_vue-router@4.0.5+vue@3.0.9
   '@vueuse/rxjs': 4.6.2_rxjs@6.6.7+vue@3.0.9
   '@vueuse/sound': 1.1.7_vue@3.0.9
+  '@websanova/vue-upload': 2.1.0
   '@whitespace/storybook-addon-html': 5.0.0_@storybook+addons@6.2.0-alpha.20
-  autoprefixer: 10.2.5_postcss@8.2.8
+  autoprefixer: 10.2.5_postcss@8.2.9
   aws-s3: 2.0.5
   aws-sdk: 2.875.0
   axios: 0.21.1
@@ -144,8 +149,8 @@ devDependencies:
   particles.vue3: 1.7.2
   path-to-regexp: 6.2.0
   pnpm: 5.18.9
-  postcss: 8.2.8
-  postcss-nested: 5.0.5_postcss@8.2.8
+  postcss: 8.2.9
+  postcss-nested: 5.0.5_postcss@8.2.9
   postcss-nesting: 7.0.1
   prettier: 2.2.1
   prism-themes: 1.6.0
@@ -160,7 +165,7 @@ devDependencies:
   stylelint: 13.12.0
   stylelint-config-prettier: 8.0.2_stylelint@13.12.0
   stylelint-config-standard: 21.0.0_stylelint@13.12.0
-  tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
+  tailwindcss: 2.0.4_0bca15301caac8bc71ea0ad94045571f
   theme-colors: 0.0.5
   tiny-cookie: 2.3.2
   ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
@@ -2679,6 +2684,42 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bprfNmYt1opFUFEtD2XfY/kEsm13bzHQgU80uMjhuK0DJ914IjolT1GytpkdM6tJ4MBvyiJPP+bTtWO+BZ7c7w==
+  /@fullcalendar/common/5.6.0:
+    dependencies:
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-4i4kZDVpRvfdKoJHRljDHsoYu466Odor9FhekP+67dIUoNnXSDTnQRmGfURwiF4RwaTsdWKe2+B7gors9G7zZA==
+  /@fullcalendar/core/5.6.0:
+    dependencies:
+      '@fullcalendar/common': 5.6.0
+      preact: 10.5.13
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-RK7WM2oWAd4GJ3Ib6a3ftTmz2UxUD4N2JmH8ml+E3bprS9/wjnfvZppikx30UxKUBCAzQcBGOKV8GXh0Wk7FvA==
+  /@fullcalendar/daygrid/5.6.0:
+    dependencies:
+      '@fullcalendar/common': 5.6.0
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-UaNn6/vKQ3zI4/sDhrMACkIHOSZb/MA0JGlvvw3OTYFULqE5TISuYYnDbo9S1Wdz3AbTBvCzYy5Qk1vZQFsGwg==
+  /@fullcalendar/interaction/5.6.0:
+    dependencies:
+      '@fullcalendar/common': 5.6.0
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-2Jlr3e9hKanctmwXKio84Wv070bJn1Im+ZVWjdzUcF/wtUrsD1Kd5dcPBfl9jfTwl2jX/eCWBU3o6ZCLdgoaDg==
+  /@fullcalendar/timegrid/5.6.0:
+    dependencies:
+      '@fullcalendar/common': 5.6.0
+      '@fullcalendar/daygrid': 5.6.0
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-NG55pzPvrzZEuVq+/Vn1ZbyKARVjsE6PzhiOHvJuyt3gzVPeWjXGUWjDN3BSDZ8p/4dthbF6H9mCPia977aV1g==
   /@fullhuman/postcss-purgecss/3.1.3:
     dependencies:
       purgecss: 3.1.3
@@ -5208,13 +5249,13 @@ packages:
   /@tailwindcss/forms/0.3.2_tailwindcss@2.0.4:
     dependencies:
       mini-svg-data-uri: 1.2.3
-      tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
+      tailwindcss: 2.0.4_0bca15301caac8bc71ea0ad94045571f
     dev: true
     peerDependencies:
       tailwindcss: '>=2.0.0'
     resolution:
       integrity: sha512-aj2/rJsGb2whAZ/BQWHWWQRSbhH0r/l1ozOByiv+ZNjBD84GMvb5dhAyfpeasFky+EJrAwX5eaqft8NQMZFWvA==
-  /@tailwindcss/jit/0.1.17_postcss@8.2.8+tailwindcss@2.0.4:
+  /@tailwindcss/jit/0.1.17_postcss@8.2.9+tailwindcss@2.0.4:
     dependencies:
       chokidar: 3.5.1
       dlv: 1.1.3
@@ -5223,10 +5264,10 @@ packages:
       normalize-path: 3.0.0
       object-hash: 2.1.1
       parse-glob: 3.0.4
-      postcss: 8.2.8
+      postcss: 8.2.9
       postcss-selector-parser: 6.0.4
       quick-lru: 5.1.1
-      tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
+      tailwindcss: 2.0.4_0bca15301caac8bc71ea0ad94045571f
     dev: true
     peerDependencies:
       postcss: ^8.2.6
@@ -5243,7 +5284,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
+      tailwindcss: 2.0.4_0bca15301caac8bc71ea0ad94045571f
     dev: true
     peerDependencies:
       tailwindcss: 2.0.0-alpha.24 || ^2.0.0
@@ -6461,6 +6502,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2J0nE95rHXHyQ24cWjMKJ1tqB/ds8z/cyeOZxJhcb+rW+SQASVjuznUSmdz5GpVJTzU8JkhYut0D3siFDD6wsA==
+  /@websanova/vue-upload/2.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-th2fEtN6VUUDqoVsl8y/w31c20/3WXWkWdwuT0YOQlPKxAAnmPlGswQKam+Z+MlQtWChAHhUvM4JGjOe+4bk/A==
   /@whitespace/storybook-addon-html/5.0.0_@storybook+addons@6.2.0-alpha.20:
     dependencies:
       '@babel/generator': 7.13.9
@@ -7035,14 +7080,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
-  /autoprefixer/10.2.5_postcss@8.2.8:
+  /autoprefixer/10.2.5_postcss@8.2.9:
     dependencies:
       browserslist: 4.16.3
       caniuse-lite: 1.0.30001204
       colorette: 1.2.2
       fraction.js: 4.0.13
       normalize-range: 0.1.2
-      postcss: 8.2.8
+      postcss: 8.2.9
       postcss-value-parser: 4.1.0
     dev: true
     engines:
@@ -16153,9 +16198,9 @@ packages:
       postcss: ^8.0.0
     resolution:
       integrity: sha512-ghS/ovDzDqARm4Zj6L2ntadjyQMoyJmi0JkLlYtH2QFLrvNlxH5OAVRPWPeKilB0pY7SbuhO173KOWkPAxRJcw==
-  /postcss-nested/5.0.5_postcss@8.2.8:
+  /postcss-nested/5.0.5_postcss@8.2.9:
     dependencies:
-      postcss: 8.2.8
+      postcss: 8.2.9
       postcss-selector-parser: 6.0.4
     dev: true
     engines:
@@ -16256,6 +16301,16 @@ packages:
       node: ^10 || ^12 || >=14
     resolution:
       integrity: sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
+  /postcss/8.2.9:
+    dependencies:
+      colorette: 1.2.2
+      nanoid: 3.1.22
+      source-map: 0.6.1
+    dev: true
+    engines:
+      node: ^10 || ^12 || >=14
+    resolution:
+      integrity: sha512-b+TmuIL4jGtCHtoLi+G/PisuIl9avxs8IZMSmlABRwNz5RLUUACrC+ws81dcomz1nRezm5YPdXiMEzBEKgYn+Q==
   /preact/10.5.13:
     dev: true
     resolution:
@@ -19008,10 +19063,10 @@ packages:
       node: '>=10.0.0'
     resolution:
       integrity: sha512-OBAdezyozae8IvjHGXBDHByVkLCcsmffXUSj8LXkNb0SluRd4ug3GFCjk6JynZONIPhOkyr0Nnvbq1rlIspXyQ==
-  /tailwindcss/2.0.4_caf414ac65a978d0d57907a0ec9fb41e:
+  /tailwindcss/2.0.4_0bca15301caac8bc71ea0ad94045571f:
     dependencies:
       '@fullhuman/postcss-purgecss': 3.1.3
-      autoprefixer: 10.2.5_postcss@8.2.8
+      autoprefixer: 10.2.5_postcss@8.2.9
       bytes: 3.1.0
       chalk: 4.1.0
       color: 3.1.3
@@ -19023,10 +19078,10 @@ packages:
       modern-normalize: 1.0.0
       node-emoji: 1.10.0
       object-hash: 2.1.1
-      postcss: 8.2.8
+      postcss: 8.2.9
       postcss-functions: 3.0.0
       postcss-js: 3.0.3
-      postcss-nested: 5.0.5_postcss@8.2.8
+      postcss-nested: 5.0.5_postcss@8.2.9
       postcss-selector-parser: 6.0.4
       postcss-value-parser: 4.1.0
       pretty-hrtime: 1.0.3
@@ -21620,6 +21675,10 @@ specifiers:
   '@ckeditor/ckeditor5-vue': ^2.0.1
   '@dbml/core': 2.3.0
   '@emotion/css': 11.1.3
+  '@fullcalendar/core': 5.6.0
+  '@fullcalendar/daygrid': 5.6.0
+  '@fullcalendar/interaction': 5.6.0
+  '@fullcalendar/timegrid': 5.6.0
   '@headlessui/vue': 0.3.0
   '@iconify/json': ^1.1.322
   '@intlify/vite-plugin-vue-i18n': ^2.0.4
@@ -21682,6 +21741,7 @@ specifiers:
   '@vueuse/router': 4.6.2
   '@vueuse/rxjs': 4.6.2
   '@vueuse/sound': 1.1.7
+  '@websanova/vue-upload': 2.1.0
   '@whitespace/storybook-addon-html': ^5.0.0
   autoprefixer: 10.2.5
   aws-s3: ^2.0.5
@@ -21749,7 +21809,7 @@ specifiers:
   particles.vue3: 1.7.2
   path-to-regexp: 6.2.0
   pnpm: 5.18.9
-  postcss: ~8.2.8
+  postcss: ~8.2.9
   postcss-nested: ^5.0.5
   postcss-nesting: ~7.0.1
   prettier: ^2.2.1

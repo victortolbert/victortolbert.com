@@ -4,3 +4,10 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+
+/* PrismJS theme fix */
+pre[class*='language-'] {
+  margin: 0;
+  border-radius: 0;
+  @apply rounded-b-xl bg-gray-800;
+}

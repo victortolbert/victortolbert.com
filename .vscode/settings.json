@@ -1,7 +1,13 @@
 {
+  "git.ignoreLimitWarning": true,
+
+  "prettier.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.tsPlugin": true,
+  "volar.tsPluginStatus": false,
   "i18n-ally.localesPaths": [
     "locales",
     "resources/lang",
     "resources/locales"
-  ]
+  ],
 }

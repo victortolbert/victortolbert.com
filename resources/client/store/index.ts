@@ -1,11 +1,27 @@
 import { createStore } from 'vuex'
 import EventService from '~/services/EventService'
+import { addDays } from 'date-fns'
+
+import upload from './upload'
 
 export default createStore({
+  modules: {
+    upload
+  },
   state: {
     user: 'Adam Jahr',
-    events: [],
-    event: {}
+    // events: [],
+    // event: {},
+    events: [
+      { id: 10, title: 'All day event', date: new Date(), allDay: true },
+      { id: 20, title: 'Timed event', start: addDays(new Date(), 1) },
+      { id: 30, title: 'Timed event', start: addDays(new Date(), 2) }
+    ],
+    weekendsVisible: true
+  },
+  getters: {
+    events: state => state.events,
+    weekendsVisible: state => state.weekendsVisible
   },
   mutations: {
     ADD_EVENT(state, event) {
@@ -19,7 +35,7 @@ export default createStore({
     }
   },
   actions: {
-    createEvent({ commit }, event) {
+    addEvent({ commit }, event) {
       return EventService.postEvent(event)
        .then(() => {
          commit('ADD_EVENT', event)
@@ -50,7 +66,19 @@ export default createStore({
           throw(error)
         })
       }
+    },
+    createEvent ({ commit }, event) {
+      return commit('CREATE_EVENT', event)
+    },
+    updateEvent ({ commit }, updatedEvent) {
+      return commit('UPDATE_EVENT', updatedEvent)
+    },
+    deleteEvent ({ commit }, eventId) {
+      return commit('DELETE_EVENT', eventId)
+    },
+    setweekendsVisible ({ commit }, enabled) {
+      return commit('SET_WEEKENDS_ENABLED', enabled)
     }
   },
-  modules: {}
+
 })

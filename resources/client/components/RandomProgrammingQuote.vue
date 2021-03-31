@@ -16,6 +16,6 @@ const getQuote = async () => {
 <template>
   <div class="prose">
     <p>{{ quote.text}}</p>
-    <button @click="getQuote">Get Quote</button>
+    <button @click="getQuote">Get Random Programming Quote</button>
   </div>
 </template>
