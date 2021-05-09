@@ -1,19 +1,19 @@
 {
-    "button": {
-        "about": "About",
-        "back": "Back",
-        "go": "GO",
-        "home": "Home",
-        "toggle_dark": "Toggle dark mode",
-        "toggle_langs": "Change languages"
-    },
-    "hello": "hello",
-    "intro": {
-        "desc": "Opinionated Vite Starter Template",
-        "dynamic-route": "Dynamic Route",
-        "hi": "Hi, {name}!",
-        "whats-your-name": "What's your name?"
-    },
+  "button": {
+    "about": "About",
+    "back": "Back",
+    "go": "GO",
+    "home": "Home",
+    "toggle_dark": "Toggle dark mode",
+    "toggle_langs": "Change languages"
+  },
+  "hello": "hello",
+  "intro": {
+    "desc": "Opinionated Vite Starter Template",
+    "dynamic-route": "Dynamic Route",
+    "hi": "Hi, {name}!",
+    "whats-your-name": "What's your name?"
+  },
   "English": "English?",
   "Español": "¿Español?",
   "about": "About",
@@ -309,6 +309,7 @@
   "personal_information_description": "Personal Information Description",
   "phone": "Phone",
   "photo": "Photo",
+  "plan": "Plan and Billing",
   "plan_and_billing": "Plan and Billing",
   "popular": "Popular",
   "preview": "Preview",

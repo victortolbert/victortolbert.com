@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <template>
-  <section :class="{'lg:p-8': padded}">
+  <section :class="{ 'p-4 lg:p-8': padded }">
     <slot />
   </section>
 </template>

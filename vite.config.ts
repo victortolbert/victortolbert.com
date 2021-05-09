@@ -35,143 +35,155 @@ import { slugify } from './scripts/slugify'
 import pkg from './package.json'
 
 export default ({ command }) => defineConfig({
-    base: command === 'serve' ? '' : '/build/',
-    publicDir: 'fake_dir_so_nothing_gets_copied',
-    build: {
-        manifest: true,
-        outDir: 'public/build',
-        rollupOptions: {
-            input: 'resources/client/main.ts',
-        },
+  base: command === 'serve' ? '' : '/build/',
+  publicDir: 'fake_dir_so_nothing_gets_copied',
+  build: {
+    manifest: true,
+    outDir: 'public/build',
+    rollupOptions: {
+      input: 'resources/client/main.ts',
     },
-    define: {
-        _APP_VERSION: JSON.stringify(pkg.version),
+  },
+  define: {
+    _APP_VERSION: JSON.stringify(pkg.version),
+  },
+  resolve: {
+    alias: {
+      '~/': `${resolve(__dirname, 'resources/client')}/`,
     },
-    resolve: {
-      alias: {
-        '~/': `${resolve(__dirname, 'resources/client')}/`,
+  },
+  optimizeDeps: {
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+    ],
+    exclude: [
+      'vue-demi',
+    ],
+  },
+  plugins: [
+    Banner(`/**\n * name: ${pkg.name}\n * version: v${pkg.version}\n * description: ${pkg.description}\n * author: ${pkg.author}\n * homepage: ${pkg.homepage}\n */`),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
+    Pages({
+      pagesDir: 'resources/client/pages',
+      extensions: ['vue', 'md'],
+      extendRoute(route, parent) {
+        const path = resolve(__dirname, route.component.slice(1))
+
+        if (!path.includes('projects.md')) {
+          const md = fs.readFileSync(path, 'utf-8')
+          const { data } = matter(md)
+          route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+        }
+
+        if (route.path === '/' || route.path === '/calendar') {
+          // Index is unauthenticated.
+          return route
+        }
+
+        // Augment the route with meta that indicates that the route requires authentication.
+        return {
+          ...route,
+          meta: { requiresAuth: true },
+        }
+      },
+    }),
+    Layouts({
+      layoutsDir: 'resources/client/layouts',
+    }),
+    ViteComponents({
+      dirs: ['resources/client/components'],
+      extensions: ['vue', 'md'],
+      customLoaderMatcher: path => path.endsWith('.md'),
+      customComponentResolvers: [
+        ViteIconsResolver({
+          componentPrefix: '',
+          // enabledCollections: ['carbon']
+        }),
+      ],
+      directoryAsNamespace: true,
+      globalNamespaces: ['global'],
+    }),
+    Markdown({
+      headEnabled: true,
+      wrapperClasses: 'prose prose-sm',
+      markdownItOptions: {
+        html: true,
+        linkify: true,
+        typographer: true,
+      },
+      markdownItSetup(md) {
+        md.use(prism)
+        md.use(anchor, {
+          slugify,
+          permalink: true,
+          permalinkBefore: true,
+          permalinkSymbol: '#',
+          permalinkAttrs: () => ({ 'aria-hidden': true }),
+        })
+        md.use(markdownAttr, {
+          pattern: /^https?:/,
+          attrs: {
+            target: '_blank',
+            rel: 'noopener',
+          },
+        })
+      },
+    }),
+    ViteIcons(),
+    VueI18n({
+      include: [resolve(__dirname, 'locales/**')],
+    }),
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'Victor Tolbert',
+        short_name: 'Vitesse',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: '/pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+    }),
+    SvgLoader(),
+    {
+      name: 'blade',
+      handleHotUpdate({ file, server }) {
+        if (file.endsWith('.blade.php')) {
+          server.ws.send({
+            type: 'full-reload',
+            path: '*',
+          })
+        }
       },
     },
-    optimizeDeps: {
-      include: [
-        'vue',
-        'vue-router',
-        '@vueuse/core',
-      ],
-      exclude: [
-        'vue-demi',
-      ],
-    },
-    plugins: [
-        Banner(`/**\n * name: ${pkg.name}\n * version: v${pkg.version}\n * description: ${pkg.description}\n * author: ${pkg.author}\n * homepage: ${pkg.homepage}\n */`),
-        Vue({
-            include: [/\.vue$/, /\.md$/],
-        }),
-        Pages({
-          pagesDir: 'resources/client/pages',
-          extensions: ['vue', 'md'],
-          extendRoute(route, parent) {
-            const path = resolve(__dirname, route.component.slice(1))
-
-            if (!path.includes('projects.md')) {
-              const md = fs.readFileSync(path, 'utf-8')
-              const { data } = matter(md)
-               route.meta = Object.assign(route.meta || {}, { frontmatter: data })
-            }
-
-            if (route.path === '/') {
-              // Index is unauthenticated.
-              return route
-            }
-
-            // Augment the route with meta that indicates that the route requires authentication.
-            return {
-              ...route,
-              meta: { auth: true },
-            }
-          },
-        }),
-        Layouts(),
-        ViteComponents({
-          dirs: ['resources/client/components'],
-          extensions: ['vue', 'md'],
-          customLoaderMatcher: path => path.endsWith('.md'),
-          customComponentResolvers: [
-            ViteIconsResolver({
-              componentPrefix: '',
-              // enabledCollections: ['carbon']
-            }),
-          ],
-          directoryAsNamespace: true,
-          globalNamespaces: ['global'],
-        }),
-        Markdown({
-          headEnabled: false,
-          wrapperClasses: 'prose prose-sm m-auto text-left',
-          markdownItOptions: {
-            html: true,
-            linkify: true,
-            typographer: true,
-          },
-          markdownItSetup(md) {
-            md.use(prism)
-            md.use(anchor, {
-              slugify,
-              permalink: true,
-              permalinkBefore: true,
-              permalinkSymbol: '#',
-              permalinkAttrs: () => ({ 'aria-hidden': true }),
-            })
-            md.use(markdownAttr, {
-              pattern: /^https?:/,
-              attrs: {
-                target: '_blank',
-                rel: 'noopener',
-              },
-            })
-          },
-        }),
-        ViteIcons(),
-        VueI18n({
-            include: [resolve(__dirname, 'locales/**')],
-        }),
-        VitePWA({
-          registerType: 'autoUpdate',
-          manifest: {
-            name: 'Victor Tolbert',
-            short_name: 'Vitesse',
-            theme_color: '#ffffff',
-            icons: [
-              {
-                src: '/pwa-192x192.png',
-                sizes: '192x192',
-                type: 'image/png',
-              },
-              {
-                src: '/pwa-512x512.png',
-                sizes: '512x512',
-                type: 'image/png',
-              },
-              {
-                src: '/pwa-512x512.png',
-                sizes: '512x512',
-                type: 'image/png',
-                purpose: 'any maskable',
-              },
-            ],
-          },
-        }),
-        SvgLoader(),
-        {
-          name: 'blade',
-          handleHotUpdate({ file, server }) {
-            if (file.endsWith('.blade.php')) {
-              server.ws.send({
-                type: 'full-reload',
-                path: '*',
-              });
-            }
-          },
-        }
-    ],
-});
+  ],
+  // logLevel: 'warn',
+  // server: {
+  //   proxy: {
+  //     '^/mock-api': {
+  //       target: 'http://localhost:5000',
+  //       changeOrigin: true,
+  //       rewrite: (path) => path.replace(/^\/mock-api/, '/')
+  //     },
+  //   },
+  // },
+})

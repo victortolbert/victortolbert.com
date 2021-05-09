@@ -1,5 +1,5 @@
 <template>
-    <PageWrapper>
-        <PageHeading>Admin</PageHeading>
-</PageWrapper>
+  <PageWrapper>
+    <PageHeading>Admin</PageHeading>
+  </PageWrapper>
 </template>

@@ -4,7 +4,10 @@ import { reactive } from 'vue'
 
 const state = reactive({
   actionPlan: {
-    1: { goal: '', method: '', date: '2021-03-30 12:00:00', isComplete: false },
+    1: { goal: 'Goal 1', method: 'My method', date: '2021-03-30 12:00:00', isComplete: false },
+    2: { goal: '', method: '', date: '2021-03-30 12:00:00', isComplete: false },
+    3: { goal: '', method: '', date: '2021-03-30 12:00:00', isComplete: false },
+    4: { goal: '', method: '', date: '2021-03-30 12:00:00', isComplete: false }
   },
   tasks: {
     1: { item: '', completed_at: '2021-03-30 12:00:00' },
@@ -21,18 +24,38 @@ const state = reactive({
 })
 const range = (start, end) => [...Array(1 + end - start).keys()].map(val => start + val)
 const updateTasks = (tasks) => state.tasks = [...tasks]
+const handleSubmit = (event) => console.log(state.actionPlan)
 </script>
-
 <template>
+  <div id="app">
+    <ExampleTabs initial-active-tab="plan">
+      <div :class="$style.section">
+        <ExampleTab id="plan">Plan</ExampleTab>
+        <ExampleTab id="weekly-tasks">Weekly Tasks</ExampleTab>
+        <ExampleTab id="settings">Settings</ExampleTab>
+      </div>
 
-  {{ state.actionPlan }}
+      <div :class="$style.section">
+        <ExampleTabPanel id="plan">
+          <ActionPlanForm />
+        </ExampleTabPanel>
 
-  Weekly Tasks
-  <ol>
-    <li v-for="(task, key) in state.tasks">Week {{key}}: {{ task }}</li>
-  </ol>
+        <ExampleTabPanel id="weekly-tasks">
+          <WeeklyTaskList />
+        </ExampleTabPanel>
 
-  <ol>
-    <li v-for="week in range(1, 10)">Week {{ week }}</li>
-  </ol>
+        <ExampleTabPanel id="settings">
+          Settings content
+        </ExampleTabPanel>
+      </div>
+    </ExampleTabs>
+  </div>
 </template>
+
+<style module>
+.section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+</style>

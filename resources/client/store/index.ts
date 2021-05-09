@@ -9,13 +9,31 @@ export default createStore({
     upload
   },
   state: {
-    user: 'Adam Jahr',
+    menu: {
+      open: false
+    },
+    affiliate: {
+      slug: 'ga-sps',
+      navbar: {
+        topLinks: ['dashboard', 'volunteers', 'calendar', 'resources'],
+        userLinks: ['profile', 'settings'],
+      }
+    },
     // events: [],
     // event: {},
+    user: {
+      name: 'Victor Tolbert',
+      email: 'victor.tolbert@gmail.com',
+      avatarUrl: 'https://cominex.net/assets/img/people/victor.jpeg'
+    },
     events: [
       { id: 10, title: 'All day event', date: new Date(), allDay: true },
       { id: 20, title: 'Timed event', start: addDays(new Date(), 1) },
       { id: 30, title: 'Timed event', start: addDays(new Date(), 2) }
+    ],
+    notifications: [
+      { id: 1, subject: 'Office Closed on July 2', detail: 'Blah',  created_at: '2021-03-31'},
+      { id: 2, subject: 'Office Closed on July 2', detail: 'Blah Blah', created_at: '2021-03-31' },
     ],
     weekendsVisible: true
   },

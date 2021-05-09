@@ -1,0 +1,41 @@
+
+.ema {
+  /* Primary */
+  --color-primary: #da5d3f;
+  --color-primary-50: #fdf7f5;
+  --color-primary-100: #fbefec;
+  --color-primary-200: #f6d7cf;
+  --color-primary-300: #f0beb2;
+  --color-primary-400: #e58e79;
+  --color-primary-500: #da5d3f;
+  --color-primary-600: #c45439;
+  --color-primary-700: #a4462f;
+  --color-primary-800: #833826;
+  --color-primary-900: #6b2e1f;
+
+  /* Secondary */
+  --color-secondary: #003936;
+  --color-secondary-50: #f2f5f5;
+  --color-secondary-100: #e6ebeb;
+  --color-secondary-200: #bfcecd;
+  --color-secondary-300: #99b0af;
+  --color-secondary-400: #4d7472;
+  --color-secondary-500: #003936;
+  --color-secondary-600: #003331;
+  --color-secondary-700: #002b29;
+  --color-secondary-800: #002220;
+  --color-secondary-900: #001c1a;
+
+  /* Tertiary */
+  --color-tertiary: #ffdbd2;
+  --color-tertiary-50: #fffdfd;
+  --color-tertiary-100: #fffbfb;
+  --color-tertiary-200: #fff6f4;
+  --color-tertiary-300: #fff1ed;
+  --color-tertiary-400: #ffe6e0;
+  --color-tertiary-500: #ffdbd2;
+  --color-tertiary-600: #e6c5bd;
+  --color-tertiary-700: #bfa49e;
+  --color-tertiary-800: #99837e;
+  --color-tertiary-900: #7d6b67;
+}

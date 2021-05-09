@@ -1,5 +1,5 @@
 <script lang="ts">
-import {capitalize} from '~/helpers'
+import { capitalize } from '~/helpers'
 
 export default {
   props: {
@@ -241,6 +241,14 @@ export default {
     />
 
     <path
+      v-if="name === 'cloud-upload'"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+    />
+
+    <path
       v-if="name === 'credit-card'"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -329,9 +337,7 @@ export default {
     />
 
     <g v-if="name === 'folder-download'">
-      <path
-        d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
-      />
+      <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
       <path
         stroke="#fff"
         stroke-linecap="round"
@@ -388,12 +394,12 @@ export default {
       stroke-linejoin="round"
       :stroke-width="strokeWidth"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <rect x="3" y="4" width="18" height="16" rx="3"></rect>
-      <circle cx="9" cy="10" r="2"></circle>
-      <line x1="15" y1="8" x2="17" y2="8"></line>
-      <line x1="15" y1="12" x2="17" y2="12"></line>
-      <line x1="7" y1="16" x2="17" y2="16"></line>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <rect x="3" y="4" width="18" height="16" rx="3" />
+      <circle cx="9" cy="10" r="2" />
+      <line x1="15" y1="8" x2="17" y2="8" />
+      <line x1="15" y1="12" x2="17" y2="12" />
+      <line x1="7" y1="16" x2="17" y2="16" />
     </g>
 
     <path
@@ -458,6 +464,22 @@ export default {
       stroke-linejoin="round"
       :stroke-width="strokeWidth"
       d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+    />
+
+    <path
+      v-if="name === 'lock-closed'"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+    />
+
+    <path
+      v-if="name === 'lock-open'"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
     />
 
     <path
@@ -588,8 +610,8 @@ export default {
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M4 19h5v-1a7.35 7.35 0 1 1 6 0v1h5"></path>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 19h5v-1a7.35 7.35 0 1 1 6 0v1h5" />
     </g>
 
     <g v-if="name === 'play'">
@@ -695,9 +717,9 @@ export default {
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-      <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+      <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
     </svg>
 
     <path
@@ -706,6 +728,14 @@ export default {
       stroke-linejoin="round"
       :stroke-width="strokeWidth"
       d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+
+    <path
+      v-if="name === 'server'"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
     />
 
     <path
@@ -724,14 +754,14 @@ export default {
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <line x1="15" y1="6" x2="15.01" y2="6"></line>
-      <rect x="3" y="3" width="18" height="14" rx="3"></rect>
-      <path d="M3 13l4 -4a3 5 0 0 1 3 0l4 4"></path>
-      <path d="M13 12l2 -2a3 5 0 0 1 3 0l3 3"></path>
-      <line x1="8" y1="21" x2="8.01" y2="21"></line>
-      <line x1="12" y1="21" x2="12.01" y2="21"></line>
-      <line x1="16" y1="21" x2="16.01" y2="21"></line>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1="15" y1="6" x2="15.01" y2="6" />
+      <rect x="3" y="3" width="18" height="14" rx="3" />
+      <path d="M3 13l4 -4a3 5 0 0 1 3 0l4 4" />
+      <path d="M13 12l2 -2a3 5 0 0 1 3 0l3 3" />
+      <line x1="8" y1="21" x2="8.01" y2="21" />
+      <line x1="12" y1="21" x2="12.01" y2="21" />
+      <line x1="16" y1="21" x2="16.01" y2="21" />
     </g>
 
     <path

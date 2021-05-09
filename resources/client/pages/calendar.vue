@@ -10,13 +10,13 @@ import interactionPlugin from '@fullcalendar/interaction'
 export default defineComponent({
   computed: {
     ...mapGetters(['events', 'weekendsVisible']),
-    config () {
+    config() {
       return {
         ... this.configOptions,
         ...this.eventHandlers
       }
     },
-    configOptions () {
+    configOptions() {
       return {
         editable: true,
         selectable: true,
@@ -25,15 +25,11 @@ export default defineComponent({
         events: this.events,
         weekends: this.weekendsVisible,
         plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        },
+        headerToolbar: false,
         initialView: 'dayGridMonth'
       }
     },
-    eventHandlers () {
+    eventHandlers() {
       return {
         dateClick: this.onDateClick,
         eventClick: this.onEventClick,
@@ -44,36 +40,35 @@ export default defineComponent({
     }
   },
   methods: {
-    ...mapActions([ 'createEvent', 'updateEvent', 'deleteEvent', 'setweekendsVisible' ]),
-    onDateClick (payload) {
+    ...mapActions(['createEvent', 'updateEvent', 'deleteEvent', 'setweekendsVisible']),
+    onDateClick(payload) {
       const title = prompt('Please enter a new title for your event')
       if (!title) return
       const id = (this.events.length + 1) * 10
       const { start, end, date, allDay } = payload
       return this.createEvent({ id, title, date, start, end, allDay })
     },
-    onDateSelect (payload) {
+    onDateSelect(payload) {
       return this.onDateClick(payload)
     },
-    onEventClick ({ event }) {
+    onEventClick({ event }) {
       const confirmed = confirm(`Are you sure you want to delete the event '${event.title}'?`)
       if (!confirmed) return
       return this.deleteEvent(event.id)
     },
-    onEventDrop ({ event }) {
+    onEventDrop({ event }) {
       return this.updateEvent(event)
     }
   }
 })
 </script>
-
 <template>
   <PageWrapper>
     <PageHeading>Calendar</PageHeading>
 
-    <SectionWrapper class="grid grid-cols-12 gap-8">
-      <div class="col-span-9">
-        <vti-Calendar  :options="config">
+    <SectionWrapper class="p-4 lg:grid lg:grid-cols-12 lg:gap-8">
+      <div class="lg:col-span-9">
+        <vti-Calendar :options="config">
           <template #eventContent="{ timeText, event }">
             <b>{{ timeText }}</b>
             <i>{{ event.title }}</i>
@@ -81,7 +76,7 @@ export default defineComponent({
         </vti-Calendar>
       </div>
 
-      <div class="col-span-3">
+      <div class="lg:col-span-3">
         <vti-CalendarSidebar
           :events="events"
           :weekends-visible="weekendsVisible"

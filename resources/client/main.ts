@@ -3,42 +3,40 @@ import 'vite/dynamic-import-polyfill'
 // import 'prism-theme-vars/themes/vitesse-dark.css'
 
 import { createApp } from 'vue'
-import { createHead  } from '@vueuse/head'
+import { createHead } from '@vueuse/head'
 import { createI18n } from 'vue-i18n'
 import { createRouter, createWebHistory } from 'vue-router'
 // import { createGtm } from 'vue-gtm'
 
 import { RayPlugin } from 'vue-ray'
 import Oruga from '@oruga-ui/oruga-next'
-import VueClickAway from "vue3-click-away"
+import VueClickAway from 'vue3-click-away'
 
-// import router from './router'
 import routes from 'virtual:generated-pages'
+import en from '../locales/en.json'
+import App from './App.vue'
 import http from '~/http'
 import GStore from '~/store/global'
 import store from '~/store'
 import upload from '~/plugins/upload'
 
-// import router      from './router'
-
 import '@oruga-ui/oruga-next/dist/oruga-full-vars.css'
 import 'nprogress/nprogress.css'
 import './assets/css/tailwind.css'
 
-import App from './App.vue'
-import en from '../locales/en.json'
-
 const app = createApp(App)
+
 const router = createRouter({
   routes,
   history: createWebHistory(),
 })
+
 const head = createHead()
 const i18n = createI18n({
   locale: 'en',
   messages: {
     en,
-  }
+  },
 })
 
 // const gtm = createGtm({

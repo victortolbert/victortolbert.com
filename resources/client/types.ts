@@ -20,3 +20,10 @@ export interface TodoItem {
   type: TaskType
   isComplete: boolean
 }
+
+
+// type Scores = {
+//   [key: string]: number;
+// }
+
+export type Scores = Record<string, number>
