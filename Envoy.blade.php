@@ -46,6 +46,7 @@ yarn
 @task('generate_assets', ['on' => 'remote'])
 {{ logMessage("[4/6] 🌅  Generating assets…") }}
 cd {{ $release_dir }}/{{ $release }}
+pnpm build
 @endtask
 
 @task('update_permissions')
