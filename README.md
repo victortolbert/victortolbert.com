@@ -1,5 +1,19 @@
 # victortolbert.com
 
+> [!WARNING]
+> This project is unfinished and heavily a work in progress.
+
+## Todolist
+
+- [ ] Add resume
+
+## Contributing
+
+> [!IMPORTANT]
+>
+> **Please create an issue first before submiting PRs.**
+> So that we can discuss about the directions and plans, to avoid wasted efforts. Thank you!
+
 ## Setup
 
 Make sure to install the dependencies:
