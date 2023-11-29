@@ -1,28 +1,4 @@
-
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "module": "ESNext",
-    "target": "es2016",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "incremental": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": [
-      "vite/client",
-      "vite-svg-loader",
-      "vite-plugin-vue-layouts/client"
-    ],
-    "paths": {
-      "~/*": ["resources/client/*"]
-    }
-  },
-  "exclude": ["public", "dist", "node_modules"]
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json"
 }

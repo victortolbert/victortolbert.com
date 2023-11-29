@@ -1,38 +1,73 @@
-## @victortolbert/victortolbert.com
+# victortolbert.com
 
-## Developer Previews
+## Setup
 
-- <https://main--promise-serves.netlify.app>
-
-## Development / Build setup
+Make sure to install the dependencies:
 
 ```bash
-# install dependencies
-$ yarn install
+# npm
+npm install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# pnpm
+pnpm install
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# yarn
+yarn install
 
-# generate static project
-$ yarn generate
+# bun
+bun install
 ```
 
-## Testing
+## Development Server
+
+Start the development server on `http://localhost:8589`:
 
 ```bash
- # To run the test suite (using Jest for unit tests)
-$ yarn test
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
----
+## Production
 
-## Changelog
+Build the production application:
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+```bash
+# npm
+npm run build
 
----
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
