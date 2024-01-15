@@ -1,0 +1,303 @@
+{
+  "basics": {
+    "name": "Victor Tolbert",
+    "picture": "https://victortolbert.com/avatar.png",
+    "label": "Software Engineer",
+    "headline": "A ship in harbor is safe, but that is not what ships are built for.",
+    "summary": "My name is Victor Tolbert, a ... My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nOutside of programming, I enjoy photography and traveling. I treasure the feeling when capturing wonderful moments and sharing them with people.",
+    "website": "https://victortolbert.com",
+    "projects_url": "https://victortolbert.com/projects",
+    "username": "victortolbert",
+    "email": "victor.tolbert@hey.com",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "victortolbert",
+        "url": "https://github.com/victortolbert"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/victortolbert",
+        "username": "victortolbert"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://twitter.com/victortolbert",
+        "username": "victortolbert"
+      },
+      {
+        "network": "Instagram",
+        "username": "victortolbert",
+        "url": "https://instagram.com/victortolbert"
+      },
+      {
+        "network": "Portfolio",
+        "username": "victortolbert.com",
+        "url": "https://victortolbert.com"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "keywords": [
+        "Javascript",
+        "Vue",
+        "React",
+        "Typescript"
+      ],
+      "level": "Senior",
+      "name": "Frontend"
+    },
+    {
+      "keywords": [
+        "PHP",
+        "Node",
+        "MySQL",
+        "Serverless",
+        "Nginx",
+        "Docker"
+      ],
+      "level": "Senior",
+      "name": "Backend"
+    },
+    {
+      "keywords": [
+        "Android",
+        "Kotlin",
+        "PWA"
+      ],
+      "level": "Intermediate",
+      "name": "Mobile"
+    },
+    {
+      "keywords": [
+        "AWS",
+        "Google Cloud",
+        "Firebase",
+        "Azure"
+      ],
+      "level": "Intermediate",
+      "name": "DevOps"
+    },
+    {
+      "keywords": [
+        "Ruby",
+        "Python"
+      ],
+      "level": "Intermediate",
+      "name": "Languages"
+    }
+  ],
+  "projects": [],
+  "work": [
+    {
+      "company": "Promise 686",
+      "position": "Senior Web Developer",
+      "website": "",
+      "location": "Alpharetta, Georgia USA",
+      "isCurrentRole": true,
+      "startDate": "2021-01-01",
+      "start": {
+        "year": 2020,
+        "month": 12
+      },
+      "end": {},
+      "highlights": [
+        "Vue.js, PHP, Laravel, CodeIgniter"
+      ]
+    },
+    {
+      "company": "Booster Enterprises",
+      "position": "Senior UI / Full-stack Developer",
+      "website": "https://www.boosterthon.com/",
+      "location": "Alpharetta, Georgia USA",
+      "summary": "Designed, developed, and implemented new features and functionalities for core business application used by parents, sponsors, clients, and internal teams",
+      "startDate": "2018-11-01",
+      "endDate": "2020-10-01",
+      "start": {
+        "year": 2020,
+        "month": 10
+      },
+      "end": {
+        "year": 2020,
+        "month": 9
+      },
+      "highlights": [
+        "Participated in the design and development process from definition to deployment",
+        "Worked closely with the design team to ensure consistent UI/UX implementations",
+        "Collaborated with the agile development team and engaged in team meetings",
+        "Assisted team in managing the overall codebase and infrastructure to minimize downtime",
+        "Implemented best practices and helped to create a scalable innovative application",
+        "Tech Stack: HTML5, CSS (TailwindCSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
+      ]
+    },
+    {
+      "company": "Turner Sports, PGA.com",
+      "position": "Senior Software Engineer (Contract)",
+      "website": "",
+      "location": "Atlanta, GA",
+      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features.",
+      "highlights": [
+        "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
+        "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement ",
+        "Troubleshot performance and cross-browser implementation issues for desktop and mobile platforms",
+        "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
+      ],
+      "startDate": "2018-03-01",
+      "endDate": "2018-11-01",
+      "start": {
+        "year": 2020,
+        "month": 6
+      },
+      "end": {
+        "year": 2020,
+        "month": 9
+      }
+    },
+    {
+      "company": "Videa, A Cox Media Group Company",
+      "position": "Senior UI Architect / UX Designer",
+      "website": "",
+      "location": "Atlanta, GA",
+      "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
+      "isCurrentRole": false,
+      "startDate": "2014-07-01",
+      "endDate": "2017-12-01",
+      "start": {
+        "year": 2019,
+        "month": 10
+      },
+      "end": {
+        "year": 2020,
+        "month": 6
+      },
+      "highlights": [
+        "Conceptualized and prototyped new features for core product utilizing Vue.js, Vue Router and Vuex",
+        "Recognized company-wide for individual effort and contribution of a product demo (Vue.js, Nuxt.js) used as a stand-in for the real product at the National Association of Broadcasters (NAB) trade conference",
+        "Created Open Source TVB XML Proposal Viewer utilizing PHP/MySQL and the Laravel Framework",
+        "Served as the sole liaison between visual design, on-site and off-shore engineering teams",
+        "Tech Stack: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (AngularJS, Vue.js, React), Kendo UI "
+      ]
+    },
+    {
+      "company": "AT&T Mobility",
+      "position": "Senior UI Developer / Systems Engineerxx (Contract)",
+      "website": "",
+      "location": "Atlanta, GA",
+      "summary": "",
+      "isCurrentRole": false,
+      "startDate": "2013-03-01",
+      "endDate": "2014-07-01",
+      "start": {
+        "year": 2017,
+        "month": 7
+      },
+      "end": {
+        "year": 2019,
+        "month": 3
+      },
+      "highlights": [
+        "Provided user interface development for a project to integrate the AT&T Locker, Messages and Contacts cloud applications into one unified consumer application suite",
+        "Collaborator and contributor to custom in-house Sass/CSS bootstrapping framework to consistently implement AT&T’s CDLS 2.0 branded styles and flexible components",
+        "Develop middleware services using Java/Groovy based Camel framework",
+        "Tech Stack: Java, JSP, Apache CAML, JavaScript (AngularJS), CSS/Sass"
+      ]
+    },
+    {
+      "company": "WebMD.com",
+      "position": "Web Developer",
+      "website": "https://www.webmd.com",
+      "location": "Atlanta, Georgia",
+      "summary": "",
+      "isCurrentRole": false,
+      "startDate": "2010-08-01",
+      "endDate": "2013-01-01",
+      "start": {
+        "year": 2016,
+        "month": 7
+      },
+      "end": {
+        "year": 2016,
+        "month": 9
+      },
+      "highlights": [
+        "Team lead for key revenue generating products and initiatives",
+        "Hand-coded and documented modular website components using object-oriented native JavaScript and jQuery",
+        "Converted a Flash-based widget for iPhone/iPad compatibility using HTML5, CSS3 animations and JavaScript",
+        "Mentored and on-boarded new team members",
+        "Received a “Star” award for outstanding teamwork",
+        "JavaScript (jQuery), CSS3 (Sass/Compass), HTML5, XSL/XSLT, Documentum, WordPress, Endeca WebStudio, Git, Github Enterprise"
+      ]
+    },
+    {
+      "company": "AutoTrader.com",
+      "position": "User Interface Engineer",
+      "website": "",
+      "location": "Atlanta, Georgia",
+      "summary": "",
+      "isCurrentRole": false,
+      "startDate": "2005-07-01",
+      "endDate": "2010-08-01",
+      "start": {
+        "year": 2016,
+        "month": 7
+      },
+      "end": {
+        "year": 2016,
+        "month": 9
+      },
+      "highlights": [
+        "Rapidly prototyped the vehicle compare tool user interface for usability testing",
+        "Presented and demo’d prototype to an audience including the CEO, CFO and CIO",
+        "Received a company-wide monthly “Top Techie” award multiple times",
+        "HTML, CSS, JavaScript (Prototype/Scriptaculous), JAVA (JSP, JSTL, JSF), CVS, Subversion, Rhythmyx"
+      ]
+    }
+  ],
+  "publications": [],
+  "education": [
+    {
+      "institution": "General Assembly, Atlanta GA",
+      "area": "Product Development Bootcamp",
+      "studyType": "Corporate Training",
+      "startDate": "2019-09-01",
+      "endDate": "2019-09-01",
+      "start": {
+        "year": 2019,
+        "month": 9
+      },
+      "end": {
+        "year": 2021,
+        "month": 6
+      },
+      "description": "",
+      "activities": "",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Morehouse College, Atlanta, GA",
+      "area": "Business Administration",
+      "studyType": "Bachelor of Arts",
+      "startDate": "1983-10-01",
+      "endDate": "1987-06-01",
+      "start": {
+        "year": 1983,
+        "month": 9
+      },
+      "end": {
+        "year": 1987,
+        "month": 5
+      },
+      "description": "",
+      "activities": "",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "volunteer": [],
+  "awards": [],
+  "languages": [],
+  "interests": [],
+  "references": []
+}
