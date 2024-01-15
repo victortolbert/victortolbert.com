@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  extends: ['@nuxt/ui-pro'],
+
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
@@ -17,9 +19,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  colorMode: {
-    classSuffix: '',
-  },
+
   content: {
     highlight: {
       theme: {
@@ -33,17 +33,49 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   devServer: {
     port: 8589,
   },
+
   devtools: { enabled: true },
+
+  fontMetrics: {
+    fonts: ['DM Sans'],
+  },
+
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      'DM+Sans': [400, 500, 600, 700],
+    },
+  },
+
+  hooks: {
+    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
+    'components:extend': (components) => {
+      const globals = components.filter(c => ['UButton'].includes(c.pascalName))
+
+      globals.forEach(c => c.global = true)
+    },
+  },
+
   modules: [
     '@vueuse/nuxt',
-    '@unocss/nuxt',
     '@nuxt/content',
-    '@nuxtjs/color-mode',
+    '@nuxt/ui',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
     '@pinia/nuxt',
   ],
+
+  typescript: { strict: false },
+
+  ui: {
+    icons: ['heroicons', 'simple-icons', 'ph'],
+  },
+
   vite: {
     build: {
       minify: 'esbuild',

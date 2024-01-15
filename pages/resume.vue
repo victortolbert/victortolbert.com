@@ -1,5 +1,7 @@
 <script setup lang="ts">
 // https://github.com/buk0vec/jcv
+import type { Resume } from '~/schema'
+
 const formatter = ref('YYYY')
 const showWorkLocation = ref(false)
 
@@ -27,16 +29,25 @@ const { data: resume } = await useAsyncData(
           <h1 class="text-2xl font-bold">
             {{ resume?.basics.name }}
           </h1>
-          <p class="text-pretty max-w-md text-sm font-mono text-muted-foreground">
+          <p class="text-pretty text-muted-foreground max-w-md text-sm font-mono">
             {{ resume?.basics.label }}
           </p>
-          <p class="text-pretty max-w-md items-center text-xs font-mono text-muted-foreground">
+          <p class="text-pretty text-muted-foreground max-w-md items-center text-xs font-mono">
             <span class="inline-flex gap-x-1.5 align-baseline leading-none">
-              <div class="i-ph-globe-simple-duotone text-xs" />
+              <UIcon name="i-ph-globe-simple-duotone" />
               {{ resume?.basics.location.city }},
               {{ resume?.basics.location.region }}
             </span>
           </p>
+          <div class="text-muted-foreground flex gap-x-1 pt-1 text-sm font-mono print:hidden">
+            <UButton
+              color="gray"
+              variant="outline"
+              :to="`mailto:${resume?.basics.email}`"
+              icon="i-ph-envelope-duotone"
+            />
+            <UButton v-for="social in resume?.basics.profiles" :key="social.network" variant="outline" color="gray" :to="social.url" icon="i-ph-github-logo-duotone" />
+          </div>
         </div>
         <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
           <img class="aspect-square h-full w-full" :src="resume?.basics.image" alt="Victor Tolbert">
@@ -47,7 +58,7 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           About
         </h2>
-        <p class="text-pretty text-sm font-mono text-muted-foreground">
+        <p class="text-pretty text-muted-foreground text-sm font-mono">
           {{ resume?.basics.summary }}
         </p>
       </section>
@@ -56,7 +67,7 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           Work Experience
         </h2>
-        <div v-for="work in resume?.work" :key="work.startDate" class="rounded-lg bg-card text-card-foreground">
+        <div v-for="work in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -71,7 +82,7 @@ const { data: resume } = await useAsyncData(
               {{ work.position }}
             </h4>
           </div>
-          <div class="text-pretty mt-2 text-xs font-mono text-muted-foreground">
+          <div class="text-pretty text-muted-foreground mt-2 text-xs font-mono">
             {{ work.summary }}
             <ul class="ml-3 mt-2 list-disc list-outside">
               <li v-for="(highlight, i) in work.highlights" :key="i">
@@ -86,12 +97,35 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           Education
         </h2>
-        <ul>
-          <li v-for="study in resume?.education" :key="study.area" class="flex justify-between">
-            <span>{{ study.institution }} {{ study.studyType }} </span>
-            <span>{{ study.endDate }}</span>
-          </li>
-        </ul>
+        <div v-for="study in resume?.education" :key="study.area" class="rounded-lg bg-card text-card-foreground">
+          <div class="flex flex-col space-y-1.5">
+            <div class="flex items-center justify-between gap-x-2 text-base">
+              <h3 class="font-semibold leading-none">
+                {{ study.institution }}
+              </h3>
+              <div class="text-sm tabular-nums text-gray-500">
+                {{ formatDate(study.startDate) }} - {{ formatDate(study.endDate) }}
+              </div>
+            </div>
+          </div>
+          <div class="text-pretty font-mono text-sm text-muted-foreground mt-2">
+            <div>{{ study.studyType }}, {{ study.area }}</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex min-h-0 flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          Skills
+        </h2>
+        <div class="flex flex-wrap gap-1" />
+      </section>
+
+      <section class="flex min-h-0 flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          References
+        </h2>
+        <div class="flex flex-wrap gap-1" />
       </section>
     </main>
   </div>
