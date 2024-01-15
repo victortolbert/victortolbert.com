@@ -1,127 +1,51 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Victor Tolbert",
-    "picture": "https://victortolbert.com/avatar.png",
     "label": "Software Engineer",
-    "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "My name is Victor Tolbert, a ... My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nOutside of programming, I enjoy photography and traveling. I treasure the feeling when capturing wonderful moments and sharing them with people.",
-    "website": "https://victortolbert.com",
-    "projects_url": "https://victortolbert.com/projects",
-    "username": "victortolbert",
-    "email": "victor.tolbert@hey.com",
+    "image": "https://avatars.githubusercontent.com/u/2476?v=4",
+    "email": "victor.tolbert@gmail.com",
+    "phone": "(678) 613-3400",
+    "url": "https://victortolbert.com",
+    "summary": "I'm a full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "location": {
+      "address": "1547 Boulder Walk Drive",
+      "postalCode": "30316",
+      "city": "Atlanta",
+      "countryCode": "US",
+      "region": "Georgia"
+    },
     "profiles": [
       {
         "network": "GitHub",
         "username": "victortolbert",
         "url": "https://github.com/victortolbert"
-      },
-      {
-        "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/victortolbert",
-        "username": "victortolbert"
-      },
-      {
-        "network": "Twitter",
-        "url": "https://twitter.com/victortolbert",
-        "username": "victortolbert"
-      },
-      {
-        "network": "Instagram",
-        "username": "victortolbert",
-        "url": "https://instagram.com/victortolbert"
-      },
-      {
-        "network": "Portfolio",
-        "username": "victortolbert.com",
-        "url": "https://victortolbert.com"
       }
     ]
   },
-  "skills": [
-    {
-      "keywords": [
-        "Javascript",
-        "Vue",
-        "React",
-        "Typescript"
-      ],
-      "level": "Senior",
-      "name": "Frontend"
-    },
-    {
-      "keywords": [
-        "PHP",
-        "Node",
-        "MySQL",
-        "Serverless",
-        "Nginx",
-        "Docker"
-      ],
-      "level": "Senior",
-      "name": "Backend"
-    },
-    {
-      "keywords": [
-        "Android",
-        "Kotlin",
-        "PWA"
-      ],
-      "level": "Intermediate",
-      "name": "Mobile"
-    },
-    {
-      "keywords": [
-        "AWS",
-        "Google Cloud",
-        "Firebase",
-        "Azure"
-      ],
-      "level": "Intermediate",
-      "name": "DevOps"
-    },
-    {
-      "keywords": [
-        "Ruby",
-        "Python"
-      ],
-      "level": "Intermediate",
-      "name": "Languages"
-    }
-  ],
-  "projects": [],
   "work": [
     {
-      "company": "Promise 686",
-      "position": "Senior Web Developer",
-      "website": "",
+      "name": "Hancock Claims Consultants",
       "location": "Alpharetta, Georgia USA",
-      "isCurrentRole": true,
-      "startDate": "2021-01-01",
-      "start": {
-        "year": 2020,
-        "month": 12
-      },
-      "end": {},
+      "description": "",
+      "position": "Senior Software Engineer",
+      "url": "https://hancockclaims.com",
+      "startDate": "2021-05-21",
+      "endDate": "2024-01-09",
+      "summary": "",
       "highlights": [
         "Vue.js, PHP, Laravel, CodeIgniter"
       ]
     },
     {
-      "company": "Booster Enterprises",
-      "position": "Senior UI / Full-stack Developer",
-      "website": "https://www.boosterthon.com/",
+      "name": "Booster Enterprises",
       "location": "Alpharetta, Georgia USA",
-      "summary": "Designed, developed, and implemented new features and functionalities for core business application used by parents, sponsors, clients, and internal teams",
+      "description": "",
+      "position": "Senior UI / Full-stack Developer",
+      "url": "https://www.boosterthon.com/",
       "startDate": "2018-11-01",
       "endDate": "2020-10-01",
-      "start": {
-        "year": 2020,
-        "month": 10
-      },
-      "end": {
-        "year": 2020,
-        "month": 9
-      },
+      "summary": "Designed, developed, and implemented new features and functionalities for core business application used by parents, sponsors, clients, and internal teams",
       "highlights": [
         "Participated in the design and development process from definition to deployment",
         "Worked closely with the design team to ensure consistent UI/UX implementations",
@@ -132,45 +56,28 @@
       ]
     },
     {
-      "company": "Turner Sports, PGA.com",
-      "position": "Senior Software Engineer (Contract)",
-      "website": "",
+      "name": "Turner Sports, PGA.com",
       "location": "Atlanta, GA",
+      "position": "Senior Software Engineer (Contract)",
+      "url": "https://www.pgatour.com/",
+      "startDate": "2018-03-01",
+      "endDate": "2018-11-01",
       "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features.",
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
         "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement ",
         "Troubleshot performance and cross-browser implementation issues for desktop and mobile platforms",
         "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
-      ],
-      "startDate": "2018-03-01",
-      "endDate": "2018-11-01",
-      "start": {
-        "year": 2020,
-        "month": 6
-      },
-      "end": {
-        "year": 2020,
-        "month": 9
-      }
+      ]
     },
     {
-      "company": "Videa, A Cox Media Group Company",
-      "position": "Senior UI Architect / UX Designer",
-      "website": "",
+      "name": "Videa, A Cox Media Group Company",
       "location": "Atlanta, GA",
-      "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
-      "isCurrentRole": false,
+      "position": "Senior UI Architect / UX Designer",
+      "url": "https://coxmediagroup.com",
       "startDate": "2014-07-01",
       "endDate": "2017-12-01",
-      "start": {
-        "year": 2019,
-        "month": 10
-      },
-      "end": {
-        "year": 2020,
-        "month": 6
-      },
+      "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
       "highlights": [
         "Conceptualized and prototyped new features for core product utilizing Vue.js, Vue Router and Vuex",
         "Recognized company-wide for individual effort and contribution of a product demo (Vue.js, Nuxt.js) used as a stand-in for the real product at the National Association of Broadcasters (NAB) trade conference",
@@ -180,22 +87,13 @@
       ]
     },
     {
-      "company": "AT&T Mobility",
-      "position": "Senior UI Developer / Systems Engineerxx (Contract)",
-      "website": "",
+      "name": "AT&T Mobility",
       "location": "Atlanta, GA",
-      "summary": "",
-      "isCurrentRole": false,
+      "position": "Senior UI Developer / Systems Engineerxx (Contract)",
+      "url": "https://www.att.com",
       "startDate": "2013-03-01",
       "endDate": "2014-07-01",
-      "start": {
-        "year": 2017,
-        "month": 7
-      },
-      "end": {
-        "year": 2019,
-        "month": 3
-      },
+      "summary": "",
       "highlights": [
         "Provided user interface development for a project to integrate the AT&T Locker, Messages and Contacts cloud applications into one unified consumer application suite",
         "Collaborator and contributor to custom in-house Sass/CSS bootstrapping framework to consistently implement AT&T’s CDLS 2.0 branded styles and flexible components",
@@ -204,22 +102,13 @@
       ]
     },
     {
-      "company": "WebMD.com",
-      "position": "Web Developer",
-      "website": "https://www.webmd.com",
+      "name": "WebMD.com",
       "location": "Atlanta, Georgia",
-      "summary": "",
-      "isCurrentRole": false,
+      "position": "Web Developer",
+      "url": "https://www.webmd.com",
       "startDate": "2010-08-01",
       "endDate": "2013-01-01",
-      "start": {
-        "year": 2016,
-        "month": 7
-      },
-      "end": {
-        "year": 2016,
-        "month": 9
-      },
+      "summary": "",
       "highlights": [
         "Team lead for key revenue generating products and initiatives",
         "Hand-coded and documented modular website components using object-oriented native JavaScript and jQuery",
@@ -230,22 +119,13 @@
       ]
     },
     {
-      "company": "AutoTrader.com",
-      "position": "User Interface Engineer",
-      "website": "",
+      "name": "AutoTrader.com",
       "location": "Atlanta, Georgia",
-      "summary": "",
-      "isCurrentRole": false,
+      "position": "User Interface Engineer",
+      "url": "https://www.autotrader.com",
       "startDate": "2005-07-01",
       "endDate": "2010-08-01",
-      "start": {
-        "year": 2016,
-        "month": 7
-      },
-      "end": {
-        "year": 2016,
-        "month": 9
-      },
+      "summary": "",
       "highlights": [
         "Rapidly prototyped the vehicle compare tool user interface for usability testing",
         "Presented and demo’d prototype to an audience including the CEO, CFO and CIO",
@@ -254,50 +134,112 @@
       ]
     }
   ],
-  "publications": [],
+  "volunteer": [],
   "education": [
     {
       "institution": "General Assembly, Atlanta GA",
+      "url": "https://generalassemb.ly",
       "area": "Product Development Bootcamp",
       "studyType": "Corporate Training",
       "startDate": "2019-09-01",
       "endDate": "2019-09-01",
-      "start": {
-        "year": 2019,
-        "month": 9
-      },
-      "end": {
-        "year": 2021,
-        "month": 6
-      },
-      "description": "",
-      "activities": "",
-      "gpa": "",
+      "score": "",
       "courses": []
     },
     {
       "institution": "Morehouse College, Atlanta, GA",
+      "url": "https://www.morehouse.edu",
       "area": "Business Administration",
       "studyType": "Bachelor of Arts",
       "startDate": "1983-10-01",
       "endDate": "1987-06-01",
-      "start": {
-        "year": 1983,
-        "month": 9
-      },
-      "end": {
-        "year": 1987,
-        "month": 5
-      },
-      "description": "",
-      "activities": "",
-      "gpa": "",
+      "score": "",
       "courses": []
     }
   ],
-  "volunteer": [],
   "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Senior",
+      "keywords": [
+        "JavaScript",
+        "Vue.js",
+        "React",
+        "Angular",
+        "jQuery",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Bootstrap",
+        "TailwindCSS",
+        "Bulma",
+        "BEM",
+        "Responsive Design",
+        "Progressive Web Apps",
+        "Web Components",
+        "Web Accessibility",
+        "SEO"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Senior",
+      "keywords": [
+        "PHP",
+        "Laravel",
+        "CodeIgniter",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "MongoDB",
+        "Serverless",
+        "Nginx",
+        "Docker",
+        "RESTful APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": [
+        "AWS",
+        "Google Cloud",
+        "Firebase",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "Intermediate",
+      "keywords": [
+        "C#",
+        "JavaScript",
+        "Ruby",
+        "Python"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
-  "references": []
+  "interests": [
+    {
+      "name": "Product Development",
+      "keywords": [
+        "User Experience Design",
+        "User Interface Engineering",
+        "Information Architecture",
+        "Design Systems"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "canonical": "https://victortolbert.com/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2021-09-01T00:00:00.000Z"
+  }
 }

@@ -8,6 +8,9 @@
 ## Todolist
 
 - [ ] Add resume
+- [ ] Write a short 2-3 sentence biography
+- [ ] Update online profile photo
+- [ ] An overview of my responsibilities each company
 
 ## Contributing
 

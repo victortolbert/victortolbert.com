@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// import { useDateFormat, useNow } from '@vueuse/core'
+const formatter = ref('YYYY')
+const showWorkLocation = ref(false)
 // https://github.com/buk0vec/jcv
 definePageMeta({
   title: 'Resume',
@@ -55,6 +58,10 @@ interface Resume {
   }[]
 }
 
+function formatDate(date: string) {
+  return useDateFormat(date, formatter).value
+}
+
 const { data: resume } = await useAsyncData(
   'home',
   () => queryContent('/resume').findOne(),
@@ -62,60 +69,79 @@ const { data: resume } = await useAsyncData(
 </script>
 
 <template>
-  <UArticle class="mt-8">
-    <UContainer>
-      <div class="max-w-3xl prose">
-        <!-- <h2> -->
-        <!-- , {{ resume.basics.label }} -->
-        <!-- </h2> -->
-        <!-- <address>
-            {{ resume.basics.location.address }}<br>
-            {{ resume.basics.location.city }}
-            {{ resume.basics.location.region }}
-            {{ resume.basics.location.postalCode }}
-            {{ resume.basics.location.countryCode }}
-          </address> -->
-
-        <div>
-          <span class="text-lg font-bold">{{ resume?.basics.name }}</span><br>
-          <NuxtLink :to="resume?.basics.url">
-            {{ resume?.basics.url }}
-          </NuxtLink>
+  <div class="relative mx-auto scroll-my-12 overflow-auto p-4 container md:p-16 print:p-12">
+    <main class="mx-auto max-w-2xl w-full space-y-8 print:space-y-6">
+      <div class="flex items-center justify-between">
+        <div class="flex-1 space-y-1.5">
+          <h1 class="text-2xl font-bold">
+            {{ resume?.basics.name }}
+          </h1>
+          <p class="text-pretty text-muted-foreground max-w-md text-sm font-mono">
+            {{ resume?.basics.label }}
+          </p>
+          <p class="text-pretty text-muted-foreground max-w-md items-center text-xs font-mono">
+            <span class="inline-flex gap-x-1.5 align-baseline leading-none">
+              <div class="i-ph-globe-simple-duotone text-xs" />
+              {{ resume?.basics.location.city }},
+              {{ resume?.basics.location.region }}
+            </span>
+          </p>
         </div>
+        <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
+          <img class="aspect-square h-full w-full" :src="resume?.basics.image" alt="Victor Tolbert">
+        </span>
+      </div>
 
-        <!-- <div class="mt-8">
-          {{ resume.basics.summary }}
-        </div>
+      <section class="min-h-0 flex flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          About
+        </h2>
+        <p class="text-pretty text-muted-foreground text-sm font-mono">
+          {{ resume?.basics.summary }}
+        </p>
+      </section>
 
-        <h3>Experience</h3>
-
-        <ul>
-          <li v-for="job in resume.work" :key="job.startDate">
-            {{ job.name }}
-            {{ job.location }}
-            {{ job.position }}
-            {{ job.startDate }}
-            {{ job.description }}
-            {{ job.summary }}
-            <ul>
-              <li v-for="(highlight, i) in job.highlights" :key="i" />
+      <section class="min-h-0 flex flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          Work Experience
+        </h2>
+        <div v-for="work in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
+          <div class="flex flex-col space-y-1.5">
+            <div class="flex items-center justify-between gap-x-2 text-base">
+              <h3 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                <a class="hover:underline"> {{ work.name }}</a>
+                <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
+              </h3>
+              <div class="text-sm tabular-nums text-gray-500">
+                {{ formatDate(work.startDate) }} - {{ formatDate(work.endDate) }}
+              </div>
+            </div>
+            <h4 class="text-sm leading-none font-mono">
+              {{ work.position }}
+            </h4>
+          </div>
+          <div class="text-pretty text-muted-foreground mt-2 text-xs font-mono">
+            {{ work.summary }}
+            <ul class="ml-3 mt-2 list-disc list-outside">
+              <li v-for="(highlight, i) in work.highlights" :key="i">
+                {{ highlight }}
+              </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
+      </section>
 
-        <h3>Education</h3>
+      <section class="min-h-0 flex flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          Education
+        </h2>
         <ul>
-          <li v-for="study in resume.education" :key="study.area" class="flex justify-between">
+          <li v-for="study in resume?.education" :key="study.area" class="flex justify-between">
             <span>{{ study.institution }} {{ study.studyType }} </span>
             <span>{{ study.endDate }}</span>
           </li>
         </ul>
-      </div> -->
-
-        <!-- <pre>
-          {{ resume }}
-      </pre> -->
-      </div>
-    </UContainer>
-  </UArticle>
+      </section>
+    </main>
+  </div>
 </template>
