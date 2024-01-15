@@ -32,9 +32,12 @@
       "url": "https://hancockclaims.com",
       "startDate": "2021-05-21",
       "endDate": "2024-01-09",
-      "summary": "",
+      "summary": "Provided user interface engineering subject matter expertise and technical leadership for the development of a new web-based claims management system and property inspection mobile-friendly web applications",
       "highlights": [
-        "Vue.js, PHP, Laravel, CodeIgniter"
+        "Lead developer responsible for implementing payment features using the Authorize.net API, converting manual payment processes to automated processes",
+        "Converted .NET legacy application to a modern MPA using ASP.NET Core MVC, Vue.js, TypeScript and TailwindCSS",
+        "Gained knowledge of the Microsoft Azure cloud platform and services including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage,  and Azure Application Insights",
+        "Tech Stack: ASP.NET Core MVC, Vue.js, TypeScript, TailwindCSS, Bootstrap, jQuery, AJAX, SQL Server, Git, Github, Azure DevOps"
       ]
     },
     {
@@ -66,6 +69,7 @@
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
         "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement ",
+        "Spearheaded the standardization of front-end development processes and best practices",
         "Troubleshot performance and cross-browser implementation issues for desktop and mobile platforms",
         "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
       ]

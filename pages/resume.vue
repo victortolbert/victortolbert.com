@@ -1,62 +1,13 @@
 <script setup lang="ts">
-// import { useDateFormat, useNow } from '@vueuse/core'
+// https://github.com/buk0vec/jcv
 const formatter = ref('YYYY')
 const showWorkLocation = ref(false)
-// https://github.com/buk0vec/jcv
+
 definePageMeta({
   title: 'Resume',
   breadcrumb: 'Resume',
   // layout: false,
 })
-
-interface Resume {
-  basics: {
-    name: string
-    label: string
-    url: string
-    location: {
-      address: string
-      city: string
-      region: string
-      postalCode: string
-      countryCode: string
-    }
-    summary: string
-  }
-  work: {
-    name: string
-    location: string
-    position: string
-    startDate: string
-    endDate: string
-    description: string
-    summary: string
-    highlights: string[]
-  }[]
-  education: {
-    institution: string
-    studyType: string
-    endDate: string
-    area: string
-  }[]
-  skills: {
-    name: string
-    level: string
-    keywords: string[]
-  }[]
-  languages: {
-    language: string
-    fluency: string
-  }[]
-  interests: {
-    name: string
-    keywords: string[]
-  }[]
-  references: {
-    name: string
-    reference: string
-  }[]
-}
 
 function formatDate(date: string) {
   return useDateFormat(date, formatter).value
@@ -76,10 +27,10 @@ const { data: resume } = await useAsyncData(
           <h1 class="text-2xl font-bold">
             {{ resume?.basics.name }}
           </h1>
-          <p class="text-pretty text-muted-foreground max-w-md text-sm font-mono">
+          <p class="text-pretty max-w-md text-sm font-mono text-muted-foreground">
             {{ resume?.basics.label }}
           </p>
-          <p class="text-pretty text-muted-foreground max-w-md items-center text-xs font-mono">
+          <p class="text-pretty max-w-md items-center text-xs font-mono text-muted-foreground">
             <span class="inline-flex gap-x-1.5 align-baseline leading-none">
               <div class="i-ph-globe-simple-duotone text-xs" />
               {{ resume?.basics.location.city }},
@@ -96,7 +47,7 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           About
         </h2>
-        <p class="text-pretty text-muted-foreground text-sm font-mono">
+        <p class="text-pretty text-sm font-mono text-muted-foreground">
           {{ resume?.basics.summary }}
         </p>
       </section>
@@ -105,7 +56,7 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           Work Experience
         </h2>
-        <div v-for="work in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
+        <div v-for="work in resume?.work" :key="work.startDate" class="rounded-lg bg-card text-card-foreground">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -120,7 +71,7 @@ const { data: resume } = await useAsyncData(
               {{ work.position }}
             </h4>
           </div>
-          <div class="text-pretty text-muted-foreground mt-2 text-xs font-mono">
+          <div class="text-pretty mt-2 text-xs font-mono text-muted-foreground">
             {{ work.summary }}
             <ul class="ml-3 mt-2 list-disc list-outside">
               <li v-for="(highlight, i) in work.highlights" :key="i">
