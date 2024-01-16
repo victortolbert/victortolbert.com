@@ -47,11 +47,12 @@
       "url": "https://hancockclaims.com",
       "startDate": "2021-05-21",
       "endDate": "2024-01-09",
-      "summary": "Provided user interface engineering subject matter expertise and technical leadership for the development of a new web-based claims management system and property inspection mobile-friendly web applications",
+      "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a new web-based claims management system and mobile-friendly property inspection web applications",
       "highlights": [
-        "Lead developer responsible for implementing payment features using the Authorize.net API, converting manual payment processes to automated processes",
-        "Converted .NET legacy application to a modern MPA using ASP.NET Core MVC, Vue.js, TypeScript and TailwindCSS",
-        "Gained knowledge of the Microsoft Azure cloud platform and services including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage,  and Azure Application Insights",
+        "Led the development of payment features using the Authorize.net API, streamlining manual payment processes into automated workflows",
+        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core MVC, Vue.js, TypeScript, and TailwindCSS",
+        "Spearheaded the standardization of front-end development processes and best practices",
+        "Gained comprehensive knowledge of Microsoft Azure, including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage, and Azure Application Insights",
         "Tech Stack: ASP.NET Core MVC, Vue.js, TypeScript, TailwindCSS, Bootstrap, jQuery, AJAX, SQL Server, Git, Github, Azure DevOps"
       ]
     },
@@ -63,13 +64,13 @@
       "url": "https://www.boosterthon.com/",
       "startDate": "2018-11-01",
       "endDate": "2020-10-01",
-      "summary": "Designed, developed, and implemented new features and functionalities for core business application used by parents, sponsors, clients, and internal teams",
+      "summary": "Designed, developed, and implemented new features for a core business application used by parents, sponsors, clients, and internal teams",
       "highlights": [
         "Participated in the design and development process from definition to deployment",
-        "Worked closely with the design team to ensure consistent UI/UX implementations",
-        "Collaborated with the agile development team and engaged in team meetings",
+        "Collaborated closely with the design team to ensure consistent UI/UX implementations.",
+        "Actively participated in the agile development team and engaged in team meetings, contributing to efficient codebase management and infrastructure",
         "Assisted team in managing the overall codebase and infrastructure to minimize downtime",
-        "Implemented best practices and helped to create a scalable innovative application",
+        "Implemented best practices to create a scalable and innovative application.",
         "Tech Stack: HTML5, CSS (TailwindCSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
       ]
     },
@@ -84,8 +85,7 @@
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
         "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement ",
-        "Spearheaded the standardization of front-end development processes and best practices",
-        "Troubleshot performance and cross-browser implementation issues for desktop and mobile platforms",
+        "Troubleshot performance and cross-browser issues for desktop and mobile platforms",
         "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
       ]
     },
@@ -98,9 +98,9 @@
       "endDate": "2017-12-01",
       "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
       "highlights": [
-        "Conceptualized and prototyped new features for core product utilizing Vue.js, Vue Router and Vuex",
-        "Recognized company-wide for individual effort and contribution of a product demo (Vue.js, Nuxt.js) used as a stand-in for the real product at the National Association of Broadcasters (NAB) trade conference",
-        "Created Open Source TVB XML Proposal Viewer utilizing PHP/MySQL and the Laravel Framework",
+        "Conceptualized and prototyped new features for the core product utilizing Vue.js, Vue Router, and Vuex",
+        "Recognized company-wide for contributions, including a product demo used at the National Association of Broadcasters (NAB) trade conference",
+        "Created an Open Source TVB XML Proposal Viewer utilizing PHP/MySQL and the Laravel Framework",
         "Served as the sole liaison between visual design, on-site and off-shore engineering teams",
         "Tech Stack: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (AngularJS, Vue.js, React), Kendo UI "
       ]
@@ -114,9 +114,9 @@
       "endDate": "2014-07-01",
       "summary": "",
       "highlights": [
-        "Provided user interface development for a project to integrate the AT&T Locker, Messages and Contacts cloud applications into one unified consumer application suite",
-        "Collaborator and contributor to custom in-house Sass/CSS bootstrapping framework to consistently implement AT&T’s CDLS 2.0 branded styles and flexible components",
-        "Develop middleware services using Java/Groovy based Camel framework",
+        "Provided user interface development for integrating AT&T Locker, Messages, and Contacts cloud applications into a unified consumer application suite",
+        "Collaborated in developing a custom in-house Sass/CSS bootstrapping framework to ensure consistent implementation of AT&T’s CDLS 2.0 branded styles and components",
+        "Developed middleware services using Java/Groovy based Camel framework",
         "Tech Stack: Java, JSP, Apache CAML, JavaScript (AngularJS), CSS/Sass"
       ]
     },
@@ -129,12 +129,12 @@
       "endDate": "2013-01-01",
       "summary": "",
       "highlights": [
-        "Team lead for key revenue generating products and initiatives",
+        "Led key revenue-generating product initiatives and mentored team members",
         "Hand-coded and documented modular website components using object-oriented native JavaScript and jQuery",
-        "Converted a Flash-based widget for iPhone/iPad compatibility using HTML5, CSS3 animations and JavaScript",
+        "Converted a Flash-based widget for iPhone/iPad compatibility using HTML5, CSS3 animations, and JavaScript",
         "Mentored and on-boarded new team members",
         "Received a “Star” award for outstanding teamwork",
-        "JavaScript (jQuery), CSS3 (Sass/Compass), HTML5, XSL/XSLT, Documentum, WordPress, Endeca WebStudio, Git, Github Enterprise"
+        "Tech Stack: JavaScript (jQuery), CSS3 (Sass/Compass), HTML5, XSL/XSLT, Documentum, WordPress, Endeca WebStudio, Git, Github Enterprise"
       ]
     },
     {
@@ -147,9 +147,8 @@
       "summary": "",
       "highlights": [
         "Rapidly prototyped the vehicle compare tool user interface for usability testing",
-        "Presented and demo’d prototype to an audience including the CEO, CFO and CIO",
-        "Received a company-wide monthly “Top Techie” award multiple times",
-        "HTML, CSS, JavaScript (Prototype/Scriptaculous), JAVA (JSP, JSTL, JSF), CVS, Subversion, Rhythmyx"
+        "Presented and demonstrated prototypes to top-level executives, receiving the company-wide monthly \"Top Techie\" award multiple times",
+        "Tech Stack: HTML, CSS, JavaScript (Prototype/Scriptaculous), JAVA (JSP, JSTL, JSF), CVS, Subversion, Rhythmyx"
       ]
     }
   ],
