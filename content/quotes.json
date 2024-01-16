@@ -1,0 +1,68 @@
+{
+  "body": [
+    {
+      "id": 1,
+      "text": "A goal should scare you a little and excite you a lot.",
+      "attribution": "Joe Vitale"
+    },
+    {
+      "id": 2,
+      "text": "There is a destiny that makes us brothers; none goes his way alone. What we put into the lives of others, comes back into our own.",
+      "attribution": "Edwin Markham"
+    },
+    {
+      "id": 3,
+      "text": "Simplicity is the ultimate sophistication",
+      "attribution": "Leonardo da Vinci",
+      "created_at": "",
+      "source": {
+        "title": "Presentation Zen: Simple Ideas on Presentation Design and Delivery",
+        "author": "Gar Reynolds"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Invention requires a long term willingness to be misunderstood",
+      "attribution": "Jeff Bezos",
+      "created_at": "",
+      "source": {
+        "title": "",
+        "author": "",
+        "url": ""
+      }
+    },
+    {
+      "id": 4,
+      "text": "The people who are crazy enough to think they can change the world are the ones who do. — Apple’s “Think Different” commercial, 1997.",
+      "attribution": "Steve Jobs",
+      "created_at": "",
+      "source": {
+        "title": "",
+        "author": "",
+        "url": ""
+      }
+    },
+    {
+      "id": 5,
+      "text": "A ship in harbor is safe, but that is not what ships are built for. ",
+      "attribution": "John Shed",
+      "created_at": "",
+      "source": {
+        "title": "",
+        "author": "",
+        "url": "https://lifehacker.com/a-ship-in-harbor-is-safe-but-that-is-not-what-ships-a-1780470980"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Comparison, a great teacher told me, is the cardinal sin of modern life. It traps us in a game we can't win. Once we define ourselves in terms of others we lose the freedom to shape our own lives.",
+      "attribution": "",
+      "created_at": "",
+      "source": {
+        "title": "Built to Last",
+        "author": "Jim Collins",
+        "url": ""
+      }
+    }
+  ]
+}
