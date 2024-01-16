@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 // https://github.com/buk0vec/jcv
 
 const formatter = ref('YYYY')
@@ -11,7 +11,7 @@ definePageMeta({
   // layout: false,
 })
 
-function formatDate(date: string) {
+function formatDate(date) {
   return useDateFormat(date, formatter).value
 }
 

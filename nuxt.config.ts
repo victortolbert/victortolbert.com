@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
 
+  typescript: { strict: false },
+
   ui: {
     icons: ['ph', 'logos'],
   },
