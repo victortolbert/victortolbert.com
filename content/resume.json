@@ -50,10 +50,10 @@
       "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a new web-based claims management system and mobile-friendly property inspection web applications",
       "highlights": [
         "Led the development of payment features using the Authorize.net API, streamlining manual payment processes into automated workflows",
-        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core MVC, Vue.js, TypeScript, and TailwindCSS",
+        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and TailwindCSS frontend",
         "Spearheaded the standardization of front-end development processes and best practices",
         "Gained comprehensive knowledge of Microsoft Azure, including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage, and Azure Application Insights",
-        "Tech Stack: ASP.NET Core MVC, Vue.js, TypeScript, TailwindCSS, Bootstrap, jQuery, AJAX, SQL Server, Git, Github, Azure DevOps"
+        "Tech Stack: .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.JS, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), TailwindCSS"
       ]
     },
     {
@@ -216,11 +216,31 @@
     },
     {
       "institution": "Edward Tufte, Atlanta, GA",
-      "url": "https://www.edwardtufte.com/",
+      "url": "https://web.archive.org/web/20090120182129/https://www.edwardtufte.com/tufte/courses",
       "area": "Presenting Data and Information",
       "studyType": "One-day course",
-      "startDate": "2009-03-01",
-      "endDate": "2009-03-01",
+      "startDate": "2009-03-12",
+      "endDate": "2009-03-13",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "User Interface Engineer Conference, Monterey, CA",
+      "url": "https://web.archive.org/web/20061230072545/http://www.uie.com/events/web_app_summit/2007/",
+      "area": "Presenting Data and Information",
+      "studyType": "One-day course",
+      "startDate": "2007-01-21",
+      "endDate": "2007-01-23",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Rails Conf 2007, Portland, OR",
+      "url": "https://web.archive.org/web/20070202024926/http://conferences.oreillynet.com/pub/w/51/about.html",
+      "area": "The official conference dedicated to everything Rails",
+      "studyType": "Conference",
+      "startDate": "2007-05-17",
+      "endDate": "2007-05-20",
       "score": "",
       "courses": []
     },
