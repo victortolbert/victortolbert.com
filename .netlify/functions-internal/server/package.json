@@ -7,7 +7,7 @@
     "@babel/parser": "7.23.6",
     "@iconify/vue": "4.1.1",
     "@netlify/functions": "2.4.1",
-    "@sindresorhus/is": "4.6.0",
+    "@sindresorhus/is": "6.1.0",
     "@ungap/structured-clone": "1.2.0",
     "@unhead/dom": "1.8.10",
     "@unhead/shared": "1.8.10",
