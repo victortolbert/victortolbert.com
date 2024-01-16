@@ -17,7 +17,7 @@ function formatDate(date: string) {
 
 const { data: resume } = await useAsyncData(
   'home',
-  () => queryContent('/resume').findOne(),
+  () => queryContent('/').findOne(),
 )
 const icons = {
   LinkedIn: 'i-ph-linkedin-logo-duotone',

@@ -12,4 +12,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/content',
   ],
+
+  ui: {
+    icons: ['ph', 'logos'],
+  },
 })
