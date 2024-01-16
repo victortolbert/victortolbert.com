@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 import headlessUi from '@headlessui/tailwindcss'
 import heroPatterns from 'tailwind-heropatterns'
+import animate from 'tailwindcss-animate'
 
 export default <Partial<Config>>{
   theme: {
@@ -148,6 +149,7 @@ export default <Partial<Config>>{
     },
   },
   plugins: [
+    animate,
     headlessUi,
     heroPatterns({
       patterns: [],

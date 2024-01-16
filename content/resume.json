@@ -20,6 +20,21 @@
         "network": "GitHub",
         "username": "victortolbert",
         "url": "https://github.com/victortolbert"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "victortolbert",
+        "url": "https://www.linkedin.com/in/victortolbert/"
+      },
+      {
+        "network": "Twitter",
+        "username": "victortolbert",
+        "url": "https://twitter.com/victortolbert"
+      },
+      {
+        "network": "Instagram",
+        "username": "victortolbert",
+        "url": "https://www.instagram.com/victortolbert/"
       }
     ]
   },
@@ -62,7 +77,7 @@
       "name": "Turner Sports, PGA.com",
       "location": "Atlanta, GA",
       "position": "Senior Software Engineer (Contract)",
-      "url": "https://www.pgatour.com/",
+      "url": "https://press.wbd.com/us/brands/wbd-sports/properties",
       "startDate": "2018-03-01",
       "endDate": "2018-11-01",
       "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features.",
@@ -93,7 +108,7 @@
     {
       "name": "AT&T Mobility",
       "location": "Atlanta, GA",
-      "position": "Senior UI Developer / Systems Engineerxx (Contract)",
+      "position": "Senior UI Developer / Systems Engineer (Contract)",
       "url": "https://www.att.com",
       "startDate": "2013-03-01",
       "endDate": "2014-07-01",
@@ -141,17 +156,107 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "General Assembly, Atlanta GA",
-      "url": "https://generalassemb.ly",
-      "area": "Product Development Bootcamp",
-      "studyType": "Corporate Training",
-      "startDate": "2019-09-01",
-      "endDate": "2019-09-01",
+      "institution": "EmberConf 2020",
+      "url": "https://www.testingjavascript.com/",
+      "area": "Domain Modeling for JavaScript Apps with Mirage JS",
+      "studyType": "Training",
+      "startDate": "2020-03-01",
+      "endDate": "2020-03-01",
       "score": "",
       "courses": []
     },
     {
-      "institution": "Morehouse College, Atlanta, GA",
+      "institution": "Kent C. Dodds",
+      "url": "https://www.testingjavascript.com/",
+      "area": "Testing JavaScript",
+      "studyType": "Training",
+      "startDate": "2020-01-01",
+      "endDate": "2020-01-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "General Assembly, Atlanta, GA",
+      "url": "https://generalassemb.ly",
+      "area": "Product Development Bootcamp",
+      "studyType": "Corporate Training",
+      "startDate": "2017-01-01",
+      "endDate": "2017-01-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "CSS Conf 2017, New Orleans, LA",
+      "url": "https://web.archive.org/web/20171012222136/https://2017.cssdevconf.com/",
+      "area": "Product Development Bootcamp",
+      "studyType": "Conference",
+      "startDate": "2017-10-09",
+      "endDate": "2017-10-11",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Camp Sass 2015, Atlanta, LA",
+      "url": "https://web.archive.org/web/20150330073546/http://campsass.com/",
+      "area": "Product Development Bootcamp",
+      "studyType": "Conference",
+      "startDate": "2017-01-01",
+      "endDate": "2017-01-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Accelerbrate, Atlanta, GA",
+      "url": "https://www.accelebrate.com/",
+      "area": "Mastering JavaScript and Advanced JavaScript Best Practices",
+      "studyType": "Training",
+      "startDate": "2012-01-01",
+      "endDate": "2012-01-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Edward Tufte, Atlanta, GA",
+      "url": "https://www.edwardtufte.com/",
+      "area": "Presenting Data and Information",
+      "studyType": "One-day course",
+      "startDate": "2009-03-01",
+      "endDate": "2009-03-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "The Pragmatic Studio, Pasadena, CA",
+      "url": "https://pragmaticstudio.com/",
+      "area": "Ruby on Rails",
+      "studyType": "In-Person Course",
+      "startDate": "2006-01-26",
+      "endDate": "2006-01-28",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "37 Signals, Chicago, IL",
+      "url": "https://37signals.com/",
+      "area": "The Building of Basecamp",
+      "studyType": "Corporate Training",
+      "startDate": "2004-09-01",
+      "endDate": "2004-09-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Learning Tree International, Atlanta, GA",
+      "url": "https://www.learningtree.com/",
+      "area": "XML – A comprehensive Introduction",
+      "studyType": "Corporate Training",
+      "startDate": "2002-04-01",
+      "endDate": "2002-04-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Morehouse College",
       "url": "https://www.morehouse.edu",
       "area": "Business Administration",
       "studyType": "Bachelor of Arts",
@@ -162,25 +267,30 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Staying Sharp with Angular.js",
+      "issuer": "Code School",
+      "url": "https://www.codeschool.com/courses/staying-sharp-with-angular-js"
+    }
+  ],
   "publications": [],
   "skills": [
     {
       "name": "Frontend",
       "level": "Senior",
       "keywords": [
-        "JavaScript",
-        "Vue.js",
+        "HTML / JSX",
+        "SCSS / CSS / BEM / Styled Components",
+        "JavaScript / TypeScript",
+        "Vue.js / Nuxt.js",
+        "Pinia / Vuex",
         "React",
         "Angular",
         "jQuery",
-        "HTML5",
-        "CSS3",
-        "Sass",
         "Bootstrap",
         "TailwindCSS",
         "Bulma",
-        "BEM",
         "Responsive Design",
         "Progressive Web Apps",
         "Web Components",
@@ -192,10 +302,12 @@
       "name": "Backend",
       "level": "Senior",
       "keywords": [
+        "C#",
+        "Node.js",
+        "Ruby",
         "PHP",
         "Laravel",
         "CodeIgniter",
-        "Node.js",
         "Express",
         "MySQL",
         "MongoDB",
@@ -212,22 +324,17 @@
       "keywords": [
         "AWS",
         "Google Cloud",
-        "Firebase",
+        "Heroku",
         "Azure"
-      ]
-    },
-    {
-      "name": "Languages",
-      "level": "Intermediate",
-      "keywords": [
-        "C#",
-        "JavaScript",
-        "Ruby",
-        "Python"
       ]
     }
   ],
-  "languages": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
   "interests": [
     {
       "name": "Product Development",
@@ -239,7 +346,32 @@
       ]
     }
   ],
-  "references": [],
+  "references": [
+    {
+      "name": "Phil Greco",
+      "reference": "I have had the opportunity to work with Victor at three different companies, AutoTrader, WebMD and most recently Videa.\n\nVictor is a passionate user interface engineer / architect who is skilled at determining good UI development approaches, best practices and then implementing them.   For example, at Videa he successfully defined our interface standards, implemented an online code base style guide, constructed our interfaces, and worked well with the UX team to create great user interactions.   Plus, without being asked he created a complete standalone demo application to ensure the company would have something functional to show at two NAB conferences.  This proactive approach was outstanding and helped the company close a few deals.\n\nBesides being talented UI professional, Victor is also a great person to work with.  Victor is very personable, funny, and has a positive team based approach to working.  \n\nI look forward to hiring and working with him again."
+    },
+    {
+      "name": "Dawson Blackhouse",
+      "reference": "Victor is a meticulous developer who delivers his craft with company goals in mind."
+    },
+    {
+      "name": "Frankie Loscavio",
+      "reference": "Victor was great to work with at AT&T. I find myself learning something new every very time I speak to Victor. Whether it's a front-end development solution or a new design approach Victor always showed me that there is something amazing to learn all the time. I found Victor's attitude refreshing and inspiring, while motivating me and others to be the same. I feel he is an exceptionally skilled developer / designer as well as a leader and would really like to work with him again some day. I feel that his passion for learning and applying that knowledge to the front-end side of development / design is inspirational and think you'll be very fortunate to have him on your team.  I hope I get to work with Victor again some day soon."
+    },
+    {
+      "name": "George Kovats",
+      "reference": "Victor has always demonstrated a great attitude toward new work, and helped us always plow through the ebbs and flows of operational projects that hit our team, often holding the lion's share of asignments. He's passionate about learning new technology especially regarding front-end web trends, and was one of our departments first promoters of GitHub and SASS. It was always a pleasure working with Victor, and I believe he's a strong asset as a front end developer for any web team."
+    },
+    {
+      "name": "Ed Jenkins",
+      "reference": "When I need to delegate a task, I need someone who can do it, do it right, and do it fast.  Victor is the one I trust."
+    },
+    {
+      "name": "Patrick Fitzgerald",
+      "reference": "Victor has a wide breadth of knowledge in web design and usability. He is extremely quick in mastering new tools and technologies, easily jumping between Windows, Mac, and Linux environments. It is a pleasure to work with him."
+    }
+  ],
   "projects": [],
   "meta": {
     "canonical": "https://victortolbert.com/resume.json",

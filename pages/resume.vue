@@ -4,6 +4,7 @@ import type { Resume } from '~/schema'
 
 const formatter = ref('YYYY')
 const showWorkLocation = ref(false)
+const showFooter = ref(false)
 
 definePageMeta({
   title: 'Resume',
@@ -19,6 +20,12 @@ const { data: resume } = await useAsyncData(
   'home',
   () => queryContent('/resume').findOne(),
 )
+const icons = {
+  LinkedIn: 'i-ph-linkedin-logo-duotone',
+  GitHub: 'i-ph-github-logo-duotone',
+  Twitter: 'i-ph-twitter-logo-duotone',
+  Instagram: 'i-ph-instagram-logo-duotone',
+}
 </script>
 
 <template>
@@ -46,7 +53,15 @@ const { data: resume } = await useAsyncData(
               :to="`mailto:${resume?.basics.email}`"
               icon="i-ph-envelope-duotone"
             />
-            <UButton v-for="social in resume?.basics.profiles" :key="social.network" variant="outline" color="gray" :to="social.url" icon="i-ph-github-logo-duotone" />
+            <UButton
+              v-for="social in resume?.basics.profiles"
+              :key="social.network"
+              variant="outline"
+              color="gray"
+              :to="social.url"
+              :icon="icons[social.network]"
+              target="_blank"
+            />
           </div>
         </div>
         <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
@@ -104,7 +119,7 @@ const { data: resume } = await useAsyncData(
                 {{ study.institution }}
               </h3>
               <div class="text-sm tabular-nums text-gray-500">
-                {{ formatDate(study.startDate) }} - {{ formatDate(study.endDate) }}
+                {{ formatDate(study.endDate) }}
               </div>
             </div>
           </div>
@@ -118,15 +133,53 @@ const { data: resume } = await useAsyncData(
         <h2 class="text-xl font-bold">
           Skills
         </h2>
-        <div class="flex flex-wrap gap-1" />
+
+        <div class="flex flex-wrap gap-1">
+          <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
+            <UBadge color="primary" variant="solid">
+              {{ skill.name }}
+            </UBadge>
+            <UBadge v-for="keyword in skill.keywords" :key="`keyword-${keyword}`" color="primary" variant="subtle">
+              {{ keyword }}
+            </UBadge>
+          </template>
+        </div>
+      </section>
+
+      <section class="flex min-h-0 flex-col gap-y-3">
+        <h2 class="text-xl font-bold">
+          Interests
+        </h2>
+        <div class="flex flex-wrap gap-1">
+          <template v-for="interest in resume?.interests" :key="`interest-${interest}`">
+            <UBadge color="primary" variant="solid">
+              {{ interest.name }}
+            </UBadge>
+            <UBadge v-for="keyword in interest.keywords" :key="`keyword-${keyword}`" color="primary" variant="subtle">
+              {{ keyword }}
+            </UBadge>
+          </template>
+        </div>
       </section>
 
       <section class="flex min-h-0 flex-col gap-y-3">
         <h2 class="text-xl font-bold">
           References
         </h2>
-        <div class="flex flex-wrap gap-1" />
+        <div v-for="reference in resume?.references" :key="reference.name" class="rounded-lg bg-card text-card-foreground">
+          <div class="flex flex-col space-y-1.5">
+            <h3 class="font-semibold leading-none">
+              {{ reference.name }}
+            </h3>
+          </div>
+          <div class="text-pretty font-mono text-muted-foreground mt-2 text-xs">
+            {{ reference.reference }}
+          </div>
+        </div>
       </section>
     </main>
+    <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
+      Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>J</kbd> to open the command menu. Hosted by <a href="/" class="underline hover:opacity-80">jcv</a>.
+    </p>
   </div>
 </template>
