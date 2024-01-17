@@ -99,3 +99,126 @@ curl -G "https://api.currencyapi.com/v3/historical" \
     -d "base_currency=USD" \
     -d "date=2020-10-01"
 ```
+
+<!--
+{
+  "institution": "EmberConf 2020",
+  "url": "https://www.testingjavascript.com/",
+  "area": "Domain Modeling for JavaScript Apps with Mirage JS",
+  "studyType": "Training",
+  "startDate": "2020-03-01",
+  "endDate": "2020-03-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Kent C. Dodds",
+  "url": "https://www.testingjavascript.com/",
+  "area": "Testing JavaScript",
+  "studyType": "Training",
+  "startDate": "2020-01-01",
+  "endDate": "2020-01-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "General Assembly, Atlanta, GA",
+  "url": "https://generalassemb.ly",
+  "area": "Product Development Bootcamp",
+  "studyType": "Corporate Training",
+  "startDate": "2017-01-01",
+  "endDate": "2017-01-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "CSS Conf 2017, New Orleans, LA",
+  "url": "https://web.archive.org/web/20171012222136/https://2017.cssdevconf.com/",
+  "area": "Product Development Bootcamp",
+  "studyType": "Conference",
+  "startDate": "2017-10-09",
+  "endDate": "2017-10-11",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Camp Sass 2015, Atlanta, LA",
+  "url": "https://web.archive.org/web/20150330073546/http://campsass.com/",
+  "area": "Product Development Bootcamp",
+  "studyType": "Conference",
+  "startDate": "2017-01-01",
+  "endDate": "2017-01-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Accelerbrate, Atlanta, GA",
+  "url": "https://www.accelebrate.com/",
+  "area": "Mastering JavaScript and Advanced JavaScript Best Practices",
+  "studyType": "Training",
+  "startDate": "2012-01-01",
+  "endDate": "2012-01-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Edward Tufte, Atlanta, GA",
+  "url": "https://web.archive.org/web/20090120182129/https://www.edwardtufte.com/tufte/courses",
+  "area": "Presenting Data and Information",
+  "studyType": "One-day course",
+  "startDate": "2009-03-12",
+  "endDate": "2009-03-13",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "User Interface Engineer Conference, Monterey, CA",
+  "url": "https://web.archive.org/web/20061230072545/http://www.uie.com/events/web_app_summit/2007/",
+  "area": "Presenting Data and Information",
+  "studyType": "One-day course",
+  "startDate": "2007-01-21",
+  "endDate": "2007-01-23",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Rails Conf 2007, Portland, OR",
+  "url": "https://web.archive.org/web/20070202024926/http://conferences.oreillynet.com/pub/w/51/about.html",
+  "area": "The official conference dedicated to everything Rails",
+  "studyType": "Conference",
+  "startDate": "2007-05-17",
+  "endDate": "2007-05-20",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "The Pragmatic Studio, Pasadena, CA",
+  "url": "https://pragmaticstudio.com/",
+  "area": "Ruby on Rails",
+  "studyType": "In-Person Course",
+  "startDate": "2006-01-26",
+  "endDate": "2006-01-28",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "37 Signals, Chicago, IL",
+  "url": "https://37signals.com/",
+  "area": "The Building of Basecamp",
+  "studyType": "Corporate Training",
+  "startDate": "2004-09-01",
+  "endDate": "2004-09-01",
+  "score": "",
+  "courses": []
+},
+{
+  "institution": "Learning Tree International, Atlanta, GA",
+  "url": "https://www.learningtree.com/",
+  "area": "XML – A comprehensive Introduction",
+  "studyType": "Corporate Training",
+  "startDate": "2002-04-01",
+  "endDate": "2002-04-01",
+  "score": "",
+  "courses": []
+},
+ -->

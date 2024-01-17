@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-LightItalic.woff')
+    format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-Regular.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url('/assets/fonts/salesforce/SalesforceSans-BoldItalic.woff')
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

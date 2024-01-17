@@ -64,6 +64,8 @@ export default defineNuxtConfig({
     '@fontsource/space-mono',
     '~/assets/css/debug-children.css',
     '~/assets/css/debug-grid.css',
+    '~/assets/css/fonts/monaspace-neon.css',
+    '~/assets/css/fonts/salesforce-sans.css',
   ],
 
   devServer: {

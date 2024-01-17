@@ -1,8 +1,12 @@
-import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
+import defaultColors from 'tailwindcss/colors'
 import headlessUi from '@headlessui/tailwindcss'
-import heroPatterns from 'tailwind-heropatterns'
 import animate from 'tailwindcss-animate'
+import heroPatterns from 'tailwind-heropatterns'
+import type { Config } from 'tailwindcss'
+import { colors as appColors } from './assets/design/tokens/colors'
+
+const colors = { ...defaultColors, ...appColors }
 
 export default <Partial<Config>>{
   theme: {
@@ -14,46 +18,19 @@ export default <Partial<Config>>{
       },
     },
     extend: {
-      // fontFamily: {
-      //   sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
-      // },
       colors: {
-        green: {
-          50: '#EFFDF5',
-          100: '#D9FBE8',
-          200: '#B3F5D1',
-          300: '#75EDAE',
-          400: '#00DC82',
-          500: '#00C16A',
-          600: '#00A155',
-          700: '#007F45',
-          800: '#016538',
-          900: '#0A5331',
-          950: '#052e16',
-        },
-        brand: {
-          DEFAULT: '#002894',
-          50: '#edf5fa',
-          100: '#dcebf5',
-          200: '#accbe6',
-          300: '#7fa8d4',
-          400: '#3667b5',
-          500: '#002894',
-          600: '#002185',
-          700: '#001a6e',
-          800: '#001359',
-          900: '#000d42',
-          950: '#00072b',
-        },
+        green: colors.emerald,
+        brand: colors.toreaBay,
+        secondary: colors.tango,
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
+        // secondary: {
+        //   DEFAULT: 'hsl(var(--secondary))',
+        //   foreground: 'hsl(var(--secondary-foreground))',
+        // },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
@@ -90,10 +67,11 @@ export default <Partial<Config>>{
         px: '0 0 0 1px rgba(0, 0, 0, 0.5)',
       },
       fontFamily: {
+        // sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
         sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif],
         display: ['Bungee', 'Pica'],
-        mono: ['Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
+        mono: ['Monaspace Argon', 'Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
         mockup: ['Balsamiq Sans', 'cursive'],
         proto: [
           'Flow Circular',
@@ -104,6 +82,7 @@ export default <Partial<Config>>{
           'Flow Rounded',
           'cursive',
         ],
+        salesforce: ['Salesforce Sans', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         '2xs': ['0.625rem', '0.875rem'],

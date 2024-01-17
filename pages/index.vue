@@ -58,11 +58,11 @@ function formatDate(date) {
           </div>
         </div>
         <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
-          <img class="aspect-square h-full w-full" :src="resume?.basics.image" alt="Victor Tolbert">
+          <img class="aspect-square h-full w-full grayscale hover:grayscale-0" :src="resume?.basics.image" alt="Victor Tolbert">
         </span>
       </div>
 
-      <section class="min-h-0 flex flex-col gap-y-3">
+      <section class="min-h-0 flex flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           About
         </h2>
@@ -71,7 +71,7 @@ function formatDate(date) {
         </p>
       </section>
 
-      <section class="min-h-0 flex flex-col gap-y-3">
+      <section class="min-h-0 flex flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           Work Experience
         </h2>
@@ -90,7 +90,7 @@ function formatDate(date) {
               {{ work.position }}
             </h4>
           </div>
-          <div class="text-pretty text-muted-foreground mt-2 text-xs font-mono">
+          <div class="text-pretty text-muted-foreground mt-3 text-xs font-mono">
             {{ work.summary }}
             <ul class="ml-3 mt-2 list-disc list-outside">
               <li v-for="(highlight, i) in work.highlights" :key="i">
@@ -101,28 +101,7 @@ function formatDate(date) {
         </div>
       </section>
 
-      <section class="min-h-0 flex flex-col gap-y-3">
-        <h2 class="text-xl font-bold">
-          Education
-        </h2>
-        <div v-for="study in resume?.education" :key="study.area" class="rounded-lg bg-card text-card-foreground">
-          <div class="flex flex-col space-y-1.5">
-            <div class="flex items-center justify-between gap-x-2 text-base">
-              <h3 class="font-semibold leading-none">
-                {{ study.institution }}
-              </h3>
-              <div class="text-sm tabular-nums text-gray-500">
-                {{ formatDate(study.endDate) }}
-              </div>
-            </div>
-          </div>
-          <div class="text-pretty font-mono text-sm text-muted-foreground mt-2">
-            <div>{{ study.studyType }}, {{ study.area }}</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="flex min-h-0 flex-col gap-y-3">
+      <section class="flex min-h-0 flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           Skills
         </h2>
@@ -139,7 +118,28 @@ function formatDate(date) {
         </div>
       </section>
 
-      <section class="flex min-h-0 flex-col gap-y-3">
+      <section class="min-h-0 flex flex-col gap-y-4">
+        <h2 class="text-xl font-bold">
+          Education
+        </h2>
+        <div v-for="study in resume?.education" :key="study.area" class="rounded-lg bg-card text-card-foreground">
+          <div class="flex flex-col space-y-1.5">
+            <div class="flex items-center justify-between gap-x-2 text-base">
+              <h3 class="font-semibold leading-none">
+                {{ study.institution }}
+              </h3>
+              <div class="text-sm tabular-nums text-gray-500">
+                {{ formatDate(study.endDate) }}
+              </div>
+            </div>
+          </div>
+          <div class="text-pretty font-mono text-sm text-muted-foreground mt-3">
+            <div>{{ study.studyType }}, {{ study.area }}</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex min-h-0 flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           Interests
         </h2>
@@ -155,7 +155,7 @@ function formatDate(date) {
         </div>
       </section>
 
-      <section class="flex min-h-0 flex-col gap-y-3">
+      <section class="flex min-h-0 flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           References
         </h2>
@@ -165,7 +165,7 @@ function formatDate(date) {
               {{ reference.name }}
             </h3>
           </div>
-          <div class="text-pretty font-mono text-muted-foreground mt-2 text-xs">
+          <div class="text-pretty font-mono text-muted-foreground mt-3 text-xs">
             {{ reference.reference }}
           </div>
         </div>
