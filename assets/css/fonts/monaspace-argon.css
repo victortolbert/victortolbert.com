@@ -68,7 +68,8 @@
 
 @font-face {
   font-family: 'Monaspace Argon';
-  src: url('/assets/fonts/monaspace/MonaspaceArgon-SemiBold.woff') format('woff');
+  src: url('/assets/fonts/monaspace/MonaspaceArgon-SemiBold.woff')
+    format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
