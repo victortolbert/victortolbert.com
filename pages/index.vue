@@ -1,29 +1,23 @@
 <script setup>
-// https://github.com/buk0vec/jcv
-
-const formatter = ref('YYYY')
-const showWorkLocation = ref(false)
-const showFooter = ref(false)
-
 definePageMeta({
   title: 'Resume',
   breadcrumb: 'Resume',
-  // layout: false,
 })
+const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
+const formatter = ref('YYYY')
 
-function formatDate(date) {
-  return useDateFormat(date, formatter).value
-}
+const showFooter = ref(false)
+const showWorkLocation = ref(false)
 
-const { data: resume } = await useAsyncData(
-  'home',
-  () => queryContent('/').findOne(),
-)
 const icons = {
   LinkedIn: 'i-ph-linkedin-logo-duotone',
   GitHub: 'i-ph-github-logo-duotone',
   Twitter: 'i-ph-twitter-logo-duotone',
   Instagram: 'i-ph-instagram-logo-duotone',
+}
+
+function formatDate(date) {
+  return useDateFormat(date, formatter).value
 }
 </script>
 
