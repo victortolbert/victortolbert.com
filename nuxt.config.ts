@@ -33,6 +33,10 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
 
+  tailwindcss: {
+    viewer: false,
+  },
+
   typescript: { strict: false },
 
   ui: {
