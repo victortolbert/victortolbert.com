@@ -78,6 +78,8 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
+  ssr: false,
+
   tailwindcss: {
     viewer: false,
   },
