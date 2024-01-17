@@ -69,8 +69,7 @@ function buildAssetsURL(...path) {
   return joinURL(publicAssetsURL(), buildAssetsDir(), ...path);
 }
 function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
+  const publicBase = useRuntimeConfig().app.cdnURL || useRuntimeConfig().app.baseURL;
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
@@ -130,7 +129,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"icon","href":"/favicon.svg","sizes":"any"},{"rel":"icon","type":"image/svg+xml","href":"/favicon-dark.svg"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en","class":"overflow-y-scroll"},"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Victor Tolbert","titleTemplate":"%s - victortolbert.com"};
 
 const appRootId = "__nuxt";
 
@@ -186,8 +185,7 @@ const getSPARenderer = lazyCachedFunction(async () => {
       _errors: {},
       serverRendered: false,
       data: {},
-      state: {},
-      once: /* @__PURE__ */ new Set()
+      state: {}
     };
     ssrContext.config = {
       public: config.public,
@@ -213,10 +211,9 @@ const renderer = defineRenderHandler(async (event) => {
       statusMessage: "Page Not Found: /__nuxt_error"
     });
   }
-  const isRenderingIsland = false ;
   const islandContext = void 0;
   let url = ssrError?.url || islandContext?.url || event.path;
-  const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !isRenderingIsland;
+  const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !islandContext;
   if (isRenderingPayload) {
     url = url.substring(0, url.lastIndexOf("/")) || "/";
     event._path = url;
@@ -227,14 +224,12 @@ const renderer = defineRenderHandler(async (event) => {
     plugins: unheadPlugins
   });
   const headEntryOptions = { mode: "server" };
-  {
-    head.push(appHead, headEntryOptions);
-  }
+  head.push(appHead, headEntryOptions);
   const ssrContext = {
     url,
     event,
     runtimeConfig: useRuntimeConfig(),
-    noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false && !isRenderingIsland || (false),
+    noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false && !islandContext || (false),
     head,
     error: !!ssrError,
     nuxt: void 0,
@@ -275,17 +270,12 @@ const renderer = defineRenderHandler(async (event) => {
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const { styles, scripts } = getRequestDependencies(ssrContext, renderer.rendererContext);
   head.push({ style: inlinedStyles });
-  {
-    const link = [];
-    for (const style in styles) {
-      const resource = styles[style];
-      {
-        link.push({ rel: "stylesheet", href: renderer.rendererContext.buildAssetsURL(resource.file) });
-      }
-    }
-    head.push({ link }, headEntryOptions);
-  }
-  if (!NO_SCRIPTS && !isRenderingIsland) {
+  head.push({
+    link: Object.values(styles).map(
+      (resource) => ({ rel: "stylesheet", href: renderer.rendererContext.buildAssetsURL(resource.file) })
+    )
+  }, headEntryOptions);
+  if (!NO_SCRIPTS) {
     head.push({
       link: getPreloadLinks(ssrContext, renderer.rendererContext)
     }, headEntryOptions);
@@ -301,7 +291,7 @@ const renderer = defineRenderHandler(async (event) => {
       tagPriority: "high"
     });
   }
-  if (!routeOptions.experimentalNoScripts && !isRenderingIsland) {
+  if (!routeOptions.experimentalNoScripts) {
     head.push({
       script: Object.values(scripts).map((resource) => ({
         type: resource.module ? "module" : null,
@@ -313,10 +303,10 @@ const renderer = defineRenderHandler(async (event) => {
   }
   const { headTags, bodyTags, bodyTagsOpen, htmlAttrs, bodyAttrs } = await renderSSRHead(head);
   const htmlContext = {
-    island: isRenderingIsland,
-    htmlAttrs: htmlAttrs ? [htmlAttrs] : [],
+    island: Boolean(islandContext),
+    htmlAttrs: [htmlAttrs],
     head: normalizeChunks([headTags, ssrContext.styles]),
-    bodyAttrs: bodyAttrs ? [bodyAttrs] : [],
+    bodyAttrs: [bodyAttrs],
     bodyPrepend: normalizeChunks([bodyTagsOpen, ssrContext.teleports?.body]),
     body: [_rendered.html],
     bodyAppend: [bodyTags]
@@ -355,7 +345,11 @@ function joinAttrs(chunks) {
   return chunks.join(" ");
 }
 function renderHTMLDocument(html) {
-  return `<!DOCTYPE html><html${joinAttrs(html.htmlAttrs)}><head>${joinTags(html.head)}</head><body${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body></html>`;
+  return `<!DOCTYPE html>
+<html ${joinAttrs(html.htmlAttrs)}>
+<head>${joinTags(html.head)}</head>
+<body ${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body>
+</html>`;
 }
 async function renderInlineStyles(usedModules) {
   const styleMap = await getSSRStyles();

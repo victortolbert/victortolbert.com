@@ -7,7 +7,7 @@ plugins = []
 [functions."*"]
 
 [build]
-publish = "/Users/victortolbert/Projects/@victortolbert/victortolbert.com/dist"
+publish = "/Users/vtolbert/Projects/@victortolbert/victortolbert.com/dist"
 publishOrigin = "config"
 command = "pnpm run build"
 commandOrigin = "config"

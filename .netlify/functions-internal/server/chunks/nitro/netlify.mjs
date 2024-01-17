@@ -2666,9 +2666,18 @@ function klona(x) {
 	return x;
 }
 
+const defineAppConfig = (config) => config;
+
+const appConfig0 = defineAppConfig({
+  ui: {
+    primary: "neutral",
+    gray: "neutral"
+  }
+});
+
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "33a62bad-2265-4f8a-8dfb-502e9e695015"
+    "buildId": "01cdfdd6-2ba2-4df5-adbf-778701fd5390"
   },
   "ui": {
     "primary": "green",
@@ -2697,9 +2706,7 @@ const inlineAppConfig = {
   }
 };
 
-
-
-const appConfig = defuFn(inlineAppConfig);
+const appConfig = defuFn(appConfig0, inlineAppConfig);
 
 const _inlineRuntimeConfig = {
   "app": {
@@ -2776,7 +2783,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1705445221291,
+      "integrity": 1705457006800,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -4742,15 +4749,15 @@ async function dispose(driver) {
 const _assets = {
   ["nitro:bundled:cache:content:content-index.json"]: {
     import: () => import('../raw/content-index.mjs').then(r => r.default || r),
-    meta: {"type":"application/json","etag":"\"1c-ls4HWAVWGUefEmicIjIbad7RREc\"","mtime":"2024-01-16T22:47:12.874Z"}
+    meta: {"type":"application/json","etag":"\"1c-ls4HWAVWGUefEmicIjIbad7RREc\"","mtime":"2024-01-17T02:03:36.516Z"}
   },
   ["nitro:bundled:cache:content:content-navigation.json"]: {
     import: () => import('../raw/content-navigation.mjs').then(r => r.default || r),
-    meta: {"type":"application/json","etag":"\"1a-E6pyzvUvpi1S5+TruKRZymG7w6s\"","mtime":"2024-01-16T22:47:12.874Z"}
+    meta: {"type":"application/json","etag":"\"1a-E6pyzvUvpi1S5+TruKRZymG7w6s\"","mtime":"2024-01-17T02:03:36.516Z"}
   },
   ["nitro:bundled:cache:content:parsed:content:index.json"]: {
     import: () => import('../raw/index.mjs').then(r => r.default || r),
-    meta: {"type":"application/json","etag":"\"38b9-ogm0PcBtzrEATa4yXzITViIKvCA\"","mtime":"2024-01-16T22:47:12.874Z"}
+    meta: {"type":"application/json","etag":"\"38b9-yejDP4ibx07gdILadBqyC/YCPHw\"","mtime":"2024-01-17T02:03:36.516Z"}
   }
 };
 
@@ -5035,7 +5042,7 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/Users/victortolbert/Projects/@victortolbert/victortolbert.com/.data/kv"}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/Users/vtolbert/Projects/@victortolbert/victortolbert.com/.data/kv"}));
 
 const bundledStorage = ["/cache/content"];
 for (const base of bundledStorage) {
@@ -5432,14 +5439,14 @@ function toBuffer(data) {
 
 const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let n=c===\"system\"?d():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function f(o){const t=\"\"+o+\"\",s=\"\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function d(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\n";
 
-const _69gaRlCvy3 = (function(nitro) {
+const _TiYaZg2Rd8 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _69gaRlCvy3
+  _TiYaZg2Rd8
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -5450,7 +5457,6 @@ const errorHandler = (async function errorhandler(error, event) {
     statusMessage,
     message,
     stack: "",
-    // TODO: check and validate error.data for serialisation into query
     data: error.data
   };
   if (error.unhandled || error.fatal) {
@@ -5471,15 +5477,11 @@ const errorHandler = (async function errorhandler(error, event) {
     setResponseHeader(event, "Content-Type", "application/json");
     return send(event, JSON.stringify(errorObject));
   }
-  const reqHeaders = getRequestHeaders(event);
-  const isRenderingError = event.path.startsWith("/__nuxt_error") || !!reqHeaders["x-nuxt-error"];
-  const res = isRenderingError ? null : await useNitroApp().localFetch(
-    withQuery(joinURL(useRuntimeConfig().app.baseURL, "/__nuxt_error"), errorObject),
-    {
-      headers: { ...reqHeaders, "x-nuxt-error": "true" },
-      redirect: "manual"
-    }
-  ).catch(() => null);
+  const isErrorPage = event.path.startsWith("/__nuxt_error");
+  const res = !isErrorPage ? await useNitroApp().localFetch(withQuery(joinURL(useRuntimeConfig().app.baseURL, "/__nuxt_error"), errorObject), {
+    headers: getRequestHeaders(event),
+    redirect: "manual"
+  }).catch(() => null) : null;
   if (!res) {
     const { template } = await import('../error-500.mjs');
     if (event.handled) {
@@ -7790,7 +7792,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _K27WA1 = cachedEventHandler(async (event) => {
+const _f221xq = cachedEventHandler(async (event) => {
   const query = getContentQuery(event);
   const { advanceQuery } = useRuntimeConfig().public.content.experimental;
   if (query.first) {
@@ -7822,7 +7824,7 @@ const _K27WA1 = cachedEventHandler(async (event) => {
   shouldBypassCache: () => !!false
 });
 
-const _jhEL87 = defineEventHandler(async (event) => {
+const _6HTjSQ = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -7927,7 +7929,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _M38yDC = cachedEventHandler(async (event) => {
+const _HzEMO8 = cachedEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -7967,20 +7969,20 @@ const _M38yDC = cachedEventHandler(async (event) => {
   shouldBypassCache: () => !!false
 });
 
-const _lazy_MsN6Rd = () => import('../pageview.mjs');
-const _lazy_DNxWOr = () => import('../handlers/renderer.mjs');
+const _lazy_3CyFjF = () => import('../pageview.mjs');
+const _lazy_FeSop4 = () => import('../handlers/renderer.mjs');
 
 const handlers = [
-  { route: '/api/pageview', handler: _lazy_MsN6Rd, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_DNxWOr, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _K27WA1, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _K27WA1, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _K27WA1, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1705445221291.json', handler: _jhEL87, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _M38yDC, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _M38yDC, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _M38yDC, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_DNxWOr, lazy: true, middleware: false, method: undefined }
+  { route: '/api/pageview', handler: _lazy_3CyFjF, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_FeSop4, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _f221xq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _f221xq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _f221xq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1705457006800.json', handler: _6HTjSQ, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _HzEMO8, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _HzEMO8, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _HzEMO8, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_FeSop4, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
