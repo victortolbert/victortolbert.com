@@ -1,3 +1,11 @@
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: 'antialiased font-sans',
+  },
+})
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />

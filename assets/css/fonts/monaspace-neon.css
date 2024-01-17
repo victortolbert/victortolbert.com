@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-ExtraLight.woff')
+    format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-ExtraLightItalic.woff')
+    format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-LightItalic.woff')
+    format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-MediumItalic.woff')
+    format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-SemiBoldItalic.woff')
+    format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-BoldItalic.woff')
+    format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-ExtraBold.woff')
+    format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('/assets/fonts/monaspace/MonaspaceNeon-ExtraBoldItalic.woff')
+    format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}

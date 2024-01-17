@@ -1,5 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/victortolbert/victortolbert.com/main/content/index.json",
+    "version": "v0.0.2",
+    "lastModified": "2024-01-17T09:53:00.000Z"
+  },
   "basics": {
     "name": "Victor Tolbert",
     "label": "Software Engineer",
@@ -47,7 +52,7 @@
       "url": "https://hancockclaims.com",
       "startDate": "2021-05-21",
       "endDate": "2024-01-09",
-      "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a new web-based claims management system and mobile-friendly property inspection web applications",
+      "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a  web-based property claims management system and mobile-friendly property inspection web applications",
       "highlights": [
         "Led the development of payment features using the Authorize.net API, streamlining manual payment processes into automated workflows",
         "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and TailwindCSS frontend",
@@ -67,10 +72,10 @@
       "summary": "Designed, developed, and implemented new features for a core business application used by parents, sponsors, clients, and internal teams",
       "highlights": [
         "Participated in the design and development process from definition to deployment",
-        "Collaborated closely with the design team to ensure consistent UI/UX implementations.",
+        "Collaborated closely with the design team to ensure consistent UI/UX implementations",
         "Actively participated in the agile development team and engaged in team meetings, contributing to efficient codebase management and infrastructure",
         "Assisted team in managing the overall codebase and infrastructure to minimize downtime",
-        "Implemented best practices to create a scalable and innovative application.",
+        "Implemented best practices to create a scalable and innovative application",
         "Tech Stack: HTML5, CSS (TailwindCSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
       ]
     },
@@ -81,10 +86,10 @@
       "url": "https://press.wbd.com/us/brands/wbd-sports/properties",
       "startDate": "2018-03-01",
       "endDate": "2018-11-01",
-      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features.",
+      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features",
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
-        "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement ",
+        "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement",
         "Troubleshot performance and cross-browser issues for desktop and mobile platforms",
         "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
       ]
@@ -102,7 +107,7 @@
         "Recognized company-wide for contributions, including a product demo used at the National Association of Broadcasters (NAB) trade conference",
         "Created an Open Source TVB XML Proposal Viewer utilizing PHP/MySQL and the Laravel Framework",
         "Served as the sole liaison between visual design, on-site and off-shore engineering teams",
-        "Tech Stack: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (AngularJS, Vue.js, React), Kendo UI "
+        "Tech Stack: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (AngularJS, Vue.js, React), Kendo UI"
       ]
     },
     {
@@ -154,126 +159,6 @@
   ],
   "volunteer": [],
   "education": [
-    {
-      "institution": "EmberConf 2020",
-      "url": "https://www.testingjavascript.com/",
-      "area": "Domain Modeling for JavaScript Apps with Mirage JS",
-      "studyType": "Training",
-      "startDate": "2020-03-01",
-      "endDate": "2020-03-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Kent C. Dodds",
-      "url": "https://www.testingjavascript.com/",
-      "area": "Testing JavaScript",
-      "studyType": "Training",
-      "startDate": "2020-01-01",
-      "endDate": "2020-01-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "General Assembly, Atlanta, GA",
-      "url": "https://generalassemb.ly",
-      "area": "Product Development Bootcamp",
-      "studyType": "Corporate Training",
-      "startDate": "2017-01-01",
-      "endDate": "2017-01-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "CSS Conf 2017, New Orleans, LA",
-      "url": "https://web.archive.org/web/20171012222136/https://2017.cssdevconf.com/",
-      "area": "Product Development Bootcamp",
-      "studyType": "Conference",
-      "startDate": "2017-10-09",
-      "endDate": "2017-10-11",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Camp Sass 2015, Atlanta, LA",
-      "url": "https://web.archive.org/web/20150330073546/http://campsass.com/",
-      "area": "Product Development Bootcamp",
-      "studyType": "Conference",
-      "startDate": "2017-01-01",
-      "endDate": "2017-01-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Accelerbrate, Atlanta, GA",
-      "url": "https://www.accelebrate.com/",
-      "area": "Mastering JavaScript and Advanced JavaScript Best Practices",
-      "studyType": "Training",
-      "startDate": "2012-01-01",
-      "endDate": "2012-01-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Edward Tufte, Atlanta, GA",
-      "url": "https://web.archive.org/web/20090120182129/https://www.edwardtufte.com/tufte/courses",
-      "area": "Presenting Data and Information",
-      "studyType": "One-day course",
-      "startDate": "2009-03-12",
-      "endDate": "2009-03-13",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "User Interface Engineer Conference, Monterey, CA",
-      "url": "https://web.archive.org/web/20061230072545/http://www.uie.com/events/web_app_summit/2007/",
-      "area": "Presenting Data and Information",
-      "studyType": "One-day course",
-      "startDate": "2007-01-21",
-      "endDate": "2007-01-23",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Rails Conf 2007, Portland, OR",
-      "url": "https://web.archive.org/web/20070202024926/http://conferences.oreillynet.com/pub/w/51/about.html",
-      "area": "The official conference dedicated to everything Rails",
-      "studyType": "Conference",
-      "startDate": "2007-05-17",
-      "endDate": "2007-05-20",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "The Pragmatic Studio, Pasadena, CA",
-      "url": "https://pragmaticstudio.com/",
-      "area": "Ruby on Rails",
-      "studyType": "In-Person Course",
-      "startDate": "2006-01-26",
-      "endDate": "2006-01-28",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "37 Signals, Chicago, IL",
-      "url": "https://37signals.com/",
-      "area": "The Building of Basecamp",
-      "studyType": "Corporate Training",
-      "startDate": "2004-09-01",
-      "endDate": "2004-09-01",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Learning Tree International, Atlanta, GA",
-      "url": "https://www.learningtree.com/",
-      "area": "XML – A comprehensive Introduction",
-      "studyType": "Corporate Training",
-      "startDate": "2002-04-01",
-      "endDate": "2002-04-01",
-      "score": "",
-      "courses": []
-    },
     {
       "institution": "Morehouse College",
       "url": "https://www.morehouse.edu",
@@ -391,10 +276,5 @@
       "reference": "Victor has a wide breadth of knowledge in web design and usability. He is extremely quick in mastering new tools and technologies, easily jumping between Windows, Mac, and Linux environments. It is a pleasure to work with him."
     }
   ],
-  "projects": [],
-  "meta": {
-    "canonical": "https://victortolbert.com/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2021-09-01T00:00:00.000Z"
-  }
+  "projects": []
 }
