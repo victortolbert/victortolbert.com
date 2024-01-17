@@ -30,7 +30,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
     '@vueuse/nuxt',
-    '@unocss/nuxt',
     '@nuxt/content',
   ],
 
