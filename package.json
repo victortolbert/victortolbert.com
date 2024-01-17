@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@vueuse/nuxt": "^10.7.2",
-    "nuxt": "^3.9.2",
+    "nuxt": "3.8.2",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "@iconify-json/ph": "^1.1.10",
     "@iconify/json": "^2.2.169",
     "@nuxt/content": "^2.10.0",
-    "@nuxt/devtools": "^1.0.8",
+    "@nuxt/devtools": "1.0.6",
     "@nuxt/ui": "^2.12.0",
     "@types/lodash": "^4.14.202",
     "@unocss/nuxt": "^0.58.3",

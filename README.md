@@ -7,7 +7,7 @@
 
 ## Todolist
 
-- [ ] Add resume
+- [x] Add resume
 
 ## Contributing
 
