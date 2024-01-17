@@ -3,9 +3,9 @@ definePageMeta({
   title: 'Resume',
   breadcrumb: 'Resume',
 })
-
-const { data: resume } = await useAsyncData( 'home', () => queryContent('/').findOne())
+const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
+
 const showFooter = ref(false)
 const showWorkLocation = ref(false)
 
