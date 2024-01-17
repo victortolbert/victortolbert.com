@@ -1,0 +1,8 @@
+{
+  "name": "Feedbackjar",
+  "url": "https://feedbackjar.app",
+  "description": "Open source feedback, roadmaps and changelogs",
+  "thumbnail": "/assets/images/projects/feedbackjar.png",
+  "status": "WIP",
+  "opensource": true
+}

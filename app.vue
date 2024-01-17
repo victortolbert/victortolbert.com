@@ -44,7 +44,7 @@ body,
   filter: grayscale(1);
 }
 
-.page-enter-active,
+/* .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
 }
@@ -52,6 +52,21 @@ body,
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+} */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(5px);
 }
 
 .rotate-enter-active,
