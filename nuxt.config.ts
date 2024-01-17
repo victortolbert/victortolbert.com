@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  extends: ['@nuxt/ui-pro'],
+
   app: {
     head: {
       htmlAttrs: {
@@ -25,6 +27,20 @@ export default defineNuxtConfig({
 
   appConfig: {
     buildDate: new Date().toISOString(),
+  },
+
+  content: {
+    highlight: {
+      theme: {
+        default: 'vitesse-light',
+        dark: 'vitesse-dark',
+      },
+    },
+    markdown: {
+      remarkPlugins: [
+        'remark-external-links',
+      ],
+    },
   },
 
   css: [
@@ -68,6 +84,14 @@ export default defineNuxtConfig({
     },
   },
 
+  hooks: {
+    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
+    'components:extend': (components) => {
+      const globals = components.filter(c => ['UButton', 'UColorModeButton'].includes(c.pascalName))
+
+      globals.forEach(c => c.global = true)
+    },
+  },
   modules: [
     '@formkit/auto-animate/nuxt',
     '@nuxt/ui',
@@ -87,6 +111,13 @@ export default defineNuxtConfig({
   typescript: { strict: false },
 
   ui: {
-    icons: ['ph', 'logos'],
+    icons: ['heroicons', 'simple-icons', 'ph'],
+  },
+
+  vite: {
+    build: {
+      minify: 'esbuild',
+      cssMinify: 'esbuild',
+    },
   },
 })

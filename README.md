@@ -87,3 +87,15 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+<!-- https://nuxters.nuxt.com/victortolbert -->
+
+## Currency API
+
+```bash
+curl -G "https://api.currencyapi.com/v3/historical" \
+    -d "apikey=cur_live_9wjJtsnviLcAuT3vZq6SrSVkz5gWvG7e4YaO7v7C" \
+    -d "base_currency=USD" \
+    -d "date=2020-10-01"
+```
