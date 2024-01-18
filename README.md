@@ -256,4 +256,9 @@ curl -G "https://api.currencyapi.com/v3/historical" \
 - Lightning Web Components
 - PHP, Ruby, Python
 
+ATT: Soap, WSDL, Apache CAML, Angular.js, Backbone.js, OAUTH
+Videa: .NET, Angular.js, Vue.js, Axure, Team Foundation Services, WordPress
+Turner: Drupal, React, Vue.js
+Booster, Laravel, CodeIgniter, Bootstrap, Bulma, Tailwind CSS, Figma
+Hancock. .NET, C#, Azure DevOps
 -->
