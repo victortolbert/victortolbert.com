@@ -1,0 +1,8 @@
+{
+  "name": "TVB XML Viewer",
+  "url": "https://logspot.vercel.app/",
+  "description": "These are the Television Bureau of Advertising standards for electronic orders, etc. used for conducting business between advertisers / advertising agencies and TV stations / local station rep firms.",
+  "thumbnail": "/assets/images/projects/tvb-xml-viewer.png",
+  "status": "Active",
+  "opensource": true
+}

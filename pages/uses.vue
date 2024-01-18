@@ -2,7 +2,7 @@
 const description
   = 'Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff.'
 useSeoMeta({
-  title: 'Things I use | Victor Tolbert',
+  title: 'Uses - Victor Tolbert',
   description,
 })
 
@@ -19,7 +19,7 @@ const other = items.value.filter(item => item.category === 'others')
   <main class="min-h-screen">
     <AppHeader
       class="mb-12"
-      title="What's in my bag?"
+      title="Uses"
       :description="description"
     />
     <div class="space-y-24">

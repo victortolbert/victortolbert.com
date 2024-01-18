@@ -1,14 +1,14 @@
 <script setup>
 const description = 'Some random experiments with UI I do in my free time.'
 useSeoMeta({
-  title: 'Lab | Victor Tolbert',
+  title: 'UX Lab - Victor Tolbert',
   description,
 })
 </script>
 
 <template>
   <main class="min-h-screen">
-    <AppHeader class="mb-12" title="Lab" :description="description" />
+    <AppHeader class="mb-12" title="UX Lab" :description="description" />
     <div class="space-y-24">
       <ContentList v-slot="{ list }" path="/lab">
         <ContentQuery

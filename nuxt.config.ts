@@ -1,3 +1,5 @@
+import process from 'node:process'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
@@ -29,17 +31,23 @@ export default defineNuxtConfig({
     buildDate: new Date().toISOString(),
   },
 
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
+
+  // content: {
+  //   highlight: {
+  //     theme: 'github-dark',
+  //   },
+  // },
+
   content: {
     highlight: {
       theme: {
         default: 'vitesse-light',
         dark: 'vitesse-dark',
       },
-    },
-    markdown: {
-      remarkPlugins: [
-        'remark-external-links',
-      ],
     },
   },
 
@@ -72,10 +80,15 @@ export default defineNuxtConfig({
     port: 8589,
   },
 
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true,
+    },
+  },
 
   fontMetrics: {
-    fonts: ['DM Sans'],
+    fonts: ['DM Sans', 'Inter'],
   },
 
   googleFonts: {
@@ -83,7 +96,7 @@ export default defineNuxtConfig({
     download: true,
     families: {
       'DM+Sans': [400, 500, 600, 700],
-      Inter: [400, 500, 600, 700, 800, 900],
+      'Inter': [400, 500, 600, 700, 800, 900],
     },
   },
 
@@ -95,15 +108,33 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     },
   },
+
   modules: [
-    '@formkit/auto-animate/nuxt',
     '@nuxt/ui',
+    '@formkit/auto-animate/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
+    '@nuxt/image',
     '@pinia/nuxt',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
+    'v-wave/nuxt',
+    'nuxt-lodash',
   ],
+
+  routeRules: {
+    '/api/search.json': { prerender: true },
+  },
+
+  runtimeConfig: {
+    stripeSecret: '',
+    stripeWebhookSecret: '',
+    public: {
+      apiUrl: process.env.API_URL || 'http://localhost:8589',
+      assetsSrc: '/assets',
+      stripeKey: '',
+    },
+  },
 
   ssr: false,
 
@@ -114,7 +145,7 @@ export default defineNuxtConfig({
   typescript: { strict: false },
 
   ui: {
-    icons: ['heroicons', 'simple-icons', 'ph'],
+    icons: ['fa6-brands', 'heroicons', 'heroicons-outline', 'logos', 'ph', 'simple-icons'],
   },
 
   vite: {
@@ -122,5 +153,10 @@ export default defineNuxtConfig({
       minify: 'esbuild',
       cssMinify: 'esbuild',
     },
+    // plugins: [vsharp()],
+  },
+
+  vue: {
+    defineModel: true,
   },
 })

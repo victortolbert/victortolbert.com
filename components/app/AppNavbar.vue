@@ -5,34 +5,47 @@ const headerRef = ref(null)
 const { styles } = useFixedHeader(headerRef)
 
 const items = [
-  { name: 'Home', path: '/', icon: 'solar:home-smile-outline' },
+  {
+    name: 'Resume',
+    path: '/',
+    icon: 'ph:read-cv-logo-duotone',
+  },
   {
     name: 'Projects',
     path: '/projects',
-    icon: 'solar:folder-with-files-outline',
+    icon: 'ph:folder-notch-open-duotone',
   },
   {
     name: 'Articles',
     path: '/articles',
-    icon: 'solar:document-add-outline',
+    icon: 'ph:newspaper-duotone',
   },
-  { name: 'Lab', path: '/lab', icon: 'heroicons:beaker' },
   {
-    name: 'What\'s in my bag?',
-    path: '/whats-in-my-bag',
-    icon: 'solar:backpack-outline',
+    name: 'Lab',
+    path: '/lab',
+    icon: 'ph:lightbulb-duotone',
+  },
+  {
+    name: 'Uses',
+    path: '/uses',
+    icon: 'ph:backpack-duotone',
   },
   {
     name: 'Bookmarks',
     path: '/bookmarks',
-    icon: 'solar:bookmark-linear',
+    icon: 'ph:bookmarks-simple-duotone',
+  },
+  {
+    name: 'About Me',
+    path: '/about',
+    icon: 'ph:question-duotone',
   },
 ]
 </script>
 
 <template>
   <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50">
-    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
       <ul
         class="flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-full shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5"
       >

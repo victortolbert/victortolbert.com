@@ -1,11 +1,9 @@
 ---
 title: "Building Your First API with Express.js: A Beginner's Guide"
 description: "A beginner-friendly guide to building your first API with Express.js"
-published: 2023/11/2
+published: 2024-01-17
 slug: "building-your-first-api-with-expressjs-a-beginners-guide"
 ---
-
-> This article was created using ChatGPT and meant as a placeholder
 
 ## What is Express.js?
 
@@ -30,7 +28,6 @@ This creates a new directory for your project and initializes a new Node.js proj
 Install Express.js using npm (Node Package Manager):
 
 ```bash
-Copy code
 npm install express --save
 This command installs Express.js and adds it to your project's dependencies.
 ```
@@ -40,18 +37,17 @@ This command installs Express.js and adds it to your project's dependencies.
 Create a file named app.js in your project directory. This file will be the entry point of your API. Add the following code to app.js:
 
 ```js
-Copy code
-const express = require('express');
-const app = express();
-const port = 3000;
+const express = require('express')
+const app = express()
+const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+  res.send('Hello World!')
+})
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 ```
 
 This code creates a basic Express server that listens on port 3000 and responds with "Hello World!" to HTTP GET requests to the root URL (/).
@@ -61,7 +57,6 @@ This code creates a basic Express server that listens on port 3000 and responds 
 Run your server using Node.js:
 
 ```bash
-Copy code
 node app.js
 Visit http://localhost:3000 in your browser. You should see the message "Hello World!".
 ```
@@ -73,7 +68,6 @@ Now, let's expand our server to act as a simple API. For example, let's create a
 Add the following code to your app.js:
 
 ```javascript
-Copy code
 let users = [{ name: "Alice" }, { name: "Bob" }];
 
 app.get('/users', (req, res) => {

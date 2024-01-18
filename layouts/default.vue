@@ -9,16 +9,31 @@ const date = useAppConfig().buildDate
       Offline
     </header>
 
+    <AppNavbar />
+
+    <div class="h-32" />
+
     <main class="flex-1">
-      <slot />
+      <UContainer>
+        <slot />
+      </UContainer>
     </main>
 
+    <div class="h-32" />
+
+    <AppFooter />
+
     <footer class="flex items-center justify-between p-4">
-      <TheLogo />
+      <NuxtLink to="/">
+        <TheLogo />
+      </NuxtLink>
+
       <div class="flex items-center gap-2">
         <span class="text-sm">Built Date: {{ date }}</span>
         <UColorModeButton />
       </div>
     </footer>
+
+    <AppCommandPalette />
   </div>
 </template>

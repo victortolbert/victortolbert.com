@@ -22,8 +22,8 @@ function formatDate(date) {
 </script>
 
 <template>
-  <div class="relative mx-auto scroll-my-12 overflow-auto p-4 container md:p-16 print:p-12">
-    <main class="mx-auto max-w-2xl w-full space-y-8 print:space-y-6">
+  <div class="w-full relative mx-auto scroll-my-12 overflow-auto print:p-12">
+    <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-2xl font-bold">
@@ -58,7 +58,7 @@ function formatDate(date) {
           </div>
         </div>
         <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
-          <img class="aspect-square h-full w-full grayscale hover:grayscale-0" :src="resume?.basics.image" alt="Victor Tolbert">
+          <img class="aspect-square h-full w-full" :src="resume?.basics.image" alt="Victor Tolbert">
         </span>
       </div>
 
@@ -108,10 +108,10 @@ function formatDate(date) {
 
         <div class="flex flex-wrap gap-1">
           <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
-            <UBadge color="primary" variant="solid">
+            <UBadge color="gray" variant="solid">
               {{ skill.name }}
             </UBadge>
-            <UBadge v-for="keyword in skill.keywords" :key="`keyword-${keyword}`" color="primary" variant="subtle">
+            <UBadge v-for="keyword in skill.keywords" :key="`keyword-${keyword}`" color="gray" variant="subtle">
               {{ keyword }}
             </UBadge>
           </template>
@@ -145,10 +145,10 @@ function formatDate(date) {
         </h2>
         <div class="flex flex-wrap gap-1">
           <template v-for="interest in resume?.interests" :key="`interest-${interest}`">
-            <UBadge color="primary" variant="solid">
+            <UBadge color="gray" variant="solid">
               {{ interest.name }}
             </UBadge>
-            <UBadge v-for="keyword in interest.keywords" :key="`keyword-${keyword}`" color="primary" variant="subtle">
+            <UBadge v-for="keyword in interest.keywords" :key="`keyword-${keyword}`" color="gray" variant="subtle">
               {{ keyword }}
             </UBadge>
           </template>

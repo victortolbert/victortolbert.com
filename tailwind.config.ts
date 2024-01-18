@@ -70,7 +70,7 @@ export default <Partial<Config>>{
         // sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
         sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif],
-        display: ['Bungee', 'Pica'],
+        // display: ['Bungee', 'Pica'],
         mono: ['Monaspace Argon', 'Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
         mockup: ['Balsamiq Sans', 'cursive'],
         proto: [

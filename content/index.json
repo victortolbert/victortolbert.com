@@ -12,7 +12,7 @@
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
     "url": "https://victortolbert.com",
-    "summary": "I'm a full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "summary": "I'm a self-taught full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
     "location": {
       "address": "1547 Boulder Walk Drive",
       "postalCode": "30316",
@@ -58,7 +58,7 @@
         "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and TailwindCSS frontend",
         "Spearheaded the standardization of front-end development processes and best practices",
         "Gained comprehensive knowledge of Microsoft Azure, including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage, and Azure Application Insights",
-        "Tech Stack: .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.JS, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), TailwindCSS"
+        "Tech Stack: Salesforce, .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.JS, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), TailwindCSS"
       ]
     },
     {

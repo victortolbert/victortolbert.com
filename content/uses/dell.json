@@ -1,7 +1,7 @@
 {
-  "name": "Macbook pro 13 (2020)",
-  "description": "The Intel i5 version. 16GB RAM, 512GB SSD",
-  "url": "https://support.apple.com/kb/SP819?locale=en_US",
+  "name": "Dell Inspiron 13",
+  "description": "The Intel i7 version. 16GB RAM, 512GB SSD",
+  "url": "https://www.amazon.com/Dell-Inspiron-5310-Definition-Laptop/dp/B091H25DJ2",
   "category": "hardware",
   "thumbnail": "/uses/dell.png"
 }

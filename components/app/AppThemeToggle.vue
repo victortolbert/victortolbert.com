@@ -19,7 +19,7 @@ const isDark = computed({
     >
       <Icon
         aria-hidden="true"
-        :name="isDark ? 'solar:sun-2-outline' : 'solar:moon-outline'"
+        :name="isDark ? 'ph:sun-duotone' : 'ph:moon-duotone'"
         class="w-5 h-5"
       />
       <span class="sr-only">Toggle theme</span>

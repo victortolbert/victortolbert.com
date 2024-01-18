@@ -228,5 +228,32 @@ curl -G "https://api.currencyapi.com/v3/historical" \
 ```
 
 <!--
-  Webpack 5
+- Webpack 5
+- Full Stack Developer, DevOps, Infrastructure as Code, Penetration Testing, Blogger
+- Laravel and React developer and Technology enthusiast
+- Software engineer, digital nomad, public speaker and remote worker
+- Technical Support Engineer, Systems Administrator, Fullstack Developer, Raspberry Pi tinker
+- Front-End and UI/UX Developer, Accessibility advocate, JAMStack fan, working in the marketing and entertainment industry
+- Self-taught, Full stack developer from Atlanta, GA. Open Source contributor. Always Learning.
+- Indie Hacker. Web Developer. Traveler
+- Software Engineer - Distributed Systems, Cloud Platforms, and Web.
+- Computer Engineer. Web Developer. Teacher at designcoder.net
+- Web developer, adventurer, and amateur photographer
+- Principal Engineer & Senior Frontend Engineer
+- Full Stack Developer and Open Source Contributor
+- Full stack JavaScript developer who also enjoys DevOps and automation
+- Developer, hacker. Passionate about cyber security, web development and distributed systems.
+- Web Developer, Co-Organizer North Atlanta Laravel Meetup
+- Full-stack PHP, JS, and DevOps developer, agency director, and open-source contributor
+- Detail-oriented and passionate Software Engineer.
+- User Interface developer focusing on Performance, A11y and CSS
+
+- SQL, C#, .NET, .NET Core, ASP.NET, Apex, Powershell
+- TypeScript, JavaScript, Vue, React, Express.js, Node.js
+- Nuxt, Next.js, Laravel, Ruby on Rails, WordPress, Salesforce
+- Google Cloud Platform, AWS, Azure
+- Flutter
+- Lightning Web Components
+- PHP, Ruby, Python
+
 -->
