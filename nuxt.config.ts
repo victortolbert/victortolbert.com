@@ -36,17 +36,12 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
 
-  // content: {
-  //   highlight: {
-  //     theme: 'github-dark',
-  //   },
-  // },
-
   content: {
     highlight: {
       theme: {
-        default: 'vitesse-light',
-        dark: 'vitesse-dark',
+        default: 'github-light',
+        dark: 'github-dark',
+        sepia: 'monokai',
       },
     },
   },
