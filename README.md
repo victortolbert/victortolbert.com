@@ -228,7 +228,7 @@ curl -G "https://api.currencyapi.com/v3/historical" \
 ```
 
 <!--
-- Webpack 5
+- Webpack 5, Vite, Bun
 - Full Stack Developer, DevOps, Infrastructure as Code, Penetration Testing, Blogger
 - Laravel and React developer and Technology enthusiast
 - Software engineer, digital nomad, public speaker and remote worker
@@ -261,4 +261,14 @@ Videa: .NET, Angular.js, Vue.js, Axure, Team Foundation Services, WordPress
 Turner: Drupal, React, Vue.js
 Booster, Laravel, CodeIgniter, Bootstrap, Bulma, Tailwind CSS, Figma
 Hancock. .NET, C#, Azure DevOps
+
+
+Bootstrap Vue, Kendo UI for Vue
+Storybook
+Vite, Vitest
+Astro, Remix,
+React Email, Vue Email,
+Remotion
+Slidev
+Svelte, SvelteKit
 -->
