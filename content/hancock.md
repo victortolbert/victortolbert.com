@@ -1,5 +1,8 @@
 ---
+company: Hancock Claims Consultants
 title: Senior Software Engineer
+start_date:
+end_date:
 frontend: JavaScript, TypeScript, Vue, jQuery, HTML, CSS, Sass, Bootstrap, Tailwind, Responsive Design
 backend: C#, Node, Laravel, T-SQL, RESTful APIs
 dev_ops: Azure, Webpack

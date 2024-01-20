@@ -8,6 +8,11 @@
 ## Todolist
 
 - [x] Add resume
+- [ ] Add export to CSV example
+- [ ] Add file upload example
+- [ ] Add form example
+- [ ] Add emailing solution
+- [ ] Create GitHub profile bio
 
 ## Contributing
 
@@ -271,4 +276,21 @@ React Email, Vue Email,
 Remotion
 Slidev
 Svelte, SvelteKit
+
+Problem Solving, Data Structures, User Documentation, Document Object Model (DOM)
+ Microsoft SQL Server · SQL · Document Object Model (DOM) · Language Integrated Query (LINQ)
+  Software Development Life Cycle (SDLC)
+  Use Cases · Code Reviews
+
+  Successfully integrated external services, including Hi Marley, VIP, and Xact, enhancing the functionality and performance of the application.
+
+Software Engineer maintaining and adding enhancement to an in-house company workflow application using MVC, C# and Azure PaaS technologies.
+
+  Key contributor on a dynamic team dedicated to transforming legacy web applications into a modern, RESTful .NET Core platform.
+
+  Played a crucial role in maintaining and optimizing an existing legacy ASP.NET application.
+
+  Skills: REST APIs · SQL · Object-Oriented Programming (OOP) · Git · Agile Methodologies · ASP.NET Web API · Microsoft SQL Server · .NET Framework · Programming · Microsoft Azure
+
+  Telerik Web Controls
 -->

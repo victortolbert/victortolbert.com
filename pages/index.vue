@@ -14,6 +14,7 @@ const icons = {
   GitHub: 'i-ph-github-logo-duotone',
   Twitter: 'i-ph-twitter-logo-duotone',
   Instagram: 'i-ph-instagram-logo-duotone',
+  CodePen: 'i-ph-codepen-logo-duotone',
 }
 
 function formatDate(date) {
@@ -71,6 +72,23 @@ function formatDate(date) {
         </p>
       </section>
 
+      <section class="flex min-h-0 flex-col gap-y-4">
+        <h2 class="text-xl font-bold">
+          Key Skills
+        </h2>
+
+        <div class="flex flex-wrap gap-1">
+          <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
+            <UBadge color="gray" variant="solid">
+              {{ skill.name }}
+            </UBadge>
+            <UBadge v-for="keyword in skill.keywords" :key="`keyword-${keyword}`" color="gray" variant="subtle">
+              {{ keyword }}
+            </UBadge>
+          </template>
+        </div>
+      </section>
+
       <section class="min-h-0 flex flex-col gap-y-4">
         <h2 class="text-xl font-bold">
           Work Experience
@@ -98,23 +116,6 @@ function formatDate(date) {
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="flex min-h-0 flex-col gap-y-4">
-        <h2 class="text-xl font-bold">
-          Skills
-        </h2>
-
-        <div class="flex flex-wrap gap-1">
-          <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
-            <UBadge color="gray" variant="solid">
-              {{ skill.name }}
-            </UBadge>
-            <UBadge v-for="keyword in skill.keywords" :key="`keyword-${keyword}`" color="gray" variant="subtle">
-              {{ keyword }}
-            </UBadge>
-          </template>
         </div>
       </section>
 

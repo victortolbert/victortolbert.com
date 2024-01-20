@@ -11,40 +11,90 @@ cms: Wordpress
 crm:
 ---
 
-## Senior Software Engineer, Frontend
+"Passion"
 
-## MERN, MEAN, LAMP, MEVN, Ruby on Rails, Django, .NET, JAMStack
+---
 
-### MongoDB
+## About
 
-MongoDB is a NoSQL database that allows the handling of documents for your website. It allows developers to create databases, schemas, and tables to handle different types of databases for their websites. MongoDB also comes with a shell that provides an interface for developers to use JavaScript to manipulate data.
+My name is Victor Tolbert and I live in Atlanta, Georgia.
+I'm an enthusiastic developer, passionate about frontend enginering, new technology and the capabilities it provides.
 
-### Express.js
+I'm inspired by ... and hope to be able to lead a team of like minded
 
-Express JS is a backend framework that provides a wide array of middleware to keep your backend running.
+I enjoy development and design. I'm most comfortable with front-end technologies like JavaScript, Vue.js and React, but I have also done some significant work in back-end technologies like .... I'm presently exploring and a fan of functional programming techniques.
 
-### React.js
+## Projects
 
-This is a front-end framework. It provides all the tools needed to create user interfaces for single-page applications and mobile apps.
+- Videa Sales Demo
+- UI Prototyping Toolkit
+- Proposal XML Viewer
+- GA Strategic Prevention System
+- Urban League of Greater Atlanta
+- Atlanta Association Developmental Disabilities
+- Research and Compare Tool (AutoTrader.com)
+- Dealer Solutions (AutoTrader.com)
 
-### Node.js
+## PluralSight
 
-Node.js is a server-side environment that allows developers to build scalable network applications. Its work is to allow code to run on the server.
+20130630 - Fixing Common jQuery Bugs
+20130701 - Backbone.js Fundamentals
 
-## LAMP
+:logo-hancock-claims
+FRONT-END WEB DEVELOPER
 
-### Linux
+Exceptional interpersonal and communication skills with demonstrated success conveying complex technical information in an understandable manner
 
-Linux is a free and open-source operating system with worldwide popularity. It sits at the lowest level in the LAMP stack and provides a highly flexible and configurable operating system.
+Comprehensive background working with high-profile companies and organizations; Proficient with HTML, CSS and modern JavaScript; an in-depth understanding of SEO and site performance optimization. Experienced in all aspects of architecture and accessibility techniques. Skilled analytical problem-solver with the ability to quickly learn new technologies. Strong presentation and training abilities. Comfortable working within a diverse Full Stack environment, including Net, Java, PHP and Ruby-Windows, Mac or Linux.
 
-### Apache
+---
 
-Apache, the second component on the stack, is a web server. It is responsible for receiving web requests, processing the requests, and returning responses Via HTTP. It allows users to access the application through a web URL after it is deployed.
+Markup, Scripting & Programming
+Operating Systems / Web Server Platforms
+Applications / Tools
 
-### MySQL
+---
 
-MySQL is an open-source relational database management system for storing application data. It can handle a wide range of complexity allowing both small and large sites to operate without losing data.
+Start with a job scope (no bullet) giving an overview of the position. Then, under the job scope should be bullet points, stating how you did your job well or the impact your efforts had.
 
-### PHP
+## Videa
 
-PHP is the last component of the stack. It is an open-source scripting language that is suitable for creating dynamic web pages. As a tool, PHP comes in handy when increasing the functionality of your HTML and CSS code.
+Worked with product managers to define, design and build front end user interface prototypes.
+
+- Developed and maintained a set of UI standards and design best practices.-impact?
+- Conceptualized and prototyped new features for core product. .-impact?
+- Served as the sole liaison between visual design, on-site and off-shore engineering teams
+- Created and documented a CSS framework and patterns library, enabling to enable the creation of consistent UIs and quick on-boarding for new developers.
+- Mentored visual designers in learning HTML and CSS. .-impact?
+- Recognized company wide for individual effort and contribution of a product demo used as a stand-in for the real product at the national industry trade conference.
+
+---
+
+Using the word 'to' before a result can imply that the results were a goal and perhaps were not achieved. Instead, add 'ing' to your verb; this emphasizes and claims the result.
+
+---
+
+## When I say “impact”? Some questions you can ask yourself are:
+
+-  What would have happened if you didn’t do this or didn’t do it well? Often your impact lies in the answer of that question.
+
+You can also ask yourself, did you:
+
+-   Reduce costs, increase revenues/profits? Impact bottom-line? (How?)
+-   Meet/exceed company objectives? (In what way?)
+-   Identify, create or implement a new procedure or system? (Results?)
+-   Identify or solve a major problem for your department or division? (Results?)
+-   Develop or do something for the first time at your company? (Results?)
+-   Improve employee performance or productivity? (How?)
+-   Receive any special recognition or awards? (Why?)
+
+---
+
+-  Product Management, General Assembly, Atlanta, GA
+-  Mastering JavaScript and Advanced JavaScript Best Practices, Accelerbrate, Atlanta, GA
+-  Presenting Data and Information, Edward Tufte
+-  Ruby on Rails, The Pragmatic Studio, Pasadena CA
+-  The Building of Basecamp, 37 Signals, Chicago, IL
+-  XML – A Comprehensive Introduction, Learning Tree International, Atlanta, GA
+
+---

@@ -7,7 +7,7 @@
   },
   "basics": {
     "name": "Victor Tolbert",
-    "label": "Software Engineer",
+    "label": "Senior Software Engineer, Frontend",
     "image": "https://avatars.githubusercontent.com/u/2476?v=4",
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
@@ -40,6 +40,11 @@
         "network": "Instagram",
         "username": "victortolbert",
         "url": "https://www.instagram.com/victortolbert/"
+      },
+      {
+        "network": "CodePen",
+        "username": "victortolbert",
+        "url": "https://codepen.io/victortolbert"
       }
     ]
   },
@@ -48,7 +53,7 @@
       "name": "Hancock Claims Consultants",
       "location": "Alpharetta, Georgia USA",
       "description": "",
-      "position": "Senior Software Engineer",
+      "position": "Software Engineer",
       "url": "https://hancockclaims.com",
       "startDate": "2021-05-21",
       "endDate": "2024-01-09",
