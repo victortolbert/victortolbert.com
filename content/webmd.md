@@ -5,7 +5,7 @@ start_date:
 end_date:
 frontend: JavaScript, jQuery, HTML, CSS, Sass, BEM, Bootstrap, Responsive Design, Web Accessibility, SEO
 backend:
-dev_ops:
+dev_ops: Require.js
 languages:
 frameworks:
 ---

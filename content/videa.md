@@ -33,3 +33,33 @@ Worked with product managers to define, design and build front-end user interfac
 ### Corporate Website
 
 ### Patterns Library
+
+## Team
+
+- Baines, Mackenzie <Mackenzie.Baines@Videa.tv>
+- Branton, Kahil <Kahil.Branton@videa.tv>
+- Cook, Paige <paige.cook@videa.tv>
+- Gravley, Rokeia <Rokeia.Gravley@Videa.tv>
+- Greco, Phil <Phil.Greco@Videa.tv>
+- Hand, Matt <Matt.Hand@Videa.tv>
+- Hemphill, Charlane <Charlane.Hemphill@Videa.tv>
+- Henderson, Myles <Myles.Henderson@Videa.tv>
+- Hobbs, Lynn <Lynn.Hobbs@videa.tv>
+- Kelley, Mark <mark.kelley@videa.tv>
+- Kim, Ruth <Ruth.Kim@videa.tv>
+- Knight, April <April.Knight@Videa.tv>
+- Koganitsky, Zak <Zakhar.Koganitsky@Videa.tv>
+- McClain, Bill <Bill.McClain@videa.tv>
+- McMinn, Debbie <Debbie.McMinn@Videa.tv>
+- Myers, Kurt <Kurt.Myers@Videa.tv>
+- Nelson, Renee <Renee.Nelson@Videa.tv>
+- Noah, Brant <brant.noah@videa.tv>
+- Oshins, David <david.oshins@videa.tv>
+- Pashke, Kristy <Kristy.Pashke@videa.tv>
+- Powers, Tom <Tom.Powers@Videa.tv>
+- Tavoletti, Dawn <Dawn.Tavoletti@Videa.tv>
+- Thompson, Jerome <jerome.thompson@videa.tv>
+- Tolbert, Victor <Victor.Tolbert@Videa.tv>
+- Unuigbe, Osen <Osen.Unuigbe@Videa.tv>
+- Wallace, Stacy <stacy.wallace@videa.tv>
+- Wlodar, Bryan <Bryan.Wlodar@videa.tv>

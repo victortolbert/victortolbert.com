@@ -48,6 +48,12 @@ function formatDate(date) {
               icon="i-ph-envelope-duotone"
             />
             <UButton
+              color="gray"
+              variant="outline"
+              :to="`tel:${resume?.basics.phone}`"
+              icon="i-ph-phone-duotone"
+            />
+            <UButton
               v-for="social in resume?.basics.profiles"
               :key="social.network"
               variant="outline"
