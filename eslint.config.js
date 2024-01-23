@@ -12,6 +12,12 @@ export default antfu(
       'no-alert': 'off',
       'no-console': 'off',
     },
+    ignores: [
+      'README.md',
+      '.storybook/',
+      'fixtures',
+      './public/**',
+    ],
   },
   {
     ignores: [

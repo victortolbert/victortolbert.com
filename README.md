@@ -13,6 +13,7 @@
 - [ ] Add form example
 - [ ] Add emailing solution
 - [ ] Create GitHub profile bio
+- [ ] Build and send emails
 
 ## Contributing
 

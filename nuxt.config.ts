@@ -69,6 +69,7 @@ export default defineNuxtConfig({
     '~/assets/css/debug-grid.css',
     '~/assets/css/fonts/monaspace-neon.css',
     '~/assets/css/fonts/salesforce-sans.css',
+    '~/assets/scss/typed.scss',
   ],
 
   devServer: {
@@ -113,6 +114,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
+    '@vue-email/nuxt',
     'v-wave/nuxt',
     'nuxt-lodash',
   ],
@@ -153,5 +155,10 @@ export default defineNuxtConfig({
 
   vue: {
     defineModel: true,
+  },
+
+  vueEmail: {
+    baseUrl: 'https://victortolbert.com/',
+    autoImport: true,
   },
 })
