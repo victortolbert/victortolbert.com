@@ -1,4 +1,5 @@
 import process from 'node:process'
+import svgLoader from 'vite-svg-loader'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -47,6 +48,7 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     '@fontsource-variable/dm-sans',
     '@fontsource-variable/fira-code',
     '@fontsource-variable/inter',
@@ -150,7 +152,13 @@ export default defineNuxtConfig({
       minify: 'esbuild',
       cssMinify: 'esbuild',
     },
-    // plugins: [vsharp()],
+
+    plugins: [
+      svgLoader({
+        defaultImport: 'raw',
+      }),
+      // vsharp()
+    ],
   },
 
   vue: {

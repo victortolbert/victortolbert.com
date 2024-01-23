@@ -11,6 +11,11 @@ languages:
 frameworks: Drupal
 ---
 
+•	Highlight the technologies and tools you used for Vue.js and React front-end development in this role.
+•	Consider mentioning any specific projects or features you developed for PGA.COM, Ryder Cup, or PGA Championship.
+
+
+
 ## Projects
 
 ### Golfing Events Platform Leaderboard enhancements

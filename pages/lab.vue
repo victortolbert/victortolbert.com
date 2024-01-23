@@ -1,5 +1,5 @@
 <script setup>
-const description = 'Some random experiments with UI I do in my free time.'
+const description = 'Some random experiments'
 useSeoMeta({
   title: 'UX Lab - Victor Tolbert',
   description,

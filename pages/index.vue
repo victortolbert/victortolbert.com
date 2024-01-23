@@ -1,4 +1,11 @@
 <script setup>
+// const tokens = '/_nuxt/public/assets/images/tokens.svg'
+// const elements = '/_nuxt/public/assets/images/elements.svg'
+// const patterns = '/_nuxt/public/assets/images/patterns.svg'
+// const styleguide = '/_nuxt/public/assets/images/styleguide.svg'
+// const templates = '/_nuxt/public/assets/images/templates.svg'
+const vueds = '/_nuxt/public/assets/images/vueds.svg'
+
 definePageMeta({
   title: 'Resume',
   breadcrumb: 'Resume',
@@ -23,16 +30,42 @@ function formatDate(date) {
 </script>
 
 <template>
-  <div class="w-full relative mx-auto scroll-my-12 overflow-auto print:p-12">
+  <div class="w-full relative mx-auto print:p-12">
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-2xl font-bold">
             {{ resume?.basics.name }}
           </h1>
-          <p class="text-pretty text-muted-foreground max-w-md text-sm font-mono">
+          <div class="text-pretty text-muted-foreground max-w-md text-lg font-mono">
             {{ resume?.basics.label }}
-          </p>
+            <div
+              class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
+            >
+              <ul
+                class="block text-left leading-tight [&_li]:block animate-text-slide"
+              >
+                <li class="text-indigo-500">
+                  Frontend
+                </li>
+                <li class="text-rose-500">
+                  Fullstack
+                </li>
+                <li class="text-yellow-500">
+                  DevOps
+                </li>
+                <li class="text-teal-500">
+                  Vue.js
+                </li>
+                <li class="text-pink-500">
+                  React
+                </li>
+                <li class="text-sky-500">
+                  Laravel
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="text-pretty text-muted-foreground max-w-md items-center text-xs font-mono">
             <span class="inline-flex gap-x-1.5 align-baseline leading-none">
               <UIcon name="i-ph-globe-simple-duotone" />
@@ -178,6 +211,93 @@ function formatDate(date) {
         </div>
       </section>
     </main>
+
+    <section class="mt-16">
+      <img :src="`${vueds}`" class="logo" alt="Vue Design Systems">
+
+      <!--
+      <img :src="`${tokens}`" class="logo" alt="Tokens">
+      <img :src="`${elements}`" class="logo" alt="Elements">
+      <img :src="`${patterns}`" class="logo" alt="Patterns">
+      <img :src="`${templates}`" class="logo" alt="Templates">
+      -->
+
+      <div class="flex gap-1.5 p-4 text-4xl">
+        <UIcon name="i-logos-dotnet" />
+        <UIcon name="i-logos-laravel" />
+        <UIcon name="i-logos-codeigniter-icon" />
+
+        <UIcon name="i-logos-nodejs" />
+
+        <UIcon name="i-logos-vue" />
+        <UIcon name="i-logos-svelte-icon" />
+        <UIcon name="i-logos-react" />
+        <UIcon name="i-logos-angular-icon" />
+
+        <UIcon name="i-logos-nuxt-icon" />
+        <UIcon name="i-logos-pinia" />
+        <UIcon name="i-logos-vueuse" />
+        <UIcon name="i-logos-nextjs-icon" />
+
+        <UIcon name="i-logos-nginx" />
+        <UIcon name="i-logos-docker-icon" />
+        <UIcon name="i-logos-aws" />
+        <UIcon name="i-logos-microsoft-azure" />
+        <UIcon name="i-logos-google-cloud" />
+        <UIcon name="i-logos-netlify-icon" />
+        <UIcon name="i-logos-heroku-icon" />
+
+        <UIcon name="i-logos-html-5" />
+        <UIcon name="i-logos-webcomponents" />
+        <UIcon name="i-logos-css-3" />
+        <UIcon name="i-logos-sass" />
+        <UIcon name="i-logos-tailwindcss-icon" />
+        <UIcon name="i-logos-progress" />
+        <UIcon name="i-logos-bootstrap" />
+        <UIcon name="i-logos-bulma" />
+        <UIcon name="i-logos-salesforce" />
+
+        <UIcon name="i-logos-javascript" />
+        <UIcon name="i-logos-typescript-icon" />
+        <UIcon name="i-logos-c-sharp" />
+        <UIcon name="i-logos-ruby" />
+        <UIcon name="i-logos-python" />
+        <UIcon name="i-logos-java" />
+        <UIcon name="i-logos-php-alt" />
+
+        <UIcon name="i-logos-postgresql" />
+        <UIcon name="i-logos-mysql" />
+        <UIcon name="i-logos-mongodb" />
+        <UIcon name="i-logos-graphql" />
+
+        <UIcon name="i-logos-circleci" />
+        <UIcon name="i-logos-jenkins" />
+
+        <UIcon name="i-logos-drupal-icon" />
+        <UIcon name="i-logos-wordpress-icon" />
+
+        <UIcon name="i-logos-jira" />
+        <UIcon name="i-logos-confluence" />
+        <UIcon name="i-logos-bitbucket" />
+
+        <UIcon name="i-logos-visual-studio" />
+        <UIcon name="i-logos-visual-studio-code" />
+
+        <UIcon name="i-logos-github-icon" />
+
+        <UIcon name="i-logos-cypress-icon" />
+        <UIcon name="i-logos-playwright" />
+        <UIcon name="i-logos-testing-library" />
+        <UIcon name="i-logos-storybook-icon" />
+        <UIcon name="i-logos-vitest" />
+        <UIcon name="i-logos-jest" />
+
+        <UIcon name="i-logos-gulp" />
+        <UIcon name="i-logos-grunt" />
+        <UIcon name="i-logos-vitejs" />
+        <UIcon name="i-logos-webpack" />
+      </div>
+    </section>
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
       Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>J</kbd> to open the command menu. Hosted by <a href="/" class="underline hover:opacity-80">jcv</a>.
     </p>

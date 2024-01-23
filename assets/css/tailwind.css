@@ -33,6 +33,10 @@
     --ring: 224 71.4% 4.1%;
 
     --radius: 0.5rem;
+
+    --angular: #b52e31;
+    --react: #00d8ff;
+    --vue: #42b883;
   }
 
   .dark {

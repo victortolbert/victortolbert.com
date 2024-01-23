@@ -1,6 +1,6 @@
 <script setup>
 const description
-  = 'Awesome things I\'ve found on the internet. This page is still WIP, I want to add search like bmrks.com'
+  = 'Awesome stuff on the internet for developers and designers.'
 useSeoMeta({
   title: 'Bookmarks - Victor Tolbert',
   description,
@@ -10,7 +10,7 @@ const bookmarks = [
 
   {
     id: 3,
-    label: 'UnJS - Agnostic High-Quality JavaScript Libraries, Tools, and Utilities',
+    label: 'UnJS (Unified JavaScript) - Agnostic High-Quality JavaScript Libraries, Tools, and Utilities',
     url: 'https://unjs.io/',
   },
   {

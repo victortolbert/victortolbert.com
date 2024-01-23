@@ -8,12 +8,14 @@
 ## Todolist
 
 - [x] Add resume
+- [ ] File for unemployment ❗️❗️
 - [ ] Add export to CSV example
 - [ ] Add file upload example
 - [ ] Add form example
 - [ ] Add emailing solution
 - [ ] Create GitHub profile bio
 - [ ] Build and send emails
+- [ ] Command K
 
 ## Contributing
 

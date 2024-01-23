@@ -7,7 +7,7 @@
   },
   "basics": {
     "name": "Victor Tolbert",
-    "label": "Senior Software Engineer, Frontend",
+    "label": "Senior Software Engineer,",
     "image": "https://avatars.githubusercontent.com/u/2476?v=4",
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
@@ -85,13 +85,13 @@
       ]
     },
     {
-      "name": "Turner Broadcasting System (Turner Sports)",
+      "name": "Turner Sports (Turner Broadcasting System)",
       "location": "Atlanta, GA",
       "position": "Senior Software Engineer (Contract)",
       "url": "https://en.wikipedia.org/wiki/Turner_Broadcasting_System",
       "startDate": "2018-03-01",
       "endDate": "2018-11-01",
-      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features",
+      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship, and the PGA tour events platform. Actively participated in project design and direction with new tools and features",
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
         "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "name": "Videa, A Cox Media Group Company",
+      "name": "Videa.tv, LLC (A Cox Media Group Company)",
       "location": "Atlanta, GA",
       "position": "Senior UI Architect / UX Designer",
       "url": "https://coxmediagroup.com",

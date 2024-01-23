@@ -1,6 +1,6 @@
 <script setup>
 const description
-  = 'I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.'
+  = 'Throughout my journey, I\'ve been fortunate to work on countless projects, but these are the ones that truly stand out. A few of them are open-source, so if anything sparks your curiosity, take a look at the code and consider contributing your insights for further refinement.'
 useSeoMeta({
   title: 'Projects - Victor Tolbert',
   description,

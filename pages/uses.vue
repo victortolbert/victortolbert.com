@@ -1,6 +1,6 @@
 <script setup>
 const description
-  = 'Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff.'
+  = 'You\'ve found your way to my Uses page, where I share the software, gadgets, and items that I use in my daily life. This is the place to uncover my personal favorites that add a sprinkle of magic to my daily routine. Dive in!"'
 useSeoMeta({
   title: 'Uses - Victor Tolbert',
   description,

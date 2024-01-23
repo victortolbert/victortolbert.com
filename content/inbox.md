@@ -17,9 +17,56 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
-"Passion"
+Better better user interfaces.
 
 ---
+
+English, Spanish, Portuguese, Kannada
+
+---
+
+- Rapid user interface prototyping
+- Frontend first
+- Validate ideas early when it's cheaper.
+- Code modernization
+
+---
+
+Data Modeling
+
+---
+
+- Worked with offshore teams
+- experience building UI/UX from the ground up based on designs provided
+- REST, SOAP, XML and JSON formats
+- Experience leading communication with business stakeholders in preventing and resolving issues.
+- Experience as a liaison between development team and business stakeholders to strategize in different phases of the project lifecycle
+- Experience providing clear communication with users and business stakeholders
+- CI/CD Pipelines (Jenkins)
+- using multiple Restful APIs, web services
+
+"Passion"
+https://registry.jsonresume.org/victortolbert.yaml
+https://registry.jsonresume.org/victortolbert.txt
+https://registry.jsonresume.org/victortolbert.qr
+
+https://registry.jsonresume.org/victortolbert?theme=even
+https://registry.jsonresume.org/victortolbert?theme=kwan
+https://registry.jsonresume.org/victortolbert?theme=caffeine
+https://registry.jsonresume.org/victortolbert?theme=actual
+https://registry.jsonresume.org/victortolbert?theme=elegant
+https://registry.jsonresume.org/victortolbert?theme=kendall
+https://registry.jsonresume.org/victortolbert?theme=macchiato
+https://registry.jsonresume.org/victortolbert?theme=relaxed
+https://registry.jsonresume.org/victortolbert?theme=rickosborne
+https://registry.jsonresume.org/victortolbert?theme=flat
+
+https://registry.jsonresume.org/victortolbert?theme=class
+https://registry.jsonresume.org/victortolbert?theme=stackoverflow
+
+My name is Victor Tolbert, a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.
+
+## I am also an open-source enthusiast and occasional contributor. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.
 
 https://mikemcalister.com/
 
