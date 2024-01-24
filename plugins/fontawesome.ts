@@ -13,12 +13,6 @@ import {
 // import { fal } from '@fortawesome/pro-light-svg-icons'
 // import { far } from '@fortawesome/pro-regular-svg-icons'
 
-// Could not find one or more icon(s) { prefix: 'fas', iconName: 'angle-down' } { }
-// Could not find one or more icon(s) { prefix: 'fas', iconName: 'angle-left' } { }
-// Could not find one or more icon(s) { prefix: 'fas', iconName: 'angle-right' } { }
-// Could not find one or more icon(s) { prefix: 'fas', iconName: 'caret-down' } { }
-// Could not find one or more icon(s) { prefix: 'fas', iconName: 'times' } { }
-
 import {
   faBus,
   faCamera,
@@ -64,19 +58,17 @@ import { faAlien, faCoffee as fassCoffee } from '@fortawesome/sharp-solid-svg-ic
 import { faPlateUtensils, faCoffee as fasrCoffee } from '@fortawesome/sharp-regular-svg-icons'
 import { faFire, faCoffee as faslCoffee } from '@fortawesome/sharp-light-svg-icons'
 
-import type { UserModule } from '~/types'
-
-library.add(faTwitterSquare, faYoutubeSquare, faGithubSquare)
-
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false
 
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
-})
+// library.add(fas)
+// library.add(fab)
+// library.add(fad)
+// library.add(far)
+// library.add(fal)
 
 // Brands
-library.add(faTwitter)
+library.add(faTwitter, faTwitterSquare, faYoutubeSquare, faGithubSquare)
 // Duotone
 library.add(faBus, faCamera, faCheckSquare, faCoffeePot, faCog, faFillDrip, faFireAlt, faHorseSaddle, faSpinner, fadCoffee)
 // Solid
@@ -94,16 +86,8 @@ library.add(faPlateUtensils, fasrCoffee)
 // Sharp Light
 library.add(faFire, faslCoffee)
 
-// library.add(fas)
-// library.add(fab)
-// library.add(fad)
-// library.add(far)
-// library.add(fal)
-
 dom.watch()
 
-export const install: UserModule = ({ app }) => {
-  app.component('FontAwesomeIcon', FontAwesomeIcon)
-  app.component('FontAwesomeLayers', FontAwesomeLayers)
-  app.component('FontAwesomeLayersText', FontAwesomeLayersText)
-}
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
+})

@@ -71,14 +71,14 @@ $__typed-pauses-chars: (
 }
 @mixin __typed-write-to-content($string, $alt-text, $prefix: '') {
   // @supports (content: "x" / "y") {
-  // 	content: $string / "#{$alt-text}";
+  //   content: $string / "#{$alt-text}";
   // }
   // @supports not (content: "x" / "y") {
-  // 	content: $string;
-  // 	alt: "#{$alt-text}";
+  //   content: $string;
+  //   alt: "#{$alt-text}";
   // }
   content: '​#{__typed-sanitize-pause-chars($prefix)}#{__typed-sanitize-pause-chars($string)}';
-  content: '​#{__typed-sanitize-pause-chars($prefix)}#{__typed-sanitize-pause-chars($string)}' /
+  content: '​#{__typed-sanitize-pause-chars($prefix)}#{__typed-sanitize-pause-chars($string)}'
     '#{__typed-sanitize-pause-chars($alt-text)}';
   alt: '#{__typed-sanitize-pause-chars($alt-text)}';
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data, pending, refresh, error } = await useKql({
+const { data } = await useKql({
   query: 'site',
   select: {
     title: true,

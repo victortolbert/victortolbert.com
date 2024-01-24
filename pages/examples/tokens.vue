@@ -1,5 +1,5 @@
 <template>
-  <article class="p-4 grid gap-4">
+  <article class="grid gap-4">
     <header class="py-2 px-8 bg-gray-200">
       <h2 class="font-semibold">
         Design Tokens
@@ -14,14 +14,6 @@
       </p>
     </section>
 
-    <section class="px-8 grid gap-4">
-      <header class="border-b pb-4">
-        <h3 class="font-medium">
-          Color Palette
-        </h3>
-      </header>
-    </section>
-
-    <section />
+    <NuxtPage />
   </article>
 </template>

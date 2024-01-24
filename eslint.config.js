@@ -11,6 +11,7 @@ export default antfu(
     rules: {
       'no-alert': 'off',
       'no-console': 'off',
+      'no-irregular-whitespace': 'off',
     },
     ignores: [
       'README.md',
