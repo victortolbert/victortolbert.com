@@ -17,6 +17,14 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
+Somewhere in Between Development and Design
+
+---
+
+Vue has been around close to 10 Years, Vue Feb. 2014, I have been working with it since 2016?.
+
+---
+
 Better better user interfaces.
 
 ---

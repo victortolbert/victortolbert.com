@@ -1,11 +1,26 @@
 import process from 'node:process'
+import { execaSync } from 'execa'
 import svgLoader from 'vite-svg-loader'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
 
+  apiParty: {
+    endpoints: {
+      jsonPlaceholder: {
+        url: process.env.JSON_PLACEHOLDER_BASE_URL!,
+      },
+      petStore: {
+        url: process.env.PET_STORE_BASE_URL!,
+        schema: './schemas/petStore.json',
+      },
+    },
+  },
+
   app: {
+    // baseURL: '/testing',
+
     head: {
       htmlAttrs: {
         lang: 'en',
@@ -85,8 +100,16 @@ export default defineNuxtConfig({
     },
   },
 
+  features: {
+    inlineStyles: false,
+  },
+
   fontMetrics: {
     fonts: ['DM Sans', 'Inter'],
+  },
+
+  future: {
+    typescriptBundlerResolution: true,
   },
 
   googleFonts: {
@@ -97,6 +120,10 @@ export default defineNuxtConfig({
       'Inter': [400, 500, 600, 700, 800, 900],
     },
   },
+
+  // gtag: {
+  //   id: 'G-XXXXXXXXXX',
+  // },
 
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -116,26 +143,53 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/plausible',
+    '@nuxtjs/seo',
     '@vue-email/nuxt',
     'v-wave/nuxt',
     'nuxt-lodash',
+    'nuxt-api-party',
+    'nuxt-prepare',
+    // 'nuxt-gtag',
+    // 'nuxt-kql',
   ],
+
+  ogImage: {
+    defaults: {
+      component: 'OgImageDocs',
+      props: {
+        colorMode: 'dark',
+      },
+    },
+    componentOptions: {
+      global: true,
+    },
+  },
+
+  prepare: {
+    scripts: ['server.prepare', 'store.prepare'],
+  },
 
   routeRules: {
     '/api/search.json': { prerender: true },
   },
 
   runtimeConfig: {
+    sponacular: {
+      apiKey: process.env.SPOONACULAR_API_KEY!,
+    },
     stripeSecret: '',
     stripeWebhookSecret: '',
     public: {
       apiUrl: process.env.API_URL || 'http://localhost:8589',
       assetsSrc: '/assets',
       stripeKey: '',
+      buildTime: Date.now(),
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
     },
   },
 
-  ssr: false,
+  ssr: true,
 
   tailwindcss: {
     viewer: false,

@@ -1,4 +1,3 @@
-
 Embedded development teams
 
     When you need to add development capacity, an embedded team from Tighten can help you ship features faster, hit your milestones, and improve code quality, without taxing your existing management resources.
@@ -43,4 +42,3 @@ Proficiencies
     Livewire + Alpine
     React Native
     Flutter
-

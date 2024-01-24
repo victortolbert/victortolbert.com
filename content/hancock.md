@@ -10,9 +10,8 @@ languages:
 frameworks: WordPress
 ---
 
-•	Highlighting the modernization of a legacy .NET application is an excellent achievement. You might want to provide more details about the challenges faced during the modernization and how your solutions improved the system.
-•	Mentioning your knowledge of Microsoft Azure is great, but consider specifying any certifications or specific projects related to Azure that you worked on.
-
+• Highlighting the modernization of a legacy .NET application is an excellent achievement. You might want to provide more details about the challenges faced during the modernization and how your solutions improved the system.
+• Mentioning your knowledge of Microsoft Azure is great, but consider specifying any certifications or specific projects related to Azure that you worked on.
 
 ## Projects
 

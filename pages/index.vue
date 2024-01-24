@@ -300,7 +300,9 @@ function formatDate(date) {
     </section>
 
     <section>
+      <UIcon name="i-ph-info-duotone" />
       <UIcon name="i-ph-question-duotone" />
+      <UIcon name="i-ph-lifebuoy-duotone" />
       <UIcon name="i-ph-number-zero-duotone" />
       <UIcon name="i-ph-number-one-duotone" />
       <UIcon name="i-ph-number-two-duotone" />
@@ -339,6 +341,27 @@ function formatDate(date) {
       <UIcon name="i-ph-dice-five-duotone" />
       <UIcon name="i-ph-dice-six-duotone" />
 
+      <UIcon name="i-ph-spade-duotone" />
+      <UIcon name="i-ph-heart-duotone" />
+      <UIcon name="i-ph-diamond-duotone" />
+      <UIcon name="i-ph-club-duotone" />
+
+      <UIcon name="i-ph-laptop-duotone" />
+      <UIcon name="i-ph-desktop-duotone" />
+      <UIcon name="i-ph-device-tablet-camera-duotone" />
+      <UIcon name="i-ph-device-mobile-camera-duotone" />
+      <UIcon name="i-ph-device-mobile-duotone" />
+      <UIcon name="i-ph-device-tablet-duotone" />
+      <UIcon name="i-ph-devices-duotone" />
+
+      <UIcon name="i-ph-paperclip-duotone" />
+      <UIcon name="i-ph-paperclip-horizontal-duotone" />
+      <UIcon name="i-ph-link-duotone" />
+      <UIcon name="i-ph-link-simple-duotone" />
+      <UIcon name="i-ph-link-simple-horizontal-duotone" />
+
+      <UIcon name="i-ph-cursor-duotone" />
+      <UIcon name="i-ph-cursor-click-duotone" />
       <UIcon name="i-ph-spinner-duotone" />
       <UIcon name="i-ph-spinner-gap-duotone" />
       <UIcon name="i-ph-arrow-clockwise-duotone" />
@@ -353,19 +376,34 @@ function formatDate(date) {
       <UIcon name="i-ph-dots-three-circle-vertical-duotone" />
       <UIcon name="i-ph-dots-three-outline-duotone" />
       <UIcon name="i-ph-dots-three-outline-vertical-duotone" />
+      <UIcon name="i-ph-dots-three-outline-vertical-duotone" />
+      <UIcon name="i-ph-printer-duotone" />
       <UIcon name="i-ph-floppy-disk-duotone" />
       <UIcon name="i-ph-floppy-disk-back-duotone" />
-      <UIcon name="i-ph-dots-three-outline-vertical-duotone" />
+      <UIcon name="i-ph-clipboard-duotone" />
+      <UIcon name="i-ph-clipboard-text-duotone" />
+      <UIcon name="i-ph-download-duotone" />
+      <UIcon name="i-ph-download-simple-duotone" />
+      <UIcon name="i-ph-sort-ascending-duotone" />
+      <UIcon name="i-ph-sort-descending-duotone" />
 
       <UIcon name="i-ph-lightbulb-duotone" />
       <UIcon name="i-ph-lightbulb-filament-duotone" />
       <UIcon name="i-ph-flask-duotone" />
+      <UIcon name="i-ph-confetti-duotone" />
+      <UIcon name="i-ph-fire-duotone" />
+      <UIcon name="i-ph-fire-simple-duotone" />
+      <UIcon name="i-ph-crown-duotone" />
+      <UIcon name="i-ph-crown-simple-duotone" />
+      <UIcon name="i-ph-trophy-duotone" />
+      <UIcon name="i-ph-sparkle-duotone" />
 
       <UIcon name="i-ph-flag-banner-duotone" />
       <UIcon name="i-ph-push-pin-duotone" />
       <UIcon name="i-ph-push-pin-simple-duotone" />
       <UIcon name="i-ph-user-circle-duotone" />
       <UIcon name="i-ph-detective-duotone" />
+
       <UIcon name="i-ph-gear-duotone" />
       <UIcon name="i-ph-gear-six-duotone" />
       <UIcon name="i-ph-gear-fine-duotone" />
@@ -374,17 +412,19 @@ function formatDate(date) {
       <UIcon name="i-ph-house-duotone" />
       <UIcon name="i-ph-house-simple-duotone" />
       <UIcon name="i-ph-tent-duotone" />
-      <UIcon name="i-ph-ruler-duotone-duotone" />
+      <UIcon name="i-ph-bank-duotone" />
+      <UIcon name="i-ph-door-duotone" />
+      <UIcon name="i-ph-door-open-duotone" />
+
+      <UIcon name="i-ph-layout-duotone" />
+      <UIcon name="i-ph-gauge-duotone" />
+      <UIcon name="i-ph-ruler-duotone" />
+      <UIcon name="i-ph-crosshair-duotone" />
+      <UIcon name="i-ph-crosshair-simple-duotone" />
       <UIcon name="i-ph-road-horizon-duotone" />
       <UIcon name="i-ph-plant-duotone" />
       <UIcon name="i-ph-lightning-duotone" />
       <UIcon name="i-ph-lightning-a-duotone" />
-      <UIcon name="i-ph-gauge-duotone" />
-      <UIcon name="i-ph-crosshair-duotone" />
-      <UIcon name="i-ph-crosshair-simple-duotone" />
-
-      <UIcon name="i-ph-fire-duotone" />
-      <UIcon name="i-ph-fire-simple-duotone" />
 
       <UIcon name="i-ph-shield-duotone" />
       <UIcon name="i-ph-shield-check-duotone" />
@@ -393,9 +433,26 @@ function formatDate(date) {
       <UIcon name="i-ph-tent-duotone" />
       <UIcon name="i-ph-warehouse-duotone" />
       <UIcon name="i-ph-garage-duotone" />
+      <UIcon name="i-ph-church-duotone" />
+      <UIcon name="i-ph-bridge-duotone" />
+
+      <UIcon name="i-ph-stack-duotone" />
+      <UIcon name="i-ph-stack-simple-duotone" />
+      <UIcon name="i-ph-notebook-duotone" />
+      <UIcon name="i-ph-notepad-duotone" />
+      <UIcon name="i-ph-note-duotone" />
+      <UIcon name="i-ph-note-blank-duotone" />
+      <UIcon name="i-ph-note-pencil-duotone" />
+      <UIcon name="i-ph-newspaper-duotone" />
+      <UIcon name="i-ph-newspaper-clipping-duotone" />
+      <UIcon name="i-ph-pencil-duotone" />
+      <UIcon name="i-ph-pencil-simple-duotone" />
+      <UIcon name="i-ph-pencil-line-duotone" />
+      <UIcon name="i-ph-pencil-simple-line-duotone" />
+
       <UIcon name="i-ph-certificate-duotone" />
-      <UIcon name="i-ph-cloud-duotone" />
       <UIcon name="i-ph-buildings-duotone" />
+      <UIcon name="i-ph-cloud-duotone" />
       <UIcon name="i-ph-chat-duotone" />
       <UIcon name="i-ph-chat-circle-duotone" />
       <UIcon name="i-ph-binoculars-duotone" />
@@ -406,6 +463,8 @@ function formatDate(date) {
       <UIcon name="i-ph-paper-plane-tilt-duotone" />
       <UIcon name="i-ph-paperclip-duotone" />
       <UIcon name="i-ph-paperclip-horizontal-duotone" />
+      <UIcon name="i-ph-phone-duotone" />
+      <UIcon name="i-ph-phone-call-duotone" />
       <UIcon name="i-ph-envelope-simple-duotone" />
       <UIcon name="i-ph-envelope-simple-open-duotone" />
       <UIcon name="i-ph-eyeglasses-duotone" />
@@ -415,16 +474,34 @@ function formatDate(date) {
       <UIcon name="i-ph-share-fat-duotone" />
       <UIcon name="i-ph-share-network-duotone" />
       <UIcon name="i-ph-couch-duotone" />
+
+      <UIcon name="i-ph-aperture-duotone" />
+      <UIcon name="i-ph-camera-duotone" />
+      <UIcon name="i-ph-images-duotone" />
+      <UIcon name="i-ph-image-duotone" />
       <UIcon name="i-ph-film-slate-duotone" />
       <UIcon name="i-ph-film-script-duotone" />
       <UIcon name="i-ph-film-reel-duotone" />
       <UIcon name="i-ph-film-strip-duotone" />
       <UIcon name="i-ph-gif-duotone" />
+
       <UIcon name="i-ph-cross-duotone" />
       <UIcon name="i-ph-first-aid-duotone" />
 
       <UIcon name="i-ph-books-duotone" />
+      <UIcon name="i-ph-book-duotone" />
+      <UIcon name="i-ph-book-open-duotone" />
+      <UIcon name="i-ph-book-open-text-duotone" />
+      <UIcon name="i-ph-bookmarks-duotone" />
+      <UIcon name="i-ph-bookmark-duotone" />
+      <UIcon name="i-ph-bookmarks-simple-duotone" />
+      <UIcon name="i-ph-bookmark-simple-duotone" />
+
+      <UIcon name="i-ph-kanban-duotone" />
+      <UIcon name="i-ph-article-medium-duotone" />
+      <UIcon name="i-ph-article-ny-times-duotone" />
       <UIcon name="i-ph-article-duotone" />
+      <UIcon name="i-ph-cards-duotone" />
       <UIcon name="i-ph-folders-duotone" />
       <UIcon name="i-ph-folder-duotone" />
       <UIcon name="i-ph-folder-notch-open-duotone" />
@@ -445,17 +522,27 @@ function formatDate(date) {
 
       <UIcon name="i-ph-function-duotone" />
       <UIcon name="i-ph-code-duotone" />
-      <UIcon name="i-ph-calendar-blank-duotone" />
+      <UIcon name="i-ph-code-simple-duotone" />
+      <UIcon name="i-ph-git-commit-duotone" />
+      <UIcon name="i-ph-git-diff-duotone" />
+      <UIcon name="i-ph-git-branch-duotone" />
+      <UIcon name="i-ph-git-merge-duotone" />
+      <UIcon name="i-ph-git-fork-duotone" />
+      <UIcon name="i-ph-git-pull-request-duotone" />
+
+      <UIcon name="i-ph-chart-bar-duotone" />
+      <UIcon name="i-ph-chart-bar-horizontal-duotone" />
       <UIcon name="i-ph-chart-line-up-duotone" />
       <UIcon name="i-ph-map-trifold-duotone" />
       <UIcon name="i-ph-map-pin-duotone" />
+      <UIcon name="i-ph-compass-duotone" />
+      <UIcon name="i-ph-compass-tool-duotone" />
       <UIcon name="i-ph-magnifying-glass-duotone" />
       <UIcon name="i-ph-funnel-duotone" />
       <UIcon name="i-ph-funnel-simple-duotone" />
       <UIcon name="i-ph-cake-duotone" />
+      <UIcon name="i-ph-gift-duotone" />
       <UIcon name="i-ph-call-bell-duotone" />
-      <UIcon name="i-ph-compass-duotone" />
-      <UIcon name="i-ph-confetti-duotone" />
 
       <UIcon name="i-ph-target-duotone" />
       <UIcon name="i-ph-tag-duotone" />
@@ -465,17 +552,35 @@ function formatDate(date) {
       <UIcon name="i-ph-tray-duotone" />
       <UIcon name="i-ph-television-duotone" />
       <UIcon name="i-ph-television-simple-duotone" />
+
+      <UIcon name="i-ph-calendar-blank-duotone" />
       <UIcon name="i-ph-alarm-duotone" />
       <UIcon name="i-ph-timer-duotone" />
       <UIcon name="i-ph-clock-duotone" />
       <UIcon name="i-ph-clock-afternoon-duotone" />
+      <UIcon name="i-ph-clock-clockwise-duotone" />
+      <UIcon name="i-ph-clock-countdown-duotone" />
+      <UIcon name="i-ph-clock-counter-clockwise-duotone" />
+
       <UIcon name="i-ph-tabs-duotone" />
       <UIcon name="i-ph-table-duotone" />
+
+      <UIcon name="i-ph-microsoft-excel-logo-duotone" />
+      <UIcon name="i-ph-microsoft-outlook-logo-duotone" />
+      <UIcon name="i-ph-microsoft-word-logo-duotone" />
+      <UIcon name="i-ph-microsoft-teams-logo-duotone" />
+      <UIcon name="i-ph-microsoft-powerpoint-logo-duotone" />
 
       <UIcon name="i-ph-amazon-logo-duotone" />
       <UIcon name="i-ph-google-logo-duotone" />
       <UIcon name="i-ph-angular-logo-duotone" />
+      <UIcon name="i-ph-apple-podcasts-logo-duotone" />
       <UIcon name="i-ph-apple-logo-duotone" />
+      <UIcon name="i-ph-app-store-logo-duotone" />
+      <UIcon name="i-ph-android-logo-duotone" />
+      <UIcon name="i-ph-facebook-logo-duotone" />
+      <UIcon name="i-ph-instagram-logo-duotone" />
+      <UIcon name="i-ph-figma-logo-duotone" />
       <UIcon name="i-ph-youtube-logo-duotone" />
       <UIcon name="i-ph-windows-logo-duotone" />
       <UIcon name="i-ph-discord-logo-duotone" />
@@ -498,6 +603,7 @@ function formatDate(date) {
       <UIcon name="i-ph-globe-stand-duotone" />
       <UIcon name="i-ph-trademark-duotone" />
       <UIcon name="i-ph-trademark-registered-duotone" />
+      <UIcon name="i-ph-copyright-duotone" />
 
       <UIcon name="i-ph-hand-swipe-left-duotone" />
       <UIcon name="i-ph-hand-swipe-right-duotone" />
@@ -529,7 +635,15 @@ function formatDate(date) {
       <UIcon name="i-ph-tote-simple-duotone" />
       <UIcon name="i-ph-basket-duotone" />
       <UIcon name="i-ph-wallet-duotone" />
+      <UIcon name="i-ph-credit-card-duotone" />
+      <UIcon name="i-ph-currency-dollar-duotone" />
+      <UIcon name="i-ph-currency-dollar-simple-duotone" />
+      <UIcon name="i-ph-currency-circle-dollar-duotone" />
 
+      <UIcon name="i-ph-archive-duotone" />
+      <UIcon name="i-ph-archive-box-duotone" />
+      <UIcon name="i-ph-archive-tray-duotone" />
+      <UIcon name="i-ph-trash-duotone" />
       <UIcon name="i-ph-trash-duotone" />
       <UIcon name="i-ph-trash-simple-duotone" />
 
@@ -546,6 +660,7 @@ function formatDate(date) {
       <UIcon name="i-ph-check-duotone" />
       <UIcon name="i-ph-check-circle-duotone" />
       <UIcon name="i-ph-circle-wavy-check-duotone" />
+      <UIcon name="i-ph-seal-check-duotone" />
       <UIcon name="i-ph-check-square-duotone" />
 
       <UIcon name="i-ph-arrow-fat-left-duotone" />
@@ -566,16 +681,23 @@ function formatDate(date) {
       <UIcon name="i-ph-carrot-duotone" />
       <UIcon name="i-ph-hamburger-duotone" />
       <UIcon name="i-ph-pizza-duotone" />
+      <UIcon name="i-ph-orange-slice-duotone" />
+      <UIcon name="i-ph-ice-cream-duotone" />
+      <UIcon name="i-ph-cookie-duotone" />
+      <UIcon name="i-ph-beer-bottle-duotone" />
       <UIcon name="i-ph-wine-duotone" />
       <UIcon name="i-ph-brandy-duotone" />
       <UIcon name="i-ph-martini-duotone" />
+      <UIcon name="i-ph-champagne-duotone" />
       <UIcon name="i-ph-beer-stein-duotone" />
 
+      <UIcon name="i-ph-truck-duotone" />
       <UIcon name="i-ph-car-duotone" />
       <UIcon name="i-ph-car-simple-duotone" />
       <UIcon name="i-ph-engine-duotone" />
 
       <UIcon name="i-ph-bell-duotone" />
+      <UIcon name="i-ph-bell-ringing-duotone" />
       <UIcon name="i-ph-megaphone-duotone" />
       <UIcon name="i-ph-megaphone-simple-duotone" />
 
@@ -599,15 +721,16 @@ function formatDate(date) {
       <UIcon name="i-ph-wind-duotone" />
       <UIcon name="i-ph-snowflake-duotone" />
       <UIcon name="i-ph-lightning-duotone" />
-      <UIcon name="i-ph-spade-duotone" />
-      <UIcon name="i-ph-heart-duotone" />
-      <UIcon name="i-ph-diamond-duotone" />
-      <UIcon name="i-ph-club-duotone" />
+
       <UIcon name="i-ph-warning-duotone" />
+      <UIcon name="i-ph-rectangle-duotone" />
       <UIcon name="i-ph-square-duotone" />
       <UIcon name="i-ph-circle-duotone" />
       <UIcon name="i-ph-star-duotone" />
       <UIcon name="i-ph-triangle-duotone" />
+      <UIcon name="i-ph-hexagon-duotone" />
+      <UIcon name="i-ph-parallelogram-duotone" />
+      <UIcon name="i-ph-octagon-duotone" />
       <UIcon name="i-ph-trophy-duotone" />
       <UIcon name="i-ph-toolbox-duotone" />
       <UIcon name="i-ph-warning-circle-duotone" />
@@ -617,7 +740,6 @@ function formatDate(date) {
       <UIcon name="i-ph-bowl-food-duotone" />
       <UIcon name="i-ph-balloon-duotone" />
       <UIcon name="i-ph-bandaids-duotone" />
-      <UIcon name="i-ph-bank-duotone" />
 
       <UIcon name="i-ph-barbell-duotone" />
     </section>

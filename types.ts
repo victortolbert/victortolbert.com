@@ -77,6 +77,14 @@ export interface Event {
   attendees?: Attendee[]
 }
 
+export interface JsonPlaceholderComment {
+  postId: number
+  id: number
+  name: string
+  email: string
+  body: string
+}
+
 export interface Movie {
   poster_path?: string
   adult: boolean

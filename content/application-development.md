@@ -1,4 +1,3 @@
-
 How we can help you
 
 If you’re a startup company, we can be your full plug-and-play development team, for as long as you need. If and when you decide to move your software development in-house, we’ll spin up your new hires and engineer a smooth handoff.
@@ -57,4 +56,3 @@ Proficiencies
     Livewire + Alpine
     React Native
     Flutter
-

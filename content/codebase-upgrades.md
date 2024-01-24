@@ -1,4 +1,4 @@
- Upgrade your
+Upgrade your
 codebase
 
     No matter what state your codebase is in, we can upgrade, update, stabilize, or improve it. Our codebase upgrade service extends the useful life of your application, maximizing the value of your software investment.
@@ -31,4 +31,3 @@ Disciplines
     Performance tuning
     Automated testing
     DevOps consulting
-

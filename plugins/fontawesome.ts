@@ -1,22 +1,11 @@
-import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { config, dom, library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
 import {
   faGithubSquare,
+  faTwitter,
   faTwitterSquare,
   faYoutubeSquare,
 } from '@fortawesome/free-brands-svg-icons'
-
-library.add(faTwitterSquare, faYoutubeSquare, faGithubSquare)
-
-// This is important, we are going to let Nuxt worry about the CSS
-config.autoAddCss = false
-
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
-})
-
-
-import { dom, library } from '@fortawesome/fontawesome-svg-core'
 
 // import { fas } from '@fortawesome/free-solid-svg-icons'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -30,9 +19,6 @@ import { dom, library } from '@fortawesome/fontawesome-svg-core'
 // Could not find one or more icon(s) { prefix: 'fas', iconName: 'caret-down' } { }
 // Could not find one or more icon(s) { prefix: 'fas', iconName: 'times' } { }
 
-import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
-
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import {
   faBus,
   faCamera,
@@ -49,8 +35,8 @@ import {
   faAngleLeft,
   faAngleRight,
   faBell,
-  faCaretUp,
   faCaretDown,
+  faCaretUp,
   faCheck,
   faCircle,
   faMoon,
@@ -79,6 +65,15 @@ import { faPlateUtensils, faCoffee as fasrCoffee } from '@fortawesome/sharp-regu
 import { faFire, faCoffee as faslCoffee } from '@fortawesome/sharp-light-svg-icons'
 
 import type { UserModule } from '~/types'
+
+library.add(faTwitterSquare, faYoutubeSquare, faGithubSquare)
+
+// This is important, we are going to let Nuxt worry about the CSS
+config.autoAddCss = false
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
+})
 
 // Brands
 library.add(faTwitter)

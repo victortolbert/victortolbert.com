@@ -36,6 +36,10 @@ body,
   color: white;
 } */
 
+/* a {
+  @apply font-medium hover:underline text-blue-500;
+} */
+
 .layout-enter-active,
 .layout-leave-active {
   transition: all 0.4s;
