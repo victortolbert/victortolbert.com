@@ -36,6 +36,39 @@ Data Modeling
 
 ---
 
+Salesforce Certifications
+
+- Admin
+- Experience Cloud Consultant
+- Platform Developer I
+- Platform Developer II
+- JavaScript
+
+---
+
+- Experience Cloud Consultant certification
+- Advanced Admin certification a plus
+- Platform Developer I certification preferred; Platform Developer II and JavaScript certifications a plus
+- Experience (Community) Cloud expert with 3+ years of Salesforce development experience
+- Expert in Lightning Design System and Lightning Web Components
+- Responsive Design web development with HTML, CSS, JavaScript, React, and design systems such as SLDS, Bootstrap, and Material Design
+- Proficient in Salesforce development, including Salesforce CLI (DX IDE), migration tools, SOSL, SOQL, web services, app builder, and Experience Builder
+
+---
+
+- HTML, CSS, JavaScript, React, and, Lightning Design System, Lightning Web Components
+- HTML, CSS, JavaScript, TypeScript, Vue.js, SLDS, Tailwind CSS, Bootstrap, Material Design
+- Salesforce Development - Salesforce CLI (DX IDE), SOQL, SQL, web services, Experience Builder
+- Frontend – Vue.js, Nuxt, Pinia, Vuex, React, Next.js, Angular, AngularJS, jQuery, JSX, Sass, BEM, Bootstrap, Bulma, Tailwind, Responsive Design, Progressive Web Apps, Web Accessibility, SEO, Salesforce Lightning Design System (SLDS)
+- Backend – .NET, ASP.NET Core MVC, Node.js, Laravel, CodeIgniter, Express.js, Microsoft SQL Server, MySQL, MongoDB, Serverless, Nginx, Docker, SOAP, RESTful APIs, Salesforce, Language Integrated Query (LINQ), Transact-SQL (T-SQL), Data Structures
+- Languages – C#, Apex, Ruby, PHP, JavaScript, TypeScript, HTML, CSS
+- DevOps – AWS, Google Cloud, Heroku, Azure DevOps, Vite, Webpack, Git, Gulp, Docker, Vagrant
+- Design – UML, Figma, Sketch, Adobe Photoshop, Balsamiq Mockups
+- Testing – Jest, Vitest, Cypress, Playwright, Mocha, Chai, Selenium
+- Development - Experience (Community) Cloud,
+
+---
+
 - Worked with offshore teams
 - experience building UI/UX from the ground up based on designs provided
 - REST, SOAP, XML and JSON formats
