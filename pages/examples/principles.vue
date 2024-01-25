@@ -1,6 +1,6 @@
 <template>
   <article class="p-4 grid gap-4">
-    <header class="py-2 px-8 bg-gray-200">
+    <header class="py-2 px-8 bg-gray-100 dark:bg-gray-900">
       <h2 class="font-semibold">
         Design Principles
       </h2>

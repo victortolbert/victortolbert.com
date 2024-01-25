@@ -1,5 +1,5 @@
 import { config, dom, library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faGithubSquare,
   faTwitter,

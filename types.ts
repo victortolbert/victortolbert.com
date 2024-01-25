@@ -122,6 +122,14 @@ export interface Pokemon {
   name: string
 }
 
+export interface Program {
+  event_name: string
+  fun_run: string
+  microsite: {
+    school_image_name: string
+  }
+}
+
 export interface Project {
   name: string
   url: string

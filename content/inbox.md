@@ -17,6 +17,19 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
+- [ ] Add problem solving statement
+
+---
+
+Andrew
+
+- Key contributor on a dynamic team dedicated to transforming legacy web applications into a modern, RESTful .NET Core platform.
+- Successfully integrated external services, including Hi Marley, VIP, and Xact, enhancing the functionality and performance of the application.
+- Demonstrated exceptional teamwork and exceeded project goals, leading to a promotion within one year.
+- Played a crucial role in maintaining and optimizing an existing legacy ASP.NET application.
+
+---
+
 Somewhere in Between Development and Design
 
 ---
