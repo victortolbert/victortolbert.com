@@ -484,7 +484,7 @@ export default defineNuxtConfig({
     session: {
       password: '',
     },
-    sponacular: {
+    spoonacular: {
       apiKey: process.env.SPOONACULAR_API_KEY!,
     },
     stripeSecret: '',
@@ -601,6 +601,7 @@ export default defineNuxtConfig({
     baseUrl: 'https://victortolbert.com/',
     autoImport: true,
   },
+
   $development: {
     nitro: {
       storage: {
