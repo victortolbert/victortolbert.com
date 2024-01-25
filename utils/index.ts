@@ -8,3 +8,7 @@ export function shuffleArray(array: any[]) {
 export function addLeadingZeros(number: number | string, width = 3) {
   return number.toString().padStart(width, '0')
 }
+
+export function isEq(a: unknown, b: unknown): boolean {
+  return JSON.stringify(a) === JSON.stringify(b)
+}

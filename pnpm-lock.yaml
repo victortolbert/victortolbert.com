@@ -143,8 +143,8 @@ devDependencies:
     specifier: ^2.6.3
     version: 2.6.3(@vue/compiler-sfc@3.4.15)(eslint-plugin-format@0.1.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.1)
   '@faker-js/faker':
-    specifier: ^8.3.1
-    version: 8.3.1
+    specifier: ^8.4.0
+    version: 8.4.0
   '@fontsource-variable/dm-sans':
     specifier: ^5.0.3
     version: 5.0.3
@@ -368,8 +368,8 @@ devDependencies:
     specifier: ^7.98.0
     version: 7.98.0(vue@3.4.15)
   '@slicemachine/adapter-nuxt':
-    specifier: ^0.3.33
-    version: 0.3.33(@types/uuid@9.0.7)(nuxt@3.9.3)(uuid@9.0.1)
+    specifier: ^0.3.34
+    version: 0.3.34(@types/uuid@9.0.7)(nuxt@3.9.3)(uuid@9.0.1)
   '@tanstack/query-persist-client-core':
     specifier: ^5.17.19
     version: 5.17.19
@@ -452,8 +452,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1
   aws-sdk:
-    specifier: 2.1543.0
-    version: 2.1543.0
+    specifier: 2.1544.0
+    version: 2.1544.0
   axios:
     specifier: ^1.6.6
     version: 1.6.6
@@ -541,9 +541,18 @@ devDependencies:
   jsdom:
     specifier: ^24.0.0
     version: 24.0.0
+  linq:
+    specifier: ^4.0.2
+    version: 4.0.2
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
+  magic-regexp:
+    specifier: 0.7.0
+    version: 0.7.0
+  magic-string:
+    specifier: ^0.30.5
+    version: 0.30.5
   maska:
     specifier: ^2.1.11
     version: 2.1.11
@@ -563,7 +572,7 @@ devDependencies:
     specifier: ^1.1.2
     version: 1.1.2(rollup@4.9.6)
   nuxt-icon:
-    specifier: ^0.6.7
+    specifier: ^0.6.8
     version: 0.6.8(nuxt@3.9.3)(rollup@4.9.6)(vite@5.0.11)(vue@3.4.15)
   nuxt-kql:
     specifier: ^1.1.5
@@ -580,14 +589,17 @@ devDependencies:
   nuxt-prepare:
     specifier: ^1.0.0
     version: 1.0.0(rollup@4.9.6)
+  nuxt-primevue:
+    specifier: ^0.2.2
+    version: 0.2.2(rollup@4.9.6)(vue@3.4.15)
   nuxt-proxy:
     specifier: ^0.4.1
     version: 0.4.1(rollup@4.9.6)
   nuxt-remote-fn:
-    specifier: ^0.5.0
+    specifier: ^0.5.1
     version: 0.5.1(rollup@4.9.6)
   nuxt-schema-org:
-    specifier: ^3.2.1
+    specifier: ^3.3.3
     version: 3.3.3(@nuxt/devtools-edge@1.0.8-28423289.12dae59)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.6)(fuse.js@7.0.0)(nuxt@3.9.3)(postcss@8.4.33)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.11)(vue@3.4.15)(webpack@5.90.0)
   nuxt-security:
     specifier: 1.0.1
@@ -622,12 +634,15 @@ devDependencies:
   scule:
     specifier: ^1.2.0
     version: 1.2.0
+  shadcn-nuxt:
+    specifier: ^0.8.7
+    version: 0.8.7(rollup@4.9.6)
   slice-machine-ui:
-    specifier: ^1.23.0
-    version: 1.23.0(@types/uuid@9.0.7)(react-dom@18.2.0)(react@18.2.0)(uuid@9.0.1)
+    specifier: ^1.23.1
+    version: 1.23.1(@types/uuid@9.0.7)(react-dom@18.2.0)(react@18.2.0)(uuid@9.0.1)
   stripe:
-    specifier: ^14.13.0
-    version: 14.13.0
+    specifier: ^14.14.0
+    version: 14.14.0
   sweetalert2:
     specifier: ^11.10.4
     version: 11.10.4
@@ -3289,8 +3304,8 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  /@faker-js/faker@8.3.1:
-    resolution: {integrity: sha512-FdgpFxY6V6rLZE9mmIBb9hM0xpfvQOSNOLnzolzKwsE1DH+gC7lEKV1p1IbR0lAYyvYd5a4u3qWJzowUkw1bIw==}
+  /@faker-js/faker@8.4.0:
+    resolution: {integrity: sha512-htW87352wzUCdX1jyUQocUcmAaFqcR/w082EC8iP/gtkF0K+aKcBp0hR5Arb7dzR8tQ1TrhE9DNa5EbJELm84w==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: true
 
@@ -5692,6 +5707,54 @@ packages:
   /@one-ini/wasm@0.1.1:
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
+  /@oxc-parser/binding-darwin-arm64@0.2.0:
+    resolution: {integrity: sha512-PucRCzEkSHlvByLaD1oVrrxaY3Lq5mqnaKCJxNdoMoPlTO/Qkqb5+enNOedKLaWhp3J4PSVOCCMMGAvzx32J0Q==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxc-parser/binding-darwin-x64@0.2.0:
+    resolution: {integrity: sha512-Z6DIZx22rDo9++qWAC/d1IaS0oIT/iws0oeLBPR7iwD6dWnwflNCF/OxzTTbLwnDI6EtJj/jUBhGn580mCHQ7w==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxc-parser/binding-linux-arm64-gnu@0.2.0:
+    resolution: {integrity: sha512-kA12rHcL4tjr87crj7foaHhc8rpG6VuvDUqy+FxAQEYQ+f/TmBV/8tMEezQGLC4yT0ZzCrnCySc+YurGbWy/+Q==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxc-parser/binding-linux-x64-gnu@0.2.0:
+    resolution: {integrity: sha512-70RXjlZKfoCxZmaiSzZCuM4tfomg2JXuu7Gdy+JIwl+lQJTnQiX9asA4Smq76vOfsuxSx7ywCZHI50rJxA1LIQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxc-parser/binding-win32-arm64-msvc@0.2.0:
+    resolution: {integrity: sha512-HrA/hHaaJXyyGDyKuSSPpfQUSmKSaX2AsdOhuIl5sqjCdYvyP2EC1/4hRjO9J1Vl2MovQfzgj5NQ0uxY8lonqQ==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxc-parser/binding-win32-x64-msvc@0.2.0:
+    resolution: {integrity: sha512-0xnuCSnkXY4dfBTUdlu2lF3YCyBbxqeo4qeED7CQfE0vd8CrVGL/U/ycvZlYurVhMaI/x0fZe6HYBJuMYssI8g==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@parcel/watcher-android-arm64@2.4.0:
     resolution: {integrity: sha512-+fPtO/GsbYX1LJnCYCaDVT3EOBjvSFdQN9Mrzh9zWAOOfvidPWyScTrHIZHHfJBvlHzNA0Gy0U3NXFA/M7PHUA==}
     engines: {node: '>= 10.0.0'}
@@ -6853,15 +6916,15 @@ packages:
     resolution: {integrity: sha512-rUV5WyJrJLoloD4NDN1V1+LDMDWOa4OTsT4yYJwQNpTU6FWxkxHpL7eu4w+DmiH8x/EAM1otkPE1+LaspIbplw==}
     engines: {node: '>=18'}
 
-  /@slicemachine/adapter-nuxt@0.3.33(@types/uuid@9.0.7)(nuxt@3.9.3)(uuid@9.0.1):
-    resolution: {integrity: sha512-H0OtJ/hIlDNumeNi4SfsD+hMve9N2UeLL5mAHri7plvl7/0ji9/eS/UUfSZs3NRsh+KTPH989YOx5Z2dXWKLVA==}
+  /@slicemachine/adapter-nuxt@0.3.34(@types/uuid@9.0.7)(nuxt@3.9.3)(uuid@9.0.1):
+    resolution: {integrity: sha512-IuoZCnaWdgfP6Eq4atByptvPa8PFn6i5A3jYUZfp82bl7K8HcOLesIFbXjkRdyw8n+SNN5MRH3UJMbseCERPAg==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       nuxt: ^3.0.0
     dependencies:
       '@prismicio/simulator': 0.1.4
       '@prismicio/types-internal': 2.3.1(@types/uuid@9.0.7)(fp-ts@2.16.2)(io-ts-types@0.5.19)(io-ts@2.2.21)(uuid@9.0.1)
-      '@slicemachine/plugin-kit': 0.4.33
+      '@slicemachine/plugin-kit': 0.4.34
       common-tags: 1.8.2
       fp-ts: 2.16.2
       io-ts: 2.2.21(fp-ts@2.16.2)
@@ -6880,8 +6943,8 @@ packages:
       - uuid
     dev: true
 
-  /@slicemachine/manager@0.17.7(@types/uuid@9.0.7)(uuid@9.0.1):
-    resolution: {integrity: sha512-Ju4WKLVG/k6OkCrYrWMgoMz0vWLjzAqElBSnm2T4bYxCO+E3pOUQv3CO8cLXzCnXcUD5gB6pUkf91ENFy93c3g==}
+  /@slicemachine/manager@0.17.8(@types/uuid@9.0.7)(uuid@9.0.1):
+    resolution: {integrity: sha512-/TqxPciCFIRFmzrl/GeZTrrfeW/KfKzooYq26NdIuxeIM7Szpw+Je/Cf4t1YMGnM9Xp1zPLKisGoZQZoJhDRtA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       msw: ^1.1.0
@@ -6894,7 +6957,7 @@ packages:
       '@prismicio/mocks': 2.0.0
       '@prismicio/types-internal': 2.3.1(@types/uuid@9.0.7)(fp-ts@2.16.2)(io-ts-types@0.5.19)(io-ts@2.2.21)(uuid@9.0.1)
       '@segment/analytics-node': 1.1.3
-      '@slicemachine/plugin-kit': 0.4.33
+      '@slicemachine/plugin-kit': 0.4.34
       '@wooorm/starry-night': 1.7.0
       cookie: 0.5.0
       cors: 2.8.5
@@ -6929,8 +6992,8 @@ packages:
       - uuid
     dev: true
 
-  /@slicemachine/plugin-kit@0.4.33:
-    resolution: {integrity: sha512-NRLp491klRz40T/kkqB6C2kA2FO4cy576+Te6iJdTFQUbsT86LspXEubpTvjnOt/XEgbxtB0S0TFxy4vpym3ZQ==}
+  /@slicemachine/plugin-kit@0.4.34:
+    resolution: {integrity: sha512-B4Rng2NBZknpVLoKg3ll2gj7/46OtH0yRHZgCPafzID4P0xJJfCCa3y2crEBnFFEVmFmwm1A6k+ErgeROVpPGA==}
     engines: {node: '>=14.15.0'}
     dependencies:
       common-tags: 1.8.2
@@ -9555,8 +9618,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-sdk@2.1543.0:
-    resolution: {integrity: sha512-sC8VwfdlauX7AYYm6Ed4SkONjt7cLr63AdkSL0MS+lwoy1fJwVRb2Kwylv+an1uAdQavRltWnEg2LVo2jzRQuA==}
+  /aws-sdk@2.1544.0:
+    resolution: {integrity: sha512-R0C9bonDL0IQ/j0tq6Xaq5weFiaiSOj6KGRseHy+78zdbP1tsG2LZSoN3J5RqjjLHA5/fTMwXO1IuW/4eCNLAg==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -15595,6 +15658,10 @@ packages:
       uc.micro: 1.0.6
     dev: false
 
+  /linq@4.0.2:
+    resolution: {integrity: sha512-aC2gfJgXgq97QVFuBRfD8pW1L21NYeC9sSomvX37ROSnqDFH98od96CfH61V28SN/OGjTCvxTCnHqW8ti02WDQ==}
+    dev: true
+
   /listhen@1.5.6:
     resolution: {integrity: sha512-gTpEJhT5L85L0bFgmu+Boqu5rP4DwDtEb4Exq5gdQUxWRwx4jbzdInZkmyLONo5EwIcQB0k7ZpWlpCDPdL77EQ==}
     hasBin: true
@@ -17906,6 +17973,17 @@ packages:
       - supports-color
     dev: true
 
+  /nuxt-primevue@0.2.2(rollup@4.9.6)(vue@3.4.15):
+    resolution: {integrity: sha512-OfXDe5V0WovXt9b2GOjYV1kyVXmcFfj+6DqVs1pbeP4EyF2H0SbIMoUTT8Ax+sXT/tQ+mXr3qTFD9Y6IL+Y9og==}
+    dependencies:
+      '@nuxt/kit': 3.9.3(rollup@4.9.6)
+      primevue: 3.47.2(vue@3.4.15)
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - vue
+    dev: true
+
   /nuxt-proxy@0.4.1(rollup@4.9.6):
     resolution: {integrity: sha512-H3CK7nPtVThsuvuKI+a2SNpORgUsFpVlW9S0JZ2BQbSRoCCsSOrenfCKY16TveMul6MxGRtbjEHIROPUB2gUNg==}
     dependencies:
@@ -18594,6 +18672,17 @@ packages:
       lodash.isequal: 4.5.0
       vali-date: 1.0.0
     dev: false
+
+  /oxc-parser@0.2.0:
+    resolution: {integrity: sha512-mjRsPpDdVqLOqgvafF0gh1dy1O5Frn+VVKsrAbQ2IQPN619JpnzsEb4xV5MyeR6/3bAH609qHzP6Uja5y7mB8A==}
+    optionalDependencies:
+      '@oxc-parser/binding-darwin-arm64': 0.2.0
+      '@oxc-parser/binding-darwin-x64': 0.2.0
+      '@oxc-parser/binding-linux-arm64-gnu': 0.2.0
+      '@oxc-parser/binding-linux-x64-gnu': 0.2.0
+      '@oxc-parser/binding-win32-arm64-msvc': 0.2.0
+      '@oxc-parser/binding-win32-x64-msvc': 0.2.0
+    dev: true
 
   /p-cancelable@1.1.0:
     resolution: {integrity: sha512-s73XxOZ4zpt1edZYZzvhqFa6uvQc1vwUa0K0BdtIZgQMAJj9IbebH+JkgKZc9h+B05PKHLOTl4ajG1BmNrVZlw==}
@@ -19786,6 +19875,14 @@ packages:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.2.0
+    dev: true
+
+  /primevue@3.47.2(vue@3.4.15):
+    resolution: {integrity: sha512-/vgIhc2vxNW8amBGBJX/NMBgWi/THOwT0DIPgy/aswJ86x+uwLwGtjNz22c/uSE5UkHu4E5rpktWOJtFvTbRPg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.4.15(typescript@5.3.3)
     dev: true
 
   /prisma@5.8.1:
@@ -21102,6 +21199,16 @@ packages:
   /setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
+  /shadcn-nuxt@0.8.7(rollup@4.9.6):
+    resolution: {integrity: sha512-svkbVvb7H38vTRhOtoaGODTEVAb22sKFjrW/3cayn9mj0VKh54Mp+9WMBgO9j9Y3sYylvAqY8EN4afJblDRvOQ==}
+    dependencies:
+      '@nuxt/kit': 3.9.3(rollup@4.9.6)
+      oxc-parser: 0.2.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /sharp@0.32.6:
     resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
     engines: {node: '>=14.15.0'}
@@ -21336,14 +21443,14 @@ packages:
       is-fullwidth-code-point: 3.0.0
     dev: true
 
-  /slice-machine-ui@1.23.0(@types/uuid@9.0.7)(react-dom@18.2.0)(react@18.2.0)(uuid@9.0.1):
-    resolution: {integrity: sha512-TkVXJQtaFm8O104cWTTuRwlNaj6+4mKUAlJNSTQ3yVTGmYYwaeU+UZd9DL9z2QdxrOMVKGpu89KeWyRq8SUF8A==}
+  /slice-machine-ui@1.23.1(@types/uuid@9.0.7)(react-dom@18.2.0)(react@18.2.0)(uuid@9.0.1):
+    resolution: {integrity: sha512-7SXsJYbFtnajdeMosDGN2GM50SufeeuushIpUP7QFTCqSaupHLhhoceJ33vswz/Cnra04Ipz8jBSNPBOGR31VA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@radix-ui/react-visually-hidden': 1.0.3(react-dom@18.2.0)(react@18.2.0)
-      '@slicemachine/manager': 0.17.7(@types/uuid@9.0.7)(uuid@9.0.1)
-      start-slicemachine: 0.12.13(@types/uuid@9.0.7)(uuid@9.0.1)
+      '@slicemachine/manager': 0.17.8(@types/uuid@9.0.7)(uuid@9.0.1)
+      start-slicemachine: 0.12.14(@types/uuid@9.0.7)(uuid@9.0.1)
     transitivePeerDependencies:
       - '@prismicio/client'
       - '@prismicio/types'
@@ -21560,14 +21667,14 @@ packages:
   /standard-as-callback@2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
 
-  /start-slicemachine@0.12.13(@types/uuid@9.0.7)(uuid@9.0.1):
-    resolution: {integrity: sha512-7cQOK1oyOvPUJxpwuFpKXC4epAMl5nOrKntp0P9mUbUfsh6zOSB3Z8/iPahPyUHKdnqR2Z1jRirAbVUynIFd+w==}
+  /start-slicemachine@0.12.14(@types/uuid@9.0.7)(uuid@9.0.1):
+    resolution: {integrity: sha512-cDmvYxmZudRNSxrMCDhMTUBEluX7Colt8WJ9oKoJD+2+F+Bjj9VR+/eZVvHCw34DBkayiMN199s8rSE7Qg6/iA==}
     engines: {node: '>=14.15.0'}
     hasBin: true
     dependencies:
       '@prismicio/mocks': 2.1.1
       '@prismicio/types-internal': 2.3.1(@types/uuid@9.0.7)(fp-ts@2.16.2)(io-ts-types@0.5.19)(io-ts@2.2.21)(uuid@9.0.1)
-      '@slicemachine/manager': 0.17.7(@types/uuid@9.0.7)(uuid@9.0.1)
+      '@slicemachine/manager': 0.17.8(@types/uuid@9.0.7)(uuid@9.0.1)
       body-parser: 1.20.2
       chalk: 4.1.2
       cors: 2.8.5
@@ -21876,8 +21983,8 @@ packages:
     dependencies:
       js-tokens: 8.0.2
 
-  /stripe@14.13.0:
-    resolution: {integrity: sha512-uLOfWtBUL1amJCTpKCXWrHntFOSaO2PWb/2hsxV/OlXLr0bz5MyU8IW1pFlmZqpw6hBqAW5Fad7Ty7xRxDYrzA==}
+  /stripe@14.14.0:
+    resolution: {integrity: sha512-P6lvKHxgDzZXto9VMstG1ucv4Ls0U9nOoQhVZABXJ33kRD7zMwkBy5Y4c3BO59O230uSTkOFPLh87YxVzkp0Mg==}
     engines: {node: '>=12.*'}
     dependencies:
       '@types/node': 20.11.5
@@ -24881,7 +24988,7 @@ packages:
     resolution: {integrity: sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==}
     engines: {node: '>=4.0.0'}
     dependencies:
-      sax: 1.2.1
+      sax: 1.3.0
       xmlbuilder: 11.0.1
     dev: true
 

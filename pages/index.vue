@@ -1,15 +1,11 @@
 <script setup>
-// const tokens = '/_nuxt/public/assets/images/tokens.svg'
-// const elements = '/_nuxt/public/assets/images/elements.svg'
-// const patterns = '/_nuxt/public/assets/images/patterns.svg'
-// const styleguide = '/_nuxt/public/assets/images/styleguide.svg'
-// const templates = '/_nuxt/public/assets/images/templates.svg'
-const vueds = '/_nuxt/public/assets/images/vueds.svg'
+// import { camelCase, flatCase, kebabCase, lowerFirst, pascalCase, snakeCase, splitByCase, trainCase, upperFirst } from 'scule'
 
 definePageMeta({
   title: 'Resume',
   breadcrumb: 'Resume',
 })
+
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
@@ -211,6 +207,12 @@ function formatDate(date) {
         </div>
       </section>
     </main>
+
+    <!-- {{ trainCase(kebabCase(snakeCase('CustomerProfile'))) }}
+    {{ trainCase(kebabCase(pascalCase('customer_profile'))) }}
+    {{ trainCase(kebabCase(camelCase('OnPaste'))) }} -->
+
+    <!-- <img src="http://example.com/image.jpg" alt="Example of a broken image"> -->
 
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
       Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>J</kbd> to open the command menu. Hosted by <a href="/" class="underline hover:opacity-80">jcv</a>.

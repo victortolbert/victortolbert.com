@@ -82,3 +82,100 @@
 .print-force-new-page {
   page-break-before: always;
 }
+
+/* body,
+html,
+#app {
+  @apply w-full h-full overflow-hidden;
+} */
+img:after {
+  content: "\f1c5" " " attr(alt);
+
+  font-size: 16px;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+
+img {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+
+  min-height: 50px;
+}
+
+
+/* img:before {
+  content: "We're sorry, the image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img:after {
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+} */
+
+
+img:after {
+  content: "\f1c5" " " attr(alt);
+
+  font-size: 16px;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* img:before {
+  content: " ";
+  display: block;
+
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: calc(100% + 10px);
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border: 2px dotted rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+img:after {
+  content: "\f127" " Broken Image of " attr(alt);
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+} */

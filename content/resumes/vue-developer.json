@@ -1,0 +1,285 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/victortolbert/victortolbert.com/main/content/index.json",
+    "version": "v0.0.2",
+    "lastModified": "2024-01-17T09:53:00.000Z"
+  },
+  "basics": {
+    "name": "Victor Tolbert",
+    "label": "Senior Software Engineer,",
+    "image": "https://avatars.githubusercontent.com/u/2476?v=4",
+    "email": "victor.tolbert@gmail.com",
+    "phone": "(678) 613-3400",
+    "url": "https://victortolbert.com",
+    "summary": "I'm a self-taught full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "location": {
+      "address": "1547 Boulder Walk Drive",
+      "postalCode": "30316",
+      "city": "Atlanta",
+      "countryCode": "US",
+      "region": "Georgia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "victortolbert",
+        "url": "https://github.com/victortolbert"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "victortolbert",
+        "url": "https://www.linkedin.com/in/victortolbert/"
+      },
+      {
+        "network": "Twitter",
+        "username": "victortolbert",
+        "url": "https://twitter.com/victortolbert"
+      },
+      {
+        "network": "Instagram",
+        "username": "victortolbert",
+        "url": "https://www.instagram.com/victortolbert/"
+      },
+      {
+        "network": "CodePen",
+        "username": "victortolbert",
+        "url": "https://codepen.io/victortolbert"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Hancock Claims Consultants",
+      "location": "Alpharetta, Georgia USA",
+      "description": "",
+      "position": "Software Engineer",
+      "url": "https://hancockclaims.com",
+      "startDate": "2021-05-21",
+      "endDate": "2024-01-09",
+      "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a  web-based property claims management system and mobile-friendly property inspection web applications",
+      "highlights": [
+        "Led the development of payment features using the Authorize.net API, streamlining manual payment processes into automated workflows",
+        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and TailwindCSS frontend",
+        "Spearheaded the standardization of front-end development processes and best practices",
+        "Gained comprehensive knowledge of Microsoft Azure, including Azure DevOps, Azure SQL, Azure App Services, Azure Functions, Azure Storage, and Azure Application Insights",
+        "Tech Stack: Salesforce, .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.JS, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), TailwindCSS"
+      ]
+    },
+    {
+      "name": "Booster Enterprises",
+      "location": "Alpharetta, Georgia USA",
+      "description": "",
+      "position": "Senior UI / Full-stack Developer",
+      "url": "https://www.boosterthon.com/",
+      "startDate": "2018-11-01",
+      "endDate": "2020-10-01",
+      "summary": "Designed, developed, and implemented new features for a core business application used by parents, sponsors, clients, and internal teams",
+      "highlights": [
+        "Participated in the design and development process from definition to deployment",
+        "Collaborated closely with the design team to ensure consistent UI/UX implementations",
+        "Actively participated in the agile development team and engaged in team meetings, contributing to efficient codebase management and infrastructure",
+        "Assisted team in managing the overall codebase and infrastructure to minimize downtime",
+        "Implemented best practices to create a scalable and innovative application",
+        "Tech Stack: HTML5, CSS (TailwindCSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
+      ]
+    },
+    {
+      "name": "Turner Sports (Turner Broadcasting System)",
+      "location": "Atlanta, GA",
+      "position": "Senior Software Engineer (Contract)",
+      "url": "https://en.wikipedia.org/wiki/Turner_Broadcasting_System",
+      "startDate": "2018-03-01",
+      "endDate": "2018-11-01",
+      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship, and the PGA tour events platform. Actively participated in project design and direction with new tools and features",
+      "highlights": [
+        "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
+        "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement",
+        "Troubleshot performance and cross-browser issues for desktop and mobile platforms",
+        "Tech Stack: Git, Github, CircleCI, JIRA, Visual Studio Code, PHP, Drupal, JavaScript (Vue.js, React, jQuery), CSS (Sass), Gulp"
+      ]
+    },
+    {
+      "name": "Videa.tv, LLC (A Cox Media Group Company)",
+      "location": "Atlanta, GA",
+      "position": "Senior UI Architect / UX Designer",
+      "url": "https://coxmediagroup.com",
+      "startDate": "2014-07-01",
+      "endDate": "2017-12-01",
+      "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
+      "highlights": [
+        "Conceptualized and prototyped new features for the core product utilizing Vue.js, Vue Router, and Vuex",
+        "Recognized company-wide for contributions, including a product demo used at the National Association of Broadcasters (NAB) trade conference",
+        "Created an Open Source TVB XML Proposal Viewer utilizing PHP/MySQL and the Laravel Framework",
+        "Served as the sole liaison between visual design, on-site and off-shore engineering teams",
+        "Tech Stack: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (AngularJS, Vue.js, React), Kendo UI"
+      ]
+    },
+    {
+      "name": "AT&T Mobility",
+      "location": "Atlanta, GA",
+      "position": "Senior UI Developer / Systems Engineer (Contract)",
+      "url": "https://www.att.com",
+      "startDate": "2013-03-01",
+      "endDate": "2014-07-01",
+      "summary": "",
+      "highlights": [
+        "Provided user interface development for integrating AT&T Locker, Messages, and Contacts cloud applications into a unified consumer application suite",
+        "Collaborated in developing a custom in-house Sass/CSS bootstrapping framework to ensure consistent implementation of AT&T’s CDLS 2.0 branded styles and components",
+        "Developed middleware services using Java/Groovy based Camel framework",
+        "Tech Stack: Java, JSP, Apache CAML, JavaScript (AngularJS), CSS/Sass"
+      ]
+    },
+    {
+      "name": "WebMD.com",
+      "location": "Atlanta, Georgia",
+      "position": "Web Developer",
+      "url": "https://www.webmd.com",
+      "startDate": "2010-08-01",
+      "endDate": "2013-01-01",
+      "summary": "",
+      "highlights": [
+        "Led key revenue-generating product initiatives and mentored team members",
+        "Hand-coded and documented modular website components using object-oriented native JavaScript and jQuery",
+        "Converted a Flash-based widget for iPhone/iPad compatibility using HTML5, CSS3 animations, and JavaScript",
+        "Mentored and on-boarded new team members",
+        "Received a “Star” award for outstanding teamwork",
+        "Tech Stack: JavaScript (jQuery), CSS3 (Sass/Compass), HTML5, XSL/XSLT, Documentum, WordPress, Endeca WebStudio, Git, Github Enterprise"
+      ]
+    },
+    {
+      "name": "AutoTrader.com",
+      "location": "Atlanta, Georgia",
+      "position": "User Interface Engineer",
+      "url": "https://www.autotrader.com",
+      "startDate": "2005-07-01",
+      "endDate": "2010-08-01",
+      "summary": "",
+      "highlights": [
+        "Rapidly prototyped the vehicle compare tool user interface for usability testing",
+        "Presented and demonstrated prototypes to top-level executives, receiving the company-wide monthly \"Top Techie\" award multiple times",
+        "Tech Stack: HTML, CSS, JavaScript (Prototype/Scriptaculous), JAVA (JSP, JSTL, JSF), CVS, Subversion, Rhythmyx"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Morehouse College",
+      "url": "https://www.morehouse.edu",
+      "area": "Business Administration",
+      "studyType": "Bachelor of Arts",
+      "startDate": "1983-10-01",
+      "endDate": "1987-06-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Staying Sharp with Angular.js",
+      "issuer": "Code School",
+      "url": "https://www.codeschool.com/courses/staying-sharp-with-angular-js"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Senior",
+      "keywords": [
+        "HTML / JSX",
+        "SCSS / CSS / BEM / Styled Components",
+        "JavaScript / TypeScript",
+        "Vue.js / Nuxt.js",
+        "Pinia / Vuex",
+        "React",
+        "Angular",
+        "jQuery",
+        "Bootstrap",
+        "TailwindCSS",
+        "Bulma",
+        "Responsive Design",
+        "Progressive Web Apps",
+        "Web Components",
+        "Web Accessibility",
+        "SEO"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Senior",
+      "keywords": [
+        "C#",
+        "Node.js",
+        "Ruby",
+        "PHP",
+        "Laravel",
+        "CodeIgniter",
+        "Express",
+        "MySQL",
+        "MongoDB",
+        "Serverless",
+        "Nginx",
+        "Docker",
+        "RESTful APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": [
+        "AWS",
+        "Google Cloud",
+        "Heroku",
+        "Azure"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Product Development",
+      "keywords": [
+        "User Experience Design",
+        "User Interface Engineering",
+        "Information Architecture",
+        "Design Systems"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Phil Greco",
+      "reference": "I have had the opportunity to work with Victor at three different companies, AutoTrader, WebMD and most recently Videa.\n\nVictor is a passionate user interface engineer / architect who is skilled at determining good UI development approaches, best practices and then implementing them.   For example, at Videa he successfully defined our interface standards, implemented an online code base style guide, constructed our interfaces, and worked well with the UX team to create great user interactions.   Plus, without being asked he created a complete standalone demo application to ensure the company would have something functional to show at two NAB conferences.  This proactive approach was outstanding and helped the company close a few deals.\n\nBesides being talented UI professional, Victor is also a great person to work with.  Victor is very personable, funny, and has a positive team based approach to working.  \n\nI look forward to hiring and working with him again."
+    },
+    {
+      "name": "Dawson Blackhouse",
+      "reference": "Victor is a meticulous developer who delivers his craft with company goals in mind."
+    },
+    {
+      "name": "Frankie Loscavio",
+      "reference": "Victor was great to work with at AT&T. I find myself learning something new every very time I speak to Victor. Whether it's a front-end development solution or a new design approach Victor always showed me that there is something amazing to learn all the time. I found Victor's attitude refreshing and inspiring, while motivating me and others to be the same. I feel he is an exceptionally skilled developer / designer as well as a leader and would really like to work with him again some day. I feel that his passion for learning and applying that knowledge to the front-end side of development / design is inspirational and think you'll be very fortunate to have him on your team.  I hope I get to work with Victor again some day soon."
+    },
+    {
+      "name": "George Kovats",
+      "reference": "Victor has always demonstrated a great attitude toward new work, and helped us always plow through the ebbs and flows of operational projects that hit our team, often holding the lion's share of asignments. He's passionate about learning new technology especially regarding front-end web trends, and was one of our departments first promoters of GitHub and SASS. It was always a pleasure working with Victor, and I believe he's a strong asset as a front end developer for any web team."
+    },
+    {
+      "name": "Ed Jenkins",
+      "reference": "When I need to delegate a task, I need someone who can do it, do it right, and do it fast.  Victor is the one I trust."
+    },
+    {
+      "name": "Patrick Fitzgerald",
+      "reference": "Victor has a wide breadth of knowledge in web design and usability. He is extremely quick in mastering new tools and technologies, easily jumping between Windows, Mac, and Linux environments. It is a pleasure to work with him."
+    }
+  ],
+  "projects": []
+}

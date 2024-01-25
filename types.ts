@@ -19,6 +19,18 @@ export interface Book {
   customer_reviews: number
 }
 
+export interface CalendarEvent {
+  id: number
+  category: string
+  title: string
+  description: string
+  location: string
+  date: string
+  time: string
+  organizer: string
+  attendees: Attendee[]
+}
+
 export interface Case {
   id: number
   projectNumber: number
@@ -38,6 +50,19 @@ export interface Case {
   area: string
   status: string
   actions: string
+}
+
+export interface Company {
+  id: number
+  name: string
+  // address: string
+  // city: string
+  // state: string
+  // zip: string
+  // phone: string
+  // website: string
+  // created_at: string
+  // updated_at: string
 }
 
 export interface Comment {
@@ -77,6 +102,13 @@ export interface Event {
   attendees?: Attendee[]
 }
 
+export interface Joke {
+  id: number
+  type: string
+  setup: string
+  punchline: string
+}
+
 export interface JsonPlaceholderComment {
   postId: number
   id: number
@@ -100,6 +132,11 @@ export interface Movie {
   vote_count: number
   video: boolean
   vote_average: number
+}
+
+export type Option = {
+  id: string
+  label: string
 }
 
 export interface Plant {

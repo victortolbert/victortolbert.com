@@ -17,7 +17,40 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
-- [ ] Add problem solving statement
+# Problem solvins
+
+- OAuth Refresh token issue
+- Failed payment project rescue
+- Cache-busting to reduce calls to tech support after deploys
+- Environment indicator to assist at a glance Developer, QA, UAT testers - Developer experience
+- Morning greetings in a different language
+
+---
+
+
+
+---
+
+# Industries
+
+- Property and Casualty Claims Services
+- For profit fund-raising
+- Non-profit fund raising
+- Online vehicle classified advertising
+- Health and wellness information website
+- Telecommunications
+- Spot television advertising monitoring and campaign performance
+- Event marketing and content management platform
+
+---
+
+Introduction
+
+Developers have a number of choices today when it comes to selecting a JavaScript framework or UI library for building scalable web apps.
+
+Vue / Nuxt, React / Next.js, Angular…the list of solutions continues to grow.
+
+To help ... demonstrate for comparing syntax and solutions to the same UI problems.
 
 ---
 

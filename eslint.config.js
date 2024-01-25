@@ -12,6 +12,7 @@ export default antfu(
       'no-alert': 'off',
       'no-console': 'off',
       'no-irregular-whitespace': 'off',
+      'ts/consistent-type-definitions': 'off',
     },
     ignores: [
       'README.md',

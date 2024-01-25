@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { execaSync } from 'execa'
 
 import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
-import svgLoader from 'vite-svg-loader'
+import SvgLoader from 'vite-svg-loader'
 
 // import { appDescription } from './constants/index'
 import pkg from './package.json'
@@ -13,6 +13,47 @@ import pkg from './package.json'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
+  modules: [
+    '@nuxt/ui',
+    '@formkit/auto-animate/nuxt',
+    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/plausible',
+    '@nuxtjs/seo',
+    '@vue-email/nuxt',
+    'v-wave/nuxt',
+    'magic-regexp/nuxt',
+    'nuxt-lodash',
+    'nuxt-api-party',
+    'nuxt-prepare',
+    // '@formkit/nuxt',
+    // '@nuxtjs/html-validator',
+    // '@nuxtjs/i18n',
+    // '@nuxtjs/prismic',
+    // '@nuxtjs/storybook',
+    // '@nuxtjs/supabase',
+    // '@nuxtlabs/github-module',
+    // '@pinia-orm/nuxt',
+    // '@unlazy/nuxt',
+    // '@vee-validate/nuxt',
+    // '@vue-email/nuxt',
+    // '@vueuse/motion/nuxt',
+    // 'nuxt-cloudflare-analytics',
+    // 'nuxt-component-meta',
+    // 'nuxt-gtag',
+    // 'nuxt-icon',
+    // 'nuxt-kql',
+    // 'nuxt-mailer',
+    // 'nuxt-og-image',
+    // 'nuxt-proxy',
+    // 'nuxt-swiper',
+    // 'nuxt-time',
+    // 'shadcn-nuxt',
+  ],
 
   apiParty: {
     endpoints: {
@@ -292,47 +333,6 @@ export default defineNuxtConfig({
   //   dirs: ['stores'],
   // },
 
-  modules: [
-    '@nuxt/ui',
-    '@formkit/auto-animate/nuxt',
-    '@vueuse/nuxt',
-    '@nuxt/content',
-    '@nuxt/image',
-    '@pinia/nuxt',
-    '@nuxtjs/fontaine',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/plausible',
-    '@nuxtjs/seo',
-    '@vue-email/nuxt',
-    'v-wave/nuxt',
-    'nuxt-lodash',
-    'nuxt-api-party',
-    'nuxt-prepare',
-
-    // '@formkit/nuxt',
-    // '@nuxtjs/html-validator',
-    // '@nuxtjs/i18n',
-    // '@nuxtjs/prismic',
-    // '@nuxtjs/storybook',
-    // '@nuxtjs/supabase',
-    // '@nuxtlabs/github-module',
-    // '@pinia-orm/nuxt',
-    // '@unlazy/nuxt',
-    // '@vee-validate/nuxt',
-    // '@vue-email/nuxt',
-    // '@vueuse/motion/nuxt',
-    // 'nuxt-cloudflare-analytics',
-    // 'nuxt-component-meta',
-    // 'nuxt-gtag',
-    // 'nuxt-icon',
-    // 'nuxt-kql',
-    // 'nuxt-mailer',
-    // 'nuxt-og-image',
-    // 'nuxt-proxy',
-    // 'nuxt-swiper',
-    // 'nuxt-time',
-  ],
-
   // nitro: {
   //   imports: {
   //     dirs: [
@@ -372,6 +372,10 @@ export default defineNuxtConfig({
   prepare: {
     scripts: ['server.prepare', 'store.prepare'],
   },
+
+  // primevue: {
+  //   unstyled: true
+  // },
 
   // prismic: {
   //   endpoint: 'ux-lab',
@@ -484,6 +488,18 @@ export default defineNuxtConfig({
     },
   },
 
+  // shadcn: {
+  //   /**
+  //    * Prefix for all the imported component
+  //    */
+  //   prefix: '',
+  //   /**
+  //    * Directory that the component lives in.
+  //    * @default "./components/ui"
+  //    */
+  //   componentDir: './components/ui'
+  // },
+
   ssr: true,
 
   tailwindcss: {
@@ -493,7 +509,14 @@ export default defineNuxtConfig({
   typescript: { strict: false },
 
   ui: {
-    icons: ['fa6-brands', 'heroicons', 'heroicons-outline', 'logos', 'ph', 'simple-icons'],
+    icons: [
+      'fa6-brands',
+      'heroicons',
+      'heroicons-outline',
+      'logos',
+      'ph',
+      'simple-icons',
+    ],
   },
 
   vite: {
@@ -521,23 +544,16 @@ export default defineNuxtConfig({
     },
 
     plugins: [
-      svgLoader({
+      SvgLoader({
         defaultImport: 'raw',
       }),
 
-      // vsharp()
+      // Vsharp()
       VueI18nVitePlugin({
         include: [
           resolve(dirname(fileURLToPath(import.meta.url)), './locales/*.json'),
         ],
       }),
-    ],
-  },
-
-  vite: {
-
-    plugins: [
-
     ],
   },
 
