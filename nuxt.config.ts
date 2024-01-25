@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     'nuxt-lodash',
     'nuxt-api-party',
     'nuxt-prepare',
+    'shadcn-nuxt',
     // '@formkit/nuxt',
     // '@nuxtjs/html-validator',
     // '@nuxtjs/i18n',
@@ -52,7 +53,6 @@ export default defineNuxtConfig({
     // 'nuxt-proxy',
     // 'nuxt-swiper',
     // 'nuxt-time',
-    // 'shadcn-nuxt',
   ],
 
   apiParty: {
@@ -329,6 +329,14 @@ export default defineNuxtConfig({
   //   },
   // },
 
+  image: {
+    providers: {
+      spoonacular: {
+        provider: '~/providers/spoonacular.ts',
+      },
+    },
+  },
+
   // imports: {
   //   dirs: ['stores'],
   // },
@@ -403,7 +411,11 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    // '/**': {
+    //   isr: 60 * 60 * 24
+    // },
     '/api/search.json': { prerender: true },
+
   },
 
   runtimeConfig: {
@@ -488,17 +500,17 @@ export default defineNuxtConfig({
     },
   },
 
-  // shadcn: {
-  //   /**
-  //    * Prefix for all the imported component
-  //    */
-  //   prefix: '',
-  //   /**
-  //    * Directory that the component lives in.
-  //    * @default "./components/ui"
-  //    */
-  //   componentDir: './components/ui'
-  // },
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui',
+  },
 
   ssr: true,
 
@@ -588,5 +600,15 @@ export default defineNuxtConfig({
   vueEmail: {
     baseUrl: 'https://victortolbert.com/',
     autoImport: true,
+  },
+  $development: {
+    nitro: {
+      storage: {
+        recipes: {
+          driver: 'fs',
+          base: 'recipes',
+        },
+      },
+    },
   },
 })
