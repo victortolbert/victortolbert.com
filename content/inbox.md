@@ -27,10 +27,6 @@ keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapi
 
 ---
 
-
-
----
-
 # Industries
 
 - Property and Casualty Claims Services

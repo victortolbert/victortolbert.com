@@ -4,6 +4,10 @@ useHead({
     class: 'antialiased font-sans',
   },
 })
+
+onMounted(() => {
+  // document.documentElement.classList.add('dark')
+})
 </script>
 
 <template>
@@ -110,7 +114,7 @@ body,
   animation: text-slide 15s cubic-bezier(0.83, 0, 0.17, 1) infinite;
 }
 
-@keyframes text-slide {
+/* @keyframes text-slide {
   0%,
   16% {
     transform: translateY(0%);
@@ -137,6 +141,33 @@ body,
   }
 
   100% {
+    transform: translateY(-83.33%);
+  }
+} */
+
+@keyframes text-slide {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+
+  16% {
+    transform: translateY(-16.66%);
+  }
+
+  32% {
+    transform: translateY(-33.33%);
+  }
+
+  48% {
+    transform: translateY(-50%);
+  }
+
+  64% {
+    transform: translateY(-66.66%);
+  }
+
+  80% {
     transform: translateY(-83.33%);
   }
 }

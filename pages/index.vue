@@ -41,23 +41,23 @@ function formatDate(date) {
               <ul
                 class="block text-left leading-tight [&_li]:block animate-text-slide"
               >
-                <li class="text-indigo-500">
+                <li class="text-neutral-500">
                   Frontend
                 </li>
-                <li class="text-rose-500">
+                <li class="text-neutral-500">
                   Fullstack
                 </li>
-                <li class="text-yellow-500">
-                  DevOps
-                </li>
-                <li class="text-teal-500">
+                <li class="text-[#42b883]">
                   Vue.js
                 </li>
-                <li class="text-pink-500">
-                  React
+                <li class="text-[#7cbb00]">
+                  C# / .NET
                 </li>
-                <li class="text-sky-500">
-                  Laravel
+                <li class="text-[#f7df1e]">
+                  JavaScript
+                </li>
+                <li class="text-[#00a1f1]">
+                  DevOps
                 </li>
               </ul>
             </div>
