@@ -57,6 +57,7 @@
     "lite-youtube-embed": "^0.3.0",
     "lucide-vue-next": "^0.315.0",
     "nodemailer": "^6.9.8",
+    "nuxt-mail": "^4.0.2",
     "nuxt-mailer": "^0.11.0",
     "puppeteer": "^21.9.0",
     "qrcode.vue": "^3.4.1",

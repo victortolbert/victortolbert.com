@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     'magic-regexp/nuxt',
     'nuxt-lodash',
     'nuxt-api-party',
+    'nuxt-mail',
     'nuxt-prepare',
     'shadcn-nuxt',
     // '@formkit/nuxt',
@@ -340,6 +341,16 @@ export default defineNuxtConfig({
   // imports: {
   //   dirs: ['stores'],
   // },
+
+  mail: {
+    message: {
+      to: 'foo@bar.de',
+    },
+    smtp: {
+      host: 'smtp.example.com',
+      port: 587,
+    },
+  },
 
   // nitro: {
   //   imports: {

@@ -136,7 +136,7 @@ function formatDate(date) {
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
               </h3>
               <div class="text-sm tabular-nums text-gray-500">
-                {{ formatDate(work.startDate) }} - {{ formatDate(work.endDate) }}
+                {{ formatDate(work.startDate) }}&ndash;{{ formatDate(work.endDate) }}
               </div>
             </div>
             <h4 class="text-sm leading-none font-mono">
@@ -213,6 +213,8 @@ function formatDate(date) {
     {{ trainCase(kebabCase(camelCase('OnPaste'))) }} -->
 
     <!-- <img src="http://example.com/image.jpg" alt="Example of a broken image"> -->
+
+    <UIcon name="i-ph-student-duotone" />
 
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
       Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>J</kbd> to open the command menu. Hosted by <a href="/" class="underline hover:opacity-80">jcv</a>.
