@@ -27,5 +27,20 @@ export default defineAppConfig({
     container: {
       constrained: 'max-w-3xl',
     },
+    content: {
+      prose: {
+        code: {
+          button: {
+            icon: {
+              copy: 'i-ph-copy-duotone',
+              copied: 'i-ph-check-square-duotone',
+            },
+          },
+          icon: {
+            terminal: 'i-ph-terminal-window-duotone',
+          },
+        },
+      },
+    },
   },
 })
