@@ -100,7 +100,7 @@
       ]
     },
     {
-      "name": "Videa.tv, LLC (A Cox Media Group Company)",
+      "name": "Cox Media Group (Videa.tv)",
       "location": "Atlanta, GA",
       "position": "Senior UI Architect / UX Designer",
       "url": "https://victortolbert.com/videa",
@@ -192,13 +192,13 @@
         "HTML / JSX",
         "SCSS / CSS / BEM / Styled Components",
         "JavaScript / TypeScript",
-        "Vue.js / Nuxt.js",
+        "Vue.js / Nuxt",
         "Pinia / Vuex",
         "React",
         "Angular",
         "jQuery",
+        "Tailwind",
         "Bootstrap",
-        "TailwindCSS",
         "Bulma",
         "Responsive Design",
         "Progressive Web Apps",
@@ -212,29 +212,25 @@
       "level": "Senior",
       "keywords": [
         "C#",
-        "Node.js",
-        "Ruby",
         "PHP",
         "Laravel",
         "CodeIgniter",
+        "Node.js",
         "Express",
-        "MySQL",
-        "MongoDB",
-        "Serverless",
-        "Nginx",
-        "Docker",
-        "RESTful APIs",
-        "GraphQL"
+        "Ruby",
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL"
       ]
     },
     {
       "name": "DevOps",
       "level": "Intermediate",
       "keywords": [
-        "AWS",
-        "Google Cloud",
         "Heroku",
-        "Azure"
+        "Microsoft Azure",
+        "AWS",
+        "Google Cloud"
       ]
     }
   ],
@@ -248,10 +244,10 @@
     {
       "name": "Product Development",
       "keywords": [
-        "User Experience Design",
+        "Design Systems",
         "User Interface Engineering",
-        "Information Architecture",
-        "Design Systems"
+        "User Experience Design",
+        "Information Architecture"
       ]
     }
   ],
