@@ -119,6 +119,50 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       // preload: [
+      // angular-ts,
+      // angular-html,
+      // astro
+      // bat
+      // blade
+      // csv
+      // diff
+      // docker
+      // erb
+      // git-commit
+      // git-rebase
+      // go
+      // graphql
+      // haml
+      // handlebars
+      // http
+      // jsonc
+      // json
+      // json5
+      // jsx
+      // latex
+      // less
+      // mdc
+      // mdx
+      // nginx
+      // postcss
+      // powershell
+      // pug
+      // python
+      // r
+      // razor
+      // reg
+      // ruby
+      // rust
+      // sass
+      // scss
+      // svelte
+      // toml
+      // tsx
+      // twig
+      // vue-html
+      // xml
+      // xsl
+      // yaml
       //   'apex',
       //   'bash',
       //   'csharp',

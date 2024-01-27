@@ -6,6 +6,15 @@ definePageMeta({
   breadcrumb: 'Resume',
 })
 
+defineOgImageComponent('NuxtSeo')
+
+// defineOgImageComponent('NuxtSeo', {
+//   title: 'Hello OG Image 👋',
+//   description: 'Look what at me in dark mode',
+//   theme: '#ff0000',
+//   colorMode: 'dark',
+// })
+
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
@@ -216,9 +225,16 @@ function formatDate(date) {
 
     <UIcon name="i-ph-student-duotone" />
 
+    <!-- https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D -->
+
+    <Youtube id="ZrZv3JpOr2g" class="w-full" />
+    <Youtube id="I5mGNB-4f0o" class="w-full" />
+    <Youtube id="-BYZAO99UVA" class="w-full" />
+    <Youtube id="Mqu-yZWce8c" class="w-full" />
     <Youtube id="mv0WcBABcIk" class="w-full" />
 
     <Tweet id="1390115482657726468" />
+    <Tweet id="1720482508419088594" />
 
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
       Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>J</kbd> to open the command menu. Hosted by <a href="/" class="underline hover:opacity-80">jcv</a>.

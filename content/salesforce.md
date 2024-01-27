@@ -18,3 +18,19 @@ Customers, Partners and Employees
 Customers typically access an Experience Cloud site to seek help for solving issues, manage Account information, or access other data such as knowledge articles , cases, orders , invoices etc.
 
 https://d.la1-c1cs-ia7.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp?Settings.prefix=Visitor&Settings.buttonIds=[573DR0000008fyP]&Settings.updateBreadcrumb=1&callback=embedded_svc.liveAgentAPI.connection.handlePing&deployment_id=572DR0000008f7s&org_id=00DDR000000qERv&version=48
+
+```apex
+@AuraEnabled(cacheable=true)
+public static List<Property__c> getTopSeller() {
+  return [
+    SELECT
+      Name,
+      Broker__r.Name,
+      Price_Sold__c
+    FROM Property__c
+    WHERE Price_Sold__c > 0
+    ORDER BY Price_Sold__c DESC
+    LIMIT 1
+  ];
+}
+```
