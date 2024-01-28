@@ -6,6 +6,12 @@ definePageMeta({
   breadcrumb: 'Resume',
 })
 
+const open = ref(true)
+
+defineShortcuts({
+  o: () => open.value = !open.value,
+})
+
 defineOgImageComponent('NuxtSeo')
 
 // defineOgImageComponent('NuxtSeo', {
@@ -20,7 +26,7 @@ const { metaSymbol } = useShortcuts()
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
-const showFooter = ref(false)
+const showFooter = ref(true)
 const showStudyDates = ref(false)
 const showWorkLocation = ref(false)
 
@@ -39,11 +45,83 @@ function formatDate(date) {
 
 <template>
   <div class="w-full relative mx-auto print:p-12 font-mono">
+    <section class="grid gap-16">
+      <!--
+        https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D
+
+        https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3
+      -->
+      <figure>
+        <Youtube
+          id="ZrZv3JpOr2g"
+          class="aspect-video rounded-xl w-full bg-gray-50 object-cover"
+        />
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <UIcon
+            name="i-ph-info-duotone"
+            class="mt-0.5 h-5 w-5 flex-none"
+            aria-hidden="true"
+          />
+          Brown Eyed Lover&mdash;Allen Stone
+        </figcaption>
+      </figure>
+
+      <!-- <Youtube id="I5mGNB-4f0o" class="w-full" /> -->
+      <!-- <Youtube id="-BYZAO99UVA" class="w-full" /> -->
+      <!-- <Youtube id="Mqu-yZWce8c" class="w-full" /> -->
+      <!-- <Youtube id="mv0WcBABcIk" class="w-full" /> -->
+      <!-- <Tweet id="1390115482657726468" /> -->
+
+      <!--
+      What We Can Learn About Testing From The Wheel - Kent C. Dodds (Ignite Fluent 2016)
+      O'Reilly
+      May 23, 2018
+    -->
+
+      <figure>
+        <Youtube
+          id="Da9wfQ0frGA"
+          class="aspect-video rounded-xl w-full bg-gray-50 object-cover"
+        />
+
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <UIcon
+            name="i-ph-info-duotone"
+            class="mt-0.5 h-5 w-5 flex-none"
+            aria-hidden="true"
+          />
+
+          <UPopover mode="hover">
+            <span class="hover:underline">What We Can Learn About Testing From The Wheel - Kent C. Dodds</span>
+
+            <template #panel>
+              <div class="p-4">
+                This is the panel content
+              </div>
+            </template>
+          </UPopover>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <Tweet id="1720482508419088594" />
+
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <UIcon
+            name="i-ph-info-duotone"
+            class="mt-0.5 h-5 w-5 flex-none"
+            aria-hidden="true"
+          />
+          What We Can Learn About Testing From The Wheel - Kent C. Dodds
+        </figcaption>
+      </figure>
+    </section>
+
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-2xl">
-            {{ resume?.basics.name }}
+            {{ resume?.basics.name }} {{ open }}
           </h1>
           <div class="text-pretty text-muted-foreground max-w-md text-lg">
             {{ resume?.basics.label }}
@@ -234,32 +312,6 @@ function formatDate(date) {
     </section>
 
     <section class="mt-16">
-      <!-- https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D -->
-      <figure class="mt-16">
-        <Youtube id="ZrZv3JpOr2g" class="aspect-video rounded-xl w-full bg-gray-50 object-cover" />
-        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
-          <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
-          Brown Eyed Lover&mdash;Allen Stone
-        </figcaption>
-      </figure>
-      <!-- <Youtube id="I5mGNB-4f0o" class="w-full" /> -->
-      <!-- <Youtube id="-BYZAO99UVA" class="w-full" /> -->
-      <!-- <Youtube id="Mqu-yZWce8c" class="w-full" /> -->
-      <!-- <Youtube id="mv0WcBABcIk" class="w-full" /> -->
-      <!-- <Tweet id="1390115482657726468" /> -->
-    </section>
-
-    <section class="mt-16">
-      <figure class="mt-16">
-        <Tweet id="1720482508419088594" />
-        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
-          <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
-          What We Can Learn About Testing From The Wheel - Kent C. Dodds
-        </figcaption>
-      </figure>
-    </section>
-
-    <section class="mt-16">
       <UIcon name="i-ph-control-duotone" />
       <UIcon name="i-ph-option-duotone" />
       <UIcon name="i-ph-command-duotone" />
@@ -297,171 +349,6 @@ function formatDate(date) {
       </div>
     </section>
 
-    <section class="mt-16 grid gap-1.5">
-      <section class="flex flex-wrap items-center gap-1.5">
-        <UButton
-          icon="i-logos-javascript"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="JavaScript"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-typescript-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="TypeScript"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-c-sharp"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="C#"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-dotnet"
-          size="sm"
-          color="white"
-          variant="solid"
-          label=".NET"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-html-5"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="HTML"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-sass"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Sass"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-css-3"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="CSS"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-salesforce"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="SLDS"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-tailwindcss-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Tailwind"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-bootstrap"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Bootstrap"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-bulma"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Bulma"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-vue"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Vue.js"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-nuxt-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Nuxt"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-react"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="React"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-angular-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Angular"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-laravel"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Laravel"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-codeigniter-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="CodeIgniter"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-drupal-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Drupal"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-wordpress-icon"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="WordPress"
-          :trailing="false"
-        />
-        <UButton
-          icon="i-logos-ruby"
-          size="sm"
-          color="white"
-          variant="solid"
-          label="Ruby"
-          :trailing="false"
-        />
-      </section>
-    </section>
-
     <section class="mt-16">
       <div>
         <a href="#" class="inline-block">
@@ -491,22 +378,6 @@ function formatDate(date) {
         </div>
       </div>
     </section>
-
-    <!--
-      What We Can Learn About Testing From The Wheel - Kent C. Dodds (Ignite Fluent 2016)
-      O'Reilly
-      May 23, 2018
-    -->
-
-    <figure class="mt-16">
-      <!-- https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3 -->
-      <Youtube id="Da9wfQ0frGA" class="aspect-video rounded-xl w-full bg-gray-50 object-cover" />
-
-      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
-        <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
-        What We Can Learn About Testing From The Wheel - Kent C. Dodds
-      </figcaption>
-    </figure>
 
     <section class="mt-16">
       <ul>
