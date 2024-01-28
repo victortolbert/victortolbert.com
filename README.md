@@ -5,6 +5,12 @@
 > [!WARNING]
 > This project is unfinished and heavily a work in progress.
 
+## Features
+
+- Calendar
+- Resume Generator
+- GoogleMap API Example
+
 ## Todolist
 
 - [x] Add resume

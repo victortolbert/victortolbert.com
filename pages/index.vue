@@ -15,10 +15,13 @@ defineOgImageComponent('NuxtSeo')
 //   colorMode: 'dark',
 // })
 
+const { metaSymbol } = useShortcuts()
+
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
-const showFooter = ref(true)
+const showFooter = ref(false)
+const showStudyDates = ref(false)
 const showWorkLocation = ref(false)
 
 const icons = {
@@ -103,7 +106,7 @@ function formatDate(date) {
           </div>
         </div>
         <span class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
-          <img class="aspect-square h-full w-full grayscale" :src="resume?.basics.image" alt="Victor Tolbert">
+          <img class="aspect-square h-full w-full object-cover grayscale" :src="resume?.basics.image" alt="Victor Tolbert">
         </span>
       </div>
 
@@ -137,7 +140,7 @@ function formatDate(date) {
         <h2 class="text-xl">
           Work Experience
         </h2>
-        <div v-for="work in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
+        <div v-for="(work, index) in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 leading-none">
@@ -147,7 +150,7 @@ function formatDate(date) {
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
               </h3>
               <div class="text-sm tabular-nums text-gray-500">
-                {{ formatDate(work.startDate) }}&ndash;{{ formatDate(work.endDate) }}
+                {{ formatDate(work.startDate) }}&ndash;{{ index === 0 ? 'Present' : formatDate(work.endDate) }}
               </div>
             </div>
             <h4 class="text-sm leading-none">
@@ -178,7 +181,7 @@ function formatDate(date) {
                 </NuxtLink>
               </h3>
 
-              <div class="text-sm tabular-nums text-gray-500">
+              <div v-if="showStudyDates" class="text-sm tabular-nums text-gray-500">
                 {{ formatDate(study.endDate) }}
               </div>
             </div>
@@ -222,34 +225,301 @@ function formatDate(date) {
       </section>
     </main>
 
-    <!-- {{ trainCase(kebabCase(snakeCase('CustomerProfile'))) }}
-    {{ trainCase(kebabCase(pascalCase('customer_profile'))) }}
-    {{ trainCase(kebabCase(camelCase('OnPaste'))) }} -->
+    <section class="mt-16">
+      <!-- {{ trainCase(kebabCase(snakeCase('CustomerProfile'))) }}
+      {{ trainCase(kebabCase(pascalCase('customer_profile'))) }}
+      {{ trainCase(kebabCase(camelCase('OnPaste'))) }} -->
+      <!-- <img src="http://example.com/image.jpg" alt="Example of a broken image"> -->
+      <UIcon name="i-ph-student-duotone" />
+    </section>
 
-    <!-- <img src="http://example.com/image.jpg" alt="Example of a broken image"> -->
+    <section class="mt-16">
+      <!-- https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D -->
+      <figure class="mt-16">
+        <Youtube id="ZrZv3JpOr2g" class="aspect-video rounded-xl w-full bg-gray-50 object-cover" />
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
+          Brown Eyed Lover&mdash;Allen Stone
+        </figcaption>
+      </figure>
+      <!-- <Youtube id="I5mGNB-4f0o" class="w-full" /> -->
+      <!-- <Youtube id="-BYZAO99UVA" class="w-full" /> -->
+      <!-- <Youtube id="Mqu-yZWce8c" class="w-full" /> -->
+      <!-- <Youtube id="mv0WcBABcIk" class="w-full" /> -->
+      <!-- <Tweet id="1390115482657726468" /> -->
+    </section>
 
-    <UIcon name="i-ph-student-duotone" />
+    <section class="mt-16">
+      <figure class="mt-16">
+        <Tweet id="1720482508419088594" />
+        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
+          What We Can Learn About Testing From The Wheel - Kent C. Dodds
+        </figcaption>
+      </figure>
+    </section>
 
-    <!-- https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D -->
+    <section class="mt-16">
+      <UIcon name="i-ph-control-duotone" />
+      <UIcon name="i-ph-option-duotone" />
+      <UIcon name="i-ph-command-duotone" />
+      <UIcon name="i-ph-windows-logo-duotone" />
+      <UKbd size="md">
+        ^
+      </UKbd>
+      <UKbd size="md">
+        &and;
+      </UKbd>
+      <UKbd size="md">
+        &Lambda;
+      </UKbd>
+      <UKbd size="md">
+        ⌥
+      </UKbd>
+      <UKbd size="md">
+        ⇧
+      </UKbd>
+      <UKbd>
+        <UIcon name="i-ph-control-duotone" size="md" />
+      </UKbd>
+      <UKbd>
+        <UIcon name="i-ph-option-duotone" size="md" />
+      </UKbd>
+      <UKbd>
+        <UIcon name="i-ph-command-duotone" size="md" />
+      </UKbd>
+      <UKbd>
+        <UIcon name="i-ph-windows-logo-duotone" size="md" />
+      </UKbd>
+      <div class="flex items-center gap-0.5">
+        <UKbd>{{ metaSymbol }}</UKbd>
+        <UKbd>K</UKbd>
+      </div>
+    </section>
 
-    <Youtube id="ZrZv3JpOr2g" class="w-full" />
-    <!-- <Youtube id="I5mGNB-4f0o" class="w-full" /> -->
-    <!-- <Youtube id="-BYZAO99UVA" class="w-full" /> -->
-    <!-- <Youtube id="Mqu-yZWce8c" class="w-full" /> -->
-    <!-- <Youtube id="mv0WcBABcIk" class="w-full" /> -->
+    <section class="mt-16 grid gap-1.5">
+      <section class="flex flex-wrap items-center gap-1.5">
+        <UButton
+          icon="i-logos-javascript"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="JavaScript"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-typescript-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="TypeScript"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-c-sharp"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="C#"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-dotnet"
+          size="sm"
+          color="white"
+          variant="solid"
+          label=".NET"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-html-5"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="HTML"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-sass"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Sass"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-css-3"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="CSS"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-salesforce"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="SLDS"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-tailwindcss-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Tailwind"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-bootstrap"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Bootstrap"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-bulma"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Bulma"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-vue"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Vue.js"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-nuxt-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Nuxt"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-react"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="React"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-angular-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Angular"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-laravel"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Laravel"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-codeigniter-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="CodeIgniter"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-drupal-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Drupal"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-wordpress-icon"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="WordPress"
+          :trailing="false"
+        />
+        <UButton
+          icon="i-logos-ruby"
+          size="sm"
+          color="white"
+          variant="solid"
+          label="Ruby"
+          :trailing="false"
+        />
+      </section>
+    </section>
 
-    <!-- <Tweet id="1390115482657726468" /> -->
-    <Tweet id="1720482508419088594" />
+    <section class="mt-16">
+      <div>
+        <a href="#" class="inline-block">
+          <span class="inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium bg-pink-100 text-pink-800">Video</span>
+        </a>
+      </div>
+      <a href="#" class="mt-4 block">
+        <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
+        <p class="mt-3 text-base text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+      </a>
+      <div class="mt-6 flex items-center">
+        <div class="flex-shrink-0">
+          <a href="#">
+            <span class="sr-only">Dessie Ryan</span>
+            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+          </a>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm font-medium text-gray-900">
+            <a href="#">Dessie Ryan</a>
+          </p>
+          <div class="flex space-x-1 text-sm text-gray-500">
+            <time datetime="2020-03-10">Mar 10, 2020</time>
+            <span aria-hidden="true">·</span>
+            <span>4 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="flex items-center gap-1.5">
-      <UIcon name="i-logos-css-3" class="grayscale hover:grayscale-0" />
-      <UIcon name="i-logos-bootstrap" class="grayscale hover:grayscale-0" />
-      <UIcon name="i-logos-bulma" class="grayscale hover:grayscale-0" />
-      <UIcon name="i-logos-tailwindcss-icon" class="grayscale hover:grayscale-0" />
+    <!--
+      What We Can Learn About Testing From The Wheel - Kent C. Dodds (Ignite Fluent 2016)
+      O'Reilly
+      May 23, 2018
+    -->
+
+    <figure class="mt-16">
+      <!-- https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3 -->
+      <Youtube id="Da9wfQ0frGA" class="aspect-video rounded-xl w-full bg-gray-50 object-cover" />
+
+      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+        <UIcon name="i-ph-info-duotone" class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
+        What We Can Learn About Testing From The Wheel - Kent C. Dodds
+      </figcaption>
+    </figure>
+
+    <section class="mt-16">
+      <ul>
+        <li>English (US)</li>
+        <li>Español</li>
+        <li>Português (Brasil)</li>
+        <li>Deutsch</li>
+        <li>ಕನ್ನಡ</li>
+      </ul>
     </section>
 
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
-      Press <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs">⌘</span>K</kbd> to open the command menu
+      Press <span class="pointer-events-none inline-flex h-5 select-none items-center gap-1"><UKbd>{{ metaSymbol }}</UKbd><UKbd>K</UKbd></span> to open the command menu
     </p>
   </div>
 </template>

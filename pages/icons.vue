@@ -28,6 +28,15 @@ const icons = {
         -->
     </section>
 
+    <section class="mt-16 flex items-center gap-1.5">
+      <UIcon name="i-logos-css-3" class="grayscale hover:grayscale-0" /> CSS
+      <UIcon name="i-logos-salesforce" class="grayscale hover:grayscale-0" /> SLDS
+      <UIcon name="i-logos-sass" class="grayscale hover:grayscale-0" /> Sass
+      <UIcon name="i-logos-bootstrap" class="grayscale hover:grayscale-0" /> Bootstrap
+      <UIcon name="i-logos-bulma" class="grayscale hover:grayscale-0" /> Bulma
+      <UIcon name="i-logos-tailwindcss-icon" class="grayscale hover:grayscale-0" /> Tailwind
+    </section>
+
     <section class="mt-16">
       <UIcon name="i-logos-dotnet" />
       <UIcon name="i-logos-laravel" />

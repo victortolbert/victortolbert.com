@@ -13,7 +13,7 @@ defineOgImageComponent('NuxtSeo')
 </template>
 
 <style>
-a {
+/* a {
   @apply font-medium hover:underline text-blue-500;
-}
+} */
 </style>

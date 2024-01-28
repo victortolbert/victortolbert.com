@@ -72,7 +72,7 @@ defineProps<{
                     <button
                       type="button"
 
-                      rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                      rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500
                     >
                       <span sr-only>Close panel</span>
                       <svg

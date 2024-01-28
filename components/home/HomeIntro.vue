@@ -17,13 +17,13 @@ useSeoMeta({
       Hello!
     </h1>
     <div>
-      <NuxtImg src="/assets/images/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8" alt="Victor Tolbert Headshot" />
+      <NuxtImg src="/assets/images/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot" />
       <p class="text-gray-900 dark:text-gray-400">
-        I'm Victor, a self-taught, full-stack software engineer and experience UI/UX designer from Atlanta, Georgia.
-        I specialize in building web applications and sites using C#, .NET, PHP, Laravel, JavaScript, Vue.js, React, &amp; Node. Here, I share my experiments, nifty projects, and maybe my thoughts (mostly about tech and design).
+        I'm Victor, a self-taught, web applications consultant and experienced UI/UX designer from Atlanta, Georgia.
+        I specialize in building SaaS web applications and marketing websites using C#, .NET Core, PHP, Laravel, JavaScript, Vue.js, &amp; Node. Here, I share my experiments, nifty projects, and maybe my thoughts (mostly about tech and design).
       </p>
       <p class="mt-4 text-gray-900 dark:text-gray-400">
-        By day, I'm a Fullstack Developer at <a href="https://hancockclaims.com" target="_blank" class="underline">Hancock Claims Consultants</a>, and by night (and weekends), I'm busy tinkering working on some random tool or app, or learning a new framework.
+        By day, I'm a fullstack software engineer at <a href="https://hancockclaims.com" target="_blank" class="underline">Hancock Claims Consultants</a>, and by night (and weekends), I'm busy tinkering working on some random tool or app, or learning a new framework.
       </p>
     </div>
   </div>

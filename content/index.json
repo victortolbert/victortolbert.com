@@ -8,11 +8,11 @@
   "basics": {
     "name": "Victor Tolbert",
     "label": "Senior Software Engineer,",
-    "image": "https://avatars.githubusercontent.com/u/2476?v=4",
+    "image": "/assets/images/headshot.jpeg",
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
     "url": "https://victortolbert.com",
-    "summary": "I'm a self-taught full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "summary": "Self-taught full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design. Passionate about creating innovative solutions that solve real-world problems.",
     "location": {
       "address": "1547 Boulder Walk Drive",
       "postalCode": "30316",
@@ -49,6 +49,16 @@
     ]
   },
   "work": [
+    {
+      "name": "VTi Consulting",
+      "location": "Atlanta, Georgia USA",
+      "description": "Information technology consulting services",
+      "position": "Sole Proprietor",
+      "url": "https://vticonsulting.com/",
+      "startDate": "2002-05-21",
+      "summary": "Information technology consulting services",
+      "highlights": []
+    },
     {
       "name": "Hancock Claims Consultants",
       "location": "Alpharetta, Georgia USA",
@@ -186,43 +196,56 @@
   "publications": [],
   "skills": [
     {
-      "name": "Frontend",
-      "level": "Senior",
-      "keywords": [
-        "HTML / JSX",
-        "SCSS / CSS / BEM / Styled Components",
-        "JavaScript / TypeScript",
-        "Vue.js / Nuxt",
-        "Pinia / Vuex",
-        "React",
-        "Angular",
-        "jQuery",
-        "Tailwind",
-        "Bootstrap",
-        "Bulma",
-        "Responsive Design",
-        "Progressive Web Apps",
-        "Web Components",
-        "Web Accessibility",
-        "SEO"
-      ]
-    },
-    {
       "name": "Backend",
       "level": "Senior",
       "keywords": [
         "C#",
+        ".NET",
+        "ASP.NET Core",
         "PHP",
+        "WordPress",
         "Laravel",
-        "CodeIgniter",
+        "Drupal",
         "Node.js",
-        "Express",
+        "Express.js",
         "Ruby",
         "SQL Server",
         "PostgreSQL",
         "MySQL"
       ]
     },
+    {
+      "name": "Frontend",
+      "level": "Senior",
+      "keywords": [
+        "Responsive Design",
+        "Progressive Web Apps",
+        "Web Accessibility",
+        "Web Components",
+        "SEO",
+        "HTML",
+        "JSX",
+        "CSS",
+        "SCSS",
+        "BEM",
+        "Bootstrap",
+        "Bulma",
+        "Tailwind",
+        "Styled Components",
+        "JavaScript",
+        "jQuery",
+        "TypeScript",
+        "Vue.js",
+        "Vuex",
+        "Pinia",
+        "Nuxt",
+        "React",
+        "Next.js",
+        "AngularJS",
+        "Angular"
+      ]
+    },
+
     {
       "name": "DevOps",
       "level": "Intermediate",

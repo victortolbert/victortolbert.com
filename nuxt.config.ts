@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     'nuxt-api-party',
     'nuxt-mail',
     'nuxt-prepare',
+    'nuxt-swiper',
     'shadcn-nuxt',
     // '@formkit/nuxt',
     // '@nuxtjs/html-validator',
@@ -52,7 +53,6 @@ export default defineNuxtConfig({
     // 'nuxt-mailer',
     // 'nuxt-og-image',
     // 'nuxt-proxy',
-    // 'nuxt-swiper',
     // 'nuxt-time',
   ],
 
@@ -190,7 +190,7 @@ export default defineNuxtConfig({
       //   'vue',
       //   'yaml',
       // ],
-      preload: ['apex', 'sql', 'html', 'razor', 'css', 'js', 'ts', 'vue', 'prisma'],
+      preload: ['apex', 'sql', 'handlebars', 'html', 'jinja', 'razor', 'css', 'js', 'ts', 'vue', 'prisma'],
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       // theme: {
       //   light: 'vitesse-light',

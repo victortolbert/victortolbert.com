@@ -10,7 +10,7 @@
         <ul
           class="block text-left leading-tight [&_li]:block animate-text-slide"
         >
-          <li class="text-indigo-500">Mobile apps</li>
+          <li class="text-primary-500">Mobile apps</li>
           <li class="text-rose-500">Websites</li>
           <li class="text-yellow-500">Admin dashboards</li>
           <li class="text-teal-500">Landing pages</li>
