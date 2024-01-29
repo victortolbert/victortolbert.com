@@ -1,0 +1,1779 @@
+@import url(//web.archive.org/web/20150124004759cs_/http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #52545d;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+html {
+  overflow-y: scroll;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font: 300 20px/1.5 'Roboto', sans-serif;
+  color: #52545d;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  color: #4296b4;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: #4296b4;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #4296b4;
+}
+
+/*usage*/
+a {
+  text-decoration: none;
+  color: #4296b4;
+}
+a:hover, a:focus, a:active {
+  /*styles*/
+  color: teal;
+}
+
+button,
+input,
+select {
+  height: 2.5em;
+}
+
+input,
+select {
+  padding: .5em;
+  border: 1px solid #e0e4e5;
+  color: #52545d;
+}
+
+button {
+  border: none;
+  background: #f58220;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+td {
+  font-weight: 300;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.box {
+  border: 1px solid #e0e4e5;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.box h3 {
+  color: #52545d;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.site-footer {
+  background: #4296b4;
+  color: white;
+  font-size: 13px;
+  height: 95px;
+  padding: 2em 0;
+}
+
+.site-footer ul {
+  padding-bottom: 1em;
+  display: inline-block;
+}
+
+.site-footer li {
+  display: inline;
+}
+.site-footer li:not(:last-child) {
+  color: white;
+}
+.site-footer li:not(:last-child):after {
+  padding: 5px;
+  content: "|";
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: white;
+}
+
+.top-link {
+  display: none;
+}
+@media (min-width: 768px) {
+  .top-link {
+    display: block;
+  }
+}
+.top-link i {
+  color: #83c8bc;
+  font-size: 24px;
+}
+.top-link span {
+  vertical-align: top;
+  line-height: 24px;
+}
+
+.footer-links {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-links {
+    text-align: right;
+  }
+}
+
+.site-header {
+  text-transform: uppercase;
+  padding: .56em 0;
+  border-bottom: 2px solid #64b1bc;
+  background: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 992px) {
+  .site-header {
+    padding: 1em 0;
+  }
+}
+
+.logo img {
+  display: inline-block;
+  vertical-align: top;
+  width: 110px;
+  height: 24px;
+}
+@media (min-width: 992px) {
+  .logo img {
+    width: 160px;
+    height: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo img {
+    width: 200px;
+    height: 44px;
+  }
+}
+
+.site-nav {
+  display: none;
+  height: 24px;
+  line-height: 24px;
+}
+@media (min-width: 992px) {
+  .site-nav {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-nav {
+    height: 44px;
+    line-height: 44px;
+  }
+}
+
+.site-nav.open {
+  display: block;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: 11px;
+}
+.site-nav.open ul {
+  display: block;
+}
+.site-nav.open a {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.site-nav > ul {
+  display: none;
+}
+@media (min-width: 992px) {
+  .site-nav > ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+    display: block;
+  }
+}
+
+.site-nav li {
+  background: #276092;
+}
+.site-nav li a {
+  display: block;
+  color: white;
+  padding: 0 .7em;
+  font-size: 15px;
+  font-weight: 400;
+}
+.site-nav li a:hover {
+  background: #64b1bc;
+}
+@media (min-width: 992px) {
+  .site-nav li {
+    display: inline;
+    background: none;
+  }
+  .site-nav li a {
+    display: inline-block;
+    color: #276092;
+  }
+  .site-nav li a:hover {
+    color: #64b1bc;
+    background: transparent;
+    transition: color .6s;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-nav li.active > a,
+  .site-nav li.current-menu-item > a {
+    font-weight: 500;
+    color: #64b1bc;
+  }
+}
+
+.sign-in {
+  display: none;
+  height: 24px;
+  line-height: 24px;
+}
+@media (min-width: 992px) {
+  .sign-in {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 148px;
+    text-align: right;
+    background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/signin-button-background.png) no-repeat right center;
+    height: 48px;
+    line-height: 47px;
+    padding-right: 12px;
+  }
+  .sign-in a {
+    display: inline-block;
+    color: white;
+    padding: 0 1em;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    height: 42px;
+  }
+}
+
+.site-nav__menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  text-align: right;
+  background: #276092;
+  height: 52px;
+  line-height: 52px;
+  font-size: 20px;
+}
+.site-nav__menu:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: -52px;
+  border-top: 52px solid #276092;
+  border-left: 52px solid transparent;
+}
+.site-nav__menu a {
+  display: inline-block;
+  color: white;
+  padding: 0 .9em;
+}
+@media (min-width: 992px) {
+  .site-nav__menu {
+    display: none;
+    height: 69px;
+    line-height: 69px;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #64b1bc;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #276092;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #337ab7;
+}
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777777;
+}
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.open > a {
+  outline: 0;
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777777;
+  white-space: nowrap;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+
+  .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto;
+  }
+}
+.tabs {
+  overflow: hidden;
+  border: 1px solid #e0e4e5;
+  border-bottom: none;
+}
+.tabs li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #e0e4e5;
+}
+.tabs li:last-child {
+  border-right: none;
+}
+.tabs a {
+  display: block;
+  padding: .5em;
+}
+
+body {
+  margin-top: 54px;
+  margin-bottom: 95px;
+}
+@media (min-width: 992px) {
+  body {
+    margin-top: 73px;
+    margin-bottom: 95px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    margin-top: 82px;
+  }
+}
+
+.container {
+  max-width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 16.6666666667%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-nav {
+    width: 83.3333333333%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+.hero-content {
+  width: 57.6271186441%;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .hero-content {
+    width: 41.6666666667%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+.page-agency .hero-content {
+  width: 49.1525423729%;
+  float: left;
+  margin-right: 1.6949152542%;
+  padding-left: 8.4745762712%;
+}
+@media (min-width: 992px) {
+  .page-agency .hero-content {
+    width: 50%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+    padding-left: 11.6666666667%;
+  }
+}
+
+.page-station .hero-content {
+  width: 49.1525423729%;
+  float: right;
+  margin-right: 0;
+  padding-left: 8.4745762712%;
+}
+@media (min-width: 992px) {
+  .page-station .hero-content {
+    width: 50%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+    padding-left: 11.6666666667%;
+  }
+}
+
+.page-press .hero-content {
+  width: 66.1016949153%;
+  float: left;
+  margin-right: 1.6949152542%;
+}
+@media (min-width: 992px) {
+  .page-press .hero-content {
+    width: 66.6666666667%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+.page-blog .hero-content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  .page-blog .hero-content {
+    width: 41.6666666667%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-videa-content,
+  .leadership-header,
+  .location-header,
+  .client-support-header,
+  .work-content,
+  .snapshots-content,
+  .interested-content,
+  .privacy-content,
+  .visitor-content {
+    clear: both;
+    width: 100%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .station,
+  .premium-image,
+  .knowledge-content,
+  .integration-content,
+  .pricing-image,
+  .yield-content,
+  .markets-image,
+  .reporting-image,
+  .orders-content,
+  .premium-inventory-image,
+  .avails-content,
+  .ratings-image,
+  .stewardship-content,
+  .workflow-image,
+  .president,
+  .technology,
+  .product-development,
+  .software-development,
+  .contact-info,
+  .station-support {
+    width: 50%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .agency,
+  .premium-content,
+  .pricing-content,
+  .markets-content,
+  .reporting-content,
+  .premium-inventory-content,
+  .ratings-content,
+  .workflow-content,
+  .finance,
+  .business-development,
+  .operations,
+  .directions,
+  .agency-support {
+    width: 50%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    width: 66.6666666667%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+  .main-content .date {
+    width: 33.3333333333%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+  .main-content .release {
+    width: 66.6666666667%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    width: 33.3333333333%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 480px) {
+  .broadcast-content {
+    width: 83.3333333333%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .broadcast-content {
+    width: 66.6666666667%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  .broadcast-content {
+    width: 50%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-link {
+    width: 33.3333333333%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  .top-link {
+    width: 50%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+    width: 66.6666666667%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-links {
+    width: 50%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .reach,
+  .sure,
+  .search-jobs,
+  .follow-us,
+  .job-fairs {
+    width: 33.3333333333%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .simple,
+  .email-us {
+    width: 33.3333333333%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .family {
+    clear: both;
+    width: 100%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cox-communications,
+  .cox-automotive,
+  .cox-media {
+    width: 25%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cox-internet {
+    width: 25%;
+    float: right;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+  }
+}
+
+.page-about .tagline {
+  padding: 3em 0;
+}
+.page-about .reach .h2 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/reach.png);
+}
+.page-about .sure .h2 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/sure.png);
+}
+.page-about .simple .h2 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/simple.png);
+}
+.page-about .reach .h2,
+.page-about .sure .h2,
+.page-about .simple .h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #276092;
+  text-transform: uppercase;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 136px;
+}
+.page-about .reach p,
+.page-about .sure p,
+.page-about .simple p {
+  text-align: center;
+}
+.page-about .about-videa {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/about-background.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3em 0;
+}
+.page-about .leadership {
+  padding: 3em 0;
+}
+.page-about .leadership .h3 {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+.page-about .leadership .h4 {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+.page-about .family {
+  color: white;
+  background: #276092;
+  padding: 3em 0 0;
+}
+@media (min-width: 992px) {
+  .page-about .family {
+    padding: 3em 0 6em;
+  }
+}
+.page-about .family .h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+.page-about .family .h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.page-about .family .cox-communications,
+.page-about .family .cox-automotive,
+.page-about .family .cox-media,
+.page-about .family .cox-internet {
+  margin-bottom: 1em;
+}
+.page-about .family img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+.page-about .family img.cox {
+  max-width: 125px;
+}
+.page-about .family img.manheim {
+  max-width: 180px;
+}
+.page-about .family img.autotrader-group {
+  max-width: 174px;
+}
+.page-about .family img.cox-media-group {
+  max-width: 180px;
+}
+.page-about .family img.cox-reps {
+  max-width: 190px;
+}
+.page-about .family img.cox-digital-solutions {
+  max-width: 213px;
+}
+.page-about .family img.gamut {
+  max-width: 160px;
+}
+.page-about .family img.kudzu {
+  max-width: 67px;
+}
+
+.page-agency h2 {
+  color: #52545d;
+}
+.page-agency .hero {
+  background: #404040;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/hero-agency.jpg);
+}
+.page-agency .hero-content p {
+  color: black;
+  line-height: 1.4;
+  margin: 3em 0;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .page-agency .hero-content p {
+    font-size: 40px;
+    margin: 5em 0;
+  }
+}
+.page-agency .trusted {
+  padding: 3em 0;
+}
+.page-agency .trusted h2 {
+  text-align: center;
+  color: #276092;
+  margin-bottom: 0;
+}
+.page-agency .orders {
+  color: white;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/orders.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-agency .orders h2 {
+  color: white;
+}
+.page-agency .premium-inventory-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/premium-inventory.png) no-repeat center center;
+  height: 320px;
+}
+.page-agency .avails {
+  color: white;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/avails.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-agency .avails h2 {
+  color: white;
+}
+.page-agency .ratings-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/ratings.jpg) no-repeat center center;
+  height: 487px;
+}
+.page-agency .stewardship {
+  color: white;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/stewardship.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-agency .stewardship h2 {
+  color: white;
+}
+.page-agency .workflow-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/workflow.png) no-repeat center center;
+  height: 428px;
+  margin-bottom: 2em;
+}
+
+.page-blog .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -165px center;
+  height: 280px;
+  max-height: 50vh;
+  background-color: #5497a8;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/blog-hero.jpg);
+  margin-bottom: 3em;
+}
+@media (min-width: 480px) {
+  .page-blog .hero {
+    max-height: 70vh;
+  }
+}
+.page-blog article {
+  margin-bottom: 4em;
+}
+.page-blog h2 {
+  color: #52545d;
+  margin-bottom: .5em;
+}
+.page-blog h4 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.page-blog .social-media-links {
+  overflow: hidden;
+  width: 130px;
+  margin: 0 0 0 auto;
+}
+.page-blog .social-media-links a {
+  display: block;
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin-right: 0;
+  margin-left: .5em;
+  margin-bottom: 2em;
+  padding: 0;
+}
+.page-blog .facebook {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-blog .linkedin {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-blog .twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-twitter.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.page-careers .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 530px;
+  max-height: 50vh;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/careers-hero.jpg);
+}
+@media (min-width: 480px) {
+  .page-careers .hero {
+    max-height: 70vh;
+  }
+}
+.page-careers .work {
+  padding: 3em 0;
+}
+.page-careers .work img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .page-careers .work img {
+    width: 420px;
+    float: right;
+    padding-left: 4em;
+  }
+}
+.page-careers .snapshots {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 455px;
+  max-height: 455px;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/snapshots.jpg);
+}
+.page-careers .interested {
+  padding-bottom: 3em;
+}
+@media (min-width: 992px) {
+  .page-careers .interested {
+    padding-bottom: 0;
+  }
+}
+.page-careers .interested h2 {
+  color: #4296b4;
+}
+.page-careers .interested h3 {
+  color: #276092;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 136px;
+}
+.page-careers .interested .search-jobs h3 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-search-jobs.png);
+}
+.page-careers .interested .follow-us h3 {
+  padding-top: 0;
+}
+.page-careers .interested .follow-us .social-media-links {
+  overflow: hidden;
+  width: 226px;
+  margin: 0 auto;
+}
+.page-careers .interested .follow-us .social-media-links a {
+  display: block;
+  float: left;
+  width: 65px;
+  height: 63px;
+  margin-right: .25em;
+  margin-left: .25em;
+  margin-bottom: 0;
+  padding: 3.4em 0;
+}
+.page-careers .interested .follow-us .facebook {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-careers .interested .follow-us .linkedin {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-careers .interested .follow-us .twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/twitter.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-careers .interested .job-fairs h3 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-job-fairs.png);
+}
+.page-careers .interested .email-us h3 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-email.png);
+}
+.page-careers .interested p {
+  text-align: center;
+}
+
+.page-contact .firstHeading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.page-contact .hero {
+  height: auto;
+}
+@media (min-width: 992px) {
+  .page-contact .hero {
+    height: 557px;
+    max-height: 70vh;
+  }
+}
+.page-contact .map {
+  display: none;
+}
+@media (min-width: 992px) {
+  .page-contact .map {
+    display: block;
+    height: 100%;
+  }
+}
+.page-contact .static-map {
+  display: block;
+}
+@media (min-width: 992px) {
+  .page-contact .static-map {
+    display: none;
+  }
+}
+.page-contact .contact-directions {
+  padding: 3em 0;
+}
+.page-contact .location-header {
+  color: #4296b4;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.page-contact .client-support-header {
+  font-size: 36px;
+  color: white;
+}
+.page-contact .agency-support-header {
+  color: white;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-building-white.png) no-repeat center right;
+  height: 66px;
+  line-height: 66px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.page-contact .station-support-header {
+  color: white;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-tower-white.png) no-repeat center right;
+  height: 66px;
+  line-height: 66px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.page-contact .social-media-links {
+  overflow: hidden;
+}
+.page-contact .social-media-links a {
+  display: block;
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin-right: .5em;
+  margin-bottom: 1em;
+}
+.page-contact .facebook {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-contact .linkedin {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-contact .twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-twitter.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-contact .client-support {
+  background: #276092;
+  color: white;
+  padding: 3em 0;
+}
+.page-contact .client-support a {
+  color: white;
+}
+.page-contact .directions li {
+  padding-left: 40px;
+  line-height: 30px;
+  padding-bottom: 1em;
+}
+.page-contact .directions .h3 {
+  color: #4296b4;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.page-contact .directions .head-northeast {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/arrow-north.png) no-repeat 6px 9px;
+}
+.page-contact .directions .turn-left {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/arrow-left.png) no-repeat left 2px;
+}
+.page-contact .directions .destination {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/map-pin.png) no-repeat 4px 5px;
+}
+@media (min-width: 992px) {
+  .page-contact .contact-info li {
+    display: inline;
+  }
+  .page-contact .contact-info li a {
+    display: inline-block;
+    padding: 0 20px 20px 0;
+  }
+}
+
+.page-home .hero {
+  background-color: #050505;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/hero-home.jpg);
+  background-repeat: no-repeat;
+  background-position: -354px center;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+@media (min-width: 480px) {
+  .page-home .hero {
+    background-position: -220px center;
+  }
+}
+@media (min-width: 768px) {
+  .page-home .hero {
+    background-position: -300px center;
+  }
+}
+@media (min-width: 992px) {
+  .page-home .hero {
+    background-position: -260px center;
+  }
+}
+@media (min-width: 1200px) {
+  .page-home .hero {
+    background-position: -100px center;
+  }
+}
+.page-home .hero-content p {
+  color: white;
+  line-height: 1.4;
+  margin: 5em 0;
+  font-size: 20px;
+}
+@media (min-width: 480px) {
+  .page-home .hero-content p {
+    font-size: 20px;
+    margin: 5em 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-home .hero-content p {
+    font-size: 30px;
+    margin: 5.4em 0;
+  }
+}
+@media (min-width: 992px) {
+  .page-home .hero-content p {
+    font-size: 34px;
+    margin: 6em 0;
+  }
+}
+.page-home .hero-content em {
+  font-weight: 700;
+  font-style: normal;
+}
+.page-home .agency-station {
+  margin-bottom: 3em;
+}
+.page-home .agency-station h2 {
+  color: #4296b4;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 24px;
+  margin-bottom: 1em;
+  line-height: .8;
+}
+.page-home .agency-station h2 span {
+  font-size: 48px;
+  display: block;
+}
+@media (min-width: 992px) {
+  .page-home .agency-station h2 span {
+    font-size: 72px;
+  }
+}
+.page-home .agency h2 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-building.png);
+}
+.page-home .station h2 {
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/icon-tower.png);
+}
+.page-home .broadcast {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/homepage_broadcast-tower.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+  background-position: top left;
+}
+@media (min-width: 992px) {
+  .page-home .broadcast {
+    background-position: top right;
+  }
+}
+.page-home .broadcast h2 {
+  color: black;
+  margin-bottom: .5em;
+  line-height: 1;
+}
+.page-home .premium-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/premium-inventory.png) no-repeat top center;
+  background-size: contain;
+  height: 230px;
+}
+@media (min-width: 992px) {
+  .page-home .premium-image {
+    height: 354px;
+  }
+}
+.page-home .premium-content {
+  margin-bottom: 3em;
+}
+.page-home .premium {
+  margin-bottom: 8em;
+}
+@media (min-width: 992px) {
+  .page-home .premium {
+    margin-bottom: 0;
+  }
+}
+.page-home .premium h2 {
+  color: #276092;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+.page-press .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  height: 280px;
+  max-height: 50vh;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/press-hero.jpg);
+  margin-bottom: 3em;
+}
+@media (min-width: 480px) {
+  .page-press .hero {
+    max-height: 70vh;
+  }
+}
+.page-press article {
+  margin-bottom: 4em;
+}
+.page-press h2 {
+  color: #52545d;
+  margin-bottom: .5em;
+}
+.page-press h4 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.page-press td.date {
+  text-align: right;
+}
+.page-press td.release {
+  padding-bottom: 1em;
+}
+.page-press .social-media-links {
+  overflow: hidden;
+  width: 130px;
+  margin: 0 0 0 auto;
+}
+.page-press .social-media-links a {
+  display: block;
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin-right: 0;
+  margin-left: .5em;
+  margin-bottom: 2em;
+  padding: 0;
+}
+.page-press .facebook {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-facebook.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-press .linkedin {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.page-press .twitter {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/logo-twitter.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.page-privacy {
+  padding-bottom: 3em;
+}
+@media (min-width: 992px) {
+  .page-privacy {
+    padding-bottom: 0;
+  }
+}
+.page-privacy h1 {
+  font-size: 36px;
+  color: #4296b4;
+  margin: 1em 0;
+}
+
+.page-station h2 {
+  color: #52545d;
+}
+.page-station .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -74px;
+  overflow: hidden;
+  background-image: url(/web/20150124004759im_/http://www.videa.tv/assets/img/hero-station.jpg);
+}
+.page-station .hero-content p {
+  color: black;
+  line-height: 1.4;
+  margin: 3em 0;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .page-station .hero-content p {
+    font-size: 40px;
+    margin: 5em 0;
+  }
+}
+.page-station .trusted {
+  padding: 3em 0;
+}
+.page-station .trusted h2 {
+  text-align: center;
+  color: #276092;
+  margin-bottom: 0;
+}
+.page-station .pricing-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/pricing.png) no-repeat center center;
+  height: 287px;
+}
+.page-station .knowledge {
+  color: white;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/knowledge.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-station .knowledge h2 {
+  color: white;
+}
+.page-station .yield {
+  color: white;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/yield.jpg) no-repeat;
+  background-position: center right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-station .yield h2 {
+  color: white;
+}
+.page-station .markets-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/markets.png) no-repeat;
+  background-size: cover;
+  height: 487px;
+}
+.page-station .integration {
+  color: #52545d;
+  background: gray;
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/integration.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+.page-station .integration h2 {
+  color: #52545d;
+}
+.page-station .reporting-image {
+  background: url(/web/20150124004759im_/http://www.videa.tv/assets/img/reporting.jpg) no-repeat center center;
+  height: 398px;
+}
+
+.page-visitor {
+  padding-bottom: 3em;
+}
+@media (min-width: 992px) {
+  .page-visitor {
+    padding-bottom: 0;
+  }
+}
+.page-visitor h1 {
+  font-size: 36px;
+  color: #4296b4;
+  margin: 1em 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*
+     FILE ARCHIVED ON 00:47:59 Jan 24, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:12:34 Apr 05, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 264.31
+  exclusion.robots: 0.122
+  exclusion.robots.policy: 0.113
+  RedisCDXSource: 14.041
+  esindex: 0.007
+  LoadShardBlock: 227.824 (3)
+  PetaboxLoader3.datanode: 231.566 (4)
+  CDXLines.iter: 19.581 (3)
+  load_resource: 89.97
+  PetaboxLoader3.resolve: 49.272
+*/

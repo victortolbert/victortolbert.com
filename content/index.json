@@ -7,12 +7,12 @@
   },
   "basics": {
     "name": "Victor Tolbert",
-    "label": "Software Engineer",
-    "image": "https://avatars.githubusercontent.com/u/2476?v=4",
+    "label": "Senior Software Engineer,",
+    "image": "/assets/images/me/headshot.jpeg",
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
     "url": "https://victortolbert.com",
-    "summary": "I'm a self-taught full-stack software engineer with 15+ years of experience in web development, design engineering, and product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "summary": "Self-taught full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design. Passionate about creating innovative solutions that solve real-world problems.",
     "location": {
       "address": "1547 Boulder Walk Drive",
       "postalCode": "30316",
@@ -40,16 +40,36 @@
         "network": "Instagram",
         "username": "victortolbert",
         "url": "https://www.instagram.com/victortolbert/"
+      },
+      {
+        "network": "CodePen",
+        "username": "victortolbert",
+        "url": "https://codepen.io/victortolbert"
+      },
+      {
+        "network": "Trailhead",
+        "username": "victortolbert",
+        "url": "https://www.salesforce.com/trailblazer/victortolbert"
       }
     ]
   },
   "work": [
     {
+      "name": "VTi Consulting",
+      "location": "Atlanta, Georgia USA",
+      "description": "Information technology consulting services",
+      "position": "Sole Proprietor",
+      "url": "https://vticonsulting.com/",
+      "startDate": "2002-05-21",
+      "summary": "Information technology consulting services",
+      "highlights": []
+    },
+    {
       "name": "Hancock Claims Consultants",
       "location": "Alpharetta, Georgia USA",
       "description": "",
-      "position": "Senior Software Engineer",
-      "url": "https://hancockclaims.com",
+      "position": "Software Engineer",
+      "url": "https://victortolbert.com/hancock",
       "startDate": "2021-05-21",
       "endDate": "2024-01-09",
       "summary": "Provided subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a  web-based property claims management system and mobile-friendly property inspection web applications",
@@ -66,7 +86,7 @@
       "location": "Alpharetta, Georgia USA",
       "description": "",
       "position": "Senior UI / Full-stack Developer",
-      "url": "https://www.boosterthon.com/",
+      "url": "https://victortolbert.com/booster",
       "startDate": "2018-11-01",
       "endDate": "2020-10-01",
       "summary": "Designed, developed, and implemented new features for a core business application used by parents, sponsors, clients, and internal teams",
@@ -80,13 +100,13 @@
       ]
     },
     {
-      "name": "Turner Sports, PGA.com",
+      "name": "Turner Sports (Turner Broadcasting System)",
       "location": "Atlanta, GA",
       "position": "Senior Software Engineer (Contract)",
-      "url": "https://press.wbd.com/us/brands/wbd-sports/properties",
+      "url": "https://victortolbert.com/turner",
       "startDate": "2018-03-01",
       "endDate": "2018-11-01",
-      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship and events platform. Actively participated in project design and direction with new tools and features",
+      "summary": "Developed dynamic and data-driven solutions for consumer facing web and digital platforms for PGA.COM, Ryder Cup, PGA Championship, and the PGA tour events platform. Actively participated in project design and direction with new tools and features",
       "highlights": [
         "Hands-on front-end development for custom Drupal based events/CMS platform and back-end",
         "Worked cross-functionally with the development team and functional teams throughout full SDLC from requirements, coding, testing, peer reviews, documentation, deployment and post-launch support and improvement",
@@ -95,10 +115,10 @@
       ]
     },
     {
-      "name": "Videa, A Cox Media Group Company",
+      "name": "Cox Media Group (Videa.tv)",
       "location": "Atlanta, GA",
       "position": "Senior UI Architect / UX Designer",
-      "url": "https://coxmediagroup.com",
+      "url": "https://victortolbert.com/videa",
       "startDate": "2014-07-01",
       "endDate": "2017-12-01",
       "summary": "Designed and developed a web-based interactive product demo using Node.js and Vue.js",
@@ -114,7 +134,7 @@
       "name": "AT&T Mobility",
       "location": "Atlanta, GA",
       "position": "Senior UI Developer / Systems Engineer (Contract)",
-      "url": "https://www.att.com",
+      "url": "https://victortolbert.com/att",
       "startDate": "2013-03-01",
       "endDate": "2014-07-01",
       "summary": "",
@@ -129,7 +149,7 @@
       "name": "WebMD.com",
       "location": "Atlanta, Georgia",
       "position": "Web Developer",
-      "url": "https://www.webmd.com",
+      "url": "https://victortolbert.com/webmd",
       "startDate": "2010-08-01",
       "endDate": "2013-01-01",
       "summary": "",
@@ -146,7 +166,7 @@
       "name": "AutoTrader.com",
       "location": "Atlanta, Georgia",
       "position": "User Interface Engineer",
-      "url": "https://www.autotrader.com",
+      "url": "https://victortolbert.com/autotrader",
       "startDate": "2005-07-01",
       "endDate": "2010-08-01",
       "summary": "",
@@ -181,55 +201,64 @@
   "publications": [],
   "skills": [
     {
-      "name": "Frontend",
-      "level": "Senior",
-      "keywords": [
-        "HTML / JSX",
-        "SCSS / CSS / BEM / Styled Components",
-        "JavaScript / TypeScript",
-        "Vue.js / Nuxt.js",
-        "Pinia / Vuex",
-        "React",
-        "Angular",
-        "jQuery",
-        "Bootstrap",
-        "TailwindCSS",
-        "Bulma",
-        "Responsive Design",
-        "Progressive Web Apps",
-        "Web Components",
-        "Web Accessibility",
-        "SEO"
-      ]
-    },
-    {
       "name": "Backend",
       "level": "Senior",
       "keywords": [
         "C#",
-        "Node.js",
-        "Ruby",
+        ".NET",
+        "ASP.NET Core",
         "PHP",
+        "WordPress",
         "Laravel",
-        "CodeIgniter",
-        "Express",
-        "MySQL",
-        "MongoDB",
-        "Serverless",
-        "Nginx",
-        "Docker",
-        "RESTful APIs",
-        "GraphQL"
+        "Drupal",
+        "Node.js",
+        "Express.js",
+        "Ruby",
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL"
       ]
     },
+    {
+      "name": "Frontend",
+      "level": "Senior",
+      "keywords": [
+        "Responsive Design",
+        "Progressive Web Apps",
+        "Accessibility",
+        "Web Components",
+        "SEO",
+        "HTML",
+        "JSX",
+        "CSS",
+        "Sass",
+        "BEM",
+        "Bootstrap",
+        "Bulma",
+        "Tailwind",
+        "Styled Components",
+        "JavaScript",
+        "jQuery",
+        "TypeScript",
+        "Vue.js",
+        "Vuex",
+        "Pinia",
+        "Nuxt",
+        "React",
+        "Next.js",
+        "AngularJS",
+        "Angular"
+      ]
+    },
+
     {
       "name": "DevOps",
       "level": "Intermediate",
       "keywords": [
         "AWS",
+        "Azure",
         "Google Cloud",
-        "Heroku",
-        "Azure"
+        "Heroku"
       ]
     }
   ],
@@ -243,10 +272,10 @@
     {
       "name": "Product Development",
       "keywords": [
-        "User Experience Design",
+        "Design Systems",
         "User Interface Engineering",
-        "Information Architecture",
-        "Design Systems"
+        "User Experience Design",
+        "Information Architecture"
       ]
     }
   ],

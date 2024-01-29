@@ -11,7 +11,15 @@ export default antfu(
     rules: {
       'no-alert': 'off',
       'no-console': 'off',
+      'no-irregular-whitespace': 'off',
+      'ts/consistent-type-definitions': 'off',
     },
+    ignores: [
+      'README.md',
+      '.storybook/',
+      'fixtures',
+      './public/**',
+    ],
   },
   {
     ignores: [

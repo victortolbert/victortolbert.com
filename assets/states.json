@@ -1,0 +1,257 @@
+[
+  {
+    "Id": 1,
+    "Abbreviation": "AL",
+    "Name": "Alabama"
+  },
+  {
+    "Id": 2,
+    "Abbreviation": "AK",
+    "Name": "Alaska"
+  },
+  {
+    "Id": 3,
+    "Abbreviation": "AZ",
+    "Name": "Arizona"
+  },
+  {
+    "Id": 4,
+    "Abbreviation": "AR",
+    "Name": "Arkansas"
+  },
+  {
+    "Id": 5,
+    "Abbreviation": "CA",
+    "Name": "California"
+  },
+  {
+    "Id": 6,
+    "Abbreviation": "CO",
+    "Name": "Colorado"
+  },
+  {
+    "Id": 7,
+    "Abbreviation": "CT",
+    "Name": "Connecticut"
+  },
+  {
+    "Id": 8,
+    "Abbreviation": "DE",
+    "Name": "Delaware"
+  },
+  {
+    "Id": 9,
+    "Abbreviation": "DC",
+    "Name": "District of Columbia"
+  },
+  {
+    "Id": 10,
+    "Abbreviation": "FL",
+    "Name": "Florida"
+  },
+  {
+    "Id": 11,
+    "Abbreviation": "GA",
+    "Name": "Georgia"
+  },
+  {
+    "Id": 12,
+    "Abbreviation": "HI",
+    "Name": "Hawaii"
+  },
+  {
+    "Id": 13,
+    "Abbreviation": "ID",
+    "Name": "Idaho"
+  },
+  {
+    "Id": 14,
+    "Abbreviation": "IL",
+    "Name": "Illinois"
+  },
+  {
+    "Id": 15,
+    "Abbreviation": "IN",
+    "Name": "Indiana"
+  },
+  {
+    "Id": 16,
+    "Abbreviation": "IA",
+    "Name": "Iowa"
+  },
+  {
+    "Id": 17,
+    "Abbreviation": "KS",
+    "Name": "Kansas"
+  },
+  {
+    "Id": 18,
+    "Abbreviation": "KY",
+    "Name": "Kentucky"
+  },
+  {
+    "Id": 19,
+    "Abbreviation": "LA",
+    "Name": "Louisiana"
+  },
+  {
+    "Id": 20,
+    "Abbreviation": "ME",
+    "Name": "Maine"
+  },
+  {
+    "Id": 21,
+    "Abbreviation": "MD",
+    "Name": "Maryland"
+  },
+  {
+    "Id": 22,
+    "Abbreviation": "MA",
+    "Name": "Massachusetts"
+  },
+  {
+    "Id": 23,
+    "Abbreviation": "MI",
+    "Name": "Michigan"
+  },
+  {
+    "Id": 24,
+    "Abbreviation": "MN",
+    "Name": "Minnesota"
+  },
+  {
+    "Id": 25,
+    "Abbreviation": "MS",
+    "Name": "Mississippi"
+  },
+  {
+    "Id": 26,
+    "Abbreviation": "MO",
+    "Name": "Missouri"
+  },
+  {
+    "Id": 27,
+    "Abbreviation": "MT",
+    "Name": "Montana"
+  },
+  {
+    "Id": 28,
+    "Abbreviation": "NE",
+    "Name": "Nebraska"
+  },
+  {
+    "Id": 29,
+    "Abbreviation": "NV",
+    "Name": "Nevada"
+  },
+  {
+    "Id": 30,
+    "Abbreviation": "NH",
+    "Name": "New Hampshire"
+  },
+  {
+    "Id": 31,
+    "Abbreviation": "NJ",
+    "Name": "New Jersey"
+  },
+  {
+    "Id": 32,
+    "Abbreviation": "NM",
+    "Name": "New Mexico"
+  },
+  {
+    "Id": 33,
+    "Abbreviation": "NY",
+    "Name": "New York"
+  },
+  {
+    "Id": 34,
+    "Abbreviation": "NC",
+    "Name": "North Carolina"
+  },
+  {
+    "Id": 35,
+    "Abbreviation": "ND",
+    "Name": "North Dakota"
+  },
+  {
+    "Id": 36,
+    "Abbreviation": "OH",
+    "Name": "Ohio"
+  },
+  {
+    "Id": 37,
+    "Abbreviation": "OK",
+    "Name": "Oklahoma"
+  },
+  {
+    "Id": 38,
+    "Abbreviation": "OR",
+    "Name": "Oregon"
+  },
+  {
+    "Id": 39,
+    "Abbreviation": "PA",
+    "Name": "Pennsylvania"
+  },
+  {
+    "Id": 40,
+    "Abbreviation": "RI",
+    "Name": "Rhode Island"
+  },
+  {
+    "Id": 41,
+    "Abbreviation": "SC",
+    "Name": "South Carolina"
+  },
+  {
+    "Id": 42,
+    "Abbreviation": "SD",
+    "Name": "South Dakota"
+  },
+  {
+    "Id": 43,
+    "Abbreviation": "TN",
+    "Name": "Tennessee"
+  },
+  {
+    "Id": 44,
+    "Abbreviation": "TX",
+    "Name": "Texas"
+  },
+  {
+    "Id": 45,
+    "Abbreviation": "UT",
+    "Name": "Utah"
+  },
+  {
+    "Id": 46,
+    "Abbreviation": "VT",
+    "Name": "Vermont"
+  },
+  {
+    "Id": 47,
+    "Abbreviation": "VA",
+    "Name": "Virginia"
+  },
+  {
+    "Id": 48,
+    "Abbreviation": "WA",
+    "Name": "Washington"
+  },
+  {
+    "Id": 49,
+    "Abbreviation": "WV",
+    "Name": "West Virginia"
+  },
+  {
+    "Id": 50,
+    "Abbreviation": "WI",
+    "Name": "Wisconsin"
+  },
+  {
+    "Id": 51,
+    "Abbreviation": "WY",
+    "Name": "Wyoming"
+  }
+]

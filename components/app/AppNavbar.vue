@@ -23,7 +23,7 @@ const items = [
   {
     name: 'Lab',
     path: '/lab',
-    icon: 'ph:lightbulb-duotone',
+    icon: 'ph:flask-duotone',
   },
   {
     name: 'Uses',

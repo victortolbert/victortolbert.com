@@ -27,6 +27,9 @@ export default <Partial<Config>>{
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        angular: '#b52e31',
+        react: '#00d8ff',
+        vue: '#42b883',
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',
         //   foreground: 'hsl(var(--secondary-foreground))',
