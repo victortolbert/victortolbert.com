@@ -4,10 +4,15 @@ useHead({
     class: 'antialiased font-sans',
   },
 })
+
+onMounted(() => {
+  // document.documentElement.classList.add('dark')
+})
 </script>
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator color="#14b8a6" />
     <NuxtPage />
   </NuxtLayout>
 </template>
@@ -20,6 +25,7 @@ html {
 
 html {
   overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 html,
@@ -35,6 +41,10 @@ body,
   color: white;
 } */
 
+/* a {
+  @apply font-medium hover:underline text-blue-500;
+} */
+
 .layout-enter-active,
 .layout-leave-active {
   transition: all 0.4s;
@@ -44,7 +54,7 @@ body,
   filter: grayscale(1);
 }
 
-.page-enter-active,
+/* .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
 }
@@ -52,6 +62,21 @@ body,
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+} */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(5px);
 }
 
 .rotate-enter-active,
@@ -85,5 +110,66 @@ body,
 .slide-right-leave-to {
   opacity: 0;
   transform: translate(50px, 0);
+}
+.animate-text-slide {
+  animation: text-slide 15s cubic-bezier(0.83, 0, 0.17, 1) infinite;
+}
+
+/* @keyframes text-slide {
+  0%,
+  16% {
+    transform: translateY(0%);
+  }
+
+  20%,
+  36% {
+    transform: translateY(-16.66%);
+  }
+
+  40%,
+  56% {
+    transform: translateY(-33.33%);
+  }
+
+  60%,
+  76% {
+    transform: translateY(-50%);
+  }
+
+  80%,
+  96% {
+    transform: translateY(-66.66%);
+  }
+
+  100% {
+    transform: translateY(-83.33%);
+  }
+} */
+
+@keyframes text-slide {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+
+  16% {
+    transform: translateY(-16.66%);
+  }
+
+  32% {
+    transform: translateY(-33.33%);
+  }
+
+  48% {
+    transform: translateY(-50%);
+  }
+
+  64% {
+    transform: translateY(-66.66%);
+  }
+
+  80% {
+    transform: translateY(-83.33%);
+  }
 }
 </style>

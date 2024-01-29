@@ -27,6 +27,9 @@ export default <Partial<Config>>{
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        angular: '#b52e31',
+        react: '#00d8ff',
+        vue: '#42b883',
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',
         //   foreground: 'hsl(var(--secondary-foreground))',
@@ -70,7 +73,7 @@ export default <Partial<Config>>{
         // sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
         sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif],
-        display: ['Bungee', 'Pica'],
+        // display: ['Bungee', 'Pica'],
         mono: ['Monaspace Argon', 'Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
         mockup: ['Balsamiq Sans', 'cursive'],
         proto: [

@@ -1,0 +1,148 @@
+<template>
+  <table class="cal bg-white">
+    <caption><strong>January </strong><span>2015</span></caption>
+    <colgroup>
+      <col class="cal-mon">
+      <col class="cal-tue">
+      <col class="cal-wed">
+      <col class="cal-thu">
+      <col class="cal-fri">
+      <col class="cal-sat cal-weekend">
+      <col class="cal-sun cal-weekend">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">
+          Mon
+        </th>
+        <th scope="col">
+          Tue
+        </th>
+        <th scope="col">
+          Wed
+        </th>
+        <th scope="col">
+          Thu
+        </th>
+        <th scope="col">
+          Fri
+        </th>
+        <th scope="col">
+          Sat
+        </th>
+        <th scope="col">
+          Sun
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="cal-inactive">
+          29
+        </td>
+        <td class="cal-inactive">
+          30
+        </td>
+        <td class="cal-inactive">
+          31
+        </td>
+        <td><a href="">1</a></td>
+        <td><a href="">2</a></td>
+        <td><a href="">3</a></td>
+        <td><a href="">4</a></td>
+      </tr>
+      <tr>
+        <td><a href="">5</a></td>
+        <td><a href="">6</a></td>
+        <td><a href="">7</a></td>
+        <td><a href="">8</a></td>
+        <td><a href="">9</a></td>
+        <td><a href="">10</a></td>
+        <td><a href="">11</a></td>
+      </tr>
+      <tr>
+        <td><a href="">12</a></td>
+        <td><a href="">13</a></td>
+        <td><a href="">14</a></td>
+        <td><a href="">15</a></td>
+        <td><a href="">16</a></td>
+        <td><a href="">17</a></td>
+        <td><a href="">18</a></td>
+      </tr>
+      <tr>
+        <td><a href="">19</a></td>
+        <td><a href="">20</a></td>
+        <td><a href="">21</a></td>
+        <td><a href="">22</a></td>
+        <td><a href="">23</a></td>
+        <td><a href="">24</a></td>
+        <td><a href="">25</a></td>
+      </tr>
+      <tr>
+        <td><a href="">26</a></td>
+        <td class="cal-current">
+          <a href="">27</a>
+        </td>
+        <td><a href="">28</a></td>
+        <td><a href="">29</a></td>
+        <td><a href="">30</a></td>
+        <td><a href="">31</a></td>
+        <td class="cal-inactive">
+          <a href="">1</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<style>
+.cal {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+.cal caption {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  line-height: 2;
+  font-size: 1.5em;
+}
+.cal-weekend {
+  background-color: #fef0f0;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+.cal th,
+.cal td {
+  line-height: 3;
+  padding: 0;
+  width: 14.285%;
+}
+.cal td {
+  border: 1px solid #eee;
+}
+.cal thead {
+  border-bottom: 3px solid #666;
+}
+.cal a {
+  display: block;
+  text-decoration: none;
+  color: #2f273c;
+}
+.cal a:hover,
+.col a:focus {
+  background-color: #cde7ca;
+  background-color: rgba(167, 240, 210, 0.3);
+}
+.cal-inactive {
+  background-color: #efefef;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.cal-current {
+  background-color: #7d5977;
+  background-color: rgba(71, 14, 62, 0.6);
+}
+</style>
