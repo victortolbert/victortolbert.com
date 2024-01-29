@@ -2,7 +2,7 @@
 // import { camelCase, flatCase, kebabCase, lowerFirst, pascalCase, snakeCase, splitByCase, trainCase, upperFirst } from 'scule'
 
 // import { kebabCase } from 'scule'
-import { kebabCase } from 'lodash'
+import { kebabCase } from 'lodash-es'
 
 // Import Swiper styles
 import 'swiper/css'
