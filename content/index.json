@@ -8,7 +8,7 @@
   "basics": {
     "name": "Victor Tolbert",
     "label": "Senior Software Engineer,",
-    "image": "/assets/images/headshot.jpeg",
+    "image": "/assets/images/me/headshot.jpeg",
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
     "url": "https://victortolbert.com",
@@ -45,6 +45,11 @@
         "network": "CodePen",
         "username": "victortolbert",
         "url": "https://codepen.io/victortolbert"
+      },
+      {
+        "network": "Trailhead",
+        "username": "victortolbert",
+        "url": "https://www.salesforce.com/trailblazer/victortolbert"
       }
     ]
   },
@@ -220,13 +225,13 @@
       "keywords": [
         "Responsive Design",
         "Progressive Web Apps",
-        "Web Accessibility",
+        "Accessibility",
         "Web Components",
         "SEO",
         "HTML",
         "JSX",
         "CSS",
-        "SCSS",
+        "Sass",
         "BEM",
         "Bootstrap",
         "Bulma",
@@ -250,10 +255,10 @@
       "name": "DevOps",
       "level": "Intermediate",
       "keywords": [
-        "Heroku",
-        "Microsoft Azure",
         "AWS",
-        "Google Cloud"
+        "Azure",
+        "Google Cloud",
+        "Heroku"
       ]
     }
   ],

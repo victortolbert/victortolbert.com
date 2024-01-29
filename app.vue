@@ -25,6 +25,7 @@ html {
 
 html {
   overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 html,

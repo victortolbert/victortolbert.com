@@ -1,3 +1,5 @@
+import { kebabCase } from 'scule'
+
 const customer = {
   name: 'Carl',
   details: { age: 82 },
@@ -106,3 +108,158 @@ for (const value of fibonocciSeries()) {
   // process.stdout.write(value + ', ')
   console.log(value)
 }
+
+const skills = [
+  {
+    name: 'Backend',
+    level: 'Senior',
+    keywords: [
+      'C#',
+      '.NET',
+      'ASP.NET Core',
+      'PHP',
+      'WordPress',
+      'Laravel',
+      'Drupal',
+      'Node.js',
+      'Express.js',
+      'Ruby',
+      'SQL Server',
+      'PostgreSQL',
+      'MySQL',
+    ],
+  },
+  {
+    name: 'Frontend',
+    level: 'Senior',
+    keywords: [
+      'Responsive Design',
+      'Progressive Web Apps',
+      'Web Accessibility',
+      'Web Components',
+      'SEO',
+      'HTML',
+      'JSX',
+      'CSS',
+      'SCSS',
+      'BEM',
+      'Bootstrap',
+      'Bulma',
+      'Tailwind',
+      'Styled Components',
+      'JavaScript',
+      'jQuery',
+      'TypeScript',
+      'Vue.js',
+      'Vuex',
+      'Pinia',
+      'Nuxt',
+      'React',
+      'Next.js',
+      'AngularJS',
+      'Angular',
+    ],
+  },
+
+  {
+    name: 'DevOps',
+    level: 'Intermediate',
+    keywords: [
+      'Heroku',
+      'Microsoft Azure',
+      'AWS',
+      'Google Cloud',
+    ],
+  },
+]
+
+
+// Input
+// [
+//   {
+//     name: 'DevOps',
+//     level: 'Intermediate',
+//     keywords: [
+//       'Heroku',
+//       'Microsoft Azure',
+//       'AWS',
+//       'Google Cloud',
+//     ],
+//   },
+// ]
+// Desired output
+// [
+//   {
+//     name: 'DevOps',
+//     level: 'Intermediate',
+//     keywords: [
+//       { name: 'Heroku', url: '/heroku' }
+//       { name: 'Microsoft Azure', url: '/microsoft-azure' }
+//       { name: 'AWS', url: '/aws' }
+//       { name: 'Google Cloud', url: '/google-cloud' }
+//     ],
+//   },
+// ]
+// Given the above array of skills, modify the array of keyword strings into
+// an array of objects, giving the original keyword string a property
+// 'name', and adding a 'url' property, computing it's value as a kebab cased
+// version of the keyword name, prepended with a '/'.
+// create a list of all the keywords
+
+const skillsMap = skills.map(skill => {
+  return {
+    name: skill.name,
+    level: skill.level,
+    keywords: skill.keywords.map(keyword => {
+      return {
+        name: keyword,
+        url: `/${kebabCase(keyword)}`,
+      }
+    }),
+  }
+})
+
+// I'd like a variation of the above, where the keywords when the keyword
+// is contained in a special array, kebabCaseExceptions, the url is provided by a mapping in
+// the special array. the special array look like this:
+// const kebabCaseExceptions = [
+//  { name: 'C#', url: '/c-sharp' },
+//  { name: '.NET', url: '/dotnet' },
+//  { name: 'JavaScript', url: '/javascript' },
+//  { name: 'TypeScript', url: '/typescript' },
+//  { name: 'WordPress', url: '/wordpress' },
+// ]
+const newSkillsMap = skills.map(skill => {
+
+
+
+
+console.log(skillsMap)
+
+
+// const keywords = skills.map(skill => skill.keywords)
+
+// Create a list of all the keywords in a combined single array
+// const keywords = skills.reduce((acc, skill) => {
+//   return acc.concat(skill.keywords)
+// }, [])
+
+// Create a list of all the keywords in a combined single array using flatMap
+const keywords = skills.flatMap(skill => skill.keywords)
+console.log(keywords)
+
+const keywordList = skills.flatMap(skill => skill.keywords)
+console.log(keywordList)
+
+const skillLinks = skills.map((skill) => {
+  return {
+    // name: skill.name,
+    // level: skill.level,
+    links: skill.keywords.map(keyword => kebabCase(keyword)),
+    // url: kebabCase(skill.name),
+  }
+})
+
+console.log(skillLinks)
+
+

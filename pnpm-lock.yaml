@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.1.6
     version: 1.1.6(rollup@4.9.6)
   '@nuxtjs/tailwindcss':
-    specifier: ^6.11.1
-    version: 6.11.1(rollup@4.9.6)
+    specifier: ^6.11.2
+    version: 6.11.2(rollup@4.9.6)
   '@pinia/nuxt':
     specifier: ^0.5.1
     version: 0.5.1(rollup@4.9.6)(typescript@5.3.3)(vue@3.4.15)
@@ -325,6 +325,9 @@ devDependencies:
   '@iconify-json/logos':
     specifier: ^1.1.42
     version: 1.1.42
+  '@iconify-json/mdi':
+    specifier: ^1.1.64
+    version: 1.1.64
   '@iconify-json/ph':
     specifier: ^1.1.10
     version: 1.1.10
@@ -347,8 +350,8 @@ devDependencies:
     specifier: ^1.3.0
     version: 1.3.0(rollup@4.9.6)
   '@nuxt/test-utils':
-    specifier: ^3.10.0
-    version: 3.10.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15)
+    specifier: ^3.11.0
+    version: 3.11.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15)
   '@nuxt/ui-pro':
     specifier: npm:@nuxt/ui-pro-edge@latest
     version: /@nuxt/ui-pro-edge@0.7.3-28432719.821e4ed(axios@1.6.7)(nuxt@3.9.3)(rollup@4.9.6)(vite@5.0.11)(vue@3.4.15)
@@ -713,8 +716,8 @@ devDependencies:
     specifier: ^9.0.1
     version: 9.0.1
   valibot:
-    specifier: ^0.27.0
-    version: 0.27.0
+    specifier: ^0.27.1
+    version: 0.27.1
   vite-plugin-vsharp:
     specifier: ^1.7.3
     version: 1.7.3(vite@5.0.11)
@@ -3827,6 +3830,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify-json/mdi@1.1.64:
+    resolution: {integrity: sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/noto@1.1.18:
     resolution: {integrity: sha512-1yA0n/oAbzZ8KWAu71Qzz1mSylfZ5j9lXgAR5iRwrpSo2SxB3NtHPAfYTbW4l6JsjkNXbpfYE/s9uUTWmfF9xQ==}
     dependencies:
@@ -4930,7 +4939,7 @@ packages:
       '@nuxt/schema': 3.6.5(rollup@4.9.6)
       c12: 1.6.1
       consola: 3.2.3
-      defu: 6.1.2
+      defu: 6.1.4
       globby: 13.2.2
       hash-sum: 2.0.0
       ignore: 5.3.0
@@ -5105,8 +5114,8 @@ packages:
       - rollup
       - supports-color
 
-  /@nuxt/test-utils@3.10.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15):
-    resolution: {integrity: sha512-9ZKKrccCUyZP0P9/BdTNHWwTRvIbBnrmDvqvO0dQpTiUhgDVeO1vdG40o4e4olw7sbzUP51C8uA0OkRur/zBvQ==}
+  /@nuxt/test-utils@3.11.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15):
+    resolution: {integrity: sha512-9ovgpQZkZpVg/MhYVVn2169WjH/IL0XUqwGryTa/lkx0/BCi1LMVEp3HTPkmt4qbRcxitO+kL4vFqqrFGVaSVg==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
       '@cucumber/cucumber': ^10.3.1
@@ -5116,7 +5125,7 @@ packages:
       '@vue/test-utils': ^2.4.2
       h3: '*'
       happy-dom: ^9.10.9 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0
-      jsdom: ^22.0.0 || ^23.0.0
+      jsdom: ^22.0.0 || ^23.0.0 || ^24.0.0
       playwright-core: ^1.34.3
       vite: '*'
       vitest: ^0.34.6 || ^1.0.0
@@ -5224,7 +5233,7 @@ packages:
       '@iconify-json/heroicons': 1.1.19
       '@nuxt/kit': 3.9.3(rollup@4.9.6)
       '@nuxtjs/color-mode': 3.3.2(rollup@4.9.6)
-      '@nuxtjs/tailwindcss': 6.11.1(rollup@4.9.6)
+      '@nuxtjs/tailwindcss': 6.11.2(rollup@4.9.6)
       '@popperjs/core': 2.11.8
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.1)
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.1)
@@ -5614,8 +5623,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@nuxtjs/tailwindcss@6.11.1(rollup@4.9.6):
-    resolution: {integrity: sha512-6VY4Y6Ntjqx9cw9biBYOjKEhg3M0VFy1FqOAu1CCfdJr26p8XBztaiHS538Zy2nKEqH7MP/Jpi2+8RgfO2m+pA==}
+  /@nuxtjs/tailwindcss@6.11.2(rollup@4.9.6):
+    resolution: {integrity: sha512-06e8t9ia6Ru/RPMATuhGwi16rMYeZPseXiI4QmRDk/IkvluU60GxhLZOjdUIa+U7DVCECgDsRNEo/rD8/1sMKQ==}
     dependencies:
       '@nuxt/kit': 3.9.3(rollup@4.9.6)
       autoprefixer: 10.4.17(postcss@8.4.33)
@@ -14211,7 +14220,7 @@ packages:
       depd: 1.1.2
       inherits: 2.0.3
       setprototypeof: 1.1.0
-      statuses: 1.4.0
+      statuses: 1.5.0
 
   /http-errors@1.8.1:
     resolution: {integrity: sha512-Kpk9Sm7NmI+RHhnj6OIWDI1d6fIoFAtFt9RLaTMRlg/8w49juAStsrBgp0Dp4OdxdVbRIeKhtCUvoi/RuAhO4g==}
@@ -21922,6 +21931,7 @@ packages:
   /statuses@1.4.0:
     resolution: {integrity: sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==}
     engines: {node: '>= 0.6'}
+    dev: false
 
   /statuses@1.5.0:
     resolution: {integrity: sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==}
@@ -23992,8 +24002,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /valibot@0.27.0:
-    resolution: {integrity: sha512-1Wv0FfiosoAYruPhueHJgJtgj18KlUoBaIEeCefCEsohStcJQWp3jL59J8Tj9w8jiuQ3USkZGH8BtzDHDGgdxQ==}
+  /valibot@0.27.1:
+    resolution: {integrity: sha512-k57/5/kMwMjiVP0LUMpa+n4ihSemuXshz1ND4fftKw1bkHZYN/TnHcbjaEie3K7FwAceiOgugLZPjSaNxdygeg==}
     dev: true
 
   /valid-data-url@3.0.1:
@@ -24356,7 +24366,7 @@ packages:
   /vitest-environment-nuxt@1.0.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15):
     resolution: {integrity: sha512-AWMO9h4HdbaFdPWZw34gALFI8gbBiOpvfbyeZwHIPfh4kWg/TwElYHvYMQ61WPUlCGaS5LebfHkaI0WPyb//Iw==}
     dependencies:
-      '@nuxt/test-utils': 3.10.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15)
+      '@nuxt/test-utils': 3.11.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.11)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15)
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'

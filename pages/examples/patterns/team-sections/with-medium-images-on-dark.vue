@@ -5,7 +5,7 @@ const people = [
     name: 'Victor Tolbert',
     role: 'Founder / CEO',
     imageUrl:
-      '/assets/images/headshot.jpeg',
+      '/assets/images/me/headshot.jpeg',
     location: 'Atlanta, Georgia',
   },
   // More people...

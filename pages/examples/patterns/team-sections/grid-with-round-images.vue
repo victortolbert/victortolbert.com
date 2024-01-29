@@ -4,7 +4,7 @@ const people = [
     name: 'Victor Tolbert',
     role: 'Co-Founder / CTO',
     imageUrl:
-      '/assets/images/headshot.jpeg',
+      '/assets/images/me/headshot.jpeg',
   },
   // More people...
 ]

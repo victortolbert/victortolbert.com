@@ -569,6 +569,14 @@ export default defineNuxtConfig({
 
   ssr: true,
 
+  swiper: {
+    // Swiper options
+    // ----------------------
+    // prefix: 'Swiper',
+    // styleLang: 'css',
+    // modules: ['navigation', 'pagination'], // all modules are imported by default
+  },
+
   tailwindcss: {
     viewer: false,
   },
@@ -581,6 +589,7 @@ export default defineNuxtConfig({
       'heroicons',
       'heroicons-outline',
       'logos',
+      'mdi',
       'ph',
       'simple-icons',
     ],
