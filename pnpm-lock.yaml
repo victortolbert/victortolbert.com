@@ -338,8 +338,8 @@ devDependencies:
     specifier: ^2.2.175
     version: 2.2.175
   '@intlify/unplugin-vue-i18n':
-    specifier: ^1.6.0
-    version: 1.6.0(rollup@4.9.6)
+    specifier: ^2.0.0
+    version: 2.0.0(rollup@4.9.6)(vue-i18n@9.9.0)
   '@nuxt/content':
     specifier: ^2.11.0
     version: 2.11.0(nuxt@3.9.3)(rollup@4.9.6)(vue@3.4.15)
@@ -4151,38 +4151,6 @@ packages:
   /@intlify/shared@9.9.0:
     resolution: {integrity: sha512-1ECUyAHRrzOJbOizyGufYP2yukqGrWXtkmTu4PcswVnWbkcjzk3YQGmJ0bLkM7JZ0ZYAaohLGdYvBYnTOGYJ9g==}
     engines: {node: '>= 16'}
-
-  /@intlify/unplugin-vue-i18n@1.6.0(rollup@4.9.6):
-    resolution: {integrity: sha512-IGeFNWxdEvB12E/3Y/+nmIsGeTg5okPsK1XEtUUD/DdkHbVqUbJucMpHKeHF8Px55Qca551pQCs/g+VjNUt6KA==}
-    engines: {node: '>= 14.16'}
-    peerDependencies:
-      petite-vue-i18n: '*'
-      vue-i18n: '*'
-      vue-i18n-bridge: '*'
-    peerDependenciesMeta:
-      petite-vue-i18n:
-        optional: true
-      vue-i18n:
-        optional: true
-      vue-i18n-bridge:
-        optional: true
-    dependencies:
-      '@intlify/bundle-utils': 7.5.0(vue-i18n@9.9.0)
-      '@intlify/shared': 9.9.0
-      '@rollup/pluginutils': 5.1.0(rollup@4.9.6)
-      '@vue/compiler-sfc': 3.4.15
-      debug: 4.3.4(supports-color@8.1.1)
-      fast-glob: 3.3.2
-      js-yaml: 4.1.0
-      json5: 2.2.3
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-      unplugin: 1.6.0
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
 
   /@intlify/unplugin-vue-i18n@2.0.0(rollup@4.9.6)(vue-i18n@9.9.0):
     resolution: {integrity: sha512-1oKvm92L9l2od2H9wKx2ZvR4tzn7gUtd7bPLI7AWUmm7U9H1iEypndt5d985ypxGsEs0gToDaKTrytbBIJwwSg==}
