@@ -4,6 +4,6 @@
   },
   "devDependencies": {
     "lite-server": "2.6.1",
-    "typescript": "3.9.9"
+    "typescript": "5.3.3"
   }
 }
