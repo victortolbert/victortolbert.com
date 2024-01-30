@@ -232,7 +232,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 leading-none">
-                <NuxtLink target="_blank" :to="work.url" class="hover:underline">
+                <NuxtLink :to="work.url" class="hover:underline">
                   {{ work.name }}
                 </NuxtLink>
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
