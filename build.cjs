@@ -11,7 +11,7 @@ async function buildHTML() {
 
   let resume
   if (fs.existsSync('./resume.json')) {
-    console.log(`Loading from locale "resume.json"`)
+    console.log(`Loading from local "resume.json"`)
     resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'))
   }
   else {

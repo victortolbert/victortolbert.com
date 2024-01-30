@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@formkit/auto-animate/nuxt',
     '@vueuse/nuxt',
+    '@vueuse/sound/nuxt',
     '@nuxt/content',
     '@nuxt/image',
     '@pinia/nuxt',

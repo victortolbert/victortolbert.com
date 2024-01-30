@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://victortolbert.com/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="https://victortolbert.com/favicon.png" type="image/png">
+    <link rel="icon" href="https://antfu.me/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="https://antfu.me/favicon.png" type="image/png">
     <title>{{#resume.basics}}{{name}}{{/resume.basics}} - Résumé</title>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -87,6 +87,17 @@
             <div class="card-nested" itemprop="description">
               <p> {{breaklines resume.basics.summary}} </p>
             </div>
+
+            <h4 id="skills"><span class="title">Stacks</span> </h4>
+            <div class="card-nested" itemprop="description">
+              <div class="skill-table">
+                {{#each resume.skills}}
+                    <div class='name'>{{name}}</div>
+                    <div>{{join keywords}}</div>
+                {{/each}}
+              </div>
+            </div>
+            <div class='px10'></div>
 
             <div id="work-projects-group">
               {{#if resume.projects}}
@@ -316,12 +327,12 @@
 
             <div style="text-align:center">
               <div class="detail no-print" style="font-size:1.5rem;margin-top:2rem;">
-                <a href="https://resume.victortolbert.com/resume.pdf" class="info" itemprop="pdf" target="_blank">
+                <a href="https://victortolbert.com/resume.pdf" class="info" itemprop="pdf" target="_blank">
                   PDF Version
                 </a>
               </div>
                <div class="detail print-only" style="font-size:1.5rem;margin-top:2rem;" >
-                <a href="https://resume.victortolbert.com" class="info" itemprop="pdf" target="_blank">
+                <a href="https://victortolbert.com" class="info" itemprop="pdf" target="_blank">
                   Online Version
                 </a>
               </div>

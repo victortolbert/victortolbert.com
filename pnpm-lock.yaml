@@ -56,6 +56,9 @@ dependencies:
   '@vueuse/nuxt':
     specifier: ^10.7.2
     version: 10.7.2(nuxt@3.9.3)(rollup@4.9.6)(vue@3.4.15)
+  '@vueuse/sound':
+    specifier: ^2.0.1
+    version: 2.0.1(vue@3.4.15)
   chart.js:
     specifier: ^4.4.1
     version: 4.4.1
@@ -9482,6 +9485,20 @@ packages:
       - '@vue/composition-api'
       - vue
 
+  /@vueuse/sound@2.0.1(vue@3.4.15):
+    resolution: {integrity: sha512-7Fbp9lQkuUnpTXS9vPbvT2FDYHuwJbvKPivOYETaVVSmcZKoczw6zcsebsARkH5Ged0f045YUOZnV/RuCzyLXQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      howler: 2.2.4
+      vue: 3.4.15(typescript@5.3.3)
+      vue-demi: 0.14.6(vue@3.4.15)
+    dev: false
+
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
     dependencies:
@@ -14993,7 +15010,6 @@ packages:
 
   /howler@2.2.4:
     resolution: {integrity: sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==}
-    dev: true
 
   /html-crush@4.2.0:
     resolution: {integrity: sha512-z+8zsmaf6iHX1UN6t5mFxnlvweBh1eSws0NI2RjrMv9NX2gGubjcUPIaU6sdrypiBvU0S/Hjqr5aEcJ55fndPA==}

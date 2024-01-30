@@ -35,7 +35,7 @@ const { metaSymbol } = useShortcuts()
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
-const showFooter = ref(true)
+const showFooter = ref(false)
 const showStudyDates = ref(false)
 const showWorkLocation = ref(false)
 
@@ -65,6 +65,7 @@ const exceptions = [
   { name: 'Next.js', url: '/nextjs' },
   { name: 'Node.js', url: '/nodejs' },
   { name: 'PostgreSQL', url: '/postgres' },
+  { name: 'Responsive Design', url: '/rwd' },
   { name: 'Progressive Web Apps', url: '/pwa' },
   { name: 'TypeScript', url: '/typescript' },
   { name: 'Vue.js', url: '/vue' },
@@ -181,7 +182,9 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
               :to="social.url"
               :icon="icons[social.network]"
               target="_blank"
-            />
+            >
+              <span class="sr-only">{{ social.network }}</span>
+            </UButton>
           </div>
         </div>
         <NuxtLink to="/about" class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
