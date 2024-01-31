@@ -1,5 +1,5 @@
 <script setup>
-import { Bar, Line } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 import { BarElement, CategoryScale, Chart as ChartJS, Legend, LineElement, LinearScale, PointElement, Title, Tooltip } from 'chart.js'
 
 defineProps({

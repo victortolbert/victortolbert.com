@@ -1,7 +1,4 @@
 <script setup>
-// import { camelCase, flatCase, kebabCase, lowerFirst, pascalCase, snakeCase, splitByCase, trainCase, upperFirst } from 'scule'
-
-// import { kebabCase } from 'scule'
 import { kebabCase } from 'lodash-es'
 
 // Import Swiper styles
@@ -101,36 +98,17 @@ const autoplay = ref({ delay: 3000, disableOnInteraction: true })
 const creativeEffect = ref({ prev: { shadow: false, translate: ['-20%', 0, -1] }, next: { translate: ['100%', 0, 0] } })
 const effect = ref('creative')
 
-console.log('2022-01-25 12:00:00'.split(' ')[0])
+const now = new Date()
+const newYear = new Date(now.getFullYear() + 1, 0, 1)
+
+// const time = ref(newYear.getTime() - now.getTime())
+const time = ref(newYear - now)
+
+console.log('2025-01-01 12:00:00'.split(' ')[0])
 </script>
 
 <template>
-  <div class="w-full relative mx-auto print:p-12 font-mono">
-    <section>
-      <div>
-        <USlideover v-model="isOpen">
-          <div class="p-4 flex-1">
-            <Placeholder class="h-full" />
-          </div>
-        </USlideover>
-      </div>
-    </section>
-
-    <section v-if="false">
-      <Swiper
-        :modules="[SwiperAutoplay, SwiperEffectCreative]"
-        :slides-per-view="slidesPerView"
-        :loop="loop"
-        :effect="effect"
-        :autoplay="autoplay"
-        :creative-effect="creativeEffect"
-      >
-        <SwiperSlide v-for="slide in 10" :key="slide">
-          <strong>{{ slide }}</strong>
-        </SwiperSlide>
-      </Swiper>
-    </section>
-
+  <div class="w-full relative mx-auto print:p-12">
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
@@ -209,7 +187,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
         <div class="flex flex-wrap gap-1">
           <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
             <NuxtLink :to="`/${kebabCase(skill.name.toLowerCase())}`">
-              <UBadge color="black" variant="solid">
+              <UBadge color="primary" variant="solid">
                 {{ skill.name }}
               </UBadge>
             </NuxtLink>
@@ -231,7 +209,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
         <h2 class="text-xl">
           Work Experience
         </h2>
-        <div v-for="(work, index) in resume?.work" :key="work.startDate" class="bg-card text-card-foreground rounded-lg">
+        <div v-for="(work, index) in resume?.work" :key="work.startDate">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 leading-none">
@@ -263,7 +241,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
         <h2 class="text-xl">
           Education
         </h2>
-        <div v-for="study in resume?.education" :key="study.area" class="rounded-lg bg-card text-card-foreground">
+        <div v-for="study in resume?.education" :key="study.area">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 leading-none">
@@ -303,7 +281,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
         <h2 class="text-xl">
           References
         </h2>
-        <div v-for="reference in resume?.references" :key="reference.name" class="rounded-lg bg-card text-card-foreground">
+        <div v-for="reference in resume?.references" :key="reference.name">
           <div class="flex flex-col space-y-1.5">
             <h3 class="leading-none">
               {{ reference.name }}
@@ -399,6 +377,52 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       </section>
     </div>
 
+    <section v-if="false">
+      <div>
+        <USlideover v-model="isOpen">
+          <div class="p-4 flex-1">
+            <p>Slideover</p>
+            <ul>
+              <li class="text-status-00">
+                Info, alert, notice, neutral
+              </li>
+              <li class="text-status-01">
+                Success, positive, ontrack
+              </li>
+              <li class="text-status-02">
+                Warning, caution, attention
+              </li>
+              <li class="text-status-03">
+                Discussion
+              </li>
+              <li class="text-status-04">
+                Danger
+              </li>
+              <li class="text-status-05">
+                Critical
+              </li>
+            </ul>
+            <Placeholder class="h-full" />
+          </div>
+        </USlideover>
+      </div>
+    </section>
+
+    <section v-if="false">
+      <Swiper
+        :modules="[SwiperAutoplay, SwiperEffectCreative]"
+        :slides-per-view="slidesPerView"
+        :loop="loop"
+        :effect="effect"
+        :autoplay="autoplay"
+        :creative-effect="creativeEffect"
+      >
+        <SwiperSlide v-for="slide in 10" :key="slide">
+          <strong>{{ slide }}</strong>
+        </SwiperSlide>
+      </Swiper>
+    </section>
+
     <section v-if="false" class="grid gap-16">
       <!--
         https://www.instagram.com/reel/C0ZHPsitNWr/?igshid=ZDE1MWVjZGVmZQ%3D%3D
@@ -471,13 +495,13 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       </figure>
     </section>
 
-    <div class="not-prose mt-6">
+    <div v-if="false" class="not-prose mt-6">
       <ul class="grid grid-cols-2 gap-x-8 gap-y-6">
         <li><strong class="font-semibold text-slate-900">Tailwind CSS</strong> v3.4</li><li><strong class="font-semibold text-slate-900">React</strong> v18</li><li><strong class="font-semibold text-slate-900">Headless UI</strong> v2.0.0-alpha</li><li><strong class="font-semibold text-slate-900">TypeScript</strong> v5.3</li>
       </ul>
     </div>
 
-    <section class="grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3">
+    <section v-if="false" class="grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3">
       <h2 class="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
         Screenshots
       </h2>
@@ -489,7 +513,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       </div>
     </section>
 
-    <section class="mt-16">
+    <section v-if="false" class="mt-16">
       <!-- {{ trainCase(kebabCase(snakeCase('CustomerProfile'))) }}
       {{ trainCase(kebabCase(pascalCase('customer_profile'))) }}
       {{ trainCase(kebabCase(camelCase('OnPaste'))) }} -->
@@ -497,7 +521,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       <UIcon name="i-ph-student-duotone" />
     </section>
 
-    <section class="mt-16">
+    <section v-if="false" class="mt-16">
       <UIcon name="i-ph-control-duotone" />
       <UIcon name="i-ph-option-duotone" />
       <UIcon name="i-ph-command-duotone" />
@@ -535,7 +559,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       </div>
     </section>
 
-    <section class="mt-16">
+    <section v-if="false" class="mt-16">
       <div>
         <a href="#" class="inline-block">
           <span class="inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium bg-pink-100 text-pink-800">Video</span>
@@ -565,7 +589,7 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
       </div>
     </section>
 
-    <section class="mt-16">
+    <section v-if="false" class="mt-16">
       <ul>
         <li>English (US)</li>
         <li>Español</li>
@@ -573,6 +597,17 @@ console.log('2022-01-25 12:00:00'.split(' ')[0])
         <li>Deutsch</li>
         <li>ಕನ್ನಡ</li>
       </ul>
+    </section>
+
+    <section v-if="false" class="mt-16">
+      <FlipCountdown />
+    </section>
+
+    <section v-if="false">
+      <ImageCompare
+        before="//placehold.it/600x200/E8117F/FFFFFF"
+        after="//placehold.it/600x200/CCCCCC/FFFFFF"
+      />
     </section>
 
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">

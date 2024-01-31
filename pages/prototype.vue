@@ -1,7 +1,5 @@
 <script setup>
 import { nanoid } from 'nanoid'
-import { DateTime } from 'luxon'
-import { faker } from '@faker-js/faker'
 
 const bar = ref(null)
 

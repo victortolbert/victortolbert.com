@@ -15,6 +15,7 @@
 
 - [x] Add resume
 - [ ] File for unemployment ❗️❗️
+- [ ] Convert color system to CSS custom properties
 - [ ] Add export to CSV example
 - [ ] Add file upload example
 - [ ] Add form example

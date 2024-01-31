@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import {
-  computed,
-  onMounted,
-  onUnmounted,
-  provide,
-  ref,
-  watch,
-} from 'vue'
-
+import { computed, onMounted, onUnmounted, provide, ref, watch } from 'vue'
 import TreeNode from './TreeNode.vue'
 
 import type {
@@ -25,17 +17,39 @@ import type {
 
 import { getFlatTreeWithAncestors } from '~/utils'
 
+type DragEventData = {
+  initialX: number
+  initialDepth: number
+} | null
+
 const props = defineProps<VueTreeDndProps>()
 
 const emit = defineEmits<{
   'move': [move: MoveMutation]
 }>()
 
+const dragImage = new Image()
+
 const LEFT_OF_ROOT_ID: TreeItemId = '__vue-dnd-tree-root__'
 
 const flatTreeNodes = ref<FlatTreeItem[]>([])
 const flatTreeIds = ref<TreeItemId[]>([])
 const expansions = ref<ExpandedNodes>({})
+const dragdata = ref<DragEventData>(null)
+const deltaX = ref(0)
+const dragItemId = ref<TreeItemId | null>(null)
+const dropTarget = ref<TreeItemId | null>(null)
+const dropProposal = ref<MoveMutationProposal | null>(null)
+
+const dragItem = computed(() => flatTreeNodes.value.find((node: FlatTreeItem) => node.id === dragItemId.value))
+
+const dragItemDescendantIdSet = computed(() => {
+  if (dragItem.value === undefined)
+    return new Set()
+
+  return new Set(getFlatTreeWithAncestors([dragItem.value]).map((node: FlatTreeItem) => node.id))
+})
+
 const getDefaultExpanded: (id: TreeItemId) => boolean = (id: TreeItemId) => {
   const node = flatTreeNodes.value.find(
     (node: FlatTreeItem) => node.id === id,
@@ -48,17 +62,6 @@ const getDefaultExpanded: (id: TreeItemId) => boolean = (id: TreeItemId) => {
 
   return true
 }
-
-watch(() => props.tree, () => {
-  flatTreeNodes.value = getFlatTreeWithAncestors(props.tree)
-  flatTreeIds.value = flatTreeNodes.value.map(({ id }) => id)
-  expansions.value = Object.fromEntries(
-    flatTreeIds.value.map((id: TreeItemId) =>
-      [id, getDefaultExpanded(id)],
-    ),
-  )
-}, { immediate: true })
-provide('expansions', expansions)
 
 const getPreviousNodeId: (nodeId: TreeItemId) => TreeItemId = (nodeId: TreeItemId) => {
   const index = flatTreeIds.value.findIndex(id => id === nodeId)
@@ -80,8 +83,6 @@ const isSomeParentCollapsed: (targetId: TreeItemId) => boolean = (targetId: Tree
   return parentIds.some((parentId: TreeItemId) => !expansions.value?.[parentId])
 }
 
-const deltaX = ref(0)
-
 const dragOverDeltaXCalculator: (event: DragEvent) => void = (event: DragEvent) => {
   event.preventDefault()
   if (dragdata.value === null)
@@ -92,21 +93,6 @@ const dragOverDeltaXCalculator: (event: DragEvent) => void = (event: DragEvent) 
   deltaX.value = initialDepth + xd
 }
 
-onMounted(() => { document.addEventListener('dragover', dragOverDeltaXCalculator) })
-onUnmounted(() => { document.removeEventListener('dragover', dragOverDeltaXCalculator) })
-
-const dragItemId = ref<TreeItemId | null>(null)
-const dragItem = computed(() => flatTreeNodes.value.find((node: FlatTreeItem) => node.id === dragItemId.value))
-provide('dragItem', dragItem)
-
-const dragItemDescendantIdSet = computed(() => {
-  if (dragItem.value === undefined)
-    return new Set()
-
-  return new Set(getFlatTreeWithAncestors([dragItem.value]).map((node: FlatTreeItem) => node.id))
-})
-
-const dropTarget = ref<TreeItemId | null>(null)
 const setDropTarget: (targetId: TreeItemId) => void = (targetId: TreeItemId) => {
   if (dragItemDescendantIdSet.value.has(targetId) || isSomeParentCollapsed(targetId)) {
     setDropTarget(getPreviousNodeId(targetId))
@@ -114,54 +100,10 @@ const setDropTarget: (targetId: TreeItemId) => void = (targetId: TreeItemId) => 
   }
   dropTarget.value = targetId
 }
-provide('dropTarget', dropTarget)
-provide('setDropTarget', setDropTarget)
 
-const dropProposal = ref<MoveMutationProposal | null>(null)
 const setDropProposal: DropProposalSetterHandler = (proposal: MoveMutationProposal) => {
   dropProposal.value = proposal
 }
-provide('setDropProposal', setDropProposal)
-
-watch(dropTarget, () => {
-  if (dropTarget.value === LEFT_OF_ROOT_ID) {
-    if (dragItemId.value === null)
-      throw new Error('dragItemId.value is null')
-
-    setDropProposal({
-      id: dragItemId.value,
-      targetId: props.tree[0].id,
-      position: 'LEFT',
-      ghostIndent: 0,
-    })
-  }
-})
-
-// --------------------------------- DRAG EVENTS ---------------------------------
-
-const dragend: DragEndEventHandler = () => {
-  if (dropProposal.value == null)
-    return
-
-  dropTarget.value = null
-  dragItemId.value = null
-
-  const { ghostIndent, ...proposal } = dropProposal.value
-
-  if (proposal.id === proposal.targetId) {
-    // No-op
-    return
-  }
-  emit('move', proposal)
-}
-
-const dragImage = new Image()
-type DragEventData = {
-  initialX: number
-  initialDepth: number
-} | null
-
-const dragdata = ref<DragEventData>(null)
 
 const dragstart: DragStartEventHandler = (event: DragEvent, itemId: TreeItemId, depth: number) => {
   if (event.dataTransfer !== null) {
@@ -179,19 +121,75 @@ const dragstart: DragStartEventHandler = (event: DragEvent, itemId: TreeItemId, 
     setDropTarget(getPreviousNodeId(itemId))
   }, 0)
 }
-provide<DragStartEventHandler>('dragstart', dragstart)
+
+const dragend: DragEndEventHandler = () => {
+  if (dropProposal.value == null)
+    return
+
+  dropTarget.value = null
+  dragItemId.value = null
+
+  const { ghostIndent, ...proposal } = dropProposal.value
+
+  if (proposal.id === proposal.targetId) {
+    // No-op
+    return
+  }
+  emit('move', proposal)
+}
 
 const dragover: DragOverEventHandler = (event: DragEvent, itemId: TreeItemId) => {
   event.preventDefault()
   const previousNodeId = getPreviousNodeId(itemId)
   if (dragItemId.value === itemId) {
-    setDropTarget(previousNodeId); return
+    setDropTarget(previousNodeId)
+    return
   }
   setDropTarget(event.offsetY < (event.target as HTMLElement).clientHeight / 2
     ? previousNodeId
     : itemId)
 }
+
+///
+provide('expansions', expansions)
+provide<DragStartEventHandler>('dragstart', dragstart)
 provide<DragOverEventHandler>('dragover', dragover)
+provide('dragItem', dragItem)
+provide('dropTarget', dropTarget)
+provide('setDropTarget', setDropTarget)
+provide('setDropProposal', setDropProposal)
+
+watch(() => props.tree, () => {
+  flatTreeNodes.value = getFlatTreeWithAncestors(props.tree)
+  flatTreeIds.value = flatTreeNodes.value.map(({ id }) => id)
+  expansions.value = Object.fromEntries(
+    flatTreeIds.value.map((id: TreeItemId) =>
+      [id, getDefaultExpanded(id)],
+    ),
+  )
+}, { immediate: true })
+
+watch(dropTarget, () => {
+  if (dropTarget.value === LEFT_OF_ROOT_ID) {
+    if (dragItemId.value === null)
+      throw new Error('dragItemId.value is null')
+
+    setDropProposal({
+      id: dragItemId.value,
+      targetId: props.tree[0].id,
+      position: 'LEFT',
+      ghostIndent: 0,
+    })
+  }
+})
+
+onMounted(() => {
+  document.addEventListener('dragover', dragOverDeltaXCalculator)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('dragover', dragOverDeltaXCalculator)
+})
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { BuildingOffice2Icon, EnvelopeIcon, MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/vue/20/solid'
 
 import { defineComponent, h } from 'vue'

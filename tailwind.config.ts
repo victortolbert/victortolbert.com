@@ -19,9 +19,12 @@ export default <Partial<Config>>{
     },
     extend: {
       colors: {
-        green: colors.emerald,
         brand: colors.toreaBay,
+
+        green: colors.emerald,
+        status: colors.palette,
         secondary: colors.tango,
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -74,6 +77,8 @@ export default <Partial<Config>>{
         sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif],
         // display: ['Bungee', 'Pica'],
+        // cursive: ['Kalam', 'cursive'],
+        handwriting: ['Kalam', 'cursive'],
         mono: ['Monaspace Argon', 'Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
         mockup: ['Balsamiq Sans', 'cursive'],
         proto: [
@@ -86,6 +91,7 @@ export default <Partial<Config>>{
           'cursive',
         ],
         salesforce: ['Salesforce Sans', 'system-ui', 'sans-serif'],
+        kalam: ['Kalam', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         '2xs': ['0.625rem', '0.875rem'],

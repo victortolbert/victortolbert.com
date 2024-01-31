@@ -20,7 +20,7 @@ definePageMeta({
       <div class="mt-10 w-full max-w-xs">
         <label for="currency" class="block text-base font-medium text-gray-500">Location</label>
         <div class="relative mt-1.5">
-          <select id="currency" name="currency" class="block w-full appearance-none rounded-md border border-gray-300 bg-white bg-none py-2 pl-3 pr-10 text-base text-gray-900 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+          <select id="currency" name="currency" class="block w-full appearance-none rounded-md primary primary-gray-300 bg-white bg-none py-2 pl-3 pr-10 text-base text-gray-900 focus:primary-primary-500 focus:outline-none focus:ring-primary-500 sm:text-sm">
             <option>Argentina (ARS)</option>
             <option>Australia (AUD)</option>
             <option selected="">

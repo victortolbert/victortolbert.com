@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     'magic-regexp/nuxt',
     'nuxt-lodash',
     'nuxt-api-party',
+    'nuxt-fathom',
     'nuxt-mail',
     'nuxt-prepare',
     'nuxt-swiper',
@@ -71,7 +72,7 @@ export default defineNuxtConfig({
 
   app: {
     // baseURL: '/testing',
-
+    viewTransition: false,
     head: {
       htmlAttrs: {
         lang: 'en',
@@ -227,6 +228,7 @@ export default defineNuxtConfig({
     '@fontsource/flow-block',
     '@fontsource/flow-circular',
     '@fontsource/im-fell-dw-pica',
+    '@fontsource/kalam',
     '@fontsource/lato',
     '@fontsource/redacted-script',
     '@fontsource/roboto',
@@ -254,8 +256,14 @@ export default defineNuxtConfig({
 
   experimental: {
     // renderJsonPayloads: true,
+    scanPageMeta: true,
+    // sharedPrerenderData: true
     // typedPages: true,
-    // viewTransition: true,
+    viewTransition: true,
+  },
+
+  fathom: {
+    siteId: 'OVDPOLBF',
   },
 
   features: {
@@ -279,7 +287,7 @@ export default defineNuxtConfig({
   // },
 
   fontMetrics: {
-    fonts: ['DM Sans', 'Inter'],
+    fonts: ['DM Sans', 'Inter', 'Kalam'],
   },
 
   future: {
@@ -314,6 +322,7 @@ export default defineNuxtConfig({
     families: {
       'DM+Sans': [400, 500, 600, 700],
       'Inter': [400, 500, 600, 700, 800, 900],
+      'Kalam': [300, 400, 700],
     },
   },
 
@@ -342,6 +351,10 @@ export default defineNuxtConfig({
     //       comp.global = 'sync'
     //   }
     // },
+
+    'pages:extend': function (routes) {
+      console.log(routes)
+    },
   },
 
   // htmlValidator: {

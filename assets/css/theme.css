@@ -35,7 +35,7 @@
   margin-bottom: 0;
 }
 body {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, 'Noto Sans SC', sans-serif;
   color: #333;
   font-size: 16px;
 }
@@ -178,10 +178,10 @@ a:focus {
   padding: 5px;
 }
 .enumeration:not(:last-child):after {
-  content: ", ";
+  content: ', ';
 }
 .enumeration:last-child:after {
-  content: ".";
+  content: '.';
 }
 .github-stars {
   opacity: 0.6;

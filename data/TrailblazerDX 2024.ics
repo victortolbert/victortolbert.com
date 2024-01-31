@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Learn to build next-gen AI apps on the Einstein 1 Platform. Skill up alongside an entire ecosystem of developers\, and harness the latest tools and technology from Salesforce to take your career and company to the next level.\n\nWatch Live on Salesforce+ https://www.salesforce.com/plus/experience/trailblazerdx_2024
+LOCATION:
+SUMMARY:TrailblazerDX 2024
+TRANSP:TRANSPARENT
+DTSTART:20240306T170000Z
+DTEND:20240308T000000Z
+END:VEVENT
+END:VCALENDAR
+UID:olgb4co2q1m
+DTSTAMP:20240125
+PRODID:www.salesforce.com

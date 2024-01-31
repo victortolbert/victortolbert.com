@@ -1,6 +1,6 @@
 export class Tax {
   static forAmount(amount) {
-    return amount * Tax.stateRate;
+    return amount * Tax.stateRate
   }
 }
 

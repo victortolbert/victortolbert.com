@@ -27,19 +27,21 @@ console.log(book.title) // Who Moved My Cheese console. log (book. pages); 1/96
 
 try {
   book.pages = 96
-} catch (error) {
+}
+catch (error) {
   console.log(error.message)
   // Cannot set property pages of #<Book> which has only a getter
 }
 
-console.log(book.copiesSold); //0
+console.log(book.copiesSold) // 0
 book.copiesSold = 1
-console.log(book.copiesSold); //1
+console.log(book.copiesSold) // 1
 
 try {
-  book.copiesSold = -2;
-} catch (error) {
-  console.log(error.message);//Value can't be negative
+  book.copiesSold = -2
+}
+catch (error) {
+  console.log(error.message)// Value can't be negative
 }
 
-console.log(book.copiesSold); //1
+console.log(book.copiesSold) // 1

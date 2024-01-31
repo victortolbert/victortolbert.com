@@ -33,5 +33,4 @@ The examples used to explain the different testing types are related to testing 
 - For usability testing, the example is the missing door handle on a car.
 - For penetration testing, the example is ensuring the security of a car window.
 
-
 Each form of testing serves a specific purpose and can catch different types of issues. By implementing all forms of testing, it ensures a more robust testing strategy and helps in delivering an awesome experience to the users.

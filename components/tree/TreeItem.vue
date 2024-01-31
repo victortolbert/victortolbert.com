@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   item: Object,
 })
 
-defineEmit(['makeFolder', 'addItem'])
+const emit = defineEmits(['makeFolder', 'addItem'])
 
 const isOpen = ref(false)
 

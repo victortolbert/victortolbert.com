@@ -1,6 +1,5 @@
 <script setup>
 import { TreeNode } from '~/utils/Tree.js'
-import { removeHandler } from '~/lib/tools.js'
 
 const props = defineProps({
   model: {

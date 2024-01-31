@@ -12,7 +12,10 @@ isbn: 978-1680502442
 publisher:
 publication_date: 2017-09-12
 rating: 4.3
+slug: a-common-sense-guide-to-data-structures-and-algorithms
 ---
+
+<!-- <youtube id="https://www.youtube.com/watch?v=BgKtheXUAAI"></youtube> -->
 
 Algorithms and data structures are much more than abstract concepts. Mastering them enables you to write code that runs faster and more efficiently, which is particularly important for today’s web and mobile apps. This book takes a practical approach to data structures and algorithms, with techniques and real-world scenarios that you can use in your daily production code. Graphics and examples make these computer science concepts understandable and relevant. You can use these techniques with any language; examples in the book are in [JavaScript](/javascript), [Python](/python), and [Ruby](/ruby).
 

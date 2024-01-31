@@ -14,7 +14,6 @@ export enum Toast {
   warning,
 }
 
-
 export class ToastHelper {
   private static DisplayToast(
     toastMessageType: Toast,

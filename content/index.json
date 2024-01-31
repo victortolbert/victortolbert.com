@@ -22,19 +22,14 @@
     },
     "profiles": [
       {
-        "network": "GitHub",
-        "username": "victortolbert",
-        "url": "https://github.com/victortolbert"
-      },
-      {
         "network": "LinkedIn",
         "username": "victortolbert",
         "url": "https://www.linkedin.com/in/victortolbert/"
       },
       {
-        "network": "Trailhead",
+        "network": "GitHub",
         "username": "victortolbert",
-        "url": "https://www.salesforce.com/trailblazer/victortolbert"
+        "url": "https://github.com/victortolbert"
       }
     ]
   },

@@ -23,7 +23,7 @@ const date = useAppConfig().buildDate
 
     <AppFooter />
 
-    <footer class="flex items-center justify-between p-4">
+    <!-- <footer class="flex items-center justify-between p-4">
       <NuxtLink to="/">
         <TheLogo />
       </NuxtLink>
@@ -32,7 +32,7 @@ const date = useAppConfig().buildDate
         <span class="text-sm">Built Date: {{ date }}</span>
         <UColorModeButton />
       </div>
-    </footer>
+    </footer> -->
 
     <AppCommandPalette />
   </div>

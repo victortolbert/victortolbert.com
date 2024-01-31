@@ -2,71 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
-
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
-
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
-  }
-
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
-
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
-  }
-} */
-
-
 @layer base {
   :root {
+    --brand: 224 100% 29%;
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
@@ -101,9 +40,20 @@
     --angular: #b52e31;
     --react: #00d8ff;
     --vue: #42b883;
+
+    --pomegranite: 357 36% 37%;
+    --san-juan: 212 36% 48%;
+    --tango: 27 86% 53%;
+    --burgandy: 342 100% 26%;
+    --monza: 354 100% 40%;
+    --medium-seagreen: 144 60% 44%;
+    --yellow-orange: 34 95% 60%;
+    --firebrick: 347 71% 36%;
   }
 
   .dark {
+    --brand: 224 100% 29%;
+
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -132,6 +82,19 @@
     --destructive-foreground: 0 0% 98%;
 
     --ring: 0 0% 83.1%;
+
+    --angular: #b52e31;
+    --react: #00d8ff;
+    --vue: #42b883;
+
+    --pomegranite: 357 36% 37%;
+    --san-juan: 212 36% 48%;
+    --tango: 27 86% 53%;
+    --burgandy: 342 100% 26%;
+    --monza: 354 100% 40%;
+    --medium-seagreen: 144 60% 44%;
+    --yellow-orange: 34 95% 60%;
+    --firebrick: 347 71% 36%;
   }
 }
 
@@ -144,7 +107,6 @@
   }
 }
 
-
 .print-force-new-page {
   page-break-before: always;
 }
@@ -154,7 +116,6 @@ html,
 #app {
   @apply w-full h-full overflow-hidden;
 } */
-
 
 img {
   font-family: 'Helvetica';
@@ -170,7 +131,6 @@ img {
   min-height: 50px;
 }
 
-
 /* img:before {
   content: "We're sorry, the image below is broken :(";
   display: block;
@@ -184,7 +144,7 @@ img:after {
 } */
 
 img:after {
-  content: "\f1c5" " " attr(alt);
+  content: '\f1c5' ' ' attr(alt);
 
   font-size: 16px;
   font-family: FontAwesome;

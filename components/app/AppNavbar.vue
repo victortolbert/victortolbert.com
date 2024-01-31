@@ -1,8 +1,7 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
 import { Howl } from 'howler'
-import vue from '~/assets/sound/vue.mp3'
-import music from '/assets/music/let-it-fall-low-pitch.mp3'
+import music from '~/assets/music/let-it-fall-low-pitch.mp3'
 
 const sound = new Howl({
   src: [music],

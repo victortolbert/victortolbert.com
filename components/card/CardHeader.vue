@@ -13,6 +13,7 @@ export default {
   },
 }
 </script>
+
 <template>
   <div class="px-8 mt-8">
     <div class="px-4 py-5 bg-white border-b border-gray-200 sm:px-6">
@@ -29,12 +30,12 @@ export default {
             <div class="ml-4">
               <h3 class="text-lg font-medium leading-6 text-gray-900">
                 <!-- #default slot -->
-                <slot></slot>
+                <slot />
               </h3>
 
               <p v-if="hasSubtitleSlot" class="text-sm text-gray-500">
                 <!-- #subtitle slot -->
-                <slot name="subtitle"></slot>
+                <slot name="subtitle" />
               </p>
             </div>
           </div>
@@ -48,4 +49,3 @@ export default {
     </div>
   </div>
 </template>
-

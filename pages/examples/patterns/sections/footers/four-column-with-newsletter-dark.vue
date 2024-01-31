@@ -1,21 +1,14 @@
-<!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <script setup>
 import { defineComponent, h } from 'vue'
 
 const navigation = {
+  dashboard: [
+    { name: 'Support', href: '#' },
+    { name: 'Legal', href: '#' },
+    { name: 'Status', href: '#' },
+    { name: 'Roadmap', href: '#' },
+    { name: 'Logout', href: '#' },
+  ],
   solutions: [
     { name: 'Marketing', href: '#' },
     { name: 'Analytics', href: '#' },

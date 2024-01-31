@@ -1,4 +1,7 @@
-# Data Fetching
+---
+title: Data Fetching
+published: 2024-01-30
+---
 
 When using a framework like Nuxt that can perform calls and render pages on both client and server environments, some challenges must be addressed. This is why Nuxt provides composables to wrap your queries, instead of letting the developer rely on `$fetch` calls alone.
 

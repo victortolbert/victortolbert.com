@@ -36,7 +36,7 @@ Though the book is meant to address people in management, individual contributor
 
 -Cassidy Williams
 
->Sarah has written a fantastic modern manual for aspiring and existing technical managers. It provides an excellent hands-on tour of how to navigate prioritization, execution, collaboration and culture in a very approachable way. This book is filled with pragmatism, real-world examples and plenty of engineering management nuggets of wisdom. We can all learn from Sarah's experience and I have no doubt you'll learn something new that you can apply to your own career and team.
+> Sarah has written a fantastic modern manual for aspiring and existing technical managers. It provides an excellent hands-on tour of how to navigate prioritization, execution, collaboration and culture in a very approachable way. This book is filled with pragmatism, real-world examples and plenty of engineering management nuggets of wisdom. We can all learn from Sarah's experience and I have no doubt you'll learn something new that you can apply to your own career and team.
 
 -Addy Osmani
 

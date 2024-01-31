@@ -1,4 +1,5 @@
 const fs = require('node:fs')
+const path = require('node:path')
 const Handlebars = require('handlebars')
 const gravatar = require('gravatar')
 const _ = require('underscore')
@@ -99,8 +100,15 @@ async function getRepoStars(url) {
 }
 
 async function render(resume) {
-  const css = fs.readFileSync(`${__dirname}/assets/css/theme.css`, 'utf-8')
-  const template = fs.readFileSync(`${__dirname}/resume.hbs`, 'utf-8')
+  // const css = fs.readFileSync(`${__dirname}/assets/css/theme.css`, 'utf-8')
+  // const template = fs.readFileSync(`${__dirname}/resume.hbs`, 'utf-8')
+
+  const cssPath = path.join(__dirname, 'assets', 'css', 'theme.css')
+  const templatePath = path.join(__dirname, 'resume.hbs')
+
+  const css = fs.readFileSync(cssPath, 'utf-8')
+  const template = fs.readFileSync(templatePath, 'utf-8')
+
   const profiles = resume.basics.profiles
   const social_sites = ['github', 'linkedin', 'stackoverflow', 'twitter', 'soundcloud', 'pinterest', 'vimeo', 'behance', 'codepen', 'foursquare', 'reddit', 'spotify', 'dribble', 'dribbble', 'facebook', 'angellist', 'bitbucket', 'skype']
   const date_format = 'MMM YYYY'
@@ -117,8 +125,8 @@ async function render(resume) {
     resume.basics.languages = _.pluck(resume.languages, 'language').join(', ')
 
   _.each(resume.work, (work_info) => {
-    let did_leave_company
     const start_date = work_info.startDate && new Date(work_info.startDate)
+
     let end_date = work_info.endDate && new Date(work_info.endDate)
 
     if (start_date)
@@ -127,10 +135,11 @@ async function render(resume) {
     if (end_date)
       work_info.endDate = moment(end_date).format(date_format)
 
-    did_leave_company = !!end_date
+    const did_leave_company = !!end_date
 
     if (start_date) {
       end_date = end_date || new Date()
+
       work_info.duration = humanizeDuration(
         moment.duration(end_date.getTime() - start_date.getTime()),
         did_leave_company,
