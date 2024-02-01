@@ -24,15 +24,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="text-sm">
             <td class="px-4 py-2">
-              Button
+              <NuxtLink to="/examples/elements/button">
+                <pre>Button</pre>
+              </NuxtLink>
             </td>
             <td class="px-4 py-2 text-center">
               1.0.0
             </td>
             <td class="px-4 py-2 text-center ">
-              <UIcon name="i-ph-square-duotone" class="text-blue-500" />
+              <UIcon name="i-ph-square-duotone" class="text-blue-500 text-lg" />
             </td>
           </tr>
         </tbody>
@@ -40,25 +42,25 @@
 
       <section class="px-4">
         <ul class="grid gap-4 whitespace-nowrap">
-          <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-check-square-duotone" class="text-green-500" />
-            <span>Ready</span>
+          <li class="inline-flex gap-1.5">
+            <UIcon name="i-ph-check-square-duotone" class="text-green-500 text-xl" />
+            <span class="text-sm">Ready</span>
           </li>
-          <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-minus-square-duotone" class="text-yellow-500" />
-            <span>Under Review</span>
+          <li class="inline-flex gap-1.5">
+            <UIcon name="i-ph-minus-square-duotone" class="text-yellow-500 text-xl" />
+            <span class="text-sm">Under Review</span>
           </li>
-          <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-square-duotone" class="text-blue-500" />
-            <span>Prototype</span>
+          <li class="inline-flex gap-1.5">
+            <UIcon name="i-ph-square-duotone" class="text-blue-500 text-xl" />
+            <span class="text-sm">Prototype</span>
           </li>
-          <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-x-square-duotone" class="text-red-500" />
-            <span>Deprecated</span>
+          <li class="inline-flex gap-1.5">
+            <UIcon name="i-ph-x-square-duotone" class="text-red-500 text-xl" />
+            <span class="text-sm">Deprecated</span>
           </li>
-          <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-minus-duotone" class="text-neutral-500" />
-            <span>Not applicable</span>
+          <li class="inline-flex gap-1.5">
+            <UIcon name="i-ph-minus-duotone" class="text-neutral-500 text-xl" />
+            <span class="text-sm">Not applicable</span>
           </li>
         </ul>
       </section>

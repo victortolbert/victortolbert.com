@@ -6,6 +6,8 @@
       </h3>
     </header>
 
+    <ColorPalette />
+
     <header class="border-b pb-4">
       <h3 class="font-medium">
         Typography

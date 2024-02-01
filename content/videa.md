@@ -16,7 +16,6 @@ tools: Visual Studio, Confluence, Team Foundation Server, Axure RP, Balsamiq Moc
 <!--
 • Provide more context about the web-based interactive product demo you designed and developed using Node, Express.js, and Vue.js. Explain its significance and impact.
 • Mention any awards or recognition received in this role.
--->
 
 Worked with product managers to define, design and build front-end user interface prototypes. Developed and maintained the UI standards and design best practices. Participated in all UI testing activities.
 
@@ -28,6 +27,8 @@ Worked with product managers to define, design and build front-end user interfac
 - Mentored visual designers in learning HTML and CSS by demonstrating practical techniques and providing constructive feedback.
 - Recognized company-wide for creating a product demo used as a stand-in for the real product at the national industry trade conference, directly empowering the company to close a few deals.
 - Skills Used: Microsoft .Net MVC, TFS, Git, Visual Studio, Azure, AWS, PHP, Wordpress, Laravel, JavaScript (Angular, Vue.js, React), Kendo UI, CSS (Sass, Stylus)
+
+-->
 
 ## Projects
 
