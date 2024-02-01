@@ -11,6 +11,8 @@ libraries: React, jQuery, Alpine.js, Algolia, AWS
 dev_ops: AWS, Google Cloud, Heroku, Azure, Vite, Webpack, DreamHost, Cloudflare, WP Engine, Statamic,
 ---
 
+# VTi Consulting
+
 Design and develop standards-compliant, user-centered web sites and applications for small businesses and non-profit organizations. Host, administer and maintain email, database and web servers.
 
 - Onboard, guide and mentor off-shore technical team members and provide initial tasks according to skillset to ensure successful integration and beneficial team contribution.

@@ -10,6 +10,33 @@ languages:
 frameworks: WordPress
 ---
 
+## Services / Integrations
+
+### Submit Claim & Schedule Service
+
+- XactAnalysis
+- Symbility
+- Profile Gorilla
+
+### Perform Service
+
+- Hover
+- FieldAssist
+- SettleAssist
+- MagicPlan
+- Eagleview
+- Hi Marley
+
+### Service Reports, Documents and Photos
+
+- XactAnalysis
+- Symbililty
+
+### Billing & Analytics
+
+- Power BI
+- VIPSoftware
+
 • Highlighting the modernization of a legacy .NET application is an excellent achievement. You might want to provide more details about the challenges faced during the modernization and how your solutions improved the system.
 • Mentioning your knowledge of Microsoft Azure is great, but consider specifying any certifications or specific projects related to Azure that you worked on.
 

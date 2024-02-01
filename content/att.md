@@ -11,6 +11,8 @@ languages:
 frameworks:
 ---
 
+# AT&T Mobility
+
 Senior UI Developer / Systems Engineer
 
 Provided HTML5 Desktop and Tablet user interface development for a project to integrate the AT&T Locker, Messages and Contacts cloud applications into 1 unified consumer application suite and implemented middleware services using Java/Groovy based Apache Camel framework

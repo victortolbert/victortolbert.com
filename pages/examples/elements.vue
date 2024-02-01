@@ -1,5 +1,17 @@
+<script setup>
+const links = ref([
+  {
+    label: 'Back',
+    to: '/examples',
+    icon: 'i-ph-arrow-left-duotone',
+  },
+])
+</script>
+
 <template>
   <article class="grid gap-4">
+    <ExampleBreadcrumb :links="links" />
+
     <header class="py-2 px-8 bg-gray-100 dark:bg-gray-900">
       <h2 class="font-semibold">
         Elements

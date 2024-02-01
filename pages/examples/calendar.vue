@@ -3,25 +3,42 @@ import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
+import listPlugin from '@fullcalendar/list'
+import iCalendarPlugin from '@fullcalendar/icalendar'
 
 import { INITIAL_EVENTS, createEventId } from '~/utils/EventUtils'
 
+// "@fullcalendar/google-calendar": "^6.1.10",
+// "@fullcalendar/multimonth": "^6.1.10",
+// "@fullcalendar/timeline": "^6.1.10",
+// "@fullcalendar/scrollgrid": "^6.1.10",
+// "@fullcalendar/adaptive": "^6.1.10",
+// "@fullcalendar/core": "^6.1.10",
+// "@fullcalendar/luxon": "^6.1.10"
+
 definePageMeta({
-  layout: 'janus',
+  layout: false,
+})
+
+const events = ref({
+  url: '/assets/feeds/icalendar.ics',
+  format: 'ics',
 })
 
 const calendarOptions = ref({
   plugins: [
     dayGridPlugin,
+    iCalendarPlugin,
+    listPlugin,
     timeGridPlugin,
     interactionPlugin, // needed for dateClick
   ],
   headerToolbar: {
     left: 'prev,next today',
     center: 'title',
-    right: 'dayGridMonth,timeGridWeek,timeGridDay',
+    right: 'listWeek,dayGridMonth,timeGridWeek,timeGridDay',
   },
-  initialView: 'dayGridMonth',
+  initialView: 'listWeek',
   initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
   editable: true,
   selectable: true,
@@ -30,7 +47,11 @@ const calendarOptions = ref({
   weekends: true,
   select: handleDateSelect,
   eventClick: handleEventClick,
-  eventsSet: handleEvents,
+  events: {
+    url: '/assets/feeds/icalendar.ics',
+    format: 'ics',
+  },
+  // eventsSet: handleEvents,
   /* you can update a remote database when these fire:
   eventAdd:
   eventChange:
@@ -117,58 +138,3 @@ function handleEvents(events) {
     </div>
   </div>
 </template>
-
-<style scoped>
-h2 {
-  margin: 0;
-  font-size: 16px;
-}
-
-ul {
-  margin: 0;
-  padding: 0 0 0 1.5em;
-}
-
-li {
-  margin: 1.5em 0;
-  padding: 0;
-}
-
-b {
-  /* used for event dates/times */
-  margin-right: 3px;
-}
-
-.demo-app {
-  display: flex;
-  min-height: 100%;
-  font-family:
-    Arial,
-    Helvetica Neue,
-    Helvetica,
-    sans-serif;
-  font-size: 14px;
-}
-
-.demo-app-sidebar {
-  width: 300px;
-  line-height: 1.5;
-  /* background: #eaf9ff; */
-  border-right: 1px solid #d3e2e8;
-}
-
-.demo-app-sidebar-section {
-  padding: 2em;
-}
-
-.demo-app-main {
-  flex-grow: 1;
-  padding: 3em;
-}
-
-.fc {
-  /* the calendar root */
-  max-width: 1100px;
-  margin: 0 auto;
-}
-</style>

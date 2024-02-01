@@ -1,8 +1,9 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import defaultColors from 'tailwindcss/colors'
-import headlessUi from '@headlessui/tailwindcss'
+
 import animate from 'tailwindcss-animate'
 import heroPatterns from 'tailwind-heropatterns'
+
 import type { Config } from 'tailwindcss'
 import { colors as appColors } from './assets/design/tokens/colors'
 
@@ -18,6 +19,9 @@ export default <Partial<Config>>{
       },
     },
     extend: {
+      containers: {
+        '2xs': '16rem', // 256px
+      },
       colors: {
         brand: colors.toreaBay,
 
@@ -62,6 +66,7 @@ export default <Partial<Config>>{
         auto: 'auto',
         square: '1 / 1',
         video: '16 / 9',
+        document: '8.5 / 11',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -138,7 +143,6 @@ export default <Partial<Config>>{
   },
   plugins: [
     animate,
-    headlessUi,
     heroPatterns({
       patterns: [],
       // The foreground colors of the pattern

@@ -2,7 +2,7 @@
   <svg
     width="182"
     height="24"
-    class="text-booster-blue"
+    class="text-booster-blue h-11 w-auto"
     viewBox="0 0 182 24"
     xmlns="http://www.w3.org/2000/svg"
   >

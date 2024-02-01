@@ -24,9 +24,9 @@ const published = computed(() => {
 
 <template>
   <div>
-    <h1 class="text-7xl flex justify-center gap-2 items-center">
+    <h2 class="flex justify-center gap-2 items-center">
       Non Reactive Deps Example 2
-    </h1>
+    </h2>
     <div class="flex justify-center items-center mt-5">
       <UCard class="w-[250px]">
         <div class="text-center">

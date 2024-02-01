@@ -23,6 +23,7 @@
 - [ ] Create GitHub profile bio
 - [ ] Build and send emails
 - [ ] Command K
+- [ ] Add right-click to view Design Kit
 
 ## Contributing
 

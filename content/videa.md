@@ -11,8 +11,12 @@ frameworks: WordPress
 tools: Visual Studio, Confluence, Team Foundation Server, Axure RP, Balsamiq Mockups
 ---
 
+# Videa
+
+<!--
 • Provide more context about the web-based interactive product demo you designed and developed using Node, Express.js, and Vue.js. Explain its significance and impact.
 • Mention any awards or recognition received in this role.
+-->
 
 Worked with product managers to define, design and build front-end user interface prototypes. Developed and maintained the UI standards and design best practices. Participated in all UI testing activities.
 

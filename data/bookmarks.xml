@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel version="1.0">
+    <folder folded="no">
+        <title>Wikimedia resources</title>
+        <folder folded="yes">
+            <title>Wikimedia websites</title>
+            <bookmark href="https://en.wikipedia.org/">
+                <title>Wikipedia</title>
+            </bookmark>
+            <bookmark href="https://en.wikibooks.org/">
+                <title>Wikibooks</title>
+            </bookmark>
+        </folder>
+    </folder>
+</xbel>

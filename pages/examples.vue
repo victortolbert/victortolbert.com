@@ -7,7 +7,7 @@ defineOgImageComponent('NuxtSeo')
 </script>
 
 <template>
-  <div>
+  <div class="max-w-3xl mx-auto">
     <NuxtPage />
   </div>
 </template>

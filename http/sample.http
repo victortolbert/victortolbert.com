@@ -1,0 +1,11 @@
+GET https://localhost:7220/weatherforecast
+
+###
+
+GET https://localhost:7220/weatherforecast?date=2023-05-11&location=98006
+
+###
+
+GET https://localhost:7220/weatherforecast HTTP/3
+
+###

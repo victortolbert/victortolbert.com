@@ -11,9 +11,32 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 </script>
 
 <template>
-  <main class="min-h-screen">
+  <main class="min-h-screen mx-auto max-w-3xl">
     <AppHeader class="mb-12" title="Projects" :description="description" />
-    <div class="space-y-4">
+
+    <section class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
+      <!-- <LogoHancockClaims /> -->
+      <NuxtLink to="/booster" class="grid">
+        <LogoBooster />
+      </NuxtLink>
+      <NuxtLink to="/turner" class="grid">
+        <LogoTurnerSports />
+      </NuxtLink>
+      <NuxtLink to="/videa" class="grid">
+        <LogoVidea />
+      </NuxtLink>
+      <NuxtLink to="/att" class="grid">
+        <LogoATT />
+      </NuxtLink>
+      <NuxtLink to="/webmd" class="grid">
+        <LogoWebmd />
+      </NuxtLink>
+      <NuxtLink to="/autotrader" class="grid">
+        <LogoAutoTrader />
+      </NuxtLink>
+    </section>
+
+    <div class="space-y-4 mt-16">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"

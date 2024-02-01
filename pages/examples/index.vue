@@ -7,6 +7,21 @@
     <section>
       <ul>
         <li>
+          <NuxtLink to="/examples/tokens">
+            Design Tokens
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/examples/elements">
+            Elements
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/examples/patterns">
+            Patterns
+          </NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="/examples/templates">
             Templates
           </NuxtLink>

@@ -18,6 +18,33 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
+<!--
+https://api.coverr.co/videos?api_key={api_key}
+
+curl -v \
+  -H 'Authorization: Bearer {api_key}' \
+  https://api.coverr.co/videos
+
+
+GET /videos?query={search term goes here}
+
+GET /videos/:id
+
+PATCH /videos/:id/stats/downloads
+
+curl https://api.coverr.co/videos\?query\=dog
+
+curl -v \
+  -H 'Authorization: Bearer ae5f1927db0665defb0acbcf9540122f' \
+  https://api.coverr.co/videos
+
+curl -v \
+  -H 'Authorization: Bearer ae5f1927db0665defb0acbcf9540122f' \
+  https://api.coverr.co/videos\?query\=dog
+
+
+ -->
+
 # CMS / Framework
 
 - Vue.js

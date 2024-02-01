@@ -29,6 +29,14 @@ defineOgImageComponent('NuxtSeo')
 
 const { metaSymbol } = useShortcuts()
 
+// curl -v \
+//   -H 'Authorization: Bearer ae5f1927db0665defb0acbcf9540122f' \
+//   https://api.coverr.co/videos
+
+// curl -v \
+//   -H 'Authorization: Bearer ae5f1927db0665defb0acbcf9540122f' \
+//   https://api.coverr.co/videos\?query\=dog
+
 const { data: resume } = await useAsyncData('home', () => queryContent('/').findOne())
 const formatter = ref('YYYY')
 
@@ -108,14 +116,20 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 </script>
 
 <template>
-  <div class="w-full relative mx-auto print:p-12">
+  <div class="w-full relative mx-auto max-w-3xl print:p-12">
+    <div class="@container">
+      <div class="@[17.5rem]:underline">
+        <!-- This text will be underlined when the container is larger than `17.5rem` -->
+      </div>
+    </div>
+
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
-          <h1 class="text-2xl">
+          <h1 class="text-3xl">
             {{ resume?.basics.name }}
           </h1>
-          <div class="text-pretty text-muted-foreground max-w-md text-lg">
+          <div class="text-pretty text-muted-foreground max-w-md text-xl">
             {{ resume?.basics.label }}
             <div
               class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
@@ -128,18 +142,18 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
                 <li>Vue.js</li>
                 <li>JavaScript</li>
                 <li>C#/.NET Core</li>
-                <li>DevOps</li>
+                <li>Salesforce</li>
               </ul>
             </div>
           </div>
-          <p class="text-pretty text-muted-foreground max-w-md items-center text-xs">
+          <p class="text-pretty text-muted-foreground max-w-md items-center text-sm">
             <span class="inline-flex gap-x-1.5 align-baseline leading-none">
               <UIcon name="i-ph-globe-simple-duotone" />
               {{ resume?.basics.location.city }},
               {{ resume?.basics.location.region }}
             </span>
           </p>
-          <div class="text-muted-foreground flex gap-x-1 pt-1 text-sm print:hidden">
+          <div class="text-muted-foreground flex gap-x-1 pt-1 text-base print:hidden">
             <UButton
               color="gray"
               variant="outline"
@@ -166,21 +180,21 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           </div>
         </div>
         <NuxtLink to="/about" class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
-          <img class="aspect-square h-full w-full object-cover grayscale" :src="resume?.basics.image" alt="Victor Tolbert">
+          <img class="aspect-square h-full w-full object-cover grayscale hover:grayscale-0" :src="resume?.basics.image" alt="Victor Tolbert">
         </NuxtLink>
       </div>
 
       <section class="min-h-0 flex flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           About
         </h2>
-        <p class="text-pretty text-muted-foreground text-sm">
+        <p class="text-pretty text-muted-foreground text-base">
           {{ resume?.basics.summary }}
         </p>
       </section>
 
       <section class="flex min-h-0 flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           Key Skills
         </h2>
 
@@ -206,7 +220,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
       </section>
 
       <section class="min-h-0 flex flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           Work Experience
         </h2>
         <div v-for="(work, index) in resume?.work" :key="work.startDate">
@@ -218,15 +232,15 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
                 </NuxtLink>
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
               </h3>
-              <div class="text-sm tabular-nums text-gray-500">
+              <div class="text-base tabular-nums text-gray-500">
                 {{ formatDate(work.startDate) }}&ndash;{{ index === 0 ? 'Present' : formatDate(work.endDate) }}
               </div>
             </div>
-            <h4 class="text-sm leading-none">
+            <h4 class="text-base leading-none">
               {{ work.position }}
             </h4>
           </div>
-          <div class="text-pretty text-muted-foreground mt-3 text-xs">
+          <div class="text-pretty text-muted-foreground mt-3 text-sm">
             {{ work.summary }}
             <ul class="ml-3 mt-2 list-disc list-outside">
               <li v-for="(highlight, i) in work.highlights" :key="i">
@@ -238,7 +252,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
       </section>
 
       <section class="min-h-0 flex flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           Education
         </h2>
         <div v-for="study in resume?.education" :key="study.area">
@@ -250,19 +264,19 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
                 </NuxtLink>
               </h3>
 
-              <div v-if="showStudyDates" class="text-sm tabular-nums text-gray-500">
+              <div v-if="showStudyDates" class="text-base tabular-nums text-gray-500">
                 {{ formatDate(study.endDate) }}
               </div>
             </div>
           </div>
-          <div class="text-pretty text-sm text-muted-foreground mt-3">
+          <div class="text-pretty text-base text-muted-foreground mt-3">
             <div>{{ study.studyType }}, {{ study.area }}</div>
           </div>
         </div>
       </section>
 
       <section class="flex min-h-0 flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           Interests
         </h2>
         <div class="flex flex-wrap gap-1">
@@ -278,7 +292,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
       </section>
 
       <section class="flex min-h-0 flex-col gap-y-4">
-        <h2 class="text-xl">
+        <h2 class="text-2xl">
           References
         </h2>
         <div v-for="reference in resume?.references" :key="reference.name">
@@ -287,7 +301,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
               {{ reference.name }}
             </h3>
           </div>
-          <div class="text-pretty text-muted-foreground mt-3 text-xs">
+          <div class="text-pretty text-muted-foreground mt-3 text-sm">
             {{ reference.reference }}
           </div>
         </div>
@@ -434,7 +448,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           id="ZrZv3JpOr2g"
           class="aspect-video rounded-xl w-full bg-gray-50 object-cover"
         />
-        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+        <figcaption class="mt-4 flex gap-x-2 text-base leading-6 text-gray-500">
           <UIcon
             name="i-ph-info-duotone"
             class="mt-0.5 h-5 w-5 flex-none"
@@ -462,7 +476,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           class="aspect-video rounded-xl w-full bg-gray-50 object-cover"
         />
 
-        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+        <figcaption class="mt-4 flex gap-x-2 text-base leading-6 text-gray-500">
           <UIcon
             name="i-ph-info-duotone"
             class="mt-0.5 h-5 w-5 flex-none"
@@ -484,7 +498,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
       <figure>
         <Tweet id="1720482508419088594" />
 
-        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+        <figcaption class="mt-4 flex gap-x-2 text-base leading-6 text-gray-500">
           <UIcon
             name="i-ph-info-duotone"
             class="mt-0.5 h-5 w-5 flex-none"
@@ -562,11 +576,11 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
     <section v-if="false" class="mt-16">
       <div>
         <a href="#" class="inline-block">
-          <span class="inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium bg-pink-100 text-pink-800">Video</span>
+          <span class="inline-flex items-center rounded-full px-3 py-0.5 text-base font-medium bg-pink-100 text-pink-800">Video</span>
         </a>
       </div>
       <a href="#" class="mt-4 block">
-        <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
+        <p class="text-2xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
         <p class="mt-3 text-base text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
       </a>
       <div class="mt-6 flex items-center">
@@ -577,10 +591,10 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           </a>
         </div>
         <div class="ml-3">
-          <p class="text-sm font-medium text-gray-900">
+          <p class="text-base font-medium text-gray-900">
             <a href="#">Dessie Ryan</a>
           </p>
-          <div class="flex space-x-1 text-sm text-gray-500">
+          <div class="flex space-x-1 text-base text-gray-500">
             <time datetime="2020-03-10">Mar 10, 2020</time>
             <span aria-hidden="true">·</span>
             <span>4 min read</span>
@@ -610,7 +624,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
       />
     </section>
 
-    <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
+    <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-base text-muted-foreground print:hidden">
       Press <span class="pointer-events-none inline-flex h-5 select-none items-center gap-1"><UKbd>{{ metaSymbol }}</UKbd><UKbd>K</UKbd></span> to open the command menu
     </p>
   </div>
@@ -637,6 +651,40 @@ body {
 body.modal-open {
   height: 100vh;
   overflow-y: hidden;
+}
+
+.bg-custom-gradient {
+  background-image: linear-gradient(
+    55deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 34%,
+    hsl(337deg 100% 43%) 45%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+
+.bg-custom-gradient-2 {
+  background-image: linear-gradient(
+    45deg,
+    hsl(263deg 59% 25%) 0%,
+    hsl(264deg 56% 29%) 9%,
+    hsl(265deg 54% 32%) 18%,
+    hsl(265deg 52% 36%) 27%,
+    hsl(266deg 51% 40%) 36%,
+    hsl(267deg 49% 44%) 45%,
+    hsl(267deg 48% 48%) 55%,
+    hsl(268deg 52% 52%) 64%,
+    hsl(268deg 60% 56%) 73%,
+    hsl(269deg 71% 61%) 82%,
+    hsl(269deg 84% 65%) 91%,
+    hsl(270deg 100% 69%) 100%
+  );
 }
 </style>
 ```

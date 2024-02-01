@@ -49,7 +49,7 @@ defineShortcuts({
 </template>
 
 <style>
-[id^='headlessui-dialog-panel'] {
+/* [id^='headlessui-dialog-panel'] {
   transform: scale(2);
-}
+} */
 </style>

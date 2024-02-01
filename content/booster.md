@@ -10,9 +10,13 @@ languages:
 frameworks:
 ---
 
+# Booster
+
+<!--
 • It's good to see your involvement in the Agile Scrum development team. If you have experience with any specific Agile methodologies or tools, you can mention them.
 
 • Emphasize how your work contributed to the business application's success or any positive outcomes for the company.
+-->
 
 ## Projects
 

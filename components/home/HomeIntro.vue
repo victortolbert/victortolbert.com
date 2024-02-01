@@ -20,7 +20,25 @@ useSeoMeta({
       <NuxtImg src="/assets/images/me/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot" />
       <p class="text-gray-900 dark:text-gray-400">
         I'm Victor, a self-taught, web applications consultant and experienced UI/UX designer from Atlanta, Georgia.
-        I specialize in building SaaS web applications and marketing websites using C#, .NET Core, PHP, Laravel, JavaScript, Vue.js, &amp; Node. Here, I share my experiments, nifty projects, and maybe my thoughts (mostly about tech and design).
+        I specialize in building SaaS web applications and marketing websites using <NuxtLink to="/csharp">
+          C#,
+        </NuxtLink><NuxtLink to="/aspnetcore">
+          ASP.NET Core,
+        </NuxtLink><NuxtLink to="/php">
+          PHP,
+        </NuxtLink><NuxtLink to="/laravel">
+          Laravel,
+        </NuxtLink><NuxtLink to="/javascript">
+          JavaScript,
+        </NuxtLink><NuxtLink to="/vue">
+          Vue.js,
+        </NuxtLink>&amp;<NuxtLink to="/nodejs">
+          Node.
+        </NuxtLink> Here, I share my experiments, nifty <NuxtLink to="/projects">
+          projects,
+        </NuxtLink> and maybe my <NuxtLink to="/articles">
+          thoughts
+        </NuxtLink> (mostly about tech and design).
       </p>
       <p class="mt-4 text-gray-900 dark:text-gray-400">
         By day, I'm a fullstack software engineer at <a href="https://hancockclaims.com" target="_blank" class="underline">Hancock Claims Consultants</a>, and by night (and weekends), I'm busy tinkering working on some random tool or app, or learning a new framework.

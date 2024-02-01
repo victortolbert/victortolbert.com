@@ -1,4 +1,5 @@
 <script setup>
+// Goal (24 Clients)
 import { CheckIcon } from '@heroicons/vue/20/solid'
 
 definePageMeta({
@@ -10,6 +11,7 @@ const includedFeatures = [
   'Member resources',
   'Entry to annual conference',
   'Official member t-shirt',
+  'Phone access to support',
 ]
 </script>
 
@@ -52,7 +54,7 @@ const includedFeatures = [
                 Pay once, own it forever
               </p>
               <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$349</span>
+                <span class="text-5xl font-bold tracking-tight text-gray-900">$499</span>
                 <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
               </p>
               <a href="#" class="mt-10 block w-full rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">Get access</a>

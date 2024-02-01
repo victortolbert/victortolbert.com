@@ -7,6 +7,12 @@ languages:
 frameworks:
 ---
 
+# Autotrader.com
+
+Autotrader.com, Inc. is an online marketplace for car buyers and sellers, founded in 1997. It aggregates new, used, and certified second-hand cars from dealers and private sellers. The site also provides users with automotive reviews, shopping advice, and comparison tools for car financing and insurance information.
+
+---
+
 Assisted team in the creation of interface design standards, and provided guidance on web accessibility and usability. Skills Used: HTML, CSS, JavaScript (jQuery, Prototype), JAVA (JSP, JSF), CVS, Subversion, Rhythmyx
 • Prototyped vehicle research and compare tool user interface for usability testing.
 • Presented and demo’d prototype to an audience including the CEO, CFO and CIO.
