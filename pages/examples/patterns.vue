@@ -23,8 +23,8 @@ const links = ref([
         Patterns are UI Patterns that fall on the more complex side of the spectrum. Date pickers, data tables, and visualizations are good examples. Patterns utilize both <NuxtLink to="/examples/elements">
           elements
         </NuxtLink> and <NuxtLink to="/examples/tokens">
-          design tokens
-        </NuxtLink>.
+          design tokens.
+        </NuxtLink>
       </p>
     </section>
 

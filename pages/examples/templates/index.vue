@@ -1,33 +1,13 @@
 <template>
   <div class="p-4 grid gap-4">
-    <section class="px-8 grid gap-4">
-      <header class="border-b pb-4">
-        <h3 class="font-medium">
-          Overview
-        </h3>
-      </header>
+    <header class="border-b pb-4">
+      <h3 class="font-medium">
+        Overview
+      </h3>
+    </header>
 
-      <ul class="flex items-center gap-4">
-        <li class="inline-flex items-center">
-          <UIcon name="i-ph-check-square-duotone" class="text-green-500" /> Ready
-        </li>
-        <li class="inline-flex items-center">
-          <UIcon name="i-ph-minus-square-duotone" class="text-yellow-500" /> Under Review
-        </li>
-        <li class="inline-flex items-center">
-          <UIcon name="i-ph-square-duotone" class="text-blue-500" /> Prototype
-        </li>
-        <li class="inline-flex items-center">
-          <UIcon name="i-ph-x-square-duotone" class="text-red-500" /> Deprecated
-        </li>
-        <li class="inline-flex items-center">
-          <UIcon name="i-ph-minus-duotone" class="text-neutral-500" /> Not applicable
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <table class="table-fixed w-full">
+    <section class="grid gap-4">
+      <table class="table-fixed border-b w-full">
         <thead>
           <tr class="bg-gray-100">
             <th class="text-left px-4 py-2 font-medium text-sm w-8/12">
@@ -55,6 +35,31 @@
           </tr>
         </tbody>
       </table>
+
+      <section class="px-4">
+        <ul class="grid gap-4 whitespace-nowrap">
+          <li class="inline-flex items-center gap-1.5">
+            <UIcon name="i-ph-check-square-duotone" class="text-green-500" />
+            <span>Ready</span>
+          </li>
+          <li class="inline-flex items-center gap-1.5">
+            <UIcon name="i-ph-minus-square-duotone" class="text-yellow-500" />
+            <span>Under Review</span>
+          </li>
+          <li class="inline-flex items-center gap-1.5">
+            <UIcon name="i-ph-square-duotone" class="text-blue-500" />
+            <span>Prototype</span>
+          </li>
+          <li class="inline-flex items-center gap-1.5">
+            <UIcon name="i-ph-x-square-duotone" class="text-red-500" />
+            <span>Deprecated</span>
+          </li>
+          <li class="inline-flex items-center gap-1.5">
+            <UIcon name="i-ph-minus-duotone" class="text-neutral-500" />
+            <span>Not applicable</span>
+          </li>
+        </ul>
+      </section>
     </section>
   </div>
 </template>
