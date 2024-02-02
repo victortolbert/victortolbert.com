@@ -1,8 +1,27 @@
 import { addDays } from 'date-fns'
-import { createStore } from 'vuex'
+import { createLogger, createStore } from 'vuex'
+
+import * as event from '~/store/modules/event'
+import * as notification from '~/store/modules/notification'
+import * as plant from '~/store/modules/plant'
+import * as product from '~/store/modules/product'
+import * as project from '~/store/modules/project'
+import * as todo from '~/store/modules/todo'
+import * as ui from '~/store/modules/ui'
+
+const debug = import.meta.env.NODE_ENV !== 'production'
 
 export default createStore({
+  strict: debug,
+  plugins: debug ? [createLogger(), localStoragePlugin] : [],
   modules: {
+    event,
+    notification,
+    plant,
+    product,
+    project,
+    todo,
+    ui,
   },
   state() {
     return {
@@ -94,3 +113,12 @@ export default createStore({
     },
   },
 })
+
+function localStoragePlugin(store) {
+  // called when the store is initialized
+  store.subscribe((mutation, { todos }) => {
+    // called after every mutation.
+    // The mutation comes in the format of `{ type, payload }`.
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
+  })
+}

@@ -117,32 +117,26 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 
 <template>
   <div class="w-full relative mx-auto max-w-3xl print:p-12">
-    <div class="@container">
-      <div class="@[17.5rem]:underline">
-        <!-- This text will be underlined when the container is larger than `17.5rem` -->
-      </div>
-    </div>
-
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-3xl">
             {{ resume?.basics.name }}
           </h1>
-          <div class="text-pretty text-muted-foreground max-w-md text-xl">
-            {{ resume?.basics.label }}
+          <div class="text-pretty text-muted-foreground max-w-md text-xl whitespace-nowrap">
+            <span class="whitespace-nowrap">{{ resume?.basics.label }}</span>
             <div
               class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
             >
               <ul
                 class="block text-left leading-tight [&_li]:block animate-text-slide"
               >
-                <li>Full-Stack</li>
-                <li>Frontend</li>
-                <li>Vue.js</li>
                 <li>JavaScript</li>
-                <li>C#/.NET Core</li>
+                <li>Vue.js</li>
+                <li>Nuxt</li>
+                <li>ASP.NET Core</li>
                 <li>Salesforce</li>
+                <li>Laravel</li>
               </ul>
             </div>
           </div>

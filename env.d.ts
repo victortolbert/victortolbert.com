@@ -1,6 +1,6 @@
 import type { Component } from 'vue'
 
-declare module 'tailwind-heropatterns';
+declare module 'tailwind-heropatterns'
 
 export type Position = 'LEFT' | 'RIGHT' | 'FIRST_CHILD' | 'LAST_CHILD'
 
