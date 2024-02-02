@@ -18,6 +18,40 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
+Remote Site Settings
+
+```apex [SavePointReleaseCalloutExample.cls]
+basicAuthCallout()
+
+// Do a DML before callout
+public void basicAuthCallout() {
+Savepoint sp = Database.setSavepoint();
+
+Account acc = new Account();
+acc.Name = 'DML PENDING ROW';
+insert acc;
+
+Database.rollback(sp)
+Database.releaseSavepoint();
+
+HttpRequest request = new HttpRequest();
+request.setEndpoint('https://dog.ceo/api/breeds/image/random');
+request.setMethod('GET'); // Set the HTTP method
+
+// Set the request headers
+request.setHeader();
+request.setHeader();
+
+// Send the request
+
+}
+```
+
+```apex
+SavePointReleaseCalloutExample httpTester =
+```
+
+---
 <!--
 https://api.coverr.co/videos?api_key={api_key}
 
