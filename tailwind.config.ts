@@ -29,6 +29,12 @@ export default <Partial<Config>>{
         status: colors.palette,
         secondary: colors.tango,
 
+        danger: colors.rose,
+        error: colors.rose,
+        warning: colors.amber,
+        info: colors.sky,
+        success: colors.emerald,
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -37,6 +43,7 @@ export default <Partial<Config>>{
         angular: '#b52e31',
         react: '#00d8ff',
         vue: '#42b883',
+
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',
         //   foreground: 'hsl(var(--secondary-foreground))',

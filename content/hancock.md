@@ -10,6 +10,14 @@ languages:
 frameworks: WordPress
 ---
 
+## Projects
+
+**Claim number format validation**
+
+```txt
+37-G187-2M5|^[0-9]{2}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{3}$
+```
+
 ## Services / Integrations
 
 ### Submit Claim & Schedule Service

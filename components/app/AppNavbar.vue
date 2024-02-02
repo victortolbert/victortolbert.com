@@ -1,33 +1,8 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
-import { Howl } from 'howler'
-import music from '~/assets/music/let-it-fall-low-pitch.mp3'
-
-const sound = new Howl({
-  src: [music],
-  html5: true,
-})
-
-const isPlaying = ref(false)
-
-function play() {
-  isPlaying.value = true
-  sound.play()
-}
-
-function pause() {
-  isPlaying.value = false
-  sound.pause()
-}
-
-function toggle() {
-  if (isPlaying.value)
-    pause()
-  else
-    play()
-}
 
 const headerRef = ref(null)
+
 const { styles } = useFixedHeader(headerRef)
 
 const items = [
@@ -99,18 +74,6 @@ const items = [
           </UTooltip>
         </li>
         <li class="flex-1" />
-        <li>
-          <button @click="toggle()">
-            <Icon
-              aria-hidden="true"
-              :name="isPlaying ? 'i-ph-pause-circle-duotone' : 'i-ph-play-circle-duotone'"
-              class="w-5 h-5"
-            />
-          </button>
-        </li>
-        <li>
-          <AppThemeToggle />
-        </li>
       </ul>
     </nav>
   </div>

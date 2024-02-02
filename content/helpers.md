@@ -1,5 +1,6 @@
 # Helpers
 
+## defineComponent
 ## defineEventHandler
 ## defineNuxtPlugin
 ## defineNuxtRouteMiddleware

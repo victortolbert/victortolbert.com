@@ -5,3 +5,28 @@
 TypeScript is **[JavaScript](/javascript) with syntax for types**.
 
 TypeScript is a strongly typed [programming language](/programming#programming-language) that builds on [JavaScript](/javascript), giving you better tooling at any scale.
+
+## TypeScript Doc Example
+
+```ts
+export interface MarkdownEntryOptions {
+  /**
+   * Markdown entry
+   *
+   * @default 'slides.md'
+   */
+  entry?: string
+
+  /**
+   * Theme id
+   */
+  theme?: string
+
+  /**
+   * Root path
+   *
+   * @default process.cwd()
+   */
+  userRoot?: string
+}
+```

@@ -1,3 +1,27 @@
+<script setup>
+// - Input (Text, Date, Tel, etc..)
+const elements = ref([
+  { name: 'Button', status: 'Ready', version: '1.0.1' },
+  { name: 'Checkbox', status: 'Ready', version: '1.0.1' },
+  { name: 'Dropdown', status: 'Ready', version: '1.0.1' },
+  { name: 'Icon', status: 'Ready', version: '1.0.1' },
+  { name: 'Input', status: 'Ready', version: '1.0.1' },
+  { name: 'MediaObject', status: 'Ready', version: '1.0.1' },
+  { name: 'Modal', status: 'Ready', version: '1.0.1' },
+  { name: 'MultiSelect', status: 'Ready', version: '1.0.1' },
+  { name: 'Radio', status: 'Ready', version: '1.0.1' },
+  { name: 'RadioGroup', status: 'Ready', version: '1.0.1' },
+  { name: 'Select', status: 'Ready', version: '1.0.1' },
+])
+const statuses = ref([
+  { name: 'Ready', icon: 'i-ph-check-square-duotone', className: 'text-green-500' },
+  { name: 'Under Review', icon: 'i-ph-minus-square-duotone', className: 'text-yellow-500' },
+  { name: 'Prototype', icon: 'i-ph-square-duotone', className: 'text-blue-500' },
+  { name: 'Deprecated', icon: 'i-ph-x-square-duotone', className: 'text-red-500' },
+  { name: 'Not applicable', icon: 'i-ph-minus-duotone', className: 'text-neutral-500' },
+])
+</script>
+
 <template>
   <div class="p-4 grid gap-4">
     <section class="grid gap-4">
@@ -24,6 +48,19 @@
           </tr>
         </thead>
         <tbody>
+          <tr v-for="element in elements" :key="`element-${element.name}`" class="text-sm">
+            <td class="px-4 py-2">
+              <NuxtLink to="/examples/elements/button">
+                <pre>{{ element.name }}</pre>
+              </NuxtLink>
+            </td>
+            <td class="px-4 py-2 text-center">
+              1.0.0
+            </td>
+            <td class="px-4 py-2 text-center ">
+              <UIcon name="i-ph-square-duotone" class="text-blue-500 text-lg" />
+            </td>
+          </tr>
           <tr class="text-sm">
             <td class="px-4 py-2">
               <NuxtLink to="/examples/elements/button">
@@ -42,6 +79,10 @@
 
       <section class="px-4">
         <ul class="grid gap-4 whitespace-nowrap">
+          <li v-for="status in statuses" :key="`status-${status.name}`" class="inline-flex gap-1.5">
+            <UIcon :name="status.icon" :class="status.className" class="text-xl" />
+            <span class="text-sm">{{ status.name }}</span>
+          </li>
           <li class="inline-flex gap-1.5">
             <UIcon name="i-ph-check-square-duotone" class="text-green-500 text-xl" />
             <span class="text-sm">Ready</span>
