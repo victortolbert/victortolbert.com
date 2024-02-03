@@ -11,14 +11,27 @@ export default antfu(
     rules: {
       'no-alert': 'off',
       'no-console': 'off',
+      'no-irregular-whitespace': 'off',
+      'ts/consistent-type-definitions': 'off',
+      'unused-imports/no-unused-vars': 'off',
+      'vue/no-template-shadow': 'off',
+      'vue/one-component-per-file': 'off',
     },
+    // ignores: [
+    //   'README.md',
+    //   '.storybook/',
+    //   'fixtures',
+    //   './public/**',
+    // ],
   },
   {
     ignores: [
       'README.md',
       '.storybook/',
+      'content',
       'fixtures',
       'public',
+      'scratchpad.js',
     ],
   },
 )

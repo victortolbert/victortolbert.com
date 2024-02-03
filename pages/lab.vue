@@ -1,28 +1,40 @@
 <script setup>
-const description = 'Some random experiments with UI I do in my free time.'
-useSeoMeta({
-  title: 'UX Lab - Victor Tolbert',
-  description,
+definePageMeta({
+  title: 'UX Lab',
+  description: 'UX Lab',
+  image: 'https://nuxtjs.org/nuxt-card.png',
+  url: 'https://victortolbert/lab',
 })
 </script>
 
 <template>
-  <main class="min-h-screen">
-    <AppHeader class="mb-12" title="UX Lab" :description="description" />
-    <div class="space-y-24">
-      <ContentList v-slot="{ list }" path="/lab">
-        <ContentQuery
-          v-for="item in list"
-          :key="item._path"
-          v-slot="{ data }"
-          :path="item._path"
-          find="one"
-        >
-          <ContentRenderer>
-            <ContentRendererMarkdown :value="data" />
-          </ContentRenderer>
-        </ContentQuery>
-      </ContentList>
-    </div>
-  </main>
+  <div>
+    <header>
+      <h1>Lab</h1>
+      <ul>
+        <li>
+          <NuxtLink to="/lab/tokens">
+            Design Tokens
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/elements">
+            Elements
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/patterns">
+            Patterns
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/templates">
+            Templates
+          </NuxtLink>
+        </li>
+      </ul>
+    </header>
+
+    <NuxtPage />
+  </div>
 </template>

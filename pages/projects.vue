@@ -1,6 +1,6 @@
 <script setup>
 const description
-  = 'I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.'
+  = 'Throughout my journey, I\'ve been fortunate to work on countless projects, but these are the ones that truly stand out. A few of them are open-source, so if anything sparks your curiosity, take a look at the code and consider contributing your insights for further refinement.'
 useSeoMeta({
   title: 'Projects - Victor Tolbert',
   description,
@@ -11,9 +11,32 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 </script>
 
 <template>
-  <main class="min-h-screen">
+  <main class="min-h-screen mx-auto max-w-3xl">
     <AppHeader class="mb-12" title="Projects" :description="description" />
-    <div class="space-y-4">
+
+    <section class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
+      <!-- <LogoHancockClaims /> -->
+      <NuxtLink to="/booster" class="grid">
+        <LogoBooster />
+      </NuxtLink>
+      <NuxtLink to="/turner" class="grid">
+        <LogoTurnerSports />
+      </NuxtLink>
+      <NuxtLink to="/videa" class="grid">
+        <LogoVidea />
+      </NuxtLink>
+      <NuxtLink to="/att" class="grid">
+        <LogoATT />
+      </NuxtLink>
+      <NuxtLink to="/webmd" class="grid">
+        <LogoWebmd />
+      </NuxtLink>
+      <NuxtLink to="/autotrader" class="grid">
+        <LogoAutoTrader />
+      </NuxtLink>
+    </section>
+
+    <div class="space-y-4 mt-16">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"

@@ -9,6 +9,22 @@ defineProps({
     required: true,
   },
 })
+
+const client = useSupabaseClient()
+const user = useSupabaseUser()
+
+const colorMode = useColorMode()
+
+function toggleDark() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+
+const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'i-heroicons-outline-moon' : 'i-heroicons-outline-sun')
+
+async function logout() {
+  await client.auth.signOut()
+  navigateTo('/')
+}
 </script>
 
 <template>
@@ -21,5 +37,12 @@ defineProps({
     <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
       {{ description }}
     </p>
+    <UButton
+      v-if="user"
+      variant="transparent"
+      @click="logout"
+    >
+      Logout
+    </UButton>
   </div>
 </template>

@@ -1,0 +1,60 @@
+@hostname=localhost
+@port=8589
+@host={{hostname}}:{{port}}
+@apiKey=cur_live_9wjJtsnviLcAuT3vZq6SrSVkz5gWvG7e4YaO7v7C
+@currency=USD
+@date=2024-02-01
+@location=30316
+
+### http-client.env.json
+
+### GET {{HostAddress}}/api/search/tool
+
+GET http://{{hostname}}:{{port}}/api/world
+
+###
+
+GET http://{{host}}/api/search/tool
+
+
+
+###
+
+GET https://localhost:7220/weatherforecast
+
+###
+
+GET https://localhost:7220/weatherforecast?date={{date}}&location={{location}}
+
+###
+
+GET https://localhost:7220/weatherforecast HTTP/3
+
+###
+
+GET https://localhost:7220/weatherforecast
+Date: Wed, 27 Apr 2023 07:28:00 GMT
+
+###
+
+GET https://localhost:7220/weatherforecast
+Cache-Control: max-age=604800
+Age: 100
+
+###
+
+POST https://localhost:7220/weatherforecast
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "date": "2023-05-10",
+    "temperatureC": 30,
+    "summary": "Warm"
+}
+
+###
+
+GET https://api.currencyapi.com/v3/historical?apikey={{apiKey}}&base_currency={{{{currency}}}}&date={{date}}
+
+###

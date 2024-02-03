@@ -1,0 +1,8 @@
+{
+  "name": "Project name",
+  "url": "https://victortolbert.com/projects",
+  "description": "Project description",
+  "thumbnail": "/assets/images/projects/_project.png",
+  "status": "Active",
+  "opensource": true
+}

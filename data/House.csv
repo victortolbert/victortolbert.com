@@ -1,0 +1,6 @@
+House Name,Address,State,City,Zip,Bedroom,Bathrooms,Price,Picture
+Stunning Victorian        ,18 Henry St,MA,Cambridge,01742,4,3,975000,https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01.jpg
+Ultimate Sophistication,24 Pearl St,MA,Cambridge,02420,5,4,1200000,https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02.jpg
+Modern City Living,72 Francis st,MA,Boston,02420,5,4,825000,https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03.jpg
+Stunning Colonial,32 Prince st,MA,Cambridge,02420,5,4,930000,https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg
+Waterfront in the City,110 Baxter Street,MA,Boston,02420,3,2,850000,https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05.jpg

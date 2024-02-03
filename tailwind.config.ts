@@ -1,8 +1,9 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import defaultColors from 'tailwindcss/colors'
-import headlessUi from '@headlessui/tailwindcss'
+
 import animate from 'tailwindcss-animate'
 import heroPatterns from 'tailwind-heropatterns'
+
 import type { Config } from 'tailwindcss'
 import { colors as appColors } from './assets/design/tokens/colors'
 
@@ -18,15 +19,31 @@ export default <Partial<Config>>{
       },
     },
     extend: {
+      containers: {
+        '2xs': '16rem', // 256px
+      },
       colors: {
-        green: colors.emerald,
         brand: colors.toreaBay,
+
+        green: colors.emerald,
+        status: colors.palette,
         secondary: colors.tango,
+
+        danger: colors.rose,
+        error: colors.rose,
+        warning: colors.amber,
+        info: colors.sky,
+        success: colors.emerald,
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        angular: '#b52e31',
+        react: '#00d8ff',
+        vue: '#42b883',
+
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',
         //   foreground: 'hsl(var(--secondary-foreground))',
@@ -56,6 +73,7 @@ export default <Partial<Config>>{
         auto: 'auto',
         square: '1 / 1',
         video: '16 / 9',
+        document: '8.5 / 11',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -67,22 +85,27 @@ export default <Partial<Config>>{
         px: '0 0 0 1px rgba(0, 0, 0, 0.5)',
       },
       fontFamily: {
-        // sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans],
-        sans: ['Inter var', 'Inter', ...defaultTheme.fontFamily.sans],
+        // sans: ['"DM Sans"', '"DM Sans fallback"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Inter var"', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif],
         // display: ['Bungee', 'Pica'],
-        mono: ['Monaspace Argon', 'Space Mono', 'Fira Code', ...defaultTheme.fontFamily.mono],
-        mockup: ['Balsamiq Sans', 'cursive'],
+        // cursive: ['Kalam', 'cursive'],
+        handwriting: ['Kalam', 'cursive'],
+        mono: ['"Monaspace Argon"', '"Space Mono"', '"Fira Code"', ...defaultTheme.fontFamily.mono],
+        display: ['Oswald', 'sans-serif'],
+        body: ['"Open Sans"', 'sans-serif'],
+        mockup: ['"Balsamiq Sans"', 'cursive'],
         proto: [
-          'Flow Circular',
-          'Redacted Script',
-          'Flow Block',
-          'Blokk Neue',
+          '"Flow Circular"',
+          '"Redacted Script"',
+          '"Flow Block"',
+          '"Blokk Neue"',
           'Blokk',
-          'Flow Rounded',
+          '"Flow Rounded"',
           'cursive',
         ],
-        salesforce: ['Salesforce Sans', 'system-ui', 'sans-serif'],
+        salesforce: ['"Salesforce Sans"', 'system-ui', 'sans-serif'],
+        kalam: ['Kalam', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         '2xs': ['0.625rem', '0.875rem'],
@@ -129,7 +152,6 @@ export default <Partial<Config>>{
   },
   plugins: [
     animate,
-    headlessUi,
     heroPatterns({
       patterns: [],
       // The foreground colors of the pattern

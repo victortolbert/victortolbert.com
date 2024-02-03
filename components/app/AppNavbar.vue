@@ -1,7 +1,11 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
 
+const client = useSupabaseClient()
+const user = useSupabaseUser()
+
 const headerRef = ref(null)
+
 const { styles } = useFixedHeader(headerRef)
 
 const items = [
@@ -23,7 +27,7 @@ const items = [
   {
     name: 'Lab',
     path: '/lab',
-    icon: 'ph:lightbulb-duotone',
+    icon: 'ph:flask-duotone',
   },
   {
     name: 'Uses',
@@ -41,11 +45,24 @@ const items = [
     icon: 'ph:question-duotone',
   },
 ]
+
+const colorMode = useColorMode()
+
+function toggleDark() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+
+const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'i-heroicons-outline-moon' : 'i-heroicons-outline-sun')
+
+async function logout() {
+  await client.auth.signOut()
+  navigateTo('/')
+}
 </script>
 
 <template>
   <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50">
-    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <ul
         class="flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-full shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5"
       >
@@ -74,7 +91,14 @@ const items = [
         </li>
         <li class="flex-1" />
         <li>
-          <AppThemeToggle />
+          <UButton
+            v-if="user"
+            color="white"
+            variant="soft"
+            @click="logout"
+          >
+            Logout
+          </UButton>
         </li>
       </ul>
     </nav>

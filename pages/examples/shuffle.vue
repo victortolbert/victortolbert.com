@@ -12,12 +12,12 @@ const pokemons = ref([
 </script>
 
 <template>
-  <h1 class="text-7xl flex justify-center gap-2 items-center">
+  <h2 class="flex justify-center gap-2 items-center">
     v-for key without state
     <UButton size="xl" @click="shuffleArray(pokemons)">
       Shuffle
     </UButton>
-  </h1>
+  </h2>
 
   <ul v-auto-animate class="grid grid-cols-4 gap-4 mt-3">
     <li v-for="(pokemon, index) in pokemons" :key="index">
