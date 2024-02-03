@@ -8,6 +8,29 @@ defineOgImageComponent('NuxtSeo')
 
 <template>
   <div class="max-w-3xl mx-auto">
+    <ul>
+      <li>
+        <NuxtLink to="/examples/accounts">
+          Accounts
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/examples/swiper">
+          Swiper
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/examples/slideover">
+          Slideover
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/examples/vue-query">
+          Vue Query
+        </NuxtLink>
+      </li>
+    </ul>
+
     <NuxtPage />
   </div>
 </template>

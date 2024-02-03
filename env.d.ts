@@ -2,14 +2,24 @@ import type { Component } from 'vue'
 
 declare module 'tailwind-heropatterns'
 
+declare interface Task {
+  id: number
+  title: string
+  completed: boolean
+  user?: string
+  created_at?: string
+}
+
 export type Position = 'LEFT' | 'RIGHT' | 'FIRST_CHILD' | 'LAST_CHILD'
 
 export type TreeItemId = string | number
+
 export interface TreeItem {
   id: TreeItemId
   expanded?: boolean
   children: TreeItem[]
 }
+
 interface FlatTreeItem {
   id: ItemId
   children: TreeItem[]

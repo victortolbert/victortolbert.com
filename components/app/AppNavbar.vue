@@ -1,6 +1,9 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
 
+const client = useSupabaseClient()
+const user = useSupabaseUser()
+
 const headerRef = ref(null)
 
 const { styles } = useFixedHeader(headerRef)
@@ -42,6 +45,19 @@ const items = [
     icon: 'ph:question-duotone',
   },
 ]
+
+const colorMode = useColorMode()
+
+function toggleDark() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+
+const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'i-heroicons-outline-moon' : 'i-heroicons-outline-sun')
+
+async function logout() {
+  await client.auth.signOut()
+  navigateTo('/')
+}
 </script>
 
 <template>
@@ -74,6 +90,16 @@ const items = [
           </UTooltip>
         </li>
         <li class="flex-1" />
+        <li>
+          <UButton
+            v-if="user"
+            color="white"
+            variant="soft"
+            @click="logout"
+          >
+            Logout
+          </UButton>
+        </li>
       </ul>
     </nav>
   </div>

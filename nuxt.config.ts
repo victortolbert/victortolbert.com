@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/plausible',
     '@nuxtjs/seo',
+    '@nuxtjs/supabase',
     '@vue-email/nuxt',
     'v-wave/nuxt',
     'magic-regexp/nuxt',
@@ -40,7 +41,6 @@ export default defineNuxtConfig({
     // '@nuxtjs/i18n',
     // '@nuxtjs/prismic',
     // '@nuxtjs/storybook',
-    // '@nuxtjs/supabase',
     // '@nuxtlabs/github-module',
     // '@pinia-orm/nuxt',
     // '@unlazy/nuxt',
@@ -57,6 +57,90 @@ export default defineNuxtConfig({
     // 'nuxt-proxy',
     // 'nuxt-time',
   ],
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.API_URL || 'http://localhost:8589',
+      assetsSrc: '/assets',
+      baseUrl: process.env.BASE_URL || 'http://localhost:8589',
+      buildTime: Date.now(),
+      github: {
+        clientId: process.env.NUXT_PUBLIC_GITHUB_CLIENT_ID,
+        repo: process.env.NUXT_PUBLIC_GITHUB_REPO,
+        url: process.env.NUXT_PUBLIC_GITHUB_URL,
+      },
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
+      google: {
+        maps: {
+          apiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API,
+        },
+      },
+      site: {
+        url: process.env.NUXT_PUBLIC_SITE_URL,
+      },
+      sentry: {
+        dsn: process.env.NUXT_PUBLIC_SENTRY_DSN,
+        environment: process.env.NUXT_PUBLIC_SENTRY_ENVIRONMENT,
+      },
+      storybook: {
+        url: process.env.NUXT_STORYBOOK_URL,
+      },
+      stripeKey: '',
+      supabase: {
+        url: process.env.NUXT_PUBLIC_SUPABASE_URL,
+        key: process.env.NUXT_PUBLIC_SUPABASE_KEY,
+      },
+      theme: {
+        primaryColor: 'user_primary',
+      },
+      version: pkg.version,
+    },
+    authorizeNet: {
+      apiLoginId: '8d7Kz9Qt2t',
+      transactionKey: '8T4YCA85hnn9rG26',
+    },
+    github: {
+      id: '',
+      repo: '',
+      token: '',
+      clientSecret: '',
+      inviteToken: '',
+    },
+    mailer: {
+      host: process.env.NUXT_MAILER_HOST,
+      port: process.env.NUXT_MAILER_PORT,
+      user: process.env.NUXT_MAILER_USER,
+      password: process.env.NUXT_MAILER_PASSWORD,
+    },
+    omdb: {
+      apiKey: '',
+    },
+    openai: {
+      apiKey: '',
+    },
+    openWeather: {
+      apiKey: '',
+    },
+    resend: {
+      apiKey: '',
+    },
+    session: {
+      password: '',
+    },
+    spoonacular: {
+      apiKey: process.env.SPOONACULAR_API_KEY!,
+    },
+    stripeSecret: '',
+    stripeWebhookSecret: '',
+    supabase: {
+      url: process.env.NUXT_SUPABASE_URL,
+      key: process.env.NUXT_SUPABASE_KEY,
+      serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
+      jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
+    },
+    tmdb: {
+      apiKey: process.env.NUXT_TMDB_API_KEY,
+    },
+  },
 
   apiParty: {
     endpoints: {
@@ -357,7 +441,7 @@ export default defineNuxtConfig({
     // },
 
     'pages:extend': function (routes) {
-      console.log(routes)
+      // console.log(routes)
     },
   },
 
@@ -491,88 +575,6 @@ export default defineNuxtConfig({
 
   },
 
-  runtimeConfig: {
-    public: {
-      apiUrl: process.env.API_URL || 'http://localhost:8589',
-      assetsSrc: '/assets',
-      baseUrl: process.env.BASE_URL || 'http://localhost:5090',
-      buildTime: Date.now(),
-      github: {
-        clientId: process.env.NUXT_PUBLIC_GITHUB_CLIENT_ID,
-        repo: process.env.NUXT_PUBLIC_GITHUB_REPO,
-        url: process.env.NUXT_PUBLIC_GITHUB_URL,
-      },
-      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
-      google: {
-        maps: {
-          apiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API,
-        },
-      },
-      site: {
-        url: process.env.NUXT_PUBLIC_SITE_URL,
-      },
-      sentry: {
-        dsn: process.env.NUXT_PUBLIC_SENTRY_DSN,
-        environment: process.env.NUXT_PUBLIC_SENTRY_ENVIRONMENT,
-      },
-      storybook: {
-        url: process.env.NUXT_STORYBOOK_URL,
-      },
-      stripeKey: '',
-      theme: {
-        primaryColor: 'user_primary',
-      },
-      version: pkg.version,
-
-    },
-    authorizeNet: {
-      apiLoginId: '8d7Kz9Qt2t',
-      transactionKey: '8T4YCA85hnn9rG26',
-    },
-    github: {
-      id: '',
-      repo: '',
-      token: '',
-      clientSecret: '',
-      inviteToken: '',
-    },
-    mailer: {
-      host: process.env.NUXT_MAILER_HOST,
-      port: process.env.NUXT_MAILER_PORT,
-      user: process.env.NUXT_MAILER_USER,
-      password: process.env.NUXT_MAILER_PASSWORD,
-    },
-    omdb: {
-      apiKey: '',
-    },
-    openai: {
-      apiKey: '',
-    },
-    openWeather: {
-      apiKey: '',
-    },
-    resend: {
-      apiKey: '',
-    },
-    session: {
-      password: '',
-    },
-    spoonacular: {
-      apiKey: process.env.SPOONACULAR_API_KEY!,
-    },
-    stripeSecret: '',
-    stripeWebhookSecret: '',
-    supabase: {
-      url: process.env.NUXT_SUPABASE_URL,
-      key: process.env.NUXT_SUPABASE_KEY,
-      serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
-      jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
-    },
-    tmdb: {
-      apiKey: process.env.NUXT_TMDB_API_KEY,
-    },
-  },
-
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -586,6 +588,31 @@ export default defineNuxtConfig({
   },
 
   ssr: true,
+
+  supabase: {
+    serviceKey: process.env.NUXT_SUPABASE_SERVICE_KEY,
+    redirect: true,
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      exclude: [],
+      cookieRedirect: false,
+    },
+    cookieName: 'sb',
+    cookieOptions: {
+      maxAge: 60 * 60 * 8,
+      sameSite: 'lax',
+      secure: true,
+    },
+    clientOptions: {
+      auth: {
+        flowType: 'pkce',
+        detectSessionInUrl: true,
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    },
+  },
 
   swiper: {
     // Swiper options

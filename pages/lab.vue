@@ -11,6 +11,28 @@ definePageMeta({
   <div>
     <header>
       <h1>Lab</h1>
+      <ul>
+        <li>
+          <NuxtLink to="/lab/tokens">
+            Design Tokens
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/elements">
+            Elements
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/patterns">
+            Patterns
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/lab/templates">
+            Templates
+          </NuxtLink>
+        </li>
+      </ul>
     </header>
 
     <NuxtPage />

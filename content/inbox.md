@@ -18,7 +18,204 @@ crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
 ---
 
-Remote Site Settings
+# Mac Applications
+
+- A Better Finder Rename
+- Actions
+- Affinity Designer
+- Affinity Photo
+- Alacritty
+- Alfred
+- Amazing AI
+- Anki
+- AnypointStudio
+- ApolloOne
+- Apple Configurator
+- Arc
+- Asphalt8
+- Axure RP 10
+- Azure Data Studio
+- BabelEdit
+- Backdrop
+- Balsamiq Wireframes
+- Bartender 5
+- BeFocused Pro
+- Beyond Compare
+- Blender
+- Books
+- Brave Browser
+- Bunch
+- Canva
+- CapCut
+- Charles
+- CodeWhisperer
+- Color Picker
+- Curiosity
+- Dato
+- DB Browser for SQLite
+- DBeaver
+- DBngin
+- Dictionary
+- Discord
+- Draw.io
+- Dropbox
+- Dropzone 4
+- Elgato Control Center
+- Elgato Streamdeck
+- FaceTime
+- Figma
+- Filezilla Pro
+- Firefox Developer Edition
+- Fleet
+- Flycut
+- Font Book
+- Freeform
+- GarageBand
+- Gifsky
+- Goodnotes
+- Google Chrome
+- Google Chrome
+- Google Docs
+- Google Drive
+- Google Meet
+- Google Sheets
+- Google Slides
+- Grammarly
+- Handbrake
+- Helo
+- Herd
+- Hey
+- Hyper
+- IINA
+- Infuse
+- Insomnia
+- IntelliJ IDEA Ultimate
+- Invoker
+- iTerm
+- JSON Peep
+- Karabiner Elements
+- Kindle
+- Kit
+- LastPass
+- Linear
+- Mactracker
+- Mail
+- MailMate
+- Mainstage
+- Maps
+- Marked 2
+- Mark Text
+- Memory Clean 2
+- Messages
+- Microsoft Defender
+- Microsoft Edge
+- Microsoft Excel
+- Microsoft OneNote
+- Microsoft Outlook
+- Microsoft Powerpoint
+- Microsoft Teams
+- Microsoft Word
+- Mission Control
+- Mockuuups Studio
+- Moom
+- Motion
+- Music
+- NetNewsWire
+- News
+- Nimble Commander
+- NordVPN
+- Notes
+- Notes Exporter
+- Numbers
+- Obsidian
+- OneDrive
+- OpenAudible
+- Libation
+- Launchpad
+- Logi Options
+- Logitech G Hub
+- Overcast
+- Pages
+- Paparazzi!
+- Parallels Desktop
+- Parallels Toolbox
+- Path Finder
+- Paw
+- pgAdmin 4
+- Photo Booth
+- Photos
+- PHP Monitor
+- PHP Storm
+- Plash
+- Podcasts
+- Polypane
+- Postman
+- PowerShell
+- Preview
+- Pycharm
+- QuickTime Player
+- Ray
+- Raycast
+- Reminders
+- Rider
+- Safari
+- ScreenFlow
+- Serato DJ Lite
+- Setapp
+- Shortcuts
+- Sip
+- Siri
+- Sizzy
+- Sketch
+- Slack
+- Spotify
+- SQLite Studio
+- Stickies
+- Stocks
+- SublimeText
+- Tabby
+- Taskpaper
+- TextEdit
+- TickTick
+- Time Code Monitor
+- Time Machine
+- Tinkerwell
+- Tower
+- Transmission
+- TV
+- Tyme
+- Typora
+- Velja
+- VirtualBox
+- VirtualHostX
+- Visual Studio
+- VLC
+- Voice Memos
+- VS Code
+- VS Code Insiders
+- Warp
+- Webstorm
+- Weather
+- Xcode
+- Workflowy
+- Zed
+- Zeplin
+- Zoom
+
+---
+
+# Iconset
+
+https://iconset.io/
+
+Organize icon sets & packs in one place
+Fast, powerful and cross-platform SVG icons manager app for designers, developers or product teams. Supports Mac and Windows.
+
+
+
+---
+
+# Remote Site Settings
 
 ```apex [SavePointReleaseCalloutExample.cls]
 basicAuthCallout()

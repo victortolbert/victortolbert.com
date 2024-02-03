@@ -123,8 +123,8 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           <h1 class="text-3xl">
             {{ resume?.basics.name }}
           </h1>
-          <div class="text-pretty text-muted-foreground max-w-md text-xl whitespace-nowrap">
-            <span class="whitespace-nowrap">{{ resume?.basics.label }}</span>
+          <div class="text-pretty text-muted-foreground max-w-md text-xl">
+            <span>{{ resume?.basics.label }}</span>
             <div
               class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
             >
