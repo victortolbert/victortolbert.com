@@ -329,6 +329,10 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 8589,
+    https: {
+      key: 'localhost-key.pem',
+      cert: 'localhost.pem',
+    },
   },
 
   devtools: {
