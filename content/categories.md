@@ -1,0 +1,204 @@
+# Categories
+
+- Acting & Auditioning
+- Actor & Entertainer Biographies
+- African American Demographic Studies
+- Ancient Greek & Roman Philosophy
+- Art Therapy & Relaxation
+- Artificial Intelligence & Semantics
+- Authorship Reference
+- Biographies of Rap & Hip-Hop Musician
+- Black & African American Biographies
+- Black & African American History
+- Black & African American Literary Criticism & Theory
+- Budgeting & Money Management
+- Business & Money
+- Business & Organizational Learning
+- Business Communication
+- Business Education & Reference
+- Business Entrepreneurship
+- Business Infrastructure
+- Business Intelligence Tools
+- Business Management
+- Business Motivation & Self-Improvement
+- Business Negotiating
+- Business Professional's Biographies
+- Business School Guides
+- C & C++ Programming
+- C# Programming
+- Celebrity & Popular Culture Humor
+- Christian Devotionals
+- Christian Men's Issues
+- Christian Self-Help
+- Christian Spiritual Growth
+- Cinematography
+- Cloud Computing
+- Cognitive Psychology
+- Comic Strips
+- Communication Reference
+- Communication Skills
+- Comparative Religion
+- Computer Graphics & Design
+- Computer Neural Networks
+- Computer Programming Languages
+- Computer Programming Structured Design
+- Computer Software
+- Computers & Technology Industry
+- Consulting
+- Cookbooks, Food & Wine
+- Cooking Humor
+- Creativity
+- Criminology
+- CSS Programming
+- Culinary Biographies & Memoirs
+- Cultural Anthropology
+- Customer Relations
+- Data Mining
+- Data Processing
+- Decision-Making & Problem Solving
+- Desktop Publishing
+- Developmental Biology
+- Digital Photography
+- Discrimination & Racism
+- E-commerce Professional
+- Economic Conditions
+- Education
+- Educational Psychology
+- Emotional Mental Health
+- Entertainment Industry
+- Entrepreneurship
+- Feng Shui
+- Fiction Satire
+- Fiction Writing Reference
+- Food Science
+- Game Programming
+- Golf
+- Graduate School Guides
+- Grammar Reference
+- Graph Theory
+- Graphics & Multimedia Programming
+- green Housecleaning
+- Guided Journals
+- Happiness Self-Help
+- Herbal Remedies
+- Higher & Continuing Education
+- Home Cleaning, Caretaking & Relocating
+- Home-Based Businesses
+- Human Resources & Personnel Management
+- Human-Computer Interaction
+- Humor Essays
+- Industrial & Product Design
+- Industrial Manufactoring Systems
+- Information Theory
+- Internet & Social Media
+- Internet & Telecommunications
+- Internet Web Browsers
+- Introduction to Investing
+- Introductory & Beginning Programming
+- JavaScript Programming
+- Job Hunting
+- Job Hunting & Career Guides
+- Job Interviewing
+- Job Resumes
+- Leadership & Motivation
+- Literary Criticism
+- Literary Fiction
+- Love & Romance
+- Love, Sex & Marriage Humor
+- Magic & Illusions
+- Magic Tricks
+- Management Science
+- Marketing & Consumer Behavior
+- Mathematics
+- Mathematics Reference
+- Medical Books
+- Medical Developmental Psychology
+- Memoirs
+- Memory Improvement Self-Help
+- Mental & Spiritual Healing
+- Microsoft .NET
+- Microsoft Programming
+- Mobile App Development & Programming
+- Motivational Management & Leadership
+- Motivational Self-Help
+- Movie Direction & Production
+- Music Encyclopedias
+- Music History & Criticism
+- Music Instruction & Study
+- Music Reference
+- MySQL Guides
+- New Thought
+- Object-Oriented Design
+- Online Internet Searching
+- Organized Crime True Accounts
+- Parenting
+- Personal Finance
+- Personal Money Management
+- Personal Time Management
+- Personal Transformation Self-Help
+- Photography Equipment
+- Photography Reference
+- PHP Programming
+- Piano & Keyboards
+- Poetry Anthologies
+- Political Commentary & Opinion
+- Political Conservatism & Liberalism
+- Political Leader Biographies
+- Popular Culture in Social Sciences
+- Popular Developmental Psychology
+- Popular Psychology Creativity & Genius
+- Popular Psychology Psychotherapy
+- Popular Social Psychology & Interactions
+- Probability & Statistics
+- Production & Operations
+- Programming Languages
+- Public Speaking Reference
+- Python Programming
+- Rap & Hip-Hop Musician Biographies
+- Rap Music
+- Reference
+- Religious Leader Biographies
+- Rich & Famous Biographies
+- Ruby Programming
+- Running Meetings & Presentations
+- Sales & Selling
+- Schools & Teaching
+- Science & Mathematics
+- Social Aspects of Technology
+- Social Sciences
+- Social Sciences Research
+- Sociology of Sports
+- Software Design, Testing & Engineering
+- Software Development
+- Software Testing
+- Speech
+- Spiritual Self-Help
+- Sports Psychology
+- SQL
+- Statistics
+- Stress Management Self-Help
+- Study & Test-Taking Skills
+- Study Skills
+- Success Self-Help
+- Technical Writing Reference
+- Time Management
+- TV & Video Engineering
+- Typography
+- UML Language
+- United States National Government
+- Unix Operating System
+- Unix Programming
+- Unix Shell
+- US Presidents
+- User Experience & Website Usability
+- Venture Capital
+- Wealth Management
+- Web Design
+- Web Marketing
+- Web Services
+- Weight Loss Diets
+- Women's Biographies
+- Words, Language & Grammar Reference
+- Workplace Culture
+- Writing Skill Reference
+- XML Programming

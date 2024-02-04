@@ -1,0 +1,7 @@
+
+Todo:
+  [+] Add a way to add a new todo
+  [ ] Add a way to remove an existing todo
+  [-] Add a way to mark a todo as completed
+  [ ] Add a way to filter the list of todos which are completed
+  [ ] Add a way to filter the list of todos which are active

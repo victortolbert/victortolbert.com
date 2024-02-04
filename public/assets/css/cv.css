@@ -1,0 +1,156 @@
+:root {
+  --font-p: 1em/1.7 "Source Code Pro", monospace;
+  --font-h: .9em/1.5 "Source Code Pro", monospace;
+  --font-c: .9em/1.4 "Source Code Pro", monospace;
+
+  --width: 70rem;
+
+  --c-primary: #b16286;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cfg: #ebdbb2;
+    --cdark: #3c3836;
+    --cmed: #7c6f64;
+    --clight: #fbf1c7;
+    --clink: #83a598;
+    --cemph: #fe8019;
+    --cbg: #282828;
+  }
+
+  time {
+    color: var(--cfg);
+  }
+
+  code {
+    background-color: inherit;
+    color: var(--clight);
+  }
+
+  code::before {
+    content: "`";
+  }
+
+  code::after {
+    content: "`";
+  }
+}
+
+article h3::before {
+  content: "";
+}
+
+.duration{
+  float:right
+}
+
+.dt-start:before{
+  content: "("
+}
+
+.dt-end:before{
+  content: " - "
+}
+
+.dt-end:after{
+  content: ")"
+}
+
+a[href].h-card {
+  text-decoration: none;
+}
+
+.p-experience, .p-education {
+  padding: 10px 0;
+  border-bottom: solid 1px var(--cmed);
+}
+
+.p-skill:hover{
+  color: var(--cfg);
+  background-color: var(--cmed);
+}
+
+
+@media screen {
+  .p-experience, .p-education {
+    padding: 50px 0;
+  }
+}
+
+.contact .h-card{
+  color: var(--cbg);
+  padding: 15px 30px;
+  display: block;
+  border-top: 15px solid #b16286;
+  background: #d3869b;
+  font-weight: 400;
+  line-height: 2;
+  box-shadow: 0 5px 10px #aaa;
+}
+
+.p-experience .p-name, .p-experience .p-org, .p-education .speciality {
+  font-weight: 600;
+}
+
+
+img {
+  width: 64px;
+}
+
+.headline .p-summary {
+  display: inherit;
+  font-size: 120%;
+}
+
+/* https://stackoverflow.com/a/58214925 */
+.flex-wrapper {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-wrapper {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 2;
+  }
+}
+
+.flex-wrapper ul li {
+  text-align: left;
+  margin-bottom: 0;
+  padding: 4px 0;
+  width: 100%;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.flex-wrapper ul li:nth-child(-n+4) {
+  text-align: right;
+}
+
+ul.interests {
+  list-style-type: circle;
+}
+
+a:not(nav a) {
+  color: #b16286 !important;
+}
+
+.contact ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.p-experience .p-location::after {
+  content: ", ";
+}
+
+kbd {
+  color: var(--cdark);
+}

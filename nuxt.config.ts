@@ -85,10 +85,10 @@ export default defineNuxtConfig({
         url: process.env.NUXT_STORYBOOK_URL,
       },
       stripeKey: '',
-      supabase: {
-        url: process.env.NUXT_PUBLIC_SUPABASE_URL,
-        key: process.env.NUXT_PUBLIC_SUPABASE_KEY,
-      },
+      // supabase: {
+      //   url: process.env.NUXT_PUBLIC_SUPABASE_URL,
+      //   key: process.env.NUXT_PUBLIC_SUPABASE_KEY,
+      // },
       theme: {
         primaryColor: 'user_primary',
       },
@@ -131,12 +131,12 @@ export default defineNuxtConfig({
     },
     stripeSecret: '',
     stripeWebhookSecret: '',
-    supabase: {
-      url: process.env.NUXT_SUPABASE_URL,
-      key: process.env.NUXT_SUPABASE_KEY,
-      serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
-      jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
-    },
+    // supabase: {
+    //   url: process.env.NUXT_SUPABASE_URL,
+    //   key: process.env.NUXT_SUPABASE_KEY,
+    //   serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
+    //   jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
+    // },
     tmdb: {
       apiKey: process.env.NUXT_TMDB_API_KEY,
     },
@@ -522,6 +522,17 @@ export default defineNuxtConfig({
   //   },
   // },
 
+  nitro: {
+    routeRules: {
+      '/**': {
+        headers: {
+          'Cross-Origin-Embedder-Policy': 'require-corp',
+          'Cross-Origin-Opener-Policy': 'same-origin',
+        },
+      },
+    },
+  },
+
   ogImage: {
     defaults: {
       component: 'OgImageDocs',
@@ -594,29 +605,38 @@ export default defineNuxtConfig({
   ssr: true,
 
   supabase: {
-    serviceKey: process.env.NUXT_SUPABASE_SERVICE_KEY,
-    redirect: true,
     redirectOptions: {
-      login: '/login',
+      login: '/',
       callback: '/confirm',
-      exclude: [],
-      cookieRedirect: false,
-    },
-    cookieName: 'sb',
-    cookieOptions: {
-      maxAge: 60 * 60 * 8,
-      sameSite: 'lax',
-      secure: true,
-    },
-    clientOptions: {
-      auth: {
-        flowType: 'pkce',
-        detectSessionInUrl: true,
-        persistSession: true,
-        autoRefreshToken: true,
-      },
+      exclude: ['/'],
+      cookieRedirect: true,
     },
   },
+
+  // supabase: {
+  //   serviceKey: process.env.NUXT_SUPABASE_SERVICE_KEY,
+  //   redirect: true,
+  //   redirectOptions: {
+  //     login: '/login',
+  //     callback: '/confirm',
+  //     exclude: [],
+  //     cookieRedirect: false,
+  //   },
+  //   cookieName: 'sb',
+  //   cookieOptions: {
+  //     maxAge: 60 * 60 * 8,
+  //     sameSite: 'lax',
+  //     secure: true,
+  //   },
+  //   clientOptions: {
+  //     auth: {
+  //       flowType: 'pkce',
+  //       detectSessionInUrl: true,
+  //       persistSession: true,
+  //       autoRefreshToken: true,
+  //     },
+  //   },
+  // },
 
   swiper: {
     // Swiper options

@@ -3,11 +3,24 @@
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
+const email = ref('')
+
 const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
+
+async function signInWithOtp() {
+  const { error } = await auth.signInWithOtp({
+    email: email.value,
+    options: {
+      emailRedirectTo: 'https://localhost:8589/confirm',
+    },
+  })
+  if (error)
+    console.log(error)
+}
 
 watchEffect(() => {
   if (user.value)
-    navigateTo('/tasks')
+    navigateTo('/')
 })
 </script>
 
@@ -30,5 +43,9 @@ watchEffect(() => {
         },
       })"
     />
+    <UButton @click="signInWithOtp">
+      Sign In with E-Mail
+    </UButton>
+    <UInput v-model="email" type="email" />
   </div>
 </template>

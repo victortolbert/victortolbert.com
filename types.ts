@@ -4,19 +4,26 @@ export interface Attendee {
   id: string
   name: string
 }
-export interface Author {}
+
+export interface Author {
+  firstName: string
+  lastName: string
+  birthDate?: Date
+  nationality?: string
+  biography?: string
+}
 
 export interface Book {
   title: string
-  edition: string
-  subtitle: string
-  author: string
-  asn: string
-  weight: number
-  dimensions: string
-  isbn: string
-  publication_date: Date
-  customer_reviews: number
+  authors: Author[]
+  ISBN: string
+  publicationDate: Date
+  pageCount: number
+  genres: Genre[] // Using an array of Genre for multiple genres
+  publisher: Publisher
+  language: string
+  coverImageURL?: string
+  isAvailable: boolean
 }
 
 export interface CalendarEvent {
@@ -83,11 +90,30 @@ export interface Contact {
 }
 
 export interface Course {
-
+  id: number
+  title: string
+  description: string
+  lessons: Lesson[]
+  instructor: string
+  price: number
+  duration: string // Total course duration
 }
 
 export interface Episode {
+  title: string
+  description: string
+  releaseDate: Date
+  duration: number // Duration in minutes or seconds, depending on your preference
+  audioURL: string
+}
 
+export interface Email {
+  id: string
+  subject: string
+  sender: string
+  body: string
+  tags: string[]
+  date: string // You can use Date type if you want to parse the date string
 }
 
 export interface Event {
@@ -100,6 +126,16 @@ export interface Event {
   organizer: string
   category: string
   attendees?: Attendee[]
+}
+
+export interface Genre {
+  name: string
+  description?: string
+}
+
+export interface Host {
+  name: string
+  bio?: string
 }
 
 export interface Joke {
@@ -115,6 +151,14 @@ export interface JsonPlaceholderComment {
   name: string
   email: string
   body: string
+}
+
+export interface Lesson {
+  id: number
+  title: string
+  description: string
+  duration: string // You can use a string or number to represent duration as needed
+  videoURL?: string // Optional property for video lessons
 }
 
 export interface Movie {
@@ -140,11 +184,31 @@ export type Option = {
 }
 
 export interface Plant {
-
+  id: number
+  image: string
+  names: {
+    common: string
+    scientific: string
+  }
+  details: string
+  toxicity: {
+    property: string
+    symptoms: string
+  }
+  care: {
+    light: string
+    water: string
+  }
 }
 
 export interface Podcast {
-
+  title: string
+  hosts: Host[]
+  description: string
+  coverImageURL?: string
+  episodes: Episode[]
+  language: string
+  website?: string
 }
 
 export interface Post {
@@ -176,10 +240,102 @@ export interface Project {
   opensource: boolean
 }
 
+export interface Publisher {
+  name: string
+  location?: string
+  website?: string
+}
+
 export interface Use {
   name: string
   description: string
   url: string
   category: string
   thumbnail: string
+}
+
+export interface PriceGuide {
+  id: string
+  daypartName: string
+  expanded: boolean
+  demos: Demo[]
+  programs: Program[]
+}
+
+export interface Demo {
+  name: string
+  rating: number
+  cpp: number
+  premiumCPP: number
+  videaRating: number
+  videaCPP: number
+}
+
+export interface Program {
+  name: string
+  time: string
+  expanded: boolean
+  acceptRate: boolean
+  station: Station
+  videa: Videa
+  onTheBooks: OnTheBooks
+  months: Month[]
+}
+
+export interface Station {
+  rate: number
+  rating: number
+  CPP: number
+  impressions: number
+  premiumPercentDividedByRate: number
+  premium_rate: number
+  premium_percent: number
+  premium_rating: number
+  premium: {
+    rate: number
+    percent: number
+    rating: number
+  }
+  demos: Demo[]
+}
+
+export interface Videa {
+  rate: number
+  rating: number
+  CPP: number
+  impressions: number
+}
+
+export interface OnTheBooks {
+  minRate: number
+  maxRate: number
+  aur: number
+  sellOutPercent: number
+  lyAur: number
+}
+
+export interface Month {
+  month: string
+  expanded: boolean
+  acceptRate: boolean
+  station: Station
+  videa: Videa
+  onTheBooks: OnTheBooks
+  otherSources: OtherSources
+  weeks: Week[]
+}
+
+export interface Week {
+  week: string
+  expanded: boolean
+  acceptRate: boolean
+  station: Station
+  videa: Videa
+  onTheBooks: OnTheBooks
+  otherSources: OtherSources
+}
+
+export interface OtherSources {
+  shareBuilders: number
+  mktCPP: number
 }

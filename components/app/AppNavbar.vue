@@ -58,6 +58,27 @@ async function logout() {
   await client.auth.signOut()
   navigateTo('/')
 }
+
+async function signUpNewUser() {
+  const { data, error } = await client.auth.signUp({
+    email: 'victor.tolbert@outlook.com',
+    password: 'password1234',
+    options: {
+      emailRedirectTo: 'https://localhost:8589/landing',
+    },
+  })
+}
+
+async function signInWithEmail() {
+  const { data, error } = await client.auth.signInWithOtp({
+    email: 'victor.tolbert@outlook.com',
+    options: {
+      // set this to false if you do not want the user to be automatically signed up
+      shouldCreateUser: true,
+      emailRedirectTo: 'https://localhost:8589/landing',
+    },
+  })
+}
 </script>
 
 <template>
@@ -90,9 +111,22 @@ async function logout() {
           </UTooltip>
         </li>
         <li class="flex-1" />
-        <li>
+        <li
+          v-if="!user"
+        >
           <UButton
-            v-if="user"
+            color="white"
+            variant="soft"
+            @click="signInWithEmail"
+          >
+            Sign In
+          </UButton>
+        </li>
+        <li
+          v-if="user"
+        >
+          {{ user && user.email }}
+          <UButton
             color="white"
             variant="soft"
             @click="logout"
