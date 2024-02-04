@@ -10,9 +10,10 @@ defineProps({
   },
 })
 
-const client = useSupabaseClient()
-const user = useSupabaseUser()
+// const client = useSupabaseClient()
+const user = ref(undefined)
 
+// const user = useSupabaseUser()
 const colorMode = useColorMode()
 
 function toggleDark() {
@@ -22,7 +23,7 @@ function toggleDark() {
 const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'i-heroicons-outline-moon' : 'i-heroicons-outline-sun')
 
 async function logout() {
-  await client.auth.signOut()
+  // await client.auth.signOut()
   navigateTo('/')
 }
 </script>

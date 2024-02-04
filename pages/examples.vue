@@ -7,7 +7,7 @@ defineOgImageComponent('NuxtSeo')
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-8xl mx-auto">
     <ul>
       <li>
         <NuxtLink to="/examples/accounts">

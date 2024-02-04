@@ -35,16 +35,9 @@ Worked with graphics design group and senior producers to develop full-scale HTM
 - Performed user testing for new web site structure determining an optimized categorization of web site content and navigation.
 - Created an intranet portal to chronicle development progress and to facilitate development discussions.
 
-
 ---
-Title: WebMD
-----
 
-Text:
-
-## Hot Topics ##
-
-
+## Hot Topics
 
 ## Tutorials
 
@@ -52,18 +45,18 @@ Text:
 - Rich Media Quiz Has many flavors.
 - Healthy Tips
 
-## Keywords ##
+## Keywords
 
 Ads, Quiz, Rich Media, Metrics, Video, Symptom Checker, Decision Select
 
 
-## TODO ##
+## TODO
 
-- Add Typeahead for Keywords, Articles and Tutorials
-- Randomize Affirmation Quote
+- [ ] Add Typeahead for Keywords, Articles and Tutorials
+- [ ] Randomize Affirmation Quote
 
 
-## Template ##
+## Template
 
 - How it looks
 - Assets
@@ -72,25 +65,6 @@ Ads, Quiz, Rich Media, Metrics, Video, Symptom Checker, Decision Select
   - HTML
 - Advanced
   - XSL
-
-## Paths
-
-```
-
-\\cnslx01d-con-08.portal.webmd.com\www
-\\cnslx03d-con-08.portal.webmd.com\username\public_html
-\\cnslx03d-con-08.portal.webmd.com\www
-ssh wbmd+vtolbert@cnslx03d-con-08.portal.webmd.com
-
-
-\\atlfs01\groups\Design\Public\ClientReview\Your-Brand\Healthy-Living-Patient-Solutions
-
-http://devwiki.portal.webmd.com:8000/wiki/Wiki.jsp?page=Main
-\\FS01L-CRP-06\Groups\Design\Public\ClientReview
-http://dmshare.sea1.webmd.com/publishing/consumer/publishing/con_dtm_scst/staging/webmd/consumer_assets/site_images
-http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images
-```
-
 
 ## Quotes
 

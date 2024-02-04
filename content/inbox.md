@@ -16,11 +16,34 @@ management: Confluence, JIRA
 cms: Wordpress
 crm:
 keywords: Refactoring, Static Analysis, Project Rescues, Legacy Migrations, Rapid UI Prototyping
+keywords-1: Information Systems Architecture, Managed Web Hosting, User Interface Design and Engineering, Systems Management
+keywords-2: Apache, MySQL, PHP, Foundation, Twitter Bootstrap, Susy, Sass, Compass, jQuery, Ruby
+keywords-4: GTD, Copyrighting, User Interface Design, Front-end Web Development, Apple, Tech, Atlanta, Photography, Travel
+keywords-5: Food, Recipes, Food and Recipes, Nutrition, Fitness, Exercise, Fitness and Excercise, Healthy Grooming, Sex, Relationships, Style
+---
+
+Zen:
+- Half measures are as bad as nothing at all
+- It's not fully shipped until it's fast
+- Favor focus over features
+- Keep it logically awesome
+- Encourage flow
+- Have a price
+- Responsive is better than fast
+- Non-blocking is better than blocking
+- Mind your words, they are important
+- Approachable is better than simple
+- Anything added dilutes everything else
+- Avoid administrative distraction
+- Speak like a human
+- Practicality beats purity
+- Design for failure
+
 ---
 
 
 I'm Victor Tolbert.
-I [live], [work], and [play] in Atlanta.
+I [live](/atlanta), [work](/vticonsulting), and [play](/photography) in Atlanta.
 I code and write here.
 
 Experienced engineering leader. 20+ years building and scaling backend infrastructure, data platforms and applications, and cross functional teams.

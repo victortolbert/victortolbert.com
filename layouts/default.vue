@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const online = useOnline()
-const date = useAppConfig().buildDate
-const client = useSupabaseClient()
+// const date = useAppConfig().buildDate
+// const client = useSupabaseClient()
 </script>
 
 <template>
