@@ -1,0 +1,268 @@
+[
+  {
+    "show_corporate_matching_widget": 1,
+    "event_name": "Roosevelt Franklin Elementary School Fall 2020 Special Fundraising Extravaganza",
+    "pledges_with_corporate_match": [
+      {
+        "id": 1,
+        "amount": "2.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-10-15 13:43:27"
+      },
+      {
+        "id": 2,
+        "amount": "7.50",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-15 06:00:53"
+      },
+      {
+        "id": 3,
+        "amount": "6.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-04-26 06:26:28"
+      },
+      {
+        "id": 4,
+        "amount": "5.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-04-10 10:28:46"
+      },
+      {
+        "id": 5,
+        "amount": "5.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      },
+      {
+        "id": 6,
+        "amount": "12.50",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      },
+      {
+        "id": 7,
+        "amount": "82.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      },
+      {
+        "id": 8,
+        "amount": "100.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      },
+      {
+        "id": 9,
+        "amount": "23.45",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      },
+      {
+        "id": 10,
+        "amount": "15.00",
+        "corporate_match": {
+          "company_name": "Booster Enterprises, LLC",
+          "campaign": 1,
+          "donor_first_name": "Victor",
+          "donor_last_name": "Tolbert",
+          "donor_email": "victor@example.com",
+          "status": "waiting-for-donor-action",
+          "last_donor_action": "2020-07-07T18:40:04",
+          "created_at": "2020-07-07T18:40:04",
+          "updated_at": "2020-07-07T18:40:04"
+        },
+        "participant_user": {
+          "parents": [
+            {
+              "first_name": "Parent",
+              "last_name": "Lastname",
+              "email": "parent@example.com"
+            }
+          ]
+        },
+        "deleted": 0,
+        "submitted_at": "2016-12-06 14:38:38"
+      }
+    ]
+  }
+]

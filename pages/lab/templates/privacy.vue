@@ -1,6 +1,6 @@
 <template>
   <div class="relative -mt-[5.75rem] overflow-hidden pt-[5.75rem]">
-    <!-- <img src="/img/beams-basic.png" alt="" class="absolute left-1/2 top-0 -ml-[39rem] w-[113.125rem] max-w-none"> -->
+    <!-- <img src="./img/beams-basic.png" alt="" class="absolute left-1/2 top-0 -ml-[39rem] w-[113.125rem] max-w-none"> -->
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="relative mx-auto max-w-[37.5rem] pt-20 text-center pb-24">
         <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">

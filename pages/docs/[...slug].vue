@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { withoutTrailingSlash } from 'ufo'
 
-definePageMeta({
-  layout: 'docs',
-})
-
 const route = useRoute()
 const { toc, seo } = useAppConfig()
 

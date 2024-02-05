@@ -229,12 +229,9 @@ const skillsMap = skills.map(skill => {
 //  { name: 'TypeScript', url: '/typescript' },
 //  { name: 'WordPress', url: '/wordpress' },
 // ]
-const newSkillsMap = skills.map(skill => {
+// const newSkillsMap = skills.map(skill => {
 
-
-
-
-console.log(skillsMap)
+// console.log(skillsMap)
 
 
 // const keywords = skills.map(skill => skill.keywords)
@@ -261,5 +258,3 @@ const skillLinks = skills.map((skill) => {
 })
 
 console.log(skillLinks)
-
-

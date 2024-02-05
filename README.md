@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/94de5ecf-6912-416b-aa50-712d66212ec7/deploy-status)](https://app.netlify.com/sites/amazing-belekoy-e74780/deploys)
 
 > [!WARNING]
-> This project is unfinished and heavily a work in progress.
+> This project is heavily a work in progress.
 
 ## Features
 
@@ -304,4 +304,11 @@ Software Engineer maintaining and adding enhancement to an in-house company work
   Skills: REST APIs · SQL · Object-Oriented Programming (OOP) · Git · Agile Methodologies · ASP.NET Web API · Microsoft SQL Server · .NET Framework · Programming · Microsoft Azure
 
   Telerik Web Controls
+
+  VICKNICE
 -->
+
+# Environments
+
+[Develop]: https://develop--victortolbert.netlify.app/
+[Production]: https://victortolbert.com

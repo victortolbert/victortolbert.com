@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Alabama",
+    "state_code": "AL"
+  },
+  {
+    "name": "Alaska",
+    "state_code": "AK"
+  },
+  {
+    "name": "American Samoa",
+    "state_code": "AS"
+  },
+  {
+    "name": "Arizona",
+    "state_code": "AZ"
+  },
+  {
+    "name": "Arkansas",
+    "state_code": "AR"
+  },
+  {
+    "name": "California",
+    "state_code": "CA"
+  },
+  {
+    "name": "Colorado",
+    "state_code": "CO"
+  },
+  {
+    "name": "Connecticut",
+    "state_code": "CT"
+  },
+  {
+    "name": "Delaware",
+    "state_code": "DE"
+  },
+  {
+    "name": "District Of Columbia",
+    "state_code": "DC"
+  },
+  {
+    "name": "Federated States Of Micronesia",
+    "state_code": "FM"
+  },
+  {
+    "name": "Florida",
+    "state_code": "FL"
+  },
+  {
+    "name": "Georgia",
+    "state_code": "GA"
+  },
+  {
+    "name": "Guam",
+    "state_code": "GU"
+  },
+  {
+    "name": "Hawaii",
+    "state_code": "HI"
+  },
+  {
+    "name": "Idaho",
+    "state_code": "ID"
+  },
+  {
+    "name": "Illinois",
+    "state_code": "IL"
+  },
+  {
+    "name": "Indiana",
+    "state_code": "IN"
+  },
+  {
+    "name": "Iowa",
+    "state_code": "IA"
+  },
+  {
+    "name": "Kansas",
+    "state_code": "KS"
+  },
+  {
+    "name": "Kentucky",
+    "state_code": "KY"
+  },
+  {
+    "name": "Louisiana",
+    "state_code": "LA"
+  },
+  {
+    "name": "Maine",
+    "state_code": "ME"
+  },
+  {
+    "name": "Marshall Islands",
+    "state_code": "MH"
+  },
+  {
+    "name": "Maryland",
+    "state_code": "MD"
+  },
+  {
+    "name": "Massachusetts",
+    "state_code": "MA"
+  },
+  {
+    "name": "Michigan",
+    "state_code": "MI"
+  },
+  {
+    "name": "Minnesota",
+    "state_code": "MN"
+  },
+  {
+    "name": "Mississippi",
+    "state_code": "MS"
+  },
+  {
+    "name": "Missouri",
+    "state_code": "MO"
+  },
+  {
+    "name": "Montana",
+    "state_code": "MT"
+  },
+  {
+    "name": "Nebraska",
+    "state_code": "NE"
+  },
+  {
+    "name": "Nevada",
+    "state_code": "NV"
+  },
+  {
+    "name": "New Hampshire",
+    "state_code": "NH"
+  },
+  {
+    "name": "New Jersey",
+    "state_code": "NJ"
+  },
+  {
+    "name": "New Mexico",
+    "state_code": "NM"
+  },
+  {
+    "name": "New York",
+    "state_code": "NY"
+  },
+  {
+    "name": "North Carolina",
+    "state_code": "NC"
+  },
+  {
+    "name": "North Dakota",
+    "state_code": "ND"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "state_code": "MP"
+  },
+  {
+    "name": "Ohio",
+    "state_code": "OH"
+  },
+  {
+    "name": "Oklahoma",
+    "state_code": "OK"
+  },
+  {
+    "name": "Oregon",
+    "state_code": "OR"
+  },
+  {
+    "name": "Palau",
+    "state_code": "PW"
+  },
+  {
+    "name": "Pennsylvania",
+    "state_code": "PA"
+  },
+  {
+    "name": "Puerto Rico",
+    "state_code": "PR"
+  },
+  {
+    "name": "Rhode Island",
+    "state_code": "RI"
+  },
+  {
+    "name": "South Carolina",
+    "state_code": "SC"
+  },
+  {
+    "name": "South Dakota",
+    "state_code": "SD"
+  },
+  {
+    "name": "Tennessee",
+    "state_code": "TN"
+  },
+  {
+    "name": "Texas",
+    "state_code": "TX"
+  },
+  {
+    "name": "Utah",
+    "state_code": "UT"
+  },
+  {
+    "name": "Vermont",
+    "state_code": "VT"
+  },
+  {
+    "name": "Virgin Islands",
+    "state_code": "VI"
+  },
+  {
+    "name": "Virginia",
+    "state_code": "VA"
+  },
+  {
+    "name": "Washington",
+    "state_code": "WA"
+  },
+  {
+    "name": "West Virginia",
+    "state_code": "WV"
+  },
+  {
+    "name": "Wisconsin",
+    "state_code": "WI"
+  },
+  {
+    "name": "Wyoming",
+    "state_code": "WY"
+  }
+]

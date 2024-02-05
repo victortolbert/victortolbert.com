@@ -519,6 +519,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:8589',
     public: {
       apiUrl: process.env.API_URL || 'http://localhost:8589',
       assetsSrc: '/assets',

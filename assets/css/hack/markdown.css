@@ -17,7 +17,16 @@
 .hack code {
   font-size: 1rem;
   font-style: normal;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace,
+    serif;
 }
 
 .hack code,
@@ -64,7 +73,7 @@
   overflow: hidden;
 }
 .hack h1:after {
-  content: "====================================================================================================";
+  content: '====================================================================================================';
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -89,19 +98,19 @@
   display: inline;
 }
 .hack h2:before {
-  content: "## ";
+  content: '## ';
 }
 .hack h3:before {
-  content: "### ";
+  content: '### ';
 }
 .hack h4:before {
-  content: "#### ";
+  content: '#### ';
 }
 .hack h5:before {
-  content: "##### ";
+  content: '##### ';
 }
 .hack h6:before {
-  content: "###### ";
+  content: '###### ';
 }
 .hack li {
   position: relative;
@@ -114,16 +123,16 @@
   left: 0;
 }
 .hack ul > li:after {
-  content: "-";
+  content: '-';
 }
 .hack ol {
   counter-reset: ol;
 }
 .hack ol > li:after {
-  content: counter(ol) ".";
+  content: counter(ol) '.';
   counter-increment: ol;
 }
-.hack ol li:nth-child(n+10):after {
+.hack ol li:nth-child(n + 10):after {
   left: -7px;
 }
 .hack blockquote {
@@ -133,7 +142,7 @@
   overflow: hidden;
 }
 .hack blockquote:after {
-  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
   white-space: pre;
   position: absolute;
   top: 0;
@@ -142,7 +151,7 @@
 }
 .hack em:before,
 .hack em:after {
-  content: "*";
+  content: '*';
   display: inline;
 }
 .hack pre code:before,
@@ -154,7 +163,7 @@
 }
 .hack code:before,
 .hack code:after {
-  content: "`";
+  content: '`';
   display: inline;
 }
 
@@ -166,7 +175,7 @@
   margin: 20px 0;
 }
 .hack hr:after {
-  content: "----------------------------------------------------------------------------------------------------";
+  content: '----------------------------------------------------------------------------------------------------';
   position: absolute;
   top: 0;
   left: 0;
@@ -180,5 +189,5 @@
   }
 }
 .hack-ones ol > li:after {
-  content: "1.";
+  content: '1.';
 }

@@ -15,7 +15,7 @@ const online = useOnline()
     <div class="h-32" />
 
     <main class="flex-1">
-        <slot />
+      <slot />
     </main>
 
     <div class="h-32" />

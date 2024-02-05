@@ -1,5 +1,5 @@
 /* @import 'color-preset'; */
-@import "color-preset/material.css";
+@import 'color-preset/material.css';
 
 @import './vars.css';
 @import './mixins.css';

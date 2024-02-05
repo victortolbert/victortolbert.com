@@ -1,6 +1,6 @@
-@import "color-preset";
-@import "../vars.css";
-@import "../mixins.css";
+@import 'color-preset';
+@import '../vars.css';
+@import '../mixins.css';
 
 .solarized-dark {
   background-color: $solarized-dark-color-bg;
@@ -52,13 +52,14 @@
   /**
    * Progress bar
    */
-   & .progress-bar-filled {
-     background-color: $light-green-800;
-   }
+  & .progress-bar-filled {
+    background-color: $light-green-800;
+  }
 
-   & .progress-bar-filled:before, & .progress-bar-filled:after {
-     color: $blue-grey-300;
-   }
+  & .progress-bar-filled:before,
+  & .progress-bar-filled:after {
+    color: $blue-grey-300;
+  }
 
   /**
    * table
@@ -121,7 +122,8 @@
   }
 
   & .btn.btn-ghost {
-    @mixin buttons-ghost-dark $grey-300, $blue-300, $green-300, $cyan-300, $red-300, $orange-300;
+    @mixin buttons-ghost-dark $grey-300, $blue-300, $green-300, $cyan-300,
+      $red-300, $orange-300;
   }
 
   /**
@@ -141,7 +143,8 @@
       color: $blue-grey-400;
       border-color: $blue-grey-300;
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         color: white;
         border-color: $blue-grey-400;
       }

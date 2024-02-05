@@ -1,0 +1,73 @@
+<script lang="ts" setup>
+definePageMeta({
+  layout: false,
+})
+</script>
+
+<template>
+  <div class="example">
+    <section>
+      <div>
+        <h1>This div has a title</h1>
+      </div>
+      <div>
+        <p>This div has a regular paragraph</p>
+      </div>
+      <div>
+        <a href="#">adsf</a>
+      </div>
+      <div>
+        <p class="fancy-paragraph">
+          This div has a paragraph with a class on it
+        </p>
+      </div>
+      <div>
+        <p>Lorem, ipsum dolor sit amet <a href="#">consectetur adipisicing eli</a>t. Recusandae, repellendus!</p>
+      </div>
+      <div>
+        <p>This div has a regular paragraph</p>
+      </div>
+    </section>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.example {
+  font-family: system-ui;
+  padding: 2rem 1rem;
+  background-color: hsl(200 50% 5%);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+section > div {
+  background-color: hsl(200 20% 95%);
+  padding: 1rem;
+  box-shadow: 0 0 1rem hsl(0 0% 0% / 0.15);
+}
+
+div:has(h1) {
+  background-color: hotpink;
+}
+
+div:has(p) {
+  background-color: limegreen;
+}
+
+div:has(p:empty) {
+  background: firebrick;
+}
+
+div:has(.fancy-paragraph) {
+  color: rebeccapurple;
+  background: white;
+}
+
+div:has(> a) {
+  background: steelblue;
+}
+</style>

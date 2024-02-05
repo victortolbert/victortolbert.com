@@ -26,7 +26,8 @@
 
 @font-face {
   font-family: 'Salesforce Sans';
-  src: url('/assets/fonts/salesforce/SalesforceSans-Italic.woff') format('woff');
+  src: url('/assets/fonts/salesforce/SalesforceSans-Italic.woff')
+    format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;

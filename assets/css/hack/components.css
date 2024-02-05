@@ -4,7 +4,7 @@
 
 .progress-bar {
   height: 8px;
-  opacity: .8;
+  opacity: 0.8;
   background-color: #ccc;
   margin-top: 12px;
   &.progress-bar-show-percent {
@@ -15,7 +15,7 @@
 .progress-bar-filled {
   background-color: #808080;
   height: 100%;
-  transition: width .3s ease;
+  transition: width 0.3s ease;
   position: relative;
   width: 0%;
 
@@ -70,7 +70,7 @@ table {
  * Form
  */
 .form {
-  width: 30rem
+  width: 30rem;
 }
 
 .form-group {
@@ -105,7 +105,7 @@ table {
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   width: 20rem;
   height: 38px;
   background-color: transparent;
@@ -130,7 +130,7 @@ textarea.form-control {
   padding: 1rem 0;
   border-bottom: 2px solid #ccc;
   border-left: 2px solid #ccc;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 select.form-control {
@@ -143,7 +143,7 @@ select.form-control {
 
 .help-block {
   color: #999;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .form-actions {
@@ -160,7 +160,7 @@ select.form-control {
   justify-content: center;
   cursor: pointer;
   outline: none;
-  padding: .65rem 2rem;
+  padding: 0.65rem 2rem;
   font-size: 1rem;
   user-select: none;
   position: relative;
@@ -250,7 +250,7 @@ select.form-control {
     color: #333;
     text-align: center;
     background-color: #ddd;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 }
 
@@ -284,7 +284,7 @@ select.form-control {
  * Media
  */
 .media:not(:last-child) {
-  margin-bottom: calc(15/12)rem;
+  margin-bottom: calc(15 / 12) rem;
 }
 
 .media-left {
@@ -305,12 +305,12 @@ select.form-control {
 }
 
 .media-heading {
-  font-size: calc(14/12)rem;
+  font-size: calc(14 / 12) rem;
   font-weight: 700;
 }
 
 .media-content {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 
 /**
@@ -346,7 +346,7 @@ select.form-control {
   content: '&nbsp;';
   height: 20px;
   width: 20px;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   animation: rotate 0.6s infinite linear;
   border: 2px solid $pink;
   border-right-color: transparent;
@@ -369,8 +369,12 @@ select.form-control {
 }
 
 @keyframes rotate {
-  0%    { transform: rotate(0deg); }
-  100%  { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /**
@@ -383,7 +387,8 @@ select.form-control {
     color: $grey-700;
     border-color: $grey-700;
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       color: black;
       border-color: black;
       background-color: transparent;

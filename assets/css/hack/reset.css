@@ -11,11 +11,25 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
-  font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace,
+    serif;
   word-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.3em;
 }
 
@@ -34,7 +48,8 @@ pre {
 }
 
 pre code,
-code[class*="language-"], pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   font-weight: 100;
   text-shadow: none;
   margin: 1.75rem 0;
@@ -42,12 +57,12 @@ code[class*="language-"], pre[class*="language-"] {
 
 a {
   cursor: pointer;
-  color: #FF2E88;
+  color: #ff2e88;
   text-decoration: none;
-  border-bottom: 1px solid #FF2E88;
+  border-bottom: 1px solid #ff2e88;
 }
 
 a:hover {
-  background-color: #FF2E88;
+  background-color: #ff2e88;
   color: white;
 }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Database } from '~~/types/database.types'
-
 // const client = useSupabaseClient<Database>()
 // const user = useSupabaseUser()
 

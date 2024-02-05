@@ -23,7 +23,7 @@ export default defineAppConfig({
     primary: 'neutral',
     gray: 'neutral',
     container: {
-      constrained: 'max-w-3xl',
+      constrained: 'max-w-4xl',
     },
     content: {
       prose: {
@@ -92,7 +92,7 @@ export default defineAppConfig({
     }],
   },
   footer: {
-    credits: 'Copyright &copy; 2024',
+    credits: 'Copyright © 2024',
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-nuxtdotjs',
