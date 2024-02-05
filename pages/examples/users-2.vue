@@ -32,6 +32,11 @@ export default {
     <div v-if="error">
       {{ error }}
     </div>
-    <AsyncUser v-for="user in users.data" v-else :key="user.id" :user="user" />
+    <AsyncUser
+      v-for="user in users.data"
+      v-else
+      :key="user.id"
+      :user="user"
+    />
   </div>
 </template>

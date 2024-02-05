@@ -2,6 +2,7 @@
 
 ## defineComponent
 ## defineEventHandler
+## defineNitroPlugin
 ## defineNuxtPlugin
 ## defineNuxtRouteMiddleware
 ## defineStore

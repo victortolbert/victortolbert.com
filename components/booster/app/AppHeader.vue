@@ -141,7 +141,11 @@ function openProgramNotifications(program) {
   //   },
   // })
 
-  // this.blur()
+  // blur()
+}
+
+function blur() {
+  document.getElementById('app').style.filter = 'blur(4px)'
 }
 </script>
 

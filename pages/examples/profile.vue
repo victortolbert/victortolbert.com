@@ -1,7 +1,14 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div>
     <UAvatar
-      src="https://avatars.githubusercontent.com/u/739984?v=4"
+      chip-color="success"
+      chip-text=""
+      chip-position="top-right"
+      size="3xl"
+      src="https://avatars.githubusercontent.com/u/2476?v=4"
       alt="Avatar"
     />
   </div>

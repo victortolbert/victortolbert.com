@@ -1,9 +1,9 @@
 <template>
   <div data-layout="centered" class="demo no-resize">
     <ul data-component="" data-padding-unset="" class="smol-avatar-list">
-      <li><a href="#smol-avatar-list"><img alt="Avatar 1" src="https://avataaars.io/?avatarStyle=Transparent&amp;topType=LongHairBun&amp;accessoriesType=Blank&amp;hairColor=Auburn&amp;facialHairType=BeardMedium&amp;facialHairColor=Auburn&amp;clotheType=ShirtCrewNeck&amp;clotheColor=Blue01&amp;eyeType=Side&amp;eyebrowType=RaisedExcitedNatural&amp;mouthType=Serious&amp;skinColor=Tanned"></a></li>
-      <li><a href="#smol-avatar-list"><img alt="Avatar 2" src="https://avataaars.io/?avatarStyle=Transparent&amp;topType=LongHairDreads&amp;accessoriesType=Blank&amp;hairColor=Brown&amp;facialHairType=Blank&amp;clotheType=ShirtScoopNeck&amp;clotheColor=PastelGreen&amp;eyeType=Default&amp;eyebrowType=DefaultNatural&amp;mouthType=Smile&amp;skinColor=Tanned"></a></li>
-      <li><a href="#smol-avatar-list"><img alt="Avatar 3" src="https://avataaars.io/?avatarStyle=Transparent&amp;topType=LongHairCurly&amp;hairColor=BrownDark&amp;facialHairType=Blank&amp;clotheType=GraphicShirt&amp;clotheColor=Pink&amp;graphicType=Diamond&amp;eyeType=Side&amp;eyebrowType=Default&amp;mouthType=Default&amp;skinColor=Brown"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 1" src="/assets/images/avatars/avartar-1.svg"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 2" src="/assets/images/avatars/avartar-1.svg"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 3" src="/assets/images/avatars/avartar-1.svg"></a></li>
     </ul>
   </div>
 </template>

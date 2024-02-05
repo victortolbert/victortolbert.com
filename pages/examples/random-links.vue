@@ -31,3 +31,9 @@ function generateRandomLink() {
   return link
 }
 </script>
+
+<template>
+  <div>
+    {{ generateRandomLink() }}
+  </div>
+</template>

@@ -3,11 +3,11 @@ import { XMarkIcon } from '@heroicons/vue/20/solid'
 </script>
 
 <template>
-  <!--
-    Make sure you add some bottom padding to pages that include a sticky banner like this to prevent
-    your content from being obscured when the user scrolls to the bottom of the page.
-  -->
   <div class="fixed inset-x-0 bottom-0">
+    <!--
+      Make sure you add some bottom padding to pages that include a sticky banner like this to prevent
+      your content from being obscured when the user scrolls to the bottom of the page.
+    -->
     <div class="flex items-center gap-x-6 bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <p class="text-sm leading-6 text-white">
         <a href="#">

@@ -379,6 +379,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@formkit/auto-animate/nuxt',
     '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
     '@vueuse/sound/nuxt',
     '@nuxt/content',
     '@nuxt/image',
@@ -408,7 +409,6 @@ export default defineNuxtConfig({
     // '@unlazy/nuxt',
     // '@vee-validate/nuxt',
     // '@vue-email/nuxt',
-    // '@vueuse/motion/nuxt',
     // 'nuxt-cloudflare-analytics',
     // 'nuxt-component-meta',
     // 'nuxt-gtag',
@@ -469,7 +469,7 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       'postcss-nested': {},
-      'postcss-import': {},
+      // 'postcss-import': {},
       'postcss-mixins': {},
       // 'postcss-simple-vars': {},
       'postcss-preset-env': {},
@@ -672,7 +672,14 @@ export default defineNuxtConfig({
     viewer: false,
   },
 
-  typescript: { strict: false },
+  typescript: {
+    strict: false,
+    tsConfig: {
+      compilerOptions: {
+        types: ['@oruga-ui/oruga-next/volar'],
+      },
+    },
+  },
 
   ui: {
     icons: [
@@ -692,13 +699,14 @@ export default defineNuxtConfig({
       cssMinify: 'esbuild',
     },
 
-    // css: {
-    //   preprocessorOptions: {
-    //     sass: {
-    //       additionalData: '@use "~/assets/_vars.sass" as *\n',
-    //     },
-    //   },
-    // },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;\n',
+        },
+
+      },
+    },
 
     optimizeDeps: {
       include: [

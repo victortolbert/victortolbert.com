@@ -84,6 +84,11 @@ export default createStore({
       weekendsVisible: false,
       //
       activeTab: 0,
+      lang: {
+        event_info: {
+          event_date: 'Event Date',
+        },
+      },
       s3Bucket: 'https://s3.amazonaws.com/recipe-book-images/',
       program: {
         microsite: {

@@ -137,24 +137,26 @@ export default {
 
 <style lang="scss">
     .program-overview .readmore-wrapper {
-        .toggled p {
-            margin-bottom: 1em;
-        }
-        .toggled span > :last-child {
-            margin-bottom: 0em;
-        }
-        ol, ul {
-            padding-left: 40px;
-            margin-top: 1em;
-            margin-bottom: 1em;
+  .toggled p {
+    margin-bottom: 1em;
+  }
+  .toggled span > :last-child {
+    margin-bottom: 0em;
+  }
+  ol,
+  ul {
+    padding-left: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-            ol, ul {
-                margin-top: 0em;
-                margin-bottom: 0em;
-            }
-        }
-        ul {
-            list-style-type: disc;
-        }
+    ol,
+    ul {
+      margin-top: 0em;
+      margin-bottom: 0em;
     }
+  }
+  ul {
+    list-style-type: disc;
+  }
+}
 </style>

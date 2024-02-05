@@ -38,28 +38,30 @@ function onLeave(el, done) {
 </script>
 
 <template>
-  <input v-model="search" type="search">
-  <div v-if="pokemon.length">
-    <TransitionGroup
-      tag="ul"
-      :css="false"
-      @before-enter="onBeforeEnter"
-      @enter="onEnter"
-      @leave="onLeave"
-    >
-      <li
-        v-for="(creature, index) in matches"
-        :key="creature.name"
-        :data-index="index"
+  <article>
+    <input v-model="search" type="search">
+    <div v-if="pokemon.length">
+      <TransitionGroup
+        tag="ul"
+        :css="false"
+        @before-enter="onBeforeEnter"
+        @enter="onEnter"
+        @leave="onLeave"
       >
-        {{ creature.name }}
-        <button @click="pokemon.splice(index, 1)">
-          X
-        </button>
-      </li>
-    </TransitionGroup>
-    <button @click="shuffleArray(pokemon)">
-      Shuffle
-    </button>
-  </div>
+        <li
+          v-for="(creature, index) in matches"
+          :key="creature.name"
+          :data-index="index"
+        >
+          {{ creature.name }}
+          <button @click="pokemon.splice(index, 1)">
+            X
+          </button>
+        </li>
+      </TransitionGroup>
+      <button @click="shuffleArray(pokemon)">
+        Shuffle
+      </button>
+    </div>
+  </article>
 </template>

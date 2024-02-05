@@ -1,0 +1,10 @@
+export const STATUS_ENTERED = 1
+export const STATUS_CONFIRMED = 2
+export const STATUS_PAID = 3
+export const STATUS_PENDING = 4
+export const STATUS_DELETED = 5
+export const STATUS_CANCELLED = 6
+export const STATUS_ABANDONED = 7
+export const STATUS_PAYMENT_SCHEDULED = 8
+export const PLEDGE_TYPE_PPL = 1
+export const PLEDGE_TYPE_FLAT = 3
