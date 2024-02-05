@@ -3,10 +3,7 @@ import BoosterAddContactsModal from '~/components/booster/AddContactsModal'
 import BoosterToastModal from '~/components/booster/ToastModal'
 
 export default {
-  name: 'AddContactsButtons',
-  components: {
-    BoosterToastModal,
-  },
+  emits: ['addContactsToDisplay'],
   data() {
     return {
       contacts: [],
@@ -28,8 +25,11 @@ export default {
         const s = 'script'
         const a = d.createElement(s)
         const m = d.getElementsByTagName(s)[0]
-        a.async = 1; a.src = u; m.parentNode.insertBefore(a, m)
+        a.async = 1
+        a.src = u
+        m.parentNode.insertBefore(a, m)
       })('//api.cloudsponge.com/widget/V-2F2bg0uFYke7PBz9c7uw.js')
+      // eslint-disable-next-line ts/no-this-alias
       const self = this
 
       window.csPageOptions = {

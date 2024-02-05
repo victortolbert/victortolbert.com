@@ -10,6 +10,7 @@ export default {
       default: null,
     },
   },
+  emits: ['close', 'previousSponsorsEmailed'],
   data() {
     return {
       isSending: false,

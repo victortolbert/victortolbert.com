@@ -2,97 +2,141 @@
 @import 'bulma/sass/utilities/_all';
 
 // 1. Import the initial variables
-@import "bulma/sass/utilities/initial-variables";
+@import 'bulma/sass/utilities/initial-variables';
 
 // 2. Set your own initial variables
 
 // Named Brand Colors
-$solitude                   : #f8fcff;
-$congress-blue              : #02518a;
-$mariner                    : #2e86de;
-$shakespeare                : #57b6d3;
-$bondi-blue                 : #02b6bc;
-$aqua-forest                : #57af7b;
-$sea-green                  : #2db564;
-$coral                      : #faa638;
-$monza                      : #d0021b;
-$facebook-blue              : #3B5998;
-$email-blue                 : #00A6D9;
-$text-message-green         : #57AF7B;
-$copy-link-green            : #00999E;
+$solitude: #f8fcff;
+$congress-blue: #02518a;
+$mariner: #2e86de;
+$shakespeare: #57b6d3;
+$bondi-blue: #02b6bc;
+$aqua-forest: #57af7b;
+$sea-green: #2db564;
+$coral: #faa638;
+$monza: #d0021b;
+$facebook-blue: #3b5998;
+$email-blue: #00a6d9;
+$text-message-green: #57af7b;
+$copy-link-green: #00999e;
 
-$red                        : $monza;
-$blue                       : $mariner;
-$green                      : $sea-green;
-$orange                     : $coral;
+$red: $monza;
+$blue: $mariner;
+$green: $sea-green;
+$orange: $coral;
 
 // Primary Colors
-$primary                    : $green;
-$primary-invert             : findColorInvert($primary);
-$secondary                  : $blue;
-$secondary-invert           : findColorInvert($secondary);
-$tertiary                   : $orange;
-$tertiary-invert            : findColorInvert($tertiary);
+$primary: $green;
+$primary-invert: findColorInvert($primary);
+$secondary: $blue;
+$secondary-invert: findColorInvert($secondary);
+$tertiary: $orange;
+$tertiary-invert: findColorInvert($tertiary);
 
 // Alerts and messages
-$danger                     : $red;
-$danger-invert              : findColorInvert($danger);
-$warning                    : $orange;
-$warning-invert             : findColorInvert($warning);
-$success                    : $green;
-$success-invert             : findColorInvert($success);
-$info                       : $blue;
-$info-invert                : findColorInvert($info);
+$danger: $red;
+$danger-invert: findColorInvert($danger);
+$warning: $orange;
+$warning-invert: findColorInvert($warning);
+$success: $green;
+$success-invert: findColorInvert($success);
+$info: $blue;
+$info-invert: findColorInvert($info);
 
-$facebook                   : $facebook-blue;
-$facebook-invert            : findColorInvert($facebook);
-$email                      : $email-blue;
-$email-invert               : findColorInvert($email);
-$text-message               : $text-message-green;
-$text-message-invert        : findColorInvert($text-message);
-$copy-link                  : $copy-link-green;
-$copy-link-invert           : findColorInvert($copy-link);
+$facebook: $facebook-blue;
+$facebook-invert: findColorInvert($facebook);
+$email: $email-blue;
+$email-invert: findColorInvert($email);
+$text-message: $text-message-green;
+$text-message-invert: findColorInvert($text-message);
+$copy-link: $copy-link-green;
+$copy-link-invert: findColorInvert($copy-link);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
-    'white'                 : ($white, $black),
-    'black'                 : ($black, $white),
-    'light'                 : ($light, $light-invert),
-    'dark'                  : ($dark, $dark-invert),
-    'primary'               : ($primary, $primary-invert),
-    'secondary'             : ($secondary, $secondary-invert),
-    'tertiary'              : ($tertiary, $tertiary-invert),
-    'info'                  : ($info, $info-invert),
-    'success'               : ($success, $success-invert),
-    'warning'               : ($warning, $warning-invert),
-    'danger'                : ($danger, $danger-invert),
-    'facebook'              : ($facebook, $facebook-invert),
-    'email'                 : ($email, $email-invert),
-    'text-message'          : ($text-message, $text-message-invert),
-    'copy-link'             : ($copy-link, $copy-link-invert),
+  'white': (
+    $white,
+    $black,
+  ),
+  'black': (
+    $black,
+    $white,
+  ),
+  'light': (
+    $light,
+    $light-invert,
+  ),
+  'dark': (
+    $dark,
+    $dark-invert,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+  'secondary': (
+    $secondary,
+    $secondary-invert,
+  ),
+  'tertiary': (
+    $tertiary,
+    $tertiary-invert,
+  ),
+  'info': (
+    $info,
+    $info-invert,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+  ),
+  'warning': (
+    $warning,
+    $warning-invert,
+  ),
+  'danger': (
+    $danger,
+    $danger-invert,
+  ),
+  'facebook': (
+    $facebook,
+    $facebook-invert,
+  ),
+  'email': (
+    $email,
+    $email-invert,
+  ),
+  'text-message': (
+    $text-message,
+    $text-message-invert,
+  ),
+  'copy-link': (
+    $copy-link,
+    $copy-link-invert,
+  ),
 );
 
 // Typography
-$font-path                  : "/v3-assets/dashboard/fonts";
-$family-serif               : "Merriweather", "Georgia", serif;
-$family-sans-serif          : 'Source Sans Pro', 'Roboto', sans-serif;
-$family-monospace           : "Operator Mono", "Roboto Mono", "Consolas", monospace;
-$family-primary             : $family-sans-serif;
-
+$font-path: '/v3-assets/dashboard/fonts';
+$family-serif: 'Merriweather', 'Georgia', serif;
+$family-sans-serif: 'Source Sans Pro', 'Roboto', sans-serif;
+$family-monospace: 'Operator Mono', 'Roboto Mono', 'Consolas', monospace;
+$family-primary: $family-sans-serif;
 
 // Font Weight
-$weight-light               : 300;
-$weight-normal              : 400;
-$weight-medium              : 500;
-$weight-semibold            : 600;
-$weight-bold                : 700;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
 
 // Links
-$link                       : $secondary;
-$link-invert                : $secondary-invert;
-$link-focus-border          : $secondary;
+$link: $secondary;
+$link-invert: $secondary-invert;
+$link-focus-border: $secondary;
 
-$label-weight               : $weight-light;
+$label-weight: $weight-light;
 $modal-background-background-color: rgba(104, 103, 103, 0.1);
 
 // input
@@ -103,13 +147,13 @@ $speed-slow: 150ms;
 $speed-slower: 800ms;
 
 //$input-radius               : 1.25rem;
-$input-icon-color           : $dark;
+$input-icon-color: $dark;
 
 // Margin
 .mt-18 {
-    margin-top: 4.5rem;
+  margin-top: 4.5rem;
 }
 
 .max-w-2xs {
-    max-width: 15rem;
+  max-width: 15rem;
 }

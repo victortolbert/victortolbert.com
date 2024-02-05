@@ -9,6 +9,7 @@ export default {
     BoosterAccordion,
     BoosterAccordionModal,
   },
+  emits: ['close'],
   data() {
     return {
       EE_ENROLLMENT: 6,
@@ -143,7 +144,7 @@ export default {
     :header="lang.emails_we_send"
     class="mx-4"
   >
-    <template>
+    <template #default>
       <BoosterAccordion
         v-for="(template, index) in templates"
         :key="template.id"
@@ -164,7 +165,7 @@ export default {
             }}
           </p>
         </template>
-        <template>
+        <template #default>
           <div class="modal-card-body bg-white p-4 md:p-6 text-sm sm:text-base md:text-lg">
             <p class="mb-4">
               Hey, {{ lang.sponsor_name }}!

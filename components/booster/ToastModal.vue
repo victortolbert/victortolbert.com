@@ -19,6 +19,7 @@ export default {
       default: null,
     },
   },
+  emits: ['close'],
   mounted() {
     setTimeout(() => {
       this.closeModal()

@@ -1,4 +1,5 @@
 <script>
+import { ref } from 'vue'
 import BoosterAppHeader from '~/components/booster/app/AppHeader'
 import BoosterPageHeader from '~/components/booster/page/PageHeader'
 
@@ -20,6 +21,12 @@ export default {
       type: Number,
       default: null,
     },
+  },
+  setup() {
+    const contactsTable = ref(null)
+    return {
+      contactsTable,
+    }
   },
   data() {
     return {

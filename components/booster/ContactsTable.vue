@@ -135,7 +135,7 @@ export default {
           contact,
         },
         events: {
-          'removeContact': (contact) => {
+          removeContact: (contact) => {
             this.removeContact(contact)
           },
         },

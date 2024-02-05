@@ -14,6 +14,7 @@ export default {
       default: 'Cancel',
     },
   },
+  emits: ['close', 'confirmed'],
   computed: {
     lang() {
       return this.$store.state.lang

@@ -95,7 +95,7 @@ export default {
       :title="item.title"
       :should-reslick="true"
     >
-      <template>
+      <template #default>
         <Component
           :is="item.name"
           :program="program"

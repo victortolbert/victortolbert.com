@@ -674,10 +674,8 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: false,
-    tsConfig: {
-      compilerOptions: {
-        types: ['@oruga-ui/oruga-next/volar'],
-      },
+    compilerOptions: {
+      types: ['@oruga-ui/oruga-next/volar.d.ts'],
     },
   },
 

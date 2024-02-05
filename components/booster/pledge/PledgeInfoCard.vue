@@ -372,7 +372,7 @@ export default {
                 class="has-text-grey ml-6 flex flex-col items-center"
                 @click.prevent="flip"
               >
-                <FlipIcon style="width: 14px" />
+                <BoosterFlipIcon style="width: 14px" />
               </a>
             </div>
           </div>

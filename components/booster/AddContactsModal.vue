@@ -1,12 +1,6 @@
 <script>
-import AddContactsButtons from '~/components/booster/AddContactsButtons'
-// import BoosterToastModal from '~/components/booster/ToastModal'
-
 export default {
-  name: 'AddContactsModal',
-  components: {
-    // BoosterToastModal,
-  },
+  emits: ['close', 'addContactToDisplay'],
   data() {
     return {
       isSending: false,
@@ -37,14 +31,17 @@ export default {
     firstNameErrors() {
       if (this.errors)
         return this.errors['contacts.0.firstName']
+      return ''
     },
     lastNameErrors() {
       if (this.errors)
         return this.errors['contacts.0.lastName']
+      return ''
     },
     emailAddressErrors() {
       if (this.errors)
         return this.errors['contacts.0.emailAddress']
+      return ''
     },
     lang() {
       return this.$store.state.lang

@@ -9,6 +9,7 @@ export default {
       default: null,
     },
   },
+  emits: ['close', 'removeContact'],
   data() {
     return {
       isSending: false,

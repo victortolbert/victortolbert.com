@@ -4,7 +4,7 @@ import { ErrorMessage, Field, Form } from 'vee-validate'
 export default {
   name: 'DynamicForm',
   components: {
-    Form,
+    AppForm: Form,
     Field,
     ErrorMessage,
   },
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <Form>
+  <AppForm>
     <div
       v-for="{ as, name, label, children, ...attrs } in schema.fields"
       :key="name"
@@ -39,5 +39,5 @@ export default {
       <ErrorMessage :name="name" />
     </div>
     <button>Submit</button>
-  </Form>
+  </AppForm>
 </template>

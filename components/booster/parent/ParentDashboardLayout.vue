@@ -3,17 +3,18 @@ import chunk from 'lodash/chunk'
 import { mapGetters } from 'vuex'
 import BoosterBetaBanner from '~/components/booster/BetaBanner.vue'
 import BoosterEventInfo from '~/components/booster/event/EventInfo.vue'
-import BoosterParentDashboardAccordion from '~/components/booster/parent/ParentDashboardAccordion.vue'
+
+// import BoosterParentDashboardAccordion from '~/components/booster/parent/ParentDashboardAccordion.vue'
 
 import BoosterParticipantCard from '~/components/booster/participant/ParticipantCard.vue'
 import BoosterParticipantGroup from '~/components/booster/participant/ParticipantGroup.vue'
 import BoosterParticipantRewards from '~/components/booster/participant/ParticipantRewards.vue'
 
-import BoosterPledgeButton from '~/components/booster/pledge/PledgeButton.vue'
-import BoosterShareModalButton from '~/components/booster/share/ShareModalButton.vue'
+// import BoosterPledgeButton from '~/components/booster/pledge/PledgeButton.vue'
+// import BoosterShareModalButton from '~/components/booster/share/ShareModalButton.vue'
 
-import BoosterSponsorLogos from '~/components/booster/SponsorLogos.vue'
-import BoosterActivityRewards from '~/components/booster/activity/ActivityRewards.vue'
+// import BoosterSponsorLogos from '~/components/booster/SponsorLogos.vue'
+// import BoosterActivityRewards from '~/components/booster/activity/ActivityRewards.vue'
 import BoosterBottomFloatBar from '~/components/booster/BottomFloatBar.vue'
 
 export default {
@@ -22,14 +23,14 @@ export default {
   components: {
     BoosterBetaBanner,
     BoosterEventInfo,
-    BoosterParentDashboardAccordion,
+    // BoosterParentDashboardAccordion,
     BoosterParticipantCard,
     BoosterParticipantGroup,
     BoosterParticipantRewards,
-    BoosterPledgeButton,
-    BoosterSponsorLogos,
-    BoosterActivityRewards,
-    BoosterShareModalButton,
+    // BoosterPledgeButton,
+    // BoosterSponsorLogos,
+    // BoosterActivityRewards,
+    // BoosterShareModalButton,
     BoosterBottomFloatBar,
   },
   props: {
