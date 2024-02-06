@@ -7,12 +7,18 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   articleAuthor: 'Fayaz Ahmed',
 })
+definePageMeta({
+  breadcrumb: {
+    hideCurrent: true,
+  },
+})
 </script>
 
 <template>
   <main class="min-h-screen">
+    <Breadcrumbs />
     <div
-      class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
+      class="mt-1.5 prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg"
     >
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>

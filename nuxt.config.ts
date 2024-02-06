@@ -354,6 +354,7 @@ export default defineNuxtConfig({
   // },
 
   image: {
+    domains: ['victortolbert.com'],
     providers: {
       spoonacular: {
         provider: '~/providers/spoonacular.ts',

@@ -11,9 +11,9 @@ const { styles } = useFixedHeader(headerRef)
 
 const items = [
   {
-    name: 'Resume',
+    name: 'Home',
     path: '/',
-    icon: 'ph:read-cv-logo-duotone',
+    icon: 'ph:house-duotone',
   },
   {
     name: 'Projects',

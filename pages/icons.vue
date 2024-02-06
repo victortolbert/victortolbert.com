@@ -12,6 +12,7 @@ const icons = {
 
 <template>
   <article>
+    <Breadcrumbs />
     <section class="flex gap-1.5">
       <FontAwesomeIcon icon="fa-brands fa-github-square" size="2x" class="text-[#333]" />
       <FontAwesomeIcon icon="fa-brands fa-youtube-square" size="2x" class="text-[#f00]" />

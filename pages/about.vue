@@ -9,7 +9,8 @@ useSeoMeta({
 
 <template>
   <main class="min-h-screen w-full relative mx-auto max-w-3xl print:p-12">
-    <div class="space-y-24">
+    <Breadcrumbs />
+    <div class="mt-1.5 space-y-24">
       <HomeIntro />
       <HomeSocialLinks />
       <HomeFeaturedProjects />

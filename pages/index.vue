@@ -8,10 +8,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 definePageMeta({
-  title: 'Resume',
+  title: 'Home',
   // breadcrumb: 'Resume',
   breadcrumb: {
-    icon: 'i-heroicons-home',
+    icon: 'i-ph-house-duotone',
     ariaLabel: 'Home',
   },
 })
@@ -123,8 +123,6 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 
 <template>
   <div class="w-full relative mx-auto max-w-3xl print:p-12">
-    <Breadcrumbs />
-
     <main class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">

@@ -8,7 +8,8 @@ defineOgImageComponent('NuxtSeo')
 
 <template>
   <div class="max-w-8xl mx-auto">
-    <ul>
+    <Breadcrumbs />
+    <ul class="mt-1.5">
       <li>
         <NuxtLink to="/examples/accounts">
           Accounts
