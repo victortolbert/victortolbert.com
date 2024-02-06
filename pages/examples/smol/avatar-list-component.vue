@@ -1,9 +1,9 @@
 <template>
   <div data-layout="centered" class="demo no-resize">
     <ul data-component="" data-padding-unset="" class="smol-avatar-list">
-      <li><a href="#smol-avatar-list"><img alt="Avatar 1" src="/assets/images/avatars/avartar-1.svg"></a></li>
-      <li><a href="#smol-avatar-list"><img alt="Avatar 2" src="/assets/images/avatars/avartar-1.svg"></a></li>
-      <li><a href="#smol-avatar-list"><img alt="Avatar 3" src="/assets/images/avatars/avartar-1.svg"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 1" src="/assets/images/avatars/avatar-1.svg"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 2" src="/assets/images/avatars/avatar-1.svg"></a></li>
+      <li><a href="#smol-avatar-list"><img alt="Avatar 3" src="/assets/images/avatars/avatar-1.svg"></a></li>
     </ul>
   </div>
 </template>
