@@ -15,8 +15,16 @@ const { data: projects } = await useAsyncData('projects-all', () =>
     <Breadcrumbs />
     <AppHeader class="mt-1.5 mb-12" title="Projects" :description="description" />
 
-    <section class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
+    <LogoCloud />
+
+    <section v-if="false" class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
       <!-- <LogoHancockClaims /> -->
+      <NuxtLink to="/att" class="grid">
+        <LogoATT />
+      </NuxtLink>
+      <NuxtLink to="/autotrader" class="grid">
+        <LogoAutoTrader />
+      </NuxtLink>
       <NuxtLink to="/booster" class="grid">
         <LogoBooster />
       </NuxtLink>
@@ -26,14 +34,8 @@ const { data: projects } = await useAsyncData('projects-all', () =>
       <NuxtLink to="/videa" class="grid">
         <LogoVidea />
       </NuxtLink>
-      <NuxtLink to="/att" class="grid">
-        <LogoATT />
-      </NuxtLink>
       <NuxtLink to="/webmd" class="grid">
         <LogoWebmd />
-      </NuxtLink>
-      <NuxtLink to="/autotrader" class="grid">
-        <LogoAutoTrader />
       </NuxtLink>
     </section>
 

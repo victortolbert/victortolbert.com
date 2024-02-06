@@ -1,3 +1,15 @@
+<script setup>
+definePageMeta({
+  title: 'Design Principles',
+  description: 'Through this guide you will learn how to apply the design system’s voice and choose the right tone. Using the right voice and tone is important as it allows us to better connect with our users.',
+  breadcrumb: {
+    title: 'Design Principles',
+    ariaLabel: 'Design Principles',
+    hideCurrent: true,
+  },
+})
+</script>
+
 <template>
   <article class="grid gap-4">
     <header>
@@ -8,7 +20,7 @@
 
     <section class="grid gap-4 border-b dark:border-gray-700 pb-8">
       <p class="text-gray-600 dark:text-gray-300">
-        Principles are the foundation of the system. They form the basis of a good product and help the team with decision making. They are here to guide you and your team when working with the myriad parts of the system and help you do better and more informed decisions.
+        Principles are the foundation of the system. They form the basis of a good product and help the team with decision making. They are here to guide you and your team when working with the myriad parts of the system and help you do better and make more informed decisions.
       </p>
     </section>
 

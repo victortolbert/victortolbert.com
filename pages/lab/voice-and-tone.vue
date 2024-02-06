@@ -1,3 +1,15 @@
+<script setup>
+definePageMeta({
+  title: 'Voice & Tone',
+  description: 'Through this guide you will learn how to apply the design system’s voice and choose the right tone. Using the right voice and tone is important as it allows us to better connect with our users.',
+  breadcrumb: {
+    title: 'Voice & Tone',
+    ariaLabel: 'Voice & Tone',
+    hideCurrent: true,
+  },
+})
+</script>
+
 <template>
   <article class="grid gap-4">
     <header>

@@ -1,26 +1,6 @@
 export default defineAppConfig({
-  app: {
-    name: names => names[Math.floor(Math.random() * names.length)],
-    description: names => names[Math.floor(Math.random() * names.length)],
-    menu: [],
-    names: [
-      'code examples',
-      'code snippets',
-      'demos',
-      'lab',
-      'playground',
-      'sandbox',
-    ],
-    descriptions: [
-      'Lightweight user interface design patterns',
-      'Reusable components',
-      'User interface engineering and digital product management',
-      'Client-side components for Angular, React, Svelte, Vue and good old plain HTML',
-      'Headless and light-weight UI Components with examples using plain CSS, Boostrap 5, Bulma, and Tailwind',
-    ],
-  },
   ui: {
-    primary: 'brand',
+    primary: 'neutral',
     gray: 'neutral',
     container: {
       constrained: 'max-w-4xl',
@@ -72,6 +52,26 @@ export default defineAppConfig({
     //   },
     // },
 
+  },
+  app: {
+    name: names => names[Math.floor(Math.random() * names.length)],
+    description: names => names[Math.floor(Math.random() * names.length)],
+    menu: [],
+    names: [
+      'code examples',
+      'code snippets',
+      'demos',
+      'lab',
+      'playground',
+      'sandbox',
+    ],
+    descriptions: [
+      'Lightweight user interface design patterns',
+      'Reusable components',
+      'User interface engineering and digital product management',
+      'Client-side components for Angular, React, Svelte, Vue and good old plain HTML',
+      'Headless and light-weight UI Components with examples using plain CSS, Boostrap 5, Bulma, and Tailwind',
+    ],
   },
   seo: {
     siteName: 'Victor Tolbert | Software Engineer',
