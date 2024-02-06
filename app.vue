@@ -11,10 +11,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtLoadingIndicator color="#14b8a6" />
-    <NuxtPage />
-  </NuxtLayout>
+  <div>
+    <NuxtLayout>
+      <NuxtLoadingIndicator color="#14b8a6" />
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <style>

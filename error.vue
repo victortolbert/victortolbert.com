@@ -1,39 +1,52 @@
-<script setup>
-const props = defineProps({
-  error: Object,
+<script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { NuxtError } from '#app'
+
+defineProps({
+  error: {
+    type: Object as PropType<NuxtError>,
+    required: true,
+  },
 })
 
-const message = computed(() => String(props.error?.message || ''))
-const is404 = computed(() => props.error?.statusCode === 404 || message.value?.includes('404'))
-const isDev = process.dev
+useSeoMeta({
+  title: 'Page not found',
+  description: 'We are sorry but this page could not be found.',
+})
 
-function handleError() {
-  return clearError({ redirect: '/' })
-}
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+})
+
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
+  default: () => [],
+  server: false,
+})
+
+provide('navigation', navigation)
 </script>
 
 <template>
-  <NuxtLayout>
-    <div class="h-screen flex flex-col items-center justify-center gap-4 text-center">
-      <div class="text-3xl">
-        {{ is404 ? 'This page could not be found' : 'An error occurred' }}
-      </div>
+  <div>
+    <Header />
 
-      <div class="text-xl opacity-50">
-        Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
-      </div>
+    <UMain>
+      <UContainer>
+        <UPage>
+          <UPageError :error="error" />
+        </UPage>
+      </UContainer>
+    </UMain>
 
-      <div>
-        <RandomImage class="rounded-xl" />
-      </div>
+    <Footer />
 
-      <pre v-if="isDev">
-        {{ error }}
-      </pre>
+    <ClientOnly>
+      <LazyUDocsSearch :files="files" :navigation="navigation" />
+    </ClientOnly>
 
-      <button class="border rounded px-4 py-11" @click="handleError">
-        Go Back
-      </button>
-    </div>
-  </NuxtLayout>
+    <UNotifications />
+  </div>
 </template>

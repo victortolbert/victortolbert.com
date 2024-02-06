@@ -21,6 +21,7 @@ defineShortcuts({
 defineOgImageComponent('NuxtSeo')
 
 // defineOgImageComponent('NuxtSeo', {
+// résumé
 //   title: 'Hello OG Image 👋',
 //   description: 'Look what at me in dark mode',
 //   theme: '#ff0000',
@@ -72,6 +73,7 @@ const exceptions = [
   { name: 'PostgreSQL', url: '/postgres' },
   { name: 'Responsive Design', url: '/rwd' },
   { name: 'Progressive Web Apps', url: '/pwa' },
+  { name: 'Tailwind CSS', url: '/tailwind' },
   { name: 'TypeScript', url: '/typescript' },
   { name: 'Vue.js', url: '/vue' },
   { name: 'WordPress', url: '/wordpress' },
@@ -227,7 +229,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
               </h3>
               <div class="text-base tabular-nums text-gray-500">
-                {{ formatDate(work.startDate) }}&ndash;{{ index === 0 ? 'Present' : formatDate(work.endDate) }}
+                {{ formatDate(work.startDate) }}&ndash;{{ index === resume?.work.length - 1 ? 'Present' : formatDate(work.endDate) }}
               </div>
             </div>
             <h4 class="text-base leading-none">

@@ -13,134 +13,6 @@ import pkg from './package.json'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  modules: [
-    '@nuxt/ui',
-    '@formkit/auto-animate/nuxt',
-    '@vueuse/nuxt',
-    '@vueuse/sound/nuxt',
-    '@nuxt/content',
-    '@nuxt/image',
-    '@pinia/nuxt',
-    '@nuxtjs/fontaine',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/plausible',
-    '@nuxtjs/seo',
-    '@nuxtjs/supabase',
-    '@vue-email/nuxt',
-    'v-wave/nuxt',
-    'magic-regexp/nuxt',
-    'nuxt-lodash',
-    'nuxt-api-party',
-    'nuxt-fathom',
-    'nuxt-mail',
-    'nuxt-prepare',
-    'nuxt-swiper',
-    'shadcn-nuxt',
-    // '@formkit/nuxt',
-    // '@nuxtjs/html-validator',
-    // '@nuxtjs/i18n',
-    // '@nuxtjs/prismic',
-    // '@nuxtjs/storybook',
-    // '@nuxtlabs/github-module',
-    // '@pinia-orm/nuxt',
-    // '@unlazy/nuxt',
-    // '@vee-validate/nuxt',
-    // '@vue-email/nuxt',
-    // '@vueuse/motion/nuxt',
-    // 'nuxt-cloudflare-analytics',
-    // 'nuxt-component-meta',
-    // 'nuxt-gtag',
-    // 'nuxt-icon',
-    // 'nuxt-kql',
-    // 'nuxt-mailer',
-    // 'nuxt-og-image',
-    // 'nuxt-proxy',
-    // 'nuxt-time',
-  ],
-  runtimeConfig: {
-    public: {
-      apiUrl: process.env.API_URL || 'http://localhost:8589',
-      assetsSrc: '/assets',
-      baseUrl: process.env.BASE_URL || 'http://localhost:8589',
-      buildTime: Date.now(),
-      github: {
-        clientId: process.env.NUXT_PUBLIC_GITHUB_CLIENT_ID,
-        repo: process.env.NUXT_PUBLIC_GITHUB_REPO,
-        url: process.env.NUXT_PUBLIC_GITHUB_URL,
-      },
-      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
-      google: {
-        maps: {
-          apiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API,
-        },
-      },
-      site: {
-        url: process.env.NUXT_PUBLIC_SITE_URL,
-      },
-      sentry: {
-        dsn: process.env.NUXT_PUBLIC_SENTRY_DSN,
-        environment: process.env.NUXT_PUBLIC_SENTRY_ENVIRONMENT,
-      },
-      storybook: {
-        url: process.env.NUXT_STORYBOOK_URL,
-      },
-      stripeKey: '',
-      supabase: {
-        url: process.env.NUXT_PUBLIC_SUPABASE_URL,
-        key: process.env.NUXT_PUBLIC_SUPABASE_KEY,
-      },
-      theme: {
-        primaryColor: 'user_primary',
-      },
-      version: pkg.version,
-    },
-    authorizeNet: {
-      apiLoginId: '8d7Kz9Qt2t',
-      transactionKey: '8T4YCA85hnn9rG26',
-    },
-    github: {
-      id: '',
-      repo: '',
-      token: '',
-      clientSecret: '',
-      inviteToken: '',
-    },
-    mailer: {
-      host: process.env.NUXT_MAILER_HOST,
-      port: process.env.NUXT_MAILER_PORT,
-      user: process.env.NUXT_MAILER_USER,
-      password: process.env.NUXT_MAILER_PASSWORD,
-    },
-    omdb: {
-      apiKey: '',
-    },
-    openai: {
-      apiKey: '',
-    },
-    openWeather: {
-      apiKey: '',
-    },
-    resend: {
-      apiKey: '',
-    },
-    session: {
-      password: '',
-    },
-    spoonacular: {
-      apiKey: process.env.SPOONACULAR_API_KEY!,
-    },
-    stripeSecret: '',
-    stripeWebhookSecret: '',
-    supabase: {
-      url: process.env.NUXT_SUPABASE_URL,
-      key: process.env.NUXT_SUPABASE_KEY,
-      serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
-      jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
-    },
-    tmdb: {
-      apiKey: process.env.NUXT_TMDB_API_KEY,
-    },
-  },
 
   apiParty: {
     endpoints: {
@@ -276,12 +148,16 @@ export default defineNuxtConfig({
       //   'vue',
       //   'yaml',
       // ],
+
       preload: ['apex', 'sql', 'handlebars', 'html', 'jinja', 'razor', 'css', 'js', 'ts', 'vue', 'prisma'],
+
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       // theme: {
       //   light: 'vitesse-light',
       //   default: 'vitesse-light',
       //   dark: 'vitesse-dark',
+      //   sepia: 'monokai',
+
       // },
 
       theme: {
@@ -317,14 +193,15 @@ export default defineNuxtConfig({
     '@fontsource/redacted-script',
     '@fontsource/roboto',
     '@fontsource/space-mono',
-    // 'animate.css',
-    // 'lite-youtube-embed/src/lite-yt-embed.css',
+    'animate.css',
+    'lite-youtube-embed/src/lite-yt-embed.css',
     '~/assets/css/debug-children.css',
     '~/assets/css/debug-grid.css',
     '~/assets/css/fonts/monaspace-neon.css',
     '~/assets/css/fonts/salesforce-sans.css',
     // '~/assets/scss/vue-sidebar-menu.scss',
     '~/assets/scss/typed.scss',
+    '~/assets/css/hack/hack.css',
   ],
 
   devServer: {
@@ -421,11 +298,7 @@ export default defineNuxtConfig({
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
-      const globals = components.filter(c => [
-        'UButton',
-        'UColorModeButton',
-        'UIcon',
-      ].includes(c.pascalName))
+      const globals = components.filter(c => ['UButton', 'UColorModeButton', 'UIcon'].includes(c.pascalName))
 
       globals.forEach(c => c.global = true)
     },
@@ -438,9 +311,9 @@ export default defineNuxtConfig({
     // },
 
     // 'components:extend': function (components) {
-    //   for (const comp of components) {
-    //     if (comp.global)
-    //       comp.global = 'sync'
+    //   for (const component of components) {
+    //     if (component.global)
+    //       component.global = 'sync'
     //   }
     // },
 
@@ -502,6 +375,50 @@ export default defineNuxtConfig({
     },
   },
 
+  modules: [
+    '@nuxt/ui',
+    '@formkit/auto-animate/nuxt',
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
+    '@vueuse/sound/nuxt',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/plausible',
+    '@nuxtjs/seo',
+    '@vue-email/nuxt',
+    'v-wave/nuxt',
+    'magic-regexp/nuxt',
+    'nuxt-lodash',
+    'nuxt-api-party',
+    'nuxt-fathom',
+    'nuxt-mail',
+    'nuxt-prepare',
+    'nuxt-swiper',
+    'shadcn-nuxt',
+    // 'nuxt-mailer',
+    // 'nuxt-gtag',
+    // 'nuxt-kql',
+    // '@vee-validate/nuxt',
+    // '@nuxtjs/html-validator',
+    // '@nuxtjs/supabase',
+    // '@nuxtjs/storybook',
+    // '@nuxtlabs/github-module',
+    // 'nuxt-cloudflare-analytics',
+    // '@formkit/nuxt',
+    // '@nuxtjs/i18n',
+    // '@nuxtjs/prismic',
+    // '@pinia-orm/nuxt',
+    // '@unlazy/nuxt',
+    // 'nuxt-component-meta',
+    // 'nuxt-icon',
+    // 'nuxt-og-image',
+    // 'nuxt-proxy',
+    // 'nuxt-time',
+  ],
+
   // nitro: {
   //   imports: {
   //     dirs: [
@@ -522,9 +439,20 @@ export default defineNuxtConfig({
   //   },
   // },
 
+  nitro: {
+    routeRules: {
+      '/**': {
+        headers: {
+          'Cross-Origin-Embedder-Policy': 'require-corp',
+          'Cross-Origin-Opener-Policy': 'same-origin',
+        },
+      },
+    },
+  },
+
   ogImage: {
     defaults: {
-      component: 'OgImageDocs',
+      component: 'OgImageNotes',
       props: {
         colorMode: 'dark',
       },
@@ -537,6 +465,16 @@ export default defineNuxtConfig({
   // pinia: {
   //   autoImports: ['defineStore', 'acceptHMRUpdate'],
   // },
+  postcss: {
+    plugins: {
+      'postcss-nested': {},
+      // 'postcss-import': {},
+      'postcss-mixins': {},
+      // 'postcss-simple-vars': {},
+      'postcss-preset-env': {},
+      // "postcss-custom-media": {}
+    },
+  },
 
   prepare: {
     scripts: ['server.prepare', 'store.prepare'],
@@ -564,6 +502,11 @@ export default defineNuxtConfig({
   //   },
   // },
 
+  robots: {
+    disallow: ['/secret', '/admin'],
+    allow: '/admin/login',
+  },
+
   router: {
     options: {
       linkActiveClass: 'font-bold',
@@ -579,6 +522,100 @@ export default defineNuxtConfig({
 
   },
 
+  runtimeConfig: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:8589',
+    public: {
+      apiUrl: process.env.API_URL || 'http://localhost:8589',
+      assetsSrc: '/assets',
+      baseUrl: process.env.BASE_URL || 'http://localhost:8589',
+      buildTime: Date.now(),
+      github: {
+        clientId: process.env.NUXT_PUBLIC_GITHUB_CLIENT_ID,
+        repo: process.env.NUXT_PUBLIC_GITHUB_REPO,
+        url: process.env.NUXT_PUBLIC_GITHUB_URL,
+      },
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
+      google: {
+        maps: {
+          apiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API,
+        },
+      },
+      site: {
+        url: process.env.NUXT_PUBLIC_SITE_URL,
+      },
+      sentry: {
+        dsn: process.env.NUXT_PUBLIC_SENTRY_DSN,
+        environment: process.env.NUXT_PUBLIC_SENTRY_ENVIRONMENT,
+      },
+      storybook: {
+        url: process.env.NUXT_STORYBOOK_URL,
+      },
+      stripeKey: '',
+      // supabase: {
+      //   url: process.env.NUXT_PUBLIC_SUPABASE_URL,
+      //   key: process.env.NUXT_PUBLIC_SUPABASE_KEY,
+      // },
+      theme: {
+        primaryColor: 'user_primary',
+      },
+      version: pkg.version,
+    },
+    app: {
+      devtools: {
+        iframeProps: {
+          allow: 'cross-origin-isolated',
+          credentialless: true,
+        },
+      },
+    },
+    authorizeNet: {
+      apiLoginId: '8d7Kz9Qt2t',
+      transactionKey: '8T4YCA85hnn9rG26',
+    },
+    github: {
+      id: '',
+      repo: '',
+      token: '',
+      clientSecret: '',
+      inviteToken: '',
+    },
+    mailer: {
+      host: process.env.NUXT_MAILER_HOST,
+      port: process.env.NUXT_MAILER_PORT,
+      user: process.env.NUXT_MAILER_USER,
+      password: process.env.NUXT_MAILER_PASSWORD,
+    },
+    omdb: {
+      apiKey: '',
+    },
+    openai: {
+      apiKey: '',
+    },
+    openWeather: {
+      apiKey: '',
+    },
+    resend: {
+      apiKey: '',
+    },
+    session: {
+      password: '',
+    },
+    spoonacular: {
+      apiKey: process.env.SPOONACULAR_API_KEY!,
+    },
+    stripeSecret: '',
+    stripeWebhookSecret: '',
+    // supabase: {
+    //   url: process.env.NUXT_SUPABASE_URL,
+    //   key: process.env.NUXT_SUPABASE_KEY,
+    //   serviceRole: process.env.NUXT_SUPABASE_SERVICE_ROLE,
+    //   jwtToken: process.env.NUXT_SUPABASE_JWT_TOKEN,
+    // },
+    tmdb: {
+      apiKey: process.env.NUXT_TMDB_API_KEY,
+    },
+  },
+
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -591,32 +628,49 @@ export default defineNuxtConfig({
     componentDir: './components/ui',
   },
 
+  site: {
+    indexable: false,
+    url: 'https://victortolbert.com',
+    name: 'Victor Tolbert',
+    description: 'Full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design',
+    defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+  },
+
   ssr: true,
 
-  supabase: {
-    serviceKey: process.env.NUXT_SUPABASE_SERVICE_KEY,
-    redirect: true,
-    redirectOptions: {
-      login: '/login',
-      callback: '/confirm',
-      exclude: [],
-      cookieRedirect: false,
-    },
-    cookieName: 'sb',
-    cookieOptions: {
-      maxAge: 60 * 60 * 8,
-      sameSite: 'lax',
-      secure: true,
-    },
-    clientOptions: {
-      auth: {
-        flowType: 'pkce',
-        detectSessionInUrl: true,
-        persistSession: true,
-        autoRefreshToken: true,
-      },
-    },
-  },
+  // supabase: {
+  //   redirectOptions: {
+  //     login: '/',
+  //     callback: '/confirm',
+  //     exclude: ['/'],
+  //     cookieRedirect: true,
+  //   },
+  // },
+
+  // supabase: {
+  //   serviceKey: process.env.NUXT_SUPABASE_SERVICE_KEY,
+  //   redirect: true,
+  //   redirectOptions: {
+  //     login: '/login',
+  //     callback: '/confirm',
+  //     exclude: [],
+  //     cookieRedirect: false,
+  //   },
+  //   cookieName: 'sb',
+  //   cookieOptions: {
+  //     maxAge: 60 * 60 * 8,
+  //     sameSite: 'lax',
+  //     secure: true,
+  //   },
+  //   clientOptions: {
+  //     auth: {
+  //       flowType: 'pkce',
+  //       detectSessionInUrl: true,
+  //       persistSession: true,
+  //       autoRefreshToken: true,
+  //     },
+  //   },
+  // },
 
   swiper: {
     // Swiper options
@@ -630,7 +684,14 @@ export default defineNuxtConfig({
     viewer: false,
   },
 
-  typescript: { strict: false },
+  typescript: {
+    strict: false,
+    tsConfig: {
+      compilerOptions: {
+        types: ['@oruga-ui/oruga-next/volar.d.ts'],
+      },
+    },
+  },
 
   ui: {
     icons: [
@@ -650,17 +711,27 @@ export default defineNuxtConfig({
       cssMinify: 'esbuild',
     },
 
-    // css: {
-    //   preprocessorOptions: {
-    //     sass: {
-    //       additionalData: '@use "~/assets/_vars.sass" as *\n',
-    //     },
-    //   },
-    // },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;\n',
+        },
 
-    // optimizeDeps: {
-    //   include: ['@fawmi/vue-google-maps', 'fast-deep-equal'],
-    // },
+      },
+    },
+
+    optimizeDeps: {
+      include: [
+        // '@fawmi/vue-google-maps',
+        // 'fast-deep-equal'
+        // 'monaco-editor/esm/vs/editor/editor.worker',
+        // 'monaco-editor-core/esm/vs/editor/editor.worker',
+        // 'typescript/lib/tsserverlibrary',
+        // '@vue/language-service',
+        // '@volar/monaco/worker',
+        // 'typescript',
+      ],
+    },
 
     resolve: {
       alias: {
@@ -686,7 +757,7 @@ export default defineNuxtConfig({
     compilerOptions: {
       isCustomElement: tag => ['lite-youtube'].includes(tag),
     },
-    defineModel: true,
+    // defineModel: true,
     // propsDestructure: true,
     // runtimeCompiler: true,
   },

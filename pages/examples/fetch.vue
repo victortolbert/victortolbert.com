@@ -20,23 +20,23 @@ if (!post || !comments)
 </script>
 
 <template>
-  <div v-if="post">
-    <h1 class="text-4xl">
-      {{ post.title }}
-    </h1>
-    <p>{{ post.body }}</p>
-  </div>
-
-  <div v-if="comments">
-    <h2 class="text-2xl mt-10">
-      Comments
-    </h2>
-
-    <UCard v-for="comment in comments" :key="comment.id" class="mt-3">
-      {{ comment.body }}
-      <template #footer>
-        {{ comment.name }}
-      </template>
-    </UCard>
-  </div>
+  <article>
+    <div v-if="post">
+      <h1 class="text-4xl">
+        {{ post.title }}
+      </h1>
+      <p>{{ post.body }}</p>
+    </div>
+    <div v-if="comments">
+      <h2 class="text-2xl mt-10">
+        Comments
+      </h2>
+      <UCard v-for="comment in comments" :key="comment.id" class="mt-3">
+        {{ comment.body }}
+        <template #footer>
+          {{ comment.name }}
+        </template>
+      </UCard>
+    </div>
+  </article>
 </template>

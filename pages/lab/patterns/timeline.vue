@@ -1,3 +1,21 @@
+<script setup lang="ts">
+const entries = [
+  { year: 1964, event: 'Born.' },
+  { year: 1986, event: 'Graduates from Princeton.' },
+  { year: 1990, event: 'Youngest vice-president at Bankers Trust.' },
+  { year: 1992, event: 'Senior vice-president at D.E. Shaw & Co.' },
+  { year: 1995, event: 'Amazon.com opens for business.' },
+  { year: 1998, event: 'Net sales of $252.9 million, an increase of 383% over the same period in 1997.' },
+  { year: 1998, event: 'Net sales of $252.9 million, an increase of 383% over the same period in 1997.' },
+  { date: '2004-09-16', event: 'Chicago' },
+  { date: '2004-06-16 03:06 PM', event: 'Received invite to join Gmail from Kassim Kasmani <kassimk@gmail.com>' },
+  { date: '2004-06-16 03:06 PM', event: 'Started Gmail account, victor.tolbert@gmail.com' },
+  { date: '2004-06-30 03:06 PM', event: 'Essence Festival' },
+  { date: '2004', event: 'WebMD' },
+]
+// Ryan Evans, Jenn Wood, Neville, Tom Owens
+</script>
+
 <template>
   <table class="text-xs font-mono">
     <tr>

@@ -17,38 +17,37 @@ function onSlideChange() {
 }
 
 console.log('2022-01-25 12:00:00'.split(' ')[0])
-console.log(nanoid())
+// console.log(nanoid())
 </script>
 
 <template>
-  <Swiper
-    :autoplay="{ delay: 8000, disableOnInteraction: true }"
-
-    :loop="true"
-    :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperPagination, SwiperScrollbar]"
-    :pagination="{ clickable: true }"
-    :scrollbar="{ draggable: true }"
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slide-change="onSlideChange"
-  >
-    <SwiperSlide>
-      <div class="border border-red-700 p-16 flex items-center justify-center">
-        Slide 1
-      </div>
-    </SwiperSlide>
-
-    <SwiperSlide>
-      <div class="border border-green-700 p-16 flex items-center justify-center">
-        Slide 2
-      </div>
-    </SwiperSlide>
-
-    <SwiperSlide>
-      <div class="border border-blue-700 p-16 flex items-center justify-center">
-        Slide 3
-      </div>
-    </SwiperSlide>
-  </Swiper>
+  <article class="overflow-hidden">
+    <Swiper
+      :autoplay="{ delay: 8000, disableOnInteraction: true }"
+      :loop="true"
+      :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation, SwiperPagination, SwiperScrollbar]"
+      :pagination="{ clickable: true }"
+      :scrollbar="{ draggable: true }"
+      :slides-per-view="1"
+      :space-between="50"
+      @swiper="onSwiper"
+      @slide-change="onSlideChange"
+    >
+      <SwiperSlide>
+        <div class="border border-red-700 p-16 flex items-center justify-center">
+          Slide 1
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div class="border border-green-700 p-16 flex items-center justify-center">
+          Slide 2
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div class="border border-blue-700 p-16 flex items-center justify-center">
+          Slide 3
+        </div>
+      </SwiperSlide>
+    </Swiper>
+  </article>
 </template>

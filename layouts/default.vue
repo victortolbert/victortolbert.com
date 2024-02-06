@@ -1,8 +1,7 @@
 <script setup lang="ts">
 const online = useOnline()
-const date = useAppConfig().buildDate
-const supabase = useSupabaseClient()
-console.log('supabase', supabase)
+// const date = useAppConfig().buildDate
+// const client = useSupabaseClient()
 </script>
 
 <template>
@@ -13,15 +12,15 @@ console.log('supabase', supabase)
 
     <AppNavbar />
 
-    <div class="h-32" />
+    <div class="h-32"></div>
 
     <main class="flex-1">
       <UContainer>
-        <slot />
+        <slot></slot>
       </UContainer>
     </main>
 
-    <div class="h-32" />
+    <div class="h-32"></div>
 
     <AppFooter />
 

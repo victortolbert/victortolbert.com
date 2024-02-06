@@ -7,8 +7,8 @@
       <a href="/posts/rockstar-jobs" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
           <img
-            src="https://v2-agencyos.directus.app/assets/6789bc72-ab83-40bf-8152-d6f2bafbc2a8"
-            srcset="https://v2-agencyos.directus.app/assets/6789bc72-ab83-40bf-8152-d6f2bafbc2a8 1x, https://v2-agencyos.directus.app/assets/6789bc72-ab83-40bf-8152-d6f2bafbc2a8 2x"
+            src="/assets/images/poster-1-2x.png"
+            srcset="/assets/images/poster-1-2x.png 1x, /assets/images/poster-1-2x.png 2x"
             class="object-cover transition duration-300 group-hover:scale-110"
           >
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
@@ -27,8 +27,8 @@
       <a href="/posts/bettor-signals" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
           <img
-            src="https://v2-agencyos.directus.app/assets/1f69c0b8-19b7-49d7-b420-bedad577a079"
-            srcset="https://v2-agencyos.directus.app/assets/1f69c0b8-19b7-49d7-b420-bedad577a079 1x, https://v2-agencyos.directus.app/assets/1f69c0b8-19b7-49d7-b420-bedad577a079 2x"
+            src="/assets/images/poster-2-2x.png"
+            srcset="/assets/images/poster-2-2x.png 1x, /assets/images/poster-2-2x.png 2x"
             class="object-cover transition duration-300 group-hover:scale-110"
           >
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
@@ -46,7 +46,7 @@
 
       <a href="/posts/better-sign-shop" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
-          <img src="https://v2-agencyos.directus.app/assets/dfa90758-9700-49e4-8fa2-b6cd074811b7" data-nuxt-img="" srcset="https://v2-agencyos.directus.app/assets/dfa90758-9700-49e4-8fa2-b6cd074811b7 1x, https://v2-agencyos.directus.app/assets/dfa90758-9700-49e4-8fa2-b6cd074811b7 2x" class="object-cover transition duration-300 group-hover:scale-110">
+          <img src="/assets/images/poster-3-2x.png" data-nuxt-img="" srcset="/assets/images/poster-3-2x.png 1x, /assets/images/poster-3-2x.png 2x" class="object-cover transition duration-300 group-hover:scale-110">
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
             <div class="p-8">
               <h2 class="font-medium tracking-wider uppercase font-display text-primary">Clockwork Consulting</h2>

@@ -1,0 +1,152 @@
+/* A4 to px: http://www.papersizes.org/a-sizes-in-pixels.htm */
+
+@media print {
+  img {
+    width: 32px;
+  }
+  @print {
+    margin: 0;
+    size: A4 portrait;
+  }
+  html {
+    /*height: 100vh !important;*/
+    width: 100vw !important;
+  }
+  body,
+  .container {
+    padding: 10px;
+    height: 100% !important;
+    width: 100%;
+    position: relative;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    box-sizing: border-box;
+  }
+  body:after {
+    content: "https://hire.jvt.me";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 10px;
+    color: grey;
+    font-weight: 600;
+  }
+  .no-print {
+    display: none !important;
+  }
+  header h1 {
+    margin: 0 0 10px 0;
+  }
+  aside.card,
+  section.resume {
+    width: 100%;
+    float: none;
+  }
+  .resume {
+    height: calc(100% - 100px);
+    width: 100%;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-fill: auto;
+    column-gap: 1rem;
+    /*column-rule: dotted;*/
+    margin: 0;
+    padding-top: 20px;
+  }
+  aside.card .h-card {
+    margin: 0 0 -15px 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 10px;
+    box-shadow: none;
+  }
+  .contact.vcard ul,
+  .contact.h-card ul {
+    text-align: center;
+  }
+  aside.card li {
+    display: inline;
+  }
+  .resume>dl {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .resume>dl>dt,
+  .resume>dl>dd {
+    /*width: calc(50% - 10px);*/
+    margin-right: 10px;
+    box-sizing: border-box;
+    break-inside: avoid-column;
+  }
+  .resume>dl>dt {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .resume>dl>dd {
+    font-size: 12px;
+  }
+  .skills-dt {
+    break-before: always !important;
+  }
+  .skills h2 {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  .skills,
+  .skills-dt,
+  .educations-dt,
+  .educations,
+  .notes-dt,
+  .notes,
+  .languages-dt,
+  .languages {
+    order: 2;
+  }
+  abbr {
+    text-decoration: none !important;
+  }
+  .skills abbr:after {
+    display: block;
+    content: "Keywords: " attr(title);
+    padding: 5px 0 0 0;
+  }
+  .skills abbr:after,
+  .portfolio .line2 {
+    font-weight: 600;
+    font-size: 10px;
+    color: gray;
+  }
+  .def-note {
+    font-size: 9px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+  }
+
+  ul.interests {
+    list-style-type: circle;
+  }
+
+  a[href*="://"]::after {
+    content: " (" attr(href) ")";
+  }
+
+  a[href] {
+    text-decoration: none
+  }
+}
+
+@media screen {
+  .only-print {
+    display: none !important;
+  }
+}

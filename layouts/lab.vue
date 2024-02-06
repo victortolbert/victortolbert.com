@@ -9,7 +9,7 @@ const date = useAppConfig().buildDate
       Offline
     </header>
 
-    <lab-navbar />
+    <LabNavbar />
 
     <div class="h-32" />
 

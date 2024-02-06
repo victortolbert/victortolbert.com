@@ -2,7 +2,7 @@ import { strip } from '~/lib/helpers'
 
 const route = useRoute()
 
-export default function useMessages() {
+export function useMessages() {
   const messages = ref([])
   const checked = ref([])
   const isCheckAll = ref(false)

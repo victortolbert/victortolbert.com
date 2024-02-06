@@ -10,3 +10,13 @@ designed_by: Rasmus Lerdorf
 
 A popular general-purpose scripting language that is especially suited to web development.
 Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
+
+```php
+<?php
+$db = mysqli_connect("localhost", "root", "root", "");
+$query = "SELECT id, first_name, last_name, title, email FROM employees ORDER BY last_name, first_name";
+$rs = mysqli_query($db, $query);
+
+mysqli_free_result($rs);
+mysqli_close($db);
+```
