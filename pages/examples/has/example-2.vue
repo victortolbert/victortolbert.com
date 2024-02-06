@@ -17,7 +17,7 @@ definePageMeta({
     </div>
 
     <div class="card">
-      <NuxtImg class="media" src="/assets/images/200x400.jpeg" alt="" />
+      <NuxtImg class="media" src="/assets/images/placeholders/200x400.jpeg" alt="" />
       <div class="card__content">
         <h2 class="small-title">
           Something interesting

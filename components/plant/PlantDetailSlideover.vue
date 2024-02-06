@@ -105,7 +105,7 @@ function cancel() {
                         style="
                           line-height: 2rem;
                           padding-left: 2rem;
-                          background: url('/assets/images/water.svg') no-repeat
+                          background: url('/assets/images/plants/water.svg') no-repeat
                             left 50%;
                         "
                       >
@@ -115,7 +115,7 @@ function cancel() {
                         style="
                           line-height: 2rem;
                           padding-left: 2rem;
-                          background: url('/assets/images/light.svg') no-repeat
+                          background: url('/assets/images/plants/light.svg') no-repeat
                             left 50%;
                         "
                       >

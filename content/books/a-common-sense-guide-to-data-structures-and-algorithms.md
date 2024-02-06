@@ -13,6 +13,12 @@ publisher:
 publication_date: 2017-09-12
 rating: 4.3
 slug: a-common-sense-guide-to-data-structures-and-algorithms
+path: /articles/a-common-sense-guide-to-data-structures-and-algorithms
+ogImage:
+  component: NuxtSeo
+  props:
+    image: /assets/images/books/a-common-sense-guide-to-data-structures-and-algorithms-0.jpeg
+    readingMins: 5
 ---
 
 <!-- <youtube id="https://www.youtube.com/watch?v=BgKtheXUAAI"></youtube> -->

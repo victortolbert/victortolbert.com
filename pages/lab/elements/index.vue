@@ -1,4 +1,13 @@
 <script setup>
+definePageMeta({
+  title: 'Elements',
+  description: 'Elements are the basic building blocks of the design system. They are the smallest components that can be combined to create more complex components.',
+  breadcrumb: {
+    title: 'Elements',
+    ariaLabel: 'Elements',
+    hideCurrent: true,
+  },
+})
 // - Input (Text, Date, Tel, etc..)
 const elements = ref([
   { name: 'Button', status: 'Ready', version: '1.0.1' },
@@ -18,12 +27,12 @@ const statuses = ref([
   { name: 'Under Review', icon: 'i-ph-minus-square-duotone', className: 'text-yellow-500' },
   { name: 'Prototype', icon: 'i-ph-square-duotone', className: 'text-blue-500' },
   { name: 'Deprecated', icon: 'i-ph-x-square-duotone', className: 'text-red-500' },
-  { name: 'Not applicable', icon: 'i-ph-minus-duotone', className: 'text-neutral-500' },
+  { name: 'Not applicable', icon: 'i-ph-minus-duotone', className: 'text-gray-500' },
 ])
 </script>
 
 <template>
-  <div class="p-4 grid gap-4">
+  <div class="py-4 grid gap-4">
     <section class="grid gap-4">
       <header class="border-b pb-4">
         <h3 class="font-medium">
@@ -100,7 +109,7 @@ const statuses = ref([
             <span class="text-sm">Deprecated</span>
           </li>
           <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-minus-duotone" class="text-neutral-500 text-xl" />
+            <UIcon name="i-ph-minus-duotone" class="text-gray-500 text-xl" />
             <span class="text-sm">Not applicable</span>
           </li>
         </ul>

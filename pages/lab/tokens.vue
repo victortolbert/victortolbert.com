@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const links = ref([
   {
     label: 'Back',
@@ -10,15 +10,15 @@ const links = ref([
 
 <template>
   <article class="grid gap-4">
-    <ExampleBreadcrumb :links="links" />
+    <!-- <ExampleBreadcrumb :links="links" /> -->
 
-    <header class="py-2 px-8 bg-gray-100 dark:bg-gray-900">
+    <header>
       <h2 class="font-semibold">
         Design Tokens
       </h2>
     </header>
 
-    <section class="px-8 grid gap-4">
+    <section class="grid gap-4">
       <p>
         Design tokens are the atoms of the system as <NuxtLink target="_blank" to="https://www.lightningdesignsystem.com/design-tokens/">
           Salesforce

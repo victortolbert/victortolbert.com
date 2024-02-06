@@ -9,7 +9,7 @@ const post = ref({
   title: 'My First Post',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-  image: '/assets/images/400x400.jpeg',
+  image: '/assets/images/placeholders/400x400.jpeg',
   date: new Date(),
 })
 

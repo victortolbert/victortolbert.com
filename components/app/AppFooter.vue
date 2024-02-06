@@ -69,8 +69,8 @@ const items = [
 
 <template>
   <footer ref="footerRef" class="flex items-center w-full mx-auto justify-between max-w-3xl">
-    <NuxtLink to="/" class="text-sm text-neutral-500">
-      © 2023 Victor Tolbert. All rights reserved.
+    <NuxtLink to="/" class="text-sm text-gray-500">
+      © 2024 Victor Tolbert. All rights reserved.
     </NuxtLink>
 
     <div class="flex items-center gap-1.5">

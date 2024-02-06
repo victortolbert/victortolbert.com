@@ -82,7 +82,7 @@ function cancel() {
             <li
               class="care-list-item"
               style="
-                background: url('/assets/images/water.svg') no-repeat left 50%;
+                background: url('/assets/images/plants/water.svg') no-repeat left 50%;
               "
             >
               {{ plant.care.water }}
@@ -90,7 +90,7 @@ function cancel() {
             <li
               class="care-list-item"
               style="
-                background: url('/assets/images/light.svg') no-repeat left 50%;
+                background: url('/assets/images/plants/light.svg') no-repeat left 50%;
               "
             >
               {{ plant.care.light }}

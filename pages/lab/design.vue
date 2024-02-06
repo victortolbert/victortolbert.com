@@ -1,6 +1,6 @@
 <script setup>
-const vueds = '/_nuxt/public/assets/images/vueds.svg'
-const styleguide = '/_nuxt/public/assets/images/styleguide.svg'
+const vueds = '/_nuxt/public/assets/images/design-systems/vueds.svg'
+const styleguide = '/_nuxt/public/assets/images/design-systems/styleguide.svg'
 
 definePageMeta({
   title: 'Design System',

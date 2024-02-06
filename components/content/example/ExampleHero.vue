@@ -6,7 +6,7 @@ const location = useBrowserLocation()
   <header
     class="h-32 border-b border-red-700 bg-gray-900 bg-fixed p-8"
     style="
-      background-image: url('/assets/images/backgrounds/grid_dot_16.svg');
+      background-image: url('/assets/images/backgrounds/grid-dot-16.svg');
       background-position: 0 -2px;
     "
   >
