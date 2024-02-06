@@ -83,7 +83,7 @@
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-box-shadow": "^2.0.1",
-    "tailwindcss-email-variants": "^2.0.3",
+    "tailwindcss-email-variants": "^3.0.0",
     "tailwindcss-mso": "^1.4.1",
     "tailwindcss-scrims": "^1.0.0",
     "tarball-extract": "0.0.6",

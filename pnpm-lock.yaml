@@ -153,8 +153,8 @@ dependencies:
     specifier: ^2.0.1
     version: 2.0.1(tailwindcss@3.4.1)
   tailwindcss-email-variants:
-    specifier: ^2.0.3
-    version: 2.0.3(tailwindcss@3.4.1)
+    specifier: ^3.0.0
+    version: 3.0.0(tailwindcss@3.4.1)
   tailwindcss-mso:
     specifier: ^1.4.1
     version: 1.4.1(tailwindcss@3.4.1)
@@ -25427,13 +25427,12 @@ packages:
       tailwindcss: 3.4.1
     dev: false
 
-  /tailwindcss-email-variants@2.0.3(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-AfO4g/ZpTW7EUV9c1F3gJK6Tqud7nz54oqo0U4ik0Y9jK2Wu7KNNFFK2IuhOa2FkuwGfZp6KLs9rTzwandq/+g==}
-    engines: {node: '>=14.0.0'}
+  /tailwindcss-email-variants@3.0.0(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-qavbGh00bg99tQ7U3iQ8N5JNBg9raXhOdgYfueccP6JLSXOl0n3TG7abgZvxhm3VBQ3MsmOLi276d90moUx8kw==}
+    engines: {node: '>=18'}
     peerDependencies:
-      tailwindcss: '>=3.1.0'
+      tailwindcss: '>=3.4.0'
     dependencies:
-      lodash.get: 4.4.2
       tailwindcss: 3.4.1
     dev: false
 
