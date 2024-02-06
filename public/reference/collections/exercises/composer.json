@@ -1,6 +1,6 @@
 {
     "require": {
-        "illuminate/support": "5.2.*",
+        "illuminate/support": "5.8.*",
         "phpunit/phpunit": "^4.8.0"
     }
 }
