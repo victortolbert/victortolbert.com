@@ -8,8 +8,9 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
-    <header>
+  <article class="min-h-screen mx-auto max-w-3xl">
+    <Breadcrumbs />
+    <header class="mt-1.5">
       <h1>Lab</h1>
       <ul>
         <li>
@@ -36,5 +37,5 @@ definePageMeta({
     </header>
 
     <NuxtPage />
-  </div>
+  </article>
 </template>

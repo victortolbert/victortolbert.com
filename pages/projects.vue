@@ -12,7 +12,8 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 
 <template>
   <main class="min-h-screen mx-auto max-w-3xl">
-    <AppHeader class="mb-12" title="Projects" :description="description" />
+    <Breadcrumbs />
+    <AppHeader class="mt-1.5 mb-12" title="Projects" :description="description" />
 
     <section class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
       <!-- <LogoHancockClaims /> -->

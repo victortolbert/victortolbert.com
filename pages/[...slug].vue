@@ -9,6 +9,15 @@ defineOgImageComponent('NuxtSeo')
 //   colorMode: 'dark',
 // })
 
+definePageMeta({
+  // title: 'Resume',
+  // breadcrumb: 'Resume',
+  // breadcrumb: {
+  //   icon: 'i-ph-house',
+  //   ariaLabel: 'Home',
+  // },
+})
+
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
@@ -23,11 +32,14 @@ if (!page.value) {
 </script>
 
 <template>
-  <UContainer>
-    <UPage>
-      <UPageBody prose>
-        <ContentRenderer v-if="page.body" :value="page" />
-      </UPageBody>
-    </UPage>
-  </UContainer>
+  <div>
+    <UContainer>
+      <Breadcrumbs />
+      <UPage>
+        <UPageBody prose>
+          <ContentRenderer v-if="page.body" :value="page" />
+        </UPageBody>
+      </UPage>
+    </UContainer>
+  </div>
 </template>
