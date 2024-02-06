@@ -35,16 +35,6 @@
   },
   "work": [
     {
-      "name": "VTi Consulting",
-      "location": "Atlanta, Georgia USA",
-      "description": "Information technology consulting services",
-      "position": "Sole Proprietor",
-      "url": "https://victortolbert.com/vticonsulting",
-      "startDate": "2002-05-21",
-      "summary": "Information technology consulting services",
-      "highlights": []
-    },
-    {
       "name": "Hancock Claims Consultants",
       "location": "Alpharetta, Georgia USA",
       "description": "",
@@ -155,6 +145,16 @@
         "Presented and demonstrated prototypes to top-level executives, receiving the company-wide monthly \"Top Techie\" award multiple times",
         "Tech Stack: HTML, CSS, JavaScript (Prototype/Scriptaculous), JAVA (JSP, JSTL, JSF), CVS, Subversion, Rhythmyx"
       ]
+    },
+    {
+      "name": "VTi Consulting",
+      "location": "Atlanta, Georgia USA",
+      "description": "Information technology consulting services",
+      "position": "Sole Proprietor",
+      "url": "https://victortolbert.com/vticonsulting",
+      "startDate": "2002-05-21",
+      "summary": "Information technology consulting services",
+      "highlights": []
     }
   ],
   "volunteer": [],

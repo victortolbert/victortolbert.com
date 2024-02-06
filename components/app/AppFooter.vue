@@ -68,17 +68,22 @@ const items = [
 </script>
 
 <template>
-  <footer ref="footerRef">
-    <p>© 2023 Victor Tolbert. All rights reserved.</p>
+  <footer ref="footerRef" class="flex items-center w-full mx-auto justify-between max-w-3xl">
+    <NuxtLink to="/" class="text-sm text-neutral-500">
+      © 2023 Victor Tolbert. All rights reserved.
+    </NuxtLink>
 
-    <button @click="toggle()">
-      <Icon
-        aria-hidden="true"
-        :name="isPlaying ? 'i-ph-pause-circle-duotone' : 'i-ph-play-circle-duotone'"
-        class="w-5 h-5"
-      />
-    </button>
-
-    <AppThemeToggle />
+    <div class="flex items-center gap-1.5">
+      <UTooltip text="Toggle Music" :ui="{ popper: { strategy: 'absolute' } }">
+        <button @click="toggle()">
+          <Icon
+            aria-hidden="true"
+            :name="isPlaying ? 'i-ph-pause-circle-duotone' : 'i-ph-play-circle-duotone'"
+            class="w-5 h-5"
+          />
+        </button>
+      </UTooltip>
+      <AppThemeToggle />
+    </div>
   </footer>
 </template>

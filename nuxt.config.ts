@@ -398,23 +398,22 @@ export default defineNuxtConfig({
     'nuxt-prepare',
     'nuxt-swiper',
     'shadcn-nuxt',
-    // '@nuxtjs/supabase',
-    // '@formkit/nuxt',
+    // 'nuxt-mailer',
+    // 'nuxt-gtag',
+    // 'nuxt-kql',
+    // '@vee-validate/nuxt',
     // '@nuxtjs/html-validator',
-    // '@nuxtjs/i18n',
-    // '@nuxtjs/prismic',
+    // '@nuxtjs/supabase',
     // '@nuxtjs/storybook',
     // '@nuxtlabs/github-module',
+    // 'nuxt-cloudflare-analytics',
+    // '@formkit/nuxt',
+    // '@nuxtjs/i18n',
+    // '@nuxtjs/prismic',
     // '@pinia-orm/nuxt',
     // '@unlazy/nuxt',
-    // '@vee-validate/nuxt',
-    // '@vue-email/nuxt',
-    // 'nuxt-cloudflare-analytics',
     // 'nuxt-component-meta',
-    // 'nuxt-gtag',
     // 'nuxt-icon',
-    // 'nuxt-kql',
-    // 'nuxt-mailer',
     // 'nuxt-og-image',
     // 'nuxt-proxy',
     // 'nuxt-time',
@@ -453,7 +452,7 @@ export default defineNuxtConfig({
 
   ogImage: {
     defaults: {
-      component: 'OgImageDocs',
+      component: 'OgImageNotes',
       props: {
         colorMode: 'dark',
       },
@@ -502,6 +501,11 @@ export default defineNuxtConfig({
   //     ],
   //   },
   // },
+
+  robots: {
+    disallow: ['/secret', '/admin'],
+    allow: '/admin/login',
+  },
 
   router: {
     options: {
@@ -624,6 +628,14 @@ export default defineNuxtConfig({
     componentDir: './components/ui',
   },
 
+  site: {
+    indexable: false,
+    url: 'https://victortolbert.com',
+    name: 'Victor Tolbert',
+    description: 'Full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design',
+    defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+  },
+
   ssr: true,
 
   // supabase: {
@@ -674,8 +686,10 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: false,
-    compilerOptions: {
-      types: ['@oruga-ui/oruga-next/volar.d.ts'],
+    tsConfig: {
+      compilerOptions: {
+        types: ['@oruga-ui/oruga-next/volar.d.ts'],
+      },
     },
   },
 

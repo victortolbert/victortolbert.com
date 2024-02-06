@@ -118,6 +118,7 @@ async function signInWithEmail() {
           </UTooltip>
         </li>
         <li class="flex-1" />
+        <!--
         <li
           v-if="!user"
         >
@@ -141,6 +142,7 @@ async function signInWithEmail() {
             Logout
           </UButton>
         </li>
+        -->
       </ul>
     </nav>
   </div>

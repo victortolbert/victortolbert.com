@@ -12,15 +12,15 @@ const online = useOnline()
 
     <AppNavbar />
 
-    <div class="h-32" />
+    <div class="h-32"></div>
 
     <main class="flex-1">
       <UContainer>
-        <slot />
+        <slot></slot>
       </UContainer>
     </main>
 
-    <div class="h-32" />
+    <div class="h-32"></div>
 
     <AppFooter />
 
