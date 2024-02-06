@@ -14,15 +14,14 @@
 ## Todolist
 
 - [x] Add resume
-- [ ] File for unemployment ❗️❗️
+- [ ] Create GitHub profile bio
+- [ ] Add emailing solution
+- [ ] Build and send emails
+- [ ] Command K
 - [ ] Convert color system to CSS custom properties
 - [ ] Add export to CSV example
 - [ ] Add file upload example
 - [ ] Add form example
-- [ ] Add emailing solution
-- [ ] Create GitHub profile bio
-- [ ] Build and send emails
-- [ ] Command K
 - [ ] Add right-click to view Design Kit
 
 ## Contributing
