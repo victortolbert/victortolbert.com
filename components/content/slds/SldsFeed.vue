@@ -6,7 +6,7 @@
           <header class="slds-post__header slds-media">
             <div class="slds-media__figure">
               <a href="#" class="slds-avatar slds-avatar_circle slds-avatar_large">
-                <img alt="Jason Rodgers" src="/assets/images/avatar1.jpg" title="Jason Rodgers avatar">
+                <img alt="Jason Rodgers" src="/assets/images/avatars/avatar-1.jpeg" title="Jason Rodgers avatar">
               </a>
             </div>
             <div class="slds-media__body">
@@ -79,7 +79,7 @@
               <article class="slds-comment slds-media slds-hint-parent">
                 <div class="slds-media__figure">
                   <a href="#" class="slds-avatar slds-avatar_circle slds-avatar_medium">
-                    <img alt="Jenna Davis" src="/assets/images/avatar2.jpg" title="Jenna Davis avatar">
+                    <img alt="Jenna Davis" src="/assets/images/avatars/avatar-2.jpeg" title="Jenna Davis avatar">
                   </a>
                 </div>
                 <div class="slds-media__body">
@@ -122,7 +122,7 @@
           <header class="slds-post__header slds-media">
             <div class="slds-media__figure">
               <a href="#" class="slds-avatar slds-avatar_circle slds-avatar_large">
-                <img alt="Jason Rodgers" src="/assets/images/avatar1.jpg" title="Jason Rodgers avatar">
+                <img alt="Jason Rodgers" src="/assets/images/avatars/avatar-1.jpeg" title="Jason Rodgers avatar">
               </a>
             </div>
             <div class="slds-media__body">
