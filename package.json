@@ -310,7 +310,7 @@
     "qs": "^6.11.2",
     "sass": "^1.70.0",
     "scule": "^1.2.0",
-    "shadcn-nuxt": "^0.8.7",
+    "shadcn-nuxt": "^0.9.0",
     "slice-machine-ui": "^1.23.1",
     "stripe": "^14.15.0",
     "sweetalert2": "^11.10.5",
