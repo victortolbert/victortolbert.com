@@ -336,7 +336,7 @@ devDependencies:
     version: 6.1.10(@fullcalendar/core@6.1.10)
   '@fullcalendar/luxon':
     specifier: ^6.1.10
-    version: 6.1.10(@fullcalendar/core@6.1.10)(luxon@1.28.1)
+    version: 6.1.10(@fullcalendar/core@6.1.10)(luxon@3.4.4)
   '@fullcalendar/multimonth':
     specifier: ^6.1.10
     version: 6.1.10(@fullcalendar/core@6.1.10)
@@ -491,8 +491,8 @@ devDependencies:
     specifier: ^4.17.12
     version: 4.17.12
   '@types/luxon':
-    specifier: 1.27.1
-    version: 1.27.1
+    specifier: 3.4.2
+    version: 3.4.2
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
@@ -686,8 +686,8 @@ devDependencies:
     specifier: ^4.17.21
     version: 4.17.21
   luxon:
-    specifier: 1.28.1
-    version: 1.28.1
+    specifier: 3.4.4
+    version: 3.4.4
   magic-regexp:
     specifier: 0.7.0
     version: 0.7.0
@@ -4393,14 +4393,14 @@ packages:
       '@fullcalendar/core': 6.1.10
     dev: true
 
-  /@fullcalendar/luxon@6.1.10(@fullcalendar/core@6.1.10)(luxon@1.28.1):
+  /@fullcalendar/luxon@6.1.10(@fullcalendar/core@6.1.10)(luxon@3.4.4):
     resolution: {integrity: sha512-p6L4skNz8aMAFKP+qSQBVUQZZmZFWOnOarqTEEQPyHJRzRMee1tvctwQmMaFTNZVKXFWq40A6SpLDA+fhCjPmw==}
     peerDependencies:
       '@fullcalendar/core': ~6.1.10
       luxon: ^1.12.1
     dependencies:
       '@fullcalendar/core': 6.1.10
-      luxon: 1.28.1
+      luxon: 3.4.4
     dev: true
 
   /@fullcalendar/multimonth@6.1.10(@fullcalendar/core@6.1.10):
@@ -9130,8 +9130,8 @@ packages:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
     dev: true
 
-  /@types/luxon@1.27.1:
-    resolution: {integrity: sha512-cPiXpOvPFDr2edMnOXlz3UBDApwUfR+cpizvxCy0n3vp9bz/qe8BWzHPIEFcy+ogUOyjKuCISgyq77ELZPmkkg==}
+  /@types/luxon@3.4.2:
+    resolution: {integrity: sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==}
     dev: true
 
   /@types/marked@6.0.0:
@@ -18261,8 +18261,9 @@ packages:
       vue: 3.4.15(typescript@5.3.3)
     dev: false
 
-  /luxon@1.28.1:
-    resolution: {integrity: sha512-gYHAa180mKrNIUJCbwpmD0aTu9kV0dREDrwNnuyFAsO1Wt0EVYSZelPnJlbj9HplzXX/YWXHFTL45kvZ53M0pw==}
+  /luxon@3.4.4:
+    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
+    engines: {node: '>=12'}
     dev: true
 
   /lz-string@1.5.0:
