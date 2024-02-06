@@ -8,8 +8,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <main class="min-h-screen mx-auto max-w-3xl">
-    <AppHeader class="mb-12" title="UX Lab" :description="description" />
+  <article>
+    <!-- <AppHeader class="mb-12" title="UX Lab" :description="description" /> -->
     <div class="space-y-24">
       <ContentList v-slot="{ list }" path="/lab">
         <ContentQuery
@@ -25,5 +25,5 @@ useSeoMeta({
         </ContentQuery>
       </ContentList>
     </div>
-  </main>
+  </article>
 </template>

@@ -633,7 +633,8 @@ export default defineNuxtConfig({
     indexable: false,
     url: 'https://victortolbert.com',
     name: 'Victor Tolbert',
-    description: 'Full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design',
+    description: 'Full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design.',
+    logo: 'https://victortolbert.com/favicon-dark.svg',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 

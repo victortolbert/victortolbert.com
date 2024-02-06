@@ -17,7 +17,7 @@ useSeoMeta({
       Hello!
     </h1>
     <div>
-      <NuxtImg src="/assets/images/me/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot" />
+      <NuxtImg src="https://assets.victortolbert.com/images/me/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot" />
       <p class="text-gray-900 dark:text-gray-400">
         I'm Victor, a self-taught, web applications consultant and experienced UI/UX designer from Atlanta, Georgia.
         I specialize in building SaaS web applications and marketing websites using <NuxtLink to="/csharp">

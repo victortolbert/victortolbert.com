@@ -1,4 +1,3 @@
-<!-- Vendored from https://github.com/nuxt/nuxt.com/blob/main/components/OgImage/OgImageDocs.vue -->
 <script lang="ts" setup>
 defineOptions({
   inheritAttrs: false,

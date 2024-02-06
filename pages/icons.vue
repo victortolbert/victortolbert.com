@@ -1,5 +1,5 @@
 <script setup>
-const vueds = '/_nuxt/public/assets/images/vueds.svg'
+const vueds = '/_nuxt/public/assets/images/design-systems/vueds.svg'
 
 const icons = {
   LinkedIn: 'i-ph-linkedin-logo-duotone',

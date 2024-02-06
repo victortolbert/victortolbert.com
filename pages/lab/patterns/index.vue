@@ -1,5 +1,17 @@
+<script setup>
+definePageMeta({
+  title: 'Patterns',
+  description: 'Patterns are the combination of elements and components that are used to create a complete user interface. They are the larger components that are made up of smaller elements.',
+  breadcrumb: {
+    title: 'Patterns',
+    ariaLabel: 'Patterns',
+    hideCurrent: true,
+  },
+})
+</script>
+
 <template>
-  <div class="p-4 grid gap-4">
+  <div class="py-4 grid gap-4">
     <section class="grid gap-4">
       <header class="border-b pb-4">
         <h3 class="font-medium">
@@ -57,7 +69,7 @@
             <span>Deprecated</span>
           </li>
           <li class="inline-flex items-center gap-1.5">
-            <UIcon name="i-ph-minus-duotone" class="text-neutral-500" />
+            <UIcon name="i-ph-minus-duotone" class="text-gray-500" />
             <span>Not applicable</span>
           </li>
         </ul>

@@ -22,7 +22,15 @@ defineShortcuts({
   o: () => isOpen.value = !isOpen.value,
 })
 
-defineOgImageComponent('NuxtSeo')
+defineOgImageComponent('NuxtSeo', {
+  theme: '#4338ca',
+  colorMode: 'dark',
+  siteLogo: '/favicon-dark.svg',
+  icon: 'i-ph-help',
+  // title?: string
+  // description?: string
+  // siteName?: string
+})
 
 // defineOgImageComponent('NuxtSeo', {
 // résumé
@@ -201,7 +209,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
         <div class="flex flex-wrap gap-1">
           <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
             <NuxtLink :to="`/${kebabCase(skill.name.toLowerCase())}`">
-              <UBadge color="primary" variant="solid">
+              <UBadge color="primary" variant="solid" :ui="{ font: 'font-bold'}">
                 {{ skill.name }}
               </UBadge>
             </NuxtLink>

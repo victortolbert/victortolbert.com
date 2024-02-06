@@ -46,7 +46,7 @@
           >
             <NuxtImg
               class="h-full w-full rounded-full"
-              src="/assets/images/users/victor-tolbert.jpeg"
+              src="/assets/images/people/victor-tolbert.jpeg"
               alt=""
             />
           </div>
@@ -75,7 +75,7 @@
       <div class="relative hidden overflow-hidden rounded-full lg:block">
         <NuxtImg
           class="relative h-40 w-40 rounded-full"
-          src="/assets/images/users/victor-tolbert.jpeg"
+          src="/assets/images/people/victor-tolbert.jpeg"
           alt=""
         />
         <label

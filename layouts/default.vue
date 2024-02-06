@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const online = useOnline()
-// const date = useAppConfig().buildDate
+const date = useAppConfig().buildDate
 // const client = useSupabaseClient()
 </script>
 
@@ -12,28 +12,29 @@ const online = useOnline()
 
     <AppNavbar />
 
-    <div class="h-32"></div>
+    <div class="h-32" />
 
     <main class="flex-1">
       <UContainer>
-        <slot></slot>
+        <slot />
       </UContainer>
     </main>
 
-    <div class="h-32"></div>
+    <div class="h-32" />
 
-    <AppFooter />
+    <!-- <AppFooter /> -->
 
-    <!-- <footer class="flex items-center justify-between p-4">
-      <NuxtLink to="/">
-        <TheLogo />
+    <footer class="flex items-center w-full mx-auto justify-center max-w-3xl p-4">
+      <NuxtLink to="https://vticonsulting.com" target="_blank">
+        <TheLogo class="w-5 h-5" />
       </NuxtLink>
 
-      <div class="flex items-center gap-2">
+      <UColorModeButton />
+
+      <div v-if="false" class="flex items-center gap-2">
         <span class="text-sm">Built Date: {{ date }}</span>
-        <UColorModeButton />
       </div>
-    </footer> -->
+    </footer>
 
     <AppCommandPalette />
   </div>

@@ -1,5 +1,17 @@
+<script setup>
+definePageMeta({
+  title: 'Design Tokens',
+  description: 'Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.',
+  breadcrumb: {
+    title: 'Design Tokens',
+    ariaLabel: 'Design Tokens',
+    hideCurrent: true,
+  },
+})
+</script>
+
 <template>
-  <section class="px-8 grid gap-4">
+  <section class="grid gap-4">
     <header class="border-b pb-4">
       <h3 class="font-medium">
         Color Palette

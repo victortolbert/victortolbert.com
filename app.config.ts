@@ -20,7 +20,7 @@ export default defineAppConfig({
     ],
   },
   ui: {
-    primary: 'neutral',
+    primary: 'brand',
     gray: 'neutral',
     container: {
       constrained: 'max-w-4xl',

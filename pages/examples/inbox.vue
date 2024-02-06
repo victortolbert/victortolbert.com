@@ -7,8 +7,8 @@
       <a href="/posts/rockstar-jobs" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
           <img
-            src="/assets/images/poster-1-2x.png"
-            srcset="/assets/images/poster-1-2x.png 1x, /assets/images/poster-1-2x.png 2x"
+            src="/assets/images/posters/poster-1-2x.png"
+            srcset="/assets/images/posters/poster-1-2x.png 1x, /assets/images/posters/poster-1-2x.png 2x"
             class="object-cover transition duration-300 group-hover:scale-110"
           >
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
@@ -27,8 +27,8 @@
       <a href="/posts/bettor-signals" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
           <img
-            src="/assets/images/poster-2-2x.png"
-            srcset="/assets/images/poster-2-2x.png 1x, /assets/images/poster-2-2x.png 2x"
+            src="/assets/images/posters/poster-2-2x.png"
+            srcset="/assets/images/posters/poster-2-2x.png 1x, /assets/images/posters/poster-2-2x.png 2x"
             class="object-cover transition duration-300 group-hover:scale-110"
           >
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
@@ -46,7 +46,7 @@
 
       <a href="/posts/better-sign-shop" class="relative block w-full mb-6 overflow-hidden transition duration-300 border rounded-card dark:border-gray-700">
         <div class="relative h-56 overflow-hidden rounded-card group">
-          <img src="/assets/images/poster-3-2x.png" data-nuxt-img="" srcset="/assets/images/poster-3-2x.png 1x, /assets/images/poster-3-2x.png 2x" class="object-cover transition duration-300 group-hover:scale-110">
+          <img src="/assets/images/posters/poster-3-2x.png" data-nuxt-img="" srcset="/assets/images/posters/poster-3-2x.png 1x, /assets/images/posters/poster-3-2x.png 2x" class="object-cover transition duration-300 group-hover:scale-110">
           <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-white bg-opacity-75 opacity-0 hover:opacity-100 dark:bg-gray-900 dark:bg-opacity-75">
             <div class="p-8">
               <h2 class="font-medium tracking-wider uppercase font-display text-primary">Clockwork Consulting</h2>
