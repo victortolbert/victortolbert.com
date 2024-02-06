@@ -72,7 +72,7 @@
     "nuxt-mail": "^4.0.2",
     "nuxt-mailer": "^0.11.0",
     "optimist": "^0.6.1",
-    "puppeteer": "^21.11.0",
+    "puppeteer": "^22.0.0",
     "qrcode.vue": "^3.4.1",
     "radix-vue": "^1.4.1",
     "resend": "^3.1.0",
