@@ -12,6 +12,13 @@ frameworks:
 
 # Booster
 
+<img
+  class="border rounded shadow grayscale hover:grayscale-0"
+  width="1960"
+  height="1352"
+  src="/assets/images/screens/boosterthon-parent-dashboard.png"
+/>
+
 <!--
 • It's good to see your involvement in the Agile Scrum development team. If you have experience with any specific Agile methodologies or tools, you can mention them.
 

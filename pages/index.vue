@@ -130,8 +130,8 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 </script>
 
 <template>
-  <div class="w-full relative mx-auto max-w-3xl print:p-12">
-    <main class="w-full space-y-8 print:space-y-6">
+  <article class="w-full relative mx-auto print:p-12">
+    <article class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-3xl">
@@ -209,7 +209,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
         <div class="flex flex-wrap gap-1">
           <template v-for="skill in resume?.skills" :key="`skill-${skill}`">
             <NuxtLink :to="`/${kebabCase(skill.name.toLowerCase())}`">
-              <UBadge color="primary" variant="solid" :ui="{ font: 'font-bold'}">
+              <UBadge color="primary" variant="solid" :ui="{ font: 'font-bold' }">
                 {{ skill.name }}
               </UBadge>
             </NuxtLink>
@@ -314,7 +314,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
           </div>
         </div>
       </section>
-    </main>
+    </article>
 
     <div v-if="false" class="grid gap-16">
       <section>
@@ -635,7 +635,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-base text-muted-foreground print:hidden">
       Press <span class="pointer-events-none inline-flex h-5 select-none items-center gap-1"><UKbd>{{ metaSymbol }}</UKbd><UKbd>K</UKbd></span> to open the command menu
     </p>
-  </div>
+  </article>
 </template>
 
 <style>

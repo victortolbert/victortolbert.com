@@ -24,9 +24,22 @@ definePageMeta({
       </p>
     </section>
 
+    <section>
+      <ol class="list-decimal list-inside">
+        <li><a href="#design-is-how-it-works">Design is how it works</a></li>
+        <li><a href="#reduce-concepts-to-increase-confidence">Reduce concepts to increase confidence</a></li>
+        <li><a href="#design-with-real-data">Design with real data</a></li>
+        <li><a href="#design-systems-not-pages">Design systems, not pages</a></li>
+        <li><a href="#involve-code-early">Involve code early</a></li>
+        <li><a href="#fast-is-better-than-slow">Fast is better than slow</a></li>
+        <li><a href="#let-content-determine-breakpoints">Let content determine breakpoints</a></li>
+        <li><a href="#strive-for-universality">Strive for universality</a></li>
+      </ol>
+    </section>
+
     <section class="mt-8 grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="design-is-how-it-works" class="font-semibold">
           1. Design is how it works
         </h3>
       </header>
@@ -37,7 +50,7 @@ definePageMeta({
 
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="reduce-concepts-to-increase-confidence" class="font-semibold">
           2. Reduce concepts to increase confidence
         </h3>
       </header>
@@ -45,9 +58,10 @@ definePageMeta({
         Simplifying complex concepts and elements in your design can make it more accessible and user-friendly. When users encounter fewer confusing or unfamiliar elements, they gain confidence in using the product. This principle reminds designers to prioritize clarity and simplicity to enhance user confidence.
       </p>
     </section>
+
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="design-with-real-data" class="font-semibold">
           3. Design with real data
         </h3>
       </header>
@@ -58,7 +72,7 @@ definePageMeta({
 
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="design-systems-not-pages" class="font-semibold">
           4. Design systems, not pages
         </h3>
       </header>
@@ -69,7 +83,7 @@ definePageMeta({
 
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="involve-code-early" class="font-semibold">
           5. Involve code early
         </h3>
       </header>
@@ -77,9 +91,10 @@ definePageMeta({
         Collaboration between designers and developers from the early stages of a project is crucial. This principle highlights the importance of designers understanding the technical constraints and possibilities of the chosen technology stack. It leads to more efficient workflows, fewer design-to-development challenges, and ultimately, a smoother product development process.
       </p>
     </section>
+
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="fast-is-better-than-slow" class="font-semibold">
           6. Fast is better than slow
         </h3>
       </header>
@@ -90,7 +105,7 @@ definePageMeta({
 
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="let-content-determine-breakpoints" class="font-semibold">
           7. Let content determine breakpoints
         </h3>
       </header>
@@ -101,7 +116,7 @@ definePageMeta({
 
     <section class="grid gap-4">
       <header>
-        <h3 class="font-semibold">
+        <h3 id="strive-for-universality" class="font-semibold">
           8. Strive for universality
         </h3>
       </header>

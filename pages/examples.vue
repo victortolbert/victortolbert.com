@@ -7,7 +7,7 @@ defineOgImageComponent('NuxtSeo')
 </script>
 
 <template>
-  <div class="max-w-8xl mx-auto">
+  <article class="max-w-8xl mx-auto">
     <Breadcrumbs />
     <ul class="mt-1.5">
       <li>
@@ -33,7 +33,7 @@ defineOgImageComponent('NuxtSeo')
     </ul>
 
     <NuxtPage />
-  </div>
+  </article>
 </template>
 
 <style>

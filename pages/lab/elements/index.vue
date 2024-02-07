@@ -1,4 +1,6 @@
 <script setup>
+import { statuses } from '~/data'
+
 definePageMeta({
   title: 'Elements',
   description: 'Elements are the basic building blocks of the design system. They are the smallest components that can be combined to create more complex components.',
@@ -10,24 +12,14 @@ definePageMeta({
 })
 // - Input (Text, Date, Tel, etc..)
 const elements = ref([
-  { name: 'Button', status: 'Ready', version: '1.0.1' },
-  { name: 'Checkbox', status: 'Ready', version: '1.0.1' },
-  { name: 'Dropdown', status: 'Ready', version: '1.0.1' },
-  { name: 'Icon', status: 'Ready', version: '1.0.1' },
-  { name: 'Input', status: 'Ready', version: '1.0.1' },
-  { name: 'MediaObject', status: 'Ready', version: '1.0.1' },
-  { name: 'Modal', status: 'Ready', version: '1.0.1' },
-  { name: 'MultiSelect', status: 'Ready', version: '1.0.1' },
-  { name: 'Radio', status: 'Ready', version: '1.0.1' },
-  { name: 'RadioGroup', status: 'Ready', version: '1.0.1' },
-  { name: 'Select', status: 'Ready', version: '1.0.1' },
-])
-const statuses = ref([
-  { name: 'Ready', icon: 'i-ph-check-square-duotone', className: 'text-green-500' },
-  { name: 'Review', icon: 'i-ph-minus-square-duotone', className: 'text-yellow-500' },
-  { name: 'Prototype', icon: 'i-ph-square-duotone', className: 'text-blue-500' },
-  { name: 'Deprecated', icon: 'i-ph-x-square-duotone', className: 'text-red-500' },
-  { name: 'N/A', icon: 'i-ph-minus-duotone', className: 'text-gray-500' },
+  { name: 'Button', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Heading', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Icon', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Input', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Paragraph', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'TextStyle', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Textarea', url: '/elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Wrapper', url: '/elements', status: 'Ready', version: '1.0.0' },
 ])
 </script>
 
@@ -43,43 +35,49 @@ const statuses = ref([
 
     <section class="grid">
       <section>
-        <ul class="flex gap-2 flex-wrap whitespace-nowrap justify-between">
-          <li v-for="status in statuses" :key="`status-${status.name}`" class="inline-flex gap-1">
-            <UIcon :name="status.icon" :class="status.className" class="text-xl" />
-            <span class="text-sm">{{ status.name }}</span>
-          </li>
-        </ul>
+        <LabStatusList />
       </section>
-      <table class="table-fixed border-b w-full">
-        <thead>
-          <tr class="bg-gray-100">
-            <th class="text-left px-4 py-2 font-medium text-sm w-8/12">
-              Element Name
-            </th>
-            <th class="text-center px-4 py-2 font-medium text-sm w-2/12 hidden">
-              Release
-            </th>
-            <th class="text-center px-4 py-2 font-medium text-sm w-2/12">
-              Status
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="element in elements" :key="`element-${element.name}`" class="text-sm">
-            <td class="px-4 py-2">
-              <NuxtLink to="/examples/elements/button">
-                <pre>{{ element.name }}</pre>
-              </NuxtLink>
-            </td>
-            <td class="px-4 py-2 text-center hidden">
-              1.0.0
-            </td>
-            <td class="px-4 py-2 text-center ">
-              <UIcon name="i-ph-square-duotone" class="text-blue-500 text-lg" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+      <section class="mt-8 flow-root">
+        <div class="overflow-x-auto">
+          <div class="inline-block min-w-full py-2 align-middle">
+            <table class="min-w-full divide-y divide-gray-300 dark:divide-gray-700">
+              <thead>
+                <tr class="bg-gray-200 dark:bg-gray-900">
+                  <th scope="col" class="sticky top-0 z-10 text-left px-2 py-3.5 font-semibold dark:text-white text-sm w-2/12">
+                    Status
+                  </th>
+                  <th scope="col" class="sticky top-0 z-10 text-left px-2 py-3.5 font-semibold dark:text-white text-sm w-8/12">
+                    Element Name
+                  </th>
+                  <th scope="col" class="sticky top-0 z-10 text-center px-2 py-3.5 font-semibold dark:text-white text-sm w-2/12 hidden sm:table-cell">
+                    Release
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 dark:divide-gray-800">
+                <tr v-for="element in elements" :key="`element-${element.name}`" class="text-sm">
+                  <td class="relative whitespace-nowrap px-2 pl-6 py-2 text-sm text-left">
+                    <UIcon
+                      :name="statuses[element.status].icon"
+                      :class="statuses[element.status].className"
+                      class="text-lg"
+                    />
+                  </td>
+                  <td class="whitespace-nowrap px-2 py-2 text-sm">
+                    <NuxtLink :to="element.url" class="text-gray-700 hover:text-primary-600 font-medium dark:text-gray-100">
+                      <pre>{{ element.name }}</pre>
+                    </NuxtLink>
+                  </td>
+                  <td class="whitespace-nowrap px-2 py-2 text-sm text-center hidden sm:table-cell">
+                    {{ element.version }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </section>
   </div>
 </template>

@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <article class="min-h-screen mx-auto max-w-3xl">
+  <article class="min-h-screen mx-auto">
     <!-- <AppHeader class="mt-1.5 mb-8" title="UX Lab" :description="description" /> -->
     <LogoLab class="h-6 w-auto" />
 
@@ -60,3 +60,9 @@ definePageMeta({
     </div>
   </article>
 </template>
+
+<style scoped>
+article a {
+  @apply hover:bg-primary-500 hover:text-white;
+}
+</style>

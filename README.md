@@ -13,6 +13,8 @@
 
 ## Todolist
 
+- [ ] Fix breadcrumb title for acronyms
+- [ ] Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
 - [x] Add resume
 - [ ] Create GitHub profile bio
 - [ ] Add emailing solution

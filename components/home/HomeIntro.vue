@@ -41,7 +41,7 @@ useSeoMeta({
         </NuxtLink> (mostly about tech and design).
       </p>
       <p class="mt-4 text-gray-900 dark:text-gray-400">
-        By day, I'm a fullstack software engineer at <a href="https://hancockclaims.com" target="_blank" class="underline">Hancock Claims Consultants</a>, and by night (and weekends), I'm busy tinkering working on some random tool or app, or learning a new framework.
+        By day, I'm a fullstack software engineer at <a href="https://hancockclaims.com" target="_blank">Hancock Claims Consultants</a>, and by night (and weekends), I'm busy tinkering working on some random tool or app, or learning a new framework.
       </p>
     </div>
   </div>

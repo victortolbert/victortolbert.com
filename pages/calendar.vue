@@ -93,7 +93,7 @@ function handleEvents(events) {
 </script>
 
 <template>
-  <section class="px-8">
+  <article class="px-8">
     <FullCalendar
       class="demo-app-calendars"
       :options="calendarOptions"
@@ -103,5 +103,5 @@ function handleEvents(events) {
         <i>{{ event.title }}</i>
       </template>
     </FullCalendar>
-  </section>
+  </article>
 </template>

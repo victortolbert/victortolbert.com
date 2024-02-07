@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   bodyAttrs: {
-    class: 'antialiased font-mono',
+    class: 'antialiased font-mono bg-gray-100 dark:bg-gray-950',
   },
 })
 
@@ -13,7 +13,7 @@ onMounted(() => {
 <template>
   <div>
     <NuxtLayout>
-      <NuxtLoadingIndicator color="#14b8a6" />
+      <NuxtLoadingIndicator color="var(--react)" />
       <NuxtPage />
     </NuxtLayout>
   </div>

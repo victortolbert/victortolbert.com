@@ -24,10 +24,10 @@ const date = useAppConfig().buildDate
 
     <!-- <AppFooter /> -->
 
-    <footer class="flex items-center w-full mx-auto justify-center max-w-3xl p-4">
-      <NuxtLink to="https://vticonsulting.com" target="_blank">
+    <footer class="flex items-center w-full mx-auto justify-center max-w-5xl p-4">
+      <!-- <NuxtLink to="https://vticonsulting.com" target="_blank">
         <TheLogo class="w-5 h-5" />
-      </NuxtLink>
+      </NuxtLink> -->
 
       <UColorModeButton />
 
