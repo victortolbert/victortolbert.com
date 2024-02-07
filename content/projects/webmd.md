@@ -14,6 +14,7 @@ frameworks:
 
 ## Projects
 
+<!--
 Collaborated with product managers, designers, web publishers, and producers to build and implement sponsored revenue products, modules and widgets using Agile / SCRUM methodology.
 
 - Hand-coded and documented modular website components using object-oriented vanilla JavaScript and jQuery.
@@ -65,6 +66,8 @@ Ads, Quiz, Rich Media, Metrics, Video, Symptom Checker, Decision Select
   - HTML
 - Advanced
   - XSL
+
+-->
 
 ## Quotes
 

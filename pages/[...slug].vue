@@ -36,7 +36,7 @@ if (!page.value) {
     <UContainer>
       <Breadcrumbs />
       <UPage>
-        <UPageBody prose>
+        <UPageBody :ui="{ prose: 'prose prose-primary dark:prose-pre:bg-red-500 dark:prose-invert max-w-none' }">
           <ContentRenderer v-if="page.body" :value="page" />
         </UPageBody>
       </UPage>

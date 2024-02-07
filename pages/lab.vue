@@ -7,14 +7,19 @@ definePageMeta({
 
 <template>
   <article class="min-h-screen mx-auto max-w-3xl">
-    <Breadcrumbs />
-    <AppHeader class="mt-1.5 mb-8" title="UX Lab" :description="description" />
+    <!-- <AppHeader class="mt-1.5 mb-8" title="UX Lab" :description="description" /> -->
+    <LogoLab class="h-6 w-auto" />
 
-    <div class="mt-4 flex gap-8 items-start">
+    <div class="mt-8 grid sm:flex gap-8 items-start">
       <NuxtPage />
 
-      <nav>
+      <nav class="order-1">
         <ul class="whitespace-nowrap">
+          <li>
+            <NuxtLink to="/lab">
+              Getting Started
+            </NuxtLink>
+          </li>
           <li>
             <NuxtLink to="/lab/principles">
               Design Principles
@@ -32,7 +37,7 @@ definePageMeta({
           </li>
           <li>
             <NuxtLink to="/lab/elements">
-              Elementsmessag
+              Elements
             </NuxtLink>
           </li>
           <li>

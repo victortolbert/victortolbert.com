@@ -13,6 +13,18 @@ Autotrader.com, Inc. is an online marketplace for car buyers and sellers, founde
 
 ---
 
+## Projects
+
+### Dealer Solutions 06
+
+### Research and Compare Tool
+
+### Credit Center
+
+### Find Your Car Redesign
+
+<!--
+
 Assisted team in the creation of interface design standards, and provided guidance on web accessibility and usability. Skills Used: HTML, CSS, JavaScript (jQuery, Prototype), JAVA (JSP, JSF), CVS, Subversion, Rhythmyx
 • Prototyped vehicle research and compare tool user interface for usability testing.
 • Presented and demo’d prototype to an audience including the CEO, CFO and CIO.
@@ -33,12 +45,5 @@ Assisted team in the creation of interface design standards, and provided guidan
 • Received a company-wide monthly Top Techie award.
 • Skills Used: HTML, CSS, JavaScript (jQuery, Prototype), JAVA (JSP, JSF), CVS, Subversion, Rhythmyx
 
-## Projects
 
-### Dealer Solutions 06
-
-### Research and Compare Tool
-
-### Credit Center
-
-### Find Your Car Redesign
+-->

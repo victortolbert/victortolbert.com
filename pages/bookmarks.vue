@@ -73,7 +73,6 @@ function getIcon(icon) {
 
 <template>
   <main class="min-h-screen mx-auto max-w-3xl">
-    <Breadcrumbs />
     <AppHeader class="mt-1.5 mb-8" title="Bookmarks" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">

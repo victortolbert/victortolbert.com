@@ -49,6 +49,8 @@
     --medium-seagreen: 144 60% 44%;
     --yellow-orange: 34 95% 60%;
     --firebrick: 347 71% 36%;
+
+    --tw-prose-pre-bg: var(--vue);
   }
 
   .dark {
@@ -95,6 +97,8 @@
     --medium-seagreen: 144 60% 44%;
     --yellow-orange: 34 95% 60%;
     --firebrick: 347 71% 36%;
+
+    --tw-prose-pre-bg: var(--vue);
   }
 }
 

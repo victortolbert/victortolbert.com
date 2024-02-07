@@ -126,8 +126,8 @@ dependencies:
     specifier: ^3.4.1
     version: 3.4.1(vue@3.4.15)
   radix-vue:
-    specifier: ^1.4.1
-    version: 1.4.1(vue@3.4.15)
+    specifier: ^1.4.2
+    version: 1.4.2(vue@3.4.15)
   resend:
     specifier: ^3.1.0
     version: 3.1.0
@@ -393,7 +393,7 @@ devDependencies:
     version: 3.11.0(@testing-library/vue@8.0.1)(@vue/test-utils@2.4.4)(h3@1.10.1)(jsdom@24.0.0)(rollup@4.9.6)(vite@5.0.12)(vitest@1.2.2)(vue-router@4.2.5)(vue@3.4.15)
   '@nuxt/ui-pro':
     specifier: npm:@nuxt/ui-pro-edge@latest
-    version: /@nuxt/ui-pro-edge@0.7.5-28453804.3fd4eea(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)
+    version: /@nuxt/ui-pro-edge@0.7.5-28454083.00e791c(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)
   '@nuxtjs/fontaine':
     specifier: ^0.4.1
     version: 0.4.1(rollup@4.9.6)
@@ -551,8 +551,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1
   aws-sdk:
-    specifier: 2.1551.0
-    version: 2.1551.0
+    specifier: 2.1552.0
+    version: 2.1552.0
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -861,7 +861,7 @@ devDependencies:
     version: 9.0.1
   valibot:
     specifier: ^0.28.0
-    version: 0.28.0
+    version: 0.28.1
   video.js:
     specifier: ^8.10.0
     version: 8.10.0
@@ -981,7 +981,7 @@ packages:
       eslint-plugin-toml: 0.9.2(eslint@8.56.0)
       eslint-plugin-unicorn: 50.0.1(eslint@8.56.0)
       eslint-plugin-unused-imports: 3.0.0(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)
-      eslint-plugin-vitest: 0.3.21(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.2)
+      eslint-plugin-vitest: 0.3.22(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.2)
       eslint-plugin-vue: 9.21.1(eslint@8.56.0)
       eslint-plugin-yml: 1.12.2(eslint@8.56.0)
       eslint-processor-vue-blocks: 0.1.1(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)
@@ -1167,7 +1167,7 @@ packages:
       '@smithy/util-body-length-browser': 2.1.1
       '@smithy/util-body-length-node': 2.2.1
       '@smithy/util-defaults-mode-browser': 2.1.1
-      '@smithy/util-defaults-mode-node': 2.1.1
+      '@smithy/util-defaults-mode-node': 2.2.0
       '@smithy/util-endpoints': 1.1.1
       '@smithy/util-retry': 2.1.1
       '@smithy/util-stream': 2.1.1
@@ -1218,7 +1218,7 @@ packages:
       '@smithy/util-body-length-browser': 2.1.1
       '@smithy/util-body-length-node': 2.2.1
       '@smithy/util-defaults-mode-browser': 2.1.1
-      '@smithy/util-defaults-mode-node': 2.1.1
+      '@smithy/util-defaults-mode-node': 2.2.0
       '@smithy/util-endpoints': 1.1.1
       '@smithy/util-retry': 2.1.1
       '@smithy/util-utf8': 2.1.1
@@ -1270,7 +1270,7 @@ packages:
       '@smithy/util-body-length-browser': 2.1.1
       '@smithy/util-body-length-node': 2.2.1
       '@smithy/util-defaults-mode-browser': 2.1.1
-      '@smithy/util-defaults-mode-node': 2.1.1
+      '@smithy/util-defaults-mode-node': 2.2.0
       '@smithy/util-endpoints': 1.1.1
       '@smithy/util-retry': 2.1.1
       '@smithy/util-utf8': 2.1.1
@@ -1315,7 +1315,7 @@ packages:
       '@smithy/util-body-length-browser': 2.1.1
       '@smithy/util-body-length-node': 2.2.1
       '@smithy/util-defaults-mode-browser': 2.1.1
-      '@smithy/util-defaults-mode-node': 2.1.1
+      '@smithy/util-defaults-mode-node': 2.2.0
       '@smithy/util-endpoints': 1.1.1
       '@smithy/util-retry': 2.1.1
       '@smithy/util-utf8': 2.1.1
@@ -1363,7 +1363,7 @@ packages:
       '@smithy/util-body-length-browser': 2.1.1
       '@smithy/util-body-length-node': 2.2.1
       '@smithy/util-defaults-mode-browser': 2.1.1
-      '@smithy/util-defaults-mode-node': 2.1.1
+      '@smithy/util-defaults-mode-node': 2.2.0
       '@smithy/util-endpoints': 1.1.1
       '@smithy/util-middleware': 2.1.1
       '@smithy/util-retry': 2.1.1
@@ -5648,7 +5648,7 @@ packages:
       '@nuxt/schema': 3.6.5(rollup@4.9.6)
       c12: 1.6.1
       consola: 3.2.3
-      defu: 6.1.2
+      defu: 6.1.4
       globby: 13.2.2
       hash-sum: 2.0.0
       ignore: 5.3.1
@@ -5739,7 +5739,7 @@ packages:
     resolution: {integrity: sha512-UPUnMB0W5TZ/Pi1fiF71EqIsPlj8LGZqzhSf8wOeh538KHwxbA9r7cuvEUU92eXRksOZaylbea3fJxZWhOITVw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     dependencies:
-      defu: 6.1.2
+      defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.0.3
@@ -5870,8 +5870,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/ui-edge@2.13.0-28453763.6b82429(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15):
-    resolution: {integrity: sha512-Hn7eZJIoWimj0alVSld9AZM9KEjeQakL+L3aQ0c3KzcGcg4Ad7oCkEZOwmqy1BFEj/cUcy5ypaTahYIAWSwSAw==}
+  /@nuxt/ui-edge@2.13.0-28453998.d0f4530(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15):
+    resolution: {integrity: sha512-AWiK9CAOLOI+lrcwfQqkQ6wMm4b4uTKnFGvSC362XlfnivFvrL39WXyQOdcjClQbWNpodQPp/WhoJ826Fmikhw==}
     engines: {node: '>=v16.20.2'}
     dependencies:
       '@egoist/tailwindcss-icons': 1.7.4(tailwindcss@3.4.1)
@@ -5918,10 +5918,10 @@ packages:
       - vue
     dev: true
 
-  /@nuxt/ui-pro-edge@0.7.5-28453804.3fd4eea(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15):
-    resolution: {integrity: sha512-8TGqGxw1dKpBRrIY2Q9sFdE2Ijzabcx7Gm3fr12n39Y5aGlhOShKs7lSKfcbyebPNB8HCR/2DYOiDuk0GlMSkg==}
+  /@nuxt/ui-pro-edge@0.7.5-28454083.00e791c(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15):
+    resolution: {integrity: sha512-sWg/zhpwjuSRTGQayMgbHU35KTfP6QIUsUIq7Ge8I1bw+lGTx0E3Cbi4wrLq7aaeQlYPcJTIBXFVedVnN8Zajg==}
     dependencies:
-      '@nuxt/ui': /@nuxt/ui-edge@2.13.0-28453763.6b82429(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)
+      '@nuxt/ui': /@nuxt/ui-edge@2.13.0-28453998.d0f4530(axios@1.6.7)(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)
       '@vueuse/core': 10.7.2(vue@3.4.15)
       defu: 6.1.4
       git-url-parse: 14.0.0
@@ -8248,8 +8248,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@smithy/util-defaults-mode-node@2.1.1:
-    resolution: {integrity: sha512-tYVrc+w+jSBfBd267KDnvSGOh4NMz+wVH7v4CClDbkdPfnjvImBZsOURncT5jsFwR9KCuDyPoSZq4Pa6+eCUrA==}
+  /@smithy/util-defaults-mode-node@2.2.0:
+    resolution: {integrity: sha512-iFJp/N4EtkanFpBUtSrrIbtOIBf69KNuve03ic1afhJ9/korDxdM0c6cCH4Ehj/smI9pDCfVv+bqT3xZjF2WaA==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       '@smithy/config-resolver': 2.1.1
@@ -10970,8 +10970,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-sdk@2.1551.0:
-    resolution: {integrity: sha512-nUaAzS7cheaKF8lV0AVJBqteuoYIgQ5UgpZaoRR44D7HA1f6iCYFISF6WH6d0hQvpxPDIXr5NlVt0cHyp/Sx1g==}
+  /aws-sdk@2.1552.0:
+    resolution: {integrity: sha512-sRuzlCeSHXUsdLqsV/E+nPrgBn1EI3BoA38D5qfNMRcPTd9j4G8M4AyMymKyNxLoWOKLqz7xFBa801MHflGwEg==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -11345,7 +11345,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001584
-      electron-to-chromium: 1.4.657
+      electron-to-chromium: 1.4.658
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.3)
 
@@ -11368,7 +11368,7 @@ packages:
     resolution: {integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==}
     dependencies:
       base64-js: 1.5.1
-      ieee754: 1.1.13
+      ieee754: 1.2.1
       isarray: 1.0.0
     dev: true
 
@@ -13214,8 +13214,8 @@ packages:
       jake: 10.8.7
     dev: true
 
-  /electron-to-chromium@1.4.657:
-    resolution: {integrity: sha512-On2ymeleg6QbRuDk7wNgDdXtNqlJLM2w4Agx1D/RiTmItiL+a9oq5p7HUa2ZtkAtGBe/kil2dq/7rPfkbe0r5w==}
+  /electron-to-chromium@1.4.658:
+    resolution: {integrity: sha512-LGkxndHz7OEv6ipmL95E83SOZmK96PHk6Njw0nf5UaOLbvPxxJhejlBWl4esuU6JHMiCjysLhKRQmLTd5s2ZPw==}
 
   /elegant-spinner@1.0.1:
     resolution: {integrity: sha512-B+ZM+RXvRqQaAmkMlO/oSe5nMUOaUnyfGYCEHoR8wrXsZR2mA0XVibsxV1bvTwxdRWah1PkQqso2EzhILGHtEQ==}
@@ -13408,7 +13408,7 @@ packages:
       string.prototype.trim: 1.2.8
       string.prototype.trimend: 1.0.7
       string.prototype.trimstart: 1.0.7
-      typed-array-buffer: 1.0.0
+      typed-array-buffer: 1.0.1
       typed-array-byte-length: 1.0.0
       typed-array-byte-offset: 1.0.0
       typed-array-length: 1.0.4
@@ -14070,8 +14070,8 @@ packages:
       eslint-rule-composer: 0.3.0
     dev: true
 
-  /eslint-plugin-vitest@0.3.21(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.2):
-    resolution: {integrity: sha512-oYwR1MrwaBw/OG6CKU+SJYleAc442w6CWL1RTQl5WLwy8X3sh0bgHIQk5iEtmTak3Q+XAvZglr0bIoDOjFdkcw==}
+  /eslint-plugin-vitest@0.3.22(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.2):
+    resolution: {integrity: sha512-atkFGQ7aVgcuSeSMDqnyevIyUpfBPMnosksgEPrKE7Y8xQlqG/5z2IQ6UDau05zXaaFv7Iz8uzqvIuKshjZ0Zw==}
     engines: {node: ^18.0.0 || >= 20.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -23241,8 +23241,8 @@ packages:
       '@msgpack/msgpack': 2.8.0
     dev: true
 
-  /radix-vue@1.4.1(vue@3.4.15):
-    resolution: {integrity: sha512-eJsyIHDZPfIdH0iqrfTODuklPqDXfO0iNDNI1isOYIr+ejmeCjP6Yw1LA7LtDryPnjsSkqj0t04DF7eBn2wtMQ==}
+  /radix-vue@1.4.2(vue@3.4.15):
+    resolution: {integrity: sha512-3eENiigXlRBduAXoFjanDmuD/p1M+KU0C2SZWyRD9Mpey8RQSZ593AshroUV4cho8UL4h398RYA6ouMWAvU4Jg==}
     dependencies:
       '@floating-ui/dom': 1.6.1
       '@floating-ui/vue': 1.0.6(vue@3.4.15)
@@ -26130,12 +26130,12 @@ packages:
     resolution: {integrity: sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==}
     dev: true
 
-  /typed-array-buffer@1.0.0:
-    resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}
+  /typed-array-buffer@1.0.1:
+    resolution: {integrity: sha512-RSqu1UEuSlrBhHTWC8O9FnPjOduNs4M7rJ4pRKoEjtx1zUNOPN2sSXHLDX+Y2WPbHIxbvg4JFo2DNAEfPIKWoQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.6
-      get-intrinsic: 1.2.4
+      es-errors: 1.3.0
       is-typed-array: 1.1.13
     dev: true
 
@@ -26901,8 +26901,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /valibot@0.28.0:
-    resolution: {integrity: sha512-+ADabFSOGEffVmMYltPVK3K1GpbzXGoNSoP9ZbjTVz7wkjVIj6L2NvOu4TaeU2R9s7tyNKihcAeddmrpT6LDzQ==}
+  /valibot@0.28.1:
+    resolution: {integrity: sha512-zQnjwNJuXk6362Leu0+4eFa/SMwRom3/hEvH6s1EGf3oXIPbo2WFKDra9ymnbVh3clLRvd8hw4sKF5ruI2Lyvw==}
     dev: true
 
   /valid-data-url@3.0.1:
@@ -28177,7 +28177,7 @@ packages:
     resolution: {integrity: sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==}
     engines: {node: '>=4.0.0'}
     dependencies:
-      sax: 1.2.1
+      sax: 1.3.0
       xmlbuilder: 11.0.1
     dev: true
 

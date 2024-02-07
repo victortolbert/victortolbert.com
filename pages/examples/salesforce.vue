@@ -25,6 +25,7 @@ useHead({
 
 <template>
   <article>
+    <div class="slds-brand-band slds-brand-band_medium slds-brand-band_group" />
     <NuxtPage />
   </article>
 </template>

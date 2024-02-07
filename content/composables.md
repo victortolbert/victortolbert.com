@@ -2,6 +2,7 @@
 
 ## useAppConfig
 ## useAsyncData
+## [useContentHead](https://content.nuxt.com/composables/use-content-head)
 ## useDateFormat
 ## useFetch
 ## useFixedHeader
