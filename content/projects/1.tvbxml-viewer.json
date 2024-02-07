@@ -1,6 +1,6 @@
 {
-  "name": "TVB XML Viewer",
-  "url": "https://logspot.vercel.app/",
+  "name": "TVB XML Proposal Viewer",
+  "url": "/videa/#xml-proposal-viewer",
   "description": "When I was part of the Videa.tv team, a startup under Cox Media Group (which, unfortunately, is no longer around), TVB XML was a standard Television Bureau of Advertising format for electronic orders, etc. used for conducting business between advertisers / advertising agencies and TV stations / local station rep firms. I used Laravel 4, guzzle to parse the XML and display it in a sortable data table format which allow for it users to export the data to CSV, Excel, PDF, and Print. The XML standard has evolved since then, but this was a fun project to work on.",
   "thumbnail": "/assets/images/projects/tvb-xml-viewer.png",
   "status": "Active",

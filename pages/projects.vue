@@ -1,6 +1,6 @@
 <script setup>
 const description
-  = 'Throughout my journey, I\'ve been fortunate to work on countless projects, but these are the ones that truly stand out. A few of them are open-source, so if anything sparks your curiosity, take a look at the code and consider contributing your insights for further refinement.'
+  = 'Throughout my professional journey, I\'ve had the privilege of contributing to a diverse array of projects for some truly remarkable companies. Below, I\'ve highlighted a selection of these endeavors, some of which are open-source initiatives. I encourage you to explore these projects—should any pique your interest, I warmly invite you to delve into the code and consider offering your unique insights and expertise to enhance their development further.'
 useSeoMeta({
   title: 'Projects - Victor Tolbert',
   description,
@@ -12,34 +12,11 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 
 <template>
   <main class="min-h-screen mx-auto max-w-3xl">
-    <Breadcrumbs />
     <AppHeader class="mt-1.5 mb-12" title="Projects" :description="description" />
 
     <LogoCloud />
 
-    <section v-if="false" class="grid gap-16 text-gray-400 scale-90 dark:text-gray-500">
-      <!-- <LogoHancockClaims /> -->
-      <NuxtLink to="/att" class="grid">
-        <LogoATT />
-      </NuxtLink>
-      <NuxtLink to="/autotrader" class="grid">
-        <LogoAutoTrader />
-      </NuxtLink>
-      <NuxtLink to="/booster" class="grid">
-        <LogoBooster />
-      </NuxtLink>
-      <NuxtLink to="/turner" class="grid">
-        <LogoTurnerSports />
-      </NuxtLink>
-      <NuxtLink to="/videa" class="grid">
-        <LogoVidea />
-      </NuxtLink>
-      <NuxtLink to="/webmd" class="grid">
-        <LogoWebmd />
-      </NuxtLink>
-    </section>
-
-    <div class="space-y-4 mt-16">
+    <div v-if="false" class="space-y-4 mt-16">
       <AppProjectCard
         v-for="(project, id) in projects"
         :key="id"

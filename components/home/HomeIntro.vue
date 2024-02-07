@@ -14,7 +14,7 @@ useSeoMeta({
       sizes="48px sm:64px" placeholder format="webp"
     /> -->
     <h1 class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
-      Hello!
+      👋🏼 Hi!
     </h1>
     <div>
       <img src="/assets/images/me/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot">

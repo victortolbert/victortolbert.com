@@ -24,10 +24,10 @@ const elements = ref([
 ])
 const statuses = ref([
   { name: 'Ready', icon: 'i-ph-check-square-duotone', className: 'text-green-500' },
-  { name: 'Under Review', icon: 'i-ph-minus-square-duotone', className: 'text-yellow-500' },
+  { name: 'Review', icon: 'i-ph-minus-square-duotone', className: 'text-yellow-500' },
   { name: 'Prototype', icon: 'i-ph-square-duotone', className: 'text-blue-500' },
   { name: 'Deprecated', icon: 'i-ph-x-square-duotone', className: 'text-red-500' },
-  { name: 'Not applicable', icon: 'i-ph-minus-duotone', className: 'text-gray-500' },
+  { name: 'N/A', icon: 'i-ph-minus-duotone', className: 'text-gray-500' },
 ])
 </script>
 
@@ -41,14 +41,22 @@ const statuses = ref([
       </header>
     </section>
 
-    <section class="grid gap-4">
+    <section class="grid">
+      <section>
+        <ul class="flex gap-2 flex-wrap whitespace-nowrap justify-between">
+          <li v-for="status in statuses" :key="`status-${status.name}`" class="inline-flex gap-1">
+            <UIcon :name="status.icon" :class="status.className" class="text-xl" />
+            <span class="text-sm">{{ status.name }}</span>
+          </li>
+        </ul>
+      </section>
       <table class="table-fixed border-b w-full">
         <thead>
           <tr class="bg-gray-100">
             <th class="text-left px-4 py-2 font-medium text-sm w-8/12">
               Element Name
             </th>
-            <th class="text-center px-4 py-2 font-medium text-sm w-2/12">
+            <th class="text-center px-4 py-2 font-medium text-sm w-2/12 hidden">
               Release
             </th>
             <th class="text-center px-4 py-2 font-medium text-sm w-2/12">
@@ -63,20 +71,7 @@ const statuses = ref([
                 <pre>{{ element.name }}</pre>
               </NuxtLink>
             </td>
-            <td class="px-4 py-2 text-center">
-              1.0.0
-            </td>
-            <td class="px-4 py-2 text-center ">
-              <UIcon name="i-ph-square-duotone" class="text-blue-500 text-lg" />
-            </td>
-          </tr>
-          <tr class="text-sm">
-            <td class="px-4 py-2">
-              <NuxtLink to="/examples/elements/button">
-                <pre>Button</pre>
-              </NuxtLink>
-            </td>
-            <td class="px-4 py-2 text-center">
+            <td class="px-4 py-2 text-center hidden">
               1.0.0
             </td>
             <td class="px-4 py-2 text-center ">
@@ -85,35 +80,6 @@ const statuses = ref([
           </tr>
         </tbody>
       </table>
-
-      <section class="px-4">
-        <ul class="grid gap-4 whitespace-nowrap">
-          <li v-for="status in statuses" :key="`status-${status.name}`" class="inline-flex gap-1.5">
-            <UIcon :name="status.icon" :class="status.className" class="text-xl" />
-            <span class="text-sm">{{ status.name }}</span>
-          </li>
-          <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-check-square-duotone" class="text-green-500 text-xl" />
-            <span class="text-sm">Ready</span>
-          </li>
-          <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-minus-square-duotone" class="text-yellow-500 text-xl" />
-            <span class="text-sm">Under Review</span>
-          </li>
-          <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-square-duotone" class="text-blue-500 text-xl" />
-            <span class="text-sm">Prototype</span>
-          </li>
-          <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-x-square-duotone" class="text-red-500 text-xl" />
-            <span class="text-sm">Deprecated</span>
-          </li>
-          <li class="inline-flex gap-1.5">
-            <UIcon name="i-ph-minus-duotone" class="text-gray-500 text-xl" />
-            <span class="text-sm">Not applicable</span>
-          </li>
-        </ul>
-      </section>
     </section>
   </div>
 </template>

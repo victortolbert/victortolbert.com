@@ -17,3 +17,7 @@ head:
     - name: 'copyright'
       content: '© 2024 Victor Tolbert'
 ---
+
+# {{title}}
+
+<img :src="image.src" :alt="alt" />

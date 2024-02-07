@@ -9,8 +9,9 @@ useSeoMeta({
 
 <template>
   <article>
+    <p>Your go-to open-source solution for crafting UI Design Systems. Empowering your team with organized tools, patterns, and best practices to lay the groundwork for seamless application development.</p>
     <!-- <AppHeader class="mb-12" title="UX Lab" :description="description" /> -->
-    <div class="space-y-24">
+    <div class="mt-8 space-y-24">
       <ContentList v-slot="{ list }" path="/lab">
         <ContentQuery
           v-for="item in list"

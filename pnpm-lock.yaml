@@ -126,8 +126,8 @@ dependencies:
     specifier: ^3.4.1
     version: 3.4.1(vue@3.4.15)
   radix-vue:
-    specifier: ^1.4.1
-    version: 1.4.1(vue@3.4.15)
+    specifier: ^1.4.2
+    version: 1.4.2(vue@3.4.15)
   resend:
     specifier: ^3.1.0
     version: 3.1.0
@@ -551,8 +551,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1
   aws-sdk:
-    specifier: 2.1551.0
-    version: 2.1551.0
+    specifier: 2.1552.0
+    version: 2.1552.0
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -5648,7 +5648,7 @@ packages:
       '@nuxt/schema': 3.6.5(rollup@4.9.6)
       c12: 1.6.1
       consola: 3.2.3
-      defu: 6.1.2
+      defu: 6.1.4
       globby: 13.2.2
       hash-sum: 2.0.0
       ignore: 5.3.1
@@ -5739,7 +5739,7 @@ packages:
     resolution: {integrity: sha512-UPUnMB0W5TZ/Pi1fiF71EqIsPlj8LGZqzhSf8wOeh538KHwxbA9r7cuvEUU92eXRksOZaylbea3fJxZWhOITVw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     dependencies:
-      defu: 6.1.2
+      defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.0.3
@@ -10970,8 +10970,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-sdk@2.1551.0:
-    resolution: {integrity: sha512-nUaAzS7cheaKF8lV0AVJBqteuoYIgQ5UgpZaoRR44D7HA1f6iCYFISF6WH6d0hQvpxPDIXr5NlVt0cHyp/Sx1g==}
+  /aws-sdk@2.1552.0:
+    resolution: {integrity: sha512-sRuzlCeSHXUsdLqsV/E+nPrgBn1EI3BoA38D5qfNMRcPTd9j4G8M4AyMymKyNxLoWOKLqz7xFBa801MHflGwEg==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -11368,7 +11368,7 @@ packages:
     resolution: {integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==}
     dependencies:
       base64-js: 1.5.1
-      ieee754: 1.1.13
+      ieee754: 1.2.1
       isarray: 1.0.0
     dev: true
 
@@ -23241,8 +23241,8 @@ packages:
       '@msgpack/msgpack': 2.8.0
     dev: true
 
-  /radix-vue@1.4.1(vue@3.4.15):
-    resolution: {integrity: sha512-eJsyIHDZPfIdH0iqrfTODuklPqDXfO0iNDNI1isOYIr+ejmeCjP6Yw1LA7LtDryPnjsSkqj0t04DF7eBn2wtMQ==}
+  /radix-vue@1.4.2(vue@3.4.15):
+    resolution: {integrity: sha512-3eENiigXlRBduAXoFjanDmuD/p1M+KU0C2SZWyRD9Mpey8RQSZ593AshroUV4cho8UL4h398RYA6ouMWAvU4Jg==}
     dependencies:
       '@floating-ui/dom': 1.6.1
       '@floating-ui/vue': 1.0.6(vue@3.4.15)
@@ -28177,7 +28177,7 @@ packages:
     resolution: {integrity: sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==}
     engines: {node: '>=4.0.0'}
     dependencies:
-      sax: 1.2.1
+      sax: 1.3.0
       xmlbuilder: 11.0.1
     dev: true
 

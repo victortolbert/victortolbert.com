@@ -17,3 +17,7 @@ head:
     - name: 'copyright'
       content: '© 2024 Victor Tolbert'
 ---
+
+# Buttons
+
+Buttons are clickable items used to perform an action.

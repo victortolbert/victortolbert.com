@@ -10,7 +10,28 @@ languages:
 frameworks: WordPress
 ---
 
+# Hancock Claims Consultants
+
 ## Projects
+
+### Independent Adjuster Portal
+
+### Authorize.net Payments
+
+### Calendar
+
+### Auto Scheduler
+
+### Allstate Property Inspection Report
+
+### Legacy Application migration
+
+### Property Inspection Form
+
+
+---
+
+<!--
 
 **Claim number format validation**
 
@@ -48,26 +69,11 @@ frameworks: WordPress
 • Highlighting the modernization of a legacy .NET application is an excellent achievement. You might want to provide more details about the challenges faced during the modernization and how your solutions improved the system.
 • Mentioning your knowledge of Microsoft Azure is great, but consider specifying any certifications or specific projects related to Azure that you worked on.
 
-## Projects
 
-### Independent Adjuster Portal
-
-### Calendar
-
-### Auto Scheduler
-
-### Allstate Property Inspection Report
-
-### Legacy Application migration
-
-### Property Inspection Form
 
 ## .NET Packages
 
-netcoreapp3.1
-
-### API
-
+- netcoreapp3.1
 - AutoMapper, 10.1.1
 - AutoMapper.Extensions.Microsoft.DependencyInjection, 8.1.1
 - Azure.Messaging.ServiceBus, 7.11.1
@@ -196,9 +202,6 @@ netcoreapp3.1
 - Microsoft.NET.Test.Sdk, 16.0.1
 - MSTest.TestAdapter, 1.4.0
 - MSTest.TestFramework, 1.4.0
-
-
----
 
 ---
 title: Notes
@@ -413,3 +416,4 @@ Customer support is part of the customer service department.  The customer servi
 - All projects
 - Archived
 - Billed
+-->
