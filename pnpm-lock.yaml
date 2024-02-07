@@ -764,8 +764,8 @@ devDependencies:
     specifier: ^3.3.4
     version: 3.3.4(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(nuxt@3.10.1)(postcss@8.4.34)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
   nuxt-security:
-    specifier: 1.1.0
-    version: 1.1.0(rollup@4.9.6)
+    specifier: 1.1.1
+    version: 1.1.1(rollup@4.9.6)
   nuxt-simple-sitemap:
     specifier: 4.4.1
     version: 4.4.1(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.34)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
@@ -20572,8 +20572,8 @@ packages:
       - webpack
     dev: true
 
-  /nuxt-security@1.1.0(rollup@4.9.6):
-    resolution: {integrity: sha512-nsvdUQbHjpGPNRUYi+ZDB5yUGL7rjTIhTxpuZwqxJuOPwAbw19S2DlgE+HTxn9CmzTCv8231lEhpD5G/Y4uG7g==}
+  /nuxt-security@1.1.1(rollup@4.9.6):
+    resolution: {integrity: sha512-mwCF5P3ukHvh6Gq0mI/0Ioh57Ws55xNsKv2By9EfADHc3L9etxHnhoicanA4hcy5VxUNqxvVK0vZ/+MpE98rvw==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       basic-auth: 2.0.1
