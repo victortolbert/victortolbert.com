@@ -173,7 +173,7 @@
     "@nuxtjs/mdc": "^0.5.0",
     "@nuxtjs/plausible": "^0.2.4",
     "@nuxtjs/prismic": "^3.1.0",
-    "@nuxtjs/seo": "2.0.0-rc.7",
+    "@nuxtjs/seo": "2.0.0-rc.8",
     "@nuxtjs/storybook": "7.0.0",
     "@nuxtjs/supabase": "^1.1.6",
     "@nuxtjs/web-vitals": "0.2.6",

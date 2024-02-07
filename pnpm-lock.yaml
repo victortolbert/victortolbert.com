@@ -413,8 +413,8 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0(rollup@4.9.6)(vue@3.4.15)
   '@nuxtjs/seo':
-    specifier: 2.0.0-rc.7
-    version: 2.0.0-rc.7(@lezer/common@1.2.1)(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.35)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
+    specifier: 2.0.0-rc.8
+    version: 2.0.0-rc.8(@lezer/common@1.2.1)(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.35)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
   '@nuxtjs/storybook':
     specifier: 7.0.0
     version: 7.0.0(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)
@@ -6228,8 +6228,8 @@ packages:
       - vue
     dev: true
 
-  /@nuxtjs/seo@2.0.0-rc.7(@lezer/common@1.2.1)(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.35)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1):
-    resolution: {integrity: sha512-feeyDDgdaP3CubYNCQk6qzeSI2Yv+gclneAnWzAIt9QTrjyWx9GMDdOIXUBPz39IOgZ2PH/KyeY9UL/fja8CKg==}
+  /@nuxtjs/seo@2.0.0-rc.8(@lezer/common@1.2.1)(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.35)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1):
+    resolution: {integrity: sha512-N0Ke7A5dHkF5oY9F3VAQAPu0gfkYQHdepIPc2g/GFs+lgNB352djvJ9rNSgVDsxWKmP3RJ1iubl8orCcJiIxyA==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       '@nuxtjs/sitemap': 5.1.0(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.35)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
@@ -12028,6 +12028,7 @@ packages:
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -16762,6 +16763,7 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
     dev: true
 
   /is-bigint@1.0.4:
@@ -24546,6 +24548,7 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
     dev: true
