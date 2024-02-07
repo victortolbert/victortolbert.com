@@ -443,14 +443,14 @@ devDependencies:
     specifier: ^5.9.1
     version: 5.9.1(prisma@5.9.1)
   '@sentry/node':
-    specifier: ^7.100.0
-    version: 7.100.0
+    specifier: ^7.100.1
+    version: 7.100.1
   '@sentry/profiling-node':
     specifier: ^1.3.5
-    version: 1.3.5(@sentry/node@7.100.0)
+    version: 1.3.5(@sentry/node@7.100.1)
   '@sentry/vue':
-    specifier: ^7.100.0
-    version: 7.100.0(vue@3.4.15)
+    specifier: ^7.100.1
+    version: 7.100.1(vue@3.4.15)
   '@slicemachine/adapter-nuxt':
     specifier: ^0.3.34
     version: 0.3.34(@types/uuid@9.0.8)(nuxt@3.10.1)(uuid@9.0.1)
@@ -722,8 +722,8 @@ devDependencies:
     specifier: ^3.10.1
     version: 3.10.1(eslint@8.56.0)(less@4.2.0)(rollup@4.9.6)(sass@1.70.0)(typescript@5.3.3)(vite@5.0.12)(vue-tsc@1.8.27)
   nuxt-api-party:
-    specifier: ^1.0.0
-    version: 1.0.0(rollup@4.9.6)
+    specifier: ^1.0.1
+    version: 1.0.1(rollup@4.9.6)
   nuxt-component-meta:
     specifier: ^0.6.3
     version: 0.6.3(rollup@4.9.6)
@@ -737,8 +737,8 @@ devDependencies:
     specifier: ^0.6.8
     version: 0.6.8(nuxt@3.10.1)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)
   nuxt-kql:
-    specifier: ^1.2.0
-    version: 1.2.0(rollup@4.9.6)(vue@3.4.15)
+    specifier: ^1.2.1
+    version: 1.2.1(rollup@4.9.6)(vue@3.4.15)
   nuxt-lodash:
     specifier: ^2.5.3
     version: 2.5.3(rollup@4.9.6)
@@ -764,8 +764,8 @@ devDependencies:
     specifier: ^3.3.4
     version: 3.3.4(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(nuxt@3.10.1)(postcss@8.4.34)(rollup@4.9.6)(unhead@1.8.10)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
   nuxt-security:
-    specifier: 1.1.0
-    version: 1.1.0(rollup@4.9.6)
+    specifier: 1.1.1
+    version: 1.1.1(rollup@4.9.6)
   nuxt-simple-sitemap:
     specifier: 4.4.1
     version: 4.4.1(@nuxt/devtools-edge@1.0.8-28453554.960896c)(@vue/compiler-core@3.4.15)(axios@1.6.7)(fuse.js@7.0.0)(h3@1.10.1)(nuxt@3.10.1)(postcss@8.4.34)(rollup@4.9.6)(vite@5.0.12)(vue@3.4.15)(webpack@5.90.1)
@@ -860,7 +860,7 @@ devDependencies:
     specifier: ^9.0.1
     version: 9.0.1
   valibot:
-    specifier: ^0.28.0
+    specifier: ^0.28.1
     version: 0.28.1
   video.js:
     specifier: ^8.10.0
@@ -7556,66 +7556,66 @@ packages:
       selderee: 0.11.0
     dev: false
 
-  /@sentry-internal/feedback@7.100.0:
-    resolution: {integrity: sha512-SMW2QhNKOuSjw8oPtvryDlJjiwrNyAKljbgtMk057os/fd8QMp38Yt1ImqLCM4B2rTQZ6REJ6hRGRTRcfqoG+w==}
+  /@sentry-internal/feedback@7.100.1:
+    resolution: {integrity: sha512-yqcRVnjf+qS+tC4NxOKLJOaSJ+csHmh/dHUzvCTkf5rLsplwXYRnny2r0tqGTQ4tuXMxwgSMKPYwicg81P+xuw==}
     engines: {node: '>=12'}
     dependencies:
-      '@sentry/core': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry/core': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry-internal/replay-canvas@7.100.0:
-    resolution: {integrity: sha512-DePinj5IgNiC4RZv0yX0DLccMZebfFdKl3zHwDeLBeZqtMz9VrPzchv57IWP+5MI1+iuOn+WOg4oTNBUG6hFRw==}
+  /@sentry-internal/replay-canvas@7.100.1:
+    resolution: {integrity: sha512-TnqxqJGhbFhhYRhTG2WLFer+lVieV7mNGeIxFBiw1L4kuj8KGl+C0sknssKyZSRVJFSahhHIosHJGRMkkD//7g==}
     engines: {node: '>=12'}
     dependencies:
-      '@sentry/core': 7.100.0
-      '@sentry/replay': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry/core': 7.100.1
+      '@sentry/replay': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry-internal/tracing@7.100.0:
-    resolution: {integrity: sha512-qf4W1STXky9WOQYoPSw2AmCBDK4FzvAyq5yeD2sLU7OCUEfbRUcN0lQljUvmWRKv/jTIAyeU5icDLJPZuR50nA==}
+  /@sentry-internal/tracing@7.100.1:
+    resolution: {integrity: sha512-+u9RRf5eL3StiyiRyAHZmdkAR7GTSGx4Mt4Lmi5NEtCcWlTGZ1QgW2r8ZbhouVmTiJkjhQgYCyej3cojtazeJg==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/core': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry/core': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry/browser@7.100.0:
-    resolution: {integrity: sha512-XpM0jEVe6DJWXjMSOjtJxsSNR/XnJKrlcuyoI4Re3qLG+noEF5QLc0r3VJkySXPRFnmdW05sLswQ6a/n9Sijmg==}
+  /@sentry/browser@7.100.1:
+    resolution: {integrity: sha512-IxHQ08ixf0bmaWpe4yt1J4UUsOpg02fxax9z3tOQYXw5MSzz5pDXn8M8DFUVJB3wWuyXhHXTub9yD3VIP9fnoA==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry-internal/feedback': 7.100.0
-      '@sentry-internal/replay-canvas': 7.100.0
-      '@sentry-internal/tracing': 7.100.0
-      '@sentry/core': 7.100.0
-      '@sentry/replay': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry-internal/feedback': 7.100.1
+      '@sentry-internal/replay-canvas': 7.100.1
+      '@sentry-internal/tracing': 7.100.1
+      '@sentry/core': 7.100.1
+      '@sentry/replay': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry/core@7.100.0:
-    resolution: {integrity: sha512-eWRPuP0Zdj4a2F7SybqNjf13LGOVgGwvW6sojweQp9oxGAfCPp/EMDGBhlpYbMJeLbzmqzJ4ZFHIedaiEC+7kg==}
+  /@sentry/core@7.100.1:
+    resolution: {integrity: sha512-f+ItUge/o9AjlveQq0ZUbQauKlPH1FIJbC1TRaYLJ4KNfOdrsh8yZ29RmWv0cFJ/e+FGTr603gWpRPObF5rM8Q==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry/node@7.100.0:
-    resolution: {integrity: sha512-8cf9wFNo/9I++60MVAf6tuKn/N5JCZ/Z8NDUzutnWWdQBLSx+LhZYNPntN3WkHl6Q7PBHGw3mU1Bc+rF48MeSQ==}
+  /@sentry/node@7.100.1:
+    resolution: {integrity: sha512-jB6tBLr7BpgdE2SlYZu343vvpa5jMFnqyFlprr+jdDu/ayNF4idB0qFwQe8p4C6LI6M/MNDRLVOgPBiCjjZSpw==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry-internal/tracing': 7.100.0
-      '@sentry/core': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry-internal/tracing': 7.100.1
+      '@sentry/core': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry/profiling-node@1.3.5(@sentry/node@7.100.0):
+  /@sentry/profiling-node@1.3.5(@sentry/node@7.100.1):
     resolution: {integrity: sha512-n2bfEbtLW3WuIMQGyxKJKzBNZOb1JYfMeJQ2WQn/42F++69m+u7T0S3EDGRN0Y//fbt5+r0any+4r3kChRXZkQ==}
     engines: {node: '>=8.0.0'}
     hasBin: true
@@ -7623,43 +7623,43 @@ packages:
     peerDependencies:
       '@sentry/node': ^7.44.1
     dependencies:
-      '@sentry/node': 7.100.0
+      '@sentry/node': 7.100.1
       detect-libc: 2.0.2
       node-abi: 3.54.0
     dev: true
 
-  /@sentry/replay@7.100.0:
-    resolution: {integrity: sha512-6Yo56J+x+eedaMXri8pPlFxXOofnSXVdsUuFj+kJ7lC/qHrwIbgC5g1ONEK/WlYwpVH4gA0aNnCa5AOkMu+ZTg==}
+  /@sentry/replay@7.100.1:
+    resolution: {integrity: sha512-B1NFjzGEFaqejxBRdUyEzH8ChXc2kfiqlA/W/Lg0aoWIl2/7nuMk+l4ld9gW5F5bIAXDTVd5vYltb1lWEbpr7w==}
     engines: {node: '>=12'}
     dependencies:
-      '@sentry-internal/tracing': 7.100.0
-      '@sentry/core': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry-internal/tracing': 7.100.1
+      '@sentry/core': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
     dev: true
 
-  /@sentry/types@7.100.0:
-    resolution: {integrity: sha512-c+RHwZwpKeBk7h8sUX4nQcelxBz8ViCojifnbEe3tcn8O15HOLvZqRKgLLOiff3MoErxiv4oxs0sPbEFRm/IvA==}
+  /@sentry/types@7.100.1:
+    resolution: {integrity: sha512-fLM+LedHuKzOd8IhXBqaQuym+AA519MGjeczBa5kGakes/BbAsUMwsNfjsKQedp7Kh44RgYF99jwoRPK2oDrXw==}
     engines: {node: '>=8'}
     dev: true
 
-  /@sentry/utils@7.100.0:
-    resolution: {integrity: sha512-LAhZMEGq3C125prZN/ShqeXpRfdfgJkl9RAKjfq8cmMFsF7nsF72dEHZgIwrZ0lgNmtaWAB83AwJcyN83RwOxQ==}
+  /@sentry/utils@7.100.1:
+    resolution: {integrity: sha512-Ve6dXr1o6xiBe3VCoJgiutmBKrugryI65EZAbYto5XI+t+PjiLLf9wXtEMF24ZrwImo4Lv3E9Uqza+fWkEbw6A==}
     engines: {node: '>=8'}
     dependencies:
-      '@sentry/types': 7.100.0
+      '@sentry/types': 7.100.1
     dev: true
 
-  /@sentry/vue@7.100.0(vue@3.4.15):
-    resolution: {integrity: sha512-qBx2vAgDFroh6wCoHgDgk5R0jTn+im/8G2Xs0SwkCiuZvvUikCd5ggZQLX3dIal0/y03GAKpcWLEtQXpwAgaqA==}
+  /@sentry/vue@7.100.1(vue@3.4.15):
+    resolution: {integrity: sha512-WtLAYmqad9aKp+/Rl6yEXTtnylj/WrPYNwE+EVO34AEP73w2EVeuwAu+o3TGRV7TvCLf4CQ3ZA3KZWCR7uGqIQ==}
     engines: {node: '>=8'}
     peerDependencies:
       vue: 2.x || 3.x
     dependencies:
-      '@sentry/browser': 7.100.0
-      '@sentry/core': 7.100.0
-      '@sentry/types': 7.100.0
-      '@sentry/utils': 7.100.0
+      '@sentry/browser': 7.100.1
+      '@sentry/core': 7.100.1
+      '@sentry/types': 7.100.1
+      '@sentry/utils': 7.100.1
       vue: 3.4.15(typescript@5.3.3)
     dev: true
 
@@ -20136,8 +20136,8 @@ packages:
     engines: {node: '>=16'}
     dev: false
 
-  /nuxt-api-party@1.0.0(rollup@4.9.6):
-    resolution: {integrity: sha512-zrUk0uVp1JQGbjNd5yN86725T+rQRQLOAZw8CGkvsyScakbJOK9Wm9epmsOUZzoACqrqGk9recsBMEM94XOgcA==}
+  /nuxt-api-party@1.0.1(rollup@4.9.6):
+    resolution: {integrity: sha512-A1g/ub3ElMiU+4vzAmM+xQSqLOgjd/NXqYj5+B55TvdC9AbEooHk+X2jSTTzSZ7Gv2jJb+twPhH50q3WoY0YVw==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       defu: 6.1.4
@@ -20214,8 +20214,8 @@ packages:
       - vue
     dev: true
 
-  /nuxt-kql@1.2.0(rollup@4.9.6)(vue@3.4.15):
-    resolution: {integrity: sha512-C4X2pPD2Itv5vJ3Q0VftRx5H7dEpKpKl986SBGlxDcKWYTM/oRuFkcHcFnnZ60SjthSqeGURHrCCF4DbrJOH/w==}
+  /nuxt-kql@1.2.1(rollup@4.9.6)(vue@3.4.15):
+    resolution: {integrity: sha512-KCFtva1Zv4vABszF61lwZsjuyVGn7qC3atfyZxkrA4ug0d4n+Qk5IIGSUiAqJq0z72OFsLV+99oOR9ksd6ZqYA==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       '@vueuse/core': 10.7.2(vue@3.4.15)
@@ -20572,8 +20572,8 @@ packages:
       - webpack
     dev: true
 
-  /nuxt-security@1.1.0(rollup@4.9.6):
-    resolution: {integrity: sha512-nsvdUQbHjpGPNRUYi+ZDB5yUGL7rjTIhTxpuZwqxJuOPwAbw19S2DlgE+HTxn9CmzTCv8231lEhpD5G/Y4uG7g==}
+  /nuxt-security@1.1.1(rollup@4.9.6):
+    resolution: {integrity: sha512-mwCF5P3ukHvh6Gq0mI/0Ioh57Ws55xNsKv2By9EfADHc3L9etxHnhoicanA4hcy5VxUNqxvVK0vZ/+MpE98rvw==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       basic-auth: 2.0.1

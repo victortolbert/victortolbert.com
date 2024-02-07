@@ -14,12 +14,12 @@
         <NuxtLink to="/projects/booster" class="col-span-2 lg:col-span-1 grid items-center px-4 rounded border dark:border-gray-800 min-h-16 text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400">
           <LogoBooster class="max-h-12 w-full object-contain object-left" />
         </NuxtLink>
-        <NuxtLink to="/projects/coca-cola" class="col-span-2 lg:col-span-1 grid items-center px-4 rounded border dark:border-gray-800 min-h-16 text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400">
+        <!-- <NuxtLink to="/projects/coca-cola" class="col-span-2 lg:col-span-1 grid items-center px-4 rounded border dark:border-gray-800 min-h-16 text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400">
           <LogoCocaCola class="max-h-12 w-full object-contain object-left" />
         </NuxtLink>
         <NuxtLink to="/projects/computerland" class="col-span-2 lg:col-span-1 grid items-center px-4 rounded border dark:border-gray-800 min-h-16 text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400">
           <LogoComputerLand class="max-h-12 w-full object-contain object-left" />
-        </NuxtLink>
+        </NuxtLink> -->
         <NuxtLink to="/projects/hancock" class="col-span-2 lg:col-span-1 grid items-center px-4 rounded border dark:border-gray-800 min-h-16 text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400">
           <LogoHancockClaimsHorizontal class="max-h-12 w-full object-contain object-left" />
         </NuxtLink>
