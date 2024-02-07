@@ -25,7 +25,7 @@ type DragEventData = {
 const props = defineProps<VueTreeDndProps>()
 
 const emit = defineEmits<{
-  'move': [move: MoveMutation]
+  move: [move: MoveMutation]
 }>()
 
 const dragImage = new Image()

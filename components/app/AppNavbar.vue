@@ -26,11 +26,6 @@ const items = [
     icon: 'ph:newspaper-duotone',
   },
   {
-    name: 'Lab',
-    path: '/lab',
-    icon: 'ph:flask-duotone',
-  },
-  {
     name: 'Uses',
     path: '/uses',
     icon: 'ph:backpack-duotone',
@@ -39,11 +34,6 @@ const items = [
     name: 'Bookmarks',
     path: '/bookmarks',
     icon: 'ph:bookmarks-simple-duotone',
-  },
-  {
-    name: 'About Me',
-    path: '/about',
-    icon: 'ph:question-duotone',
   },
 ]
 
@@ -84,7 +74,7 @@ async function signInWithEmail() {
 
 <template>
   <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50">
-    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
       <ul
         class="flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-full shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5"
       >
@@ -118,6 +108,44 @@ async function signInWithEmail() {
           </UTooltip>
         </li>
         <li class="flex-1" />
+        <li>
+          <UTooltip
+            text="Lab"
+            :ui="{ popper: { strategy: 'absolute' } }"
+          >
+            <ULink
+              to="/lab"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              active-class="text-primary-600 dark:text-primary-400"
+            >
+              <Icon
+                aria-hidden="true"
+                name="ph:flask-duotone"
+                class="w-5 h-5 z-10"
+              />
+              <span class="sr-only">About Me</span>
+            </ULink>
+          </UTooltip>
+        </li>
+        <li>
+          <UTooltip
+            text="About Me"
+            :ui="{ popper: { strategy: 'absolute' } }"
+          >
+            <ULink
+              to="/about"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              active-class="text-primary-600 dark:text-primary-400"
+            >
+              <Icon
+                aria-hidden="true"
+                name="ph:question-duotone"
+                class="w-5 h-5 z-10"
+              />
+              <span class="sr-only">About Me</span>
+            </ULink>
+          </UTooltip>
+        </li>
         <!--
         <li
           v-if="!user"

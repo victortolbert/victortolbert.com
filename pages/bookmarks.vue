@@ -72,7 +72,7 @@ function getIcon(icon) {
 </script>
 
 <template>
-  <main class="min-h-screen mx-auto max-w-3xl">
+  <article class="min-h-screen mx-auto">
     <AppHeader class="mt-1.5 mb-8" title="Bookmarks" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
@@ -96,5 +96,5 @@ function getIcon(icon) {
         </a>
       </li>
     </ul>
-  </main>
+  </article>
 </template>

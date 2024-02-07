@@ -3,7 +3,7 @@ export default defineAppConfig({
     primary: 'neutral',
     gray: 'neutral',
     container: {
-      constrained: 'max-w-3xl',
+      constrained: 'max-w-4xl',
     },
     content: {
       prose: {

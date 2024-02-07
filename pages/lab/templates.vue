@@ -20,11 +20,12 @@ const links = ref([
 
     <section class="grid gap-4">
       <p>
-        Templates exist to document the layout and structure of a section. These are not called “pages” for a reason. While they can be pages, that’s not their only functionality. Templates consist of <NuxtLink to="/examples/tokens">
+        <SvgTemplates class="-mt-2 h-16 w-auto float-left pr-4 text-primary-500" />
+        Templates exist to document the layout and structure of a section. These are not called “pages” for a reason. While they can be pages, that’s not their only functionality. Templates consist of <NuxtLink to="/lab/tokens">
           design tokens,
-        </NuxtLink><NuxtLink to="/examples/elements">
+        </NuxtLink><NuxtLink to="/lab/elements">
           elements,
-        </NuxtLink> and <NuxtLink to="/examples/patterns">
+        </NuxtLink> and <NuxtLink to="/lab/patterns">
           patterns.
         </NuxtLink>
       </p>

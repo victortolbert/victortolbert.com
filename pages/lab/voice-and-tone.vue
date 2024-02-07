@@ -20,7 +20,7 @@ definePageMeta({
 
     <section class="grid gap-4 border-b dark:border-gray-700 pb-8">
       <p class="text-gray-600 dark:text-gray-300">
-        Through this guide you will learn how to apply Vue Design System’s voice and choose the right tone. Using the right voice and tone is important as it allows us to better connect with our users.
+        Through this guide you will learn how to apply the design system’s voice and choose the right tone. Using the right voice and tone is important as it allows us to better connect with our users.
       </p>
     </section>
 

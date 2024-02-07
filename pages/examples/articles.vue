@@ -49,7 +49,7 @@ const posts = [
 </script>
 
 <template>
-  <div class="relative mx-auto max-w-lg divide-y-2 divide-gray-200 dark:divide-gray-700 lg:max-w-3xl">
+  <article class="relative mx-auto divide-y-2 divide-gray-200 dark:divide-gray-700">
     <div>
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
         Articles
@@ -74,5 +74,5 @@ const posts = [
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>

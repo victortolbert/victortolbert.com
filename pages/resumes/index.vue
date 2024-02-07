@@ -88,7 +88,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 </script>
 
 <template>
-  <div class="w-full relative mx-auto max-w-3xl print:p-12">
+  <article class="w-full relative mx-auto print:p-12">
     <section class="prose dark:prose-invert">
       <nav>
         <ul class="whitespace-nowrap">
@@ -419,7 +419,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
     <p v-if="showFooter" class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-base text-muted-foreground print:hidden">
       Press <span class="pointer-events-none inline-flex h-5 select-none items-center gap-1"><UKbd>{{ metaSymbol }}</UKbd><UKbd>K</UKbd></span> to open the command menu
     </p>
-  </div>
+  </article>
 </template>
 
 <style>

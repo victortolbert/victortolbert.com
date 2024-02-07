@@ -32,14 +32,12 @@ if (!page.value) {
 </script>
 
 <template>
-  <div>
-    <UContainer>
-      <Breadcrumbs />
-      <UPage>
-        <UPageBody :ui="{ prose: 'prose prose-primary dark:prose-pre:bg-red-500 dark:prose-invert max-w-none' }">
-          <ContentRenderer v-if="page.body" :value="page" />
-        </UPageBody>
-      </UPage>
-    </UContainer>
-  </div>
+  <article class="w-full relative mx-auto print:p-12">
+    <Breadcrumbs />
+    <UPage>
+      <UPageBody prose :ui="{ prose: 'prose prose-primary dark:prose-pre:bg-red-500 dark:prose-invert max-w-none' }">
+        <ContentRenderer v-if="page.body" :value="page" />
+      </UPageBody>
+    </UPage>
+  </article>
 </template>

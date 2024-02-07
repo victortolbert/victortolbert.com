@@ -11,8 +11,14 @@ languages:
 frameworks: Drupal
 ---
 
-# Turner Broadcasting System
+# TBS Sports
 
+<img
+  class="border rounded shadow grayscale hover:grayscale-0"
+  width="936"
+  height="550"
+  src="/assets/images/screens/turner.png"
+/>
 
 <!--
 • Highlight the technologies and tools you used for Vue.js and React front-end development in this role.

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   title: 'Downloads',
-  description: 'These downloads, links, and third-party tools will help you and your teams learn, design, and build products. Here you can also provide links to assets like fonts, icons, color swatches, Sketch UI kits and so on.',
+  description: 'These downloads, links, and third-party tools will help you and your teams learn, design, and build products.',
   breadcrumb: {
     title: 'Downloads',
     ariaLabel: 'Downloads',
@@ -29,10 +29,12 @@ const links = ref([
 
     <section class="grid gap-4">
       <p>
-        These downloads, links, and third-party tools will help you and your teams learn, design, and build products. Here you can also provide links to assets like fonts, icons, color swatches, Sketch UI kits and so on.
+        These downloads, links, and third-party tools will help you and your teams learn, design, and build products.
       </p>
     </section>
-
+    <!--
+      TODO Add links to assets (fonts, icons, color swatches, Figma kits and so on).
+    -->
     <NuxtPage />
   </article>
 </template>

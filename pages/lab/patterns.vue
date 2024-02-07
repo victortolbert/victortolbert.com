@@ -20,9 +20,11 @@ const links = ref([
 
     <section class="grid gap-4">
       <p>
-        Patterns are UI Patterns that fall on the more complex side of the spectrum. Date pickers, data tables, and visualizations are good examples. Patterns utilize both <NuxtLink to="/examples/elements">
+        <SvgPatterns class="h-16 w-auto float-left pr-4 text-primary-500" />
+
+        Patterns are UI patterns that fall on the more complex side of the spectrum. Date pickers, data tables, and visualizations are good examples. Patterns utilize both <NuxtLink to="/lab/elements">
           elements
-        </NuxtLink> and <NuxtLink to="/examples/tokens">
+        </NuxtLink> and <NuxtLink to="/lab/tokens">
           design tokens.
         </NuxtLink>
       </p>

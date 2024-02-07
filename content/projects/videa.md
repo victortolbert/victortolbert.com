@@ -30,6 +30,13 @@ Worked with product managers to define, design and build front-end user interfac
 
 -->
 
+<img
+  class="border rounded shadow grayscale hover:grayscale-0"
+  width="1960"
+  height="1352"
+  src="/assets/images/screens/videa.png"
+/>
+
 ## Projects
 
 ### Sales Demo
@@ -39,6 +46,8 @@ Worked with product managers to define, design and build front-end user interfac
 ### Support Ticketing System
 
 ### Corporate Website
+
+
 
 ### Patterns Library
 

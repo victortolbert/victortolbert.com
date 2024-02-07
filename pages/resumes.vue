@@ -8,7 +8,7 @@ definePageMeta({
 </script>
 
 <template>
-  <article class="min-h-screen mx-auto max-w-3xl">
+  <article class="min-h-screen mx-auto">
     <Breadcrumbs />
     <!--
     <AppHeader

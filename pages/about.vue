@@ -8,13 +8,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <main class="min-h-screen w-full relative mx-auto max-w-3xl print:p-12">
+  <article class="min-h-screen w-full relative mx-auto print:p-12">
     <div class="mt-1.5 space-y-24">
       <HomeIntro />
       <HomeSocialLinks />
       <HomeFeaturedProjects />
       <HomeFeaturedArticles />
-      <HomeNewsletter />
+      <HomeNewsletter v-if="false" />
     </div>
-  </main>
+  </article>
 </template>

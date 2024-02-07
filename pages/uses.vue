@@ -16,7 +16,7 @@ const other = items.value.filter(item => item.category === 'others')
 </script>
 
 <template>
-  <main class="min-h-screen mx-auto max-w-3xl">
+  <article class="min-h-screen mx-auto">
     <AppHeader
       class="mt-1.5 mb-12"
       title="Uses"
@@ -40,5 +40,5 @@ const other = items.value.filter(item => item.category === 'others')
         <AppUsesItem v-for="(item, id) in other" :key="id" :item="item" />
       </ul>
     </div>
-  </main>
+  </article>
 </template>
