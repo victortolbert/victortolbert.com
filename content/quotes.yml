@@ -1,0 +1,67 @@
+body:
+  - id: 1
+    text: Far Better it is to dare mighty things, to win glorious triumphs, even though checkered by failure, than to take rank with those poor spirits who neither enjoy much nor suffer much, because they live in the gray twilight that knows not victory nor defeat.
+    author: Theodore Roosevelt
+  - id: 2
+    text: If you wait for the perfect moment when all is safe and assured, it may never arrive.  Mountains will not be climbed, races won, or lasting happiness achieved.
+    author: Maurice Chevalier (1888 - 1972)
+  - id: 3
+    text: Maturity is the ability to make a decision and stand by it.  The immature spend their lives exploring endless possibilities - then they do nothing.
+    author: Ann Landers
+  - id: 4
+    text: He slept beneath the moon, He basked beneath the sun, He lived a life of going-to-do, And died with nothing done.
+    author: Anonymous
+  - id: 5
+    text: There are no secrets to success.  It is the result of preparation, hard work, and learning from failure.
+    author: General Colin L. Powell
+  - id: 6
+    text: It's nothing against you to fall down flat; But to lie there - that's disgrace.
+    author: Edmund Vance Cooke (1866 - 1932)
+  - id: 7
+    text: Never build a case against yourself.
+    author: Robert Rowbottom (1887 - 1973)
+  - id: 8
+    text: Nothing in life is more exciting and rewarding than the sudden flash of insight that leaves you a changed person - not only changed, but for the better.
+    author: Arthur Gordon (1912 - )
+  - id: 9
+    text: It is in the character of very few men to honor without envy a friend who has prospered.
+    author: Aeschylus  (525 - 456 BC)
+  - id: 10
+    text: Nothing is easier than self-deceit.
+    author: Demosthenes (384 - 322 BC)
+  - id: 11
+    text: Dost thou love life?  Then do not squander time, for that's the stuff life is made of.
+    author: Benjamin Franklin (1706 - 1790)
+  - id: 12
+    text: Self-trust is the first secret of success.
+    author: Ralph Waldo Emerson (1803 - 1882)
+  - id: 13
+    text: Make the most of yourself for that is all there is to you.
+    author: Ralph Waldo Emerson (1803 - 1882)
+  - id: 14
+    text: Knock the t off the can't.
+    author: George Reeves (1876 - 1925)
+  - id: 15
+    text: People who produce good results feel good about themselves.
+    author: Kenneth H. Blanchard
+  - id: 16
+    text: Do the thing you fear and the death of fear is certain.
+    author: Ralph Waldo Emerson (1803 - 1882)
+  - id: 17
+    text: The only thing we have to fear is fear itself.
+    author: Franklin Delano Roosevelt (1882 - 1945)
+  - id: 18
+    text: If you want to conquer fear, don't sit at home and think about it.  Go out and get busy.
+    author: Dale Carnegie (1885 - 1955)
+  - id: 19
+    text: Greater than the tread of mighty armies is an idea whose time has come.
+    author: Victor Hugo (1802 - 1885)
+  - id: 20
+    text: All things are possible to him that believeth.
+    author: Mark 9:23
+  - id: 21
+    text: Opportunity is missed by most folks because it is dressed in overalls and looks like work.
+    author: Thomas A. Edison (1847 - 1931)
+  - id: 22
+    text: The secret to success in life is for a man to be ready for his opportunity when it comes.
+    author: Benjamin Disraeli  (1804 - 1881)
