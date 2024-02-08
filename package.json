@@ -264,7 +264,7 @@
     "less": "^4.2.0",
     "linq": "^4.0.2",
     "lodash": "^4.17.21",
-    "luxon": "1.28.1",
+    "luxon": "3.4.4",
     "magic-regexp": "0.7.0",
     "magic-string": "^0.30.7",
     "mande": "^2.0.8",
