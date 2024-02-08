@@ -59,6 +59,12 @@ export interface Case {
   actions: string
 }
 
+export interface Category {
+  CategoryID: number
+  CategoryName: string
+  Description: string
+}
+
 export interface Company {
   id: number
   name: string
@@ -221,6 +227,20 @@ export interface Post {
   id: number
   title: string
   body: string
+}
+
+export interface Product {
+  ProductID: number
+  ProductName: string
+  SupplierID: number
+  CategoryID: number
+  QuantityPerUnit: string
+  UnitPrice: number
+  UnitsInStock: number
+  UnitsOnOrder: number
+  ReorderLevel: number
+  Discontinued: boolean
+  Category: Category
 }
 
 export interface Program {

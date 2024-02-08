@@ -11,7 +11,113 @@
 - Resume Generator
 - GoogleMap API Example
 
+:octocat:
+
+
+@victortolbert
+
+
+
+> [!NOTE]
+> Essential details that users should not overlook, even when browsing quickly.
+
+> [!TIP]
+> Additional advice to aid users in achieving better outcomes.
+
+> [!IMPORTANT]
+> Vital information required for users to attain success.
+
+> [!WARNING]
+> Urgent content that requires immediate user focus due to possible risks.
+
+> [!CAUTION]
+> Possible negative outcomes resulting from an action.
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+Referencing a bug by #bugID in your git commit links it to the slip. For example #1.
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+
+```diff
+- this code or text is the old version
++ this is what it was changed to
+```
+
+
+2 <sup>53-1</sup> and -2 <sup>53-1</sup>
+
+
+<table>
+<tr>
+<th>Before Hoisting</th>
+<th>After Hoisting</th>
+</tr>
+<tr>
+<td>
+<pre lang="js">
+console.log(fullName); // undefined
+fullName = "Dariana Trahan";
+console.log(fullName); // Dariana Trahan
+var fullName;
+</pre>
+</td>
+<td>
+<pre lang="js">
+var fullName;
+console.log(fullName); // undefined
+fullName = "Dariana Trahan";
+console.log(fullName); // Dariana Trahan
+</pre>
+</td>
+</tr>
+</table>
+
+![GitHub forks](https://img.shields.io/github/forks/lifeparticle/Markdown-Cheatsheet?style=for-the-badge)
+
+
+<kbd>cmd + shift + p</kbd>
+
+<details>
+  <summary>Markdown</summary>
+
+-  <kbd>[Markdown Editor](https://binarytree.dev/me)</kbd>
+-  <kbd>[Table Of Content](https://binarytree.dev/toc)</kbd>
+-  <kbd>[Markdown Table Generator](https://binarytree.dev/md_table_generator)</kbd>
+
+</details>
+
+pie
+"Movies" : 80
+"TV shows" : 20
+
+
+
 ## Todolist
+
+- [ ] Nuxt: Docs https://ui.nuxt.com/pro/getting-started/content
+
+You will be able to wrap your <ContentSlot /> or <ContentRenderer /> with the PageBody component and its prose ~class~ +prop+ to apply the prose prose-primary dark:prose-invert max-w-none classes automatically to your content and make it look great.
 
 - [ ] Fix breadcrumb title for acronyms
 - [x] Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep

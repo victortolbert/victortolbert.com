@@ -61,8 +61,8 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'light',
-    fallback: 'light',
+    preference: 'dark',
+    fallback: 'dark',
   },
 
   // componentMeta: {
@@ -77,79 +77,57 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       // preload: [
-      // angular-ts,
-      // angular-html,
-      // astro
-      // bat
-      // blade
-      // csv
-      // diff
-      // docker
-      // erb
-      // git-commit
-      // git-rebase
-      // go
-      // graphql
-      // haml
-      // handlebars
-      // http
-      // jsonc
-      // json
-      // json5
-      // jsx
-      // latex
-      // less
-      // mdc
-      // mdx
-      // nginx
-      // postcss
-      // powershell
-      // pug
-      // python
-      // r
-      // razor
-      // reg
-      // ruby
-      // rust
-      // sass
-      // scss
-      // svelte
-      // toml
-      // tsx
-      // twig
-      // vue-html
-      // xml
-      // xsl
-      // yaml
-      //   'apex',
-      //   'bash',
-      //   'csharp',
-      //   'css',
-      //   'diff',
-      //   'gherkin',
-      //   'html',
-      //   'ini',
-      //   'js',
-      //   'json',
-      //   'markdown',
-      //   'php',
-      //   'powershell',
-      //   'prisma',
-      //   'pug',
-      //   'python',
-      //   'razor',
-      //   'ruby',
-      //   'scss',
-      //   'shell',
-      //   'sql',
-      //   'svelte',
-      //   'ts',
-      //   'tsx',
-      //   'vue',
-      //   'yaml',
+      //   angular-html
+      //   angular-ts
+      //   astro
+      //   bash
+      //   bat
+      //   blade
+      //   csharp
+      //   csv
+      //   docker
+      //   erb
+      //   gherkin
+      //   git-commit
+      //   git-rebase
+      //   go
+      //   graphql
+      //   haml
+      //   handlebars
+      //   http
+      //   ini
+      //   json
+      //   json5
+      //   jsonc
+      //   jsx
+      //   latex
+      //   less
+      //   markdown
+      //   mdc
+      //   mdx
+      //   nginx
+      //   postcss
+      //   powershell
+      //   prisma
+      //   pug
+      //   python
+      //   r
+      //   reg
+      //   rust
+      //   sass
+      //   scss
+      //   shell
+      //   svelte
+      //   toml
+      //   tsx
+      //   twig
+      //   vue-html
+      //   xml
+      //   xsl
+      //   yaml
       // ],
 
-      preload: ['apex', 'sql', 'handlebars', 'html', 'jinja', 'razor', 'css', 'js', 'ts', 'vue', 'prisma'],
+      preload: ['apex', 'css', 'diff', 'handlebars', 'html', 'jinja', 'js', 'php', 'prisma', 'razor', 'ruby', 'sql', 'ts', 'vue', 'xml'],
 
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       // theme: {

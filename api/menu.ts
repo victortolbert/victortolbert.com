@@ -1,34 +1,5 @@
 // import AudioPlayer from '~/components/AudioPlayer.vue'
 
-// Form elements
-//   - Input
-//   - Textarea
-//   - Select
-//   - Checkbox
-//   - Radio
-//   - Button
-
-// Form components
-//   - Dialog(Modal)
-//   - Disclosure
-//   - Popover
-//   - Radio group
-//   - Listbox(Select)
-//   - Menu(Dropdown)
-//   - Switch(Toggle)
-//   - Tabs
-//   - Transition
-
-// Other
-//   - Alert
-//   - Card
-//   - Media Object
-//   - Pagination
-//   - Table
-
-// Composables
-// -
-
 export default [
   {
     header: 'Elements',

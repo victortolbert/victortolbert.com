@@ -8,6 +8,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 definePageMeta({
+  colorMode: 'light',
   title: 'Home',
   // breadcrumb: 'Resume',
   breadcrumb: {
@@ -241,7 +242,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
                 <span v-if="showWorkLocation" class="inline-flex gap-x-1">{{ work.location }} </span>
               </h3>
               <div class="text-base tabular-nums text-gray-500">
-                {{ formatDate(work.startDate) }}&ndash;{{ index === resume?.work.length - 1 ? 'Present' : formatDate(work.endDate) }}
+                {{ formatDate(work.startDate) }}&ndash;{{ (index === resume?.work.length - 1 || index === 0) ? 'Present' : formatDate(work.endDate) }}
               </div>
             </div>
             <h4 class="text-base leading-none">

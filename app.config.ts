@@ -1,9 +1,23 @@
 export default defineAppConfig({
+  // The key to override a component will be its path, for example ui.landing.hero will override the LandingHero component.
   ui: {
     primary: 'neutral',
     gray: 'neutral',
+    variables: {
+      light: {
+        background: '255 255 255',
+        foreground: 'var(--color-gray-700)',
+      },
+      dark: {
+        background: 'var(--color-gray-900)',
+        foreground: 'var(--color-gray-200)',
+      },
+      header: {
+        height: '4rem',
+      },
+    },
     container: {
-      constrained: 'max-w-4xl',
+      constrained: 'max-w-3xl',
     },
     content: {
       prose: {
@@ -22,12 +36,41 @@ export default defineAppConfig({
     },
     icons: {
       dynamic: true,
+      dark: 'i-ph-moon-duotone',
+      light: 'i-ph-sun-duotone',
+      search: 'i-ph-magnifying-glass-duotone',
+      external: 'i-ph-arrow-up-right',
+      chevron: 'i-ph-caret-down',
+      hash: 'i-ph-hash-duotone',
+    },
+    header: {
+      // wrapper: 'lg:mb-0 lg:border-0',
+      // popover: {
+      //   links: {
+      //     active: 'dark:bg-gray-950/50',
+      //     inactive: 'dark:hover:bg-gray-950/50'
+      //   }
+      // },
+      links: {
+        trailingIcon: {
+          name: 'i-ph-caret-down', // Defaults to `ui.icons.chevron`
+        },
+      },
+      button: {
+        icon: {
+          open: 'i-ph-list',
+          close: 'i-ph-x',
+        },
+      },
     },
     footer: {
       bottom: {
         left: 'text-sm text-gray-500 dark:text-gray-400',
         wrapper: 'border-t border-gray-200 dark:border-gray-800',
       },
+    },
+    tooltip: {
+      background: '!bg-background',
     },
     // formGroup: {
     //   help: 'text-xs mt-1 text-gray-500 dark:text-gray-400',

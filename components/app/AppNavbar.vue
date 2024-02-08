@@ -9,6 +9,32 @@ const headerRef = ref(null)
 
 const { styles } = useFixedHeader(headerRef)
 
+// Composables
+// Form elements
+//   - Input
+//   - Textarea
+//   - Select
+//   - Checkbox
+//   - Radio
+//   - Button
+// Form components
+//   - Dialog(Modal)
+//   - Disclosure
+//   - Popover
+//   - Radio group
+//   - Listbox(Select)
+//   - Menu(Dropdown)
+//   - Switch(Toggle)
+//   - Tabs
+//   - Transition
+
+// Other
+//   - Alert
+//   - Card
+//   - Media Object
+//   - Pagination
+//   - Table
+
 const items = [
   {
     name: 'Home',
@@ -40,10 +66,16 @@ const items = [
 const colorMode = useColorMode()
 
 function toggleDark() {
-  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  colorMode.preference = colorMode.value === 'dark'
+    ? 'light'
+    : 'dark'
 }
 
-const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'i-heroicons-outline-moon' : 'i-heroicons-outline-sun')
+const colorModeIcon = computed(() => {
+  return colorMode.preference === 'dark'
+    ? 'i-heroicons-outline-moon'
+    : 'i-heroicons-outline-sun'
+})
 
 async function logout() {
   await client.auth.signOut()
@@ -74,7 +106,7 @@ async function signInWithEmail() {
 
 <template>
   <div ref="headerRef" :style="styles" class="fixed top-0 w-full z-50">
-    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+    <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
       <ul
         class="flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-full shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5"
       >
