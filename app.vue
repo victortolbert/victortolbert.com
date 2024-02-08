@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   bodyAttrs: {
-    class: 'antialiased font-sans bg-gray-50 dark:bg-gray-950',
+    class: 'antialiased font-mono bg-gray-50 dark:bg-gray-950',
   },
 })
 
