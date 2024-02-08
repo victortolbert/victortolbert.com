@@ -8,6 +8,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 definePageMeta({
+  colorMode: 'light',
   title: 'Home',
   // breadcrumb: 'Resume',
   breadcrumb: {

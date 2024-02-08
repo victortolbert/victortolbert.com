@@ -37,6 +37,7 @@ provide('navigation', navigation)
       <UContainer>
         <UPage>
           <UPageError :error="error" />
+          <RandomImage class="rounded-xl" />
         </UPage>
       </UContainer>
     </UMain>
