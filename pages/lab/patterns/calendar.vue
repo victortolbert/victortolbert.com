@@ -8,14 +8,6 @@ import iCalendarPlugin from '@fullcalendar/icalendar'
 
 import { INITIAL_EVENTS, createEventId } from '~/utils/EventUtils'
 
-// "@fullcalendar/google-calendar": "^6.1.10",
-// "@fullcalendar/multimonth": "^6.1.10",
-// "@fullcalendar/timeline": "^6.1.10",
-// "@fullcalendar/scrollgrid": "^6.1.10",
-// "@fullcalendar/adaptive": "^6.1.10",
-// "@fullcalendar/core": "^6.1.10",
-// "@fullcalendar/luxon": "^6.1.10"
-
 // definePageMeta({
 //   layout: false,
 // })
