@@ -14,7 +14,7 @@
 ## Todolist
 
 - [ ] Fix breadcrumb title for acronyms
-- [ ] Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
+- [x] Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
 - [x] Add resume
 - [ ] Create GitHub profile bio
 - [ ] Add emailing solution
@@ -24,7 +24,7 @@
 - [ ] Add export to CSV example
 - [ ] Add file upload example
 - [ ] Add form example
-- [ ] Add right-click to view Design Kit
+- [ ] Add right-click to logo view the design kit
 
 ## Contributing
 
