@@ -11,7 +11,7 @@ const { data: projects } = await useAsyncData('projects-all', () =>
 </script>
 
 <template>
-  <article class="min-h-screen mx-auto">
+  <article class="min-h-screen mx-auto max-w-3xl">
     <AppHeader class="mt-1.5 mb-12" title="Projects" :description="description" />
 
     <LogoCloud />

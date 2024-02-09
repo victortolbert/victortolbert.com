@@ -3,6 +3,9 @@ export default defineAppConfig({
   ui: {
     primary: 'neutral',
     gray: 'neutral',
+    container: {
+      constrained: 'max-w-4xl',
+    },
     variables: {
       light: {
         background: '255 255 255',
@@ -15,9 +18,6 @@ export default defineAppConfig({
       header: {
         height: '4rem',
       },
-    },
-    container: {
-      constrained: 'max-w-3xl',
     },
     content: {
       prose: {
