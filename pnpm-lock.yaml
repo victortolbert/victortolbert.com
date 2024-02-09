@@ -752,8 +752,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0(rollup@4.9.6)
   nuxt-primevue:
-    specifier: ^0.2.2
-    version: 0.2.2(rollup@4.9.6)(vue@3.4.16)
+    specifier: ^0.3.0
+    version: 0.3.0(rollup@4.9.6)(vue@3.4.16)
   nuxt-proxy:
     specifier: ^0.4.1
     version: 0.4.1(rollup@4.9.6)
@@ -5645,7 +5645,7 @@ packages:
       '@nuxt/schema': 3.6.5(rollup@4.9.6)
       c12: 1.7.0
       consola: 3.2.3
-      defu: 6.1.2
+      defu: 6.1.4
       globby: 13.2.2
       hash-sum: 2.0.0
       ignore: 5.3.1
@@ -5736,7 +5736,7 @@ packages:
     resolution: {integrity: sha512-UPUnMB0W5TZ/Pi1fiF71EqIsPlj8LGZqzhSf8wOeh538KHwxbA9r7cuvEUU92eXRksOZaylbea3fJxZWhOITVw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     dependencies:
-      defu: 6.1.2
+      defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.0.3
@@ -20513,8 +20513,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-primevue@0.2.2(rollup@4.9.6)(vue@3.4.16):
-    resolution: {integrity: sha512-OfXDe5V0WovXt9b2GOjYV1kyVXmcFfj+6DqVs1pbeP4EyF2H0SbIMoUTT8Ax+sXT/tQ+mXr3qTFD9Y6IL+Y9og==}
+  /nuxt-primevue@0.3.0(rollup@4.9.6)(vue@3.4.16):
+    resolution: {integrity: sha512-sx5JZjqQ7H96FH5nWsL4Ypk4amkUz5nHsoxAiyc7oI3sSP54wfXPo5rjB4GKI50Ky7HPdE2CIWs137jRl6RkMw==}
     dependencies:
       '@nuxt/kit': 3.10.1(rollup@4.9.6)
       primevue: 3.48.1(vue@3.4.16)

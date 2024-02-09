@@ -286,7 +286,7 @@
     "nuxt-mongodb": "^1.0.13",
     "nuxt-og-image": "^2.2.4",
     "nuxt-prepare": "^1.1.0",
-    "nuxt-primevue": "^0.2.2",
+    "nuxt-primevue": "^0.3.0",
     "nuxt-proxy": "^0.4.1",
     "nuxt-remote-fn": "^0.5.1",
     "nuxt-schema-org": "^3.3.4",
