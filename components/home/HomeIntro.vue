@@ -19,8 +19,7 @@ useSeoMeta({
     <div>
       <img src="/assets/images/me/headshot.jpeg" class="w-48 float-right rounded-lg ml-8 mb-8 grayscale" alt="Victor Tolbert Headshot">
       <p class="text-gray-900 dark:text-gray-400">
-        I'm Victor, web applications consultant and experienced UI/UX designer from Atlanta, Georgia.
-        I specialize in building SaaS web applications and marketing websites using <NuxtLink to="/csharp">
+        I'm Victor, a web applications consultant and experienced UI/UX designer/engineer from Atlanta, Georgia. I specialize in building SaaS web applications and marketing websites using <NuxtLink to="/csharp">
           C#,
         </NuxtLink><NuxtLink to="/aspnetcore">
           ASP.NET Core,
