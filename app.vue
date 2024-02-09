@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   htmlAttrs: { class: 'h-full' },
-  bodyAttrs: { class: 'h-full antialiased font-sans bg-gray-50 dark:bg-gray-950' },
+  bodyAttrs: { class: 'h-full antialiased font-mono bg-gray-50 dark:bg-gray-950' },
 })
 
 onMounted(() => {
