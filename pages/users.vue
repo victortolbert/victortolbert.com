@@ -2,7 +2,7 @@
 import { useQuery } from '@tanstack/vue-query'
 
 async function fetcher() {
-  return await fetch('https://api.victortolbert.com/resources').then(response =>
+  return await fetch('https://api.victortolbert.com/users').then(response =>
     response.json(),
   )
 }

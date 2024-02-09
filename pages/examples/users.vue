@@ -1,17 +1,42 @@
-<script setup lang="ts">
-import { useQuery } from '@tanstack/vue-query'
+<script>
+import { defineAsyncComponent } from 'vue'
 
-async function fetcher() {
-  return await fetch('https://api.victortolbert.com/users').then(response =>
-    response.json(),
-  )
+import Loading from '~/components/Loading.vue'
+import { useUsers } from '~/composables/useUsers'
+
+const AsyncUser = defineAsyncComponent({
+  loader: () => import('~/pages/examples/user.vue'),
+  loadingComponent: Loading,
+  delay: 200,
+  suspensible: false,
+})
+
+export default {
+  name: 'Users',
+  components: {
+    AsyncUser,
+  },
+
+  async setup() {
+    const { users, error, load } = useUsers()
+
+    await load()
+
+    return { users, error }
+  },
 }
-
-const { data, suspense } = useQuery({ queryKey: ['test'], queryFn: fetcher })
-
-await suspense()
 </script>
 
 <template>
-  <div>{{ data }}</div>
+  <div>
+    <div v-if="error">
+      {{ error }}
+    </div>
+    <AsyncUser
+      v-for="user in users.data"
+      v-else
+      :key="user.id"
+      :user="user"
+    />
+  </div>
 </template>

@@ -1,13 +1,13 @@
 ---
 title: Docs
-description: 'Welcome to Nuxt UI Pro documentation template.'
+description: 'Welcome to UX Lab documentation template.'
 hero:
   title: 'Build your docs in seconds'
   description: 'Create your documentation in seconds with this template!'
   orientation: horizontal
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Made with UX Lab
+    to: https://victortolbert.com/lab
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
@@ -19,20 +19,20 @@ hero:
       icon: i-simple-icons-github
       size: lg
       color: gray
-      to: https://github.com/nuxt-ui-pro/docs
+      to: https://github.com/victortolbert/nuxt-starter
       target: _blank
   code: |
     ```bash [Terminal]
-    npx nuxi init -t github:nuxt-ui-pro/docs
+    npx nuxi init -t github:victortolbert/nuxt-starter
     ```
 features:
-  title: 'All-in-one docs template'
+  title: 'Kitchen-sink Hackathon template'
   links:
-    - label: 'Explore Nuxt UI Pro'
+    - label: 'Explore UX Lab'
       icon: 'i-simple-icons-nuxtdotjs'
       trailingIcon: 'i-heroicons-arrow-right-20-solid'
       color: 'gray'
-      to: 'https://ui.nuxt.com/pro'
+      to: 'https://victortolbert.com/lab'
       target: '_blank'
       size: lg
   items:

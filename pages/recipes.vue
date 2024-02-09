@@ -1,5 +1,17 @@
 <script setup>
+import { useQuery } from '@tanstack/vue-query'
+
 const { data: recipes } = await useFetch('https://api.victortolbert.com/recipes')
+
+async function fetcher() {
+  return await fetch('https://api.victortolbert.com/recipes').then(response =>
+    response.json(),
+  )
+}
+
+const { data, suspense } = useQuery({ queryKey: ['test'], queryFn: fetcher })
+
+await suspense()
 
 // function addRecipe(recipe) {
 //   recipes.value.push(recipe)
@@ -19,5 +31,6 @@ const { data: recipes } = await useFetch('https://api.victortolbert.com/recipes'
   <div>
     <h1>Recipes</h1>
     <pre>{{ recipes }}</pre>
+    <div>{{ data }}</div>
   </div>
 </template>
