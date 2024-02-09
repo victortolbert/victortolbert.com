@@ -12,7 +12,7 @@
     "email": "victor.tolbert@gmail.com",
     "phone": "(678) 613-3400",
     "url": "https://victortolbert.com",
-    "summary": "Self-taught full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design. Passionate about creating innovative solutions that solve real-world problems.",
+    "summary": "Full-stack software engineer with 20+ years of experience in web development, design engineering, and digital product design. Passionate about creating innovative solutions that solve real-world problems.",
     "location": {
       "address": "1547 Boulder Walk Drive",
       "postalCode": "30316",
@@ -185,7 +185,6 @@
         "C#",
         ".NET",
         "ASP.NET Core",
-        "Salesforce",
         "Apex",
         "PHP",
         "WordPress",
@@ -203,11 +202,6 @@
       "name": "Frontend",
       "level": "Senior",
       "keywords": [
-        "Responsive Design",
-        "Progressive Web Apps",
-        "Accessibility",
-        "Web Components",
-        "SEO",
         "HTML",
         "JSX",
         "CSS",
@@ -231,7 +225,6 @@
         "Angular"
       ]
     },
-
     {
       "name": "DevOps",
       "level": "Intermediate",
@@ -240,6 +233,21 @@
         "Azure",
         "Google Cloud",
         "Heroku"
+      ]
+    },
+    {
+      "name": "Product Development",
+      "level": "Senior",
+      "keywords": [
+        "Accessibility",
+        "SEO",
+        "Salesforce Experience Cloud",
+        "Information Architecture",
+        "Design Systems",
+        "Responsive Design",
+        "Progressive Web Apps",
+        "Web Components",
+        "User Experience Design"
       ]
     }
   ],

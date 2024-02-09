@@ -1,9 +1,13 @@
-# Developer Operations (DevOps) and Web Hosting Management
+---
+title: Developer Operations (DevOps) and Web Hosting Management
+---
 
-- Rackspace
+# DevOps
+
+- Amazon Web Services (AWS)
 - Dreamhost
 - Dotster
-- WP Engine
-- Amazon Web Services (AWS)
 - Google Cloud Platform (GCP)
 - Microsoft Azure
+- Rackspace
+- WP Engine
