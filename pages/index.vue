@@ -90,9 +90,12 @@ const exceptions = [
   { name: 'TypeScript', url: '/typescript' },
   { name: 'Vue.js', url: '/vue' },
   { name: 'WordPress', url: '/wordpress' },
+  { name: 'Salesforce Experience Cloud', url: '/salesforce' },
   { name: 'Microsoft Azure', url: '/azure' },
   { name: 'Google Cloud', url: '/gcp' },
   { name: 'Google Cloud Platform', url: '/gcp' },
+  { name: 'Information Architecture', url: '/ia' },
+  { name: 'User Experience Design', url: '/ux' },
 ]
 
 const urlMapping = {}
@@ -232,7 +235,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
         <h2 class="text-2xl">
           Work Experience
         </h2>
-        <div v-for="(work, index) in resume?.work" :key="work.startDate">
+        <div v-for="(work, index) in resume?.work" :key="work.startDate" class="mb-4">
           <div class="flex flex-col space-y-1.5">
             <div class="flex items-center justify-between gap-x-2 text-base">
               <h3 class="inline-flex items-center justify-center gap-x-1 leading-none">
@@ -284,7 +287,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
         </div>
       </section>
 
-      <section class="flex min-h-0 flex-col gap-y-4">
+      <section v-if="false" class="flex min-h-0 flex-col gap-y-4">
         <h2 class="text-2xl">
           Interests
         </h2>
