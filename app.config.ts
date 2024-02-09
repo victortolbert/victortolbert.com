@@ -1,8 +1,8 @@
 export default defineAppConfig({
   // The key to override a component will be its path, for example ui.landing.hero will override the LandingHero component.
   ui: {
-    primary: 'neutral',
-    gray: 'neutral',
+    primary: 'sky',
+    gray: 'slate',
     container: {
       constrained: 'max-w-4xl',
     },
