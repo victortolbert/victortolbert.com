@@ -8,7 +8,6 @@ import iCalendarPlugin from '@fullcalendar/icalendar'
 
 import { INITIAL_EVENTS, createEventId } from '~/utils/EventUtils'
 
-
 // definePageMeta({
 //   layout: false,
 // })

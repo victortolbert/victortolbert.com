@@ -3,14 +3,14 @@
     <div class="grid grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] gap-x-2 gap-y-8 sm:grid-cols-1">
       <div class="2xl:contents">
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
-          Primary
+          Primary (Sky)
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 254, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 254, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -21,9 +21,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(207, 250, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(207, 250, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -34,9 +34,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 243, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 243, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -47,9 +47,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(103, 232, 249);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(103, 232, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -60,9 +60,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 211, 238);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 211, 238);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -73,9 +73,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 182, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 182, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -86,9 +86,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 145, 178);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 145, 178);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -99,9 +99,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 116, 144);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 116, 144);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -112,9 +112,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 94, 117);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 94, 117);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -125,9 +125,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 78, 99);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 78, 99);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -138,9 +138,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 51, 68);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 51, 68);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -155,12 +155,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Primary
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -171,9 +171,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(204, 251, 241);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(204, 251, 241);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -184,9 +184,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 246, 228);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 246, 228);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -197,9 +197,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(94, 234, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(94, 234, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -210,9 +210,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(45, 212, 191);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(45, 212, 191);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -223,9 +223,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 184, 166);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 184, 166);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -236,9 +236,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(13, 148, 136);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(13, 148, 136);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -249,9 +249,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 118, 110);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 118, 110);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -262,9 +262,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 94, 89);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 94, 89);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -275,9 +275,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(19, 78, 74);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(19, 78, 74);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -288,9 +288,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 47, 46);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 47, 46);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -303,148 +303,148 @@
       </div>
       <div class="2xl:contents">
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
-          Gray
+          Gray (Slate)
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(248, 250, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #fafafa
+                  #f8fafc
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 245, 245);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(241, 245, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #f5f5f5
+                  #f1f5f9
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(229, 229, 229);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(226, 232, 240);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #e5e5e5
+                  #e2e8f0
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(212, 212, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(203, 213, 225);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #d4d4d4
+                  #cbd5e1
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(163, 163, 163);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(148, 163, 184);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #a3a3a3
+                  #94a3b8
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(115, 115, 115);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(100, 116, 139);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #737373
+                  #64748b
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(82, 82, 82);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(71, 85, 105);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #525252
+                  #475569
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(64, 64, 64);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(51, 65, 85);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #404040
+                  #334155
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(38, 38, 38);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 41, 59);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #262626
+                  #1e293b
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(23, 23, 23);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 23, 42);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #171717
+                  #0f172a
                 </div>
               </div>
             </div>
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(10, 10, 10);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 6, 23);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
-                  #0a0a0a
+                  #020617
                 </div>
               </div>
             </div>
@@ -460,12 +460,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Slate
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(248, 250, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(248, 250, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -476,9 +476,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(241, 245, 249);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(241, 245, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -489,9 +489,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(226, 232, 240);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(226, 232, 240);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -502,9 +502,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(203, 213, 225);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(203, 213, 225);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -515,9 +515,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(148, 163, 184);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(148, 163, 184);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -528,9 +528,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(100, 116, 139);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(100, 116, 139);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -541,9 +541,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(71, 85, 105);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(71, 85, 105);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -554,9 +554,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(51, 65, 85);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(51, 65, 85);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -567,9 +567,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 41, 59);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 41, 59);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -580,9 +580,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 23, 42);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 23, 42);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -593,9 +593,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 6, 23);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 6, 23);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -610,12 +610,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Gray
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 250, 251);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 250, 251);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -626,9 +626,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(243, 244, 246);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(243, 244, 246);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -639,9 +639,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(229, 231, 235);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(229, 231, 235);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -652,9 +652,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(209, 213, 219);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(209, 213, 219);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -665,9 +665,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(156, 163, 175);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(156, 163, 175);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -678,9 +678,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(107, 114, 128);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(107, 114, 128);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -691,9 +691,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(75, 85, 99);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(75, 85, 99);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -704,9 +704,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(55, 65, 81);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(55, 65, 81);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -717,9 +717,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(31, 41, 55);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(31, 41, 55);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -730,9 +730,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 24, 39);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 24, 39);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -743,9 +743,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(3, 7, 18);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(3, 7, 18);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -760,12 +760,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Zinc
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -776,9 +776,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 244, 245);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 244, 245);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -789,9 +789,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(228, 228, 231);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(228, 228, 231);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -802,9 +802,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(212, 212, 216);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(212, 212, 216);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -815,9 +815,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(161, 161, 170);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(161, 161, 170);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -828,9 +828,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(113, 113, 122);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(113, 113, 122);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -841,9 +841,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(82, 82, 91);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(82, 82, 91);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -854,9 +854,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(63, 63, 70);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(63, 63, 70);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -867,9 +867,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(39, 39, 42);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(39, 39, 42);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -880,9 +880,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(24, 24, 27);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(24, 24, 27);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -893,9 +893,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(9, 9, 11);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(9, 9, 11);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -910,12 +910,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Neutral
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -926,9 +926,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 245, 245);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 245, 245);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -939,9 +939,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(229, 229, 229);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(229, 229, 229);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -952,9 +952,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(212, 212, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(212, 212, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -965,9 +965,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(163, 163, 163);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(163, 163, 163);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -978,9 +978,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(115, 115, 115);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(115, 115, 115);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -991,9 +991,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(82, 82, 82);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(82, 82, 82);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1004,9 +1004,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(64, 64, 64);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(64, 64, 64);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1017,9 +1017,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(38, 38, 38);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(38, 38, 38);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1030,9 +1030,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(23, 23, 23);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(23, 23, 23);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1043,9 +1043,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(10, 10, 10);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(10, 10, 10);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1060,12 +1060,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Stone
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 249);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 250, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1076,9 +1076,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 245, 244);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 245, 244);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1089,9 +1089,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(231, 229, 228);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(231, 229, 228);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1102,9 +1102,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(214, 211, 209);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(214, 211, 209);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1115,9 +1115,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(168, 162, 158);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(168, 162, 158);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1128,9 +1128,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(120, 113, 108);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(120, 113, 108);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1141,9 +1141,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(87, 83, 78);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(87, 83, 78);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1154,9 +1154,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(68, 64, 60);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(68, 64, 60);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1167,9 +1167,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(41, 37, 36);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(41, 37, 36);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1180,9 +1180,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(28, 25, 23);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(28, 25, 23);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1193,9 +1193,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(12, 10, 9);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(12, 10, 9);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1210,12 +1210,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Red
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 242, 242);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 242, 242);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1226,9 +1226,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 226, 226);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 226, 226);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1239,9 +1239,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 202, 202);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 202, 202);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1252,9 +1252,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 165, 165);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 165, 165);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1265,9 +1265,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(248, 113, 113);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(248, 113, 113);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1278,9 +1278,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(239, 68, 68);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(239, 68, 68);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1291,9 +1291,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(220, 38, 38);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(220, 38, 38);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1304,9 +1304,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(185, 28, 28);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(185, 28, 28);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1317,9 +1317,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 27, 27);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 27, 27);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1330,9 +1330,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(127, 29, 29);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(127, 29, 29);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1343,9 +1343,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(69, 10, 10);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(69, 10, 10);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1360,12 +1360,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Orange
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 247, 237);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 247, 237);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1376,9 +1376,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 237, 213);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 237, 213);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1389,9 +1389,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 215, 170);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 215, 170);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1402,9 +1402,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 186, 116);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 186, 116);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1415,9 +1415,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 146, 60);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 146, 60);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1428,9 +1428,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 115, 22);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 115, 22);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1441,9 +1441,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(234, 88, 12);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(234, 88, 12);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1454,9 +1454,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(194, 65, 12);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(194, 65, 12);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1467,9 +1467,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(154, 52, 18);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(154, 52, 18);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1480,9 +1480,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(124, 45, 18);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(124, 45, 18);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1493,9 +1493,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(67, 20, 7);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(67, 20, 7);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1510,12 +1510,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Amber
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 251, 235);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 251, 235);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1526,9 +1526,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 243, 199);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 243, 199);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1539,9 +1539,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 230, 138);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 230, 138);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1552,9 +1552,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 211, 77);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 211, 77);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1565,9 +1565,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 191, 36);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 191, 36);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1578,9 +1578,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 158, 11);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 158, 11);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1591,9 +1591,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 119, 6);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 119, 6);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1604,9 +1604,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(180, 83, 9);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(180, 83, 9);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1617,9 +1617,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(146, 64, 14);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(146, 64, 14);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1630,9 +1630,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(120, 53, 15);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(120, 53, 15);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1643,9 +1643,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(69, 26, 3);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(69, 26, 3);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1660,12 +1660,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Yellow
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 252, 232);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 252, 232);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1676,9 +1676,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 249, 195);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 249, 195);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1689,9 +1689,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 240, 138);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 240, 138);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1702,9 +1702,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 224, 71);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 224, 71);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1715,9 +1715,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 204, 21);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 204, 21);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1728,9 +1728,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(234, 179, 8);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(234, 179, 8);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1741,9 +1741,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(202, 138, 4);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(202, 138, 4);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1754,9 +1754,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(161, 98, 7);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(161, 98, 7);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1767,9 +1767,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(133, 77, 14);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(133, 77, 14);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1780,9 +1780,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(113, 63, 18);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(113, 63, 18);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1793,9 +1793,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(66, 32, 6);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(66, 32, 6);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1810,12 +1810,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Lime
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(247, 254, 231);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(247, 254, 231);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1826,9 +1826,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 252, 203);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 252, 203);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1839,9 +1839,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 249, 157);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 249, 157);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1852,9 +1852,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 242, 100);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 242, 100);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1865,9 +1865,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(163, 230, 53);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(163, 230, 53);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1878,9 +1878,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(132, 204, 22);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(132, 204, 22);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1891,9 +1891,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(101, 163, 13);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(101, 163, 13);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1904,9 +1904,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(77, 124, 15);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(77, 124, 15);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1917,9 +1917,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(63, 98, 18);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(63, 98, 18);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1930,9 +1930,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(54, 83, 20);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(54, 83, 20);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1943,9 +1943,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(26, 46, 5);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(26, 46, 5);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1960,12 +1960,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Green
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 244);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 244);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1976,9 +1976,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(220, 252, 231);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(220, 252, 231);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -1989,9 +1989,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(187, 247, 208);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(187, 247, 208);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2002,9 +2002,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(134, 239, 172);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(134, 239, 172);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2015,9 +2015,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(74, 222, 128);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(74, 222, 128);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2028,9 +2028,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 197, 94);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 197, 94);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2041,9 +2041,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 163, 74);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 163, 74);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2054,9 +2054,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 128, 61);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 128, 61);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2067,9 +2067,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 101, 52);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 101, 52);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2080,9 +2080,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 83, 45);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 83, 45);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2093,9 +2093,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(5, 46, 22);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(5, 46, 22);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2110,12 +2110,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Emerald
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 253, 245);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 253, 245);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2126,9 +2126,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(209, 250, 229);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(209, 250, 229);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2139,9 +2139,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(167, 243, 208);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(167, 243, 208);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2152,9 +2152,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(110, 231, 183);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(110, 231, 183);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2165,9 +2165,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(52, 211, 153);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(52, 211, 153);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2178,9 +2178,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(16, 185, 129);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(16, 185, 129);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2191,9 +2191,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(5, 150, 105);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(5, 150, 105);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2204,9 +2204,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 120, 87);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 120, 87);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2217,9 +2217,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 95, 70);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 95, 70);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2230,9 +2230,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 78, 59);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 78, 59);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2243,9 +2243,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 44, 34);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 44, 34);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2260,12 +2260,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Teal
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 253, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2276,9 +2276,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(204, 251, 241);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(204, 251, 241);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2289,9 +2289,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 246, 228);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(153, 246, 228);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2302,9 +2302,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(94, 234, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(94, 234, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2315,9 +2315,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(45, 212, 191);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(45, 212, 191);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2328,9 +2328,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 184, 166);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(20, 184, 166);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2341,9 +2341,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(13, 148, 136);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(13, 148, 136);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2354,9 +2354,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 118, 110);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(15, 118, 110);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2367,9 +2367,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 94, 89);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(17, 94, 89);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2380,9 +2380,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(19, 78, 74);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(19, 78, 74);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2393,9 +2393,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 47, 46);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(4, 47, 46);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2410,12 +2410,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Cyan
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 254, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 254, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2426,9 +2426,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(207, 250, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(207, 250, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2439,9 +2439,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 243, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 243, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2452,9 +2452,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(103, 232, 249);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(103, 232, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2465,9 +2465,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 211, 238);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(34, 211, 238);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2478,9 +2478,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 182, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(6, 182, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2491,9 +2491,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 145, 178);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 145, 178);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2504,9 +2504,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 116, 144);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 116, 144);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2517,9 +2517,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 94, 117);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(21, 94, 117);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2530,9 +2530,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 78, 99);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(22, 78, 99);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2543,9 +2543,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 51, 68);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 51, 68);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2560,12 +2560,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Sky
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 249, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 249, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2576,9 +2576,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(224, 242, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(224, 242, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2589,9 +2589,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(186, 230, 253);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(186, 230, 253);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2602,9 +2602,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(125, 211, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(125, 211, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2615,9 +2615,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(56, 189, 248);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(56, 189, 248);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2628,9 +2628,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 165, 233);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(14, 165, 233);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2641,9 +2641,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 132, 199);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(2, 132, 199);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2654,9 +2654,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(3, 105, 161);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(3, 105, 161);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2667,9 +2667,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(7, 89, 133);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(7, 89, 133);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2680,9 +2680,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(12, 74, 110);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(12, 74, 110);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2693,9 +2693,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 47, 73);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(8, 47, 73);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2710,12 +2710,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Blue
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(239, 246, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(239, 246, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2726,9 +2726,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(219, 234, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(219, 234, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2739,9 +2739,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(191, 219, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(191, 219, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2752,9 +2752,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(147, 197, 253);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(147, 197, 253);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2765,9 +2765,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(96, 165, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(96, 165, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2778,9 +2778,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(59, 130, 246);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(59, 130, 246);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2791,9 +2791,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(37, 99, 235);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(37, 99, 235);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2804,9 +2804,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(29, 78, 216);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(29, 78, 216);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2817,9 +2817,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 64, 175);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 64, 175);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2830,9 +2830,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 58, 138);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 58, 138);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2843,9 +2843,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(23, 37, 84);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(23, 37, 84);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2860,12 +2860,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Indigo
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(238, 242, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(238, 242, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2876,9 +2876,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(224, 231, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(224, 231, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2889,9 +2889,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(199, 210, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(199, 210, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2902,9 +2902,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 180, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(165, 180, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2915,9 +2915,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(129, 140, 248);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(129, 140, 248);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2928,9 +2928,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(99, 102, 241);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(99, 102, 241);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2941,9 +2941,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(79, 70, 229);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(79, 70, 229);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2954,9 +2954,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(67, 56, 202);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(67, 56, 202);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2967,9 +2967,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(55, 48, 163);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(55, 48, 163);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2980,9 +2980,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(49, 46, 129);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(49, 46, 129);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -2993,9 +2993,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 27, 75);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(30, 27, 75);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3010,12 +3010,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Violet
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 243, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 243, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3026,9 +3026,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(237, 233, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(237, 233, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3039,9 +3039,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(221, 214, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(221, 214, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3052,9 +3052,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(196, 181, 253);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(196, 181, 253);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3065,9 +3065,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(167, 139, 250);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(167, 139, 250);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3078,9 +3078,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(139, 92, 246);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(139, 92, 246);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3091,9 +3091,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(124, 58, 237);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(124, 58, 237);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3104,9 +3104,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(109, 40, 217);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(109, 40, 217);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3117,9 +3117,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(91, 33, 182);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(91, 33, 182);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3130,9 +3130,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(76, 29, 149);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(76, 29, 149);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3143,9 +3143,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(46, 16, 101);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(46, 16, 101);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3160,12 +3160,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Purple
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 245, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 245, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3176,9 +3176,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(243, 232, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(243, 232, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3189,9 +3189,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(233, 213, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(233, 213, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3202,9 +3202,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(216, 180, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(216, 180, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3215,9 +3215,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(192, 132, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(192, 132, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3228,9 +3228,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(168, 85, 247);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(168, 85, 247);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3241,9 +3241,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(147, 51, 234);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(147, 51, 234);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3254,9 +3254,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(126, 34, 206);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(126, 34, 206);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3267,9 +3267,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(107, 33, 168);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(107, 33, 168);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3280,9 +3280,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(88, 28, 135);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(88, 28, 135);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3293,9 +3293,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(59, 7, 100);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(59, 7, 100);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3310,12 +3310,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Fuchsia
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 244, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 244, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3326,9 +3326,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 232, 255);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(250, 232, 255);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3339,9 +3339,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 208, 254);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(245, 208, 254);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3352,9 +3352,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 171, 252);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(240, 171, 252);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3365,9 +3365,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(232, 121, 249);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(232, 121, 249);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3378,9 +3378,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 70, 239);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(217, 70, 239);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3391,9 +3391,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(192, 38, 211);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(192, 38, 211);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3404,9 +3404,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(162, 28, 175);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(162, 28, 175);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3417,9 +3417,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(134, 25, 143);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(134, 25, 143);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3430,9 +3430,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(112, 26, 117);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(112, 26, 117);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3443,9 +3443,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(74, 4, 78);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(74, 4, 78);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3460,12 +3460,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Pink
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 242, 248);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 242, 248);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3476,9 +3476,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 231, 243);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(252, 231, 243);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3489,9 +3489,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 207, 232);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 207, 232);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3502,9 +3502,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 168, 212);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(249, 168, 212);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3515,9 +3515,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 114, 182);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 114, 182);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3528,9 +3528,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 72, 153);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(236, 72, 153);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3541,9 +3541,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(219, 39, 119);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(219, 39, 119);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3554,9 +3554,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 24, 93);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 24, 93);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3567,9 +3567,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(157, 23, 77);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(157, 23, 77);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3580,9 +3580,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(131, 24, 67);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(131, 24, 67);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3593,9 +3593,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(80, 7, 36);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(80, 7, 36);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3610,12 +3610,12 @@
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">
           Rose
         </div>
-        <div class="grid mt-3 grid-cols-1 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
+        <div class="grid grid-cols-1 mt-3 sm:grid-cols-11 gap-y-3 gap-x-2 sm:mt-2 2xl:mt-0">
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 241, 242);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 241, 242);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   50
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3626,9 +3626,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 228, 230);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(255, 228, 230);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   100
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3639,9 +3639,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 205, 211);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(254, 205, 211);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   200
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3652,9 +3652,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 164, 175);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(253, 164, 175);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   300
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3665,9 +3665,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 113, 133);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(251, 113, 133);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   400
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3678,9 +3678,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 63, 94);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(244, 63, 94);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   500
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3691,9 +3691,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(225, 29, 72);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(225, 29, 72);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   600
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3704,9 +3704,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 18, 60);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(190, 18, 60);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   700
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3717,9 +3717,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(159, 18, 57);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(159, 18, 57);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   800
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3730,9 +3730,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(136, 19, 55);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(136, 19, 55);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   900
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">
@@ -3743,9 +3743,9 @@
           </div>
           <div class="relative flex">
             <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
-              <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(76, 5, 25);" />
+              <div class="w-10 h-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 sm:w-full" style="background-color: rgb(76, 5, 25);" />
               <div class="px-0.5">
-                <div class="w-6 font-medium text-xs text-slate-900 2xl:w-full dark:text-white">
+                <div class="w-6 text-xs font-medium text-slate-900 2xl:w-full dark:text-white">
                   950
                 </div>
                 <div class="text-slate-500 text-xs font-mono lowercase dark:text-slate-400 sm:text-[0.625rem] md:text-xs lg:text-[0.625rem] 2xl:text-xs">

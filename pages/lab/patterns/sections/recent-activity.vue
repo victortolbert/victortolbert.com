@@ -1,16 +1,7 @@
 <template>
-  <section
-    class="mt-8 bg-white rounded-lg shadow-lg dark:bg-primary-700 dark:text-primary-200"
-  >
-    <header class="p-6">
-      <h2 class="flex items-center space-x-2">
-        <!-- <i class="text-gray-400 fad fa-fire fa-lg" /> -->
-        <UIcon name="i-ph-fire-duotone" />
-        <span>Recent Activity</span>
-      </h2>
-    </header>
-
-    <div class="px-8 mt-4">
+  <!-- bg-white dark:bg-primary-700 dark:text-primary-200 -->
+  <section class="mt-8">
+    <div class="mt-4">
       <ol class="relative border-l border-gray-200 dark:border-gray-700">
         <li class="mb-10 ml-6">
           <span

@@ -1,3 +1,18 @@
+export * from './BillingContactType'
+export * from './CompanyServiceType'
+export * from './Editable'
+export * from './ExemplarEntityTypes'
+export * from './ExternalWebForm'
+export * from './MerchantAuthentication'
+export * from './NewClaimBase'
+export * from './PaymentProfile'
+export * from './ProjectDamageTypeInsert'
+export * from './ProjectInspection'
+export * from './ProjectInspectionTechnician'
+export * from './ServiceAreaPostalCode'
+export * from './ServiceAreaTechnician'
+export * from './ServiceRegionManager'
+
 export interface Article { }
 
 export interface Attendee {

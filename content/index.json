@@ -41,12 +41,12 @@
       "position": "Software Engineer",
       "url": "https://victortolbert.com/projects/hancock",
       "startDate": "2021-05-21",
-      "summary": "Provide subject matter expertise in user interface engineering and demonstrated technical leadership in the development of a  web-based property claims management system and mobile-friendly property inspection web applications",
+      "summary": "Provide subject matter expertise in user interface engineering and technical leadership in the development of a web-based property claims management system and mobile-friendly property inspection web applications",
       "highlights": [
         "Led the development of payment features using the Authorize.net API, streamlining manual payment processes into automated workflows",
-        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and TailwindCSS frontend",
+        "Successfully modernized a legacy .NET application, transforming it into a modern MPA utilizing ASP.NET Core REST API backend and a Vue.js, TypeScript, and Tailwind CSS frontend",
         "Spearheaded the standardization of front-end development processes and best practices",
-        "Tech Stack: Salesforce, .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.JS, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), TailwindCSS"
+        "Tech Stack: Salesforce, .NET, C#, ASP.NET Core, MVC, Entity Framework LINQ, Microsoft SQL Server, TypeScript, Kendo UI, JavaScript, Vue.js, Azure DevOps, Git, Webpack, CSS (Bootstrap/Sass), Tailwind CSS"
       ]
     },
     {
@@ -64,7 +64,7 @@
         "Actively participated in the agile development team and engaged in team meetings, contributing to efficient codebase management and infrastructure",
         "Assisted team in managing the overall codebase and infrastructure to minimize downtime",
         "Implemented best practices to create a scalable and innovative application",
-        "Tech Stack: HTML5, CSS (TailwindCSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
+        "Tech Stack: HTML5, CSS (Tailwind CSS, Bulma, Bootstrap), JavaScript, Vue.js, CodeIgniter, Laravel, jQuery, AJAX"
       ]
     },
     {

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 definePageMeta({
-    layout: 'admin',
+  layout: 'admin',
 })
 </script>
 
 <template>
   <div>
-    <ULandingHero description="Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.">
+    <ULandingHero description="">
       <template #title>
         The <span class="text-primary block lg:inline-block">Building Blocks</span> for Modern Web apps
       </template>
