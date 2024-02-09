@@ -1,8 +1,7 @@
 <script setup>
 useHead({
-  bodyAttrs: {
-    class: 'antialiased font-mono bg-gray-50 dark:bg-gray-950',
-  },
+  htmlAttrs: { class: 'h-full' },
+  bodyAttrs: { class: 'h-full antialiased font-mono bg-gray-50 dark:bg-gray-950' },
 })
 
 onMounted(() => {
@@ -11,12 +10,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtLoadingIndicator color="var(--react)" />
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtLoadingIndicator color="var(--react)" />
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style>
@@ -30,12 +27,8 @@ html {
   scrollbar-gutter: stable;
 }
 
-html,
-body,
 #__nuxt {
   height: 100vh;
-  margin: 0;
-  height: 0;
 }
 
 /* html.dark {

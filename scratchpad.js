@@ -1,4 +1,5 @@
 import { kebabCase } from 'scule'
+import { faker } from '@faker-js/faker'
 
 const customer = {
   name: 'Carl',
@@ -258,3 +259,28 @@ const skillLinks = skills.map((skill) => {
 })
 
 console.log(skillLinks)
+
+// https://dev.to/matthewmayer/leveling-up-your-custom-fake-data-with-fakerjs-3f7m
+const titles = [
+  'Clash of {{word.noun}}s',
+  'Pokemon {{color.human}}',
+  'Cyberpunk {{number.int({"min": 2020, "max": 3000})}}',
+  '{{word.noun}} of war',
+  '{{person.zodiacSign}} {{word.noun}}',
+  '{{word.noun}} {{number.int(10)}}',
+  '{{word.adjective}} {{word.noun}}: {{word.verb}} Edition',
+  "{{person.firstName}}'s {{word.noun}}",
+  '{{word.adjective}} {{animal.type}} Adventures',
+  '{{vehicle.type}} Simulator {{number.int({"min": 2000, "max": 2024})}}'
+];
+
+const toTitleCase = (str) =>
+  str.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  );
+console.dir(
+  faker.helpers.multiple(() => toTitleCase(faker.helpers.fake(titles)), {
+    count: 100,
+  })
+);

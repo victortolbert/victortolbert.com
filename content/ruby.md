@@ -14,6 +14,7 @@ gem 'susy'
 gem 'animate'
 gem 'bourbon'
 gem 'rmagick'
+gem 'faker'
 ```
 
 <https://github.com/vmg/redcarpet>

@@ -131,7 +131,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
 </script>
 
 <template>
-  <article class="w-full relative mx-auto print:p-12">
+  <article class="w-full relative mx-auto print:p-12 max-w-3xl">
     <article class="w-full space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">

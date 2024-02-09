@@ -8,7 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <article class="min-h-screen w-full relative mx-auto print:p-12">
+  <article class="min-h-screen w-full relative mx-auto print:p-12 max-w-3xl">
     <div class="mt-1.5 space-y-24">
       <HomeIntro />
       <HomeSocialLinks />

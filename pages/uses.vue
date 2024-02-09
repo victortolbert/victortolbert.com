@@ -16,7 +16,7 @@ const other = items.value.filter(item => item.category === 'others')
 </script>
 
 <template>
-  <article class="min-h-screen mx-auto">
+  <article class="min-h-screen mx-auto max-w-3xl">
     <AppHeader
       class="mt-1.5 mb-12"
       title="Uses"

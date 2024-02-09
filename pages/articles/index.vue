@@ -11,7 +11,7 @@ const { data: articles } = await useAsyncData('all-articles', () =>
 </script>
 
 <template>
-  <article class="min-h-screen mx-auto">
+  <article class="min-h-screen mx-auto max-w-3xl">
     <AppHeader class="mt-1.5 mb-16" title="Articles" :description="description" />
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
