@@ -20,12 +20,15 @@ function showPlantDetails(id) {
       :key="plant.id"
       class="flex flex-col py-4 border-t  hover:bg-gray-50 sm:items-center sm:flex-row"
     >
-      <MediaObject class="w-64" :plant="plant" />
+      <PlantMediaObject
+        class="w-64"
+        :plant="plant"
+      />
 
       <div class="w-32 mt-4 ml-0 sm:ml-4 sm:mt-0">
-        <Badge :type="`${plant.toxicity && 'toxic'}`">
+        <PlantBadge :type="`${plant.toxicity && 'toxic'}`">
           {{ plant.toxicity ? 'Toxic' : 'Non-toxic' }}
-        </Badge>
+        </PlantBadge>
       </div>
 
       <div class="flex-1 mt-4 ml-0 sm:truncate sm:mt-0 sm:ml-4">
@@ -37,9 +40,9 @@ function showPlantDetails(id) {
       <div
         class="absolute order-first ml-0  sm:mx-4 m right-6 sm:static sm:order-last"
       >
-        <FavoriteButton :plant-id="plant.id">
+        <PlantFavoriteButton :plant-id="plant.id">
           Favorite
-        </FavoriteButton>
+        </PlantFavoriteButton>
       </div>
     </div>
   </div>

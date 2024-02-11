@@ -28,11 +28,11 @@ defineProps({
           {{ plant.names.common }}
         </h3>
         <div class="flex items-center">
-          <Badge :type="`${plant.toxicity && 'toxic'}`">
+          <PlantBadge :type="`${plant.toxicity && 'toxic'}`">
             {{ plant.toxicity ? 'Toxic' : 'Non-toxic' }}
-          </Badge>
+          </PlantBadge>
 
-          <FavoriteButton
+          <PlantFavoriteButton
             :plant-id="plant.id"
             class="ml-2.5 text-gray-500 hover:text-gray-700"
           />

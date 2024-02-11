@@ -47,16 +47,16 @@ function cancel() {
                   </div>
 
                   <div style="display: flex; align-items: center">
-                    <Badge
+                    <PlantBadge
                       v-if="plant.toxicity"
                       :type="`${plant.toxicity && 'toxic'}`"
                     >
                       {{ plant.toxicity ? 'Toxic' : 'Non-toxic' }}
-                    </Badge>
+                    </PlantBadge>
 
-                    <FavoriteButton class="ml-2.5">
+                    <PlantFavoriteButton class="ml-2.5">
                       Favorite
-                    </FavoriteButton>
+                    </PlantFavoriteButton>
                   </div>
                 </div>
 

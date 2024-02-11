@@ -25,6 +25,18 @@ export default createStore({
   },
   state() {
     return {
+      activeApp: 'sellers',
+      hasError: false,
+      marketCpp: 200,
+      orderManagementRoute: false,
+      reportingRoute: false,
+      user: {
+        name: 'Seller User',
+        email: 'seller@videa.tv',
+      },
+      settings: {
+        stationAudienceShare: 0.3,
+      },
       categories: [
         'sustainability',
         'nature',

@@ -12,7 +12,7 @@ const isFavorite = ref(false)
 <template>
   <nav class="navbar">
     <NuxtLink to="/" class="brand">
-      <SvgLogoMark />
+      <PlantLogo />
       <span class="brand-text">Catopia!</span>
     </NuxtLink>
   </nav>

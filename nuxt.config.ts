@@ -160,6 +160,7 @@ export default defineNuxtConfig({
     '@fontsource-variable/nunito',
     '@fontsource-variable/nunito-sans',
     '@fontsource-variable/raleway',
+    '@fontsource-variable/roboto-slab',
     '@fontsource-variable/rubik',
     '@fontsource/balsamiq-sans',
     '@fontsource/bungee',
@@ -175,6 +176,7 @@ export default defineNuxtConfig({
     'lite-youtube-embed/src/lite-yt-embed.css',
     '~/assets/css/debug-children.css',
     '~/assets/css/debug-grid.css',
+    '~/assets/css/devices.css',
     '~/assets/css/fonts/monaspace-neon.css',
     '~/assets/css/fonts/salesforce-sans.css',
     // '~/assets/scss/vue-sidebar-menu.scss',
@@ -696,7 +698,9 @@ export default defineNuxtConfig({
         scss: {
           additionalData: '@use "~/assets/scss/_variables.scss" as *;\n',
         },
-
+        styl: {
+          additionalData: '@import "~/assets/styl/variables.styl"\n',
+        },
       },
     },
 

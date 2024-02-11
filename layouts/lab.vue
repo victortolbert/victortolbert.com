@@ -21,11 +21,11 @@ const date = useAppConfig().buildDate
 
     <div class="h-32" />
 
-    <AppFooter />
+    <LabFooter />
 
     <!-- <footer class="flex items-center justify-between p-4">
       <NuxtLink to="/">
-        <TheLogo />
+        <LabLogo />
       </NuxtLink>
 
       <div class="flex items-center gap-2">
@@ -34,6 +34,6 @@ const date = useAppConfig().buildDate
       </div>
     </footer> -->
 
-    <AppCommandPalette />
+    <LabCommandPalette />
   </div>
 </template>

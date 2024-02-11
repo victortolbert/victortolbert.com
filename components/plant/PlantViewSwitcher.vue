@@ -1,18 +1,14 @@
 <script setup>
-// import { mapState } from 'vuex'
+import { useStore } from 'vuex'
 
 const store = useStore()
-
-// computed: {
-//     ...mapState('ui', {
-//       activeView: state => state.activeView,
-//     }),
-// }
 </script>
 
 <template>
   <div class="view-switcher">
-    <label class="label" for="table-view">View Options</label>
+    <label class="label" for="table-view">
+      View Options
+    </label>
 
     <div class="icon-button-group">
       <button @click="store.commit('ui/SET_ACTIVE_VIEW', 'grid')">

@@ -1,3 +1,25 @@
+Next Actions:
+
+Projects:
+
+  - [ ] Fix Nuxt docs https://ui.nuxt.com/pro/getting-started/content
+
+    You can wrap `<ContentSlot />` or `<ContentRenderer />` with the `PageBody` component and its prose ~class~ +prop+ to apply the prose prose-primary dark:prose-invert max-w-none classes automatically to your content and make it look great.
+
+  - [ ] Fix breadcrumb title for acronyms
+  - [x] Failed to load resource
+      net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
+  - [x] Add resume
+  - [ ] Create GitHub profile bio
+  - [ ] Add emailing solution
+  - [ ] Build and send emails
+  - [ ] Add Meta K command palette search feature
+  - [ ] Convert color system to CSS custom properties
+  - [ ] Add export to CSV example
+  - [ ] Add file upload example
+  - [ ] Add form example
+  - [ ] Add right-click to brand logo view the design kit
+
 
 Todo:
   [+] Add a way to add a new todo

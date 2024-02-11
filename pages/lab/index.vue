@@ -19,14 +19,9 @@ definePageMeta({
 })
 
 const components = ref([
-  { name: 'Button', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Heading', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Icon', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Input', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Paragraph', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'TextStyle', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Textarea', url: '/components', status: 'Ready', version: '1.0.0' },
-  { name: 'Wrapper', url: '/components', status: 'Ready', version: '1.0.0' },
+  { name: 'Button', url: '/components', category: 'Elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Navbar', url: '/components', category: 'Patterns', status: 'Ready', version: '1.0.0' },
+  { name: 'Index', url: '/components', category: 'Templates', status: 'Ready', version: '1.0.0' },
 ])
 </script>
 
@@ -62,6 +57,9 @@ const components = ref([
                     <th scope="col" class="sticky top-0 z-10 text-left px-2 py-3.5 font-semibold dark:text-white text-sm w-8/12">
                       Component Name
                     </th>
+                    <th scope="col" class="sticky top-0 z-10 text-left px-2 py-3.5 font-semibold dark:text-white text-sm w-2/12 hidden sm:table-cell">
+                      Category
+                    </th>
                     <th scope="col" class="sticky top-0 z-10 text-center px-2 py-3.5 font-semibold dark:text-white text-sm w-2/12 hidden sm:table-cell">
                       Release
                     </th>
@@ -79,6 +77,11 @@ const components = ref([
                     <td class="whitespace-nowrap px-2 py-2 text-sm">
                       <NuxtLink :to="component.url" class="text-gray-700 hover:text-primary-600 font-medium dark:text-gray-100">
                         <pre>{{ component.name }}</pre>
+                      </NuxtLink>
+                    </td>
+                    <td class="whitespace-nowrap px-2 py-2 text-sm hidden sm:table-cell">
+                      <NuxtLink :to="`/lab/${component.category.toLowerCase()}`" class="text-gray-700 hover:text-primary-600 font-medium dark:text-gray-100">
+                        {{ component.category }}
                       </NuxtLink>
                     </td>
                     <td class="whitespace-nowrap px-2 py-2 text-sm text-center hidden sm:table-cell">

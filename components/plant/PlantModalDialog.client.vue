@@ -37,13 +37,13 @@ function dismiss() {
 </script>
 
 <template>
-  <Portal v-if="show" to="overlays">
+  <Teleport v-if="show" to="body">
     <div class="modal-backdrop">
       <div class="modal">
         <slot />
       </div>
     </div>
-  </Portal>
+  </Teleport>
 </template>
 
 <style scoped>
