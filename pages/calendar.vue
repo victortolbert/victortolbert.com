@@ -13,7 +13,7 @@ import { INITIAL_EVENTS, createEventId } from '~/utils/EventUtils'
 // })
 
 const events = ref({
-  url: '/assets/feeds/icalendar.ics',
+  url: '/assets/feeds/victor.tolbert@gmail.com.ics',
   format: 'ics',
 })
 

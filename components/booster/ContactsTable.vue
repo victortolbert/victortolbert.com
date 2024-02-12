@@ -234,9 +234,9 @@ export default {
             </th>
             <th>{{ lang.status }}</th>
             <th>
-              <FontAwesomeIcon
+              <UIcon
                 v-if="!isEditing"
-                :icon="['far', 'user-edit']"
+                name="i-ph-user-circle-gear-duotone"
                 class="cursor-pointer"
                 @click="isEditing = true"
               />
@@ -247,7 +247,7 @@ export default {
               >
                 <span>Close</span>
                 <span class="icon">
-                  <FontAwesomeIcon :icon="['fas', 'times']" />
+                  <UIcon name="i-ph-x-circle-duotone" />
                 </span>
               </button>
             </th>
@@ -286,9 +286,9 @@ export default {
             </td>
             <td>{{ translateStatus(contact.status) }}</td>
             <td class="text-center align-middle">
-              <FontAwesomeIcon
+              <UIcon
                 v-if="isEditing"
-                :icon="['fas', 'trash-alt']"
+                name="i-ph-trash-duotone"
                 @click="showRemoveContactModal(contact)"
               />
             </td>

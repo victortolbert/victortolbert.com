@@ -9,6 +9,6 @@
         <PlantToxicitySelect />
       </div>
     </div>
-    <ViewSwitcher />
+    <PlantViewSwitcher />
   </div>
 </template>

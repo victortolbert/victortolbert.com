@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-8">
+  <div class="grid gap-16">
     <div class="grid grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] gap-x-2 gap-y-8 sm:grid-cols-1">
       <div class="2xl:contents">
         <div class="text-sm font-semibold text-slate-900 dark:text-slate-200 2xl:col-end-1 2xl:pt-2.5">

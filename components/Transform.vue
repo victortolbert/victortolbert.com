@@ -1,13 +1,3 @@
-<!--
-Apply scaling or transforming to elements.
-
-Usage:
-
-<Transform :scale="0.5">
-  <YourElements />
-</Transform>
--->
-
 <script setup lang="ts">
 import { computed } from 'vue'
 
@@ -30,6 +20,13 @@ const style = computed(() => {
 
 <template>
   <div :style="style">
+    <!--
+      Apply scaling or transforming to elements.
+      Usage:
+      <Transform :scale="0.5">
+        <YourElements />
+      </Transform>
+    -->
     <slot />
   </div>
 </template>

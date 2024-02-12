@@ -61,5 +61,6 @@
   ],
   "marquee.widgets.npm-stats.packageNames": [
     "victortolbert.com"
-  ]
+  ],
+  "i18n-ally.keystyle": "nested"
 }

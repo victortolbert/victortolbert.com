@@ -26,12 +26,12 @@ const bookmarks = [
     url: 'https://logoipsum.com/',
     icon: 'logoipsum.svg',
   },
-  // {
-  //   id: 3,
-  //   label: 'Coverr - Free Stock Video Footage, Royalty Free Clips for Download',
-  //   url: 'https://coverr.co/',
-  //   icon: 'coverr.svg',
-  // },
+  {
+    id: 3,
+    label: 'GitHub - victortolbert/starred - My starred repositories on GitHub',
+    url: 'https://github.com/victortolbert?direction=desc&sort=stars&tab=stars',
+    icon: 'coverr.svg',
+  },
   // {
   //   id: 6,
   //   label: 'CSS Gradient Generator',

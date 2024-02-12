@@ -39,13 +39,13 @@ function cancel() {
         </div>
 
         <div style="display: flex; align-items: center">
-          <Badge :type="`${plant.toxicity && 'toxic'}`">
+          <PlantBadge :type="`${plant.toxicity && 'toxic'}`">
             {{ plant.toxicity ? 'Toxic' : 'Non-toxic' }}
-          </Badge>
+          </PlantBadge>
 
-          <FavoriteButton :plant-id="plant.id" class="ml-2.5">
+          <PlantFavoriteButton :plant-id="plant.id" class="ml-2.5">
             Favorite
-          </FavoriteButton>
+          </PlantFavoriteButton>
         </div>
       </div>
 

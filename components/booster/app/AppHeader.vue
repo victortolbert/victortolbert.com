@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { useStore } from 'vuex'
 
-// import AppHeaderNavLink from '~/components/template/AppHeaderNavLink'
-// import AppHeaderNavSection from '~/components/template/AppHeaderNavSection'
 // import NotificationAccordionModal from '~/components/template/NotificationAccordionModal'
-// import AlertBadge from '~/components/element/AlertBadge'
 
 import type { Program } from '~/types'
 
@@ -165,12 +162,12 @@ function blur() {
           aria-label="Menu"
           @click="toggle"
         >
-          <FontAwesomeIcon
-            :icon="['far', 'bars']"
-            class="fa-2x text-white"
+          <UIcon
+            name="i-ph-list-duotone"
+            class="h-6 w-6 text-white"
           />
         </button>
-        <AlertBadge
+        <BoosterAlertBadge
           v-if="unReadNotifications.length > 0"
           :class="[!isOpen ? 'visible' : 'invisible']"
           :number="unReadNotifications.length"
@@ -218,9 +215,9 @@ function blur() {
             aria-label="Close"
             @click="close"
           >
-            <FontAwesomeIcon
-              :icon="['fal', 'times']"
-              class="fa-2x text-white"
+            <UIcon
+              name="i-ph-x-circle-duotone"
+              class="w-6 h-6 text-white"
             />
           </button>
           <div class="max-h-screen overflow-y-auto">
@@ -289,7 +286,7 @@ function blur() {
                   @click.prevent="openProgramNotifications(program)"
                 >
                   {{ t('alerts') }}
-                  <AlertBadge
+                  <BoosterAlertBadge
                     v-if="store.getters.unReadNotificationsByProgram(program.id).length > 0"
                     :number="store.getters.unReadNotificationsByProgram(program.id).length"
                     :static-position="true"
@@ -314,44 +311,44 @@ function blur() {
 
             <!-- Registration Section -->
             <div class="relative z-10 bg-white">
-              <AppHeaderNavSection>
+              <BoosterAppHeaderNavSection>
                 {{ t('registration') }}
-              </AppHeaderNavSection>
-              <AppHeaderNavLink href="/v3/register/participant">
+              </BoosterAppHeaderNavSection>
+              <BoosterAppHeaderNavLink href="/v3/register/participant">
                 {{ t('register_student') }}
-              </AppHeaderNavLink>
-              <AppHeaderNavLink
+              </BoosterAppHeaderNavLink>
+              <BoosterAppHeaderNavLink
                 href="#"
                 @click="goToTeacherRegistration"
               >
                 {{ t('register_teacher') }}
-              </AppHeaderNavLink>
+              </BoosterAppHeaderNavLink>
             </div>
 
             <!-- My Settings Section -->
             <div class="relative z-10 bg-white pb-32 lg:pb-0">
-              <AppHeaderNavSection>
+              <BoosterAppHeaderNavSection>
                 {{ t('my_settings') }}
-              </AppHeaderNavSection>
-              <AppHeaderNavLink
+              </BoosterAppHeaderNavSection>
+              <BoosterAppHeaderNavLink
                 v-if="isOrgAdmin"
                 href="/v3/tkdashboard/?redirect=/admin"
                 class="org-admin-link"
               >
                 {{ t('admin_dashboard') }}
-              </AppHeaderNavLink>
-              <RouterLink
-                :to="{ name: 'edit-profile' }"
+              </BoosterAppHeaderNavLink>
+              <NuxtLink
+                to="/booster/profile/edit"
                 class="m-0 p-4 px-4 font-medium text-gray-dark border-b border-grey-light hover:text-blue-darker hover:bg-grey-lighter"
               >
                 {{ t('my_profile') }}
-              </RouterLink>
-              <AppHeaderNavLink href="/v3/support">
+              </NuxtLink>
+              <BoosterAppHeaderNavLink href="/v3/support">
                 {{ t('help_center') }}
-              </AppHeaderNavLink>
-              <AppHeaderNavLink href="/v3/logout">
+              </BoosterAppHeaderNavLink>
+              <BoosterAppHeaderNavLink href="/v3/logout">
                 {{ t('logout') }}
-              </AppHeaderNavLink>
+              </BoosterAppHeaderNavLink>
             </div>
           </div>
         </nav>

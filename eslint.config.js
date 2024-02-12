@@ -16,6 +16,8 @@ export default antfu(
       'unused-imports/no-unused-vars': 'off',
       'vue/no-template-shadow': 'off',
       'vue/one-component-per-file': 'off',
+      'jsdoc/check-param-names': 'off',
+      'jsdoc/require-param-name': 'off',
     },
     // ignores: [
     //   'README.md',

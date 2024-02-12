@@ -29,75 +29,66 @@ defineOgImageComponent('NuxtSeo')
 
 const links = [
   {
-    label: 'Auto Animate',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/auto-animate',
-  },
-  {
-    label: 'Class API',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/class-api',
-  },
-  // {
-  //   label: 'Composition API',
-  //   icon: 'i-heroicons-command-line',
-  //   to: '/examples/composition-api',
-  // },
-  {
-    label: 'Dynamic Forms',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/dynamic-forms',
-  },
-  {
-    label: 'Fetching',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/fetching',
-  },
-  {
     label: 'Gmail Clone',
     icon: 'i-heroicons-command-line',
     to: '/examples/gmail-clone',
   },
   {
-    label: 'GSAP',
+    label: 'Dynamic Forms',
     icon: 'i-heroicons-command-line',
-    to: '/examples/gsap',
-  },
-  {
-    label: 'Staggering Lists',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/staggering-lists',
-  },
-  {
-    label: 'Transition Component',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/transition-component',
-  },
-  {
-    label: 'Transition Group',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/transition-group',
-  },
-  {
-    label: 'V Auto Animate',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/v-auto-animate',
-  },
-  {
-    label: 'Vue Promised',
-    icon: 'i-heroicons-command-line',
-    to: '/examples/vue-promised',
+    to: '/examples/forms/dynamic-forms',
   },
   {
     label: 'Vuelidate options',
     icon: 'i-heroicons-command-line',
-    to: '/examples/vuelidate-options',
+    to: '/examples/forms/vuelidate-options',
+  },
+  {
+    label: 'Fetching',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/data-fetching/fetching',
+  },
+  {
+    label: 'Vue Promised',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/data-fetching/vue-promised',
+  },
+  {
+    label: 'Auto Animate',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/auto-animate',
+  },
+  {
+    label: 'V Auto Animate',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/v-auto-animate',
+  },
+  {
+    label: 'GSAP',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/gsap',
+  },
+  {
+    label: 'Staggering Lists',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/staggering-lists',
+  },
+  {
+    label: 'Transition Component',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/transition-component',
+  },
+  {
+    label: 'Transition Group',
+    icon: 'i-heroicons-command-line',
+    to: '/examples/motion/transition-group',
   },
   {
     label: 'VueUse Motion',
     icon: 'i-heroicons-command-line',
-    to: '/examples/vueuse-motion',
+    to: '/examples/motion/vueuse-motion',
   },
+
 ]
 </script>
 

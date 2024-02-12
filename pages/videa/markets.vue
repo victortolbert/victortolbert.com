@@ -13,5 +13,5 @@ await suspense()
 </script>
 
 <template>
-  <div>{{ data }}</div>
+  <pre>{{ data }}</pre>
 </template>

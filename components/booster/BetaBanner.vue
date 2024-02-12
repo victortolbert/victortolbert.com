@@ -1,11 +1,4 @@
-<script>
-export default {
-  computed: {
-    lang() {
-      return this.$store.state.lang
-    },
-  },
-}
+<script setup>
 </script>
 
 <template>
@@ -15,7 +8,7 @@ export default {
       class="bg-grey"
     >
       <span class="bg-grey message leading-tight text-white md:leading-normal md:underline">
-        {{ lang.beta_banner_return }}
+        {{ t('beta_banner_return') }}
       </span>
     </a>
   </div>

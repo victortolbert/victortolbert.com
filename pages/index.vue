@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 definePageMeta({
-  colorMode: 'light',
+  // colorMode: 'light',
   title: 'Home',
   // breadcrumb: 'Resume',
   breadcrumb: {
@@ -191,7 +191,7 @@ console.log('2025-01-01 12:00:00'.split(' ')[0])
             </UButton>
           </div>
         </div>
-        <NuxtLink to="/about" class="relative h-28 w-28 flex shrink-0 overflow-hidden rounded-xl">
+        <NuxtLink to="/about" class="relative h-28 w-28 flex shrink-0 transition scale-105 hover:scale-100 active:scale-95 overflow-hidden rounded-xl">
           <img class="aspect-square h-full w-full object-cover grayscale hover:grayscale-0" :src="resume?.basics.image" alt="Victor Tolbert">
         </NuxtLink>
       </div>

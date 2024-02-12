@@ -10,7 +10,7 @@ const online = useOnline()
       Offline
     </header>
 
-    <AppNavbar />
+    <SalesforceNavbar />
 
     <div class="h-32" />
 
@@ -20,11 +20,11 @@ const online = useOnline()
 
     <div class="h-32" />
 
-    <AppFooter />
+    <SalesforceFooter />
 
     <!-- <footer class="flex items-center justify-between p-4">
       <NuxtLink to="/">
-        <TheLogo />
+        <SalesforceLogo />
       </NuxtLink>
 
       <div class="flex items-center gap-2">
@@ -33,6 +33,6 @@ const online = useOnline()
       </div>
     </footer> -->
 
-    <AppCommandPalette />
+    <SalesforceCommandPalette />
   </div>
 </template>

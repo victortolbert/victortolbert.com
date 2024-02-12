@@ -87,7 +87,7 @@ function onToggleCollapsed() {
     />
 
     <main class="mb-32 flex-1">
-      <PageHeader
+      <HancockPageHeader
         v-if="!['/', '/dashboard'].includes($route.path)"
         :title="($route.meta.title as string) || 'Untitled'"
       />
@@ -95,6 +95,6 @@ function onToggleCollapsed() {
       <slot />
     </main>
 
-    <TheFooter />
+    <HancockFooter />
   </div>
 </template>

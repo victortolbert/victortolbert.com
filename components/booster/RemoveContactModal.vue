@@ -83,9 +83,8 @@ export default {
             @click.prevent="closeModal"
           >
             <span class="icon">
-              <FontAwesomeIcon
-                :icon="['fas', 'times']"
-                size="xs"
+              <UIcon
+                name="i-ph-x-circle-duotone"
               />
             </span>
           </a>
