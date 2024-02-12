@@ -117,7 +117,7 @@ async function signInWithEmail() {
           >
             <ULink
               :to="item.path"
-              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:scale-125 hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
               <Icon
@@ -147,7 +147,7 @@ async function signInWithEmail() {
           >
             <ULink
               to="/lab"
-              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:scale-125 hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
               <Icon
@@ -155,7 +155,15 @@ async function signInWithEmail() {
                 name="ph:flask-duotone"
                 class="w-5 h-5 z-10"
               />
-              <span class="sr-only">About Me</span>
+              <span
+                v-if="$route.path === '/lab'"
+                class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"
+              />
+              <span
+                v-if="$route.path === '/lab'"
+                class="absolute h-8 w-8 z-0 rounded-full bg-gray-100 dark:bg-white/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              />
+              <span class="sr-only">Lab</span>
             </ULink>
           </UTooltip>
         </li>
@@ -166,13 +174,21 @@ async function signInWithEmail() {
           >
             <ULink
               to="/about"
-              class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
+              class="relative px-3 py-4 flex items-center justify-center transition hover:scale-125 hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
               <Icon
                 aria-hidden="true"
                 name="ph:question-duotone"
                 class="w-5 h-5 z-10"
+              />
+              <span
+                v-if="$route.path === '/about'"
+                class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"
+              />
+              <span
+                v-if="$route.path === '/about'"
+                class="absolute h-8 w-8 z-0 rounded-full bg-gray-100 dark:bg-white/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               />
               <span class="sr-only">About Me</span>
             </ULink>

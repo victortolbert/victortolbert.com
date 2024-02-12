@@ -62,7 +62,7 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'dark',
-    fallback: 'dark',
+    fallback: 'system',
   },
 
   // componentMeta: {
