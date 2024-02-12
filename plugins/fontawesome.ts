@@ -13,17 +13,18 @@ import {
 // import { fal } from '@fortawesome/pro-light-svg-icons'
 // import { far } from '@fortawesome/pro-regular-svg-icons'
 
-import {
-  faBus,
-  faCamera,
-  faCoffeePot,
-  faCog,
-  faFillDrip,
-  faFireAlt,
-  faHorseSaddle,
-  faSpinner,
-  faCoffee as fadCoffee,
-} from '@fortawesome/pro-duotone-svg-icons'
+// import {
+//   faBus,
+//   faCamera,
+//   faCoffeePot,
+//   faCog,
+//   faFillDrip,
+//   faFireAlt,
+//   faHorseSaddle,
+//   faSpinner,
+//   faCoffee as fadCoffee,
+// } from '@fortawesome/pro-duotone-svg-icons'
+
 import {
   faAngleDown,
   faAngleLeft,
@@ -39,24 +40,25 @@ import {
   faUpload,
   faUserSecret,
 } from '@fortawesome/free-solid-svg-icons'
-import {
-  faBadge,
-  faBasketball,
-  faCheckSquare,
-  faCircleInfo,
-  faCompactDisc,
-  faCompass,
-  faHeart,
-  faTriangleExclamation,
-  faCoffee as fasCoffee,
-} from '@fortawesome/pro-solid-svg-icons'
 
-import { faBicycle, faSquare, faCoffee as farCoffee } from '@fortawesome/pro-regular-svg-icons'
-import { faEnvelope, faCoffee as falCoffee } from '@fortawesome/pro-light-svg-icons'
-import { faFeather, faCoffee as fatCoffee } from '@fortawesome/pro-thin-svg-icons'
-import { faAlien, faCoffee as fassCoffee } from '@fortawesome/sharp-solid-svg-icons'
-import { faPlateUtensils, faCoffee as fasrCoffee } from '@fortawesome/sharp-regular-svg-icons'
-import { faFire, faCoffee as faslCoffee } from '@fortawesome/sharp-light-svg-icons'
+// import {
+//   faBadge,
+//   faBasketball,
+//   faCheckSquare,
+//   faCircleInfo,
+//   faCompactDisc,
+//   faCompass,
+//   faHeart,
+//   faTriangleExclamation,
+//   faCoffee as fasCoffee,
+// } from '@fortawesome/pro-solid-svg-icons'
+
+// import { faBicycle, faSquare, faCoffee as farCoffee } from '@fortawesome/pro-regular-svg-icons'
+// import { faEnvelope, faCoffee as falCoffee } from '@fortawesome/pro-light-svg-icons'
+// import { faFeather, faCoffee as fatCoffee } from '@fortawesome/pro-thin-svg-icons'
+// import { faAlien, faCoffee as fassCoffee } from '@fortawesome/sharp-solid-svg-icons'
+// import { faPlateUtensils, faCoffee as fasrCoffee } from '@fortawesome/sharp-regular-svg-icons'
+// import { faFire, faCoffee as faslCoffee } from '@fortawesome/sharp-light-svg-icons'
 
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false
@@ -69,22 +71,31 @@ config.autoAddCss = false
 
 // Brands
 library.add(faTwitter, faTwitterSquare, faYoutubeSquare, faGithubSquare)
+
 // Duotone
-library.add(faBus, faCamera, faCheckSquare, faCoffeePot, faCog, faFillDrip, faFireAlt, faHorseSaddle, faSpinner, fadCoffee)
+// library.add(faBus, faCamera, faCheckSquare, faCoffeePot, faCog, faFillDrip, faFireAlt, faHorseSaddle, faSpinner, fadCoffee)
+
 // Solid
-library.add(faAngleDown, faAngleLeft, faAngleRight, faBadge, faBasketball, faBell, faCaretDown, faCaretUp, faCircleInfo, faCompactDisc, faCompass, faTriangleExclamation, faHeart, faCheck, faCircle, faMoon, faSun, faTimes, faUpload, faUserSecret, fasCoffee)
+library.add(faAngleDown, faAngleLeft, faAngleRight, faBell, faCaretDown, faCaretUp, faCheck, faCircle, faMoon, faSun, faTimes, faUpload, faUserSecret)
+// library.add(faBadge, faBasketball, faCircleInfo, faCompactDisc, faCompass, faTriangleExclamation, faHeart, fasCoffee)
+
 // Regular
-library.add(faBicycle, farCoffee, faSquare)
+// library.add(faBicycle, farCoffee, faSquare)
+
 // Light
-library.add(faEnvelope, falCoffee)
+// library.add(faEnvelope, falCoffee)
+
 // Thin
-library.add(faFeather, fatCoffee)
+// library.add(faFeather, fatCoffee)
+
 // Sharp Solid
-library.add(faAlien, fassCoffee)
+// library.add(faAlien, fassCoffee)
+
 // Sharp Regular
-library.add(faPlateUtensils, fasrCoffee)
+// library.add(faPlateUtensils, fasrCoffee)
+
 // Sharp Light
-library.add(faFire, faslCoffee)
+// library.add(faFire, faslCoffee)
 
 dom.watch()
 

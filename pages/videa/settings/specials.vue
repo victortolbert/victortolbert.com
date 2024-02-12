@@ -51,7 +51,7 @@ function onSubmit(event) {
 </script>
 
 <template>
-  <div v-show="activeTab == &quot;#specials-settings&quot;" class="page settings specials vui-p-around--x-large vui-tabs--scoped__content" aria-labelledby="tab-scoped-3__item" role="tabpanel">
+  <div v-show="activeTab === '#specials-settings'" class="page settings specials vui-p-around--x-large vui-tabs--scoped__content" aria-labelledby="tab-scoped-3__item" role="tabpanel">
     <div class="vui-container--x-large">
       <p class="vui-text-longform vui-m-bottom--large">
         Please add an upcoming program for your station, and click submit for Videa to review.
@@ -68,7 +68,7 @@ function onSubmit(event) {
             </tr>
           </thead>
           <tbody>
-            <tr v-for="special in specials">
+            <tr v-for="special in specials" :key="special">
               <td>
                 <fieldset class="vui-form-element">
                   <div class="vui-form-element__control" />

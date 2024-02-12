@@ -1,90 +1,93 @@
-<script>
-export default {
-  emits: ['close', 'addContactToDisplay'],
-  data() {
-    return {
-      isSending: false,
-      validationError: '',
-      contact: {
-        firstName: '',
-        lastName: '',
-        emailAddress: '',
-      },
-      templates: [
-        {
-          id: 1,
-          isOpen: false,
-        },
-        {
-          id: 2,
-          isOpen: false,
-        },
-        {
-          id: 3,
-          isOpen: false,
-        },
-      ],
-      errors: null,
-    }
-  },
-  computed: {
-    firstNameErrors() {
-      if (this.errors)
-        return this.errors['contacts.0.firstName']
-      return ''
-    },
-    lastNameErrors() {
-      if (this.errors)
-        return this.errors['contacts.0.lastName']
-      return ''
-    },
-    emailAddressErrors() {
-      if (this.errors)
-        return this.errors['contacts.0.emailAddress']
-      return ''
-    },
-    lang() {
-      return this.$store.state.lang
-    },
-  },
-  methods: {
-    close() {
-      this.$emit('close')
-      this.unBlur()
-    },
-    enrollContacts() {
-      this.validationError = ''
-      axios.post('/v3/api/enroll-contacts', {
-        contacts: [
-          this.contact,
-        ],
-        participantUserId: this.$route.params.participantUserId,
-      }).then((response) => {
-        const sponsorRecord = response.data.contacts[0]
-        const contact = {
-          first_name: sponsorRecord.firstName,
-          last_name: sponsorRecord.lastName,
-          email: sponsorRecord.emailAddress,
-          participant_user_id: this.$route.params.participantUserId,
-        }
-        this.$emit('addContactToDisplay', contact)
-        this.$store.commit('ADD_NEW_USER_ACTIVITY_HISTORIES', response.data.userActivityHistories)
+<script setup>
+import axios from 'axios'
+import { useStore } from 'vuex'
 
-        this.isSending = true
-      }).catch((error) => {
-        this.validationError = error.response.data.message
-        this.isSending = false
-        this.errors = error.response.data.errors
-        this.validationError = error.response.data.message
-      })
-    },
-    blur() {
-      document.getElementById('app').style.filter = 'blur(4px)'
-    },
-    unBlur() {
-      document.getElementById('app').style.filter = 'none'
-    },
+defineEmits(['close', 'addContactToDisplay'])
+const route = useRoute()
+const store = useStore()
+
+const isSending = ref(false)
+const validationError = ref('')
+const errors = ref(null)
+
+const contact = ref({
+  firstName: '',
+  lastName: '',
+  emailAddress: '',
+})
+
+const templates = ref([
+  {
+    id: 1,
+    isOpen: false,
   },
+  {
+    id: 2,
+    isOpen: false,
+  },
+  {
+    id: 3,
+    isOpen: false,
+  },
+])
+
+const firstNameErrors = computed(() => {
+  if (errors.value)
+    return errors.value['contacts.0.firstName']
+  return ''
+})
+
+const lastNameErrors = computed(() => {
+  if (errors.value)
+    return errors.value['contacts.0.lastName']
+  return ''
+})
+
+const emailAddressErrors = computed(() => {
+  if (errors.value)
+    return errors.value['contacts.0.emailAddress']
+  return ''
+})
+
+function close() {
+  emit('close')
+  unBlur()
+}
+
+function enrollContacts() {
+  validationError.value = ''
+
+  axios.post('/v3/api/enroll-contacts', {
+    contacts: [
+      contact.value,
+    ],
+    participantUserId: route.params.participantUserId,
+  }).then((response) => {
+    const sponsorRecord = response.data.contacts[0]
+    const contact = {
+      first_name: sponsorRecord.firstName,
+      last_name: sponsorRecord.lastName,
+      email: sponsorRecord.emailAddress,
+      participant_user_id: route.params.participantUserId,
+    }
+    emit('addContactToDisplay', contact)
+    store.commit('ADD_NEW_USER_ACTIVITY_HISTORIES', response.data.userActivityHistories)
+
+    isSending.value = true
+  }).catch((error) => {
+    validationError.value = error.response.data.message
+    isSending.value = false
+    errors.value = error.response.data.errors
+    validationError.value = error.response.data.message
+  })
+}
+
+function blur() {
+  document.getElementById('app').style.filter = 'blur(4px)'
+}
+
+function unBlur() {
+  document.getElementById('app').style.filter = 'none'
 }
 </script>
 
@@ -107,10 +110,7 @@ export default {
             @click.prevent="close"
           >
             <span class="icon">
-              <FontAwesomeIcon
-                :icon="['fas', 'times']"
-                size="xs"
-              />
+              <UIcon name="i-ph-x-circle-duotone" />
             </span>
           </a>
         </p>

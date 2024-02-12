@@ -1,12 +1,12 @@
 <script setup>
 const props = defineProps({
-    campaign: {
-      type: Object,
-    },
-    order: {
-      type: Object,
-    },
-  })
+  campaign: {
+    type: Object,
+  },
+  order: {
+    type: Object,
+  },
+})
 
 const total = computed(() => {
   return props.campaign.daypartSummary.total

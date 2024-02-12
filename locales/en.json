@@ -1,4 +1,18 @@
 {
   "hello": "Hello, {name} !",
-  "language": "Language"
+  "language": "Language",
+  "teacher_dashboard": "Teacher Dashboard",
+  "home": "Home",
+  "easy_emailer": "Easy Emailer",
+  "alerts": "Alerts",
+  "finish_line": "Finish Line",
+  "registration": "Registration",
+  "register_student": "Register Student",
+  "register_teacher": "Register Teacher",
+  "my_settings": "My Settings",
+  "admin_dashboard": "Admin Dashboard",
+  "my_profile": "My Profile",
+  "help_center": "Help Center",
+  "logout": "Logout",
+  "beta_banner_return": "Return"
 }

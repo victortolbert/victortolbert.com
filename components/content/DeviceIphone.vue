@@ -1,4 +1,4 @@
-<script>
+<script setup>
 defineProps({
   landscape: {
     type: Boolean,

@@ -9,7 +9,7 @@ export interface CreateCustomerProfileFromTransactionResponse {
 interface Messages {
   resultCode: string
   message: Message[]
-}pnppm
+}
 
 interface Message {
   code: string

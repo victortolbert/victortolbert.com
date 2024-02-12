@@ -1,8 +1,8 @@
-<script>
+<script setup>
 defineProps({
   landscape: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   silver: {
     type: Boolean,
@@ -16,6 +16,7 @@ defineProps({
     <div class="camera" />
     <div class="screen">
       <!-- Content goes here -->
+      <slot />
     </div>
     <div class="home" />
   </div>

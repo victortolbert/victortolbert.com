@@ -1,42 +1,31 @@
-<script>
-import { mapState } from 'vuex'
-import BoosterShareModalButton from '~/components/booster/share/ShareModalButton.vue'
-import BoosterPledgeButton from '~/components/booster/pledge/PledgeButton.vue'
+<script setup>
+import { useStore } from 'vuex'
 
-export default {
-  components: {
-    BoosterShareModalButton,
-    BoosterPledgeButton,
+defineProps({
+  program: {
+    type: Object,
+    default: null,
   },
-  props: {
-    program: {
-      type: Object,
-      default: null,
-    },
+})
+
+const store = useStore()
+
+const gaData = ref({
+  pledgeButton: {
+    category: 'bottom float bar',
+    label: 'pledge button',
+    action: 'click',
   },
-  data() {
-    return {
-      gaData: {
-        pledgeButton: {
-          category: 'bottom float bar',
-          label: 'pledge button',
-          action: 'click',
-        },
-        shareButton: {
-          category: 'bottom float bar',
-          label: 'share button',
-          action: 'click',
-        },
-      },
-    }
+  shareButton: {
+    category: 'bottom float bar',
+    label: 'share button',
+    action: 'click',
   },
-  computed: {
-    ...mapState(['lang']),
-    show() {
-      return !this.$store.state.shareButtonsOnScreen
-    },
-  },
-}
+})
+
+const show = computed(() => {
+  return !store.state.shareButtonsOnScreen
+})
 </script>
 
 <template>

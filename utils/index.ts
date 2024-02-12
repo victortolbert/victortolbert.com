@@ -14,7 +14,6 @@ export function capitalize(str: string) {
 
 export const clamp: (value: number, min: number, max: number) => number = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max)
 
-
 export function currencyRounded(value, currency) {
   value = Number.parseFloat(value)
   if (!Number.isFinite(value) || (!value && value !== 0))

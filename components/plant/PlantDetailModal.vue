@@ -28,8 +28,9 @@ function onClickOutside() {
 </script>
 
 <template>
-  <PlantModalDialog v-click-outside="onClickOutside" :show="show"
-  @close="cancel"
+  <PlantModalDialog
+    v-click-outside="onClickOutside" :show="show"
+    @close="cancel"
   >
     <PlantDetails :plant="plant" @close="cancel" />
   </PlantModalDialog>
