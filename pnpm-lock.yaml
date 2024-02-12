@@ -437,14 +437,14 @@ devDependencies:
     specifier: ^0.3.35
     version: 0.3.35(@types/uuid@9.0.8)(nuxt@3.10.1)(uuid@9.0.1)
   '@tanstack/query-persist-client-core':
-    specifier: ^5.20.1
-    version: 5.20.1
+    specifier: ^5.20.2
+    version: 5.20.2
   '@tanstack/query-sync-storage-persister':
     specifier: ^5.20.1
     version: 5.20.1
   '@tanstack/vue-query':
-    specifier: 5.20.1
-    version: 5.20.1(vue@3.4.18)
+    specifier: 5.20.2
+    version: 5.20.2(vue@3.4.18)
   '@testing-library/cypress':
     specifier: ^10.0.1
     version: 10.0.1(cypress@13.6.4)
@@ -536,8 +536,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1
   aws-sdk:
-    specifier: 2.1555.0
-    version: 2.1555.0
+    specifier: 2.1556.0
+    version: 2.1556.0
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -8591,10 +8591,20 @@ packages:
     resolution: {integrity: sha512-OONHHYG5vzjob4An+EfzbW7TRyb+sCA0AEgHzUIMlV9NYlF7wIwbla3PUfB3ocnaK1gZyROf0Lux/CBSu0exBQ==}
     dev: true
 
+  /@tanstack/query-core@5.20.2:
+    resolution: {integrity: sha512-sAILwNiyA1I52e6imOsmNDUA/PuOayOzqz5jcLiIB5wBXqVk+HIiriWouPcAkjS8RqARfHUehuoPwcZ7Uzh0GQ==}
+    dev: true
+
   /@tanstack/query-persist-client-core@5.20.1:
     resolution: {integrity: sha512-45ZOG8P49QtSuaB6md7FWn85E4MpSzgsG04mr/ZTYcD4L353LkqoQofBriviaIGWujEKgm+Y39jKh9vWPYTZdw==}
     dependencies:
       '@tanstack/query-core': 5.20.1
+    dev: true
+
+  /@tanstack/query-persist-client-core@5.20.2:
+    resolution: {integrity: sha512-I/xO8kOiwkLAeFfjPPqlneF40uSFGDXOtD65JczBU47ctJGfsojKFsYtZEQOiqc3PVZGzVS6S4j2NdMW/Glaqg==}
+    dependencies:
+      '@tanstack/query-core': 5.20.2
     dev: true
 
   /@tanstack/query-sync-storage-persister@5.20.1:
@@ -8607,8 +8617,8 @@ packages:
   /@tanstack/virtual-core@3.0.0:
     resolution: {integrity: sha512-SYXOBTjJb05rXa2vl55TTwO40A6wKu0R5i1qQwhJYNDIqaIGF7D0HsLw+pJAyi2OvntlEIVusx3xtbbgSUi6zg==}
 
-  /@tanstack/vue-query@5.20.1(vue@3.4.18):
-    resolution: {integrity: sha512-u/xu9p/vgz6DBXtG3ZFKi8DQVFd+EEqMWUZhQ5ibcWM1dbam4Xd+aYmX+kxnoil+2/vq4mY+Dw0fVbRFFi4LJw==}
+  /@tanstack/vue-query@5.20.2(vue@3.4.18):
+    resolution: {integrity: sha512-H7yhowy4oJVo7/5mWOaZxGhzMrbvz5NIPt+yg3uwqeETB+/pKKYWUFGHO1OPZ7k0Vl48gIDR8jL2oqz3tv0Vsg==}
     peerDependencies:
       '@vue/composition-api': ^1.1.2
       vue: ^2.6.0 || ^3.3.0
@@ -8617,7 +8627,7 @@ packages:
         optional: true
     dependencies:
       '@tanstack/match-sorter-utils': 8.11.8
-      '@tanstack/query-core': 5.20.1
+      '@tanstack/query-core': 5.20.2
       '@vue/devtools-api': 6.5.1
       vue: 3.4.18(typescript@5.3.3)
       vue-demi: 0.14.7(vue@3.4.18)
@@ -11396,8 +11406,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-sdk@2.1555.0:
-    resolution: {integrity: sha512-hjYs1MQkJxdHnoZm8hypqGy4PQKWVUs19McdXRXWNXr97V0il4xcUpIfvjHQ9x9EjP0p/jyIx9/BtyrR68jnUQ==}
+  /aws-sdk@2.1556.0:
+    resolution: {integrity: sha512-p3SOYdG37GlTAR1+3HVqV2gVahTb7bInPuLEzxJaK709yPjjgSQQJ0zsnn8rF9UpcTNElYtWRY5vLRmwp3TTcQ==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -11845,7 +11855,7 @@ packages:
     resolution: {integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==}
     dependencies:
       base64-js: 1.5.1
-      ieee754: 1.1.13
+      ieee754: 1.2.1
       isarray: 1.0.0
     dev: true
 
@@ -29605,7 +29615,7 @@ packages:
     resolution: {integrity: sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==}
     engines: {node: '>=4.0.0'}
     dependencies:
-      sax: 1.2.1
+      sax: 1.3.0
       xmlbuilder: 11.0.1
     dev: true
 

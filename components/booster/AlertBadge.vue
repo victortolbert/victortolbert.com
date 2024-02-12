@@ -9,6 +9,8 @@ defineProps({
     default: false,
   },
 })
+
+defineEmits(['toggle'])
 </script>
 
 <template>

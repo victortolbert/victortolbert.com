@@ -36,6 +36,6 @@ const date = useAppConfig().buildDate
       </div>
     </footer>
 
-    <AppCommandPalette />
+    <!-- <AppCommandPalette /> -->
   </div>
 </template>
