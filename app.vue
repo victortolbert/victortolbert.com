@@ -14,25 +14,25 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', { default: () => [], server: false })
 
 const links = [{
-  label: 'Docs',
+  label: 'Bookmarks',
   icon: 'i-heroicons-book-open',
-  to: '/getting-started',
+  to: '/bookmarks',
 }, {
-  label: 'Pro',
+  label: 'Calendar',
   icon: 'i-heroicons-square-3-stack-3d',
-  to: '/pro',
+  to: '/calendar',
 }, {
-  label: 'Pricing',
-  to: '/pro/pricing',
+  label: 'Courses',
+  to: '/courses',
   icon: 'i-heroicons-credit-card',
 }, {
-  label: 'Templates',
+  label: 'Events',
   icon: 'i-heroicons-computer-desktop',
-  to: '/pro/templates',
+  to: '/events',
 }, {
-  label: 'Releases',
+  label: 'Examples',
   icon: 'i-heroicons-rocket-launch',
-  to: '/releases',
+  to: '/examples',
 }]
 
 provide('navigation', navigation)
