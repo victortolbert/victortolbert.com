@@ -27,8 +27,20 @@ export default <Partial<Config>>{
 
         green: colors.emerald,
         status: colors.palette,
-        secondary: colors.tango,
-
+        secondary: {
+          DEFAULT: '#ee7d1e',
+          50: '#fef8ee',
+          100: '#fdefd7',
+          200: '#fadbae',
+          300: '#f6c07b',
+          400: '#f29b45',
+          500: '#ee7d1e',
+          600: '#df6417',
+          700: '#b94d15',
+          800: '#943d18',
+          900: '#773417',
+          950: '#40190a',
+        },
         danger: colors.rose,
         error: colors.rose,
         warning: colors.amber,

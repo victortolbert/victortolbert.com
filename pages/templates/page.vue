@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import type { HeaderLink } from '#ui-pro/types'
 
-defineProps<{
+interface Props {
   links: HeaderLink[]
-}>()
+}
+
+defineProps<Props>()
 
 // const links = [{
 //   label: 'Documentation',

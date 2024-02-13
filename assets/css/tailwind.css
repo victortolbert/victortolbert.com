@@ -51,6 +51,32 @@
     --firebrick: 347 71% 36%;
 
     --tw-prose-pre-bg: var(--vue);
+
+    --color-primary-50: 240 249 255;
+    --color-primary-100: 224 242 254;
+    --color-primary-200: 186 230 253;
+    --color-primary-300: 125 211 252;
+    --color-primary-400: 56 189 248;
+    --color-primary-500: 14 165 233;
+    --color-primary-600: 2 132 199;
+    --color-primary-700: 3 105 161;
+    --color-primary-800: 7 89 133;
+    --color-primary-900: 12 74 110;
+    --color-primary-950: 8 47 73;
+    --color-primary-DEFAULT: var(--color-primary-500);
+
+    /* Neutral */
+    /* --color-neutral-50: ;
+    --color-neutral-100: ;
+    --color-neutral-200: ;
+    --color-neutral-300: ;
+    --color-neutral-400: ;
+    --color-neutral-500: ;
+    --color-neutral-600: ;
+    --color-neutral-700: ;
+    --color-neutral-800: ;
+    --color-neutral-900: ;
+    --color-neutral-950: ; */
   }
 
   .dark {
@@ -97,8 +123,6 @@
     --medium-seagreen: 144 60% 44%;
     --yellow-orange: 34 95% 60%;
     --firebrick: 347 71% 36%;
-
-    --tw-prose-pre-bg: var(--vue);
   }
 }
 

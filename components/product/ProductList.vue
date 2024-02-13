@@ -12,7 +12,7 @@ function addProductToCart(product) {
   store.dispatch('cart/addProductToCart', product)
 }
 
-store.dispatch('products/getAllProducts')
+store.dispatch('product/getAllProducts')
 </script>
 
 <template>

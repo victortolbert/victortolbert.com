@@ -1,89 +1,86 @@
-<script setup>
-import { Howl } from 'howler'
-import music from '~/assets/music/let-it-fall-low-pitch.mp3'
+<script setup lang="ts">
+const links = [{
+  label: 'Resources',
+  children: [{
+    label: 'Help center',
+  }, {
+    label: 'Docs',
+  }, {
+    label: 'Roadmap',
+  }, {
+    label: 'Changelog',
+  }],
+}, {
+  label: 'Features',
+  children: [{
+    label: 'Affiliates',
+  }, {
+    label: 'Portal',
+  }, {
+    label: 'Jobs',
+  }, {
+    label: 'Sponsors',
+  }],
+}, {
+  label: 'Company',
+  children: [{
+    label: 'About',
+  }, {
+    label: 'Pricing',
+  }, {
+    label: 'Careers',
+  }, {
+    label: 'Blog',
+  }],
+}]
 
-const sound = new Howl({
-  src: [music],
-  html5: true,
-})
+const toast = useToast()
 
-const isPlaying = ref(false)
+const email = ref('')
+const loading = ref(false)
 
-function play() {
-  isPlaying.value = true
-  sound.play()
+function onSubmit() {
+  loading.value = true
+
+  setTimeout(() => {
+    toast.add({
+      title: 'Subscribed!',
+      description: 'You\'ve been subscribed to our newsletter.',
+    })
+
+    loading.value = false
+  }, 1000)
 }
-
-function pause() {
-  isPlaying.value = false
-  sound.pause()
-}
-
-function toggle() {
-  if (isPlaying.value)
-    pause()
-  else
-    play()
-}
-
-const footerRef = ref(null)
-
-const items = [
-  {
-    name: 'Resume',
-    path: '/',
-    icon: 'ph:read-cv-logo-duotone',
-  },
-  {
-    name: 'Projects',
-    path: '/projects',
-    icon: 'ph:folder-notch-open-duotone',
-  },
-  {
-    name: 'Articles',
-    path: '/articles',
-    icon: 'ph:newspaper-duotone',
-  },
-  {
-    name: 'Lab',
-    path: '/lab',
-    icon: 'ph:flask-duotone',
-  },
-  {
-    name: 'Uses',
-    path: '/uses',
-    icon: 'ph:backpack-duotone',
-  },
-  {
-    name: 'Bookmarks',
-    path: '/bookmarks',
-    icon: 'ph:bookmarks-simple-duotone',
-  },
-  {
-    name: 'About Me',
-    path: '/about',
-    icon: 'ph:question-duotone',
-  },
-]
 </script>
 
 <template>
-  <footer ref="footerRef" class="flex items-center w-full mx-auto justify-between max-w-3xl">
-    <NuxtLink to="/" class="text-sm text-gray-500">
-      © 2024 Victor Tolbert. All rights reserved.
-    </NuxtLink>
+  <UFooter>
+    <template #top>
+      <UFooterColumns :links="links">
+        <template #right>
+          <form @submit.prevent="onSubmit">
+            <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
+              <UInput v-model="email" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm" input-class="rounded-full">
+                <template #trailing>
+                  <UButton type="submit" size="xs" color="primary" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
+                </template>
+              </UInput>
+            </UFormGroup>
+          </form>
+        </template>
+      </UFooterColumns>
+    </template>
 
-    <div class="flex items-center gap-1.5">
-      <UTooltip text="Toggle Music" :ui="{ popper: { strategy: 'absolute' } }">
-        <button @click="toggle()">
-          <Icon
-            aria-hidden="true"
-            :name="isPlaying ? 'i-ph-pause-circle-duotone' : 'i-ph-play-circle-duotone'"
-            class="w-5 h-5"
-          />
-        </button>
-      </UTooltip>
-      <AppThemeToggle />
-    </div>
-  </footer>
+    <template #left>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">
+        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+      </p>
+    </template>
+
+    <template #right>
+      <UColorModeButton size="sm" />
+
+      <UButton to="https://github.com/nuxt-ui-pro/saas" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+    </template>
+  </UFooter>
 </template>

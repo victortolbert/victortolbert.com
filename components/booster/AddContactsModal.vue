@@ -153,7 +153,7 @@ function unBlur() {
       >
         <div class="card-footer-item flex-col mb-4">
           <button
-            class="button is-medium px-16 py-2 bg-white text-secondary rounded-full inline-block font-semibold shadow"
+            class="button is-medium px-16 py-2 bg-white text-secondary-500 rounded-full inline-block font-semibold shadow"
             @click.prevent="enrollContacts"
           >
             {{ lang.send_email }}

@@ -9,23 +9,12 @@ definePageMeta({
     hideCurrent: true,
   },
 })
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
-    },
-    {
-      rel: 'stylesheet',
-      href: '/assets/styles/salesforce-lightning-design-system.css',
-    },
-  ],
-})
+const showWelcomeMat = ref(false)
 </script>
 
 <template>
   <article>
-    <div class="slds-brand-band slds-brand-band_medium slds-brand-band_group" />
+    <SldsWelcomeMat v-if="showWelcomeMat" />
     <NuxtPage />
   </article>
 </template>

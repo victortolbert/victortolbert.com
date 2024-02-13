@@ -1,6 +1,8 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
+
 const { toggleDocsSearch } = useUIState()
+
 // const client = useSupabaseClient()
 // const user = useSupabaseUser()
 const user = ref(undefined)
@@ -8,32 +10,6 @@ const user = ref(undefined)
 const headerRef = ref(null)
 
 const { styles } = useFixedHeader(headerRef)
-
-// Composables
-// Form elements
-//   - Input
-//   - Textarea
-//   - Select
-//   - Checkbox
-//   - Radio
-//   - Button
-// Form components
-//   - Dialog(Modal)
-//   - Disclosure
-//   - Popover
-//   - Radio group
-//   - Listbox(Select)
-//   - Menu(Dropdown)
-//   - Switch(Toggle)
-//   - Tabs
-//   - Transition
-
-// Other
-//   - Alert
-//   - Card
-//   - Media Object
-//   - Pagination
-//   - Table
 
 const items = [
   {

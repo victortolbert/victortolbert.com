@@ -329,4 +329,4 @@ export const colors = {
   pomegranate: '#813d40',
   kalamata: '#6a515e',
   wenge: '#3a2e2b',
-}
+} as const
