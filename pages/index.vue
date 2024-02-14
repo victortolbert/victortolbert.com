@@ -90,7 +90,7 @@ const exceptions = [
   { name: 'TypeScript', url: '/typescript' },
   { name: 'Vue.js', url: '/vue' },
   { name: 'WordPress', url: '/wordpress' },
-  { name: 'Salesforce Experience Cloud', url: '/salesforce' },
+  { name: 'Salesforce Experience Cloud', url: '/salesforce/experience-cloud' },
   { name: 'Microsoft Azure', url: '/azure' },
   { name: 'Google Cloud', url: '/gcp' },
   { name: 'Google Cloud Platform', url: '/gcp' },

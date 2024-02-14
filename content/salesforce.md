@@ -2,6 +2,37 @@
 
 Salesforce, Inc. is an American cloud-based software company headquartered in San Francisco, California. It provides customer relationship management software and applications focused on sales, customer service, marketing automation, e-commerce, analytics, and application development.
 
+---
+
+
+# Lightning Web Components Specialist
+
+Showcase your mastery of Lightning Web Components by building a sophisticated app.
+
+---
+
+# Advanced Apex Specialist
+
+Build complex business logic using advanced Apex and Visualforce programming techniques.
+
+---
+
+# Data Integration Specialist
+
+Demonstrate your integration skills by synchronizing external data systems and Salesforce.
+
+---
+
+# Apex Specialist
+
+Use integration and business logic to push your Apex coding skills to the limit.
+
+---
+
+# Process Automation Specialist
+
+---
+
 ::tabs
   ::div
   ---
@@ -23,9 +54,10 @@ Salesforce, Inc. is an American cloud-based software company headquartered in Sa
   label: Log
   ---
 
+
   |                                                |            |
   | ---------------------------------------------- | ---------- |
-  | Get Started with Salesforce Development        | [24013100] |
+  | [Get Started with Salesforce Development][1]   | [24013100] |
   | Quick Start: Apex                              | [23120500] |
   | Lightning Design System Basics                 | [23112901] |
   | User Story Creation                            | [23112902] |
@@ -64,18 +96,16 @@ Salesforce, Inc. is an American cloud-based software company headquartered in Sa
   ::
 ::
 
+---
 
 
 ::callout
 This is a `callout` with full **markdown** support. It can be used to link to [another page](/pro/prose/card).
 ::
 
-- https://developer.salesforce.com/
-- https://developer.salesforce.com/docs
-- https://trailhead.salesforce.com/en/career-path/developer/
-- https://app.pluralsight.com/paths/skills/salesforce-development
+---
 
-[Salesforce Developer Getting Started Playground](https://wise-raccoon-opw3r-dev-ed.trailblaze.lightning.force.com)
+# [Salesforce Developer Getting Started Playground](https://wise-raccoon-opw3r-dev-ed.trailblaze.lightning.force.com)
 
 <!--
   username: victor.tolbert@wise-raccoon-opw3r.com
@@ -83,17 +113,19 @@ This is a `callout` with full **markdown** support. It can be used to link to [a
   password: 7qJsQQ@PO
 -->
 
+---
+
 | Salesforce | Database |
 | ---------- | -------- |
 | Objects    | Tables   |
 | Fields     | Columns  |
 | Records    | Rows     |
 
+---
 
+# Salesforce Developer and Admin Managed
 
-## Salesforce Developer and Admin Managed
-
-### Application and Data Services
+## Application and Data Services
 
 - Web Standard UI Platform
 - DevOps and Release Management
@@ -105,9 +137,11 @@ This is a `callout` with full **markdown** support. It can be used to link to [a
 - APIs
 - Workflow Engine
 
-## Salesforce Platform Managed
+---
 
-### Network Services
+# Salesforce Platform Managed
+
+## Network Services
 
 - HTTPS Encryption
 - Penetration Testing
@@ -115,7 +149,7 @@ This is a `callout` with full **markdown** support. It can be used to link to [a
 - Secure Firewalls
 - IP Login Restrictions
 
-### Infrastructure Services
+## Infrastructure Services
 
 - Secure Data Centers
 - Disaster Recovery
@@ -123,10 +157,15 @@ This is a `callout` with full **markdown** support. It can be used to link to [a
 - Third Party Certifications
 - Customer Audits
 
+---
 
-## Customers, Partners and Employees
+# Customers, Partners and Employees
 
 Customers typically access an Experience Cloud site to seek help for solving issues, manage Account information, or access other data such as knowledge articles , cases, orders , invoices etc.
+
+---
+
+# Apex Example
 
 ```apex
 @AuraEnabled(cacheable=true)
@@ -147,6 +186,14 @@ public static List<Property__c> getTopSeller() {
   https://d.la1-c1cs-ia7.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp?Settings.prefix=Visitor&Settings.buttonIds=[573DR0000008fyP]&Settings.updateBreadcrumb=1&callback=embedded_svc.liveAgentAPI.connection.handlePing&deployment_id=572DR0000008f7s&org_id=00DDR000000qERv&version=48
 -->
 
+---
+
+[1]: https://wise-raccoon-opw3r-dev-ed.trailblaze.lightning.force.com/lightning/page/home
+[2]: https://trailhead.salesforce.com/content/learn/modules/salesforce-functions-quick-look/get-to-know-salesforce-functions
+[3]: https://developer.salesforce.com/
+[4]: https://developer.salesforce.com/docs
+[5]: https://trailhead.salesforce.com/en/career-path/developer/
+[6]: https://app.pluralsight.com/paths/skills/salesforce-development
 [Salesforce Help]: https://help.salesforce.com/s/
 [Salesforce Field Service]: https://help.salesforce.com/s/articleView?id=sf.fs_overview.htm&type=5
 [Salesforce Standard Objects]: https://help.salesforce.com/s/articleView?id=sf.fs_overview.htm&type=5
@@ -156,9 +203,6 @@ public static List<Property__c> getTopSeller() {
 [Google Search]: https://www.google.com/search?q=salesforce+standard+objects
 [webassessor]: https://www.webassessor.com/wa.do?page=defaultLogin
 [salesforce-custom-objects]: https://www.bacancytechnology.com/blog/salesforce-custom-objects#:~:text=Standard%20objects%20are%20designed%20to,Campaign
-
----
-
 [24020100]: https://trailhead.salesforce.com/content/learn/modules/salesforce-functions-quick-look "Learn how to deploy code to meet elastic demand."
 [23071101]: https://trailhead.salesforce.com/content/learn/projects/quickstart-lightning-components "Create your first component that renders a list of Contacts from your org."
 [23110700]: https://trailhead.salesforce.com/content/learn/modules/ux-designer-certification-prep "Use scenarios and flashcards to study for the User Experience Designer certification exam."
@@ -170,5 +214,3 @@ public static List<Property__c> getTopSeller() {
 [23112902]: https://trailhead.salesforce.com/content/learn/modules/user-story-creation "Discover the importance of user stories and learn how to write them."
 [23120500]: https://trailhead.salesforce.com/content/learn/projects/quickstart-apex "Write your first Apex class."
 [24013100]: https://trailhead.salesforce.com/content/learn/projects/get-started-with-salesforce-development "Build a simple app and see what it’s like to develop on the Salesforce Platform."
-
-[2]: https://trailhead.salesforce.com/content/learn/modules/salesforce-functions-quick-look/get-to-know-salesforce-functions
