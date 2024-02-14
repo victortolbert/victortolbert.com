@@ -14,25 +14,25 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', { default: () => [], server: false })
 
 const links = [{
-  label: 'Docs',
-  icon: 'i-heroicons-book-open',
-  to: '/getting-started',
+  label: 'Projects',
+  icon: 'i-ph-folder-notch-open-duotone',
+  to: '/projects',
 }, {
-  label: 'Pro',
-  icon: 'i-heroicons-square-3-stack-3d',
-  to: '/pro',
+  label: 'Articles',
+  icon: 'i-ph-newspaper-duotone',
+  to: '/articles',
 }, {
-  label: 'Pricing',
-  to: '/pro/pricing',
-  icon: 'i-heroicons-credit-card',
+  label: 'Uses',
+  to: '/uses',
+  icon: 'i-ph-backpack-duotone',
 }, {
-  label: 'Templates',
-  icon: 'i-heroicons-computer-desktop',
-  to: '/pro/templates',
+  label: 'Bookmarks',
+  icon: 'i-ph-bookmarks-duotone',
+  to: '/bookmarks',
 }, {
-  label: 'Releases',
-  icon: 'i-heroicons-rocket-launch',
-  to: '/releases',
+  label: 'Lab',
+  icon: 'i-ph-flask-duotone',
+  to: '/lab',
 }]
 
 provide('navigation', navigation)
@@ -42,12 +42,12 @@ provide('files', files)
 <template>
   <div>
     <NuxtLayout>
-      <NuxtLoadingIndicator color="var(--react)" />
+      <NuxtLoadingIndicator color="var(--color-primary-500)" />
       <NuxtPage />
     </NuxtLayout>
 
     <ClientOnly>
-      <LazyUDocsSearch :files="files" :navigation="navigation" :links="links" />
+      <LazyUDocsSearch :files="files.value" :navigation="navigation.value" :links="links" />
     </ClientOnly>
 
     <UNotifications />

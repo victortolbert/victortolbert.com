@@ -19,8 +19,8 @@ definePageMeta({
 })
 
 const components = ref([
-  { name: 'Button', url: '/components', category: 'Elements', status: 'Ready', version: '1.0.0' },
-  { name: 'Navbar', url: '/components', category: 'Patterns', status: 'Ready', version: '1.0.0' },
+  { name: 'Button', url: '/blueprints/button', category: 'Elements', status: 'Ready', version: '1.0.0' },
+  { name: 'Navbar', url: '/blueprints/navbar', category: 'Patterns', status: 'Ready', version: '1.0.0' },
   { name: 'Index', url: '/components', category: 'Templates', status: 'Ready', version: '1.0.0' },
 ])
 </script>

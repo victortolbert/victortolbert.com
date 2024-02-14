@@ -1,6 +1,8 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
 
+const { toggleDocsSearch } = useUIState()
+
 // const client = useSupabaseClient()
 // const user = useSupabaseUser()
 const user = ref(undefined)
@@ -8,32 +10,6 @@ const user = ref(undefined)
 const headerRef = ref(null)
 
 const { styles } = useFixedHeader(headerRef)
-
-// Composables
-// Form elements
-//   - Input
-//   - Textarea
-//   - Select
-//   - Checkbox
-//   - Radio
-//   - Button
-// Form components
-//   - Dialog(Modal)
-//   - Disclosure
-//   - Popover
-//   - Radio group
-//   - Listbox(Select)
-//   - Menu(Dropdown)
-//   - Switch(Toggle)
-//   - Tabs
-//   - Transition
-
-// Other
-//   - Alert
-//   - Card
-//   - Media Object
-//   - Pagination
-//   - Table
 
 const items = [
   {
@@ -140,6 +116,25 @@ async function signInWithEmail() {
           </UTooltip>
         </li>
         <li class="flex-1" />
+        <li>
+          <button
+            class="relative px-3 py-4 flex items-center justify-center transition hover:scale-125 hover:text-primary-500 dark:hover:text-primary-400"
+            @click="toggleDocsSearch"
+          >
+            <UIcon
+              name="i-ph-magnifying-glass-duotone"
+              class="w-5 h-5"
+            />
+            <span class="sr-only">search</span>
+          </button>
+        </li>
+        <li v-if="false">
+          <UDocsSearchButton
+            :ui="{ rounded: 'rounded-full' }"
+            variant="solid"
+            color="gray"
+          />
+        </li>
         <li>
           <UTooltip
             text="Lab"

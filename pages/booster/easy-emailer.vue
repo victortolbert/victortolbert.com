@@ -1,258 +1,270 @@
-<script>
-import { ref } from 'vue'
-import BoosterAppHeader from '~/components/booster/app/AppHeader'
-import BoosterPageHeader from '~/components/booster/page/PageHeader'
-
-import BoosterEmailTemplatesModal from '~/components/booster/EmailTemplatesModal'
-import BoosterAddContactsButtons from '~/components/booster/AddContactsButtons'
-import BoosterContactsTable from '~/components/booster/ContactsTable'
-
+<script setup>
+import { useI18n } from 'vue-i18n'
+import { useStore } from 'vuex'
 import { PledgingStatus } from '~/utils/PledgingStatus'
 
-export default {
-  components: {
-    BoosterAddContactsButtons,
-    BoosterContactsTable,
-    BoosterAppHeader,
-    BoosterPageHeader,
+const props = defineProps({
+  participantUserId: {
+    type: Number,
+    default: null,
   },
-  props: {
-    participantUserId: {
-      type: Number,
-      default: null,
-    },
-  },
-  setup() {
-    const contactsTable = ref(null)
-    return {
-      contactsTable,
+})
+const { t } = useI18n()
+const store = useStore()
+const contactsTable = ref(null)
+const active = ref(false)
+const update = ref(0)
+const allSelected = ref(true)
+const isEditing = ref(false)
+const hasPreviousSponsors = ref(true)
+const EMAIL = ref(3)
+const EMAIL_VIDEO = ref(10)
+const EMAIL_SSV_DISABLED = ref(22)
+
+const participant = computed(() => {
+  return store.getters.participantForPreviousSponsors
+})
+
+const participantProgram = computed(() => {
+  return store.getters.participantProgram
+})
+
+const tooltipOptions = computed(() => {
+  return {
+    classes: ['info'],
+    content: 'Removing a contact will remove them from this list for the current email campaign.<br><br> Unsubscribed means a sponsor has decided to stop receiving these emails.',
+    placement: 'left-start',
+    trigger: 'hover click focus',
+  }
+})
+
+const allSelectedTest = computed(() => {
+  return allSelected.value
+})
+
+const emailShareLink = computed(() => {
+  const referrerId = hasVideo() ? EMAIL_VIDEO.value : EMAIL.value
+  const specialUrl = participant.value.special_urls.find(specialUrl => specialUrl.referrer.id === referrerId)
+  const overrideReferrerId = hasVideo() ? '' : `/${EMAIL_SSV_DISABLED.value}`
+  return `${window.location.protocol}//${window.location.hostname}/v3/dash/${specialUrl.short_key}${overrideReferrerId}`
+})
+
+const getContacts = computed(() => {
+  const potentialSponsors = getPotentialSponsors(props.participantUserId)
+  const previousSponsors = store.getters.getPreviousSponsors
+  const currentSponsorEmails = store.getters.getCurrentSponsorEmails
+
+  const sponsors = previousSponsors.concat(potentialSponsors)
+
+  // Set statuses & opt out
+  sponsors.forEach((sponsor) => {
+    const isCurrentSponsor = currentSponsorEmails.includes(sponsor.email)
+    const isPotentialSponsor = potentialSponsors.find(potentialSponsor => potentialSponsor.email === sponsor.email)
+    if (isPotentialSponsor)
+      sponsor.deleted = isPotentialSponsor.deleted
+
+    sponsor.isSelectable = false
+    sponsor.isSelected = false
+
+    if (sponsor.optOut) {
+      sponsor.status = PledgingStatus.UNSUBSCRIBED
     }
-  },
-  data() {
-    return {
-      active: false,
-      allSelected: true,
-      isEditing: false,
-      hasPreviousSponsors: true,
-      EMAIL: 3,
-      EMAIL_VIDEO: 10,
-      EMAIL_SSV_DISABLED: 22,
+    else if (isCurrentSponsor) {
+      sponsor.status = PledgingStatus.PLEDGED
     }
-  },
-  computed: {
-    lang() {
-      return this.$store.state.lang
-    },
-    tooltipOptions() {
-      return {
-        classes: ['info'],
-        content: 'Removing a contact will remove them from this list for the current email campaign.<br><br> Unsubscribed means a sponsor has decided to stop receiving these emails.',
-        placement: 'left-start',
-        trigger: 'hover click focus',
+    else if (isPotentialSponsor) {
+      sponsor.status = PledgingStatus.ACTIVE
+    }
+    else {
+      sponsor.status = PledgingStatus.NOT_ENROLLED
+      sponsor.isSelectable = true
+      sponsor.isSelected = true
+    }
+  })
+
+  const uniqueMap = new Map()
+  return sponsors.filter(sponsor => sponsor.deleted !== 1)
+    .filter((sponsor) => {
+      if (!uniqueMap.has(sponsor.email)) {
+        uniqueMap.set(sponsor.email, true)
+        return true
       }
-    },
-    allSelectedTest() {
-      return this.allSelected
-    },
-    emailShareLink() {
-      const referrerId = this.hasVideo() ? this.EMAIL_VIDEO : this.EMAIL
-      const specialUrl = this.participant.special_urls.find(specialUrl => specialUrl.referrer.id === referrerId)
-      const overrideReferrerId = this.hasVideo() ? '' : `/${this.EMAIL_SSV_DISABLED}`
-      return `${window.location.protocol}//${window.location.hostname}/v3/dash/${specialUrl.short_key}${overrideReferrerId}`
-    },
-    participant() {
-      return this.$store.getters.participantForPreviousSponsors
-    },
-    participantProgram() {
-      return this.$store.getters.participantProgram
-    },
-    getContacts() {
-      const potentialSponsors = this.getPotentialSponsors(this.participantUserId)
-      const previousSponsors = this.$store.getters.getPreviousSponsors
-      const currentSponsorEmails = this.$store.getters.getCurrentSponsorEmails
-
-      const sponsors = previousSponsors.concat(potentialSponsors)
-
-      // Set statuses & opt out
-      sponsors.forEach((sponsor) => {
-        const isCurrentSponsor = currentSponsorEmails.includes(sponsor.email)
-        const isPotentialSponsor = potentialSponsors.find(potentialSponsor => potentialSponsor.email === sponsor.email)
-        if (isPotentialSponsor)
-          sponsor.deleted = isPotentialSponsor.deleted
-
-        sponsor.isSelectable = false
-        sponsor.isSelected = false
-
-        if (sponsor.optOut) {
-          sponsor.status = PledgingStatus.UNSUBSCRIBED
-        }
-        else if (isCurrentSponsor) {
-          sponsor.status = PledgingStatus.PLEDGED
-        }
-        else if (isPotentialSponsor) {
-          sponsor.status = PledgingStatus.ACTIVE
-        }
-        else {
-          sponsor.status = PledgingStatus.NOT_ENROLLED
-          sponsor.isSelectable = true
-          sponsor.isSelected = true
-        }
-      })
-
-      const uniqueMap = new Map()
-      return sponsors.filter(sponsor => sponsor.deleted !== 1)
-        .filter((sponsor) => {
-          if (!uniqueMap.has(sponsor.email)) {
-            uniqueMap.set(sponsor.email, true)
-            return true
-          }
-          else {
-            return false
-          }
-        })
-    },
-  },
-
-  methods: {
-    hasVideo() {
-      const participantCount = this.$store.getters.participants.length
-      const hasVideoCount = this.$store.getters.participants.filter(participant => participant.profile.video_url).length
-      return hasVideoCount === participantCount
-    },
-    addContactsToDisplay(contacts) {
-      contacts.forEach((contact) => {
-        this.$store.dispatch(
-          'addPotentialSponsor',
-          {
-            ...contact,
-            participant_user_id: Number.parseInt(contact.participant_user_id),
-            deleted: 0,
-            enrollment: 1,
-            day_before_run: 0,
-            day_after_run: 0,
-            sender_user_id: this.$store.state.User.id,
-            opt_out: 0,
-            email_opt_out: [],
-          },
-        )
-      })
-    },
-    viewEmailTemplates() {
-      this.$modal.open({
-        parent: this,
-        component: BoosterEmailTemplatesModal,
-        hasModalCard: true,
-        canCancel: ['escape', 'outside'],
-        onCancel: this.unBlur,
-        scroll: 'clip',
-      })
-      this.blur()
-    },
-    isPPLTemplate() {
-      const participantHasLaps = this.participant.laps
-      const flatOnlyProgram = (this.participantProgram.program_pledge_setting.flat_donate_only
-        && this.participantProgram.program_pledge_setting.flat_donate_only !== '0')
-      if (participantHasLaps || flatOnlyProgram)
+      else {
         return false
-
-      return true
-    },
-    getPreWrittenEmailTemplateSubject() {
-      if (this.hasVideo())
-        return encodeURIComponent(this.parseLanguage(this.lang.email_template_student_star_subject, this.getPreWrittenEmailTemplateArgs()))
-
-      return encodeURIComponent(this.parseLanguage(this.lang.email_template_subject, this.getPreWrittenEmailTemplateArgs()))
-    },
-    getPreWrittenEmailSubjectArgs() {
-      const preWrittenEmailSubjectArgs = {
-        participantFirstNames: this.participantDisplayNames(this.$store.getters.participants),
-        eventName: this.participantProgram.event_name,
-        areIs: (this.$store.getters.participants.length > 1) ? 'are' : 'is',
       }
-      return preWrittenEmailSubjectArgs
-    },
-    getPreWrittenEmailTemplate() {
-      if (this.hasVideo())
-        return this.getShareStudentStarEmailTemplate()
+    })
+})
 
-      return this.getBasePreWrittenEmailTemplate()
-    },
-    getShareStudentStarEmailTemplate() {
-      const emailTemplate = this.parseLanguage(this.lang.student_star_email_template, this.getPreWrittenEmailTemplateArgs())
-      return encodeURIComponent(emailTemplate)
-    },
-    getBasePreWrittenEmailTemplate() {
-      const emailTemplate = this.parseLanguage(this.lang.email_template, this.getPreWrittenEmailTemplateArgs())
-      return encodeURIComponent(emailTemplate)
-    },
-    getPreWrittenEmailTemplateArgs() {
-      const preWrittenEmailTemplateArgs = {
-        participantFirstNames: this.participantDisplayNames(this.$store.getters.participants),
-        areIs: (this.$store.getters.participants.length > 1) ? 'are' : 'is',
-        eventName: this.participantProgram.decoded_event_name,
-        theyName: (this.$store.getters.participants.length > 1) ? 'they' : this.participant.first_name,
-        shareLink: this.emailShareLink,
-        fundsRaisedForText: this.getFormatedFundsRaisedFor(),
-        unitExpectationLang: this.getUnitExpectationLang(),
-        schoolName: this.participant.school.name,
-      }
-      return preWrittenEmailTemplateArgs
-    },
-    getFormatedFundsRaisedFor() {
-      const fundsRaisedFor = this.participantProgram.microsite.decoded_funds_raised_for
-      return fundsRaisedFor ? ` ${this.lang.for} ${fundsRaisedFor}` : ''
-    },
-    getUnitExpectationLang() {
-      if (this.isPPLTemplate()) {
-        const unitExpectationLangArgs = {
-          unitExpectationRange: `${this.participantProgram.unit_range_low} ${this.lang.email_template_to} ${this.participantProgram.unit_range_high}`,
-          unitPlural: this.participantProgram.unit.name_plural,
-        }
-        return this.parseLanguage(this.lang.email_template_ppl_expectation, unitExpectationLangArgs)
-      }
-      return this.lang.email_template_flat_expectation
-    },
-    sendPreWrittenTemplateEmail() {
-      this.gaTrack('Intro Paragraph Section', 'Pre Written Template Link')
-    },
-    gaTrack(label, action) {
-      this.gaEvent('Easy Emailer', label, action)
-    },
-    getPotentialSponsors(participantUserId) {
-      if (!this.participant)
-        return []
+function hasVideo() {
+  const participantCount = store.getters.participants.length
+  const hasVideoCount = store.getters.participants.filter(participant => participant.profile.video_url).length
+  return hasVideoCount === participantCount
+}
 
-      let potentialSponsors = this.$store.getters.getFamilyPledgePotentialSponsors(this.participantUserId)
+function addContactsToDisplay(contacts) {
+  contacts.forEach((contact) => {
+    store.dispatch(
+      'addPotentialSponsor',
+      {
+        ...contact,
+        participant_user_id: Number.parseInt(contact.participant_user_id),
+        deleted: 0,
+        enrollment: 1,
+        day_before_run: 0,
+        day_after_run: 0,
+        sender_user_id: store.state.User.id,
+        opt_out: 0,
+        email_opt_out: [],
+      },
+    )
+  })
+}
 
-      if (!this.participant.participant_info.family_pledging_enabled
-        || !this.$store.getters.participantProgram.program_pledge_setting.family_pledging_enabled) {
-        potentialSponsors = potentialSponsors
-          .filter(sponsor => sponsor.participant_user_id === participantUserId)
-      }
+function viewEmailTemplates() {
+  // modal.open({
+  //   parent: this,
+  //   component: BoosterEmailTemplatesModal,
+  //   hasModalCard: true,
+  //   canCancel: ['escape', 'outside'],
+  //   onCancel: unBlur,
+  //   scroll: 'clip',
+  // })
+  blur()
+}
 
-      return potentialSponsors.map((potentialSponsor) => {
-        const optOut = potentialSponsor.opt_out || potentialSponsor.email_opt_out.length > 0
+function isPPLTemplate() {
+  const participantHasLaps = participant.value.laps
+  const flatOnlyProgram = (participantProgram.value.program_pledge_setting.flat_donate_only
+    && participantProgram.value.program_pledge_setting.flat_donate_only !== '0')
+  if (participantHasLaps || flatOnlyProgram)
+    return false
 
-        return {
-          ...potentialSponsor,
-          isSelected: false,
-          isPreviousSponsor: false,
-          optOut,
-        }
-      })
-    },
-    blur() {
-      document.getElementById('app').style.filter = 'blur(4px)'
-    },
-    unBlur() {
-      this.update++
-      this.$forceUpdate()
-      document.getElementById('app').style.filter = 'none'
-    },
-  },
-  metaInfo: {
-    title: 'Easy Emailer',
-  },
+  return true
+}
+
+function getPreWrittenEmailTemplateSubject() {
+  if (hasVideo())
+    return encodeURIComponent(parseLanguage(t('email_template_student_star_subject'), getPreWrittenEmailTemplateArgs()))
+
+  return encodeURIComponent(parseLanguage(t('email_template_subject'), getPreWrittenEmailTemplateArgs()))
+}
+function parseLanguage(lang, vals) {
+  for (const value in vals)
+    lang = lang.replace(new RegExp(`:${value}`, 'g'), vals[value])
+
+  return lang
+}
+
+function participantDisplayNames(participants) {
+  if (participants.length === 1)
+    return participants[0].first_name
+
+  if (participants.length === 2)
+    return `${participants[0].first_name} & ${participants[1].first_name}`
+
+  const names = participants.map((participant) => {
+    return participant.first_name
+  })
+  const last = names.pop()
+  return `${names.join(', ')} & ${last}`
+}
+
+function getPreWrittenEmailSubjectArgs() {
+  const preWrittenEmailSubjectArgs = {
+    participantFirstNames: participantDisplayNames(store.getters.participants),
+    eventName: participantProgram.value.event_name,
+    areIs: (store.getters.participants.length > 1) ? 'are' : 'is',
+  }
+  return preWrittenEmailSubjectArgs
+}
+
+function getPreWrittenEmailTemplate() {
+  if (hasVideo())
+    return getShareStudentStarEmailTemplate()
+
+  return getBasePreWrittenEmailTemplate()
+}
+
+function getShareStudentStarEmailTemplate() {
+  const emailTemplate = parseLanguage(t('lang.student_star_email_template'), getPreWrittenEmailTemplateArgs())
+  return encodeURIComponent(emailTemplate)
+}
+
+function getBasePreWrittenEmailTemplate() {
+  const emailTemplate = parseLanguage(t('email_template'), getPreWrittenEmailTemplateArgs())
+  return encodeURIComponent(emailTemplate)
+}
+
+function getPreWrittenEmailTemplateArgs() {
+  const preWrittenEmailTemplateArgs = {
+    participantFirstNames: participantDisplayNames(store.getters.participants),
+    areIs: (store.getters.participants.length > 1) ? 'are' : 'is',
+    eventName: participantProgram.value.decoded_event_name,
+    theyName: (store.getters.participants.length > 1) ? 'they' : participant.value.first_name,
+    shareLink: emailShareLink.value,
+    fundsRaisedForText: getFormatedFundsRaisedFor(),
+    unitExpectationLang: getUnitExpectationLang(),
+    schoolName: participant.value.school.name,
+  }
+  return preWrittenEmailTemplateArgs
+}
+
+function getFormatedFundsRaisedFor() {
+  const fundsRaisedFor = participantProgram.value.microsite.decoded_funds_raised_for
+  return fundsRaisedFor ? ` ${t('for')} ${fundsRaisedFor}` : ''
+}
+
+function getUnitExpectationLang() {
+  if (isPPLTemplate()) {
+    const unitExpectationLangArgs = {
+      unitExpectationRange: `${participantProgram.value.unit_range_low} ${t('email_template_to')} ${participantProgram.value.unit_range_high}`,
+      unitPlural: participantProgram.value.unit.name_plural,
+    }
+    return parseLanguage(t('email_template_ppl_expectation'), unitExpectationLangArgs)
+  }
+  return t('email_template_flat_expectation')
+}
+
+function sendPreWrittenTemplateEmail() {
+  gaTrack('Intro Paragraph Section', 'Pre Written Template Link')
+}
+
+function gaTrack(label, action) {
+  gaEvent('Easy Emailer', label, action)
+}
+
+function getPotentialSponsors(participantUserId) {
+  if (!participant.value)
+    return []
+
+  let potentialSponsors = store.getters.getFamilyPledgePotentialSponsors(props.participantUserId)
+
+  if (!participant.value.participant_info.family_pledging_enabled
+    || !store.getters.participantProgram.program_pledge_setting.family_pledging_enabled) {
+    potentialSponsors = potentialSponsors
+      .filter(sponsor => sponsor.participant_user_id === participantUserId)
+  }
+
+  return potentialSponsors.map((potentialSponsor) => {
+    const optOut = potentialSponsor.opt_out || potentialSponsor.email_opt_out.length > 0
+
+    return {
+      ...potentialSponsor,
+      isSelected: false,
+      isPreviousSponsor: false,
+      optOut,
+    }
+  })
+}
+
+function blur() {
+  document.getElementById('app').style.filter = 'blur(4px)'
+}
+
+function unBlur() {
+  update.value++
+  forceUpdate()
+  document.getElementById('app').style.filter = 'none'
 }
 </script>
 
@@ -264,7 +276,7 @@ export default {
     <BoosterAppHeader :program="participantProgram">
       <div class="flex flex-col">
         <BoosterPageHeader>
-          {{ lang.easy_emailer }}
+          {{ t('easy_emailer') }}
         </BoosterPageHeader>
         <p class="sub-header text-white sm:text-xl md:text-2xl">
           {{ participantProgram.event_name }}
@@ -275,22 +287,22 @@ export default {
       <div class="mx-auto max-w-lg">
         <div class="p-8 bg-grey-lightest md:bg-white text-lg md:text-2xl mb-8">
           <p class="mb-8">
-            {{ lang.add_contacts_to_send_emails }}
+            {{ t('add_contacts_to_send_emails') }}
             <a
               class="font-semibold"
               @click="viewEmailTemplates"
-            >{{ lang.view_emails_here }}</a>
+            >{{ t('view_emails_here') }}</a>
           </p>
 
           <p>
-            {{ lang.send_your_own_email_intro }}
+            {{ t('send_your_own_email_intro') }}
             <br class="sm:hidden">
             <a
               id="pre-written-template"
               :href="`mailto:?body=${getPreWrittenEmailTemplate()}&subject=${getPreWrittenEmailTemplateSubject()}`"
               class="font-semibold"
               @click="sendPreWrittenTemplateEmail"
-            >{{ lang.pre_written_template }}</a>
+            >{{ t('pre_written_template') }}</a>
           </p>
         </div>
         <BoosterAddContactsButtons

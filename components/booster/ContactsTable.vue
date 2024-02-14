@@ -278,7 +278,7 @@ export default {
                 </div>
                 <div
                   v-if="contact.isPreviousSponsor"
-                  class="italic font-semibold has-text-secondary sm:pr-10"
+                  class="italic font-semibold has-text-secondary-500 sm:pr-10"
                 >
                   {{ lang.previous_sponsor }}
                 </div>

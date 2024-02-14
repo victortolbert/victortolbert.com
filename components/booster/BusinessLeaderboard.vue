@@ -98,7 +98,7 @@ export default {
     <p class="mb-8">
       {{ business_leaderboard_heading_1 }} <a
         :href="`/v3/tkdashboard/?redirect=auth/login/${fr_code}/view-participant/pledge`"
-        class="text-secondary font-bold"
+        class="text-secondary-500 font-bold"
       >{{ lang.business_leaderboard_heading_2 }}</a> {{ lang.business_leaderboard_heading_3 }}
     </p>
 
@@ -145,7 +145,7 @@ export default {
       class="text-center"
     >
       <button
-        class="button is-white has-text-secondary has-text-weight-bold"
+        class="button is-white has-text-secondary-500 has-text-weight-bold"
         @click.prevent="toggle"
       >
         {{ showAll ? `${lang.show} ${lang.less}` : `${lang.show} ${lang.more}` }}

@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-const props = withDefaults(defineProps<{ title?: string, description?: string, headline?: string }>(), {
+const props = withDefaults(defineProps<{
+  title?: string,
+  description?: string,
+  headline?: string
+}>(), {
   title: 'title',
   description: 'description',
   headline: 'headline',

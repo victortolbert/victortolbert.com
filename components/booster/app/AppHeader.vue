@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useStore } from 'vuex'
+import { useI18n } from 'vue-i18n'
 
 // import NotificationAccordionModal from '~/components/template/NotificationAccordionModal'
 
@@ -362,6 +363,6 @@ a {
   @apply block;
 }
 .is-active {
-  @apply underline text-secondary font-bold;
+  @apply underline text-secondary-500 font-bold;
 }
 </style>

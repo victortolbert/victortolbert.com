@@ -202,7 +202,7 @@ export default defineNuxtConfig({
   experimental: {
     // renderJsonPayloads: true,
     scanPageMeta: true,
-    // sharedPrerenderData: true
+    sharedPrerenderData: true,
     // typedPages: true,
     viewTransition: true,
   },
@@ -376,6 +376,7 @@ export default defineNuxtConfig({
     'nuxt-api-party',
     'nuxt-fathom',
     'nuxt-mail',
+    'nuxt-og-image',
     'nuxt-prepare',
     'nuxt-swiper',
     'shadcn-nuxt',
@@ -395,7 +396,6 @@ export default defineNuxtConfig({
     // '@unlazy/nuxt',
     // 'nuxt-component-meta',
     // 'nuxt-icon',
-    // 'nuxt-og-image',
     // 'nuxt-proxy',
     // 'nuxt-time',
   ],
@@ -500,6 +500,7 @@ export default defineNuxtConfig({
     //   isr: 60 * 60 * 24
     // },
     '/api/search.json': { prerender: true },
+    // '/docs': { redirect: '/docs/getting-started', prerender: false }
 
   },
 
@@ -766,7 +767,7 @@ export default defineNuxtConfig({
   // },
 
   vueEmail: {
-    baseUrl: 'https://victortolbert.com/',
+    baseUrl: 'https://assets.victortolbert.com/',
     autoImport: true,
   },
 

@@ -19,7 +19,7 @@
           </button>
         </div>
         <span class="slds-context-bar__label-action slds-context-bar__app-name">
-          <span class="slds-truncate" title="App Name">App Name</span>
+          <span class="slds-truncate" title="App Name">Core</span>
         </span>
       </div>
     </div>
@@ -31,9 +31,10 @@
             <span class="slds-truncate" title="Home">Home</span>
           </a>
         </li>
+
         <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
-          <a href="#" class="slds-context-bar__label-action" title="Menu Item">
-            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          <a href="#" class="slds-context-bar__label-action" title="Projects">
+            <span class="slds-truncate" title="Projects">Projects</span>
           </a>
           <div class="slds-context-bar__icon-action slds-p-left_none">
             <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
@@ -74,16 +75,19 @@
             </ul>
           </div>
         </li>
+
         <li class="slds-context-bar__item">
-          <a href="#" class="slds-context-bar__label-action" title="Menu Item">
-            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          <a href="#" class="slds-context-bar__label-action" title="Accounts">
+            <span class="slds-truncate" title="Accounts">Accounts</span>
           </a>
         </li>
+
         <li class="slds-context-bar__item">
-          <a href="#" class="slds-context-bar__label-action" title="Menu Item">
-            <span class="slds-truncate" title="Menu Item">Menu Item</span>
+          <a href="#" class="slds-context-bar__label-action" title="Contacts">
+            <span class="slds-truncate" title="Contacts">Contacts</span>
           </a>
         </li>
+
         <li class="slds-context-bar__item">
           <a href="#" class="slds-context-bar__label-action" title="Menu Item">
             <span class="slds-truncate" title="Menu Item">Menu Item</span>

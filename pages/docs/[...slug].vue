@@ -5,6 +5,7 @@ const route = useRoute()
 const { toc, seo } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+
 if (!page.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
@@ -21,10 +22,13 @@ useSeoMeta({
   ogDescription: page.value.description,
 })
 
-defineOgImage({
-  component: 'Docs',
+defineOgImageComponent('Docs', {
   title: page.value.title,
   description: page.value.description,
+  theme: '#4338ca',
+  colorMode: 'dark',
+  siteLogo: '/favicon-dark.svg',
+  icon: 'i-ph-help',
 })
 
 const headline = computed(() => findPageHeadline(page.value))

@@ -1,49 +1,48 @@
-<script>
-export default {
-  props: {
-    header: {
-      type: String,
-      default: '',
-    },
-    subheader: {
-      type: String,
-      default: '',
-    },
-    content: {
-      type: String,
-      default: '',
-    },
-    footer: {
-      type: String,
-      default: '',
-    },
-    widthSize: {
-      type: String,
-      default: '',
-    },
+<script setup>
+const props = defineProps({
+  header: {
+    type: String,
+    default: '',
   },
-  emits: ['close'],
-  computed: {
-    widthSizeClass() {
-      if (this.widthSize === 'small')
-        return 'max-w-sm'
+  subheader: {
+    type: String,
+    default: '',
+  },
+  content: {
+    type: String,
+    default: '',
+  },
+  footer: {
+    type: String,
+    default: '',
+  },
+  widthSize: {
+    type: String,
+    default: '',
+  },
+})
 
-      return ''
-    },
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close')
-      this.$parent.$emit('close')
-      this.unBlur()
-    },
-    blur() {
-      document.getElementById('app').style.filter = 'blur(4px)'
-    },
-    unBlur() {
-      document.getElementById('app').style.filter = 'none'
-    },
-  },
+defineEmits(['close'])
+
+const widthSizeClass = computed(() => {
+  if (props.widthSize === 'small')
+    return 'max-w-sm'
+
+  return ''
+})
+
+function closeModal() {
+  emit('close')
+  // this.$parent.$emit('close')
+  unBlur()
+}
+
+function blur() {
+  document.getElementById('app').style.filter = 'blur(4px)'
+}
+
+function unBlur() {
+  document.getElementById('app').style.filter = 'none'
 }
 </script>
 

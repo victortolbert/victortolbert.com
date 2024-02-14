@@ -2,15 +2,22 @@
   <header class="slds-global-header_container">
     <a href="#" class="slds-assistive-text slds-assistive-text_focus">Skip to Navigation</a>
     <a href="#" class="slds-assistive-text slds-assistive-text_focus">Skip to Main Content</a>
+
     <div class="slds-global-header slds-grid slds-grid_align-spread">
       <div class="slds-global-header__item">
-        <div class="slds-global-header__logo">
+        <NuxtLink to="/" class="flex items-center">
+          <LogoLab class="text-sky-800 h-8 w-auto" />
+          <!-- <BaseLogo class="text-violet-800" /> -->
+        </NuxtLink>
+
+        <!-- <div class="slds-global-header__logo">
           <span class="slds-assistive-text">Salesforce</span>
-        </div>
+        </div> -->
       </div>
+
       <div class="slds-global-header__item slds-global-header__item_search">
         <div class="slds-form-element">
-          <label class="slds-form-element__label slds-assistive-text" for="combobox-id-12">Search Salesforce</label>
+          <label class="slds-form-element__label slds-assistive-text" for="combobox-id-12">Search Exemplar</label>
           <div class="slds-form-element__control">
             <div class="slds-combobox-group">
               <div class="slds-combobox_object-switcher slds-combobox-addon_start">
@@ -118,7 +125,7 @@
                         <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search" />
                       </svg>
                     </span>
-                    <input id="combobox-id-12" type="text" class="slds-input slds-combobox__input" aria-autocomplete="list" aria-controls="search-listbox-id-1" aria-expanded="false" aria-haspopup="listbox" autoComplete="off" role="combobox" placeholder="Search Salesforce">
+                    <input id="combobox-id-12" type="text" class="slds-input slds-combobox__input" aria-autocomplete="list" aria-controls="search-listbox-id-1" aria-expanded="false" aria-haspopup="listbox" autoComplete="off" role="combobox" placeholder="Search Exemplar">
                   </div>
                   <div id="search-listbox-id-1" class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox" aria-label="{{Placeholder for Dropdown Items}}" tabindex="0" aria-busy="false">
                     <ul class="slds-listbox slds-listbox_vertical" role="group" aria-label="Recent Items">
@@ -275,9 +282,17 @@
           </li>
           <li class="slds-global-actions__item">
             <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
-              <button class="slds-button slds-global-actions__avatar slds-global-actions__item-action" title="person name" aria-haspopup="true">
+              <button
+                class="slds-button slds-global-actions__avatar slds-global-actions__item-action"
+                title="person name"
+                aria-haspopup="true"
+              >
                 <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
-                  <img alt="Person name" src="/assets/images/avatars/avatar-2.jpeg" title="User avatar">
+                  <UAvatar
+                    src="/assets/images/avatars/avatar.png"
+                    size="md"
+                    alt="Person name"
+                  />
                 </span>
               </button>
             </div>
@@ -285,5 +300,6 @@
         </ul>
       </div>
     </div>
+    <SldsGlobalNavigation />
   </header>
 </template>

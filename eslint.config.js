@@ -9,15 +9,22 @@ export default antfu(
       markdown: 'prettier', // use prettier for markdown
     },
     rules: {
+      // Global
       'no-alert': 'off',
       'no-console': 'off',
       'no-irregular-whitespace': 'off',
       'ts/consistent-type-definitions': 'off',
       'unused-imports/no-unused-vars': 'off',
-      'vue/no-template-shadow': 'off',
-      'vue/one-component-per-file': 'off',
       'jsdoc/check-param-names': 'off',
       'jsdoc/require-param-name': 'off',
+
+      // Vue
+      'vue/no-template-shadow': 'off',
+      'vue/one-component-per-file': 'off',
+
+      'vue/multi-word-component-names': 0,
+      'vue/max-attributes-per-line': 'off',
+      'vue/no-v-html': 0,
     },
     // ignores: [
     //   'README.md',

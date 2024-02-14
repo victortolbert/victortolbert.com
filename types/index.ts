@@ -1,3 +1,6 @@
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { Avatar, Badge, Link } from '#ui/types'
+
 // export * from './BillingContactType'
 // export * from './CompanyServiceType'
 // export * from './Editable'
@@ -197,6 +200,19 @@ export interface Movie {
   vote_count: number
   video: boolean
   vote_average: number
+}
+
+export interface NotesPost extends ParsedContent {
+  title: string
+  description: string
+  date: string
+  image?: HTMLImageElement
+  badge?: Badge
+  authors?: ({
+    name: string
+    description?: string
+    avatar?: Avatar
+  } & Link)[]
 }
 
 export type Option = {

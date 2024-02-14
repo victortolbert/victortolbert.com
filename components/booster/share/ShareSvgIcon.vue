@@ -27,7 +27,7 @@ export default {
 
 <template>
   <svg
-    class="text-secondary h-12 w-12"
+    class="text-secondary-500 h-12 w-12"
     viewBox="0 0 1095 1095"
   >
     <g
