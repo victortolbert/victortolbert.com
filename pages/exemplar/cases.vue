@@ -13,5 +13,8 @@ await suspense()
 </script>
 
 <template>
-  <div>{{ data }}</div>
+  <div>
+    <NuxtPage />
+    {{ data }}
+  </div>
 </template>

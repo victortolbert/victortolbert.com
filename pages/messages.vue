@@ -20,13 +20,13 @@ await suspense()
     <div class="flex flex-col flex-1 w-0 overflow-hidden">
       <MessageSearchHeader />
 
-      <main class="relative z-0 flex-1 overflow-y-auto focus:outline-none" tabindex="0">
+      <article class="relative z-0 flex-1 overflow-y-auto focus:outline-none" tabindex="0">
         <MessagePageHeader />
 
         <NuxtPage />
 
         <div>{{ data }}</div>
-      </main>
+      </article>
     </div>
   </div>
 </template>

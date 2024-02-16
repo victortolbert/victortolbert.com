@@ -108,7 +108,6 @@ export default defineNuxtConfig({
       //   nginx
       //   postcss
       //   powershell
-      //   prisma
       //   pug
       //   python
       //   r

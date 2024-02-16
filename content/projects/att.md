@@ -33,4 +33,4 @@ Provided HTML5 Desktop and Tablet user interface development for a project to in
 - Tech Stack: HTML, CSS (Sass), JavaScript (AngularJS), Java, [Apache Camel][1], [Groovy][2]
 
 [1]: https://camel.apache.org/ "Apache Camel is an open source framework for message-oriented middleware with a rule-based routing and mediation engine that provides a Java object-based implementation of the Enterprise Integration Patterns using an application programming interface to configure routing and mediation rules."
-[2]: https://groovy-lang.org/ "Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, and Smalltalk.""
+[2]: https://groovy-lang.org/ "Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, and Smalltalk."

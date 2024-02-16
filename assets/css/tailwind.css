@@ -44,7 +44,7 @@
     --pomegranite: 357 36% 37%;
     --san-juan: 212 36% 48%;
     --tango: 27 86% 53%;
-    --burgandy: 342 100% 26%;
+    --burgundy: 342 100% 26%;
     --monza: 354 100% 40%;
     --medium-seagreen: 144 60% 44%;
     --yellow-orange: 34 95% 60%;
@@ -110,19 +110,6 @@
     --destructive-foreground: 0 0% 98%;
 
     --ring: 0 0% 83.1%;
-
-    --angular: #b52e31;
-    --react: #00d8ff;
-    --vue: #42b883;
-
-    --pomegranite: 357 36% 37%;
-    --san-juan: 212 36% 48%;
-    --tango: 27 86% 53%;
-    --burgandy: 342 100% 26%;
-    --monza: 354 100% 40%;
-    --medium-seagreen: 144 60% 44%;
-    --yellow-orange: 34 95% 60%;
-    --firebrick: 347 71% 36%;
   }
 }
 

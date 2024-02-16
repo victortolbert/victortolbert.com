@@ -93,19 +93,18 @@ const links = [
 </script>
 
 <template>
-  <article class="mt-8">
-    <UContainer>
-      <Breadcrumbs />
-      <div class="grid grid-cols-12 gap-8">
-        <aside class="col-span-3 border rounded dark:border-gray-800">
-          <UVerticalNavigation :links="links" />
-        </aside>
+  <article class="min-h-screen mx-auto">
+    <Breadcrumbs class="mt-1.5 mb-12" />
 
-        <section class="col-span-9">
-          <NuxtPage />
-        </section>
-      </div>
-    </UContainer>
+    <div class="grid grid-cols-12 gap-8">
+      <aside class="col-span-3 border rounded dark:border-gray-800">
+        <UVerticalNavigation :links="links" />
+      </aside>
+
+      <section class="col-span-9">
+        <NuxtPage />
+      </section>
+    </div>
   </article>
 </template>
 

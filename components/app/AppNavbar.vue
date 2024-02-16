@@ -116,7 +116,7 @@ async function signInWithEmail() {
           </UTooltip>
         </li>
         <li class="flex-1" />
-        <li>
+        <li v-if="false">
           <button
             class="relative px-3 py-4 flex items-center justify-center transition hover:scale-125 hover:text-primary-500 dark:hover:text-primary-400"
             @click="toggleDocsSearch"

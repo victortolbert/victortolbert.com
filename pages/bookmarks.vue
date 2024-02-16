@@ -27,11 +27,17 @@ const bookmarks = [
     icon: 'logoipsum.svg',
   },
   {
-    id: 3,
-    label: 'GitHub - victortolbert/starred - My starred repositories on GitHub',
-    url: 'https://github.com/victortolbert?direction=desc&sort=stars&tab=stars',
+    id: 4,
+    label: 'Brandfetch - All brands. In one place',
+    url: 'https://brandfetch.com/',
     icon: 'coverr.svg',
   },
+  // {
+  //   id: 3,
+  //   label: 'GitHub - victortolbert/starred - My starred repositories on GitHub',
+  //   url: 'https://github.com/victortolbert?direction=desc&sort=stars&tab=stars',
+  //   icon: 'coverr.svg',
+  // },
   // {
   //   id: 6,
   //   label: 'CSS Gradient Generator',

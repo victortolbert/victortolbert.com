@@ -1,11 +1,36 @@
 # AbbVie
 
+AbbVie Inc. The company was founded on January 1, 2013, as a spin-off from the global healthcare company Abbott Laboratories. AbbVie's mission is to discover, develop, and deliver innovative medicines to treat some of the world's most complex and serious diseases. The company's headquarters in North Chicago is a state-of-the-art facility that houses research laboratories, manufacturing plants, and administrative offices. It serves as the nerve center for AbbVie's global operations. AbbVie's main products and services revolve around several therapeutic areas, including immunology, oncology, neuroscience, and virology.
+
+Some of its notable products include Humira, a leading treatment for autoimmune diseases, such as rheumatoid arthritis and psoriasis, and Imbruvica, a targeted therapy for certain types of cancers. On a global scale, AbbVie operates in more than 170 countries, with a strong presence in North America, Europe, and emerging markets. The company has formed strategic partnerships and collaborations with other organizations to enhance its research and development capabilities. Noteworthy subsidiaries include Pharmacyclics and Stemcentrx, which have brought valuable expertise and innovative drug candidates to AbbVie's portfolio.
+
+In terms of market position, AbbVie has successfully established itself as a global leader in the pharmaceutical industry. The company consistently ranks among the top biopharmaceutical companies in terms of global sales. It faces fierce competition from other industry giants, such as Pfizer, Johnson & Johnson, and Roche, among others. Over the years, AbbVie has achieved significant milestones and witnessed notable events. In 2020, the company announced a transformative acquisition of Allergan, a leading global pharmaceutical company, to broaden its product portfolio and expand its presence in aesthetics and other therapeutic areas.
+
+As of the most recent update, AbbVie continues to thrive as a global pharmaceutical powerhouse. The company's commitment to innovation and patient-centric approaches has allowed it to develop breakthrough therapies and make a positive impact on the lives of millions of patients worldwide. With a strong pipeline and robust financial performance, AbbVie looks poised for continued growth and success in the future.
+
+---
+
 AbbVie’s mission is to discover and deliver innovative medicines and solutions that address complex health issues and enhance people's lives.
 
 > Powered by 50,000 employees across the globe, it is the responsibility and the privilege of everyone at AbbVie to support our communities, better our society and help the patients of today and tomorrow.
 > Richard A. Gonzalez, Chairman & CEO
 
 [1]: https://www.abbvie.com/who-we-are.html
+
+## Brand Palette
+
+#181f44 - KONKIKYŌ BLUE
+#000000
+#ffffff
+#081D4A - Oxford Blue
+
+
+#A5ACBC - Snub
+#817F7D - Gray Tote
+#009EC2 - Ocean Blue
+#11A2D1 - Structural Blue
+
+
 
 ## Pharmaceutical drugs
 

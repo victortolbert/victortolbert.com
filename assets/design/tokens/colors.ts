@@ -329,4 +329,28 @@ export const colors = {
   pomegranate: '#813d40',
   kalamata: '#6a515e',
   wenge: '#3a2e2b',
+
+  // AbbVie
+  konkikyoBlue: '#181f44',
+  oxfordBlue: '#081d4a',
+  snub: '#A5ACBC',
+  grayTote: '#817F7D',
+  oceanBlue: '#009EC2',
+  structuralBlue: '#11A2D1',
+
+  // solitude: '#f8fcff',
+
+  congressBlue: '#02518a',
+  mariner: '#2e86de',
+  shakespeare: '#57b6d3',
+  bondiBlue: '#02b6bc',
+  aquaForest: '#57af7b',
+  seaGreen: '#2db564',
+  coral: '#faa638',
+  // monza: '#d0021b',
+  facebookBlue: '#3b5998',
+  emailBlue: '#00a6d9',
+  textMessageGreen: '#57af7b',
+  copyLinkGreen: '#00999e',
+
 } as const
