@@ -276,7 +276,7 @@
     "nuxt-api-party": "^1.0.1",
     "nuxt-component-meta": "^0.6.3",
     "nuxt-fathom": "^0.0.1",
-    "nuxt-gtag": "^1.2.0",
+    "nuxt-gtag": "^2.0.0",
     "nuxt-icon": "^0.6.8",
     "nuxt-kql": "^1.2.2",
     "nuxt-lodash": "^2.5.3",
