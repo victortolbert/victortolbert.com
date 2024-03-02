@@ -205,7 +205,7 @@
     "@vue/babel-plugin-jsx": "^1.2.1",
     "@vue/compiler-dom": "^3.4.19",
     "@vue/compiler-sfc": "^3.4.19",
-    "@vue/language-plugin-pug": "^1.8.27",
+    "@vue/language-plugin-pug": "^2.0.0",
     "@vue/runtime-core": "^3.4.19",
     "@vue/runtime-dom": "^3.4.19",
     "@vue/server-renderer": "^3.4.19",
