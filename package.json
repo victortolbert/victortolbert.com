@@ -287,7 +287,7 @@
     "nuxt-proxy": "^0.4.1",
     "nuxt-remote-fn": "^0.5.1",
     "nuxt-schema-org": "^3.3.4",
-    "nuxt-security": "1.1.1",
+    "nuxt-security": "1.2.2",
     "nuxt-simple-sitemap": "4.4.1",
     "nuxt-swiper": "^1.2.2",
     "pathe": "^1.1.2",
