@@ -321,7 +321,7 @@
     "typescript": "^5.3.3",
     "underscore.string": "^3.3.6",
     "uuid": "^9.0.1",
-    "valibot": "^0.28.1",
+    "valibot": "^0.30.0",
     "video.js": "^8.10.0",
     "vite-plugin-vsharp": "^1.7.3",
     "vite-svg-loader": "^5.1.0",
